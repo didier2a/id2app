@@ -1,25 +1,29 @@
 # Porto Flow
 
-> Landing page premium pour une application territoriale intelligente dédiée à Porto-Vecchio.
+> Landing page premium pour l'application territoriale intelligente de Porto-Vecchio.
 
 ---
 
 ## Présentation du projet
 
-**Porto Flow** est une landing page statique haut de gamme conçue pour présenter une application territoriale intelligente destinée à la ville de Porto-Vecchio, en Corse du Sud.
+**Porto Flow** est une landing page moderne et immersive conçue pour présenter une application territoriale intelligente dédiée à la ville de Porto-Vecchio (Corse-du-Sud).
 
-Elle met en valeur les fonctionnalités clés de la plateforme numérique territoriale : mobilité, services citoyens, tourisme intelligent, gestion urbaine et données en temps réel.
+L'objectif de cette page est de valoriser les fonctionnalités de l'application, d'engager les visiteurs et de les inciter à rejoindre la plateforme ou à en savoir plus.
 
-La page est entièrement construite en **HTML sémantique**, **CSS moderne** et **JavaScript vanilla**, sans aucun framework ni dépendance externe obligatoire.
+La page est entièrement statique — construite en HTML, CSS et JavaScript vanilla — sans aucun framework ni dépendance externe obligatoire.
 
 ---
 
-## Objectifs de la landing page
+## Fonctionnalités de la landing page
 
-- Présenter Porto Flow comme une solution territoriale innovante
-- Mettre en avant les fonctionnalités et bénéfices de l'application
-- Offrir une expérience visuelle premium et immersive
-- Encourager les visiteurs à s'inscrire ou à demander une démonstration
+- Design premium inspiré de l'identité visuelle de Porto-Vecchio (couleurs méditerranéennes, typographie élégante)
+- Animations fluides au scroll et à l'entrée des sections
+- Présentation des fonctionnalités clés de l'application territoriale
+- Section hero immersive avec appel à l'action
+- Témoignages et indicateurs de confiance
+- Formulaire de contact ou d'inscription intégré
+- Responsive design — optimisé mobile, tablette et desktop
+- Performances optimisées (aucune dépendance lourde)
 
 ---
 
@@ -29,28 +33,25 @@ La page est entièrement construite en **HTML sémantique**, **CSS moderne** et 
 porto-flow-landing/
 │
 ├── index.html          # Page principale — structure HTML sémantique complète
-├── style.css           # Feuille de styles — design premium, responsive, animations
-├── main.js             # JavaScript vanilla — interactions, animations, navigation
+├── css/
+│   └── style.css       # Feuille de styles principale — variables, layout, composants, animations
+├── js/
+│   └── main.js         # JavaScript vanilla — interactions, animations, comportements dynamiques
+├── assets/
+│   ├── images/         # Visuels, photos, illustrations
+│   └── icons/          # Icônes SVG utilisées dans l'interface
 └── README.md           # Documentation du projet (ce fichier)
 ```
 
-### Détail des fichiers
-
-| Fichier | Rôle |
-|---|---|
-| `index.html` | Contient toute la structure de la landing page : hero, features, stats, CTA, footer |
-| `style.css` | Gère l'identité visuelle, les variables CSS, le responsive design et les animations |
-| `main.js` | Gère le scroll, les animations à l'entrée, la navigation sticky et les interactions UI |
-| `README.md` | Documentation complète du projet |
-
 ---
 
-## Technologies utilisées
+## Prérequis
 
-- **HTML5** — structure sémantique (header, main, section, footer, nav, article)
-- **CSS3** — variables CSS, Flexbox, Grid, animations, media queries
-- **JavaScript ES6+** — vanilla, Intersection Observer, scroll events, DOM manipulation
-- **Aucun framework** — aucune dépendance npm, aucun build tool requis
+Aucun prérequis technique particulier.
+
+- Un navigateur web moderne (Chrome, Firefox, Safari, Edge)
+- Aucun serveur backend requis
+- Aucune installation de dépendances nécessaire
 
 ---
 
@@ -58,42 +59,62 @@ porto-flow-landing/
 
 ### Méthode 1 — Ouverture directe dans le navigateur
 
-1. Télécharger ou cloner le dossier `porto-flow-landing/`
-2. Ouvrir le fichier `index.html` directement dans votre navigateur
+1. Téléchargez ou clonez ce dépôt sur votre machine
+2. Naviguez jusqu'au dossier `porto-flow-landing/`
+3. Double-cliquez sur le fichier `index.html`
+4. La page s'ouvre directement dans votre navigateur par défaut
+
+### Méthode 2 — Serveur local avec VS Code (recommandé)
+
+Si vous utilisez **Visual Studio Code** avec l'extension **Live Server** :
+
+1. Ouvrez le dossier `porto-flow-landing/` dans VS Code
+2. Faites un clic droit sur `index.html` dans l'explorateur
+3. Sélectionnez **"Open with Live Server"**
+4. La page s'ouvre automatiquement sur `http://127.0.0.1:5500`
+
+### Méthode 3 — Serveur local avec Python
+
+Si Python est installé sur votre machine :
 
 ```bash
-# Exemple sur macOS
-open porto-flow-landing/index.html
-
-# Exemple sur Linux
-xdg-open porto-flow-landing/index.html
-
-# Exemple sur Windows
-start porto-flow-landing/index.html
-```
-
-### Méthode 2 — Serveur local avec Python (recommandée)
-
-Pour éviter les restrictions CORS et bénéficier d'un environnement proche de la production :
-
-```bash
-# Se placer dans le dossier du projet
+# Naviguez dans le dossier du projet
 cd porto-flow-landing
 
 # Python 3
-python3 -m http.server 8080
+python -m http.server 8080
 
 # Python 2
 python -m SimpleHTTPServer 8080
 ```
 
-Puis ouvrir dans le navigateur : [http://localhost:8080](http://localhost:8080)
+Puis ouvrez votre navigateur à l'adresse : `http://localhost:8080`
 
-### Méthode 3 — Extension VS Code Live Server
+### Méthode 4 — Serveur local avec Node.js
 
-1. Installer l'extension **Live Server** dans Visual Studio Code
-2. Ouvrir le dossier `porto-flow-landing/` dans VS Code
-3. Clic droit sur `index.html` → **Open with Live Server**
+Si Node.js est installé sur votre machine :
+
+```bash
+# Installation globale de serve (une seule fois)
+npm install -g serve
+
+# Lancement dans le dossier du projet
+cd porto-flow-landing
+serve .
+```
+
+Puis ouvrez votre navigateur à l'adresse indiquée dans le terminal.
+
+---
+
+## Personnalisation
+
+| Élément | Fichier à modifier |
+|---|---|
+| Contenu textuel | `index.html` |
+| Couleurs et typographie | `css/style.css` — section `:root` (variables CSS) |
+| Animations et interactions | `js/main.js` |
+| Images et visuels | `assets/images/` |
 
 ---
 
@@ -109,19 +130,7 @@ Puis ouvrir dans le navigateur : [http://localhost:8080](http://localhost:8080)
 
 ---
 
-## Design & identité visuelle
+## Licence
 
-- **Palette** : tons bleus profonds, dorés méditerranéens, blancs lumineux
-- **Typographie** : moderne, aérée, lisible sur tous les écrans
-- **Ambiance** : premium, institutionnel, ancré dans le territoire corse
-- **Responsive** : adapté mobile, tablette et desktop
-
----
-
-## Auteur
-
-Projet généré pour **Porto-Vecchio** dans le cadre du développement d'une plateforme territoriale intelligente.
-
----
-
-*Porto Flow — L'intelligence au service du territoire.*
+Projet Porto Flow — Tous droits réservés.  
+Conçu pour la ville de Porto-Vecchio.
