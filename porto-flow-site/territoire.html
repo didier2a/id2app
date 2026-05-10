@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Porto Flow — Territoire et Usagers. Découvrez Porto-Vecchio à deux rythmes, ses enjeux saisonniers et la fonction territoriale de Porto Flow." />
+  <meta name="theme-color" content="#0B1F33" />
+  <title>Territoire et Usagers — Porto Flow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-territoire">
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+
+      <a href="index.html" class="logo" aria-label="Porto Flow — Accueil">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">Porto <strong>Flow</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="territoire.html" class="nav-link nav-link--active" aria-current="page">Territoire</a>
+          </li>
+          <li class="nav-item">
+            <a href="application.html" class="nav-link">Application</a>
+          </li>
+          <li class="nav-item">
+            <a href="ecosysteme.html" class="nav-link">Écosystème</a>
+          </li>
+          <li class="nav-item">
+            <a href="ingenierie.html" class="nav-link">Ingénierie</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="application.html" class="btn btn--nav" aria-label="Découvrir l'application Porto Flow">
+        Découvrir l'app
+      </a>
+
+      <button
+        class="burger"
+        id="burger-btn"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        type="button"
+      >
+        <span class="burger-bar" aria-hidden="true"></span>
+        <span class="burger-bar" aria-hidden="true"></span>
+        <span class="burger-bar" aria-hidden="true"></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-list" role="list">
+        <li>
+          <a href="index.html" class="mobile-nav-link">Accueil</a>
+        </li>
+        <li>
+          <a href="territoire.html" class="mobile-nav-link mobile-nav-link--active" aria-current="page">Territoire</a>
+        </li>
+        <li>
+          <a href="application.html" class="mobile-nav-link">Application</a>
+        </li>
+        <li>
+          <a href="ecosysteme.html" class="mobile-nav-link">Écosystème</a>
+        </li>
+        <li>
+          <a href="ingenierie.html" class="mobile-nav-link">Ingénierie</a>
+        </li>
+        <li>
+          <a href="application.html" class="btn btn--primary mobile-nav-cta">Découvrir l'app</a>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
+
+<main id="main-content">
+
+  <!-- Section Hero Territoire -->
+  <section class="territoire-hero" aria-labelledby="territoire-hero-title">
+    <div class="container">
+      <div class="territoire-hero__inner">
+        <div class="territoire-hero__badge">
+          <span class="badge-dot"></span>
+          <span>Territoire & Usagers</span>
+        </div>
+        <h1 id="territoire-hero-title" class="territoire-hero__title">
+          Porto-Vecchio,<br>
+          <em>un territoire à deux vitesses</em>
+        </h1>
+        <p class="territoire-hero__subtitle">
+          Une micro-région insulaire d'exception, traversée chaque année par une vague humaine qui transforme radicalement ses besoins, ses flux et ses tensions. Porto Flow est conçu pour lire ce territoire en temps réel, quelle que soit la saison.
+        </p>
+        <div class="territoire-hero__stats" role="list" aria-label="Chiffres clés du territoire">
+          <div class="stat-card" role="listitem">
+            <span class="stat-card__number">15 000</span>
+            <span class="stat-card__label">habitants permanents</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-card__number">+200 000</span>
+            <span class="stat-card__label">visiteurs en haute saison</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-card__number">×13</span>
+            <span class="stat-card__label">pic de population estival</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-card__number">3 mois</span>
+            <span class="stat-card__label">de tension maximale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="territoire-hero__map-bg" aria-hidden="true">
+      <div class="topo-lines"></div>
+      <div class="map-glow"></div>
+    </div>
+  </section>
+
+  <!-- Section Deux Rythmes -->
+  <section class="deux-rythmes" aria-labelledby="deux-rythmes-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="deux-rythmes-title" class="section-title">Un territoire, deux réalités</h2>
+        <p class="section-subtitle">Porto-Vecchio n'est pas un territoire ordinaire. Il vit une dualité permanente entre calme insulaire et effervescence méditerranéenne.</p>
+      </div>
+
+      <div class="rythmes-grid">
+        <!-- Hors saison -->
+        <article class="rythme-card rythme-card--calme" aria-labelledby="rythme-calme-title">
+          <div class="rythme-card__header">
+            <div class="rythme-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="12" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+                <path d="M16 8 L16 16 L20 20" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="rythme-card__season">
+              <span class="season-tag season-tag--calme">Octobre → Mai</span>
+              <h3 id="rythme-calme-title">Porto-Vecchio au repos</h3>
+            </div>
+          </div>
+          <div class="rythme-card__body">
+            <p>Le territoire retrouve son souffle. Les habitants permanents reprennent possession de leur espace. Les commerces tournent au ralenti, les services publics fonctionnent à régime normal, les routes sont fluides.</p>
+            <ul class="rythme-card__list" aria-label="Caractéristiques hors saison">
+              <li>
+                <span class="list-icon" aria-hidden="true">◦</span>
+                Économie locale fragilisée, dépendance aux revenus estivaux
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">◦</span>
+                Services sous-utilisés, offre culturelle et commerciale réduite
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">◦</span>
+                Habitants isolés, mobilité contrainte par l'insularité
+              </li>
+              <li>
+                <span class="list-icon" aria-hidden="true">◦</span>
+                Opportunité de structuration et d'anticipation territoriale
+              </li>
+            </ul>
+          </div>
+          <div class="rythme-card__footer">
+            <div class="rythme-indicator rythme-indicator--low">
+              <span class="indicator-bar" style="--level: 20%"></span>
+              <span class="indicator-label">Intensité territoriale faible</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Haute saison -->
+        <article class="rythme-card rythme-card--intense" aria-labelledby="rythme-intense-title">
+          <div class="rythme-card__header">
+            <div class="rythme-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="6" fill="#D86F3C" opacity="0.3"/>
+                <circle cx="16" cy="16" r="3" fill="#D86F3C"/>
+                <path d="M16 4 L16 8 M16 24 L16 28 M4 16 L8 16 M24 16 L28 16" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7.5 7.5 L10.3 10.3 M21.7 21.7 L24.5 24.5 M7.5 24.5 L10.3 21.7 M21.7 10.3 L24.5 7.5" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="rythme-card__season">
+              <span class="season-tag season-tag--intense">Juin → Septembre</span>
+              <h3 id="rythme-intense-title">Porto-Vecchio sous tension</h3>
+            </div>
+          </div>
+          <div class="rythme-card__body">
+            <p>Le territoire explose. En quelques semaines, la population est multipliée par treize. Les infrastructures atteignent leurs limites, les flux deviennent ingérables, l'information se fragmente et les tensions montent.</p>
+            <ul class="rythme-card__list" aria-label="Caractéristiques haute saison">
+              <li>
+                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                Saturation des axes routiers, embouteillages chroniques
+              </li>
+              <li>
+                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                Plages et sites naturels surpeuplés, pression environnementale
+              </li>
+              <li>
+                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                Visiteurs désorientés, manque d'information en temps réel
+              </li>
+              <li>
+                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                Commerçants débordés, coordination impossible entre acteurs
+              </li>
+            </ul>
+          </div>
+          <div class="rythme-card__footer">
+            <div class="rythme-indicator rythme-indicator--high">
+              <span class="indicator-bar" style="--level: 95%"></span>
+              <span class="indicator-label">Intensité territoriale critique</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pont entre les deux -->
+      <div class="rythmes-bridge" aria-label="Porto Flow comme pont entre les deux rythmes">
+        <div class="bridge-line" aria-hidden="true"></div>
+        <div class="bridge-content">
+          <div class="bridge-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" stroke="#1F6F8B" stroke-width="1" fill="rgba(31,111,139,0.1)"/>
+              <path d="M14 24 C14 18 20 14 24 14 C28 14 34 18 34 24 C34 30 28 34 24 34 C20 34 14 30 14 24Z" stroke="#8FC7DA" stroke-width="1" fill="none" stroke-dasharray="3 2"/>
+              <circle cx="24" cy="24" r="4" fill="#1F6F8B"/>
+              <path d="M24 20 L24 24 L27 24" stroke="#FAF6EC" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="bridge-text">Porto Flow lit le territoire en continu, s'adapte à chaque rythme et transforme la complexité saisonnière en intelligence partagée.</p>
+        </div>
+        <div class="bridge-line" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Problèmes et Solutions -->
+  <section class="problemes-solutions" aria-labelledby="problemes-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="problemes-title" class="section-title">Ce que Porto Flow résout</h2>
+        <p class="section-subtitle">Des problèmes réels, structurels, que ni les applications génériques ni les outils institutionnels classiques ne savent adresser.</p>
+      </div>
+
+      <div class="problems-grid">
+
+        <article class="problem-item" aria-labelledby="prob-1-title">
+          <div class="problem-item__visual" aria-hidden="true">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14 4 L14 14 M14 18 L14 20" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="14" cy="14" r="11" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+          </div>
+          <div class="problem-item__content">
+            <h3 id="prob-1-title">L'information fragmentée</h3>
+            <p class="problem-desc">Les visiteurs arrivent sans carte mentale du territoire. Les informations sont dispersées entre sites institutionnels, réseaux sociaux, bouche-à-oreille et panneaux physiques obsolètes.</p>
+            <div class="solution-arrow" aria-hidden="true">→</div>
+            <p class="solution-desc">Porto Flow centralise et contextualise l'information en temps réel, géolocalisée, personnalisée selon le profil et le moment.</p>
+          </div>
+        </article>
+
+        <article class="problem-item" aria-labelledby="prob-2-title">
+          <div class="problem-item__visual" aria-hidden="true">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M4 14 L10 8 L16 14 L22 8" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M4 20 L10 14 L16 20 L22 14" stroke="#D86F3C" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="problem-item__content">
+            <h3 id="prob-2-title">La saturation des flux</h3>
+            <p class="problem-desc">Chaque matin d'été, les mêmes plages se remplissent en premier, les mêmes routes saturent, les mêmes restaurants affichent complet. Le territoire souffre d'une concentration irrationnelle des flux.</p>
+            <div class="solution-arrow" aria-hidden="true">→</div>
+            <p class="solution-desc">Porto Flow redistribue intelligemment les flux en suggérant des alternatives en temps réel, réduisant la pression sur les points chauds.</p>
+          </div>
+        </article>
+
+        <article class="problem-item" aria-labelledby="prob-3-title">
+          <div class="problem-item__visual" aria-hidden="true">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="6" y="8" width="16" height="12" rx="2" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
+                <path d="M10 8 L10 6 M18 8 L18 6" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 14 L18 14" stroke="#D86F3C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="problem-item__content">
+            <h3 id="prob-3-title">L'invisibilité des acteurs locaux</h3>
+            <p class="problem-desc">Les commerçants, artisans et producteurs locaux n'ont pas les outils pour se rendre visibles au bon moment, au bon endroit, auprès des bonnes personnes.</p>
+            <div class="solution-arrow" aria-hidden="true">→</div>
+            <p class="solution-desc">Porto Flow connecte l'offre locale à la demande en temps réel, avec une logique de recommandation contextuelle et de mise en avant dynamique.</p>
+          </div>
+        </article>
+
+        <article class="problem-item" aria-labelledby="prob-4-title">
+          <div class="problem-item__visual" aria-hidden="true">
+            <div class="problem-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="10" r="4" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
+                <path d="M6 22 C6 18 9.5 15 14 15 C18.5 15 22 18 22 22" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M20 8 L24 8 M22 6 L22 10" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="problem-item__content">
+            <h3 id="prob-4-title">L'absence de pilotage territorial</h3>
+            <p class="problem-desc">Les collectivités manquent d'outils de lecture en temps réel. Les décisions se prennent sur des données obsolètes, sans vision dynamique du territoire.</p>
+            <div class="solution-arrow" aria-hidden="true">→</div>
+            <p class="solution-desc">Porto Flow offre un tableau de bord territorial aux décideurs, avec des indicateurs vivants pour piloter le territoire avec précision.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Cas d'Usage -->
+  <section class="cas-usage" aria-labelledby="cas-usage-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="cas-usage-title" class="section-title">Porto Flow en action</h2>
+        <p class="section-subtitle">Des situations concrètes, vécues chaque jour sur le territoire, transformées par l'intelligence de Porto Flow.</p>
+      </div>
+
+      <div class="cas-usage-list">
+
+        <article class="cas-item" aria-labelledby="cas-1-title">
+          <div class="cas-item__number" aria-hidden="true">01</div>
+          <div class="cas-item__content">
+            <div class="cas-item__context">
+              <span class="cas-tag">Visiteur · Haute saison</span>
+              <h3 id="cas-1-title">La famille qui arrive sans plan</h3>
+            </div>
+            <div class="cas-item__scenario">
+              <div class="scenario-before">
+                <span class="scenario-label">Avant Porto Flow</span>
+                <p>Une famille débarque à Porto-Vecchio en juillet. Elle cherche une plage accessible avec des enfants, un restaurant ouvert le midi, et un parking disponible. Elle passe deux heures à chercher, se retrouve sur une plage bondée, mange dans un fast-food faute de mieux.</p>
+              </div>
+              <div class="scenario-divider" aria-hidden="true">
+                <span class="divider-icon">⟶</span>
+              </div>
+              <div class="scenario-after">
+                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
+                <p>L'assistant IA détecte leur profil, suggère la plage de Palombaggia Nord moins fréquentée à cette heure, indique un parking disponible à 200m, réserve une table chez un restaurateur partenaire avec vue mer. Expérience mémorable, retour garanti.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cas-item" aria-labelledby="cas-2-title">
+          <div class="cas-item__number" aria-hidden="true">02</div>
+          <div class="cas-item__content">
+            <div class="cas-item__context">
+              <span class="cas-tag">Restaurateur · Toute l'année</span>
+              <h3 id="cas-2-title">Le restaurateur qui veut remplir ses tables</h3>
+            </div>
+            <div class="cas-item__scenario">
+              <div class="scenario-before">
+                <span class="scenario-label">Avant Porto Flow</span>
+                <p>Un restaurateur du centre-ville voit ses tables vides le mardi soir alors que des centaines de visiteurs cherchent où dîner. Il n'a aucun moyen de se signaler en temps réel, aucun outil pour attirer les bonnes personnes au bon moment.</p>
+              </div>
+              <div class="scenario-divider" aria-hidden="true">
+                <span class="divider-icon">⟶</span>
+              </div>
+              <div class="scenario-after">
+                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
+                <p>Il publie une offre flash sur Porto Flow : "5 tables disponibles ce soir, menu spécial poisson local". L'IA la pousse aux visiteurs dans un rayon de 2km cherchant un restaurant. Ses tables se remplissent en 30 minutes.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cas-item" aria-labelledby="cas-3-title">
+          <div class="cas-item__number" aria-hidden="true">03</div>
+          <div class="cas-item__content">
+            <div class="cas-item__context">
+              <span class="cas-tag">Collectivité · Gestion de crise</span>
+              <h3 id="cas-3-title">La mairie face à une saturation imprévue</h3>
+            </div>
+            <div class="cas-item__scenario">
+              <div class="scenario-before">
+                <span class="scenario-label">Avant Porto Flow</span>
+                <p>Un samedi de juillet, la plage de Santa Giulia atteint sa capacité maximale. Des centaines de voitures cherchent à se garer, la route est bloquée sur 3km. La mairie apprend la situation par des appels de riverains excédés, deux heures après le début de l'engorgement.</p>
+              </div>
+              <div class="scenario-divider" aria-hidden="true">
+                <span class="divider-icon">⟶</span>
+              </div>
+              <div class="scenario-after">
+                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
+                <p>Le tableau de bord territorial détecte la montée en charge dès 9h. Une alerte est envoyée aux équipes. Porto Flow redirige automatiquement les visiteurs vers des plages alternatives. La saturation est évitée, la décision est prise en 10 minutes.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="cas-item" aria-labelledby="cas-4-title">
+          <div class="cas-item__number" aria-hidden="true">04</div>
+          <div class="cas-item__content">
+            <div class="cas-item__context">
+              <span class="cas-tag">Habitant · Hors saison</span>
+              <h3 id="cas-4-title">L'habitant qui redécouvre son territoire</h3>
+            </div>
+            <div class="cas-item__scenario">
+              <div class="scenario-before">
+                <span class="scenario-label">Avant Porto Flow</span>
+                <p>En novembre, un habitant de Porto-Vecchio cherche une activité pour le week-end. Il ne sait pas quels commerces sont ouverts, quels événements ont lieu, quels sentiers sont praticables. L'information hors saison est quasi inexistante.</p>
+              </div>
+              <div class="scenario-divider" aria-hidden="true">
+                <span class="divider-icon">⟶</span>
+              </div>
+              <div class="scenario-after">
+                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
+                <p>Porto Flow lui propose un programme personnalisé : marché de producteurs locaux samedi matin, randonnée sur le sentier des douaniers l'après-midi, concert au village le soir. Le territoire vit toute l'année, pas seulement en été.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Publics Ciblés -->
+  <section class="publics-cibles" aria-labelledby="publics-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="publics-title" class="section-title">Un outil pour chaque acteur du territoire</h2>
+        <p class="section-subtitle">Porto Flow n'est pas une application généraliste. Chaque public trouve une valeur spécifique, conçue pour ses besoins réels.</p>
+      </div>
+
+      <div class="publics-grid">
+
+        <article class="public-card" aria-labelledby="public-visiteurs-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="12" r="5" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M8 30 C8 24 12.5 20 18 20 C23.5 20 28 24 28 30" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M24 10 L28 10 M26 8 L26 12" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-visiteurs-title">Visiteurs & Touristes</h3>
+            <p class="public-card__desc">Découverte fluide du territoire, recommandations personnalisées, navigation en temps réel, réservations simplifiées.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les visiteurs">
+              <li>Carte interactive intelligente</li>
+              <li>Assistant IA multilingue</li>
+              <li>Alertes saturation en temps réel</li>
+              <li>Découverte de l'offre locale</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Usage principal</span>
+          </div>
+        </article>
+
+        <article class="public-card" aria-labelledby="public-habitants-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path d="M18 6 L30 16 L30 30 L6 30 L6 16 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+              <rect x="14" y="20" width="8" height="10" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+              <path d="M12 16 L18 10 L24 16" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-habitants-title">Habitants permanents</h3>
+            <p class="public-card__desc">Vie locale enrichie toute l'année, accès aux services, événements de proximité, lien avec le tissu local.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les habitants">
+              <li>Agenda local dynamique</li>
+              <li>Services de proximité</li>
+              <li>Alerte événements communautaires</li>
+              <li>Réseau de producteurs locaux</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Toute l'année</span>
+          </div>
+        </article>
+
+        <article class="public-card" aria-labelledby="public-commercants-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path d="M6 14 L8 8 L28 8 L30 14 L6 14 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M6 14 L6 28 L30 28 L30 14" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M14 28 L14 20 L22 20 L22 28" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-commercants-title">Commerçants & Restaurateurs</h3>
+            <p class="public-card__desc">Visibilité augmentée, gestion des flux clients, offres flash, tableau de bord de performance locale.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les commerçants">
+              <li>Profil établissement enrichi</li>
+              <li>Offres et promotions en temps réel</li>
+              <li>Statistiques de visibilité</li>
+              <li>Connexion avec les visiteurs</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Partenaire économique</span>
+          </div>
+        </article>
+
+        <article class="public-card" aria-labelledby="public-hoteliers-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <rect x="6" y="10" width="24" height="18" rx="2" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M6 18 L30 18" stroke="#8FC7DA" stroke-width="1" opacity="0.5"/>
+              <rect x="10" y="14" width="4" height="3" rx="0.5" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+              <rect x="22" y="14" width="4" height="3" rx="0.5" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+              <path d="M18 10 L18 6 M14 6 L22 6" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-hoteliers-title">Hôteliers & Hébergeurs</h3>
+            <p class="public-card__desc">Enrichissement de l'expérience client, services concierge augmentés, recommandations personnalisées pour les séjours.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les hôteliers">
+              <li>Intégration concierge digital</li>
+              <li>Recommandations pour les clients</li>
+              <li>Partenariats avec acteurs locaux</li>
+              <li>Données de satisfaction</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Partenaire premium</span>
+          </div>
+        </article>
+
+        <article class="public-card" aria-labelledby="public-collectivites-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path d="M18 4 L32 12 L32 14 L4 14 L4 12 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M8 14 L8 28 M14 14 L14 28 M22 14 L22 28 M28 14 L28 28" stroke="#8FC7DA" stroke-width="1" opacity="0.6"/>
+              <path d="M4 28 L32 28" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-collectivites-title">Collectivités & Mairie</h3>
+            <p class="public-card__desc">Tableau de bord territorial, pilotage des flux, données de fréquentation, aide à la décision en temps réel.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les collectivités">
+              <li>Dashboard territorial temps réel</li>
+              <li>Alertes de saturation</li>
+              <li>Données de fréquentation</li>
+              <li>Outils de communication citoyenne</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Partenaire institutionnel</span>
+          </div>
+        </article>
+
+        <article class="public-card" aria-labelledby="public-offices-title">
+          <div class="public-card__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <circle cx="18" cy="18" r="12" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+              <path d="M18 6 L18 30 M6 18 L30 18" stroke="#8FC7DA" stroke-width="1" opacity="0.4"/>
+              <path d="M10 10 C12 14 16 16 18 18 C20 20 24 22 26 26" stroke="#8FC7DA" stroke-width="1" fill="none" opacity="0.6"/>
+              <circle cx="18" cy="18" r="2" fill="#D86F3C"/>
+            </svg>
+          </div>
+          <div class="public-card__content">
+            <h3 id="public-offices-title">Offices de Tourisme</h3>
+            <p class="public-card__desc">Amplification de la promotion territoriale, données de fréquentation, mise en valeur de l'offre touristique locale.</p>
+            <ul class="public-card__benefits" aria-label="Bénéfices pour les offices de tourisme">
+              <li>Promotion territoriale augmentée</li>
+              <li>Données visiteurs anonymisées</li>
+              <li>Mise en avant des événements</li>
+              <li>Partenariats avec acteurs locaux</li>
+            </ul>
+          </div>
+          <div class="public-card__tag">
+            <span class="tag-badge">Partenaire stratégique</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Enjeux Environnementaux -->
+  <section class="enjeux-environnement" aria-labelledby="enjeux-title">
+    <div class="container">
+      <div class="enjeux-inner">
+        <div class="enjeux-content">
+          <div class="section-header section-header--left">
+            <h2 id="enjeux-title" class="section-title">Un territoire à préserver</h2>
+            <p class="section-subtitle">Porto-Vecchio est un joyau naturel fragile. Porto Flow intègre une dimension environnementale au cœur de sa logique territoriale.</p>
+          </div>
+          <div class="enjeux-list">
+            <div class="enjeu-item">
+              <div class="enjeu-item__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2 C12 2 4 8 4 14 C4 18.4 7.6 22 12 22 C16.4 22 20 18.4 20 14 C20 8 12 2 12 2Z" stroke="#1F6F8B" stroke-width="1.5" fill="none"/>
+                  <path d="M12 22 L12 12 M12 12 L8 8 M12 12 L16 9" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="enjeu-item__text">
+                <h4>Réduction de la pression sur les sites naturels</h4>
+                <p>En redistribuant les flux, Porto Flow protège les écosystèmes fragiles des plages et du maquis corse.</p>
+              </div>
+            </div>
+            <div class="enjeu-item">
+              <div class="enjeu-item__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="#1F6F8B" stroke-width="1.5" fill="none"/>
+                  <path d="M8 12 L11 15 L16 9" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="enjeu-item__text">
+                <h4>Mobilité douce et alternatives à la voiture</h4>
+                <p>Porto Flow valorise les modes de déplacement alternatifs, les navettes, les pistes cyclables et les sentiers pédestres.</p>
+              </div>
+            </div>
+            <div class="enjeu-item">
+              <div class="enjeu-item__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 12 C3 7 7 3 12 3 C17 3 21 7 21 12" stroke="#1F6F8B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  <path d="M3 12 C3 17 7 21 12 21 C17 21 21 17 21 12" stroke="#1F6F8B" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+                  <path d="M12 7 L12 12 L15 15" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="enjeu-item__text">
+                <h4>Tourisme durable et économie circulaire</h4>
+                <p>En connectant visiteurs et producteurs locaux, Porto Flow favorise une économie territoriale plus vertueuse et moins dépendante des grandes plateformes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="enjeux-visual" aria-hidden="true">
+          <div class="enjeux-map-container">
+            <div class="enjeux-map-bg"></div>
+            <div class="enjeux-map-overlay">
+              <div class="map-point map-point--1">
+                <span class="map-point__dot"></span>
+                <span class="map-point__label">Plages protégées</span>
+              </div>
+              <div class="map-point map-point--2">
+                <span class="map-point__dot"></span>
+                <span class="map-point__label">Maquis corse</span>
+              </div>
+              <div class="map-point map-point--3">
+                <span class="map-point__dot"></span>
+                <span class="map-point__label">Zones naturelles</span>
+              </div>
+              <div class="map-point map-point--4">
+                <span class="map-point__dot map-point__dot--active"></span>
+                <span class="map-point__label">Porto-Vecchio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CTA Territoire -->
+  <section class="territoire-cta" aria-labelledby="territoire-cta-title">
+    <div class="container">
+      <div class="territoire-cta__inner">
+        <div class="territoire-cta__content">
+          <h2 id="territoire-cta-title" class="territoire-cta__title">
+            Prêt à explorer Porto Flow en détail ?
+          </h2>
+          <p class="territoire-cta__text">
+            Découvrez l'application, l'écosystème économique et la vision d'ingénierie qui font de Porto Flow un projet unique.
+          </p>
+          <div class="territoire-cta__actions">
+            <a href="application.html" class="btn btn--primary" aria-label="Découvrir l'application Porto Flow">
+              <span>Voir l'application</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8 L13 8 M9 4 L13 8 L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="ecosysteme.html" class="btn btn--secondary" aria-label="Découvrir l'écosystème Porto Flow">
+              <span>L'écosystème local</span>
+            </a>
+          </div>
+        </div>
+        <div class="territoire-cta__decoration" aria-hidden="true">
+          <div class="cta-compass">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="60" r="55" stroke="#1F6F8B" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="60" cy="60" r="40" stroke="#1F6F8B" stroke-width="0.5" opacity="0.2"/>
+              <circle cx="60" cy="60" r="25" stroke="#1F6F8B" stroke-width="0.5" opacity="0.15"/>
+              <path d="M60 10 L60 110 M10 60 L110 60" stroke="#1F6F8B" stroke-width="0.5" opacity="0.2"/>
+              <path d="M60 20 L65 60 L60 100 L55 60 Z" fill="#D86F3C" opacity="0.8"/>
+              <path d="M20 60 L60 55 L100 60 L60 65 Z" fill="#8FC7DA" opacity="0.6"/>
+              <circle cx="60" cy="60" r="4" fill="#FAF6EC"/>
+              <text x="60" y="8" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">N</text>
+              <text x="60" y="116" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">S</text>
+              <text x="6" y="63" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">O</text>
+              <text x="114" y="63" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">E</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo" aria-label="Porto Flow - Retour à l'accueil">
+          <span class="footer-logo__mark" aria-hidden="true">◈</span>
+          <span class="footer-logo__name">Porto Flow</span>
+        </a>
+        <p class="footer-tagline">Le système nerveux numérique de Porto-Vecchio.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav__list" role="list">
+          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
+          <li><a href="territoire.html" class="footer-nav__link footer-nav__link--active" aria-current="page">Territoire</a></li>
+          <li><a href="application.html" class="footer-nav__link">Application</a></li>
+          <li><a href="ecosysteme.html" class="footer-nav__link">Écosystème</a></li>
+          <li><a href="ingenierie.html" class="footer-nav__link">Ingénierie</a></li>
+        </ul>
+      </nav>
+      <div class="footer-meta">
+        <p class="footer-copyright">
+          <span aria-hidden="true">©</span> 2024 Porto Flow. Tous droits réservés.
+        </p>
+        <p class="footer-location">
+          <span aria-hidden="true">◦</span> Porto-Vecchio, Corse-du-Sud
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut de page" hidden>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M10 16 L10 4 M4 10 L10 4 L16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
