@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Porto Flow — L'application territoriale intelligente dédiée à Porto-Vecchio. Découvrez la ville autrement : mobilité, culture, nature et services en un seul flux." />
+  <meta name="keywords" content="Porto-Vecchio, application territoriale, smart city, mobilité, tourisme, Corse, Porto Flow" />
+  <meta name="author" content="Porto Flow" />
+  <meta property="og:title" content="Porto Flow — Porto-Vecchio Intelligente" />
+  <meta property="og:description" content="L'application territoriale intelligente dédiée à Porto-Vecchio. Mobilité, culture, nature et services en un seul flux." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="theme-color" content="#0a1628" />
+  <title>Porto Flow — L'application territoriale intelligente de Porto-Vecchio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER STICKY
+  ═══════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner container">
+
+      <a href="#hero" class="logo" aria-label="Porto Flow — Retour à l'accueil">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="url(#logo-gradient)" stroke-width="2"/>
+            <path d="M10 24 Q18 8 26 24" stroke="url(#logo-gradient)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <circle cx="18" cy="18" r="3" fill="url(#logo-gradient)"/>
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#3ecfcf"/>
+                <stop offset="100%" stop-color="#6c63ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">Porto<strong>Flow</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+          <li><a href="#territory" class="nav-link">Le Territoire</a></li>
+          <li><a href="#how-it-works" class="nav-link">Comment ça marche</a></li>
+          <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Accéder à l'app</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION HERO
+    ═══════════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+
+      <div class="hero__background" aria-hidden="true">
+        <div class="hero__gradient-orb hero__gradient-orb--teal"></div>
+        <div class="hero__gradient-orb hero__gradient-orb--purple"></div>
+        <div class="hero__gradient-orb hero__gradient-orb--gold"></div>
+        <div class="hero__grid-overlay"></div>
+      </div>
+
+      <div class="hero__inner container">
+
+        <div class="hero__content">
+
+          <div class="hero__badge" aria-label="Disponible maintenant">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span>Disponible maintenant sur Porto-Vecchio</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            La ville de Porto-Vecchio,<br />
+            <span class="hero__title-accent">dans votre poche.</span>
+          </h1>
+
+          <p class="hero__description">
+            Porto Flow connecte les habitants et les visiteurs au territoire vivant de Porto-Vecchio.
+            Mobilité en temps réel, agenda culturel, richesses naturelles et services municipaux —
+            réunis dans une expérience fluide et intelligente.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--large">
+              <span>Découvrir l'application</span>
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost btn--large">
+              <svg class="btn__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 7l5 3-5 3V7z" fill="currentColor"/>
+              </svg>
+              <span>Voir la démo</span>
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Chiffres clés">
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-value">12 000+</span>
+              <span class="hero__stat-label">Utilisateurs actifs</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-value">98%</span>
+              <span class="hero__stat-label">Satisfaction</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-value">47</span>
+              <span class="hero__stat-label">Services intégrés</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__device">
+            <div class="hero__device-frame">
+              <div class="hero__device-screen">
+                <div class="hero__app-ui">
+
+                  <div class="app-ui__statusbar">
+                    <span>9:41</span>
+                    <span class="app-ui__statusicons">
+                      <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><rect x="0" y="4" width="3" height="8" rx="1"/><rect x="4.5" y="2.5" width="3" height="9.5" rx="1"/><rect x="9" y="0.5" width="3" height="11.5" rx="1"/><rect x="13.5" y="0" width="2.5" height="12" rx="1" opacity=".3"/></svg>
+                    </span>
+                  </div>
+
+                  <div class="app-ui__header">
+                    <div class="app-ui__greeting">
+                      <p class="app-ui__greeting-sub">Bonjour, Marco 👋</p>
+                      <p class="app-ui__greeting-main">Porto-Vecchio</p>
+                    </div>
+                    <div class="app-ui__avatar"></div>
+                  </div>
+
+                  <div class="app-ui__map-preview">
+                    <div class="app-ui__map-dot app-ui__map-dot--1"></div>
+                    <div class="app-ui__map-dot app-ui__map-dot--2"></div>
+                    <div class="app-ui__map-dot app-ui__map-dot--3"></div>
+                    <div class="app-ui__map-line app-ui__map-line--1"></div>
+                    <div class="app-ui__map-line app-ui__map-line--2"></div>
+                    <div class="app-ui__map-label">Vieille Ville</div>
+                  </div>
+
+                  <div class="app-ui__cards">
+                    <div class="app-ui__card app-ui__card--active">
+                      <div class="app-ui__card-icon">🚌</div>
+                      <div class="app-ui__card-info">
+                        <span class="app-ui__card-title">Navette Centre</span>
+                        <span class="app-ui__card-sub">Arrive dans 3 min</span>
+                      </div>
+                      <span class="app-ui__card-badge">LIVE</span>
+                    </div>
+                    <div class="app-ui__card">
+                      <div class="app-ui__card-icon">🎭</div>
+                      <div class="app-ui__card-info">
+                        <span class="app-ui__card-title">Festa di a Citadella</span>
+                        <span class="app-ui__card-sub">Ce soir · 20h00</span>
+                      </div>
+                    </div>
+                    <div class="app-ui__card">
+                      <div class="app-ui__card-icon">🌊</div>
+                      <div class="app-ui__card-info">
+                        <span class="app-ui__card-title">Plage Palombaggia</span>
+                        <span class="app-ui__card-sub">Qualité eau · Excellente</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="app-ui__navbar">
+                    <div class="app-ui__nav-item app-ui__nav-item--active">🗺️</div>
+                    <div class="app-ui__nav-item">📅</div>
+                    <div class="app-ui__nav-item">🌿</div>
+                    <div class="app-ui__nav-item">⚙️</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="hero__device-glow"></div>
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--top">
+            <span class="hero__floating-card-icon">📍</span>
+            <div>
+              <strong>Citadelle Génoise</strong>
+              <span>4.9 ★ · Ouvert</span>
+            </div>
+          </div>
+
+          <div class="hero__floating-card hero__floating-card--bottom">
+            <span class="hero__floating-card-icon">🌡️</span>
+            <div>
+              <strong>28°C · Ensoleillé</strong>
+              <span>Porto-Vecchio, Corse</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Découvrir</span>
+      </div>
+
+    </section>
+
+<!-- ============================================================
+   SECTION : POURQUOI PORTO FLOW
+   ============================================================ -->
+<section id="concept" class="section section--concept">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Pourquoi Porto Flow</span>
+      <h2 class="section-title">Un territoire d'exception mérite une intelligence à sa hauteur</h2>
+      <p class="section-subtitle">Porto-Vecchio concentre en quelques semaines des flux humains, économiques et environnementaux parmi les plus intenses du littoral méditerranéen. Porto Flow transforme cette complexité en clarté opérationnelle.</p>
+    </div>
+
+    <div class="concept-grid">
+      <article class="concept-card concept-card--highlight">
+        <div class="concept-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 14v10l6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 24h2M32 24h2M24 14v-2M24 34v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="concept-card__title">Saisonnalité extrême</h3>
+        <p class="concept-card__text">De 15 000 résidents permanents à plus de 250 000 visiteurs en juillet-août, Porto-Vecchio vit une transformation radicale. Porto Flow anticipe, modélise et guide chaque pic d'activité.</p>
+        <div class="concept-card__stat">
+          <span class="stat-number">×17</span>
+          <span class="stat-label">Densité de population en haute saison</span>
+        </div>
+      </article>
+
+      <article class="concept-card">
+        <div class="concept-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 36L20 24l8 8 12-16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="38" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="concept-card__title">Données en temps réel</h3>
+        <p class="concept-card__text">Agrégation continue des flux de mobilité, de la qualité environnementale, de la fréquentation des sites naturels et des indicateurs économiques locaux.</p>
+      </article>
+
+      <article class="concept-card">
+        <div class="concept-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 24h16M16 30h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="24" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class="concept-card__title">Décisions éclairées</h3>
+        <p class="concept-card__text">Des tableaux de bord intuitifs destinés aux élus, aux gestionnaires de sites et aux acteurs économiques pour une gouvernance territoriale proactive.</p>
+      </article>
+
+      <article class="concept-card">
+        <div class="concept-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M24 6C14.06 6 6 14.06 6 24s8.06 18 18 18 18-8.06 18-18S33.94 6 24 6z" stroke="currentColor" stroke-width="2"/>
+            <path d="M6 24h36M24 6c-4 4-6 10-6 18s2 14 6 18M24 6c4 4 6 10 6 18s-2 14-6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="concept-card__title">Ancrage local</h3>
+        <p class="concept-card__text">Conçu avec et pour Porto-Vecchio. Chaque module reflète les réalités du terrain corse : biodiversité, tourisme balnéaire, réseaux routiers contraints et patrimoine naturel exceptionnel.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+   SECTION : TERRITOIRE À FORTE SAISONNALITÉ
+   ============================================================ -->
+<section id="territoire" class="section section--territoire">
+  <div class="container">
+    <div class="territoire-inner">
+      <div class="territoire-visual">
+        <div class="territoire-map" role="img" aria-label="Visualisation territoriale de Porto-Vecchio">
+          <div class="map-pulse map-pulse--1"></div>
+          <div class="map-pulse map-pulse--2"></div>
+          <div class="map-pulse map-pulse--3"></div>
+          <div class="map-nodes">
+            <div class="map-node map-node--primary" data-label="Centro Storico">
+              <span class="node-dot"></span>
+              <span class="node-label">Centro Storico</span>
+            </div>
+            <div class="map-node map-node--secondary" data-label="Palombaggia">
+              <span class="node-dot"></span>
+              <span class="node-label">Palombaggia</span>
+            </div>
+            <div class="map-node map-node--secondary" data-label="Golfe de Santa Giulia">
+              <span class="node-dot"></span>
+              <span class="node-label">Santa Giulia</span>
+            </div>
+            <div class="map-node map-node--tertiary" data-label="Port de plaisance">
+              <span class="node-dot"></span>
+              <span class="node-label">Port</span>
+            </div>
+            <div class="map-node map-node--tertiary" data-label="Forêt de l'Ospédale">
+              <span class="node-dot"></span>
+              <span class="node-label">Ospédale</span>
+            </div>
+          </div>
+          <div class="map-flow-lines" aria-hidden="true">
+            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#E8A87C" stop-opacity="0.8"/>
+                  <stop offset="100%" stop-color="#C0392B" stop-opacity="0.2"/>
+                </linearGradient>
+                <linearGradient id="flowGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#2980B9" stop-opacity="0.6"/>
+                  <stop offset="100%" stop-color="#1A5276" stop-opacity="0.1"/>
+                </linearGradient>
+              </defs>
+              <path d="M200 200 Q260 140 300 80" stroke="url(#flowGrad1)" stroke-width="3" fill="none" class="flow-path"/>
+              <path d="M200 200 Q280 220 340 260" stroke="url(#flowGrad2)" stroke-width="2.5" fill="none" class="flow-path"/>
+              <path d="M200 200 Q120 250 80 300" stroke="url(#flowGrad1)" stroke-width="2" fill="none" class="flow-path"/>
+              <path d="M200 200 Q160 130 140 60" stroke="url(#flowGrad2)" stroke-width="2" fill="none" class="flow-path"/>
+              <path d="M200 200 Q240 280 220 340" stroke="url(#flowGrad1)" stroke-width="1.8" fill="none" class="flow-path"/>
+              <circle cx="200" cy="200" r="6" fill="#E8A87C" opacity="0.9"/>
+              <circle cx="200" cy="200" r="12" fill="#E8A87C" opacity="0.3"/>
+              <circle cx="200" cy="200" r="20" fill="#E8A87C" opacity="0.1"/>
+            </svg>
+          </div>
+        </div>
+        <div class="territoire-stats-overlay">
+          <div class="overlay-stat">
+            <span class="overlay-stat__number">250k+</span>
+            <span class="overlay-stat__label">Visiteurs en août</span>
+          </div>
+          <div class="overlay-stat">
+            <span class="overlay-stat__number">14</span>
+            <span class="overlay-stat__label">Plages surveillées</span>
+          </div>
+          <div class="overlay-stat">
+            <span class="overlay-stat__number">80km</span>
+            <span class="overlay-stat__label">De littoral protégé</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="territoire-content">
+        <span class="section-tag">Le défi saisonnier</span>
+        <h2 class="section-title section-title--left">Un territoire sous tension entre juillet et août</h2>
+        <p class="territoire-intro">Porto-Vecchio est l'une des destinations les plus prisées de Méditerranée. Ce succès génère des pressions considérables sur les infrastructures, l'environnement et la qualité de vie des résidents.</p>
+
+        <div class="challenge-list">
+          <div class="challenge-item">
+            <div class="challenge-item__icon challenge-item__icon--mobility">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4 16h24M16 4v24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="challenge-item__content">
+              <h4>Congestion et mobilité</h4>
+              <p>Les axes routiers atteignent la saturation dès 9h en saison. Porto Flow anticipe les flux et propose des alternatives en temps réel.</p>
+            </div>
+          </div>
+
+          <div class="challenge-item">
+            <div class="challenge-item__icon challenge-item__icon--environment">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M16 4C10.48 4 6 8.48 6 14c0 7 10 18 10 18s10-11 10-18c0-5.52-4.48-10-10-10z" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="16" cy="14" r="3" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <div class="challenge-item__content">
+              <h4>Pression environnementale</h4>
+              <p>Les écosystèmes côtiers et les forêts subissent une fréquentation intense. Porto Flow surveille les indicateurs critiques et déclenche des alertes préventives.</p>
+            </div>
+          </div>
+
+          <div class="challenge-item">
+            <div class="challenge-item__icon challenge-item__icon--economy">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 24l6-8 5 5 5-9 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="challenge-item__content">
+              <h4>Économie hyper-concentrée</h4>
+              <p>80 % du chiffre d'affaires local se génère sur 8 semaines. Porto Flow aide les acteurs économiques à maximiser chaque opportunité et à préparer la basse saison.</p>
+            </div>
+          </div>
+
+          <div class="challenge-item">
+            <div class="challenge-item__icon challenge-item__icon--safety">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M16 4L6 9v8c0 6.18 4.32 11.96 10 13.36C21.68 28.96 26 23.18 26 17V9L16 4z" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M12 16l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="challenge-item__content">
+              <h4>Sécurité et services publics</h4>
+              <p>Gestion des urgences, coordination des secours côtiers, allocation optimale des ressources municipales sur des populations multipliées par 17.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+   SECTION : BÉNÉFICES ET FONCTIONNALITÉS
+   ============================================================ -->
+<section id="fonctionnalites" class="section section--features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Fonctionnalités</span>
+      <h2 class="section-title">Tout ce dont votre territoire a besoin</h2>
+      <p class="section-subtitle">Porto Flow réunit dans une plateforme unifiée l'ensemble des outils nécessaires à la gestion intelligente d'un territoire touristique d'exception.</p>
+    </div>
+
+    <div class="features-showcase">
+      <div class="features-nav" role="tablist" aria-label="Modules de Porto Flow">
+        <button class="feature-nav-btn feature-nav-btn--active" role="tab" aria-selected="true" aria-controls="feature-panel-1" data-feature="mobility">
+          <span class="feature-nav-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12h18M12 3l9 9-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="feature-nav-btn__label">Mobilité</span>
+        </button>
+        <button class="feature-nav-btn" role="tab" aria-selected="false" aria-controls="feature-panel-2" data-feature="environment">
+          <span class="feature-nav-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 3c2 4 2 14 0 18M3 12c4-2 14-2 18 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="feature-nav-btn__label">Environnement</span>
+        </button>
+        <button class="feature-nav-btn" role="tab" aria-selected="false" aria-controls="feature-panel-3" data-feature="economy">
+          <span class="feature-nav-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 17l4-5 4 3 4-6 4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 21h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="feature-nav-btn__label">Économie</span>
+        </button>
+        <button class="feature-nav-btn" role="tab" aria-selected="false" aria-controls="feature-panel-4" data-feature="governance">
+          <span class="feature-nav-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/>
+              <rect x="13" y="3" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/>
+              <rect x="3" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/>
+              <rect x="13" y="13" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="feature-nav-btn__label">Gouvernance</span>
+        </button>
+        <button class="feature-nav-btn" role="tab" aria-selected="false" aria-controls="feature-panel-5" data-feature="citizens">
+          <span class="feature-nav-btn__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9" cy="7" r="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M3 21v-2a6 6 0 0 1 12 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.85" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="feature-nav-btn__label">Citoyens</span>
+        </button>
+      </div>
+
+      <div class="features-panels">
+        <!-- Panel 1 : Mobilité -->
+        <div class="feature-panel feature-panel--active" id="feature-panel-1" role="tabpanel" aria-labelledby="tab-mobility">
+          <div class="feature-panel__content">
+            <div class="feature-panel__badge">Module 01</div>
+            <h3 class="feature-panel__title">Intelligence de la mobilité</h3>
+            <p class="feature-panel__description">Visualisez, anticipez et optimisez les flux de circulation sur l'ensemble du territoire. Des algorithmes prédictifs analysent les patterns historiques et les données en temps réel pour suggérer des stratégies de gestion proactive.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Cartographie des flux en temps réel
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Prédiction des congestions à 2h, 6h et 24h
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Gestion intelligente des parkings
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Optimisation des navettes saisonnières
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Intégration des données ferry et aéroport
+              </li>
+            </ul>
+            <div class="feature-panel__metrics">
+              <div class="panel-metric">
+                <span class="panel-metric__value">-34%</span>
+                <span class="panel-metric__label">Temps de congestion</span>
+              </div>
+              <div class="panel-metric">
+                <span class="panel-metric__value">+28%</span>
+                <span class="panel-metric__label">Satisfaction visiteurs</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel__visual" aria-hidden="true">
+            <div class="feature-visual feature-visual--mobility">
+              <div class="visual-dashboard">
+                <div class="dashboard-header">
+                  <div class="dashboard-title">Mobilité — Temps réel</div>
+                  <div class="dashboard-status dashboard-status--live">
+                    <span class="live-dot"></span>Live
+                  </div>
+                </div>
+                <div class="dashboard-chart">
+                  <div class="chart-bars">
+                    <div class="chart-bar" style="--h: 40%;" data-time="06h"></div>
+                    <div class="chart-bar" style="--h: 55%;" data-time="07h"></div>
+                    <div class="chart-bar" style="--h: 72%;" data-time="08h"></div>
+                    <div class="chart-bar chart-bar--peak" style="--h: 95%;" data-time="09h"></div>
+                    <div class="chart-bar chart-bar--peak" style="--h: 88%;" data-time="10h"></div>
+                    <div class="chart-bar" style="--h: 76%;" data-time="11h"></div>
+                    <div class="chart-bar" style="--h: 80%;" data-time="12h"></div>
+                    <div class="chart-bar chart-bar--current" style="--h: 65%;" data-time="13h"></div>
+                  </div>
+                </div>
+                <div class="dashboard-alerts">
+                  <div class="alert-item alert-item--warning">
+                    <span class="alert-dot"></span>
+                    Route D568 — Saturation prévue à 16h30
+                  </div>
+                  <div class="alert-item alert-item--info">
+                    <span class="alert-dot"></span>
+                    Parking Palombaggia — 87% capacité
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2 : Environnement -->
+        <div class="feature-panel" id="feature-panel-2" role="tabpanel" aria-labelledby="tab-environment" hidden>
+          <div class="feature-panel__content">
+            <div class="feature-panel__badge">Module 02</div>
+            <h3 class="feature-panel__title">Surveillance environnementale</h3>
+            <p class="feature-panel__description">Protection active des écosystèmes remarquables de Porto-Vecchio. Qualité de l'eau, fréquentation des zones naturelles sensibles, risques incendie : Porto Flow centralise tous les capteurs en un tableau de bord unifié.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Qualité de l'eau en temps réel (16 points de mesure)
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Indice de fréquentation des zones protégées
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Alertes incendie et risques naturels
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Suivi des espèces marines côtières
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Rapports de conformité environnementale
+              </li>
+            </ul>
+            <div class="feature-panel__metrics">
+              <div class="panel-metric">
+                <span class="panel-metric__value">16</span>
+                <span class="panel-metric__label">Capteurs actifs</span>
+              </div>
+              <div class="panel-metric">
+                <span class="panel-metric__value">98%</span>
+                <span class="panel-metric__label">Uptime de surveillance</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel__visual" aria-hidden="true">
+            <div class="feature-visual feature-visual--environment">
+              <div class="visual-dashboard">
+                <div class="dashboard-header">
+                  <div class="dashboard-title">Environnement — Qualité eau</div>
+                  <div class="dashboard-status dashboard-status--good">Excellent</div>
+                </div>
+                <div class="env-indicators">
+                  <div class="env-indicator">
+                    <div class="env-indicator__label">Palombaggia</div>
+                    <div class="env-indicator__bar">
+                      <div class="env-bar-fill" style="--w: 96%; --color: #27AE60;"></div>
+                    </div>
+                    <div class="env-indicator__value env-indicator__value--good">96/100</div>
+                  </div>
+                  <div class="env-indicator">
+                    <div class="env-indicator__label">Santa Giulia</div>
+                    <div class="env-indicator__bar">
+                      <div class="env-bar-fill" style="--w: 92%; --color: #27AE60;"></div>
+                    </div>
+                    <div class="env-indicator__value env-indicator__value--good">92/100</div>
+                  </div>
+                  <div class="env-indicator">
+                    <div class="env-indicator__label">Cala Rossa</div>
+                    <div class="env-indicator__bar">
+                      <div class="env-bar-fill" style="--w: 78%; --color: #F39C12;"></div>
+                    </div>
+                    <div class="env-indicator__value env-indicator__value--warn">78/100</div>
+                  </div>
+                  <div class="env-indicator">
+                    <div class="env-indicator__label">Rondinara</div>
+                    <div class="env-indicator__bar">
+                      <div class="env-bar-fill" style="--w: 94%; --color: #27AE60;"></div>
+                    </div>
+                    <div class="env-indicator__value env-indicator__value--good">94/100</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3 : Économie -->
+        <div class="feature-panel" id="feature-panel-3" role="tabpanel" aria-labelledby="tab-economy" hidden>
+          <div class="feature-panel__content">
+            <div class="feature-panel__badge">Module 03</div>
+            <h3 class="feature-panel__title">Observatoire économique</h3>
+            <p class="feature-panel__description">Suivez les indicateurs économiques du territoire en temps réel. Taux de remplissage, transactions commerciales, tendances de consommation : construisez des stratégies fondées sur des données fiables.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Taux de remplissage hébergements (hôtels, villas, camping)
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Analyse des dépenses par zone et par profil
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Baromètre saisonnier comparatif
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Prévisions de fréquentation à 30 et 90 jours
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Rapports personnalisés pour les acteurs locaux
+              </li>
+            </ul>
+            <div class="feature-panel__metrics">
+              <div class="panel-metric">
+                <span class="panel-metric__value">+19%</span>
+                <span class="panel-metric__label">Revenus saison étendue</span>
+              </div>
+              <div class="panel-metric">
+                <span class="panel-metric__value">4 500+</span>
+                <span class="panel-metric__label">Établissements connectés</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel__visual" aria-hidden="true">
+            <div class="feature-visual feature-visual--economy">
+              <div class="visual-dashboard">
+                <div class="dashboard-header">
+                  <div class="dashboard-title">Économie — Saison 2024</div>
+                  <div class="dashboard-status dashboard-status--live">
+                    <span class="live-dot"></span>Live
+                  </div>
+                </div>
+                <div class="economy-rings">
+                  <div class="ring-chart">
+                    <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                      <circle cx="60" cy="60" r="50" fill="none" stroke="#E8A87C" stroke-width="12" stroke-dasharray="251" stroke-dashoffset="60" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                      <text x="60" y="56" text-anchor="middle" fill="white" font-size="18" font-weight="700">92%</text>
+                      <text x="60" y="72" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9">Remplissage</text>
+                    </svg>
+                  </div>
+                  <div class="economy-kpis">
+                    <div class="economy-kpi">
+                      <span class="economy-kpi__label">Hôtellerie</span>
+                      <span class="economy-kpi__value">97%</span>
+                    </div>
+                    <div class="economy-kpi">
+                      <span class="economy-kpi__label">Location saisonnière</span>
+                      <span class="economy-kpi__value">89%</span>
+                    </div>
+                    <div class="economy-kpi">
+                      <span class="economy-kpi__label">Camping</span>
+                      <span class="economy-kpi__value">94%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4 : Gouvernance -->
+        <div class="feature-panel" id="feature-panel-4" role="tabpanel" aria-labelledby="tab-governance" hidden>
+          <div class="feature-panel__content">
+            <div class="feature-panel__badge">Module 04</div>
+            <h3 class="feature-panel__title">Tableau de bord de gouvernance</h3>
+            <p class="feature-panel__description">Un espace de pilotage exclusif pour les décideurs publics. Suivi des KPIs municipaux, rapports automatisés, alertes critiques et outils d'aide à la décision pour une gouvernance agile et transparente.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Tableau de bord exécutif personnalisable
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Rapports automatiques hebdomadaires et mensuels
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Système d'alerte et d'escalade multi-niveaux
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Coordination interservices en temps réel
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Simulation de scénarios décisionnels
+              </li>
+            </ul>
+            <div class="feature-panel__metrics">
+              <div class="panel-metric">
+                <span class="panel-metric__value">-62%</span>
+                <span class="panel-metric__label">Temps de décision critique</span>
+              </div>
+              <div class="panel-metric">
+                <span class="panel-metric__value">100%</span>
+                <span class="panel-metric__label">Traçabilité décisionnelle</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel__visual" aria-hidden="true">
+            <div class="feature-visual feature-visual--governance">
+              <div class="visual-dashboard">
+                <div class="dashboard-header">
+                  <div class="dashboard-title">Gouvernance — Vue exécutive</div>
+                  <div class="dashboard-status dashboard-status--good">Opérationnel</div>
+                </div>
+                <div class="governance-kpis">
+                  <div class="gov-kpi gov-kpi--green">
+                    <div class="gov-kpi__icon">✓</div>
+                    <div class="gov-kpi__info">
+                      <span class="gov-kpi__name">Services actifs</span>
+                      <span class="gov-kpi__val">18 / 18</span>
+                    </div>
+                  </div>
+                  <div class="gov-kpi gov-kpi--orange">
+                    <div class="gov-kpi__icon">!</div>
+                    <div class="gov-kpi__info">
+                      <span class="gov-kpi__name">Alertes ouvertes</span>
+                      <span class="gov-kpi__val">3 alertes</span>
+                    </div>
+                  </div>
+                  <div class="gov-kpi gov-kpi--blue">
+                    <div class="gov-kpi__icon">↑</div>
+                    <div class="gov-kpi__info">
+                      <span class="gov-kpi__name">Satisfaction citoyenne</span>
+                      <span class="gov-kpi__val">4.6 / 5</span>
+                    </div>
+                  </div>
+                  <div class="gov-kpi gov-kpi--purple">
+                    <div class="gov-kpi__icon">⌛</div>
+                    <div class="gov-kpi__info">
+                      <span class="gov-kpi__name">Délai moyen résolution</span>
+                      <span class="gov-kpi__val">1h 12min</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 5 : Citoyens -->
+        <div class="feature-panel" id="feature-panel-5" role="tabpanel" aria-labelledby="tab-citizens" hidden>
+          <div class="feature-panel__content">
+            <div class="feature-panel__badge">Module 05</div>
+            <h3 class="feature-panel__title">Portail citoyen et visiteur</h3>
+            <p class="feature-panel__description">Donnez à chaque habitant et visiteur les informations dont il a besoin : conditions de baignade, temps d'attente, événements, suggestions d'itinéraires. Une ville qui communique avec ses usagers.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Application mobile et portail web accessibles
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Alertes météo et conditions de baignade
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Signalement citoyen géolocalisé
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Agenda territorial et événements locaux
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__check" aria-hidden="true"></span>
+                Guide interactif du territoire
+              </li>
+            </ul>
+            <div class="feature-panel__metrics">
+              <div class="panel-metric">
+                <span class="panel-metric__value">45k+</span>
+                <span class="panel-metric__label">Utilisateurs actifs en saison</span>
+              </div>
+              <div class="panel-metric">
+                <span class="panel-metric__value">4.8★</span>
+                <span class="panel-metric__label">Note app store</span>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel__visual" aria-hidden="true">
+            <div class="feature-visual feature-visual--citizens">
+              <div class="visual-phone">
+                <div class="phone-screen">
+                  <div class="phone-header">
+                    <span class="phone-time">13:45</span>
+                    <span class="phone-app-name">Porto Flow</span>
+                  </div>
+                  <div class="phone-content">
+                    <div class="phone-greeting">Bonjour, visiteur 👋</div>
+                    <div class="phone-beach-card">
+                      <div class="beach-card-title">Palombaggia</div>
+                      <div class="beach-card-status beach-card-status--open">Ouvert — Eau excellente</div>
+                      <div class="beach-card-meta">
+                        <span>🌊 24°C</span>
+                        <span>☀️ 32°C</span>
+                        <span>👥 Modéré</span>
+                      </div>
+                    </div>
+                    <div class="phone-alert">
+                      <span class="phone-alert-icon">🚗</span>
+                      <span class="phone-alert-text">D568 chargée — Navette recommandée</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+   SECTION : BÉNÉFICES CLÉS
+   ============================================================ -->
+<section id="benefices" class="section section--benefits">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Bénéfices</span>
+      <h2 class="section-title">Des résultats mesurables, dès la première saison</h2>
+    </div>
+
+    <div class="benefits-grid">
+      <article class="benefit-card benefit-card--featured">
+        <div class="benefit-card__number">01</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <path d="M12 20l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Gestion proactive, non réactive</h3>
+        <p class="benefit-card__text">Anticipez les crises avant qu'elles surviennent. Les algorithmes de Porto Flow modélisent les scénarios et vous alertent avec assez d'avance pour agir.</p>
+        <div class="benefit-card__tag">Anticipation</div>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-card__number">02</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="10" width="32" height="22" rx="3" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M4 16h32" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="11" cy="13" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="13" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Source unique de vérité</h3>
+        <p class="benefit-card__text">Toutes les parties prenantes partagent les mêmes données en temps réel. Fini les décisions prises sur des informations contradictoires ou obsolètes.</p>
+        <div class="benefit-card__tag">Cohérence</div>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-card__number">03</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4l4 8 9 1.3-6.5 6.3 1.5 9-8-4.2-8 4.2 1.5-9L8 13.3 17 12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Excellence de l'expérience visiteur</h3>
+        <p class="benefit-card__text">Un territoire qui fonctionne mieux attire davantage, fidélise plus, et génère des recommandations spontanées. Porto Flow améliore directement la réputation de Porto-Vecchio.</p>
+        <div class="benefit-card__tag">Attractivité</div>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-card__number">04</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6C12.27 6 6 12.27 6 20s6.27 14 14 14 14-6.27 14-14S27.73 6 20 6z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M20 12v9l5 3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Optimisation des ressources publiques</h3>
+        <p class="benefit-card__text">Allouez les moyens humains et financiers aux bons endroits, au bon moment. Réduisez les dépenses inutiles et concentrez les efforts là où l'impact est maximal.</p>
+        <div class="benefit-card__tag">Efficience</div>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-card__number">05</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6c-6 0-10 4-10 10 0 8 10 20 10 20s10-12 10-20c0-6-4-10-10-10z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M14 18c1 2 3 4 6 4s5-2 6-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Protection durable du patrimoine naturel</h3>
+        <p class="benefit-card__text">Les données environnementales permettent une gestion raisonnée de la fréquentation des sites naturels, préservant les écosystèmes pour les générations futures.</p>
+        <div class="benefit-card__tag">Durabilité</div>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-card__number">06</div>
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="14" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 34c0-6.63 5.37-12 12-12s12 5.37 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M26 20l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Qualité de vie des résidents</h3>
+        <p class="benefit-card__text">Les habitants permanents bénéficient d'une meilleure gestion des nuisances saisonnières, d'une communication transparente et de services publics plus efficaces.</p>
+        <div class="benefit-card__tag">Bien-être</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ============================================================
+   VARIABLES DE BASE
+   ============================================================ */
+:root {
+  --color-primary: #C0392B;
+  --color-primary-light: #E74C3C;
+  --color-accent: #E8A87C;
+  --color-accent-light: #F5CBA7;
+  --color-dark: #0D0D0D;
+  --color-dark-2: #1A1A1A;
+  --color-dark-3: #242424;
+  --color-dark-4: #2E2E2E;
+  --color-text: #E8E8E8;
+  --color-text-muted: rgba(232, 232, 232, 0.6);
+  --color-text-faint: rgba(232, 232, 232, 0.35);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-light: rgba(255, 255, 255, 0.14);
+  --color-success: #27AE60;
+  --color-warning: #F39C12;
+  --color-info: #2980B9;
+
+  --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 40px rgba(232, 168, 124, 0.15);
+
+  --transition-fast: 0.18s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  --section-padding: clamp(5rem, 10vw, 9rem);
+  --container-max: 1280px;
+  --container-padding: clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+  position: relative;
+}
+
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 4rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: rgba(232, 168, 124, 0.1);
+  border: 1px solid rgba(232, 168, 124, 0.25);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-subtitle {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   SECTION CONCEPT
+   ============================================================ */
+.section--concept {
+  background: var(--color-dark);
+}
+
+.section--concept::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--color-accent));
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.concept-card {
+  background: var(--color-dark-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  transition: border-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.concept-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.concept-card:hover {
+  border-color: rgba(232, 168, 124, 0.3);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.concept-card:hover::before {
+  opacity: 1;
+}
+
+.concept-card--highlight {
+  background: linear-gradient(135deg, rgba(192, 57, 43, 0.15) 0%, rgba(232, 168, 124, 0.08) 100%);
+  border-color: rgba(192, 57, 43, 0.3);
+  grid-column: span 1;
+}
+
+.concept-card--highlight::before {
+  background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
+  opacity: 1;
+}
+
+.concept-card__icon {
+  width: 44px;
+  height: 44px;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.concept-card--highlight .concept-card__icon {
+  color: var(--color-primary-light);
+}
+
+.concept-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.concept-card__text {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.concept-card__stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary-light);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   SECTION TERRITOIRE
+   ============================================================ */
+.section--territoire {
+  background: var(--color-dark-2);
+  overflow: hidden;
+}
+
+.territoire-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.territoire-visual {
+  position: relative;
+}
+
+.territoire-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: radial-gradient(circle at 50% 50%, rgba(232, 168, 124, 0.06) 0%, transparent 70%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.map-flow-lines {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+}
+
+.map-flow-lines svg {
+  width: 100%;
+  height: 100%;
+}
+
+.flow-path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: flowDraw 3s ease-out forwards;
+}
+
+.flow-path:nth-child(1) { animation-delay: 0.2s; }
+.flow-path:nth-child(2) { animation-delay: 0.5s; }
+.flow-path:nth-child(3) { animation-delay: 0.8s; }
+.flow-path:nth-child(4) { animation-delay: 1.1s; }
+.flow-path:nth-child(5) { animation-delay: 1.4s; }
+
+@keyframes flowDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+.map-pulse {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  animation: mapPulse 3s ease-out infinite;
+}
+
+.map-pulse--1 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(232, 168, 124, 0.4);
+  animation-delay: 0s;
+}
+
+.map-pulse--2 {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(232, 168, 124, 0.25);
+  animation-delay: 0.8s;
+}
+
+.map-pulse--3 {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(232, 168, 124, 0.12);
+  animation-delay: 1.6s;
+}
+
+@keyframes mapPulse {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.6); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
+
+.map-nodes {
+  position: absolute;
+  inset: 0;
+}
+
+.map-node {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-node--primary { top: 45%; left: 44%; }
+.map-node--secondary:first-of-type { top: 18%; left: 62%; }
+.map-node--secondary:last-of-type { top: 62%; left: 68%; }
+.map-node--tertiary:first-of-type { top: 72%; left: 38%; }
+.map-node--tertiary:last-of-type { top: 25%; left: 28%; }
+
+.node-dot {
+
+<!-- ============================================================
+     SECTION : PUBLICS CIBLES
+     ============================================================ -->
+    <section id="publics" class="publics-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pour qui ?</span>
+          <h2 class="section-title">Porto Flow s'adapte à chacun</h2>
+          <p class="section-subtitle">
+            Que vous soyez habitant, visiteur ou professionnel, Porto Flow vous offre
+            une expérience personnalisée et des informations pensées pour vos besoins.
+          </p>
+        </div>
+
+        <div class="publics-grid">
+          <!-- HABITANTS -->
+          <article class="public-card public-card--habitants" role="article">
+            <div class="public-card__icon-wrap">
+              <svg class="public-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="32" cy="20" r="10" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M12 52c0-11.046 8.954-20 20-20s20 8.954 20 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M46 30l4 4M50 30l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="public-card__badge">Habitants</div>
+            <h3 class="public-card__title">Vivre mieux à Porto-Vecchio</h3>
+            <p class="public-card__desc">
+              Accédez aux services municipaux, suivez vos démarches administratives,
+              restez informés des événements locaux et participez à la vie de votre ville.
+            </p>
+            <ul class="public-card__features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Démarches administratives simplifiées
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Alertes trafic et transports en temps réel
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Agenda culturel et associatif
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Signalement d'incidents de proximité
+              </li>
+            </ul>
+            <a href="#assistant" class="public-card__cta">
+              Découvrir mes services
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <!-- VISITEURS -->
+          <article class="public-card public-card--visiteurs public-card--featured" role="article">
+            <div class="public-card__ribbon">Le plus populaire</div>
+            <div class="public-card__icon-wrap">
+              <svg class="public-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M32 8C21.507 8 13 16.507 13 27c0 14.255 19 29 19 29s19-14.745 19-29c0-10.493-8.507-19-19-19z" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="32" cy="27" r="5" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M20 50c-4 1.5-7 3.5-7 5.5C13 57 21.507 58 32 58s19-1 19-2.5c0-2-3-4-7-5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="public-card__badge">Visiteurs</div>
+            <h3 class="public-card__title">Explorer Porto-Vecchio</h3>
+            <p class="public-card__desc">
+              Planifiez votre séjour, découvrez les sites incontournables, les restaurants locaux
+              et les activités nautiques grâce à des recommandations personnalisées.
+            </p>
+            <ul class="public-card__features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Guide touristique interactif
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Plages, criques et spots nautiques
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Réservations restaurants et activités
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Météo et conditions de baignade
+              </li>
+            </ul>
+            <a href="#assistant" class="public-card__cta public-card__cta--primary">
+              Planifier mon séjour
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <!-- PROFESSIONNELS -->
+          <article class="public-card public-card--professionnels" role="article">
+            <div class="public-card__icon-wrap">
+              <svg class="public-card__icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="20" width="48" height="36" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M22 20v-4a10 10 0 0120 0v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M32 34v6M28 37h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="public-card__badge">Professionnels</div>
+            <h3 class="public-card__title">Développer votre activité</h3>
+            <p class="public-card__desc">
+              Accédez aux données économiques du territoire, gérez vos interactions clients
+              et bénéficiez d'une visibilité accrue auprès des visiteurs et habitants.
+            </p>
+            <ul class="public-card__features">
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Tableaux de bord analytiques
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Données d'affluence et tendances
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Référencement dans l'annuaire local
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Démarches B2B et permis simplifiés
+              </li>
+            </ul>
+            <a href="#assistant" class="public-card__cta">
+              Accéder au portail pro
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION : ASSISTANT IA LOCAL
+         ============================================================ -->
+    <section id="assistant" class="assistant-section">
+      <div class="container">
+        <div class="assistant-layout">
+
+          <!-- Colonne gauche : description -->
+          <div class="assistant-info">
+            <span class="section-tag">Intelligence artificielle</span>
+            <h2 class="section-title">Votre assistant IA<br>dédié à Porto-Vecchio</h2>
+            <p class="assistant-desc">
+              Alimenté par les données officielles de la ville et mis à jour en temps réel,
+              notre assistant conversationnel répond à toutes vos questions territoriales
+              avec précision et bienveillance — en français, corse, anglais ou italien.
+            </p>
+
+            <div class="assistant-capabilities">
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M6 16a10 10 0 1120 0 10 10 0 01-20 0z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 11v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Temps réel</strong>
+                  <span>Données actualisées en continu depuis les sources officielles</span>
+                </div>
+              </div>
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M4 8h24M4 16h16M4 24h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Multilingue</strong>
+                  <span>Français, Corse, Anglais, Italien — pour tous vos interlocuteurs</span>
+                </div>
+              </div>
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M16 4l3.09 6.26L26 11.27l-5 4.87 1.18 6.88L16 19.77l-6.18 3.25L11 16.14 6 11.27l6.91-1.01L16 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Contextuel</strong>
+                  <span>Comprend votre profil et adapte chaque réponse à votre situation</span>
+                </div>
+              </div>
+              <div class="capability-item">
+                <div class="capability-icon">
+                  <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                    <path d="M10 16l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Fiable</strong>
+                  <span>Sources vérifiées, réponses sourcées et transparentes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="assistant-langs">
+              <span class="lang-chip lang-chip--active">🇫🇷 Français</span>
+              <span class="lang-chip">🏴 Corsu</span>
+              <span class="lang-chip">🇬🇧 English</span>
+              <span class="lang-chip">🇮🇹 Italiano</span>
+            </div>
+          </div>
+
+          <!-- Colonne droite : démo chat -->
+          <div class="assistant-demo" role="region" aria-label="Démonstration de l'assistant IA">
+            <div class="chat-window">
+              <div class="chat-header">
+                <div class="chat-avatar" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" fill="url(#avatarGrad)"/>
+                    <path d="M12 22c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="20" cy="16" r="3" fill="white"/>
+                    <defs>
+                      <linearGradient id="avatarGrad" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0ea5e9"/>
+                        <stop offset="1" stop-color="#7c3aed"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="chat-header-info">
+                  <span class="chat-name">Porto Flow Assistant</span>
+                  <span class="chat-status">
+                    <span class="chat-status-dot" aria-hidden="true"></span>
+                    En ligne maintenant
+                  </span>
+                </div>
+                <div class="chat-header-badge" aria-label="Propulsé par IA">IA</div>
+              </div>
+
+              <div class="chat-messages" id="chatMessages" aria-live="polite" aria-label="Conversation avec l'assistant">
+                <!-- Message initial de l'assistant -->
+                <div class="chat-msg chat-msg--bot">
+                  <div class="chat-msg__bubble">
+                    Bonjour ! Je suis votre assistant Porto Flow. Posez-moi n'importe quelle question sur Porto-Vecchio — services, plages, événements, démarches… 👋
+                  </div>
+                  <span class="chat-msg__time">maintenant</span>
+                </div>
+              </div>
+
+              <!-- Exemples de questions -->
+              <div class="chat-suggestions" id="chatSuggestions" role="group" aria-label="Questions suggérées">
+                <p class="chat-suggestions__label">Essayez une question :</p>
+                <div class="chat-suggestions__grid">
+                  <button class="suggestion-chip" data-question="Quelles sont les plus belles plages accessibles depuis Porto-Vecchio ?" data-answer="Porto-Vecchio offre des plages d'exception ! Palombaggia et Santa Giulia sont les plus célèbres pour leur sable blanc et leurs eaux turquoise. Pour plus de tranquillité, je recommande Tamaricciu ou la plage de Pinarellu. Actuellement, les conditions de baignade sont excellentes avec une eau à 24°C. 🏖️" aria-label="Question sur les plages">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3C6.134 3 3 6.134 3 10s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7z" stroke="currentColor" stroke-width="1.5"/><path d="M3 10h14M10 3c-1.5 2-2.5 4.5-2.5 7s1 5 2.5 7M10 3c1.5 2 2.5 4.5 2.5 7s-1 5-2.5 7" stroke="currentColor" stroke-width="1.5"/></svg>
+                    Meilleures plages ?
+                  </button>
+                  <button class="suggestion-chip" data-question="Comment renouveler ma carte d'identité à Porto-Vecchio ?" data-answer="Pour renouveler votre carte d'identité à Porto-Vecchio, rendez-vous à la Mairie avec : une photo d'identité récente, votre ancienne CNI, un justificatif de domicile de moins de 3 mois et un timbre fiscal de 25€ si perdue. Prise de RDV en ligne recommandée via le portail mairie. Délai moyen : 3 à 4 semaines. 📄" aria-label="Question sur les démarches administratives">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 4h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5"/><path d="M6 8h8M6 12h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Carte d'identité ?
+                  </button>
+                  <button class="suggestion-chip" data-question="Quels événements sont prévus ce week-end à Porto-Vecchio ?" data-answer="Ce week-end à Porto-Vecchio : Samedi 15h – Marché artisanal place de la République, Samedi 20h – Concert de musique corse à la Citadelle, Dimanche 9h – Randonnée guidée au Torchino (inscription mairie), Dimanche 18h – Cinéma en plein air sur le port. Agenda complet disponible sur porto-vecchio.fr 🎉" aria-label="Question sur les événements">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 2v4M14 2v4M2 10h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Événements ce week-end ?
+                  </button>
+                  <button class="suggestion-chip" data-question="Où se garer facilement à Porto-Vecchio en haute saison ?" data-answer="En haute saison, je recommande ces parkings : P+R San Giovanni (gratuit, navette toutes les 15min vers le centre), Parking du Palais des Congrès (payant, 2€/h), Parking de la Marine (idéal pour le port, 1.50€/h). Évitez le centre entre 11h et 18h. Navigation GPS : activez le mode 'Trafic temps réel' dans Porto Flow. 🚗" aria-label="Question sur le stationnement">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 17V7l7-4 7 4v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 17v-5h6v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Se garer facilement ?
+                  </button>
+                  <button class="suggestion-chip" data-question="Quels sont les meilleurs restaurants de fruits de mer à Porto-Vecchio ?" data-answer="Pour les fruits de mer à Porto-Vecchio, voici mes coups de cœur : A Cantina di l'Orriu (citadelle, spécialités corses et plateaux), Le Goéland (vue port, homard et langoustes), La Table du Pêcheur (ultra-frais, direct pêcheur local), U Fornu (ambiance authentique, oursinades en saison). Réservation conseillée en juillet-août. 🦞" aria-label="Question sur les restaurants">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 6h14l-1.5 9H4.5L3 6z" stroke="currentColor" stroke-width="1.5"/><path d="M1 6h18M7 6V4a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Restaurants fruits de mer ?
+                  </button>
+                  <button class="suggestion-chip" data-question="Comment signaler un problème de voirie à Porto-Vecchio ?" data-answer="Signalez facilement un problème de voirie via Porto Flow : bouton 'Signaler' > catégorie 'Voirie' > photo + localisation GPS > envoi. Votre signalement est transmis directement au service technique municipal. Délai de traitement affiché en temps réel. Vous pouvez aussi appeler le 04 95 70 09 09 en heures ouvrables. ✅" aria-label="Question sur les signalements">
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v10M10 16v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+                    Signaler un problème ?
+                  </button>
+                </div>
+              </div>
+
+              <!-- Champ de saisie -->
+              <div class="chat-input-area">
+                <label for="chatInput" class="sr-only">Votre question à Porto Flow</label>
+                <div class="chat-input-wrapper">
+                  <input
+                    type="text"
+                    id="chatInput"
+                    class="chat-input"
+                    placeholder="Posez votre question…"
+                    maxlength="200"
+                    autocomplete="off"
+                    aria-label="Saisissez votre question"
+                  />
+                  <button class="chat-send-btn" id="chatSendBtn" aria-label="Envoyer la question" disabled>
+                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <path d="M17 10L3 3l3 7-3 7 14-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <p class="chat-input-hint">Démo interactive — réponses simulées à titre d'illustration</p>
+              </div>
+            </div>
+
+            <!-- Statistiques assistant -->
+            <div class="assistant-stats" role="list" aria-label="Statistiques de l'assistant">
+              <div class="assistant-stat" role="listitem">
+                <span class="assistant-stat__value" data-target="98">0</span><span class="assistant-stat__unit">%</span>
+                <span class="assistant-stat__label">Taux de satisfaction</span>
+              </div>
+              <div class="assistant-stat" role="listitem">
+                <span class="assistant-stat__value" data-target="2400">0</span><span class="assistant-stat__unit">+</span>
+                <span class="assistant-stat__label">Questions répondues / jour</span>
+              </div>
+              <div class="assistant-stat" role="listitem">
+                <span class="assistant-stat__value" data-target="4">0</span><span class="assistant-stat__unit"></span>
+                <span class="assistant-stat__label">Langues supportées</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STYLES : PUBLICS + ASSISTANT (inline pour ce segment)
+         ============================================================ -->
+    <style>
+      /* ── PUBLICS SECTION ── */
+      .publics-section {
+        padding: 7rem 0;
+        background: var(--bg-primary);
+        position: relative;
+      }
+
+      .publics-section::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(ellipse 60% 50% at 10% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 70%),
+          radial-gradient(ellipse 50% 60% at 90% 50%, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .publics-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 4rem;
+        align-items: stretch;
+      }
+
+      /* ── PUBLIC CARD ── */
+      .public-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 20px;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .public-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        border-radius: 20px 20px 0 0;
+      }
+
+      .public-card--habitants::before { background: linear-gradient(90deg, #10b981, #0ea5e9); }
+      .public-card--visiteurs::before { background: linear-gradient(90deg, #0ea5e9, #7c3aed); }
+      .public-card--professionnels::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+
+      .public-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      }
+
+      .public-card--featured {
+        border-color: rgba(14, 165, 233, 0.35);
+        box-shadow: 0 8px 32px rgba(14, 165, 233, 0.15);
+        transform: scale(1.02);
+      }
+
+      .public-card--featured:hover {
+        transform: scale(1.02) translateY(-6px);
+        box-shadow: 0 28px 64px rgba(14, 165, 233, 0.25);
+      }
+
+      .public-card__ribbon {
+        position: absolute;
+        top: 1.25rem;
+        right: -0.5rem;
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 0.3rem 1rem 0.3rem 0.75rem;
+        border-radius: 4px 0 0 4px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      }
+
+      .public-card__ribbon::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid #4f46e5;
+        border-bottom: 6px solid transparent;
+      }
+
+      .public-card__icon-wrap {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .public-card--habitants .public-card__icon-wrap { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+      .public-card--visiteurs .public-card__icon-wrap { background: rgba(14, 165, 233, 0.15); color: #0ea5e9; }
+      .public-card--professionnels .public-card__icon-wrap { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+      .public-card__icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .public-card__badge {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        width: fit-content;
+      }
+
+      .public-card--habitants .public-card__badge { background: rgba(16, 185, 129, 0.12); color: #10b981; }
+      .public-card--visiteurs .public-card__badge { background: rgba(14, 165, 233, 0.12); color: #0ea5e9; }
+      .public-card--professionnels .public-card__badge { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+
+      .public-card__title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        line-height: 1.3;
+        margin: 0;
+      }
+
+      .public-card__desc {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .public-card__features {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        flex: 1;
+      }
+
+      .public-card__features li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+      }
+
+      .public-card__features li svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        color: #10b981;
+      }
+
+      .public-card--visiteurs .public-card__features li svg { color: #0ea5e9; }
+      .public-card--professionnels .public-card__features li svg { color: #f59e0b; }
+
+      .public-card__cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        text-decoration: none;
+        padding: 0.75rem 0;
+        border-top: 1px solid var(--border-subtle);
+        margin-top: auto;
+        transition: color 0.2s ease, gap 0.2s ease;
+      }
+
+      .public-card__cta:hover { color: var(--text-primary); gap: 0.75rem; }
+
+      .public-card__cta svg {
+        width: 16px;
+        height: 16px;
+        transition: transform 0.2s ease;
+      }
+
+      .public-card__cta:hover svg { transform: translateX(3px); }
+
+      .public-card__cta--primary {
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        color: white;
+        padding: 0.875rem 1.5rem;
+        border-radius: 10px;
+        border: none;
+        justify-content: center;
+        margin-top: auto;
+      }
+
+      .public-card__cta--primary:hover {
+        color: white;
+        box-shadow: 0 8px 24px rgba(14, 165, 233, 0.4);
+        transform: translateY(-1px);
+      }
+
+      /* ── ASSISTANT SECTION ── */
+      .assistant-section {
+        padding: 7rem 0;
+        background: var(--bg-secondary);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .assistant-section::before {
+        content: '';
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .assistant-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: start;
+      }
+
+      /* ── ASSISTANT INFO ── */
+      .assistant-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .assistant-desc {
+        font-size: 1.05rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .assistant-capabilities {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .capability-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 12px;
+        transition: border-color 0.2s ease;
+      }
+
+      .capability-item:hover { border-color: rgba(14, 165, 233, 0.3); }
+
+      .capability-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(14, 165, 233, 0.1);
+        color: #0ea5e9;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .capability-icon svg { width: 20px; height: 20px; }
+
+      .capability-item > div:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .capability-item strong {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .capability-item span {
+        font-size: 0.825rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .assistant-langs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .lang-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.4rem 0.875rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-secondary);
+        transition: all 0.2s ease;
+        cursor: default;
+      }
+
+      .lang-chip--active {
+        background: rgba(14, 165, 233, 0.12);
+        border-color: rgba(14, 165, 233, 0.4);
+        color: #0ea5e9;
+      }
+
+      /* ── CHAT WINDOW ── */
+      .assistant-demo {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .chat-window {
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .chat-header {
+        display: flex;
+        align-items: center;
+        gap: 0.875rem;
+        padding: 1.125rem 1.5rem;
+        background: rgba(14, 165, 233, 0.06);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .chat-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        overflow: hidden;
+      }
+
+      .chat-avatar svg { width: 40px; height: 40px; }
+
+      .chat-header-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .chat-name {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .chat-status {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.75rem;
+        color: #10b981;
+      }
+
+      .chat-status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #10b981;
+        animation: statusPulse 2s infinite;
+      }
+
+      @keyframes statusPulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(0.85); }
+      }
+
+      .chat-header-badge {
+        font-size: 0.65rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        padding: 0.25rem 0.6rem;
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        color: white;
+        border-radius: 6px;
+      }
+
+      .chat-messages {
+        min-height: 140px;
+        max-height: 260px;
+        overflow-y: auto;
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        scroll-behavior: smooth;
+      }
+
+      .chat-messages::-webkit-scrollbar { width: 4px; }
+      .chat-messages::-webkit-scrollbar-track { background: transparent; }
+      .chat-messages::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 2px; }
+
+      .chat-msg {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        max-width: 85%;
+        animation: msgFadeIn 0.35s ease forwards;
+      }
+
+      @keyframes msgFadeIn {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .chat-msg--bot { align-self: flex-start; }
+      .chat-msg--user { align-self: flex-end; }
+
+      .chat-msg__bubble {
+        padding: 0.875rem 1.125rem;
+        border-radius: 16px;
+        font-size: 0.875rem;
+        line-height: 1.6;
+      }
+
+      .chat-msg--bot .chat-msg__bubble {
+        background: rgba(14, 165, 233, 0.1);
+        border: 1px solid rgba(14, 165, 233, 0.2);
+        color: var(--text-primary);
+        border-radius: 4px 16px 16px 16px;
+      }
+
+      .chat-msg--user .chat-msg__bubble {
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        color: white;
+        border-radius: 16px 4px 16px 16px;
+      }
+
+      .chat-msg__bubble--typing {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 1rem 1.25rem;
+      }
+
+      .chat-msg__bubble--typing span {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #0ea5e9;
+        animation: typingDot 1.2s infinite;
+      }
+
+      .chat-msg__bubble--typing span:nth-child(2) { animation-delay: 0.2s; }
+      .chat-msg__bubble--typing span:nth-child(3) { animation-delay: 0.4s; }
+
+      @keyframes typingDot {
+        0%, 80%, 100% { transform: scale(0.8); opacity: 0.5; }
+        40% { transform: scale(1.1); opacity: 1; }
+      }
+
+      .chat-msg__time {
+        font-size: 0.7rem;
+        color: var(--text-muted);
+      }
+
+      .chat-msg--user .chat-msg__time { align-self: flex-end; }
+
+      /* ── CHAT SUGGESTIONS ── */
+      .chat-suggestions {
+        padding: 1rem 1.5rem;
+        border-top: 1px solid var(--border-subtle);
+        background: rgba(0, 0, 0, 0.15);
+      }
+
+      .chat-suggestions__label {
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        margin: 0 0 0.75rem;
+      }
+
+      .chat-suggestions__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .suggestion-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.875rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-subtle);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-family: inherit;
+      }
+
+      .suggestion-chip:hover {
+        background: rgba(14, 165, 233, 0.1);
+        border-color: rgba(14, 165, 233, 0.4);
+        color: #0ea5e9;
+        transform: translateY(-1px);
+      }
+
+      .suggestion-chip svg {
+        width: 13px;
+        height: 13px;
+        flex-shrink: 0;
+      }
+
+      .suggestion-chip:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      /* ── CHAT INPUT ── */
+      .chat-input-area {
+        padding: 1rem 1.5rem 1.25rem;
+        border-top: 1px solid var(--border-subtle);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .chat-input-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-subtle);
+        border-radius: 12px;
+        padding: 0.35rem 0.35rem 0.35rem 1rem;
+        transition: border-color 0.2s ease;
+      }
+
+      .chat-input-wrapper:focus-within {
+        border-color: rgba(14, 165, 233, 0.5);
+        box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+      }
+
+      .chat-input {
+        flex: 1;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 0.875rem;
+        color: var(--text-primary);
+        font-family: inherit;
+        padding: 0.4rem 0;
+      }
+
+      .chat-input::placeholder { color: var(--text-muted); }
+
+      .chat-send-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .chat-send-btn:hover:not(:disabled) {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+      }
+
+      .chat-send-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      .chat-send-btn svg { width: 16px; height: 16px; }
+
+      .chat-input-hint {
+        font-size: 0.7rem;
+        color: var(--text-muted);
+        margin: 0;
+        text-align: center;
+        font-style: italic;
+      }
+
+      /* ── ASSISTANT STATS ── */
+      .assistant-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .assistant-stat {
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 14px;
+        padding: 1.25rem 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        transition: border-color 0.2s ease;
+      }
+
+      .assistant-stat:hover { border-color: rgba(14, 165, 233, 0.3); }
+
+      .assistant-stat__value {
+        font-size: 1.75rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+      }
+
+      .assistant-stat__unit {
+        font-size: 1rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #0ea5e9, #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .assistant-stat__label {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        line-height: 1.4;
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 1024px) {
+        .publics-grid {
+          grid-template-columns: 1fr;
+          max-width: 520px;
+          margin-inline: auto;
+        }
+
+        .public-card--featured { transform: none; }
+        .public-card--featured:hover { transform: translateY(-6px); }
+
+        .assistant-layout {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .publics-section,
+        .assistant-section { padding: 4rem 0; }
+
+        .assistant-stats { grid-template-columns: 1fr; gap: 0.75rem; }
+
+        .chat-suggestions__grid { gap: 0.4rem; }
+
+        .suggestion-chip { font-size: 0.72rem; padding: 0.4rem 0.75rem; }
+      }
+    </style>
+
+    <!-- ============================================================
+         SCRIPT : CHAT INTERACTIF
+         ============================================================ -->
+    <script>
+      (function () {
+        'use strict';
+
+        /* ── Références DOM ── */
+        const messagesEl   = document.getElementById('chatMessages');
+        const inputEl      = document.getElementById('chatInput');
+        const sendBtn      = document.getElementById('chatSendBtn');
+        const suggestions  = document.getElementById('chatSuggestions');
+        const chips        = document.querySelectorAll('.suggestion-chip');
+
+        if (!messagesEl || !inputEl || !sendBtn) return;
+
+        /* ── Utilitaires ── */
+        function now() {
+          return new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        function scrollToBottom() {
+          messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+
+        function createMsg(text, role) {
+          const wrap = document.createElement('div');
+          wrap.className = 'chat-msg chat-msg--' + role;
+
+          const bubble = document.createElement('div');
+          bubble.className = 'chat-msg__bubble';
+          bubble.textContent = text;
+
+          const time = document.createElement('span');
+          time.className = 'chat-msg__time';
+          time.textContent = now();
+
+          wrap.appendChild(bubble);
+          wrap.appendChild(time);
+          return wrap;
+        }
+
+        function createTyping() {
+          const wrap = document.createElement('div');
+          wrap.className = 'chat-msg chat-msg--bot';
+          wrap.id = 'typingIndicator';
+
+          const bubble = document.createElement('div');
+          bubble.className = 'chat-msg__bubble chat-msg__bubble--typing';
+          bubble.innerHTML = '<span></span><span></span><span></span>';
+
+          wrap.appendChild(bubble);
+          return wrap;
+        }
+
+        function setChipsDisabled(disabled) {
+          chips.forEach(function (chip) { chip.disabled = disabled; });
+          sendBtn.disabled = disabled || inputEl.value.trim() === '';
+        }
+
+        /* ── Envoi d'un message ── */
+        function sendMessage(question, answer) {
+          if (!question || !question.trim()) return;
+
+          /* Message utilisateur */
+          messagesEl.appendChild(createMsg(question, 'user'));
+          scrollToBottom();
+
+          /* Désactiver les contrôles */
+          setChipsDisabled(true);
+          inputEl.value = '';
+          sendBtn.disabled = true;
+
+          /* Indicateur de frappe */
+          const typing = createTyping();
+          messagesEl.appendChild(typing);
+          scrollToBottom();
+
+          /* Réponse simulée après délai */
+          var delay = 900 + Math.random() * 700;
+          setTimeout(function () {
+            typing.remove();
+
+            var responseText = answer || 'Je traite votre demande. Pour une réponse complète, téléchargez l\'application Porto Flow. 🌊';
+            messagesEl.appendChild(createMsg(responseText, 'bot'));
+            scrollToBottom();
+            setChipsDisabled(false);
+          }, delay);
+        }
+
+        /* ── Écouteurs chips ── */
+        chips.forEach(function (chip) {
+          chip.addEventListener('click', function () {
+            var q = chip.getAttribute('data-question');
+            var a = chip.getAttribute('data-answer');
+            sendMessage(q, a);
+          });
+        });
+
+        /* ── Écouteur input ── */
+        inputEl.addEventListener('input', function () {
+          sendBtn.disabled = inputEl.value.trim() === '';
+        });
+
+        inputEl.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' && !e.shiftKey && inputEl.value.trim()) {
+            e.preventDefault();
+            var q = inputEl.value.trim();
+            sendMessage(q, null);
+          }
+        });
+
+        sendBtn.addEventListener('click', function () {
+          var q = inputEl.value.trim();
+          if (q) sendMessage(q, null);
+        });
+
+        /* ── Counter animation pour les stats ── */
+        function animateCounter(el) {
+          var target = parseInt(el.getAttribute('data-target'), 10);
+          if (isNaN(target)) return;
+
+          var duration = 1800;
+          var start = null;
+
+          function step(ts) {
+            if (!start) start = ts;
+            var progress = Math.min((ts - start) / duration, 1);
+            var ease = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.floor(ease * target);
+            if (progress < 1) requestAnimationFrame(step);
+            else el.textContent = target;
+          }
+
+          requestAnimationFrame(step);
+        }
+
+        /* ── IntersectionObserver pour déclencher les compteurs ── */
+        var statValues = document.querySelectorAll('.assistant-stat__value[data-target]');
+        if ('IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.5 });
+
+          statValues.forEach(function (el) { observer.observe(el); });
+        } else {
+          statValues.forEach(function (el) {
+            el.textContent = el.getAttribute('data-target');
+          });
+        }
+      })();
+    </script>
+
+<!-- ============================================================
+     SECTION VISION ÉVOLUTIVE
+     ============================================================ -->
+    <section class="vision-section" id="vision">
+      <div class="container">
+        <div class="vision-header">
+          <span class="section-badge">Demain</span>
+          <h2 class="section-title">Une ville qui apprend,<br>une vie qui s'améliore</h2>
+          <p class="section-subtitle">
+            Porto Flow n'est pas une application statique. C'est un écosystème vivant qui évolue
+            avec Porto-Vecchio, ses habitants et ses défis.
+          </p>
+        </div>
+
+        <div class="vision-timeline">
+          <div class="timeline-track"></div>
+
+          <div class="timeline-item" data-phase="1">
+            <div class="timeline-marker">
+              <span class="phase-number">01</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                  </svg>
+                </div>
+                <div class="timeline-text">
+                  <span class="timeline-label">Phase actuelle</span>
+                  <h3 class="timeline-title">Fondations intelligentes</h3>
+                  <p class="timeline-desc">
+                    Cartographie interactive, alertes en temps réel, signalement citoyen
+                    et tableau de bord municipal. La base d'une ville connectée.
+                  </p>
+                  <div class="timeline-features">
+                    <span class="feature-tag active">Disponible</span>
+                    <span class="feature-item">Carte dynamique</span>
+                    <span class="feature-item">Alertes push</span>
+                    <span class="feature-item">Signalement</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-phase="2">
+            <div class="timeline-marker">
+              <span class="phase-number">02</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div class="timeline-text">
+                  <span class="timeline-label">2025 — Q3</span>
+                  <h3 class="timeline-title">Intelligence prédictive</h3>
+                  <p class="timeline-desc">
+                    L'IA anticipe les besoins : prédiction des affluences touristiques,
+                    optimisation automatique du stationnement, gestion proactive des ressources.
+                  </p>
+                  <div class="timeline-features">
+                    <span class="feature-tag coming">Bientôt</span>
+                    <span class="feature-item">IA prédictive</span>
+                    <span class="feature-item">Gestion fluides</span>
+                    <span class="feature-item">Optimisation auto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-phase="3">
+            <div class="timeline-marker">
+              <span class="phase-number">03</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div class="timeline-text">
+                  <span class="timeline-label">2026 — Q1</span>
+                  <h3 class="timeline-title">Écosystème participatif</h3>
+                  <p class="timeline-desc">
+                    Budget participatif numérique, votes citoyens, co-création de services.
+                    Les habitants deviennent acteurs de leur territoire.
+                  </p>
+                  <div class="timeline-features">
+                    <span class="feature-tag future">Vision</span>
+                    <span class="feature-item">Vote digital</span>
+                    <span class="feature-item">Budget citoyen</span>
+                    <span class="feature-item">Co-création</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-phase="4">
+            <div class="timeline-marker">
+              <span class="phase-number">04</span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-card timeline-card--future">
+                <div class="timeline-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <div class="timeline-text">
+                  <span class="timeline-label">2026 — Q4</span>
+                  <h3 class="timeline-title">Porto-Vecchio, modèle européen</h3>
+                  <p class="timeline-desc">
+                    Un référentiel pour les villes méditerranéennes. Exportation du modèle,
+                    interconnexion régionale et labellisation Smart City internationale.
+                  </p>
+                  <div class="timeline-features">
+                    <span class="feature-tag vision">Horizon</span>
+                    <span class="feature-item">Label EU</span>
+                    <span class="feature-item">Réseau régional</span>
+                    <span class="feature-item">Export modèle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vision-stats">
+          <div class="vision-stat">
+            <span class="vision-stat-number" data-target="12">0</span>
+            <span class="vision-stat-unit">villes</span>
+            <span class="vision-stat-label">partenaires prévus</span>
+          </div>
+          <div class="vision-stat">
+            <span class="vision-stat-number" data-target="94">0</span>
+            <span class="vision-stat-unit">%</span>
+            <span class="vision-stat-label">de satisfaction projetée</span>
+          </div>
+          <div class="vision-stat">
+            <span class="vision-stat-number" data-target="3">0</span>
+            <span class="vision-stat-unit">ans</span>
+            <span class="vision-stat-label">vers le leadership régional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION CTA FINAL
+         ============================================================ -->
+    <section class="cta-final-section" id="access">
+      <div class="cta-final-bg">
+        <div class="cta-orb cta-orb--1"></div>
+        <div class="cta-orb cta-orb--2"></div>
+        <div class="cta-orb cta-orb--3"></div>
+        <div class="cta-grid-overlay"></div>
+      </div>
+
+      <div class="container">
+        <div class="cta-final-inner">
+          <div class="cta-final-badge">
+            <span class="badge-dot"></span>
+            <span>Accès anticipé ouvert</span>
+          </div>
+
+          <h2 class="cta-final-title">
+            Rejoignez les pionniers<br>
+            de <em>Porto-Vecchio</em> de demain
+          </h2>
+
+          <p class="cta-final-subtitle">
+            Soyez parmi les premiers à façonner l'avenir de votre ville.
+            Un accès gratuit, une influence réelle sur les fonctionnalités,
+            une communauté engagée.
+          </p>
+
+          <div class="cta-final-form">
+            <div class="form-group">
+              <input
+                type="email"
+                id="cta-email"
+                class="cta-input"
+                placeholder="votre@email.com"
+                autocomplete="email"
+                aria-label="Votre adresse email"
+              />
+              <button class="cta-submit-btn" id="cta-submit" type="button" aria-label="Rejoindre Porto Flow">
+                <span class="btn-text">Rejoindre Porto Flow</span>
+                <span class="btn-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+            </div>
+            <p class="form-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="note-icon" aria-hidden="true">
+                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+              Données protégées · Aucun spam · Désabonnement en 1 clic
+            </p>
+            <div class="form-success" id="form-success" aria-live="polite" role="status">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <span>Bienvenue dans la communauté Porto Flow !</span>
+            </div>
+          </div>
+
+          <div class="cta-final-social-proof">
+            <div class="social-proof-avatars" aria-label="Membres de la communauté">
+              <div class="avatar avatar--1" aria-hidden="true">M</div>
+              <div class="avatar avatar--2" aria-hidden="true">S</div>
+              <div class="avatar avatar--3" aria-hidden="true">A</div>
+              <div class="avatar avatar--4" aria-hidden="true">L</div>
+              <div class="avatar avatar--5" aria-hidden="true">+</div>
+            </div>
+            <p class="social-proof-text">
+              <strong>247 pionniers</strong> ont déjà rejoint le mouvement cette semaine
+            </p>
+          </div>
+
+          <div class="cta-final-guarantees">
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+              <span>Accès 100% gratuit</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+              <span>Données sécurisées RGPD</span>
+            </div>
+            <div class="guarantee-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <span>Influence directe sur le produit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+
+            <!-- Brand -->
+            <div class="footer-brand">
+              <a href="#hero" class="footer-logo" aria-label="Porto Flow - Retour en haut">
+                <div class="footer-logo-mark" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="url(#footer-grad)" stroke-width="1.5"/>
+                    <path d="M10 16 Q16 8 22 16 Q16 24 10 16Z" fill="url(#footer-grad)" opacity="0.8"/>
+                    <circle cx="16" cy="16" r="3" fill="url(#footer-grad)"/>
+                    <defs>
+                      <linearGradient id="footer-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#3ecfcf"/>
+                        <stop offset="100%" stop-color="#7b61ff"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="footer-logo-text">Porto Flow</span>
+              </a>
+              <p class="footer-tagline">
+                L'intelligence territoriale au service de Porto-Vecchio et de ses habitants.
+              </p>
+              <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Twitter / X de Porto Flow" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn de Porto Flow" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram de Porto Flow" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Navigation produit -->
+            <nav class="footer-nav" aria-label="Navigation produit">
+              <h3 class="footer-nav-title">Produit</h3>
+              <ul class="footer-nav-list">
+                <li><a href="#features" class="footer-nav-link">Fonctionnalités</a></li>
+                <li><a href="#map" class="footer-nav-link">Carte interactive</a></li>
+                <li><a href="#vision" class="footer-nav-link">Feuille de route</a></li>
+                <li><a href="#access" class="footer-nav-link">Accès anticipé</a></li>
+                <li><a href="#" class="footer-nav-link">Documentation <span class="nav-badge">Bientôt</span></a></li>
+              </ul>
+            </nav>
+
+            <!-- Navigation territoire -->
+            <nav class="footer-nav" aria-label="Navigation territoire">
+              <h3 class="footer-nav-title">Territoire</h3>
+              <ul class="footer-nav-list">
+                <li><a href="#" class="footer-nav-link">Porto-Vecchio</a></li>
+                <li><a href="#" class="footer-nav-link">Mairie & collectivités</a></li>
+                <li><a href="#" class="footer-nav-link">Professionnels locaux</a></li>
+                <li><a href="#" class="footer-nav-link">Partenaires</a></li>
+                <li><a href="#" class="footer-nav-link">Presse</a></li>
+              </ul>
+            </nav>
+
+            <!-- Contact & légal -->
+            <div class="footer-contact">
+              <h3 class="footer-nav-title">Contact</h3>
+              <address class="footer-address">
+                <p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                  Porto-Vecchio, Corse-du-Sud<br>
+                  <span class="address-detail">20137, France</span>
+                </p>
+                <p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <a href="mailto:contact@porto-flow.fr" class="footer-email">contact@porto-flow.fr</a>
+                </p>
+              </address>
+              <div class="footer-trust-badges">
+                <div class="trust-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  </svg>
+                  RGPD
+                </div>
+                <div class="trust-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                  </svg>
+                  Made in France
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-inner">
+            <p class="footer-copyright">
+              &copy; <span id="footer-year"></span> Porto Flow. Tous droits réservés.
+            </p>
+            <nav class="footer-legal-nav" aria-label="Navigation légale">
+              <a href="#" class="footer-legal-link">Mentions légales</a>
+              <span class="footer-legal-sep" aria-hidden="true">·</span>
+              <a href="#" class="footer-legal-link">Politique de confidentialité</a>
+              <span class="footer-legal-sep" aria-hidden="true">·</span>
+              <a href="#" class="footer-legal-link">CGU</a>
+              <span class="footer-legal-sep" aria-hidden="true">·</span>
+              <a href="#" class="footer-legal-link">Accessibilité</a>
+            </nav>
+            <p class="footer-made-with">
+              Conçu avec
+              <svg viewBox="0 0 24 24" fill="currentColor" class="heart-icon" aria-label="amour" role="img">
+                <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+              </svg>
+              pour Porto-Vecchio
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         BACK TO TOP BUTTON
+         ============================================================ -->
+    <button
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Retour en haut de page"
+      title="Retour en haut"
+      hidden
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M5 15l7-7 7 7"/>
+      </svg>
+    </button>
+
+    <!-- ============================================================
+         COOKIE BANNER
+         ============================================================ -->
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+      <div class="cookie-content">
+        <div class="cookie-icon" aria-hidden="true">🍪</div>
+        <div class="cookie-text">
+          <p id="cookie-title" class="cookie-title">Respect de votre vie privée</p>
+          <p id="cookie-desc" class="cookie-desc">
+            Nous utilisons des cookies essentiels pour garantir le bon fonctionnement de Porto Flow.
+            Aucune donnée n'est partagée avec des tiers.
+          </p>
+        </div>
+        <div class="cookie-actions">
+          <button class="cookie-btn cookie-btn--accept" id="cookie-accept">Accepter</button>
+          <button class="cookie-btn cookie-btn--decline" id="cookie-decline">Refuser</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
