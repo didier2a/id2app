@@ -9,7 +9,7 @@
   <meta property="og:description" content="Découvrez Porto Flow, la plateforme intelligente au service du territoire de Porto-Vecchio." />
   <meta property="og:type" content="website" />
   <title>Porto Flow — Intelligence Territoriale · Porto-Vecchio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
@@ -17,7 +17,7 @@
 <body>
 
   <!-- ========== HEADER ========== -->
-  <header class="header" id="header" role="banner">
+  <header class="header" id="header" data-header role="banner">
     <div class="header__inner container">
       <a href="#hero" class="header__logo" aria-label="Porto Flow — Accueil">
         <span class="logo__mark" aria-hidden="true">
@@ -36,17 +36,17 @@
         <span class="logo__text">Porto<strong>Flow</strong></span>
       </a>
 
-      <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+      <nav class="nav" id="nav" data-nav-menu role="navigation" aria-label="Navigation principale">
         <ul class="nav__list" role="list">
-          <li><a href="#features" class="nav__link">Fonctionnalités</a></li>
-          <li><a href="#territory" class="nav__link">Territoire</a></li>
-          <li><a href="#testimonials" class="nav__link">Témoignages</a></li>
+          <li><a href="#fonctionnalites" class="nav__link">Fonctionnalités</a></li>
+          <li><a href="#territoire" class="nav__link">Territoire</a></li>
+          <li><a href="#publics" class="nav__link">Publics</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
-        <a href="#demo" class="btn btn--primary btn--sm nav__cta">Demander une démo</a>
+        <a href="#contact" class="btn btn--primary btn--sm nav__cta">Demander une démo</a>
       </nav>
 
-      <button class="nav__burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <button class="nav__burger" id="navBurger" data-menu-toggle aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
         <span></span>
         <span></span>
         <span></span>
@@ -80,7 +80,7 @@
         </p>
 
         <div class="hero__actions">
-          <a href="#demo" class="btn btn--primary btn--lg">
+          <a href="#contact" class="btn btn--primary btn--lg">
             <span>Demander une démo</span>
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path d="M3.75 9H14.25M9.75 4.5L14.25 9l-4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -3030,12 +3030,13 @@ img { display: block; max-width: 100%; }
 
 <!-- ========== JAVASCRIPT CHAT INTERACTIF ========== -->
 <script>
-(function () {
+})();
+</script>
 
 <!-- ============================================================
      SECTION : VISION ÉVOLUTIVE
      ============================================================ -->
-    <section class="vision" id="vision" aria-labelledby="vision-title">
+<section class="vision" id="vision" aria-labelledby="vision-title">
       <div class="vision__background" aria-hidden="true">
         <div class="vision__orb vision__orb--1"></div>
         <div class="vision__orb vision__orb--2"></div>
@@ -3182,12 +3183,12 @@ img { display: block; max-width: 100%; }
           </div>
         </div>
       </div>
-    </section>
+</section>
 
     <!-- ============================================================
          SECTION : APPEL À L'ACTION FINAL
          ============================================================ -->
-    <section class="cta-final" id="contact" aria-labelledby="cta-title">
+<section class="cta-final" id="contact" aria-labelledby="cta-title">
       <div class="cta-final__background" aria-hidden="true">
         <div class="cta-final__wave cta-final__wave--1"></div>
         <div class="cta-final__wave cta-final__wave--2"></div>
@@ -3298,7 +3299,7 @@ img { display: block; max-width: 100%; }
           </div>
         </div>
       </div>
-    </section>
+</section>
 
     <!-- ============================================================
          FOOTER
@@ -3415,7 +3416,7 @@ img { display: block; max-width: 100%; }
           <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
       </button>
-    </footer>
+</footer>
 
     <!-- ============================================================
          TOAST NOTIFICATIONS
@@ -3426,5 +3427,35 @@ img { display: block; max-width: 100%; }
          SCRIPT PRINCIPAL
          ============================================================ -->
     <script src="script.js"></script>
+
+    <script>
+    (function() {
+      var burger = document.getElementById('navBurger');
+      var nav = document.getElementById('nav');
+      if (!burger || !nav) return;
+      burger.addEventListener('click', function() {
+        var isOpen = nav.classList.contains('is-open');
+        if (isOpen) {
+          nav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+          burger.classList.remove('is-active');
+          document.body.classList.remove('menu-open');
+        } else {
+          nav.classList.add('is-open');
+          burger.setAttribute('aria-expanded', 'true');
+          burger.classList.add('is-active');
+          document.body.classList.add('menu-open');
+        }
+      });
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          nav.classList.remove('is-open');
+          burger.setAttribute('aria-expanded', 'false');
+          burger.classList.remove('is-active');
+          document.body.classList.remove('menu-open');
+        });
+      });
+    })();
+    </script>
   </body>
 </html>
