@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez les solutions écologiques et de domotique proposées par Eco Smart Homes pour un habitat intelligent et durable." />
+  <meta name="theme-color" content="#2E7D32" />
+  <title>Solutions — Eco Smart Homes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+
+      <a href="index.html" class="logo" aria-label="Eco Smart Homes — Accueil">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="18" fill="#2E7D32"/>
+            <path d="M18 7L8 16h3v10h6v-6h2v6h6V16h3L18 7z" fill="#FFFFFF"/>
+            <path d="M14 22c0 2.5 1.5 4.5 4 5 2.5-.5 4-2.5 4-5" stroke="#A5D6A7" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Eco <strong>Smart Homes</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="solutions.html" class="nav-link nav-link--active" aria-current="page">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a href="usages.html" class="nav-link">Usages</a>
+          </li>
+          <li class="nav-item">
+            <a href="public.html" class="nav-link">Public</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link nav-link--cta">Nous contacter</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+<main id="main-content">
+
+    <!-- Hero Section Solutions -->
+    <section class="solutions-hero" aria-labelledby="solutions-hero-title">
+      <div class="container">
+        <div class="solutions-hero__content">
+          <span class="section-badge">Nos Solutions</span>
+          <h1 id="solutions-hero-title">Technologies au service <br>d'un habitat <em>intelligent et durable</em></h1>
+          <p class="solutions-hero__lead">Découvrez notre gamme complète de solutions pensées pour réduire votre empreinte écologique, optimiser votre confort et valoriser votre patrimoine immobilier.</p>
+          <div class="solutions-hero__stats">
+            <div class="stat-item">
+              <span class="stat-number">-45%</span>
+              <span class="stat-label">de consommation énergétique</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">+30%</span>
+              <span class="stat-label">de valeur immobilière</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">pilotable depuis votre mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="solutions-hero__visual" aria-hidden="true">
+          <div class="hero-visual-blob">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+              <defs>
+                <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:0.15"/>
+                  <stop offset="100%" style="stop-color:#A5D6A7;stop-opacity:0.3"/>
+                </linearGradient>
+              </defs>
+              <path d="M250,50 C350,50 430,130 430,250 C430,370 350,450 250,450 C150,450 70,370 70,250 C70,130 150,50 250,50 Z" fill="url(#heroGrad)"/>
+              <!-- House icon stylized -->
+              <g transform="translate(130, 140)">
+                <polygon points="120,20 220,90 220,200 20,200 20,90" fill="#2E7D32" opacity="0.12"/>
+                <polygon points="120,0 240,100 0,100" fill="#2E7D32" opacity="0.2"/>
+                <rect x="80" y="130" width="40" height="70" fill="#A5D6A7" opacity="0.5" rx="4"/>
+                <rect x="140" y="130" width="50" height="45" fill="#A5D6A7" opacity="0.4" rx="4"/>
+                <!-- Solar panels -->
+                <rect x="60" y="55" width="30" height="18" fill="#FFC107" opacity="0.7" rx="2" transform="rotate(-28, 75, 64)"/>
+                <rect x="95" y="38" width="30" height="18" fill="#FFC107" opacity="0.7" rx="2" transform="rotate(-28, 110, 47)"/>
+                <!-- Leaf -->
+                <path d="M190,160 Q210,140 220,160 Q210,180 190,160 Z" fill="#A5D6A7" opacity="0.8"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="solutions-hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8faf8"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Navigation Solutions -->
+    <nav class="solutions-nav" aria-label="Navigation des solutions">
+      <div class="container">
+        <ul class="solutions-nav__list" role="list">
+          <li><a href="#energie" class="solutions-nav__link">Énergie</a></li>
+          <li><a href="#domotique" class="solutions-nav__link">Domotique</a></li>
+          <li><a href="#isolation" class="solutions-nav__link">Isolation</a></li>
+          <li><a href="#eau" class="solutions-nav__link">Eau</a></li>
+          <li><a href="#pilotage" class="solutions-nav__link">Pilotage</a></li>
+          <li><a href="#accompagnement" class="solutions-nav__link">Accompagnement</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section Énergie -->
+    <section id="energie" class="solution-section solution-section--alt" aria-labelledby="energie-title">
+      <div class="container">
+        <div class="solution-section__grid">
+          <div class="solution-section__visual" aria-hidden="true">
+            <div class="solution-icon-block solution-icon-block--energy">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="#A5D6A7" opacity="0.15"/>
+                <!-- Sun -->
+                <circle cx="100" cy="100" r="30" fill="#FFC107" opacity="0.9"/>
+                <g stroke="#FFC107" stroke-width="4" stroke-linecap="round" opacity="0.7">
+                  <line x1="100" y1="55" x2="100" y2="40"/>
+                  <line x1="100" y1="145" x2="100" y2="160"/>
+                  <line x1="55" y1="100" x2="40" y2="100"/>
+                  <line x1="145" y1="100" x2="160" y2="100"/>
+                  <line x1="68" y1="68" x2="57" y2="57"/>
+                  <line x1="132" y1="132" x2="143" y2="143"/>
+                  <line x1="132" y1="68" x2="143" y2="57"/>
+                  <line x1="68" y1="132" x2="57" y2="143"/>
+                </g>
+                <!-- Solar panel -->
+                <rect x="55" y="130" width="90" height="30" rx="4" fill="#37474F" opacity="0.7"/>
+                <line x1="100" y1="130" x2="100" y2="160" stroke="#A5D6A7" stroke-width="2"/>
+                <line x1="55" y1="145" x2="145" y2="145" stroke="#A5D6A7" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="solution-tech-tags">
+              <span class="tech-tag">Panneaux solaires</span>
+              <span class="tech-tag">Batteries domestiques</span>
+              <span class="tech-tag">Autoconsommation</span>
+            </div>
+          </div>
+          <div class="solution-section__content">
+            <div class="solution-section__header">
+              <span class="solution-number">01</span>
+              <h2 id="energie-title">Production d'énergie renouvelable</h2>
+            </div>
+            <p class="solution-section__intro">Transformez votre habitat en véritable centrale énergétique propre. Nos solutions de production solaire et de stockage intelligent vous permettent d'atteindre l'autonomie énergétique tout en réduisant drastiquement votre facture.</p>
+            <div class="solution-features">
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Panneaux photovoltaïques haute performance</h3>
+                  <p>Modules monocristallins de dernière génération avec rendement jusqu'à 22%. Installation sur toiture, façade ou pergola selon votre configuration.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Batteries de stockage domestique</h3>
+                  <p>Stockez l'énergie produite en journée pour l'utiliser la nuit ou lors des pics de consommation. Capacités de 5 à 30 kWh adaptées à chaque foyer.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Gestion intelligente de l'autoconsommation</h3>
+                  <p>Algorithme d'optimisation qui priorise l'usage de votre propre production, maximise la revente et anticipe vos besoins selon la météo.</p>
+                </div>
+              </article>
+            </div>
+            <div class="solution-cta">
+              <a href="contact.html" class="btn btn--primary">Demander une étude solaire</a>
+              <a href="usages.html" class="btn btn--ghost">Voir les cas d'usage</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Domotique -->
+    <section id="domotique" class="solution-section" aria-labelledby="domotique-title">
+      <div class="container">
+        <div class="solution-section__grid solution-section__grid--reverse">
+          <div class="solution-section__content">
+            <div class="solution-section__header">
+              <span class="solution-number">02</span>
+              <h2 id="domotique-title">Domotique & maison connectée</h2>
+            </div>
+            <p class="solution-section__intro">Centralisez le contrôle de votre habitat sur une interface unique. Éclairage, chauffage, sécurité, volets, multimédia : tout devient intelligent, automatisé et accessible depuis n'importe où.</p>
+            <div class="solution-features">
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Contrôle centralisé multi-appareils</h3>
+                  <p>Application mobile et tablette murale pour piloter l'ensemble de votre habitat. Compatible iOS, Android et interfaces vocales.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Protocoles ouverts et interopérables</h3>
+                  <p>Intégration Zigbee, Z-Wave, Matter et Wi-Fi pour une compatibilité maximale avec les équipements existants et futurs.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Scénarios automatisés et routines</h3>
+                  <p>Programmez des scénarios personnalisés : réveil, départ, retour, soirée. L'habitat s'adapte à votre rythme de vie automatiquement.</p>
+                </div>
+              </article>
+            </div>
+            <div class="solution-cta">
+              <a href="contact.html" class="btn btn--primary">Configurer ma maison connectée</a>
+            </div>
+          </div>
+          <div class="solution-section__visual" aria-hidden="true">
+            <div class="solution-icon-block solution-icon-block--domotique">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="#2E7D32" opacity="0.08"/>
+                <!-- Smart home hub -->
+                <circle cx="100" cy="100" r="25" fill="#2E7D32" opacity="0.8"/>
+                <circle cx="100" cy="100" r="15" fill="#FFFFFF" opacity="0.9"/>
+                <!-- Connection lines -->
+                <g stroke="#A5D6A7" stroke-width="2" opacity="0.6">
+                  <line x1="100" y1="75" x2="100" y2="50"/>
+                  <line x1="100" y1="125" x2="100" y2="150"/>
+                  <line x1="75" y1="100" x2="50" y2="100"/>
+                  <line x1="125" y1="100" x2="150" y2="100"/>
+                  <line x1="82" y1="82" x2="65" y2="65"/>
+                  <line x1="118" y1="118" x2="135" y2="135"/>
+                  <line x1="118" y1="82" x2="135" y2="65"/>
+                  <line x1="82" y1="118" x2="65" y2="135"/>
+                </g>
+                <!-- Device nodes -->
+                <circle cx="100" cy="45" r="10" fill="#FFC107" opacity="0.8"/>
+                <circle cx="100" cy="155" r="10" fill="#FFC107" opacity="0.8"/>
+                <circle cx="45" cy="100" r="10" fill="#FFC107" opacity="0.8"/>
+                <circle cx="155" cy="100" r="10" fill="#FFC107" opacity="0.8"/>
+                <circle cx="60" cy="60" r="8" fill="#A5D6A7" opacity="0.8"/>
+                <circle cx="140" cy="140" r="8" fill="#A5D6A7" opacity="0.8"/>
+                <circle cx="140" cy="60" r="8" fill="#A5D6A7" opacity="0.8"/>
+                <circle cx="60" cy="140" r="8" fill="#A5D6A7" opacity="0.8"/>
+              </svg>
+            </div>
+            <div class="solution-tech-tags">
+              <span class="tech-tag">Zigbee / Z-Wave</span>
+              <span class="tech-tag">Matter</span>
+              <span class="tech-tag">App mobile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Isolation -->
+    <section id="isolation" class="solution-section solution-section--alt" aria-labelledby="isolation-title">
+      <div class="container">
+        <div class="solution-section__grid">
+          <div class="solution-section__visual" aria-hidden="true">
+            <div class="solution-icon-block solution-icon-block--isolation">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="#A5D6A7" opacity="0.12"/>
+                <!-- House layers -->
+                <polygon points="100,30 165,80 165,170 35,170 35,80" fill="none" stroke="#2E7D32" stroke-width="3" opacity="0.3"/>
+                <polygon points="100,20 175,75 25,75" fill="#2E7D32" opacity="0.2"/>
+                <!-- Insulation layers -->
+                <rect x="45" y="90" width="110" height="12" rx="3" fill="#A5D6A7" opacity="0.6"/>
+                <rect x="45" y="108" width="110" height="12" rx="3" fill="#A5D6A7" opacity="0.4"/>
+                <rect x="45" y="126" width="110" height="12" rx="3" fill="#A5D6A7" opacity="0.25"/>
+                <!-- Thermometer -->
+                <rect x="88" y="50" width="8" height="35" rx="4" fill="#FFC107" opacity="0.7"/>
+                <circle cx="92" cy="88" r="7" fill="#FFC107" opacity="0.8"/>
+                <!-- Arrows indicating heat retention -->
+                <path d="M30,100 Q20,100 25,90" stroke="#FFC107" stroke-width="2" fill="none" opacity="0.6" marker-end="url(#arr)"/>
+                <path d="M170,100 Q180,100 175,90" stroke="#FFC107" stroke-width="2" fill="none" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="solution-tech-tags">
+              <span class="tech-tag">Biosourcé</span>
+              <span class="tech-tag">Passif</span>
+              <span class="tech-tag">RE2020</span>
+            </div>
+          </div>
+          <div class="solution-section__content">
+            <div class="solution-section__header">
+              <span class="solution-number">03</span>
+              <h2 id="isolation-title">Isolation & enveloppe thermique</h2>
+            </div>
+            <p class="solution-section__intro">Une maison bien isolée consomme jusqu'à 5 fois moins d'énergie. Nos solutions d'isolation biosourcées et performantes constituent le socle indispensable de tout habitat durable.</p>
+            <div class="solution-features">
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Matériaux biosourcés et naturels</h3>
+                  <p>Laine de bois, chanvre, ouate de cellulose, liège expansé : des isolants naturels aux performances thermiques et acoustiques exceptionnelles.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M2 12h20M12 2v20"/>
+                    <circle cx="12" cy="12" r="4"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Conception passive et bioclimatique</h3>
+                  <p>Orientation optimale, protections solaires adaptées, inertie thermique maîtrisée pour un confort naturel toute l'année sans surconsommation.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Audit et diagnostic thermique</h3>
+                  <p>Analyse complète de votre enveloppe par thermographie infrarouge. Identification des ponts thermiques et plan d'action priorisé pour maximiser le retour sur investissement.</p>
+                </div>
+              </article>
+            </div>
+            <div class="solution-cta">
+              <a href="contact.html" class="btn btn--primary">Demander un audit thermique</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Eau -->
+    <section id="eau" class="solution-section" aria-labelledby="eau-title">
+      <div class="container">
+        <div class="solution-section__grid solution-section__grid--reverse">
+          <div class="solution-section__content">
+            <div class="solution-section__header">
+              <span class="solution-number">04</span>
+              <h2 id="eau-title">Gestion intelligente de l'eau</h2>
+            </div>
+            <p class="solution-section__intro">L'eau est une ressource précieuse. Nos solutions de récupération, de filtration et de gestion connectée vous permettent de réduire votre consommation jusqu'à 40% tout en garantissant une qualité optimale.</p>
+            <div class="solution-features">
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Récupération des eaux pluviales</h3>
+                  <p>Systèmes de collecte, filtration et stockage des eaux de pluie pour l'arrosage, les sanitaires et le nettoyage. Cuves enterrées de 1 000 à 10 000 litres.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Traitement et recyclage des eaux grises</h3>
+                  <p>Récupération et traitement des eaux de lavabo et douche pour réutilisation dans les chasses d'eau. Économie jusqu'à 30% de la consommation totale.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Compteurs connectés et détection de fuites</h3>
+                  <p>Capteurs intelligents sur chaque circuit pour surveiller la consommation en temps réel, détecter les anomalies et recevoir des alertes instantanées.</p>
+                </div>
+              </article>
+            </div>
+            <div class="solution-cta">
+              <a href="contact.html" class="btn btn--primary">Étudier ma gestion de l'eau</a>
+            </div>
+          </div>
+          <div class="solution-section__visual" aria-hidden="true">
+            <div class="solution-icon-block solution-icon-block--eau">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="#2E7D32" opacity="0.07"/>
+                <!-- Water drop large -->
+                <path d="M100,30 Q130,70 130,110 Q130,140 100,150 Q70,140 70,110 Q70,70 100,30 Z" fill="#A5D6A7" opacity="0.5"/>
+                <!-- Water drop inner -->
+                <path d="M100,55 Q118,82 118,108 Q118,128 100,135 Q82,128 82,108 Q82,82 100,55 Z" fill="#2E7D32" opacity="0.25"/>
+                <!-- Ripples -->
+                <ellipse cx="100" cy="160" rx="40" ry="8" fill="none" stroke="#A5D6A7" stroke-width="2" opacity="0.5"/>
+                <ellipse cx="100" cy="160" rx="55" ry="11" fill="none" stroke="#A5D6A7" stroke-width="1.5" opacity="0.3"/>
+                <ellipse cx="100" cy="160" rx="70" ry="14" fill="none" stroke="#A5D6A7" stroke-width="1" opacity="0.2"/>
+              </svg>
+            </div>
+            <div class="solution-tech-tags">
+              <span class="tech-tag">Eaux pluviales</span>
+              <span class="tech-tag">Eaux grises</span>
+              <span class="tech-tag">Capteurs IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Pilotage -->
+    <section id="pilotage" class="solution-section solution-section--alt" aria-labelledby="pilotage-title">
+      <div class="container">
+        <div class="solution-section__grid">
+          <div class="solution-section__visual" aria-hidden="true">
+            <div class="solution-icon-block solution-icon-block--pilotage">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <circle cx="100" cy="100" r="90" fill="#37474F" opacity="0.07"/>
+                <!-- Dashboard screen -->
+                <rect x="40" y="55" width="120" height="80" rx="8" fill="#37474F" opacity="0.15"/>
+                <rect x="40" y="55" width="120" height="15" rx="8" fill="#2E7D32" opacity="0.4"/>
+                <!-- Chart bars -->
+                <rect x="55" y="105" width="12" height="20" rx="2" fill="#A5D6A7" opacity="0.7"/>
+                <rect x="73" y="95" width="12" height="30" rx="2" fill="#2E7D32" opacity="0.6"/>
+                <rect x="91" y="100" width="12" height="25" rx="2" fill="#A5D6A7" opacity="0.7"/>
+                <rect x="109" y="88" width="12" height="37" rx="2" fill="#2E7D32" opacity="0.8"/>
+                <rect x="127" y="98" width="12" height="27" rx="2" fill="#FFC107" opacity="0.7"/>
+                <!-- Phone -->
+                <rect x="82" y="145" width="36" height="20" rx="4" fill="#37474F" opacity="0.3"/>
+                <line x1="100" y1="135" x2="100" y2="145" stroke="#A5D6A7" stroke-width="2" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="solution-tech-tags">
+              <span class="tech-tag">Tableau de bord</span>
+              <span class="tech-tag">IA prédictive</span>
+              <span class="tech-tag">Rapports</span>
+            </div>
+          </div>
+          <div class="solution-section__content">
+            <div class="solution-section__header">
+              <span class="solution-number">05</span>
+              <h2 id="pilotage-title">Pilotage énergétique & IA</h2>
+            </div>
+            <p class="solution-section__intro">Notre plateforme de gestion énergétique centralise toutes vos données de consommation et de production. L'intelligence artificielle analyse vos habitudes et optimise automatiquement votre bilan énergétique.</p>
+            <div class="solution-features">
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Tableau de bord unifié</h3>
+                  <p>Visualisez en temps réel votre production solaire, votre consommation par poste, le niveau de vos batteries et vos échanges avec le réseau.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Optimisation prédictive par IA</h3>
+                  <p>L'algorithme apprend vos habitudes, anticipe la météo et les prix de l'électricité pour déclencher automatiquement vos appareils au meilleur moment.</p>
+                </div>
+              </article>
+              <article class="solution-feature">
+                <div class="solution-feature__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div class="solution-feature__text">
+                  <h3>Rapports et bilans carbone</h3>
+                  <p>Rapports mensuels détaillés sur vos économies réalisées, votre bilan carbone et vos progrès vers l'autonomie énergétique. Exportables pour vos déclarations.</p>
+                </div>
+              </article>
+            </div>
+            <div class="solution-cta">
+              <a href="contact.html" class="btn btn--primary">Découvrir la plateforme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Accompagnement -->
+    <section id="accompagnement" class="solution-section solution-section--accompagnement" aria-labelledby="accompagnement-title">
+      <div class="container">
+        <div class="section-header section-header--centered">
+          <span class="section-badge">Notre méthode</span>
+          <h2 id="accompagnement-title">Un accompagnement de A à Z</h2>
+          <p class="section-subtitle">De l'audit initial à la maintenance, nous vous guidons à chaque étape de votre transition vers un habitat intelligent et écologique.</p>
+        </div>
+        <div class="process-steps">
+          <article class="process-step" data-step="1">
+            <div class="process-step__number" aria-hidden="true">1</div>
+            <div class="process-step__content">
+              <h3>Audit & diagnostic</h3>
+              <p>Analyse complète de votre habitat : consommations, enveloppe thermique, équipements existants, potentiel solaire. Rapport détaillé et recommandations personnalisées.</p>
+            </div>
+            <div class="process-step__connector" aria-hidden="true"></div>
+          </article>
+          <article class="process-step" data-step="2">
+            <div class="process-step__number" aria-hidden="true">2</div>
+            <div class="process-step__content">
+              <h3>Conception sur mesure</h3>
+              <p>Élaboration d'un plan de transition adapté à votre budget, vos priorités et votre mode de vie. Simulation des économies et du retour sur investissement.</p>
+            </div>
+            <div class="process-step__connector" aria-hidden="true"></div>
+          </article>
+          <article class="process-step" data-step="3">
+            <div class="process-step__number" aria-hidden="true">3</div>
+            <div class="process-step__content">
+              <h3>Installation & intégration</h3>
+              <p>Déploiement par nos équipes certifiées RGE. Intégration harmonieuse de tous les systèmes et configuration de votre interface de pilotage.</p>
+            </div>
+            <div class="process-step__connector" aria-hidden="true"></div>
+          </article>
+          <article class="process-step" data-step="4">
+            <div class="process-step__number" aria-hidden="true">4</div>
+            <div class="process-step__content">
+              <h3>Formation & prise en main</h3>
+              <p>Session de formation personnalisée pour maîtriser votre nouvel habitat. Documentation complète et support disponible 7j/7.</p>
+            </div>
+            <div class="process-step__connector" aria-hidden="true"></div>
+          </article>
+          <article class="process-step" data-step="5">
+            <div class="process-step__number" aria-hidden="true">5</div>
+            <div class="process-step__content">
+              <h3>Suivi & maintenance</h3>
+              <p>Contrats de maintenance préventive, mises à jour logicielles automatiques et support technique réactif pour garantir des performances optimales dans la durée.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Certifications & Aides -->
+    <section class="solution-section solution-section--certif" aria-labelledby="certif-title">
+      <div class="container">
+        <div class="certif-grid">
+          <div class="certif-content">
+            <span class="section-badge">Garanties & financements</span>
+            <h2 id="certif-title">Certifiés, subventionnés, engagés</h2>
+            <p>Toutes nos installations sont réalisées par des professionnels certifiés RGE (Reconnu Garant de l'Environnement), condition nécessaire pour bénéficier des aides de l'État.</p>
+            <ul class="certif-list" role="list">
+              <li class="certif-item">
+                <span class="certif-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>MaPrimeRénov' jusqu'à 90% des travaux</span>
+              </li>
+              <li class="certif-item">
+                <span class="certif-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>TVA réduite à 5,5% sur les travaux de rénovation</span>
+              </li>
+              <li class="certif-item">
+                <span class="certif-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Certificats d'Économies d'Énergie (CEE)</span>
+              </li>
+              <li class="certif-item">
+                <span class="certif-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Éco-PTZ (prêt à taux zéro) jusqu'à 50 000 €</span>
+              </li>
+              <li class="certif-item">
+                <span class="certif-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </span>
+                <span>Aides locales et régionales cumulables</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary">Simuler mes aides financières</a>
+          </div>
+          <div class="certif-badges" aria-label="Certifications obtenues">
+            <div class="certif-badge">
+              <div class="certif-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <circle cx="30" cy="30" r="28" fill="#2E7D32" opacity="0.1" stroke="#2E7D32" stroke-width="2"/>
+                  <text x="30" y="26" text-anchor="middle" font-size="9" font-weight="bold" fill="#2E7D32" font-family="sans-serif">RGE</text>
+                  <text x="30" y="38" text-anchor="middle" font-size="6" fill="#37474F" font-family="sans-serif">Certifié</text>
+                </svg>
+              </div>
+              <span>Certification RGE</span>
+            </div>
+            <div class="certif-badge">
+              <div class="certif-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <circle cx="30" cy="30" r="28" fill="#FFC107" opacity="0.1" stroke="#FFC107" stroke-width="2"/>
+                  <text x="30" y="26" text-anchor="middle" font-size="7" font-weight="bold" fill="#37474F" font-family="sans-serif">RE2020</text>
+                  <text x="30" y="38" text-anchor="middle" font-size="6" fill="#37474F" font-family="sans-serif">Conforme</text>
+                </svg>
+              </div>
+              <span>Norme RE2020</span>
+            </div>
+            <div class="certif-badge">
+              <div class="certif-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <circle cx="30" cy="30" r="28" fill="#A5D6A7" opacity="0.2" stroke="#A5D6A7" stroke-width="2"/>
+                  <text x="30" y="24" text-anchor="middle" font-size="7" font-weight="bold" fill="#2E7D32" font-family="sans-serif">BBC</text>
+                  <text x="30" y="34" text-anchor="middle" font-size="5.5" fill="#37474F" font-family="sans-serif">Bâtiment</text>
+                  <text x="30" y="42" text-anchor="middle" font-size="5.5" fill="#37474F" font-family="sans-serif">Basse Conso</text>
+                </svg>
+              </div>
+              <span>Label BBC</span>
+            </div>
+            <div class="certif-badge">
+              <div class="certif-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                  <circle cx="30" cy="30" r="28" fill="#2E7D32" opacity="0.08" stroke="#2E7D32" stroke-width="2"/>
+                  <text x="30" y="26" text-anchor="middle" font-size="7" font-weight="bold" fill="#2E7D32" font-family="sans-serif">QUALIPV</text>
+                  <text x="30" y="38" text-anchor="middle" font-size="6" fill="#37474F" font-family="sans-serif">Solaire</text>
+                </svg>
+              </div>
+              <span>QualiPV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="solutions-cta-final" aria-labelledby="cta-final-title">
+      <div class="container">
+        <div class="cta-final-card">
+          <div class="cta-final-card__content">
+            <h2 id="cta-final-title">Prêt à transformer votre habitat ?</h2>
+            <p>Nos experts vous accompagnent pour concevoir la solution sur mesure qui correspond à votre projet, votre budget et vos ambitions écologiques.</p>
+            <div class="cta-final-card__actions">
+              <a href="contact.html" class="btn btn--primary btn--large">Prendre rendez-vous</a>
+              <a href="usages.html" class="btn btn--outline-white btn--large">Voir les usages concrets</a>
+            </div>
+          </div>
+          <div class="cta-final-card__visual" aria-hidden="true">
+            <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+              <defs>
+                <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#A5D6A7;stop-opacity:0.3"/>
+                  <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:0.1"/>
+                </linearGradient>
+              </defs>
+              <ellipse cx="150" cy="100" rx="130" ry="80" fill="url(#ctaGrad)"/>
+              <!-- House -->
+              <polygon points="150,30 220,80 220,160 80,160 80,80" fill="white" opacity="0.15"/>
+              <polygon points="150,15 235,80 65,80" fill="white" opacity="0.2"/>
+              <!-- Solar panels on roof -->
+              <rect x="115" y="42" width="25" height="14" rx="2" fill="#FFC107" opacity="0.8" transform="rotate(-27, 127, 49)"/>
+              <rect x="145" y="30" width="25" height="14" rx="2" fill="#FFC107" opacity="0.8" transform="rotate(-27, 157, 37)"/>
+              <!-- Leaf -->
+              <path d="M230,50 Q250,30 260,50 Q250,70 230,50 Z" fill="#A5D6A7" opacity="0.6"/>
+              <!-- Wifi signal -->
+              <g stroke="white" stroke-width="2" fill="none" opacity="0.4">
+                <path d="M140,120 Q150,110 160,120"/>
+                <path d="M133,113 Q150,98 167,113"/>
+                <circle cx="150" cy="125" r="3" fill="white"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <a href="index.html" class="footer-logo" aria-label="Eco Smart Homes - Retour à l'accueil">
+            <span class="footer-logo__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                <circle cx="20" cy="20" r="19" fill="#2E7D32" opacity="0.15"/>
+                <polygon points="20,6 32,15 32,32 8,32 8,15" fill="#2E7D32" opacity="0.7"/>
+                <polygon points="20,3 35,14 5,14" fill="#2E7D32"/>
+                <rect x="15" y="22" width="10" height="10" rx="1" fill="#A5D6A7"/>
+                <rect x="13" y="10" width="7" height="4" rx="1" fill="#FFC107" opacity="0.9" transform="rotate(-20, 16, 12)"/>
+              </svg>
+            </span>
+            <span class="footer-logo__text">Eco Smart Homes</span>
+          </a>
+          <p class="site-footer__tagline">L'habitat intelligent au service de la planète et de votre confort.</p>
+          <div class="site-footer__social" aria-label="Réseaux sociaux">
+            <a href="#" class="social-link" aria-label="LinkedIn Eco Smart Homes" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram Eco Smart Homes" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube Eco Smart Homes" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Navigation secondaire">
+          <h3 class="site-footer__nav-title">Navigation</h3>
+          <ul role="list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="solutions.html" aria-current="page">Solutions</a></li>
+            <li><a href="usages.html">Usages</a></li>
+            <li><a href="public.html">Notre public</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__solutions">
+          <h3 class="site-footer__nav-title">Nos solutions</h3>
+          <ul role="list">
+            <li><a href="solutions.html#energie">Énergie solaire</a></li>
+            <li><a href="solutions.html#domotique">Domotique</a></li>
+            <li><a href="solutions.html#isolation">Isolation thermique</a></li>
+            <li><a href="solutions.html#eau">Gestion de l'eau</a></li>
+            <li><a href="solutions.html#pilotage">Pilotage IA</a></li>
+            <li><a href="solutions.html#accompagnement">Accompagnement</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__contact">
+          <h3 class="site-footer__nav-title">Contact</h3>
+          <address>
+            <ul role="list" class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </span>
+                <span>12 Allée des Chênes Verts<br>69001 Lyon, France</span>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </span>
+                <a href="tel:+33400000000">+33 4 00 00 00 00</a>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </span>
+                <a href="mailto:contact@ecosmarthomes.fr">contact@ecosmarthomes.fr</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p class="site-footer__legal">
+          &copy; <span id="footer-year">2024</span> Eco Smart Homes. Tous droits réservés.
+        </p>
+        <ul class="site-footer__legal-links" role="list">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Accessibilité</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut de page" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
