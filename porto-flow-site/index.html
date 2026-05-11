@@ -144,6 +144,15 @@
         onerror="this.style.display='none'"
         aria-hidden="true"
       />
+      <!-- Image générique externe de fallback : côte méditerranéenne -->
+      <img
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80&auto=format&fit=crop"
+        alt=""
+        class="hero__photo-img hero__photo-img--generic"
+        loading="eager"
+        onerror="this.style.display='none'"
+        aria-hidden="true"
+      />
       <div class="hero__photo-overlay"></div>
     </div>
 
@@ -378,10 +387,19 @@
 
         <div class="local-vibe-card local-vibe-card--large" data-animate="fade-up">
           <div class="local-vibe-card__img-wrap">
+            <!-- Emplacement futur : assets/images/port-marina.jpg -->
             <img
               src="assets/images/port-marina.jpg"
               alt="Port de plaisance de Porto-Vecchio, bateaux amarrés, mer méditerranéenne"
               class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <!-- Image générique externe : port méditerranéen -->
+            <img
+              src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=900&q=75&auto=format&fit=crop"
+              alt="Port de plaisance méditerranéen, bateaux amarrés"
+              class="local-vibe-card__img local-vibe-card__img--generic"
               loading="lazy"
               onerror="this.style.display='none'"
             />
@@ -399,10 +417,19 @@
 
         <div class="local-vibe-card" data-animate="fade-up" data-delay="80">
           <div class="local-vibe-card__img-wrap">
+            <!-- Emplacement futur : assets/images/plage-palombaggia.jpg -->
             <img
               src="assets/images/plage-palombaggia.jpg"
               alt="Plage de Palombaggia, sable blanc, eau turquoise, pins parasols"
               class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <!-- Image générique externe : plage méditerranéenne -->
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=75&auto=format&fit=crop"
+              alt="Plage méditerranéenne, eau turquoise, sable blanc"
+              class="local-vibe-card__img local-vibe-card__img--generic"
               loading="lazy"
               onerror="this.style.display='none'"
             />
@@ -420,10 +447,19 @@
 
         <div class="local-vibe-card" data-animate="fade-up" data-delay="160">
           <div class="local-vibe-card__img-wrap">
+            <!-- Emplacement futur : assets/images/maquis-relief.jpg -->
             <img
               src="assets/images/maquis-relief.jpg"
               alt="Maquis corse et relief montagneux autour de Porto-Vecchio"
               class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <!-- Image générique externe : maquis méditerranéen -->
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=75&auto=format&fit=crop"
+              alt="Relief et végétation méditerranéenne, maquis"
+              class="local-vibe-card__img local-vibe-card__img--generic"
               loading="lazy"
               onerror="this.style.display='none'"
             />
@@ -441,10 +477,19 @@
 
         <div class="local-vibe-card" data-animate="fade-up" data-delay="240">
           <div class="local-vibe-card__img-wrap">
+            <!-- Emplacement futur : assets/images/route-littorale.jpg -->
             <img
               src="assets/images/route-littorale.jpg"
               alt="Route littorale corse longeant la côte méditerranéenne"
               class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <!-- Image générique externe : route côtière -->
+            <img
+              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&q=75&auto=format&fit=crop"
+              alt="Route côtière méditerranéenne longeant la mer"
+              class="local-vibe-card__img local-vibe-card__img--generic"
               loading="lazy"
               onerror="this.style.display='none'"
             />
@@ -775,49 +820,3 @@
                   <circle cx="16" cy="6" r="1.5" stroke="#8FC7DA" stroke-width="1"/>
                   <circle cx="4" cy="14" r="1.5" stroke="#8FC7DA" stroke-width="1"/>
                   <circle cx="16" cy="14" r="1.5" stroke="#8FC7DA" stroke-width="1"/>
-                </svg>
-              </div>
-              <div>
-                <strong class="solution__feature-title">Écosystème connecté</strong>
-                <span class="solution__feature-desc">Commerçants, hôteliers, restaurateurs et institutions intégrés</span>
-              </div>
-            </div>
-            <div class="solution__feature" data-animate="fade-up" data-delay="200">
-              <div class="solution__feature-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="9" stroke="#1F6F8B" stroke-width="1"/>
-                  <path d="M6 13c0-2 1.8-3.5 4-3.5s4 1.5 4 3.5" stroke="#D86F3C" stroke-width="1.2" stroke-linecap="round"/>
-                  <circle cx="10" cy="7" r="1.5" fill="#D86F3C"/>
-                </svg>
-              </div>
-              <div>
-                <strong class="solution__feature-title">Multi-profils</strong>
-                <span class="solution__feature-desc">Habitants, touristes, professionnels, collectivités — une seule plateforme</span>
-              </div>
-            </div>
-          </div>
-
-          <a href="application.html" class="btn btn--primary" aria-label="Voir l'application Porto Flow">
-            <span>Voir l'application</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-
-        <div class="solution__visual" data-animate="fade-left" aria-label="Dashboard territorial Porto Flow" role="img">
-          <div class="dashboard">
-            <div class="dashboard__header" aria-hidden="true">
-              <div class="dashboard__dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span class="dashboard__title">Porto Flow · Dashboard Territorial</span>
-              <span class="dashboard__time" id="dashboard-time">--:--</span>
-            </div>
-            <div class="dashboard__body" aria-hidden="true">
-
-              <div class="dash-row">
-                <div class="dash-kpi dash-kpi--alert">
-                  <span class="dash-kpi__icon">🚗</span>
-                  <div class="dash-kpi__info">
-                    <span class="dash-kpi__label">Trafic RN198</span>
