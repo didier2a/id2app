@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
@@ -20,98 +21,77 @@
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-1.html" class="nav-link nav-link--active" aria-current="page">Présentation</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-2.html" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-3.html" class="nav-link">Méthode</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-4.html" class="nav-link">Équipe</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-5.html" class="nav-link">Références</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-6.html" class="nav-link">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a href="page-7.html" class="nav-link">Contact</a>
-          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="page-1.html" class="nav-link nav-link--active" aria-current="page">Présentation</a></li>
+          <li class="nav-item"><a href="page-2.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li class="nav-item"><a href="page-4.html" class="nav-link">Équipe</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link">Références</a></li>
+          <li class="nav-item"><a href="page-6.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="page-7.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
+
     <section class="page-hero" aria-labelledby="page-heading">
       <div class="container">
         <h1 id="page-heading" class="page-hero__title">Présentation du test rapide V4</h1>
-        <p class="page-hero__subtitle">
-          Découvrez les objectifs et le périmètre du workflow ID2App V4 à travers ce micro-site de validation.
+        <p class="page-hero__subtitle">Comprendre les objectifs, le périmètre et la logique du workflow ID2App V4 en quelques points essentiels.</p>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="objectives-heading">
+      <div class="container content-section__inner">
+        <h2 id="objectives-heading" class="content-section__title">Pourquoi ce test ?</h2>
+        <p class="content-section__text">
+          Le micro-site V4 Smoke Test a été conçu pour valider rapidement l'ensemble du workflow ID2App V4 dans des conditions réelles. Il couvre la génération de pages HTML statiques, l'intégration des styles, la navigation inter-pages et la compatibilité GitHub Pages.
         </p>
-      </div>
-    </section>
+        <p class="content-section__text">
+          Chaque page de ce site représente un segment du pipeline de génération : de la spécification initiale jusqu'au déploiement final. L'objectif est de détecter les points de friction et de confirmer la cohérence du rendu sur l'ensemble des 8 pages.
+        </p>
 
-    <section class="content-section" aria-label="Objectifs du test V4">
-      <div class="container">
-        <div class="content-block">
-          <h2 class="content-block__title">Pourquoi ce test ?</h2>
-          <p class="content-block__text">
-            Le micro-site V4 Smoke Test a été conçu pour valider rapidement l'ensemble du workflow ID2App V4 dans des conditions réelles. Il couvre la génération de pages HTML statiques, la cohérence de la navigation, l'intégration des styles et des scripts, ainsi que la compatibilité avec GitHub Pages.
-          </p>
-          <p class="content-block__text">
-            Chaque page de ce site représente un segment du workflow : de la spécification initiale jusqu'au déploiement final. L'objectif est de détecter les points de friction et de garantir une expérience fluide pour les développeurs, testeurs et équipes produit.
-          </p>
-        </div>
-
-        <div class="content-grid">
-          <article class="card" aria-label="Objectif 1">
-            <div class="card__icon" aria-hidden="true">✓</div>
-            <h3 class="card__title">Validation du workflow</h3>
-            <p class="card__text">Tester chaque étape du pipeline ID2App V4 de bout en bout, sans dépendance externe.</p>
-          </article>
-          <article class="card" aria-label="Objectif 2">
-            <div class="card__icon" aria-hidden="true">⚡</div>
-            <h3 class="card__title">Rapidité d'exécution</h3>
-            <p class="card__text">Générer un site complet en un minimum de cycles, avec un résultat immédiatement déployable.</p>
-          </article>
-          <article class="card" aria-label="Objectif 3">
-            <div class="card__icon" aria-hidden="true">♿</div>
-            <h3 class="card__title">Accessibilité et qualité</h3>
-            <p class="card__text">Respecter les standards HTML5 sémantiques, l'accessibilité ARIA et la compatibilité multi-navigateurs.</p>
-          </article>
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <span class="highlight-card__icon" aria-hidden="true">✦</span>
+            <h3 class="highlight-card__title">Périmètre défini</h3>
+            <p class="highlight-card__text">8 pages statiques, un seul fichier CSS partagé, un seul fichier JavaScript vanilla, aucune dépendance externe.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-card__icon" aria-hidden="true">✦</span>
+            <h3 class="highlight-card__title">Validation complète</h3>
+            <p class="highlight-card__text">Navigation active, accessibilité de base, responsive mobile, liens relatifs corrects et déploiement GitHub Pages.</p>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-card__icon" aria-hidden="true">✦</span>
+            <h3 class="highlight-card__title">Résultat attendu</h3>
+            <p class="highlight-card__text">Un site fonctionnel, cohérent visuellement et maintenable, généré intégralement par le pipeline ID2App V4.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section" aria-label="Appel à l'action">
+    <section class="cta-section">
       <div class="container cta-section__inner">
-        <p class="cta-section__text">Prêt à explorer ce que nous proposons concrètement ?</p>
-        <a href="page-2.html" class="btn btn--primary">
-          Voir les services
-          <span class="btn__arrow" aria-hidden="true">→</span>
-        </a>
+        <p class="cta-section__label">Étape suivante</p>
+        <h2 class="cta-section__title">Découvrez nos services</h2>
+        <p class="cta-section__text">Explorez ce que ce micro-site met en avant à travers une présentation claire et structurée des services proposés.</p>
+        <a href="page-2.html" class="btn btn--primary">Voir les services</a>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-copy">
-        &copy; 2024 V4 Smoke Test 8 Pages — Micro-site de validation ID2App V4
-      </p>
-      <nav aria-label="Navigation de pied de page">
+      <p class="footer-copy">&copy; 2025 V4 Smoke Test. Micro-site de validation ID2App V4.</p>
+      <nav aria-label="Navigation secondaire">
         <ul class="footer-nav">
           <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
-          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
           <li><a href="page-6.html" class="footer-nav__link">FAQ</a></li>
+          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
