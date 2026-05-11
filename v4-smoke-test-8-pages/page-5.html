@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Références et exemples du test V4.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Références et exemples du test V4." />
   <title>Références - V4 Smoke Test</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">V4 Smoke Test</a>
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
+        V4 Smoke Test
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
@@ -23,7 +25,7 @@
           <li class="nav-item"><a href="page-2.html" class="nav-link">Services</a></li>
           <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
           <li class="nav-item"><a href="page-4.html" class="nav-link">Équipe</a></li>
-          <li class="nav-item"><a href="page-5.html" class="nav-link" aria-current="page">Références</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link nav-link--active" aria-current="page">Références</a></li>
           <li class="nav-item"><a href="page-6.html" class="nav-link">FAQ</a></li>
           <li class="nav-item"><a href="page-7.html" class="nav-link">Contact</a></li>
         </ul>
@@ -31,134 +33,88 @@
     </div>
   </header>
 
-  <main id="main-content">
-    <section class="page-hero">
-      <div class="container">
-        <h1>Nos références clés</h1>
-        <p class="page-intro">Découvrez les projets et collaborations qui illustrent notre savoir-faire et notre engagement envers la qualité.</p>
+  <main id="main-content" class="main-content">
+    <section class="page-hero container" aria-labelledby="page-heading">
+      <h1 id="page-heading">Nos références clés</h1>
+      <p class="page-intro">
+        Découvrez les projets et collaborations qui illustrent notre capacité à livrer des résultats concrets, rapides et fiables dans des contextes variés.
+      </p>
+    </section>
+
+    <section class="references-section container" aria-label="Liste des références">
+      <div class="references-grid">
+
+        <article class="reference-card">
+          <div class="reference-card__header">
+            <span class="reference-card__tag">Workflow</span>
+          </div>
+          <h2 class="reference-card__title">Validation pipeline ID2App V3</h2>
+          <p class="reference-card__desc">
+            Mise en place et validation complète du pipeline de génération automatique de sites statiques pour une équipe produit de 6 personnes. Réduction du temps de livraison de 60 %.
+          </p>
+          <dl class="reference-card__meta">
+            <dt>Secteur</dt>
+            <dd>Technologie</dd>
+            <dt>Durée</dt>
+            <dd>3 semaines</dd>
+          </dl>
+        </article>
+
+        <article class="reference-card">
+          <div class="reference-card__header">
+            <span class="reference-card__tag">Accessibilité</span>
+          </div>
+          <h2 class="reference-card__title">Refonte accessible d'un portail interne</h2>
+          <p class="reference-card__desc">
+            Audit et refonte d'un portail documentaire pour conformité WCAG 2.1 AA. Navigation clavier, contrastes, structure sémantique revus intégralement.
+          </p>
+          <dl class="reference-card__meta">
+            <dt>Secteur</dt>
+            <dd>Administration</dd>
+            <dt>Durée</dt>
+            <dd>5 semaines</dd>
+          </dl>
+        </article>
+
+        <article class="reference-card">
+          <div class="reference-card__header">
+            <span class="reference-card__tag">Performance</span>
+          </div>
+          <h2 class="reference-card__title">Micro-site haute performance</h2>
+          <p class="reference-card__desc">
+            Conception d'un micro-site événementiel en HTML/CSS/JS vanilla, score Lighthouse 98+, déployé sur GitHub Pages en moins de 48 heures.
+          </p>
+          <dl class="reference-card__meta">
+            <dt>Secteur</dt>
+            <dd>Événementiel</dd>
+            <dt>Durée</dt>
+            <dd>2 jours</dd>
+          </dl>
+        </article>
+
+        <article class="reference-card">
+          <div class="reference-card__header">
+            <span class="reference-card__tag">Test & QA</span>
+          </div>
+          <h2 class="reference-card__title">Smoke test V4 — 8 pages</h2>
+          <p class="reference-card__desc">
+            Génération et validation d'un micro-site de 8 pages pour tester le workflow complet ID2App V4, de la spec à la mise en ligne, en environnement contrôlé.
+          </p>
+          <dl class="reference-card__meta">
+            <dt>Secteur</dt>
+            <dd>Interne / R&D</dd>
+            <dt>Durée</dt>
+            <dd>1 journée</dd>
+          </dl>
+        </article>
+
       </div>
     </section>
 
-    <section class="references-section" aria-labelledby="references-heading">
-      <div class="container">
-        <h2 id="references-heading" class="section-title">Projets réalisés</h2>
-        <p class="section-intro">Chaque référence témoigne d'une approche rigoureuse, d'une livraison dans les délais et d'une satisfaction client mesurée.</p>
-
-        <div class="references-grid">
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Workflow</span>
-            </div>
-            <h3 class="reference-card-title">Automatisation du workflow éditorial</h3>
-            <p class="reference-card-desc">Mise en place d'un pipeline de génération de contenu structuré pour une équipe de 12 personnes, réduisant le temps de production de 40 %.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> Médias</li>
-              <li><span class="meta-label">Durée :</span> 6 semaines</li>
-              <li><span class="meta-label">Résultat :</span> −40 % de délai</li>
-            </ul>
-          </article>
-
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Interface</span>
-            </div>
-            <h3 class="reference-card-title">Refonte d'interface produit</h3>
-            <p class="reference-card-desc">Conception et intégration d'une interface responsive pour une application SaaS, avec amélioration du score d'accessibilité WCAG AA.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> SaaS B2B</li>
-              <li><span class="meta-label">Durée :</span> 8 semaines</li>
-              <li><span class="meta-label">Résultat :</span> WCAG AA validé</li>
-            </ul>
-          </article>
-
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Déploiement</span>
-            </div>
-            <h3 class="reference-card-title">Déploiement micro-site statique</h3>
-            <p class="reference-card-desc">Livraison d'un micro-site 8 pages optimisé pour GitHub Pages, avec intégration CI/CD et validation automatique des liens.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> Tech / Produit</li>
-              <li><span class="meta-label">Durée :</span> 3 semaines</li>
-              <li><span class="meta-label">Résultat :</span> 100 % uptime</li>
-            </ul>
-          </article>
-
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Formation</span>
-            </div>
-            <h3 class="reference-card-title">Programme de formation équipe produit</h3>
-            <p class="reference-card-desc">Accompagnement d'une équipe de 8 développeurs sur les bonnes pratiques HTML/CSS/JS vanilla et les standards d'accessibilité web.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> Formation</li>
-              <li><span class="meta-label">Durée :</span> 4 semaines</li>
-              <li><span class="meta-label">Résultat :</span> 8 développeurs formés</li>
-            </ul>
-          </article>
-
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Audit</span>
-            </div>
-            <h3 class="reference-card-title">Audit de performance front-end</h3>
-            <p class="reference-card-desc">Analyse complète des performances d'un site existant, identification des goulots d'étranglement et mise en œuvre des optimisations prioritaires.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> E-commerce</li>
-              <li><span class="meta-label">Durée :</span> 2 semaines</li>
-              <li><span class="meta-label">Résultat :</span> +30 pts Lighthouse</li>
-            </ul>
-          </article>
-
-          <article class="reference-card">
-            <div class="reference-card-header">
-              <span class="reference-tag">Intégration</span>
-            </div>
-            <h3 class="reference-card-title">Intégration système de design</h3>
-            <p class="reference-card-desc">Création et documentation d'un système de design cohérent avec variables CSS, composants réutilisables et guide de contribution.</p>
-            <ul class="reference-meta">
-              <li><span class="meta-label">Secteur :</span> Agence digitale</li>
-              <li><span class="meta-label">Durée :</span> 5 semaines</li>
-              <li><span class="meta-label">Résultat :</span> 30+ composants</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials-section" aria-labelledby="testimonials-heading">
-      <div class="container">
-        <h2 id="testimonials-heading" class="section-title">Ce que disent nos clients</h2>
-        <div class="testimonials-grid">
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">« La rigueur et la rapidité d'exécution ont dépassé nos attentes. Le résultat est propre, maintenable et livré dans les délais. »</p>
-            <footer class="testimonial-author">
-              <span class="author-name">Marie L.</span>
-              <span class="author-role">Directrice produit, SaaS B2B</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">« Une approche méthodique et un code exemplaire. Nous avons pu reprendre le projet en main sans difficulté grâce à la documentation fournie. »</p>
-            <footer class="testimonial-author">
-              <span class="author-name">Thomas R.</span>
-              <span class="author-role">Lead développeur, Agence digitale</span>
-            </footer>
-          </blockquote>
-          <blockquote class="testimonial-card">
-            <p class="testimonial-text">« Le gain de temps sur notre workflow éditorial a été immédiat et mesurable. Je recommande sans hésitation. »</p>
-            <footer class="testimonial-author">
-              <span class="author-name">Sophie M.</span>
-              <span class="author-role">Rédactrice en chef, Médias</span>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="container cta-inner">
-        <p class="cta-text">Vous souhaitez en savoir plus sur notre approche ?</p>
-        <a href="page-6.html" class="btn btn-primary">Foire aux questions</a>
+    <section class="cta-section container" aria-label="Appel à l'action">
+      <div class="cta-block">
+        <p class="cta-block__text">Vous avez des questions sur nos références ou notre approche ?</p>
+        <a href="page-6.html" class="btn btn--primary">Foire aux questions</a>
       </div>
     </section>
   </main>
@@ -169,7 +125,7 @@
       <nav aria-label="Navigation secondaire">
         <ul class="footer-nav">
           <li><a href="index.html" class="footer-link">Accueil</a></li>
-          <li><a href="page-1.html" class="footer-link">Présentation</a></li>
+          <li><a href="page-6.html" class="footer-link">FAQ</a></li>
           <li><a href="page-7.html" class="footer-link">Contact</a></li>
         </ul>
       </nav>
