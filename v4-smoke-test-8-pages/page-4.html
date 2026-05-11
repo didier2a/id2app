@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Équipe - V4 Smoke Test</title>
+  <meta name="description" content="Présentation de l'équipe derrière le test V4." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
+        V4 Smoke Test
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="page-1.html" class="nav-link">Présentation</a></li>
+          <li class="nav-item"><a href="page-2.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li class="nav-item"><a href="page-4.html" class="nav-link" aria-current="page">Équipe</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link">Références</a></li>
+          <li class="nav-item"><a href="page-6.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="page-7.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading">Découvrez notre équipe</h1>
+        <p class="page-hero__subtitle">Des profils complémentaires réunis autour d'un objectif commun : livrer vite, livrer bien.</p>
+      </div>
+    </section>
+
+    <section class="team-section" aria-labelledby="team-heading">
+      <div class="container">
+        <h2 id="team-heading" class="section-title">Les membres de l'équipe</h2>
+        <p class="section-intro">Notre équipe pluridisciplinaire combine expertise technique, sens du produit et rigueur méthodologique pour garantir des résultats fiables à chaque itération.</p>
+
+        <ul class="team-grid" role="list">
+
+          <li class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">
+              <span class="avatar-initials">AL</span>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Alice Laurent</h3>
+              <p class="team-card__role">Lead Développeuse</p>
+              <p class="team-card__bio">Spécialiste front-end et architecture modulaire, Alice pilote la qualité technique et veille à la cohérence du code produit.</p>
+            </div>
+          </li>
+
+          <li class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">
+              <span class="avatar-initials">TM</span>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Thomas Mercier</h3>
+              <p class="team-card__role">Product Owner</p>
+              <p class="team-card__bio">Thomas traduit les besoins métier en spécifications claires et s'assure que chaque livrable correspond aux attentes des parties prenantes.</p>
+            </div>
+          </li>
+
+          <li class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">
+              <span class="avatar-initials">SR</span>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Sofia Ramos</h3>
+              <p class="team-card__role">UX Designer</p>
+              <p class="team-card__bio">Sofia conçoit des interfaces accessibles et intuitives, en plaçant l'expérience utilisateur au cœur de chaque décision de design.</p>
+            </div>
+          </li>
+
+          <li class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">
+              <span class="avatar-initials">KB</span>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Karim Benali</h3>
+              <p class="team-card__role">Ingénieur QA</p>
+              <p class="team-card__bio">Karim orchestre les cycles de test et garantit la robustesse des livrables avant chaque mise en production.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="team-values" aria-labelledby="values-heading">
+      <div class="container">
+        <h2 id="values-heading" class="section-title">Ce qui nous unit</h2>
+        <ul class="values-list" role="list">
+          <li class="values-item">
+            <span class="values-item__icon" aria-hidden="true">⚡</span>
+            <div>
+              <strong>Rapidité d'exécution</strong>
+              <p>Nous privilégions des cycles courts pour livrer de la valeur sans délai.</p>
+            </div>
+          </li>
+          <li class="values-item">
+            <span class="values-item__icon" aria-hidden="true">🎯</span>
+            <div>
+              <strong>Précision technique</strong>
+              <p>Chaque ligne de code est pensée pour la maintenabilité et la performance.</p>
+            </div>
+          </li>
+          <li class="values-item">
+            <span class="values-item__icon" aria-hidden="true">🤝</span>
+            <div>
+              <strong>Collaboration ouverte</strong>
+              <p>La transparence et la communication directe sont au cœur de notre fonctionnement.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container cta-inner">
+        <h2 id="cta-heading" class="cta-section__title">Curieux de voir nos réalisations ?</h2>
+        <p class="cta-section__text">Consultez nos références pour découvrir les projets menés par l'équipe.</p>
+        <a href="page-5.html" class="btn btn--primary">Voir nos références</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav__list">
+          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
+          <li><a href="page-1.html" class="footer-nav__link">Présentation</a></li>
+          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
