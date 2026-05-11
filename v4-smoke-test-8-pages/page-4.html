@@ -14,12 +14,12 @@
       <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
         V4 Smoke Test
       </a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
       </button>
-      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
           <li class="nav-item"><a href="page-1.html" class="nav-link">Présentation</a></li>
@@ -43,95 +43,83 @@
       </div>
     </section>
 
-    <section class="team-section" aria-labelledby="team-heading">
+    <section class="team-section" aria-label="Membres de l'équipe">
       <div class="container">
-        <h2 id="team-heading" class="section-title">Les membres de l'équipe</h2>
-        <p class="section-intro">Notre équipe pluridisciplinaire combine expertise technique, sens du produit et rigueur méthodologique pour garantir des résultats fiables à chaque itération.</p>
 
-        <ul class="team-grid" role="list">
+        <div class="team-grid">
 
-          <li class="team-card">
+          <article class="team-card">
             <div class="team-card__avatar" aria-hidden="true">
               <span class="avatar-initials">AL</span>
             </div>
             <div class="team-card__body">
-              <h3 class="team-card__name">Alice Laurent</h3>
+              <h2 class="team-card__name">Alice Laurent</h2>
               <p class="team-card__role">Lead Développeuse</p>
-              <p class="team-card__bio">Spécialiste front-end et architecture modulaire, Alice pilote la qualité technique et veille à la cohérence du code produit.</p>
+              <p class="team-card__bio">Architecte de solutions front-end robustes, Alice pilote la qualité technique et veille à la cohérence du code sur l'ensemble du projet.</p>
             </div>
-          </li>
+          </article>
 
-          <li class="team-card">
+          <article class="team-card">
             <div class="team-card__avatar" aria-hidden="true">
-              <span class="avatar-initials">TM</span>
+              <span class="avatar-initials">MB</span>
             </div>
             <div class="team-card__body">
-              <h3 class="team-card__name">Thomas Mercier</h3>
-              <p class="team-card__role">Product Owner</p>
-              <p class="team-card__bio">Thomas traduit les besoins métier en spécifications claires et s'assure que chaque livrable correspond aux attentes des parties prenantes.</p>
+              <h2 class="team-card__name">Marc Beaulieu</h2>
+              <p class="team-card__role">Designer UX/UI</p>
+              <p class="team-card__bio">Marc traduit les besoins utilisateurs en interfaces claires et accessibles, en s'appuyant sur des principes de design minimaliste et fonctionnel.</p>
             </div>
-          </li>
+          </article>
 
-          <li class="team-card">
+          <article class="team-card">
             <div class="team-card__avatar" aria-hidden="true">
-              <span class="avatar-initials">SR</span>
+              <span class="avatar-initials">SC</span>
             </div>
             <div class="team-card__body">
-              <h3 class="team-card__name">Sofia Ramos</h3>
-              <p class="team-card__role">UX Designer</p>
-              <p class="team-card__bio">Sofia conçoit des interfaces accessibles et intuitives, en plaçant l'expérience utilisateur au cœur de chaque décision de design.</p>
+              <h2 class="team-card__name">Sophie Chénier</h2>
+              <p class="team-card__role">Responsable Produit</p>
+              <p class="team-card__bio">Sophie coordonne les priorités, aligne les équipes et s'assure que chaque livraison répond aux attentes des utilisateurs finaux et des parties prenantes.</p>
             </div>
-          </li>
+          </article>
 
-          <li class="team-card">
+          <article class="team-card">
             <div class="team-card__avatar" aria-hidden="true">
-              <span class="avatar-initials">KB</span>
+              <span class="avatar-initials">TR</span>
             </div>
             <div class="team-card__body">
-              <h3 class="team-card__name">Karim Benali</h3>
+              <h2 class="team-card__name">Thomas Renard</h2>
               <p class="team-card__role">Ingénieur QA</p>
-              <p class="team-card__bio">Karim orchestre les cycles de test et garantit la robustesse des livrables avant chaque mise en production.</p>
+              <p class="team-card__bio">Thomas conçoit et exécute les scénarios de test pour garantir la fiabilité du workflow V4, du smoke test à la validation complète en production.</p>
             </div>
-          </li>
+          </article>
 
-        </ul>
-      </div>
-    </section>
+        </div>
 
-    <section class="team-values" aria-labelledby="values-heading">
-      <div class="container">
-        <h2 id="values-heading" class="section-title">Ce qui nous unit</h2>
-        <ul class="values-list" role="list">
-          <li class="values-item">
-            <span class="values-item__icon" aria-hidden="true">⚡</span>
-            <div>
-              <strong>Rapidité d'exécution</strong>
-              <p>Nous privilégions des cycles courts pour livrer de la valeur sans délai.</p>
-            </div>
-          </li>
-          <li class="values-item">
-            <span class="values-item__icon" aria-hidden="true">🎯</span>
-            <div>
-              <strong>Précision technique</strong>
-              <p>Chaque ligne de code est pensée pour la maintenabilité et la performance.</p>
-            </div>
-          </li>
-          <li class="values-item">
-            <span class="values-item__icon" aria-hidden="true">🤝</span>
-            <div>
-              <strong>Collaboration ouverte</strong>
-              <p>La transparence et la communication directe sont au cœur de notre fonctionnement.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div class="team-values">
+          <h2 class="team-values__title">Ce qui nous unit</h2>
+          <ul class="values-list">
+            <li class="values-item">
+              <span class="values-item__icon" aria-hidden="true">&#10003;</span>
+              <span>Transparence dans les échanges et les décisions</span>
+            </li>
+            <li class="values-item">
+              <span class="values-item__icon" aria-hidden="true">&#10003;</span>
+              <span>Rigueur technique sans complexité inutile</span>
+            </li>
+            <li class="values-item">
+              <span class="values-item__icon" aria-hidden="true">&#10003;</span>
+              <span>Livraison continue et amélioration itérative</span>
+            </li>
+            <li class="values-item">
+              <span class="values-item__icon" aria-hidden="true">&#10003;</span>
+              <span>Accessibilité et inclusion au cœur de chaque projet</span>
+            </li>
+          </ul>
+        </div>
 
-    <section class="cta-section" aria-labelledby="cta-heading">
-      <div class="container cta-inner">
-        <h2 id="cta-heading" class="cta-section__title">Curieux de voir nos réalisations ?</h2>
-        <p class="cta-section__text">Consultez nos références pour découvrir les projets menés par l'équipe.</p>
-        <a href="page-5.html" class="btn btn--primary">Voir nos références</a>
+        <div class="cta-block">
+          <a href="page-5.html" class="btn btn--primary">Voir nos références</a>
+        </div>
+
       </div>
     </section>
 
@@ -140,11 +128,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
-      <nav class="footer-nav" aria-label="Navigation secondaire">
-        <ul class="footer-nav__list">
-          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
-          <li><a href="page-1.html" class="footer-nav__link">Présentation</a></li>
-          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav">
+          <li><a href="index.html" class="footer-link">Accueil</a></li>
+          <li><a href="page-7.html" class="footer-link">Contact</a></li>
         </ul>
       </nav>
     </div>
