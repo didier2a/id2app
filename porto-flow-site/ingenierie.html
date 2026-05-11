@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Porto Flow — Ingénierie & Vision. Boucle récursive, n8n, CloudCode, IA et humain augmenté au cœur du système territorial intelligent.">
+  <meta name="description" content="Porto Flow — Ingénierie & Vision. Boucle récursive, n8n, CloudCode, IA et humain augmenté au cœur du système territorial intelligent de Porto-Vecchio.">
   <meta name="theme-color" content="#0B1F33">
   <title>Ingénierie & Vision — Porto Flow</title>
   <link rel="stylesheet" href="styles.css">
@@ -31,7 +31,7 @@
         </span>
         <span class="brand-text">
           <span class="brand-name">Porto Flow</span>
-          <span class="brand-tagline">Système nerveux numérique</span>
+          <span class="brand-tagline">Système nerveux numérique territorial</span>
         </span>
       </a>
 
@@ -147,10 +147,20 @@
   <main id="main-content">
 
     <!-- ═══════════════════════════════════════════════
-         HERO INGÉNIERIE
+         HERO INGÉNIERIE — avec ancrage territorial
     ═══════════════════════════════════════════════ -->
     <section class="ing-hero">
       <div class="ing-hero__bg" aria-hidden="true">
+        <!-- Photo de fond : dashboard technologique avec ambiance territoriale -->
+        <div class="ing-hero__photo-layer" style="
+          background-image:
+            linear-gradient(135deg, rgba(11,31,51,0.88) 0%, rgba(31,111,139,0.72) 50%, rgba(11,31,51,0.92) 100%),
+            url('assets/images/dashboard-local.jpg'),
+            url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80&auto=format&fit=crop');
+          background-size: cover;
+          background-position: center;
+          position: absolute; inset: 0; z-index: 0;
+        "></div>
         <div class="ing-hero__grid"></div>
         <div class="ing-hero__glow ing-hero__glow--1"></div>
         <div class="ing-hero__glow ing-hero__glow--2"></div>
@@ -176,19 +186,42 @@
         </svg>
       </div>
 
-      <div class="container">
+      <div class="container" style="position:relative;z-index:2;">
         <div class="ing-hero__content">
           <div class="ing-hero__badge reveal-up">
             <span class="badge-pulse"></span>
-            <span>Ingénierie &amp; Vision</span>
+            <span>Ingénierie &amp; Vision · Porto-Vecchio</span>
           </div>
           <h1 class="ing-hero__title reveal-up">
             La boucle qui<br>
             <span class="text-gradient">pense et construit</span>
           </h1>
           <p class="ing-hero__subtitle reveal-up">
-            Porto Flow n'est pas seulement un produit territorial. C'est la démonstration vivante d'une nouvelle façon de concevoir, d'itérer et de déployer des systèmes intelligents — où l'humain reste au centre, augmenté par des outils qui amplifient sa vision.
+            Porto Flow n'est pas seulement un produit territorial. C'est la démonstration vivante d'une nouvelle façon de concevoir, d'itérer et de déployer des systèmes intelligents — ancrés dans un territoire réel, au service d'une ville balnéaire méditerranéenne unique.
           </p>
+
+          <!-- Ancrage territorial technologique -->
+          <div class="ing-hero__territory-strip reveal-up">
+            <div class="territory-strip-item">
+              <span class="territory-strip-icon" aria-hidden="true">🏝️</span>
+              <span>Porto-Vecchio</span>
+            </div>
+            <div class="territory-strip-sep" aria-hidden="true">·</div>
+            <div class="territory-strip-item">
+              <span class="territory-strip-icon" aria-hidden="true">⚡</span>
+              <span>IA territoriale</span>
+            </div>
+            <div class="territory-strip-sep" aria-hidden="true">·</div>
+            <div class="territory-strip-item">
+              <span class="territory-strip-icon" aria-hidden="true">🔄</span>
+              <span>Boucle récursive</span>
+            </div>
+            <div class="territory-strip-sep" aria-hidden="true">·</div>
+            <div class="territory-strip-item">
+              <span class="territory-strip-icon" aria-hidden="true">📡</span>
+              <span>Données locales</span>
+            </div>
+          </div>
 
           <div class="ing-hero__stats reveal-up">
             <div class="ing-stat">
@@ -215,6 +248,9 @@
             <a href="#outils" class="btn btn--ghost">
               <span>Les outils</span>
             </a>
+            <a href="application.html" class="btn btn--ghost">
+              <span>Voir l'application</span>
+            </a>
           </div>
         </div>
       </div>
@@ -226,6 +262,119 @@
     </section>
 
     <!-- ═══════════════════════════════════════════════
+         ANCRAGE TERRITORIAL — technologie au service du lieu
+    ═══════════════════════════════════════════════ -->
+    <section class="ing-territory-anchor section-padding bg-subtle">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="section-tag">Technologie &amp; Territoire</div>
+          <h2 class="section-title">Une ingénierie au service<br><span class="text-gradient">d'un lieu réel</span></h2>
+          <p class="section-desc">Chaque ligne de code, chaque workflow, chaque agent IA de Porto Flow sert un objectif concret : rendre Porto-Vecchio plus fluide, plus lisible, plus intelligent pour ceux qui y vivent et y séjournent.</p>
+        </div>
+
+        <div class="territory-anchor-grid">
+
+          <div class="territory-anchor-card reveal-up">
+            <div class="territory-anchor-card__visual">
+              <div class="territory-anchor-card__img-wrap">
+                <img
+                  src="assets/images/port-marina.jpg"
+                  alt="Port de plaisance de Porto-Vecchio vu depuis la mer"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
+                />
+                <div class="territory-anchor-card__img-fallback" style="
+                  background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 60%, #8FC7DA 100%);
+                  border-radius: 12px;
+                  display: flex; align-items: center; justify-content: center;
+                  font-size: 3rem;
+                " aria-hidden="true">⚓</div>
+              </div>
+              <div class="territory-anchor-card__overlay">
+                <span class="territory-anchor-card__badge">Port · Marina</span>
+              </div>
+            </div>
+            <div class="territory-anchor-card__body">
+              <h3 class="territory-anchor-card__title">Données portuaires en temps réel</h3>
+              <p class="territory-anchor-card__desc">Les flux du port de plaisance — arrivées, départs, capacité, météo marine — alimentent directement les workflows n8n et enrichissent l'assistant IA territorial.</p>
+              <div class="territory-anchor-card__tags">
+                <span class="loop-tag">n8n</span>
+                <span class="loop-tag">Port</span>
+                <span class="loop-tag">Temps réel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="territory-anchor-card reveal-up">
+            <div class="territory-anchor-card__visual">
+              <div class="territory-anchor-card__img-wrap">
+                <img
+                  src="assets/images/route-littorale.jpg"
+                  alt="Route littorale de Porto-Vecchio en haute saison"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
+                />
+                <div class="territory-anchor-card__img-fallback" style="
+                  background: linear-gradient(135deg, #1F6F8B 0%, #D86F3C 60%, #0B1F33 100%);
+                  border-radius: 12px;
+                  display: flex; align-items: center; justify-content: center;
+                  font-size: 3rem;
+                " aria-hidden="true">🛣️</div>
+              </div>
+              <div class="territory-anchor-card__overlay">
+                <span class="territory-anchor-card__badge">Mobilité · Flux</span>
+              </div>
+            </div>
+            <div class="territory-anchor-card__body">
+              <h3 class="territory-anchor-card__title">Orchestration des flux saisonniers</h3>
+              <p class="territory-anchor-card__desc">En haute saison, Porto-Vecchio accueille 10× sa population. L'ingénierie Porto Flow anticipe, modélise et guide ces flux grâce à des algorithmes prédictifs entraînés sur les données locales.</p>
+              <div class="territory-anchor-card__tags">
+                <span class="loop-tag loop-tag--orange">IA prédictive</span>
+                <span class="loop-tag loop-tag--orange">Mobilité</span>
+                <span class="loop-tag loop-tag--orange">Saisonnalité</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="territory-anchor-card reveal-up">
+            <div class="territory-anchor-card__visual">
+              <div class="territory-anchor-card__img-wrap">
+                <img
+                  src="assets/images/dashboard-local.jpg"
+                  alt="Dashboard de données territoriales Porto Flow"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
+                />
+                <div class="territory-anchor-card__img-fallback" style="
+                  background: linear-gradient(135deg, #263238 0%, #1F6F8B 50%, #8FC7DA 100%);
+                  border-radius: 12px;
+                  display: flex; align-items: center; justify-content: center;
+                  font-size: 3rem;
+                " aria-hidden="true">📊</div>
+              </div>
+              <div class="territory-anchor-card__overlay">
+                <span class="territory-anchor-card__badge">Dashboard · IA</span>
+              </div>
+            </div>
+            <div class="territory-anchor-card__body">
+              <h3 class="territory-anchor-card__title">Intelligence de données locales</h3>
+              <p class="territory-anchor-card__desc">CloudCode génère les interfaces de visualisation à partir des données territoriales brutes. Le dashboard Porto Flow devient le tableau de bord vivant de la micro-région portovecchienne.</p>
+              <div class="territory-anchor-card__tags">
+                <span class="loop-tag">CloudCode</span>
+                <span class="loop-tag">Dashboard</span>
+                <span class="loop-tag">Micro-région</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
          BOUCLE RÉCURSIVE
     ═══════════════════════════════════════════════ -->
     <section class="ing-loop section-padding" id="boucle">
@@ -233,7 +382,7 @@
         <div class="section-header reveal-up">
           <div class="section-tag">Processus</div>
           <h2 class="section-title">La boucle récursive<br>de développement</h2>
-          <p class="section-desc">Un cycle continu où chaque itération enrichit la suivante. L'intelligence artificielle et l'expertise humaine se renforcent mutuellement pour produire un système toujours plus précis et pertinent.</p>
+          <p class="section-desc">Un cycle continu où chaque itération enrichit la suivante. L'intelligence artificielle et l'expertise humaine se renforcent mutuellement pour produire un système toujours plus précis et pertinent — ancré dans la réalité de Porto-Vecchio.</p>
         </div>
 
         <div class="loop-diagram reveal-up">
@@ -254,7 +403,7 @@
               </div>
               <div class="loop-step__body">
                 <h3 class="loop-step__title">Intention &amp; Spécification</h3>
-                <p class="loop-step__desc">L'humain formule la vision, les contraintes et les objectifs. La pensée stratégique reste irremplaçable — c'est le point de départ de chaque cycle.</p>
+                <p class="loop-step__desc">L'humain formule la vision, les contraintes et les objectifs. La pensée stratégique reste irremplaçable — c'est le point de départ de chaque cycle. Pour Porto-Vecchio, cela signifie comprendre les besoins réels du territoire.</p>
                 <div class="loop-step__tags">
                   <span class="loop-tag">Vision humaine</span>
                   <span class="loop-tag">Contexte territorial</span>
@@ -288,7 +437,7 @@
               </div>
               <div class="loop-step__body">
                 <h3 class="loop-step__title">Orchestration n8n</h3>
-                <p class="loop-step__desc">n8n orchestre les flux de travail automatisés. Chaque nœud connecte les outils, les données et les agents IA dans une chorégraphie précise et reproductible.</p>
+                <p class="loop-step__desc">n8n orchestre les flux de travail automatisés. Chaque nœud connecte les outils, les données et les agents IA dans une chorégraphie précise et reproductible — depuis les données du port jusqu'aux flux touristiques.</p>
                 <div class="loop-step__tags">
                   <span class="loop-tag loop-tag--orange">n8n</span>
                   <span class="loop-tag loop-tag--orange">Workflows</span>
@@ -321,7 +470,7 @@
               </div>
               <div class="loop-step__body">
                 <h3 class="loop-step__title">Génération CloudCode</h3>
-                <p class="loop-step__desc">CloudCode traduit les spécifications en code fonctionnel. L'IA génère, refactorise et optimise — l'humain valide, oriente et affine la direction technique.</p>
+                <p class="loop-step__desc">CloudCode traduit les spécifications en code fonctionnel. L'IA génère, refactorise et optimise — l'humain valide, oriente et affine la direction technique pour chaque composant territorial.</p>
                 <div class="loop-step__tags">
                   <span class="loop-tag loop-tag--orange">CloudCode</span>
                   <span class="loop-tag loop-tag--orange">Génération IA</span>
@@ -353,7 +502,7 @@
               </div>
               <div class="loop-step__body">
                 <h3 class="loop-step__title">Validation &amp; Apprentissage</h3>
-                <p class="loop-step__desc">Chaque résultat est évalué, testé et intégré comme connaissance. Le système apprend de ses itérations et enrichit le cycle suivant avec une précision accrue.</p>
+                <p class="loop-step__desc">Chaque résultat est évalué, testé et intégré comme connaissance. Le système apprend de ses itérations et enrichit le cycle suivant avec une précision accrue — validée par les usagers réels du territoire.</p>
                 <div class="loop-step__tags">
                   <span class="loop-tag">Tests</span>
                   <span class="loop-tag">Feedback</span>
@@ -387,7 +536,7 @@
         <div class="section-header section-header--light reveal-up">
           <div class="section-tag section-tag--light">Outils &amp; Rôles</div>
           <h2 class="section-title section-title--light">Chaque outil a<br>sa fonction précise</h2>
-          <p class="section-desc section-desc--light">L'écosystème technique de Porto Flow repose sur une complémentarité rigoureuse entre automatisation, intelligence artificielle et jugement humain.</p>
+          <p class="section-desc section-desc--light">L'écosystème technique de Porto Flow repose sur une complémentarité rigoureuse entre automatisation, intelligence artificielle et jugement humain — au service du territoire portovecchien.</p>
         </div>
 
         <div class="tools-grid">
@@ -409,7 +558,7 @@
               </div>
               <div class="tool-card__badge tool-card__badge--blue">Cœur opérationnel</div>
             </div>
-            <p class="tool-card__desc">n8n est le chef d'orchestre. Il connecte les services, déclenche les agents IA, gère les données territoriales en temps réel et automatise les processus complexes sans friction.</p>
+            <p class="tool-card__desc">n8n est le chef d'orchestre. Il connecte les services, déclenche les agents IA, gère les données territoriales en temps réel et automatise les processus complexes — des flux du port aux alertes de saturation des plages.</p>
             <ul class="tool-card__features">
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -446,7 +595,7 @@
               </div>
               <div class="tool-card__badge tool-card__badge--orange">Moteur de code</div>
             </div>
-            <p class="tool-card__desc">CloudCode transforme les intentions en code. Il génère des composants, des modules et des architectures entières à partir de spécifications précises, accélérant radicalement le cycle de développement.</p>
+            <p class="tool-card__desc">CloudCode transforme les intentions en code. Il génère des composants, des modules et des architectures entières à partir de spécifications précises — accélérant radicalement le cycle de développement territorial.</p>
             <ul class="tool-card__features">
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -484,7 +633,7 @@
               </div>
               <div class="tool-card__badge tool-card__badge--teal">Intelligence active</div>
             </div>
-            <p class="tool-card__desc">Les modèles d'IA traitent les données territoriales, génèrent des recommandations contextuelles, analysent les flux et apprennent des comportements pour affiner continuellement la pertinence du système.</p>
+            <p class="tool-card__desc">Les modèles d'IA traitent les données territoriales de Porto-Vecchio, génèrent des recommandations contextuelles, analysent les flux saisonniers et apprennent des comportements locaux pour affiner continuellement la pertinence du système.</p>
             <ul class="tool-card__features">
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -492,11 +641,11 @@
               </li>
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Analyse prédictive des flux
+                Analyse prédictive des flux saisonniers
               </li>
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Recommandations personnalisées
+                Recommandations personnalisées locales
               </li>
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -521,7 +670,7 @@
               </div>
               <div class="tool-card__badge tool-card__badge--sand">Irremplaçable</div>
             </div>
-            <p class="tool-card__desc">L'humain n'est pas remplacé — il est amplifié. Il apporte le jugement, la vision stratégique, la connaissance du territoire et la capacité à évaluer ce que les machines ne peuvent pas ressentir.</p>
+            <p class="tool-card__desc">L'humain n'est pas remplacé — il est amplifié. Il apporte le jugement, la vision stratégique, la connaissance intime du territoire portovecchien et la capacité à évaluer ce que les machines ne peuvent pas ressentir.</p>
             <ul class="tool-card__features">
               <li>
                 <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -593,7 +742,6 @@
             <div class="dual-card__visual" aria-hidden="true">
               <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="30" y="30" width="140" height="90" rx="6" stroke="#1F6F8B" stroke-width="1" opacity="0.4"/>
-                <path d="M30" y1="50" x2="170" y2="50" stroke="#1F6F8B" stroke-width="0.5" opacity="0.3"/>
                 <line x1="30" y1="50" x2="170" y2="50" stroke="#1F6F8B" stroke-width="0.5" opacity="0.3"/>
                 <circle cx="42" cy="40" r="3" fill="#D86F3C" opacity="0.7"/>
                 <circle cx="54" cy="40" r="3" fill="#8FC7DA" opacity="0.5"/>
@@ -634,8 +782,8 @@
           <div class="philosophy-left reveal-up">
             <div class="section-tag">Philosophie</div>
             <h2 class="section-title">L'augmentation<br>humaine comme<br><span class="text-gradient">principe fondateur</span></h2>
-            <p class="philosophy-desc">Porto Flow ne cherche pas à remplacer l'intelligence humaine. Il cherche à la multiplier. Chaque outil, chaque workflow, chaque agent IA est conçu pour amplifier la capacité de décision, de création et d'impact de ceux qui les utilisent.</p>
-            <p class="philosophy-desc">C'est une philosophie de développement autant qu'une architecture technique : l'humain reste l'architecte du sens, et la machine devient son meilleur collaborateur.</p>
+            <p class="philosophy-desc">Porto Flow ne cherche pas à remplacer l'intelligence humaine. Il cherche à la multiplier. Chaque outil, chaque workflow, chaque agent IA est conçu pour amplifier la capacité de décision, de création et d'impact de ceux qui les utilisent — au service d'un territoire méditerranéen vivant.</p>
+            <p class="philosophy-desc">C'est une philosophie de développement autant qu'une architecture technique : l'humain reste l'architecte du sens, et la machine devient son meilleur collaborateur pour comprendre et servir Porto-Vecchio.</p>
             <div class="philosophy-quote">
               <div class="philosophy-quote__bar"></div>
               <blockquote>
@@ -657,21 +805,21 @@
               <div class="pillar-card__num">II</div>
               <div class="pillar-card__body">
                 <h3 class="pillar-card__title">Complexité maîtrisée</h3>
-                <p class="pillar-card__desc">Les systèmes complexes deviennent accessibles. n8n visualise les flux, CloudCode génère les composants, l'IA analyse les patterns — l'humain voit l'essentiel.</p>
+                <p class="pillar-card__desc">Les systèmes complexes deviennent accessibles. n8n visualise les flux, CloudCode génère les composants, l'IA analyse les patterns — l'humain voit l'essentiel du territoire.</p>
               </div>
             </div>
             <div class="pillar-card reveal-up">
               <div class="pillar-card__num">III</div>
               <div class="pillar-card__body">
                 <h3 class="pillar-card__title">Connaissance capitalisée</h3>
-                <p class="pillar-card__desc">Chaque itération enrichit la mémoire du système. Les décisions, les patterns et les apprentissages s'accumulent et deviennent un avantage compétitif durable.</p>
+                <p class="pillar-card__desc">Chaque itération enrichit la mémoire du système. Les décisions, les patterns et les apprentissages s'accumulent et deviennent un avantage compétitif durable pour le territoire.</p>
               </div>
             </div>
             <div class="pillar-card reveal-up">
               <div class="pillar-card__num">IV</div>
               <div class="pillar-card__body">
                 <h3 class="pillar-card__title">Réplicabilité territoriale</h3>
-                <p class="pillar-card__desc">Ce qui fonctionne pour Porto-Vecchio peut être adapté à d'autres territoires. La méthode est le produit autant que l'application elle-même.</p>
+                <p class="pillar-card__desc">Ce qui fonctionne pour Porto-Vecchio peut être adapté à d'autres territoires insulaires ou balnéaires. La méthode est le produit autant que l'application elle-même.</p>
               </div>
             </div>
           </div>
@@ -688,228 +836,32 @@
         <div class="section-header reveal-up">
           <div class="section-tag">Architecture</div>
           <h2 class="section-title">Une architecture<br>pensée pour durer</h2>
-          <p class="section-desc">Chaque couche du système est conçue pour être indépendante, évolutive et interopérable. Porto Flow grandit sans se fragiliser.</p>
+          <p class="section-desc">Chaque couche du système est conçue pour être indépendante, évolutive et interopérable. Porto Flow grandit sans se fragiliser — comme le territoire qu'il sert.</p>
         </div>
 
-        <div class="arch-stack reveal-up">
-
-          <div class="arch-layer arch-layer--presentation">
-            <div class="arch-layer__label">
-              <span class="arch-layer__num">01</span>
-              <span>Couche Présentation</span>
-            </div>
-            <div class="arch-layer__components">
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">📱</span>
-                <span>Application Mobile</span>
+        <!-- Visuel territorial superposé à l'architecture -->
+        <div class="arch-territory-banner reveal-up">
+          <div class="arch-territory-banner__inner">
+            <img
+              src="assets/images/cote-corse.jpg"
+              alt="Côte corse vue du ciel, littoral de Porto-Vecchio"
+              loading="lazy"
+              onerror="this.style.display='none'"
+              style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:16px;"
+            />
+            <div style="
+              position:absolute;inset:0;
+              background: linear-gradient(90deg, rgba(11,31,51,0.95) 0%, rgba(31,111,139,0.75) 50%, rgba(11,31,51,0.9) 100%);
+              border-radius:16px;
+            " aria-hidden="true"></div>
+            <div class="arch-territory-banner__content">
+              <div class="arch-territory-banner__label">
+                <span class="arch-territory-banner__icon" aria-hidden="true">🏝️</span>
+                <span>Porto-Vecchio · Micro-région portovecchienne</span>
               </div>
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">🌐</span>
-                <span>Interface Web</span>
-              </div>
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">📊</span>
-                <span>Dashboard Partenaires</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="arch-connector" aria-hidden="true">
-            <div class="arch-connector__dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="arch-connector__label">API REST / WebSocket</div>
-            <div class="arch-connector__dots">
-              <span></span><span></span><span></span>
-            </div>
-          </div>
-
-          <div class="arch-layer arch-layer--intelligence">
-            <div class="arch-layer__label">
-              <span class="arch-layer__num">02</span>
-              <span>Couche Intelligence</span>
-            </div>
-            <div class="arch-layer__components">
-              <div class="arch-component arch-component--highlight">
-                <span class="arch-component__icon" aria-hidden="true">🤖</span>
-                <span>IA Contextuelle</span>
-              </div>
-              <div class="arch-component arch-component--highlight">
-                <span class="arch-component__icon" aria-hidden="true">⚡</span>
-                <span>n8n Orchestration</span>
-              </div>
-              <div class="arch-component arch-component--highlight">
-                <span class="arch-component__icon" aria-hidden="true">🔄</span>
-                <span>Moteur de Recommandation</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="arch-connector" aria-hidden="true">
-            <div class="arch-connector__dots">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="arch-connector__label">Flux de données sécurisés</div>
-            <div class="arch-connector__dots">
-              <span></span><span></span><span></span>
-            </div>
-          </div>
-
-          <div class="arch-layer arch-layer--data">
-            <div class="arch-layer__label">
-              <span class="arch-layer__num">03</span>
-              <span>Couche Données</span>
-            </div>
-            <div class="arch-layer__components">
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">🗺️</span>
-                <span>Données Territoriales</span>
-              </div>
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">🏪</span>
-                <span>Flux Partenaires</span>
-              </div>
-              <div class="arch-component">
-                <span class="arch-component__icon" aria-hidden="true">📡</span>
-                <span>APIs Externes</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-         MESSAGE CENTRAL
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-message section-padding bg-dark">
-      <div class="container">
-        <div class="message-central reveal-up">
-          <div class="message-central__deco" aria-hidden="true">
-            <div class="message-deco-ring message-deco-ring--1"></div>
-            <div class="message-deco-ring message-deco-ring--2"></div>
-            <div class="message-deco-ring message-deco-ring--3"></div>
-          </div>
-          <div class="message-central__inner">
-            <div class="section-tag section-tag--light">Message Central</div>
-            <h2 class="message-central__title">
-              Porto Flow prouve que<br>
-              <span class="text-gradient-warm">l'intelligence augmentée</span><br>
-              peut transformer un territoire
-            </h2>
-            <p class="message-central__text">
-              Ce n'est pas une promesse technologique abstraite. C'est une démonstration concrète, ancrée dans un territoire réel, construite avec des outils réels, pour des usagers réels. Porto-Vecchio devient le laboratoire vivant d'une nouvelle façon de penser le développement territorial et logiciel.
-            </p>
-            <div class="message-pillars">
-              <div class="message-pillar">
-                <div class="message-pillar__icon" aria-hidden="true">🏝️</div>
-                <div class="message-pillar__body">
-                  <strong>Territoire réel</strong>
-                  <span>Porto-Vecchio, micro-région insulaire à forte saisonnalité</span>
-                </div>
-              </div>
-              <div class="message-pillar">
-                <div class="message-pillar__icon" aria-hidden="true">⚙️</div>
-                <div class="message-pillar__body">
-                  <strong>Outils réels</strong>
-                  <span>n8n, CloudCode, IA — une chaîne de production éprouvée</span>
-                </div>
-              </div>
-              <div class="message-pillar">
-                <div class="message-pillar__icon" aria-hidden="true">👥</div>
-                <div class="message-pillar__body">
-                  <strong>Usagers réels</strong>
-                  <span>Habitants, visiteurs, commerçants, institutions</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-         CONCLUSION & CTA
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-conclusion section-padding">
-      <div class="container">
-        <div class="conclusion-layout">
-
-          <div class="conclusion-text reveal-up">
-            <div class="section-tag">Et maintenant ?</div>
-            <h2 class="section-title">Rejoindre la boucle.<br><span class="text-gradient">Construire ensemble.</span></h2>
-            <p class="conclusion-desc">Porto Flow est un projet ouvert à la collaboration. Que vous soyez une collectivité, un investisseur, un partenaire technologique ou un acteur local, votre rôle dans cette boucle est déjà imaginé.</p>
-            <p class="conclusion-desc">La prochaine itération commence avec vous.</p>
-            <div class="conclusion-ctas">
-              <a href="ecosysteme.html" class="btn btn--primary">
-                <span>Explorer l'écosystème</span>
-                <svg viewBox="0 0 20 20" fill="none" class="btn__icon"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a href="territoire.html" class="btn btn--outline">
-                <span>Voir le territoire</span>
-              </a>
-              <a href="application.html" class="btn btn--ghost">
-                <span>L'application</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="conclusion-code reveal-up">
-            <div class="code-window">
-              <div class="code-window__bar">
-                <div class="code-window__dots">
-                  <span class="code-dot code-dot--red"></span>
-                  <span class="code-dot code-dot--yellow"></span>
-                  <span class="code-dot code-dot--green"></span>
-                </div>
-                <span class="code-window__title">porto-flow.system</span>
-              </div>
-              <div class="code-window__body">
-                <div class="code-line">
-                  <span class="code-keyword">const</span>
-                  <span class="code-var"> portoFlow</span>
-                  <span class="code-op"> = </span>
-                  <span class="code-keyword">new</span>
-                  <span class="code-class"> TerritorialSystem</span>
-                  <span>(</span>
-                  <span class="code-string">'Porto-Vecchio'</span>
-                  <span>);</span>
-                </div>
-                <div class="code-line code-comment">
-                  <span>// Initialisation de la boucle intelligente</span>
-                </div>
-                <div class="code-line">
-                  <span class="code-var">portoFlow</span>
-                  <span>.</span>
-                  <span class="code-fn">connect</span>
-                  <span>(</span>
-                  <span class="code-string">'n8n'</span>
-                  <span>, </span>
-                  <span class="code-string">'cloudcode'</span>
-                  <span>, </span>
-                  <span class="code-string">'ia'</span>
-                  <span>);</span>
-                </div>
-                <div class="code-line">
-                  <span class="code-var">portoFlow</span>
-                  <span>.</span>
-                  <span class="code-fn">setHuman</span>
-                  <span>(</span>
-                  <span class="code-string">'architect'</span>
-                  <span>);</span>
-                </div>
-                <div class="code-line code-comment">
-                  <span>// Lancement de la boucle récursive</span>
-                </div>
-                <div class="code-line">
-                  <span class="code-var">portoFlow</span>
-                  <span>.</span>
-                  <span class="code-fn">startLoop</span>
-                  <span>();</span>
-                </div>
-                <div class="code-line code-output">
-                  <span class="code-arrow">▶</span>
-                  <span class="code-success"> Système actif. Territoire connecté.</span>
-                </div>
-                <div class="code-cursor" aria
+              <p class="arch-territory-banner__text">
+                L'architecture Porto Flow est conçue pour un territoire insulaire à forte saisonnalité : scalable en haute saison, sobre en hors-saison, toujours résiliente.
+              </p>
+              <div class="arch-territory-banner__stats">
+                <div class="arch-territory-banner__stat">
+                  <strong>×10</strong>
