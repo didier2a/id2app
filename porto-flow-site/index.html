@@ -131,41 +131,47 @@
 <main id="main-content">
 
   <!-- ======================================================
-       HERO
+       HERO — Ambiance photo locale balnéaire
        ====================================================== -->
-  <section class="hero" aria-label="Présentation Porto Flow">
+  <section class="hero hero--photo" aria-label="Présentation Porto Flow">
+
+    <!-- Couche photo hero : fallback gradient si image absente -->
+    <div class="hero__photo-layer" aria-hidden="true">
+      <img
+        src="assets/images/porto-vecchio-hero.jpg"
+        alt=""
+        class="hero__photo-img"
+        onerror="this.style.display='none'"
+        aria-hidden="true"
+      />
+      <div class="hero__photo-overlay"></div>
+    </div>
 
     <div class="hero__bg" aria-hidden="true">
       <!-- Fond topographique SVG -->
       <div class="hero__topo">
         <svg class="hero__topo-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Courbes de niveau -->
           <ellipse cx="720" cy="450" rx="700" ry="430" stroke="#1F6F8B" stroke-width="0.6" opacity="0.15"/>
           <ellipse cx="720" cy="450" rx="580" ry="350" stroke="#1F6F8B" stroke-width="0.6" opacity="0.14"/>
           <ellipse cx="720" cy="450" rx="460" ry="275" stroke="#1F6F8B" stroke-width="0.6" opacity="0.13"/>
           <ellipse cx="720" cy="450" rx="340" ry="205" stroke="#8FC7DA" stroke-width="0.5" opacity="0.12"/>
           <ellipse cx="720" cy="450" rx="230" ry="140" stroke="#8FC7DA" stroke-width="0.5" opacity="0.11"/>
           <ellipse cx="720" cy="450" rx="130" ry="80" stroke="#8FC7DA" stroke-width="0.8" opacity="0.13"/>
-          <!-- Lignes de flux -->
           <path d="M0 520 Q200 480 400 460 Q600 440 720 450 Q840 460 1040 430 Q1240 400 1440 380" stroke="#1F6F8B" stroke-width="1.2" opacity="0.22" stroke-linecap="round"/>
           <path d="M0 600 Q300 560 500 520 Q700 480 720 450 Q740 420 900 380 Q1100 340 1440 300" stroke="#1F6F8B" stroke-width="0.8" opacity="0.16" stroke-linecap="round"/>
           <path d="M0 680 Q400 640 720 600 Q1040 560 1440 520" stroke="#1F6F8B" stroke-width="0.5" opacity="0.10" stroke-linecap="round"/>
-          <!-- Méridiens -->
           <path d="M720 0 Q715 200 720 450 Q725 700 720 900" stroke="#8FC7DA" stroke-width="0.8" opacity="0.14" stroke-linecap="round"/>
           <path d="M400 0 Q420 200 450 450 Q480 700 500 900" stroke="#8FC7DA" stroke-width="0.5" opacity="0.09" stroke-linecap="round"/>
           <path d="M1000 0 Q980 200 960 450 Q940 700 920 900" stroke="#8FC7DA" stroke-width="0.5" opacity="0.09" stroke-linecap="round"/>
-          <!-- Point central Porto-Vecchio -->
           <circle cx="720" cy="450" r="5" fill="#D86F3C" opacity="0.8"/>
           <circle cx="720" cy="450" r="16" fill="#D86F3C" opacity="0.07"/>
           <circle cx="720" cy="450" r="32" fill="#D86F3C" opacity="0.04"/>
-          <!-- Points secondaires -->
           <circle cx="340" cy="320" r="3" fill="#8FC7DA" opacity="0.5"/>
           <circle cx="980" cy="380" r="3" fill="#8FC7DA" opacity="0.5"/>
           <circle cx="520" cy="600" r="3" fill="#8FC7DA" opacity="0.5"/>
           <circle cx="1100" cy="560" r="2.5" fill="#D86F3C" opacity="0.4"/>
           <circle cx="280" cy="620" r="2.5" fill="#D86F3C" opacity="0.4"/>
           <circle cx="860" cy="260" r="2.5" fill="#8FC7DA" opacity="0.4"/>
-          <!-- Connexions -->
           <line x1="720" y1="450" x2="340" y2="320" stroke="#8FC7DA" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.28"/>
           <line x1="720" y1="450" x2="980" y2="380" stroke="#8FC7DA" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.28"/>
           <line x1="720" y1="450" x2="520" y2="600" stroke="#8FC7DA" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.28"/>
@@ -173,11 +179,9 @@
           <line x1="720" y1="450" x2="860" y2="260" stroke="#8FC7DA" stroke-width="0.6" stroke-dasharray="4 4" opacity="0.22"/>
         </svg>
       </div>
-      <!-- Halos lumineux -->
       <div class="hero__glow hero__glow--primary"></div>
       <div class="hero__glow hero__glow--secondary"></div>
       <div class="hero__glow hero__glow--accent"></div>
-      <!-- Particules flottantes -->
       <div class="hero__particles" aria-hidden="true">
         <span class="particle particle--1"></span>
         <span class="particle particle--2"></span>
@@ -192,7 +196,6 @@
 
     <div class="container hero__container">
 
-      <!-- Contenu textuel -->
       <div class="hero__content">
         <div class="hero__badge" aria-label="Statut du système">
           <span class="hero__badge-pulse" aria-hidden="true"></span>
@@ -278,29 +281,23 @@
           <div class="hero__map-body" aria-hidden="true">
             <svg class="hero__map-svg" viewBox="0 0 420 280" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="420" height="280" fill="#0B1F33"/>
-              <!-- Grille topographique -->
               <ellipse cx="210" cy="140" rx="185" ry="125" stroke="#1F6F8B" stroke-width="0.5" stroke-dasharray="5 4" opacity="0.28"/>
               <ellipse cx="210" cy="140" rx="145" ry="95" stroke="#1F6F8B" stroke-width="0.5" stroke-dasharray="5 4" opacity="0.24"/>
               <ellipse cx="210" cy="140" rx="105" ry="66" stroke="#8FC7DA" stroke-width="0.5" stroke-dasharray="4 5" opacity="0.20"/>
               <ellipse cx="210" cy="140" rx="65" ry="42" stroke="#8FC7DA" stroke-width="0.8" opacity="0.18"/>
-              <!-- Routes principales -->
               <path d="M20 180 Q100 165 210 140 Q320 115 400 100" stroke="#1F6F8B" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
               <path d="M60 240 Q140 200 210 140 Q270 90 340 60" stroke="#1F6F8B" stroke-width="1.2" opacity="0.35" stroke-linecap="round"/>
               <path d="M210 20 Q208 80 210 140 Q212 200 210 260" stroke="#8FC7DA" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/>
-              <!-- Zone mer -->
               <path d="M300 200 Q360 220 400 260 L420 260 L420 280 L280 280 Q260 260 280 240 Z" fill="#1F6F8B" opacity="0.14"/>
-              <!-- Point central -->
               <circle cx="210" cy="140" r="5" fill="#D86F3C" opacity="0.95"/>
               <circle cx="210" cy="140" r="13" fill="#D86F3C" opacity="0.14" class="map-pulse"/>
               <circle cx="210" cy="140" r="24" fill="#D86F3C" opacity="0.06" class="map-pulse map-pulse--delay"/>
-              <!-- Points secondaires -->
               <circle cx="140" cy="110" r="3.5" fill="#8FC7DA" opacity="0.85"/>
               <circle cx="280" cy="120" r="3.5" fill="#8FC7DA" opacity="0.85"/>
               <circle cx="170" cy="200" r="3.5" fill="#8FC7DA" opacity="0.85"/>
               <circle cx="320" cy="180" r="3" fill="#D86F3C" opacity="0.7"/>
               <circle cx="100" cy="190" r="3" fill="#D86F3C" opacity="0.7"/>
               <circle cx="250" cy="220" r="2.5" fill="#8FC7DA" opacity="0.6"/>
-              <!-- Connexions -->
               <line x1="210" y1="140" x2="140" y2="110" stroke="#8FC7DA" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
               <line x1="210" y1="140" x2="280" y2="120" stroke="#8FC7DA" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
               <line x1="210" y1="140" x2="170" y2="200" stroke="#8FC7DA" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.5"/>
@@ -363,6 +360,119 @@
         <div class="hero__scroll-thumb"></div>
       </div>
       <span class="hero__scroll-label">Découvrir</span>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SECTION — Ambiance locale : visuels territoire
+       ====================================================== -->
+  <section class="section section--local-vibes" aria-labelledby="local-vibes-title">
+    <div class="container">
+      <div class="section__header section__header--centered">
+        <span class="section__eyebrow">Porto-Vecchio · Corse du Sud</span>
+        <h2 class="section__title" id="local-vibes-title">Un territoire d'exception</h2>
+        <p class="section__lead">Mer turquoise, port de plaisance, maquis corse, relief sauvage — Porto Flow naît ici, au cœur d'une micro-région méditerranéenne unique.</p>
+      </div>
+
+      <div class="local-vibes__grid">
+
+        <div class="local-vibe-card local-vibe-card--large" data-animate="fade-up">
+          <div class="local-vibe-card__img-wrap">
+            <img
+              src="assets/images/port-marina.jpg"
+              alt="Port de plaisance de Porto-Vecchio, bateaux amarrés, mer méditerranéenne"
+              class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="local-vibe-card__fallback local-vibe-card__fallback--port" aria-hidden="true"></div>
+            <div class="local-vibe-card__overlay"></div>
+            <div class="local-vibe-card__badge">
+              <span class="local-vibe-badge">⚓ Port de plaisance</span>
+            </div>
+          </div>
+          <div class="local-vibe-card__content">
+            <h3 class="local-vibe-card__title">Le port, cœur vivant</h3>
+            <p class="local-vibe-card__desc">Carrefour économique et touristique, le port de Porto-Vecchio concentre flux, activités et données en temps réel.</p>
+          </div>
+        </div>
+
+        <div class="local-vibe-card" data-animate="fade-up" data-delay="80">
+          <div class="local-vibe-card__img-wrap">
+            <img
+              src="assets/images/plage-palombaggia.jpg"
+              alt="Plage de Palombaggia, sable blanc, eau turquoise, pins parasols"
+              class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="local-vibe-card__fallback local-vibe-card__fallback--plage" aria-hidden="true"></div>
+            <div class="local-vibe-card__overlay"></div>
+            <div class="local-vibe-card__badge">
+              <span class="local-vibe-badge">🏖 Palombaggia</span>
+            </div>
+          </div>
+          <div class="local-vibe-card__content">
+            <h3 class="local-vibe-card__title">Plages mythiques</h3>
+            <p class="local-vibe-card__desc">Palombaggia, Santa Giulia — des plages d'exception à gérer intelligemment en haute saison.</p>
+          </div>
+        </div>
+
+        <div class="local-vibe-card" data-animate="fade-up" data-delay="160">
+          <div class="local-vibe-card__img-wrap">
+            <img
+              src="assets/images/maquis-relief.jpg"
+              alt="Maquis corse et relief montagneux autour de Porto-Vecchio"
+              class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="local-vibe-card__fallback local-vibe-card__fallback--maquis" aria-hidden="true"></div>
+            <div class="local-vibe-card__overlay"></div>
+            <div class="local-vibe-card__badge">
+              <span class="local-vibe-badge">🌿 Maquis & relief</span>
+            </div>
+          </div>
+          <div class="local-vibe-card__content">
+            <h3 class="local-vibe-card__title">Relief et maquis</h3>
+            <p class="local-vibe-card__desc">Un arrière-pays sauvage qui façonne les flux, les routes et l'identité profonde du territoire.</p>
+          </div>
+        </div>
+
+        <div class="local-vibe-card" data-animate="fade-up" data-delay="240">
+          <div class="local-vibe-card__img-wrap">
+            <img
+              src="assets/images/route-littorale.jpg"
+              alt="Route littorale corse longeant la côte méditerranéenne"
+              class="local-vibe-card__img"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+            <div class="local-vibe-card__fallback local-vibe-card__fallback--route" aria-hidden="true"></div>
+            <div class="local-vibe-card__overlay"></div>
+            <div class="local-vibe-card__badge">
+              <span class="local-vibe-badge">🛣 Route littorale</span>
+            </div>
+          </div>
+          <div class="local-vibe-card__content">
+            <h3 class="local-vibe-card__title">Flux et mobilité</h3>
+            <p class="local-vibe-card__desc">Routes saturées l'été, axes stratégiques à optimiser — Porto Flow lit les flux en temps réel.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="local-vibes__cta-row">
+        <a href="territoire.html" class="btn btn--outline">
+          <span>Découvrir le territoire</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#galerie-locale" class="btn btn--ghost">
+          <span>📷 Galerie locale</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -711,106 +821,3 @@
                   <span class="dash-kpi__icon">🚗</span>
                   <div class="dash-kpi__info">
                     <span class="dash-kpi__label">Trafic RN198</span>
-                    <span class="dash-kpi__value">Saturé</span>
-                  </div>
-                  <div class="dash-kpi__bar">
-                    <div class="dash-kpi__fill" style="width:88%;background:#D86F3C;"></div>
-                  </div>
-                </div>
-                <div class="dash-kpi dash-kpi--warning">
-                  <span class="dash-kpi__icon">🅿</span>
-                  <div class="dash-kpi__info">
-                    <span class="dash-kpi__label">Parking Centre</span>
-                    <span class="dash-kpi__value">12 / 200</span>
-                  </div>
-                  <div class="dash-kpi__bar">
-                    <div class="dash-kpi__fill" style="width:94%;background:#D86F3C;"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dash-row">
-                <div class="dash-kpi dash-kpi--ok">
-                  <span class="dash-kpi__icon">🏖</span>
-                  <div class="dash-kpi__info">
-                    <span class="dash-kpi__label">Santa Giulia</span>
-                    <span class="dash-kpi__value">Disponible</span>
-                  </div>
-                  <div class="dash-kpi__bar">
-                    <div class="dash-kpi__fill" style="width:42%;background:#1F6F8B;"></div>
-                  </div>
-                </div>
-                <div class="dash-kpi dash-kpi--event">
-                  <span class="dash-kpi__icon">🎵</span>
-                  <div class="dash-kpi__info">
-                    <span class="dash-kpi__label">Événement ce soir</span>
-                    <span class="dash-kpi__value">Place Mairie</span>
-                  </div>
-                  <div class="dash-kpi__bar">
-                    <div class="dash-kpi__fill" style="width:60%;background:#8FC7DA;"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dash-ai-rec">
-                <div class="dash-ai-rec__header">
-                  <span class="dash-ai-rec__dot"></span>
-                  <span>Recommandation IA</span>
-                </div>
-                <p class="dash-ai-rec__text">Évitez la RN198 avant 11h. Itinéraire alternatif via D468 recommandé. Parking Arca disponible — 3 min à pied du centre.</p>
-              </div>
-
-              <div class="dash-flow-lines" aria-hidden="true">
-                <div class="dash-flow-line dash-flow-line--1"></div>
-                <div class="dash-flow-line dash-flow-line--2"></div>
-                <div class="dash-flow-line dash-flow-line--3"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================================
-       SECTION — Double ambition
-       ====================================================== -->
-  <section class="section section--ambition" id="ambition" aria-labelledby="ambition-title">
-    <div class="container">
-      <div class="section__header section__header--centered">
-        <span class="section__eyebrow">Double ambition</span>
-        <h2 class="section__title" id="ambition-title">Territoire et ingénierie,<br>une seule vision</h2>
-        <p class="section__lead">
-          Porto Flow est à la fois un service territorial de première nécessité et une démonstration d'une nouvelle façon de concevoir le logiciel — rapide, intelligente, humaine.
-        </p>
-      </div>
-
-      <div class="ambition__grid">
-
-        <div class="ambition-card ambition-card--territory" data-animate="fade-up">
-          <div class="ambition-card__glow" aria-hidden="true"></div>
-          <div class="ambition-card__icon" aria-hidden="true">
-            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
-              <circle cx="22" cy="22" r="20" stroke="#1F6F8B" stroke-width="1" opacity="0.5"/>
-              <circle cx="22" cy="22" r="13" stroke="#1F6F8B" stroke-width="1" opacity="0.4"/>
-              <circle cx="22" cy="22" r="7" stroke="#8FC7DA" stroke-width="1.2" opacity="0.6"/>
-              <circle cx="22" cy="22" r="3" fill="#D86F3C"/>
-              <line x1="22" y1="4" x2="22" y2="11" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-              <line x1="22" y1="33" x2="22" y2="40" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
-              <line x1="4" y1="22" x2="11" y2="22" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
-              <line x1="33" y1="22" x2="40" y2="22" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
-            </svg>
-          </div>
-          <div class="ambition-card__content">
-            <span class="ambition-card__eyebrow">Dimension territoriale</span>
-            <h3 class="ambition-card__title">Un service public numérique de nouvelle génération</h3>
-            <p class="ambition-card__text">Porto Flow répond à un besoin réel et urgent : rendre le territoire de Porto-Vecchio lisible, navigable et équitable pour tous ses usagers, quelle que soit la saison.</p>
-            <ul class="ambition-card__list">
-              <li>Réduction des embouteillages estivaux</li>
-              <li>Meilleure répartition des flux touristiques</li>
-              <li>Valorisation des acteurs économiques locaux</li>
-              <li>Données ouvertes pour la collectivité</li>
-            </ul>
-            <a href="territoire.html" class="btn btn--outline btn--sm">
-              <span>Explorer le territoire</span>
-              <svg width="14" height="14" viewBox="0
