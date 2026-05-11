@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - V4 Smoke Test</title>
+  <meta name="description" content="Foire aux questions du micro-site test V4." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
+        V4 Smoke Test
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="page-1.html" class="nav-link">Présentation</a></li>
+          <li><a href="page-2.html" class="nav-link">Services</a></li>
+          <li><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li><a href="page-4.html" class="nav-link">Équipe</a></li>
+          <li><a href="page-5.html" class="nav-link">Références</a></li>
+          <li><a href="page-6.html" class="nav-link active" aria-current="page">FAQ</a></li>
+          <li><a href="page-7.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Questions fréquentes</h1>
+        <p class="page-intro">Retrouvez ici les réponses aux questions les plus courantes sur le workflow ID2App V4 et ce micro-site de test.</p>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading" class="section-title">Toutes les questions</h2>
+
+        <dl class="faq-list">
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">
+                Qu'est-ce que le workflow ID2App V4 ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-1" hidden>
+              <p>ID2App V4 est un workflow de génération de sites et d'applications à partir d'une spécification structurée. Il produit des fichiers HTML, CSS et JavaScript prêts à déployer, compatibles GitHub Pages.</p>
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">
+                À quoi sert ce micro-site de 8 pages ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-2" hidden>
+              <p>Ce micro-site est un smoke test : il permet de valider rapidement que l'ensemble du pipeline de génération fonctionne correctement, de la spécification jusqu'au déploiement final.</p>
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">
+                Le site est-il compatible avec tous les navigateurs modernes ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-3" hidden>
+              <p>Oui. Le site utilise du HTML5 sémantique, du CSS moderne avec variables et du JavaScript vanilla sans dépendance externe. Il est compatible avec tous les navigateurs modernes et fonctionne sans build step.</p>
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-4">
+                Comment déployer ce site sur GitHub Pages ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-4" hidden>
+              <p>Il suffit de pousser les fichiers dans un dépôt GitHub et d'activer GitHub Pages depuis les paramètres du dépôt. Aucune configuration supplémentaire n'est nécessaire car tous les liens sont relatifs.</p>
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-5">
+                Peut-on personnaliser les styles et le contenu ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-5" hidden>
+              <p>Absolument. Le fichier <code>styles.css</code> utilise des variables CSS pour les couleurs, typographies et espacements. Il suffit de modifier ces variables pour adapter l'ensemble du site en quelques lignes.</p>
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt class="faq-question">
+              <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-6">
+                Le site respecte-t-il les standards d'accessibilité ?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+            </dt>
+            <dd class="faq-answer" id="faq-answer-6" hidden>
+              <p>Oui. Le site suit les bonnes pratiques WCAG : balises sémantiques, attributs ARIA, contrastes suffisants, navigation au clavier et indicateurs de focus visibles sur tous les éléments interactifs.</p>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <p class="cta-text">Une question non listée ici ? Notre équipe est disponible pour vous répondre.</p>
+        <a href="page-7.html" class="btn btn-primary">Contactez-nous</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="page-1.html">Présentation</a></li>
+          <li><a href="page-2.html">Services</a></li>
+          <li><a href="page-3.html">Méthode</a></li>
+          <li><a href="page-4.html">Équipe</a></li>
+          <li><a href="page-5.html">Références</a></li>
+          <li><a href="page-6.html">FAQ</a></li>
+          <li><a href="page-7.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
