@@ -1,0 +1,4467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porto-Flow — Deux vitesses, un même territoire. Comprendre la dualité saisonnière de la Corse-du-Sud et les enjeux d'adaptation territoriale en temps réel.">
+  <meta name="theme-color" content="#0B1F33">
+  <title>Le territoire — Deux vitesses, un même territoire | Porto-Flow V4</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-territoire">
+
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<header class="site-header" role="banner" id="site-header">
+  <div class="header-inner container">
+
+    <div class="header-brand">
+      <a href="index.html" class="brand-link" aria-label="Porto-Flow — Retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <circle cx="18" cy="18" r="16" stroke="#C96A3A" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="18" cy="18" r="10" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="18" cy="18" r="4" fill="#C96A3A" opacity="0.9"/>
+            <line x1="18" y1="2" x2="18" y2="8" stroke="#C96A3A" stroke-width="1.5" opacity="0.7"/>
+            <line x1="18" y1="28" x2="18" y2="34" stroke="#5F7487" stroke-width="1" opacity="0.5"/>
+            <line x1="2" y1="18" x2="8" y2="18" stroke="#5F7487" stroke-width="1" opacity="0.5"/>
+            <line x1="28" y1="18" x2="34" y2="18" stroke="#5F7487" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </span>
+        <span class="brand-name">
+          <span class="brand-primary">Porto</span><span class="brand-separator">—</span><span class="brand-secondary">Flow</span>
+        </span>
+      </a>
+      <span class="brand-tagline" aria-hidden="true">Copilote intelligent du territoire</span>
+    </div>
+
+    <nav class="site-nav" role="navigation" aria-label="Navigation principale" id="site-nav">
+      <ul class="nav-list" role="list">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <span class="nav-label">Accueil</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="territoire.html" class="nav-link nav-link--active" aria-current="page">
+            <span class="nav-label">Territoire</span>
+            <span class="nav-indicator" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="experience.html" class="nav-link">
+            <span class="nav-label">Expérience</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="ecosysteme.html" class="nav-link">
+            <span class="nav-label">Écosystème</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="orchestration.html" class="nav-link">
+            <span class="nav-label">Orchestration</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="production-ia.html" class="nav-link">
+            <span class="nav-label">Production IA</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item--cta">
+          <a href="contact.html" class="nav-link nav-link--cta">
+            <span class="nav-label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="nav-toggle"
+      id="nav-toggle"
+      type="button"
+      aria-controls="site-nav"
+      aria-expanded="false"
+      aria-label="Ouvrir le menu de navigation"
+    >
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+
+  </div>
+
+  <div class="header-progress" aria-hidden="true">
+    <div class="header-progress-bar" id="reading-progress"></div>
+  </div>
+</header>
+
+<style>
+  /* ============================================================
+     HEADER — Porto-Flow V4 Institutionnel
+     Variables partagées (à centraliser dans styles.css)
+  ============================================================ */
+
+  :root {
+    --color-deep-navy: #0B1F33;
+    --color-slate: #5F7487;
+    --color-cream: #F7F2E8;
+    --color-sand: #E8DDC8;
+    --color-terracotta: #C96A3A;
+    --color-amber: #B8794A;
+    --color-maquis: #687B57;
+    --color-ink: #102033;
+
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+    --header-height: 72px;
+    --header-height-scrolled: 60px;
+    --container-max: 1280px;
+    --container-pad: clamp(1rem, 4vw, 2.5rem);
+
+    --transition-base: 220ms ease;
+    --transition-smooth: 380ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    --z-header: 100;
+    --z-nav-mobile: 99;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-deep-navy);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: var(--color-terracotta);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0 0 4px 4px;
+    text-decoration: none;
+    transition: top var(--transition-base);
+  }
+
+  .skip-link:focus {
+    top: 0;
+    outline: 2px solid var(--color-cream);
+    outline-offset: 2px;
+  }
+
+  /* Container */
+  .container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+  }
+
+  /* ============================================================
+     SITE HEADER
+  ============================================================ */
+
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-header);
+    height: var(--header-height);
+    background-color: rgba(11, 31, 51, 0.96);
+    backdrop-filter: blur(12px) saturate(1.4);
+    -webkit-backdrop-filter: blur(12px) saturate(1.4);
+    border-bottom: 1px solid rgba(95, 116, 135, 0.2);
+    transition:
+      height var(--transition-smooth),
+      background-color var(--transition-smooth),
+      box-shadow var(--transition-smooth);
+  }
+
+  .site-header.is-scrolled {
+    height: var(--header-height-scrolled);
+    background-color: rgba(11, 31, 51, 0.99);
+    box-shadow: 0 2px 24px rgba(11, 31, 51, 0.35);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1.5rem;
+  }
+
+  /* Brand */
+  .header-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    flex-shrink: 0;
+  }
+
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    text-decoration: none;
+    color: var(--color-cream);
+    transition: opacity var(--transition-base);
+  }
+
+  .brand-link:hover {
+    opacity: 0.85;
+  }
+
+  .brand-link:focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  .brand-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .brand-mark svg {
+    transition: transform var(--transition-smooth);
+  }
+
+  .brand-link:hover .brand-mark svg {
+    transform: rotate(15deg);
+  }
+
+  .brand-name {
+    font-family: var(--font-serif);
+    font-size: 1.375rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1;
+  }
+
+  .brand-primary {
+    color: var(--color-cream);
+  }
+
+  .brand-separator {
+    color: var(--color-terracotta);
+    margin-inline: 0.1em;
+    font-weight: 300;
+  }
+
+  .brand-secondary {
+    color: var(--color-terracotta);
+  }
+
+  .brand-tagline {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-slate);
+    padding-left: calc(36px + 0.625rem);
+    line-height: 1;
+    transition: opacity var(--transition-smooth);
+  }
+
+  .site-header.is-scrolled .brand-tagline {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Navigation */
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    list-style: none;
+  }
+
+  .nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: rgba(247, 242, 232, 0.75);
+    text-decoration: none;
+    border-radius: 4px;
+    transition:
+      color var(--transition-base),
+      background-color var(--transition-base);
+  }
+
+  .nav-link:hover {
+    color: var(--color-cream);
+    background-color: rgba(95, 116, 135, 0.15);
+  }
+
+  .nav-link:focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 2px;
+    color: var(--color-cream);
+  }
+
+  .nav-link--active {
+    color: var(--color-cream);
+    font-weight: 500;
+  }
+
+  .nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-terracotta);
+    border-radius: 1px;
+  }
+
+  .nav-link--cta {
+    margin-left: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: var(--color-terracotta);
+    color: var(--color-cream) !important;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid var(--color-terracotta);
+    transition:
+      background-color var(--transition-base),
+      border-color var(--transition-base),
+      transform var(--transition-base),
+      box-shadow var(--transition-base);
+  }
+
+  .nav-link--cta:hover {
+    background-color: var(--color-amber);
+    border-color: var(--color-amber);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(201, 106, 58, 0.35);
+  }
+
+  /* Mobile toggle */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid rgba(95, 116, 135, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: border-color var(--transition-base);
+    flex-shrink: 0;
+  }
+
+  .nav-toggle:hover {
+    border-color: rgba(201, 106, 58, 0.5);
+  }
+
+  .nav-toggle:focus-visible {
+    outline: 2px solid var(--color-terracotta);
+    outline-offset: 2px;
+  }
+
+  .nav-toggle-bar {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background-color: var(--color-cream);
+    border-radius: 1px;
+    transform-origin: center;
+    transition:
+      transform var(--transition-smooth),
+      opacity var(--transition-base),
+      width var(--transition-base);
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+    width: 0;
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+
+  /* Reading progress bar */
+  .header-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(95, 116, 135, 0.15);
+    overflow: hidden;
+  }
+
+  .header-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--color-terracotta), var(--color-amber));
+    transition: width 80ms linear;
+    border-radius: 0 1px 1px 0;
+  }
+
+  /* ============================================================
+     RESPONSIVE — Mobile nav
+  ============================================================ */
+
+  @media (max-width: 900px) {
+    .nav-toggle {
+      display: flex;
+    }
+
+    .brand-tagline {
+      display: none;
+    }
+
+    .site-nav {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: var(--z-nav-mobile);
+      background-color: rgba(11, 31, 51, 0.98);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem var(--container-pad);
+      transform: translateX(100%);
+      opacity: 0;
+      pointer-events: none;
+      transition:
+        transform var(--transition-smooth),
+        opacity var(--transition-smooth);
+    }
+
+    .site-nav.is-open {
+      transform: translateX(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .nav-item {
+      width: 100%;
+    }
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      border-radius: 6px;
+      color: rgba(247, 242, 232, 0.8);
+    }
+
+    .nav-link--active {
+      background-color: rgba(201, 106, 58, 0.12);
+      color: var(--color-cream);
+    }
+
+    .nav-indicator {
+      display: none;
+    }
+
+    .nav-link--cta {
+      margin-left: 0;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    .nav-item--cta {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    :root {
+      --header-height: 64px;
+    }
+
+    .brand-name {
+      font-size: 1.2rem;
+    }
+
+    .brand-mark svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  /* Offset for fixed header */
+  body {
+    padding-top: var(--header-height);
+  }
+</style>
+
+<script>
+  (function () {
+    'use strict';
+
+    /* ── Header scroll state ── */
+    var header = document.getElementById('site-header');
+    if (header) {
+      var onScroll = function () {
+        if (window.scrollY > 20) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    /* ── Reading progress bar ── */
+    var progressBar = document.getElementById('reading-progress');
+    if (progressBar) {
+      var updateProgress = function () {
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var progress = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+        progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+      };
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
+
+    /* ── Mobile nav toggle ── */
+    var toggle = document.getElementById('nav-toggle');
+    var nav = document.getElementById('site-nav');
+
+    if (toggle && nav) {
+      var isOpen = false;
+
+      var openNav = function () {
+        isOpen = true;
+        nav.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Fermer le menu de navigation');
+        document.body.style.overflow = 'hidden';
+      };
+
+      var closeNav = function () {
+        isOpen = false;
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Ouvrir le menu de navigation');
+        document.body.style.overflow = '';
+      };
+
+      toggle.addEventListener('click', function () {
+        if (isOpen) {
+          closeNav();
+        } else {
+          openNav();
+        }
+      });
+
+      /* Close on nav link click */
+      var navLinks = nav.querySelectorAll('.nav-link');
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (isOpen) closeNav();
+        });
+      });
+
+      /* Close on Escape */
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isOpen) {
+          closeNav();
+          toggle.focus();
+        }
+      });
+
+      /* Close on resize to desktop */
+      var mq = window.matchMedia('(min-width: 901px)');
+      var onResize = function (e) {
+        if (e.matches && isOpen) closeNav();
+      };
+      if (mq.addEventListener) {
+        mq.addEventListener('change', onResize);
+      } else if (mq.addListener) {
+        mq.addListener(onResize);
+      }
+    }
+
+  }());
+</script>
+
+<section class="hero hero--secondary hero--territoire" aria-labelledby="territoire-hero-heading">
+  <div class="hero__background" aria-hidden="true">
+    <div class="topo-lines topo-lines--territoire"></div>
+    <div class="hero__gradient-overlay"></div>
+    <div class="seasonal-split" aria-hidden="true">
+      <div class="seasonal-split__high"></div>
+      <div class="seasonal-split__low"></div>
+      <div class="seasonal-split__divider">
+        <svg class="split-wave" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0,40 C200,80 400,0 600,40 C800,80 1000,0 1200,40 L1200,80 L0,80 Z" fill="#F7F2E8" opacity="0.08"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero__container hero__container--secondary">
+    <div class="hero__breadcrumb" aria-label="Fil d'Ariane">
+      <a href="index.html" class="breadcrumb__link">Accueil</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <span class="breadcrumb__current" aria-current="page">Territoire</span>
+    </div>
+
+    <div class="hero__content hero__content--centered">
+      <div class="hero__label-tag" aria-hidden="true">
+        <span class="tag-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Corse-du-Sud · Analyse territoriale</span>
+      </div>
+
+      <h1 id="territoire-hero-heading" class="hero__title hero__title--secondary">
+        <span class="title-line title-line--accent">Deux vitesses,</span>
+        <span class="title-line">un même territoire</span>
+      </h1>
+
+      <p class="hero__subtitle hero__subtitle--secondary">
+        Entre l'effervescence de l'été et la respiration de l'hiver, la Corse-du-Sud vit à deux rythmes distincts. Porto-Flow s'adapte à chacun d'eux — en temps réel, sans rupture.
+      </p>
+
+      <div class="hero__seasonal-indicators" aria-label="Indicateurs saisonniers">
+        <div class="seasonal-indicator seasonal-indicator--high">
+          <div class="indicator__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="indicator__content">
+            <span class="indicator__label">Haute saison</span>
+            <span class="indicator__value">×4 population</span>
+          </div>
+          <div class="indicator__pulse" aria-hidden="true"></div>
+        </div>
+
+        <div class="seasonal-indicator__connector" aria-hidden="true">
+          <svg width="40" height="2" viewBox="0 0 40 2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+          </svg>
+          <span class="connector__label" aria-hidden="true">Porto-Flow</span>
+          <svg width="40" height="2" viewBox="0 0 40 2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="0" y1="1" x2="40" y2="1" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
+          </svg>
+        </div>
+
+        <div class="seasonal-indicator seasonal-indicator--low">
+          <div class="indicator__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="indicator__content">
+            <span class="indicator__label">Hors saison</span>
+            <span class="indicator__value">Rythme local</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span class="scroll-cue__text">Découvrir les deux rythmes</span>
+        <span class="scroll-cue__arrow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ── Hero Territoire ─────────────────────────────────────────── */
+  .hero--territoire {
+    position: relative;
+    min-height: 72vh;
+    display: flex;
+    align-items: center;
+    background-color: #0B1F33;
+    overflow: hidden;
+    padding: var(--space-32, 8rem) 0 var(--space-20, 5rem);
+  }
+
+  /* Background layers */
+  .hero__background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero__gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 50%, rgba(201, 106, 58, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 30%, rgba(95, 116, 135, 0.12) 0%, transparent 55%),
+      linear-gradient(160deg, #0B1F33 0%, #102033 50%, #0B1F33 100%);
+  }
+
+  /* Topographic lines */
+  .topo-lines--territoire {
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        -15deg,
+        transparent,
+        transparent 38px,
+        rgba(95, 116, 135, 0.06) 38px,
+        rgba(95, 116, 135, 0.06) 40px
+      ),
+      repeating-linear-gradient(
+        75deg,
+        transparent,
+        transparent 58px,
+        rgba(247, 242, 232, 0.03) 58px,
+        rgba(247, 242, 232, 0.03) 60px
+      );
+  }
+
+  /* Seasonal split visual */
+  .seasonal-split {
+    position: absolute;
+    inset: 0;
+    display: flex;
+  }
+
+  .seasonal-split__high {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(201, 106, 58, 0.06) 0%, transparent 70%);
+  }
+
+  .seasonal-split__low {
+    flex: 1;
+    background: linear-gradient(225deg, rgba(104, 123, 87, 0.06) 0%, transparent 70%);
+  }
+
+  .seasonal-split__divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(95, 116, 135, 0.2) 30%,
+      rgba(95, 116, 135, 0.2) 70%,
+      transparent
+    );
+    transform: translateX(-50%);
+  }
+
+  .split-wave {
+    position: absolute;
+    bottom: 0;
+    left: -600px;
+    width: 1200px;
+  }
+
+  /* Container */
+  .hero__container--secondary {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--space-6, 1.5rem);
+  }
+
+  /* Breadcrumb */
+  .hero__breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+  }
+
+  .breadcrumb__link {
+    color: rgba(247, 242, 232, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .breadcrumb__link:hover,
+  .breadcrumb__link:focus-visible {
+    color: rgba(247, 242, 232, 0.85);
+    outline: 2px solid rgba(201, 106, 58, 0.5);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .breadcrumb__sep {
+    color: rgba(247, 242, 232, 0.25);
+  }
+
+  .breadcrumb__current {
+    color: rgba(247, 242, 232, 0.7);
+  }
+
+  /* Content */
+  .hero__content--centered {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Label tag */
+  .hero__label-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    background: rgba(95, 116, 135, 0.15);
+    border: 1px solid rgba(95, 116, 135, 0.3);
+    border-radius: 100px;
+    color: rgba(247, 242, 232, 0.65);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tag-icon {
+    display: flex;
+    align-items: center;
+    color: #C96A3A;
+  }
+
+  /* Title */
+  .hero__title--secondary {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #F7F2E8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+  }
+
+  .title-line {
+    display: block;
+  }
+
+  .title-line--accent {
+    color: #C96A3A;
+  }
+
+  /* Subtitle */
+  .hero__subtitle--secondary {
+    max-width: 600px;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.7;
+    color: rgba(247, 242, 232, 0.65);
+    margin: 0;
+  }
+
+  /* Seasonal indicators */
+  .hero__seasonal-indicators {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .seasonal-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    position: relative;
+    min-width: 160px;
+  }
+
+  .seasonal-indicator--high {
+    background: rgba(201, 106, 58, 0.1);
+    border: 1px solid rgba(201, 106, 58, 0.25);
+  }
+
+  .seasonal-indicator--low {
+    background: rgba(104, 123, 87, 0.1);
+    border: 1px solid rgba(104, 123, 87, 0.25);
+  }
+
+  .indicator__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .seasonal-indicator--high .indicator__icon {
+    background: rgba(201, 106, 58, 0.15);
+    color: #C96A3A;
+  }
+
+  .seasonal-indicator--low .indicator__icon {
+    background: rgba(104, 123, 87, 0.15);
+    color: #687B57;
+  }
+
+  .indicator__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    text-align: left;
+  }
+
+  .indicator__label {
+    font-size: 0.75rem;
+    color: rgba(247, 242, 232, 0.5);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .indicator__value {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #F7F2E8;
+  }
+
+  /* Pulse animation for high season */
+  .indicator__pulse {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C96A3A;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+
+  /* Connector */
+  .seasonal-indicator__connector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(247, 242, 232, 0.3);
+    flex-shrink: 0;
+  }
+
+  .connector__label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(247, 242, 232, 0.35);
+    white-space: nowrap;
+  }
+
+  /* Scroll cue */
+  .hero__scroll-cue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    animation: float-cue 3s ease-in-out infinite;
+  }
+
+  .scroll-cue__text {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(247, 242, 232, 0.35);
+  }
+
+  .scroll-cue__arrow {
+    display: flex;
+    color: rgba(247, 242, 232, 0.3);
+  }
+
+  @keyframes float-cue {
+    0%, 100% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(6px); opacity: 1; }
+  }
+
+  /* ── Responsive ──────────────────────────────────────────────── */
+  @media (max-width: 640px) {
+    .hero--territoire {
+      min-height: auto;
+      padding: var(--space-24, 6rem) 0 var(--space-12, 3rem);
+    }
+
+    .hero__seasonal-indicators {
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 100%;
+    }
+
+    .seasonal-indicator {
+      width: 100%;
+      min-width: unset;
+    }
+
+    .seasonal-indicator__connector {
+      transform: rotate(90deg);
+    }
+
+    .seasonal-split__divider {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero__title--secondary {
+      font-size: 2rem;
+    }
+
+    .hero__subtitle--secondary {
+      font-size: 0.9375rem;
+    }
+  }
+
+  /* ── Reduced motion ──────────────────────────────────────────── */
+  @media (prefers-reduced-motion: reduce) {
+    .indicator__pulse,
+    .hero__scroll-cue {
+      animation: none;
+    }
+  }
+</style>
+
+<!-- ============================================================
+     SEGMENT : territoire-haute-saison
+     Position 3/7 — territoire.html
+     Porto-Flow V4 Institutionnel
+     ============================================================ -->
+
+<section id="haute-saison" class="saison-section saison-haute" aria-labelledby="haute-saison-title">
+
+  <div class="saison-inner container">
+
+    <!-- En-tête de section -->
+    <div class="saison-header" data-animate="fade-up">
+      <div class="saison-badge saison-badge--haute">
+        <svg class="saison-badge__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor"/>
+          <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Haute saison</span>
+      </div>
+      <h2 id="haute-saison-title" class="saison-title">
+        Juin — Septembre :<br>
+        <em>le territoire sous pression</em>
+      </h2>
+      <p class="saison-subtitle">
+        En quelques semaines, la Corse-du-Sud voit sa population multipliée par quatre.
+        Les routes saturent, les services débordent, les visiteurs cherchent — et le territoire doit répondre.
+      </p>
+    </div>
+
+    <!-- Grille d'impacts -->
+    <div class="impacts-grid" role="list" aria-label="Impacts de la haute saison">
+
+      <article class="impact-card" role="listitem" data-animate="fade-up" data-delay="0">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M17 8C8 10 5.9 16.17 3.82 19.11L5.71 21l1-1c.5.5 1 1 2 1 2 0 2-2 4-2s2 2 4 2 2-2 4-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2C6.48 2 2 6.48 2 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Routes saturées</h3>
+          <p class="impact-card__text">
+            Les axes principaux — Ajaccio, Porto-Vecchio, Bonifacio — atteignent leur seuil critique.
+            Chaque heure de pointe devient un nœud d'incertitude pour résidents et visiteurs.
+          </p>
+        </div>
+        <div class="impact-card__metric" aria-label="Indicateur : trafic multiplié par 3">
+          <span class="metric-value">×3</span>
+          <span class="metric-label">trafic moyen</span>
+        </div>
+      </article>
+
+      <article class="impact-card" role="listitem" data-animate="fade-up" data-delay="80">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Population multipliée</h3>
+          <p class="impact-card__text">
+            De 160 000 résidents permanents à plus de 600 000 présences simultanées.
+            Un territoire qui doit se réinventer en quelques jours, sans perdre son âme.
+          </p>
+        </div>
+        <div class="impact-card__metric" aria-label="Indicateur : population multipliée par 4">
+          <span class="metric-value">×4</span>
+          <span class="metric-label">population</span>
+        </div>
+      </article>
+
+      <article class="impact-card" role="listitem" data-animate="fade-up" data-delay="160">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M7 8h10M7 11h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Services débordés</h3>
+          <p class="impact-card__text">
+            Urgences, transports, offices de tourisme, commerces : chaque service public et privé
+            absorbe une demande qu'aucun système statique ne peut anticiper seul.
+          </p>
+        </div>
+        <div class="impact-card__metric" aria-label="Indicateur : demande de services en hausse de 280 pourcent">
+          <span class="metric-value">+280%</span>
+          <span class="metric-label">demande services</span>
+        </div>
+      </article>
+
+      <article class="impact-card" role="listitem" data-animate="fade-up" data-delay="240">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Pression environnementale</h3>
+          <p class="impact-card__text">
+            Plages, maquis, zones naturelles protégées : la concentration de flux touristiques
+            fragilise des écosystèmes que le territoire a le devoir de préserver.
+          </p>
+        </div>
+        <div class="impact-card__metric" aria-label="Indicateur : sites naturels sous tension">
+          <span class="metric-value">47</span>
+          <span class="metric-label">sites sous tension</span>
+        </div>
+      </article>
+
+      <article class="impact-card" role="listitem" data-animate="fade-up" data-delay="320">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Temps réel impossible sans outil</h3>
+          <p class="impact-card__text">
+            Sans orchestration intelligente, chaque acteur navigue à vue.
+            L'information circule mal, les décisions arrivent trop tard, les opportunités s'évaporent.
+          </p>
+        </div>
+        <div class="impact-card__metric" aria-label="Indicateur : délai moyen de réponse sans outil">
+          <span class="metric-value">+4h</span>
+          <span class="metric-label">délai de réponse</span>
+        </div>
+      </article>
+
+      <article class="impact-card impact-card--highlight" role="listitem" data-animate="fade-up" data-delay="400">
+        <div class="impact-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="impact-card__body">
+          <h3 class="impact-card__title">Porto-Flow comme réponse</h3>
+          <p class="impact-card__text">
+            Là où la pression est maximale, l'intelligence territoriale devient indispensable.
+            Porto-Flow transforme le chaos saisonnier en flux lisibles, orientés, utiles.
+          </p>
+        </div>
+        <div class="impact-card__cta">
+          <a href="experience.html" class="btn btn--outline btn--sm" aria-label="Voir comment Porto-Flow filtre le chaos">
+            Voir l'expérience
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Visualisation flux haute saison -->
+    <div class="flux-visual" data-animate="fade-up" aria-label="Visualisation schématique des flux de haute saison" role="img">
+      <div class="flux-visual__header">
+        <span class="flux-visual__label">Flux territoriaux — Haute saison</span>
+        <span class="flux-visual__period">Juin · Juillet · Août · Septembre</span>
+      </div>
+      <div class="flux-map" aria-hidden="true">
+
+        <!-- Nœuds territoriaux -->
+        <div class="flux-node flux-node--capital" style="left: 22%; top: 38%;" title="Ajaccio">
+          <div class="flux-node__pulse"></div>
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Ajaccio</span>
+        </div>
+
+        <div class="flux-node flux-node--major" style="left: 68%; top: 72%;" title="Porto-Vecchio">
+          <div class="flux-node__pulse"></div>
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Porto-Vecchio</span>
+        </div>
+
+        <div class="flux-node flux-node--major" style="left: 72%; top: 88%;" title="Bonifacio">
+          <div class="flux-node__pulse"></div>
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Bonifacio</span>
+        </div>
+
+        <div class="flux-node flux-node--secondary" style="left: 14%; top: 18%;" title="Sagone">
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Sagone</span>
+        </div>
+
+        <div class="flux-node flux-node--secondary" style="left: 48%; top: 55%;" title="Propriano">
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Propriano</span>
+        </div>
+
+        <div class="flux-node flux-node--secondary" style="left: 38%; top: 22%;" title="Cargèse">
+          <div class="flux-node__dot"></div>
+          <span class="flux-node__label">Cargèse</span>
+        </div>
+
+        <!-- Lignes de flux animées -->
+        <svg class="flux-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <!-- Ajaccio → Porto-Vecchio -->
+          <path class="flux-line flux-line--heavy" d="M22,38 Q45,55 68,72" fill="none"/>
+          <!-- Ajaccio → Propriano -->
+          <path class="flux-line flux-line--medium" d="M22,38 Q35,47 48,55" fill="none"/>
+          <!-- Porto-Vecchio → Bonifacio -->
+          <path class="flux-line flux-line--medium" d="M68,72 Q70,80 72,88" fill="none"/>
+          <!-- Sagone → Ajaccio -->
+          <path class="flux-line flux-line--light" d="M14,18 Q18,28 22,38" fill="none"/>
+          <!-- Cargèse → Ajaccio -->
+          <path class="flux-line flux-line--light" d="M38,22 Q30,30 22,38" fill="none"/>
+          <!-- Propriano → Porto-Vecchio -->
+          <path class="flux-line flux-line--light" d="M48,55 Q58,63 68,72" fill="none"/>
+        </svg>
+
+        <!-- Particules de flux -->
+        <div class="flux-particle" style="--path-x1: 22%; --path-y1: 38%; --path-x2: 68%; --path-y2: 72%; --delay: 0s;" aria-hidden="true"></div>
+        <div class="flux-particle" style="--path-x1: 22%; --path-y1: 38%; --path-x2: 48%; --path-y2: 55%; --delay: 0.6s;" aria-hidden="true"></div>
+        <div class="flux-particle" style="--path-x1: 68%; --path-y1: 72%; --path-x2: 72%; --path-y2: 88%; --delay: 1.2s;" aria-hidden="true"></div>
+        <div class="flux-particle" style="--path-x1: 14%; --path-y1: 18%; --path-x2: 22%; --path-y2: 38%; --delay: 0.3s;" aria-hidden="true"></div>
+
+        <!-- Légende -->
+        <div class="flux-legend">
+          <div class="flux-legend__item">
+            <span class="flux-legend__line flux-legend__line--heavy"></span>
+            <span>Axe principal saturé</span>
+          </div>
+          <div class="flux-legend__item">
+            <span class="flux-legend__line flux-legend__line--medium"></span>
+            <span>Axe secondaire tendu</span>
+          </div>
+          <div class="flux-legend__item">
+            <span class="flux-legend__line flux-legend__line--light"></span>
+            <span>Flux local</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Citation territoriale -->
+    <blockquote class="saison-quote" data-animate="fade-up">
+      <p>
+        « La haute saison n'est pas un problème à subir.
+        C'est une opportunité à orchestrer — pour chaque acteur, chaque visiteur, chaque résident. »
+      </p>
+      <footer class="saison-quote__footer">
+        <cite>Porto-Flow — Manifeste territorial</cite>
+      </footer>
+    </blockquote>
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     STYLES SEGMENT : haute-saison
+     ============================================================ -->
+<style>
+/* ── Variables locales segment ── */
+.saison-haute {
+  --saison-accent: #C96A3A;
+  --saison-accent-light: rgba(201, 106, 58, 0.12);
+  --saison-accent-border: rgba(201, 106, 58, 0.3);
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(247, 242, 232, 0.1);
+  --card-hover-bg: rgba(255, 255, 255, 0.07);
+  --metric-color: #C96A3A;
+  --node-capital: #C96A3A;
+  --node-major: #B8794A;
+  --node-secondary: #687B57;
+  --flux-heavy: rgba(201, 106, 58, 0.7);
+  --flux-medium: rgba(184, 121, 74, 0.5);
+  --flux-light: rgba(104, 123, 87, 0.4);
+}
+
+/* ── Layout section ── */
+.saison-section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.saison-haute {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg, #0B1F33) 0%,
+    rgba(16, 32, 51, 0.95) 50%,
+    var(--color-bg, #0B1F33) 100%
+  );
+}
+
+.saison-haute::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(201, 106, 58, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201, 106, 58, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.saison-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── En-tête saison ── */
+.saison-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 4rem;
+}
+
+.saison-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.saison-badge--haute {
+  background: var(--saison-accent-light);
+  border: 1px solid var(--saison-accent-border);
+  color: var(--saison-accent);
+}
+
+.saison-badge__icon {
+  flex-shrink: 0;
+}
+
+.saison-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--color-text-primary, #F7F2E8);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.saison-title em {
+  font-style: normal;
+  color: var(--saison-accent);
+}
+
+.saison-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary, #5F7487);
+  line-height: 1.7;
+}
+
+/* ── Grille impacts ── */
+.impacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .impacts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Carte impact ── */
+.impact-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--saison-accent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.impact-card:hover {
+  background: var(--card-hover-bg);
+  border-color: var(--saison-accent-border);
+  transform: translateY(-2px);
+}
+
+.impact-card:hover::before {
+  opacity: 1;
+}
+
+.impact-card--highlight {
+  background: var(--saison-accent-light);
+  border-color: var(--saison-accent-border);
+  grid-column: span 1;
+}
+
+@media (min-width: 1024px) {
+  .impact-card--highlight {
+    grid-column: span 1;
+  }
+}
+
+.impact-card__icon {
+  width: 52px;
+  height: 52px;
+  background: var(--saison-accent-light);
+  border: 1px solid var(--saison-accent-border);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--saison-accent);
+  flex-shrink: 0;
+}
+
+.impact-card__body {
+  flex: 1;
+}
+
+.impact-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary, #F7F2E8);
+  margin-bottom: 0.5rem;
+}
+
+.impact-card__text {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary, #5F7487);
+  line-height: 1.65;
+}
+
+.impact-card__metric {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.metric-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--metric-color);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #5F7487);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.impact-card__cta {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--saison-accent-border);
+}
+
+/* ── Boutons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--saison-accent);
+  color: var(--saison-accent);
+  padding: 0.6rem 1.2rem;
+}
+
+.btn--outline:hover {
+  background: var(--saison-accent);
+  color: #fff;
+}
+
+.btn--sm {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ── Visualisation flux ── */
+.flux-visual {
+  background: rgba(11, 31, 51, 0.6);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.flux-visual__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.flux-visual__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-primary, #F7F2E8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.flux-visual__period {
+  font-size: 0.75rem;
+  color: var(--saison-accent);
+  font-weight: 500;
+}
+
+/* ── Carte flux ── */
+.flux-map {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(201, 106, 58, 0.04) 0%, transparent 70%);
+}
+
+@media (min-width: 768px) {
+  .flux-map {
+    height: 420px;
+  }
+}
+
+/* ── Lignes SVG ── */
+.flux-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flux-line {
+  stroke-width: 0;
+  fill: none;
+  stroke-linecap: round;
+}
+
+.flux-line--heavy {
+  stroke: var(--flux-heavy);
+  stroke-width: 0.8;
+  stroke-dasharray: 3 2;
+  animation: flux-dash 3s linear infinite;
+}
+
+.flux-line--medium {
+  stroke: var(--flux-medium);
+  stroke-width: 0.5;
+  stroke-dasharray: 2 3;
+  animation: flux-dash 4s linear infinite;
+}
+
+.flux-line--light {
+  stroke: var(--flux-light);
+  stroke-width: 0.3;
+  stroke-dasharray: 1 4;
+  animation: flux-dash 5s linear infinite;
+}
+
+@keyframes flux-dash {
+  to { stroke-dashoffset: -20; }
+}
+
+/* ── Nœuds ── */
+.flux-node {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+}
+
+.flux-node__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--node-secondary);
+  border: 2px solid rgba(247, 242, 232, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.flux-node--capital .flux-node__dot {
+  width: 14px;
+  height: 14px;
+  background: var(--node-capital);
+  border-color: rgba(201, 106, 58, 0.5);
+}
+
+.flux-node--major .flux-node__dot {
+  width: 12px;
+  height: 12px;
+  background: var(--node-major);
+  border-color: rgba(184, 121, 74, 0.4);
+}
+
+.flux-node__pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--node-capital);
+  opacity: 0;
+  animation: node-pulse 2.5s ease-out infinite;
+  z-index: 1;
+}
+
+.flux-node--major .flux-node__pulse {
+  background: var(--node-major);
+  animation-delay: 0.5s;
+}
+
+@keyframes node-pulse {
+  0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.5); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(2.5); }
+}
+
+.flux-node__label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--color-text-primary, #F7F2E8);
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(11, 31, 51, 0.8);
+  letter-spacing: 0.04em;
+}
+
+/* ── Particules de flux ── */
+.flux-particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--saison-accent);
+  opacity: 0;
+  animation: particle-move 3s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  left: var(--path-x1);
+  top: var(--path-y1);
+  z-index: 3;
+}
+
+@keyframes particle-move {
+  0% {
+    opacity: 0;
+    left: var(--path-x1);
+    top: var(--path-y1);
+  }
+  10% { opacity: 0.9; }
+  90% { opacity: 0.9; }
+  100% {
+    opacity: 0;
+    left: var(--path-x2);
+    top: var(--path-y2);
+  }
+}
+
+/* ── Légende flux ── */
+.flux-legend {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: rgba(11, 31, 51, 0.85);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.flux-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary, #5F7487);
+}
+
+.flux-legend__line {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.flux-legend__line--heavy { background: var(--flux-heavy); }
+.flux-legend__line--medium { background: var(--flux-medium); }
+.flux-legend__line--light { background: var(--flux-light); }
+
+/* ── Citation ── */
+.saison-quote {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--saison-accent-light);
+  border: 1px solid var(--saison-accent-border);
+  border-radius: 12px;
+  position: relative;
+}
+
+.saison-quote::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: var(--saison-accent);
+  opacity: 0.3;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.saison-quote p {
+  font-size: 1.05rem;
+  color: var(--color-text-primary, #F7F2E8);
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.saison-quote__footer {
+  font-size: 0.8rem;
+  color: var(--saison-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-style: normal;
+}
+
+/* ── Animations d'entrée ── */
+[data-animate="fade-up"] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-delay="80"] { transition-delay: 0.08s; }
+[data-delay="160"] { transition-delay: 0.16s; }
+[data-delay="240"] { transition-delay: 0.24s; }
+[data-delay="320"] { transition-delay: 0.32s; }
+[data-delay="400"] { transition-delay: 0.4s; }
+
+/* ── Responsive ── */
+@media (max-width: 767px) {
+  .saison-section {
+    padding: 4rem 0;
+  }
+
+  .impacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flux-map {
+    height: 280px;
+  }
+
+  .flux-node__label {
+    font-size: 0.6rem;
+  }
+
+  .flux-legend {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .saison-quote {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .flux-visual__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .flux-map {
+    height: 240px;
+  }
+
+  .flux-node--secondary {
+    display: none;
+  }
+}
+</style>
+
+
+<!-- ============================================================
+     SCRIPT SEGMENT : haute-saison — IntersectionObserver
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  function initHauteSaisonAnimations() {
+    var section = document.getElementById('haute-saison');
+    if (!section) return;
+
+    var animatables = section.querySelectorAll('[data-animate="fade-up"]');
+    if (!animatables.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      animatables.forEach(function (el) {
+        el.classList.add('is-visible');
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    animatables.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHauteSaisonAnimations);
+  } else {
+    initHauteSaisonAnimations();
+  }
+}());
+</script>
+
+<!-- ============================================================
+     SEGMENT : territoire-hors-saison (4/7)
+     Page : territoire.html — Porto-Flow V4 Institutionnel
+     ============================================================ -->
+
+<section id="hors-saison" class="saison-section hors-saison" aria-labelledby="hors-saison-title">
+
+  <div class="saison-inner container">
+
+    <!-- En-tête de section -->
+    <div class="saison-header" data-animate="fade-up">
+      <div class="saison-badge hors-saison-badge">
+        <svg class="badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span>Hors saison</span>
+        <span class="badge-period">Octobre — Mai</span>
+      </div>
+      <h2 id="hors-saison-title" class="saison-title">
+        Le territoire retrouve son souffle.<br>
+        <em>Les besoins, eux, ne s'arrêtent pas.</em>
+      </h2>
+      <p class="saison-intro">
+        Quand les flux touristiques reflux, la Corse-du-Sud révèle sa vérité profonde : 
+        un territoire vivant, habité, exigeant. Résidents, professionnels, institutions — 
+        chacun continue d'agir, de se déplacer, de chercher. Porto-Flow reste présent, 
+        attentif, utile.
+      </p>
+    </div>
+
+    <!-- Grille de contenu principal -->
+    <div class="saison-content-grid">
+
+      <!-- Colonne gauche : données et ambiance -->
+      <div class="saison-left" data-animate="fade-right">
+
+        <!-- Indicateurs hors saison -->
+        <div class="saison-metrics">
+          <div class="metric-card metric-calm">
+            <div class="metric-visual">
+              <div class="metric-bar-wrap">
+                <div class="metric-bar" style="--bar-fill: 22%; --bar-color: #687B57;" role="img" aria-label="Population résidente : environ 22% du pic estival"></div>
+              </div>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">~35 000</span>
+              <span class="metric-label">résidents permanents actifs</span>
+            </div>
+          </div>
+
+          <div class="metric-card metric-calm">
+            <div class="metric-visual">
+              <svg class="metric-icon-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M4 28 L16 8 L28 28" stroke="#687B57" stroke-width="1.6" stroke-linejoin="round" fill="none"/>
+                <path d="M8 22 L16 14 L24 22" stroke="#687B57" stroke-width="1" stroke-linejoin="round" fill="none" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">Rythme local</span>
+              <span class="metric-label">flux apaisés, mobilité de proximité</span>
+            </div>
+          </div>
+
+          <div class="metric-card metric-calm">
+            <div class="metric-visual">
+              <div class="pulse-dot pulse-slow" aria-hidden="true"></div>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">Services continus</span>
+              <span class="metric-label">santé, commerce, administration, culture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte topographique stylisée hors saison -->
+        <div class="topo-card topo-calm" aria-label="Représentation cartographique du territoire en hors saison" role="img">
+          <div class="topo-lines topo-lines-calm" aria-hidden="true">
+            <svg class="topo-svg" viewBox="0 0 400 220" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Lignes de niveau apaisées -->
+              <ellipse cx="200" cy="110" rx="180" ry="95" stroke="#687B57" stroke-width="0.6" opacity="0.25"/>
+              <ellipse cx="200" cy="110" rx="150" ry="78" stroke="#687B57" stroke-width="0.6" opacity="0.3"/>
+              <ellipse cx="200" cy="110" rx="118" ry="60" stroke="#687B57" stroke-width="0.7" opacity="0.35"/>
+              <ellipse cx="200" cy="110" rx="88" ry="44" stroke="#687B57" stroke-width="0.8" opacity="0.4"/>
+              <ellipse cx="200" cy="110" rx="60" ry="30" stroke="#687B57" stroke-width="0.9" opacity="0.45"/>
+              <ellipse cx="200" cy="110" rx="35" ry="17" stroke="#687B57" stroke-width="1" opacity="0.5"/>
+
+              <!-- Flux lents — routes principales -->
+              <path d="M40 180 Q120 140 200 110 Q280 80 360 55" stroke="#687B57" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.4"/>
+              <path d="M60 60 Q130 90 200 110 Q270 130 340 160" stroke="#5F7487" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+
+              <!-- Points de vie locale -->
+              <circle cx="200" cy="110" r="4" fill="#687B57" opacity="0.7"/>
+              <circle cx="130" cy="145" r="3" fill="#687B57" opacity="0.5"/>
+              <circle cx="270" cy="80" r="3" fill="#687B57" opacity="0.5"/>
+              <circle cx="155" cy="75" r="2.5" fill="#5F7487" opacity="0.4"/>
+              <circle cx="310" cy="150" r="2.5" fill="#5F7487" opacity="0.4"/>
+
+              <!-- Légende intégrée -->
+              <text x="16" y="210" font-size="9" fill="#687B57" opacity="0.6" font-family="sans-serif">Territoire respirant — flux résidents</text>
+            </svg>
+          </div>
+          <div class="topo-overlay-label">
+            <span class="topo-season-tag">Hors saison</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Colonne droite : réalités et enjeux -->
+      <div class="saison-right" data-animate="fade-left">
+
+        <h3 class="saison-sub-title">Ce que vit le territoire quand les visiteurs repartent</h3>
+
+        <ul class="saison-realities" role="list">
+
+          <li class="reality-item" data-animate="fade-up" data-delay="0">
+            <div class="reality-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#687B57" stroke-width="1.6" stroke-linejoin="round"/>
+                <polyline points="9 22 9 12 15 12 15 22" stroke="#687B57" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="reality-content">
+              <strong>La vie locale reprend ses droits</strong>
+              <p>Les résidents retrouvent leurs routes, leurs commerces, leurs rythmes. 
+                 Le territoire respire. Mais les besoins quotidiens restent entiers : 
+                 mobilité, information, accès aux services.</p>
+            </div>
+          </li>
+
+          <li class="reality-item" data-animate="fade-up" data-delay="80">
+            <div class="reality-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke="#687B57" stroke-width="1.6"/>
+                <path d="M8 21h8M12 17v4" stroke="#687B57" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="reality-content">
+              <strong>Des acteurs économiques en veille active</strong>
+              <p>Hôtels, restaurants, loueurs, prestataires : certains ferment, d'autres 
+                 pivotent. Tous ont besoin de visibilité, de connexion avec leur bassin 
+                 de clientèle locale et de continuité numérique.</p>
+            </div>
+          </li>
+
+          <li class="reality-item" data-animate="fade-up" data-delay="160">
+            <div class="reality-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#687B57" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="reality-content">
+              <strong>Les institutions maintiennent le cap</strong>
+              <p>Collectivités, offices de tourisme, services publics : la gestion 
+                 territoriale ne s'arrête pas. C'est la saison des bilans, des projets, 
+                 des décisions stratégiques pour l'année suivante.</p>
+            </div>
+          </li>
+
+          <li class="reality-item" data-animate="fade-up" data-delay="240">
+            <div class="reality-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#687B57" stroke-width="1.6"/>
+                <path d="M12 6v6l4 2" stroke="#687B57" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="reality-content">
+              <strong>Le temps long de l'innovation</strong>
+              <p>Hors saison, c'est le moment d'apprendre, d'ajuster, d'améliorer. 
+                 Porto-Flow capitalise sur chaque flux passé pour affiner ses réponses 
+                 et préparer la saison suivante avec une intelligence accrue.</p>
+            </div>
+          </li>
+
+          <li class="reality-item" data-animate="fade-up" data-delay="320">
+            <div class="reality-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="#687B57" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="9" cy="7" r="4" stroke="#687B57" stroke-width="1.6"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#687B57" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="reality-content">
+              <strong>Une communauté locale à part entière</strong>
+              <p>35 000 résidents permanents, des travailleurs saisonniers qui restent, 
+                 des familles, des entrepreneurs locaux. Un public exigeant, fidèle, 
+                 qui mérite une expérience numérique à la hauteur de son territoire.</p>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- Citation ancrée -->
+        <blockquote class="saison-quote hors-saison-quote" data-animate="fade-up" data-delay="400">
+          <p>
+            "Un territoire ne dort jamais vraiment. Il change de rythme. 
+             Porto-Flow change avec lui."
+          </p>
+          <footer>
+            <cite>— Philosophie Porto-Flow, adaptation permanente</cite>
+          </footer>
+        </blockquote>
+
+      </div>
+
+    </div>
+
+    <!-- Bande de données comparatives -->
+    <div class="saison-compare-strip" data-animate="fade-up" aria-label="Comparaison des indicateurs entre haute saison et hors saison">
+      <div class="compare-strip-inner">
+
+        <div class="compare-item">
+          <span class="compare-label">Flux routiers</span>
+          <div class="compare-bars" aria-hidden="true">
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag">Été</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill high" style="--fill: 92%"></div>
+              </div>
+              <span class="compare-pct">92%</span>
+            </div>
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag calm">Hors saison</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill calm" style="--fill: 28%"></div>
+              </div>
+              <span class="compare-pct">28%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="compare-divider" aria-hidden="true"></div>
+
+        <div class="compare-item">
+          <span class="compare-label">Demandes d'information</span>
+          <div class="compare-bars" aria-hidden="true">
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag">Été</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill high" style="--fill: 88%"></div>
+              </div>
+              <span class="compare-pct">88%</span>
+            </div>
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag calm">Hors saison</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill calm" style="--fill: 42%"></div>
+              </div>
+              <span class="compare-pct">42%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="compare-divider" aria-hidden="true"></div>
+
+        <div class="compare-item">
+          <span class="compare-label">Besoins résidents</span>
+          <div class="compare-bars" aria-hidden="true">
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag">Été</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill high" style="--fill: 55%"></div>
+              </div>
+              <span class="compare-pct">55%</span>
+            </div>
+            <div class="compare-bar-wrap">
+              <span class="compare-season-tag calm">Hors saison</span>
+              <div class="compare-bar-track">
+                <div class="compare-bar-fill calm" style="--fill: 95%"></div>
+              </div>
+              <span class="compare-pct">95%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="compare-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        Données indicatives — illustration des dynamiques territoriales saisonnières
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ============================================================
+     STYLES SEGMENT : hors-saison
+     ============================================================ -->
+<style>
+/* ── Variables locales segment ─────────────────────────────── */
+.hors-saison {
+  --hs-green:      #687B57;
+  --hs-green-soft: #8a9e74;
+  --hs-blue:       #5F7487;
+  --hs-dark:       #0B1F33;
+  --hs-cream:      #F7F2E8;
+  --hs-sand:       #E8DDC8;
+  --hs-accent:     #C96A3A;
+  background: linear-gradient(
+    160deg,
+    #F7F2E8 0%,
+    #eee8d8 40%,
+    #e4dece 100%
+  );
+  padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Motif topographique de fond */
+.hors-saison::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(104,123,87,0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(95,116,135,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Badge hors saison ─────────────────────────────────────── */
+.hors-saison-badge {
+  background: rgba(104,123,87,0.12);
+  border: 1px solid rgba(104,123,87,0.3);
+  color: var(--hs-green);
+}
+
+.hors-saison-badge .badge-icon {
+  color: var(--hs-green);
+}
+
+/* ── Titre section ─────────────────────────────────────────── */
+.hors-saison .saison-title {
+  color: var(--hs-dark);
+}
+
+.hors-saison .saison-title em {
+  color: var(--hs-green);
+  font-style: normal;
+}
+
+.hors-saison .saison-intro {
+  color: var(--hs-blue);
+}
+
+/* ── Métriques ─────────────────────────────────────────────── */
+.metric-calm {
+  background: rgba(255,255,255,0.55);
+  border-color: rgba(104,123,87,0.2);
+}
+
+.metric-bar-wrap {
+  width: 100%;
+  height: 6px;
+  background: rgba(104,123,87,0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.metric-bar {
+  height: 100%;
+  width: var(--bar-fill, 0%);
+  background: var(--bar-color, #687B57);
+  border-radius: 3px;
+  transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Pulse lent hors saison */
+.pulse-slow {
+  animation-duration: 3s !important;
+}
+
+.pulse-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--hs-green);
+  position: relative;
+  animation: pulseDot 3s ease-in-out infinite;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1.5px solid var(--hs-green);
+  opacity: 0;
+  animation: pulseRing 3s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.15); opacity: 0.8; }
+}
+
+@keyframes pulseRing {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* ── Carte topographique hors saison ───────────────────────── */
+.topo-calm {
+  background: rgba(255,255,255,0.4);
+  border-color: rgba(104,123,87,0.2);
+}
+
+.topo-lines-calm .topo-svg {
+  opacity: 0.85;
+}
+
+.topo-season-tag {
+  background: rgba(104,123,87,0.15);
+  color: var(--hs-green);
+  border: 1px solid rgba(104,123,87,0.25);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+}
+
+/* ── Réalités locales ──────────────────────────────────────── */
+.hors-saison .saison-sub-title {
+  color: var(--hs-dark);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.saison-realities {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.reality-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(104,123,87,0.15);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.reality-item:hover {
+  transform: translateX(4px);
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 4px 16px rgba(104,123,87,0.1);
+}
+
+.reality-icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  background: rgba(104,123,87,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reality-content strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--hs-dark);
+  margin-bottom: 0.3rem;
+}
+
+.reality-content p {
+  font-size: 0.84rem;
+  color: var(--hs-blue);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Citation hors saison ──────────────────────────────────── */
+.hors-saison-quote {
+  border-left-color: var(--hs-green);
+  background: rgba(104,123,87,0.07);
+}
+
+.hors-saison-quote p {
+  color: var(--hs-dark);
+}
+
+.hors-saison-quote cite {
+  color: var(--hs-green);
+}
+
+/* ── Bande comparative ─────────────────────────────────────── */
+.saison-compare-strip {
+  margin-top: 3.5rem;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(104,123,87,0.18);
+  border-radius: 14px;
+  padding: 2rem 2.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.compare-strip-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.compare-item {
+  flex: 1;
+  min-width: 180px;
+}
+
+.compare-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--hs-dark);
+  margin-bottom: 0.9rem;
+}
+
+.compare-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.compare-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.compare-season-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #C96A3A;
+  min-width: 72px;
+  text-align: right;
+}
+
+.compare-season-tag.calm {
+  color: var(--hs-green);
+}
+
+.compare-bar-track {
+  flex: 1;
+  height: 7px;
+  background: rgba(11,31,51,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.compare-bar-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 1.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.compare-bar-fill.high {
+  background: linear-gradient(90deg, #C96A3A, #B8794A);
+}
+
+.compare-bar-fill.calm {
+  background: linear-gradient(90deg, #687B57, #8a9e74);
+}
+
+.compare-bar-fill.animated {
+  width: var(--fill, 0%);
+}
+
+.compare-pct {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--hs-dark);
+  min-width: 30px;
+}
+
+.compare-divider {
+  width: 1px;
+  background: rgba(104,123,87,0.2);
+  align-self: stretch;
+  min-height: 60px;
+}
+
+.compare-note {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  color: var(--hs-blue);
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(104,123,87,0.12);
+  opacity: 0.8;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .compare-strip-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .compare-divider {
+    width: 100%;
+    height: 1px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hors-saison {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .saison-compare-strip {
+    padding: 1.5rem;
+  }
+
+  .reality-item {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .reality-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+</style>
+
+
+<!-- ============================================================
+     SCRIPT SEGMENT : hors-saison — animations et barres
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Anime les barres comparatives au scroll ─────────────── */
+  function initCompareBarAnimations() {
+    var fills = document.querySelectorAll('#hors-saison .compare-bar-fill');
+    if (!fills.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fills.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  /* ── Anime la barre métrique principale ──────────────────── */
+  function initMetricBarAnimation() {
+    var bar = document.querySelector('#hors-saison .metric-bar');
+    if (!bar) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          bar.style.width = bar.style.getPropertyValue('--bar-fill') || '22%';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    bar.style.width = '0%';
+    observer.observe(bar);
+  }
+
+  /* ── Anime les reality-items au scroll ───────────────────── */
+  function initRealityItemAnimations() {
+    var items = document.querySelectorAll('#hors-saison .reality-item[data-delay]');
+    if (!items.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var delay = parseInt(entry.target.getAttribute('data-delay') || '0', 10);
+          setTimeout(function () {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    items.forEach(function (item) {
+      item.style.opacity = '0';
+      item.style.transform = 'translateX(-12px)';
+      item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(item);
+    });
+  }
+
+  /* ── Anime les éléments data-animate génériques ──────────── */
+  function initGenericAnimations() {
+    var els = document.querySelectorAll('#hors-saison [data-animate]');
+    if (!els.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var type = entry.target.getAttribute('data-animate');
+          var delay = parseInt(entry.target.getAttribute('data-delay') || '0', 10);
+          setTimeout(function () {
+            entry.target.classList.add('anim-in', 'anim-' + type);
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    els.forEach(function (el) {
+      el.classList.add('anim-ready');
+      observer.observe(el);
+    });
+  }
+
+  /* ── Init ────────────────────────────────────────────────── */
+  function init() {
+    if (typeof IntersectionObserver === 'undefined') {
+      /* Fallback : tout visible immédiatement */
+      document.querySelectorAll('#hors-saison .compare-bar-fill').forEach(function (el) {
+        el.classList.add('animated');
+      });
+      return;
+    }
+
+    initCompareBarAnimations();
+    initMetricBarAnimation();
+    initRealityItemAnimations();
+    initGenericAnimations();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+}());
+</script>
+
+<section class="bloc-central" id="adaptation-temps-reel" aria-labelledby="adaptation-titre">
+  <div class="bloc-central__inner">
+
+    <div class="bloc-central__signal" aria-hidden="true">
+      <svg class="signal-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <circle cx="32" cy="32" r="6" fill="#C96A3A"/>
+        <circle cx="32" cy="32" r="14" stroke="#C96A3A" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6">
+          <animateTransform attributeName="transform" type="rotate" from="0 32 32" to="360 32 32" dur="12s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="32" cy="32" r="22" stroke="#5F7487" stroke-width="1" stroke-dasharray="2 4" opacity="0.4">
+          <animateTransform attributeName="transform" type="rotate" from="360 32 32" to="0 32 32" dur="20s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+      <span class="signal-label">Temps réel</span>
+    </div>
+
+    <div class="bloc-central__content">
+      <div class="bloc-central__eyebrow">Adaptation continue</div>
+      <h2 class="bloc-central__titre" id="adaptation-titre">
+        Un territoire ne peut pas attendre.<br>
+        <span class="accent">Porto-Flow non plus.</span>
+      </h2>
+
+      <p class="bloc-central__intro">
+        Entre le pic d'affluence d'un mardi d'août et la quiétude d'un mercredi de novembre, 
+        le territoire de Corse-du-Sud ne vit pas au même rythme — mais ses habitants, 
+        ses visiteurs et ses acteurs économiques ont besoin de réponses immédiates, 
+        dans les deux cas.
+      </p>
+
+      <p class="bloc-central__corps">
+        L'adaptation en temps réel n'est pas un luxe technologique. 
+        C'est une nécessité territoriale. Chaque flux de circulation modifié, 
+        chaque service saturé, chaque événement imprévu génère une onde de choc 
+        qui se propage à travers l'ensemble du tissu local — commerces, transports, 
+        hébergements, services publics. Sans lecture instantanée de ces dynamiques, 
+        les décisions arrivent trop tard, les ressources sont mal orientées, 
+        et l'expérience vécue se dégrade.
+      </p>
+
+      <p class="bloc-central__corps">
+        Porto-Flow capte ces signaux faibles et forts en continu. 
+        Il les traduit en informations actionnables pour les acteurs du territoire — 
+        qu'il s'agisse d'un résident cherchant un itinéraire alternatif, 
+        d'un office de tourisme ajustant ses recommandations, 
+        ou d'une collectivité anticipant une tension sur ses infrastructures.
+      </p>
+
+      <blockquote class="bloc-central__citation">
+        <p>
+          "Connaître le territoire à l'instant T, c'est pouvoir le servir 
+          avec justesse — pas avec retard."
+        </p>
+        <footer>
+          <cite>— Principe fondateur de Porto-Flow</cite>
+        </footer>
+      </blockquote>
+    </div>
+
+    <div class="bloc-central__piliers" role="list" aria-label="Piliers de l'adaptation en temps réel">
+
+      <div class="pilier" role="listitem">
+        <div class="pilier__icone" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M16 4 L16 16 L24 20" stroke="#C96A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="16" r="12" stroke="#5F7487" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="pilier__texte">
+          <strong class="pilier__titre">Lecture instantanée</strong>
+          <p class="pilier__desc">
+            Les flux de données territoriales sont analysés en continu, 
+            sans délai entre l'événement et la réponse.
+          </p>
+        </div>
+      </div>
+
+      <div class="pilier" role="listitem">
+        <div class="pilier__icone" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M6 16 C6 10 10 6 16 6 C22 6 26 10 26 16" stroke="#C96A3A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 16 C6 22 10 26 16 26 C22 26 26 22 26 16" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2"/>
+            <circle cx="16" cy="16" r="3" fill="#C96A3A"/>
+          </svg>
+        </div>
+        <div class="pilier__texte">
+          <strong class="pilier__titre">Contextualisation locale</strong>
+          <p class="pilier__desc">
+            Chaque signal est interprété à l'aune des spécificités 
+            géographiques, culturelles et saisonnières de Corse-du-Sud.
+          </p>
+        </div>
+      </div>
+
+      <div class="pilier" role="listitem">
+        <div class="pilier__icone" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <path d="M8 24 L16 8 L24 24" stroke="#C96A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 20 L22 20" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pilier__texte">
+          <strong class="pilier__titre">Action proportionnée</strong>
+          <p class="pilier__desc">
+            La réponse est calibrée selon l'intensité du besoin — 
+            ni sur-réaction, ni sous-estimation des tensions réelles.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bloc-central__indicateurs" aria-label="Indicateurs d'adaptation territoriale">
+      <div class="indicateur">
+        <span class="indicateur__valeur" data-target="2" aria-label="Moins de 2 secondes">
+          &lt;2s
+        </span>
+        <span class="indicateur__label">Temps de réponse moyen</span>
+      </div>
+      <div class="indicateur indicateur--accent">
+        <span class="indicateur__valeur" aria-label="24 heures sur 24, 7 jours sur 7">
+          24/7
+        </span>
+        <span class="indicateur__label">Disponibilité du service</span>
+      </div>
+      <div class="indicateur">
+        <span class="indicateur__valeur" aria-label="Deux modes saisonniers">
+          2 modes
+        </span>
+        <span class="indicateur__label">Haute &amp; hors saison</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .bloc-central {
+    background: linear-gradient(160deg, #0B1F33 0%, #102033 60%, #0d2540 100%);
+    padding: 6rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bloc-central::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 39px,
+        rgba(95, 116, 135, 0.06) 40px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 39px,
+        rgba(95, 116, 135, 0.06) 40px
+      );
+    pointer-events: none;
+  }
+
+  .bloc-central::after {
+    content: '';
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201, 106, 58, 0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .bloc-central__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .bloc-central__signal {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .signal-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #C96A3A;
+    opacity: 0.85;
+  }
+
+  .bloc-central__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .bloc-central__eyebrow {
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5F7487;
+  }
+
+  .bloc-central__titre {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #F7F2E8;
+    margin: 0;
+  }
+
+  .bloc-central__titre .accent {
+    color: #C96A3A;
+  }
+
+  .bloc-central__intro {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #E8DDC8;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .bloc-central__corps {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(232, 221, 200, 0.75);
+    margin: 0;
+  }
+
+  .bloc-central__citation {
+    border-left: 3px solid #C96A3A;
+    padding: 1.25rem 1.5rem;
+    margin: 0;
+    background: rgba(201, 106, 58, 0.06);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .bloc-central__citation p {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #F7F2E8;
+    line-height: 1.65;
+    margin: 0 0 0.5rem;
+  }
+
+  .bloc-central__citation cite {
+    font-size: 0.8rem;
+    color: #5F7487;
+    font-style: normal;
+    letter-spacing: 0.05em;
+  }
+
+  .bloc-central__piliers {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .pilier {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(95, 116, 135, 0.2);
+    border-radius: 8px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .pilier:hover {
+    background: rgba(201, 106, 58, 0.06);
+    border-color: rgba(201, 106, 58, 0.3);
+  }
+
+  .pilier__icone {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 106, 58, 0.08);
+    border-radius: 50%;
+  }
+
+  .pilier__texte {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .pilier__titre {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F7F2E8;
+    display: block;
+  }
+
+  .pilier__desc {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: rgba(232, 221, 200, 0.7);
+    margin: 0;
+  }
+
+  .bloc-central__indicateurs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(95, 116, 135, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .indicateur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem 1rem;
+    background: rgba(11, 31, 51, 0.8);
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+
+  .indicateur:hover {
+    background: rgba(11, 31, 51, 0.95);
+  }
+
+  .indicateur--accent {
+    background: rgba(201, 106, 58, 0.1);
+  }
+
+  .indicateur--accent:hover {
+    background: rgba(201, 106, 58, 0.15);
+  }
+
+  .indicateur__valeur {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    color: #C96A3A;
+    font-family: 'Courier New', monospace;
+    line-height: 1;
+  }
+
+  .indicateur__label {
+    font-size: 0.75rem;
+    color: #5F7487;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 640px) {
+    .bloc-central {
+      padding: 4rem 1.25rem;
+    }
+
+    .bloc-central__indicateurs {
+      grid-template-columns: 1fr;
+    }
+
+    .indicateur {
+      padding: 1.5rem 1rem;
+    }
+
+    .pilier {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .pilier__icone {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .bloc-central__piliers {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .signal-icon animateTransform {
+      display: none;
+    }
+  }
+</style>
+
+<section class="flux-schema" aria-labelledby="flux-schema-title">
+  <div class="flux-schema__container">
+
+    <header class="flux-schema__header">
+      <h2 id="flux-schema-title" class="flux-schema__title">Flux saisonniers du territoire</h2>
+      <p class="flux-schema__subtitle">Deux rythmes, une même infrastructure, une adaptation permanente</p>
+    </header>
+
+    <div class="flux-schema__canvas" role="img" aria-label="Schéma illustrant les flux de haute saison en orange et les flux de hors-saison en bleu-gris sur le territoire de Corse-du-Sud">
+
+      <!-- Axe temporel -->
+      <div class="flux-axis">
+        <span class="flux-axis__label flux-axis__label--left">Janvier</span>
+        <div class="flux-axis__line" aria-hidden="true"></div>
+        <span class="flux-axis__label flux-axis__label--center">Juin — Septembre</span>
+        <div class="flux-axis__line" aria-hidden="true"></div>
+        <span class="flux-axis__label flux-axis__label--right">Décembre</span>
+      </div>
+
+      <!-- Zone de flux principale -->
+      <div class="flux-zone" aria-hidden="true">
+
+        <!-- Flux hors-saison bleu-gris -->
+        <div class="flux-band flux-band--offseason">
+          <div class="flux-band__fill flux-band--offseason__fill"></div>
+          <div class="flux-band__particles">
+            <span class="flux-particle flux-particle--blue" style="--delay:0s; --top:20%; --speed:18s;"></span>
+            <span class="flux-particle flux-particle--blue" style="--delay:3s; --top:45%; --speed:22s;"></span>
+            <span class="flux-particle flux-particle--blue" style="--delay:7s; --top:70%; --speed:16s;"></span>
+            <span class="flux-particle flux-particle--blue" style="--delay:11s; --top:30%; --speed:20s;"></span>
+            <span class="flux-particle flux-particle--blue" style="--delay:5s; --top:60%; --speed:24s;"></span>
+          </div>
+          <div class="flux-band__label">
+            <span class="flux-band__icon" aria-hidden="true">◈</span>
+            <span>Hors-saison</span>
+            <em>Rythme local · Services essentiels · Résilience</em>
+          </div>
+        </div>
+
+        <!-- Séparateur de transition -->
+        <div class="flux-separator" aria-hidden="true">
+          <div class="flux-separator__wave flux-separator__wave--1"></div>
+          <div class="flux-separator__wave flux-separator__wave--2"></div>
+          <div class="flux-separator__wave flux-separator__wave--3"></div>
+        </div>
+
+        <!-- Flux haute saison orange -->
+        <div class="flux-band flux-band--highseason">
+          <div class="flux-band__fill flux-band--highseason__fill"></div>
+          <div class="flux-band__particles">
+            <span class="flux-particle flux-particle--orange" style="--delay:0s; --top:15%; --speed:8s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:1s; --top:35%; --speed:6s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:2s; --top:55%; --speed:9s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:0.5s; --top:75%; --speed:7s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:3s; --top:25%; --speed:10s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:1.5s; --top:65%; --speed:8s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:4s; --top:45%; --speed:6s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:2.5s; --top:85%; --speed:11s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:0.8s; --top:10%; --speed:7s;"></span>
+            <span class="flux-particle flux-particle--orange" style="--delay:3.5s; --top:90%; --speed:9s;"></span>
+          </div>
+          <div class="flux-band__label">
+            <span class="flux-band__icon" aria-hidden="true">◈</span>
+            <span>Haute saison</span>
+            <em>Pression maximale · Flux intenses · Adaptation critique</em>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Noeuds territoriaux -->
+      <div class="flux-nodes" aria-hidden="true">
+
+        <div class="flux-node flux-node--ajaccio" style="--nx: 18%; --ny: 52%;">
+          <div class="flux-node__dot flux-node__dot--primary"></div>
+          <div class="flux-node__pulse"></div>
+          <span class="flux-node__label">Ajaccio</span>
+        </div>
+
+        <div class="flux-node flux-node--bonifacio" style="--nx: 72%; --ny: 78%;">
+          <div class="flux-node__dot flux-node__dot--secondary"></div>
+          <div class="flux-node__pulse"></div>
+          <span class="flux-node__label">Bonifacio</span>
+        </div>
+
+        <div class="flux-node flux-node--porto" style="--nx: 12%; --ny: 28%;">
+          <div class="flux-node__dot flux-node__dot--secondary"></div>
+          <div class="flux-node__pulse"></div>
+          <span class="flux-node__label">Porto</span>
+        </div>
+
+        <div class="flux-node flux-node--sartene" style="--nx: 52%; --ny: 65%;">
+          <div class="flux-node__dot flux-node__dot--tertiary"></div>
+          <div class="flux-node__pulse"></div>
+          <span class="flux-node__label">Sartène</span>
+        </div>
+
+        <div class="flux-node flux-node--propriano" style="--nx: 38%; --ny: 72%;">
+          <div class="flux-node__dot flux-node__dot--tertiary"></div>
+          <div class="flux-node__pulse"></div>
+          <span class="flux-node__label">Propriano</span>
+        </div>
+
+        <!-- Connexions SVG entre noeuds -->
+        <svg class="flux-connections" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="conn-grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#C96A3A; stop-opacity:0.6"/>
+              <stop offset="100%" style="stop-color:#B8794A; stop-opacity:0.2"/>
+            </linearGradient>
+            <linearGradient id="conn-grad-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#5F7487; stop-opacity:0.5"/>
+              <stop offset="100%" style="stop-color:#5F7487; stop-opacity:0.1"/>
+            </linearGradient>
+            <filter id="conn-glow">
+              <feGaussianBlur stdDeviation="0.5" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- Ajaccio → Bonifacio -->
+          <path class="flux-conn flux-conn--orange" d="M 18 52 C 35 45, 55 60, 72 78" stroke="url(#conn-grad-orange)" filter="url(#conn-glow)"/>
+          <!-- Ajaccio → Porto -->
+          <path class="flux-conn flux-conn--blue" d="M 18 52 C 15 42, 13 35, 12 28" stroke="url(#conn-grad-blue)"/>
+          <!-- Ajaccio → Propriano -->
+          <path class="flux-conn flux-conn--orange" d="M 18 52 C 25 60, 32 67, 38 72" stroke="url(#conn-grad-orange)" filter="url(#conn-glow)"/>
+          <!-- Propriano → Sartène -->
+          <path class="flux-conn flux-conn--blue" d="M 38 72 C 43 70, 48 67, 52 65" stroke="url(#conn-grad-blue)"/>
+          <!-- Sartène → Bonifacio -->
+          <path class="flux-conn flux-conn--orange" d="M 52 65 C 60 68, 66 73, 72 78" stroke="url(#conn-grad-orange)" filter="url(#conn-glow)"/>
+        </svg>
+
+      </div>
+
+      <!-- Indicateurs de pression -->
+      <div class="flux-indicators" aria-hidden="true">
+        <div class="flux-indicator flux-indicator--high">
+          <div class="flux-indicator__bar">
+            <div class="flux-indicator__fill flux-indicator__fill--high"></div>
+          </div>
+          <span class="flux-indicator__label">Pression haute saison</span>
+          <strong class="flux-indicator__value">×4,2</strong>
+        </div>
+        <div class="flux-indicator flux-indicator--low">
+          <div class="flux-indicator__bar">
+            <div class="flux-indicator__fill flux-indicator__fill--low"></div>
+          </div>
+          <span class="flux-indicator__label">Flux hors-saison</span>
+          <strong class="flux-indicator__value">Stable</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Légende -->
+    <div class="flux-legend" role="list" aria-label="Légende du schéma de flux saisonniers">
+      <div class="flux-legend__item" role="listitem">
+        <span class="flux-legend__swatch flux-legend__swatch--orange" aria-hidden="true"></span>
+        <div class="flux-legend__text">
+          <strong>Flux haute saison</strong>
+          <span>Juin à septembre — afflux touristique, saturation des axes, pression sur les services</span>
+        </div>
+      </div>
+      <div class="flux-legend__item" role="listitem">
+        <span class="flux-legend__swatch flux-legend__swatch--blue" aria-hidden="true"></span>
+        <div class="flux-legend__text">
+          <strong>Flux hors-saison</strong>
+          <span>Octobre à mai — rythme résidentiel, besoins persistants, économie locale active</span>
+        </div>
+      </div>
+      <div class="flux-legend__item" role="listitem">
+        <span class="flux-legend__swatch flux-legend__swatch--node" aria-hidden="true"></span>
+        <div class="flux-legend__text">
+          <strong>Nœuds territoriaux</strong>
+          <span>Points de convergence des flux — connectés en temps réel par Porto-Flow</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message de synthèse -->
+    <div class="flux-synthesis">
+      <div class="flux-synthesis__inner">
+        <div class="flux-synthesis__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" stroke="#C96A3A" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <circle cx="16" cy="16" r="6" fill="#C96A3A" fill-opacity="0.15" stroke="#C96A3A" stroke-width="1"/>
+            <circle cx="16" cy="16" r="2" fill="#C96A3A"/>
+            <line x1="16" y1="2" x2="16" y2="8" stroke="#C96A3A" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="16" y1="24" x2="16" y2="30" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="2" y1="16" x2="8" y2="16" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="24" y1="16" x2="30" y2="16" stroke="#C96A3A" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="flux-synthesis__text">
+          Porto-Flow lit ces flux en continu. Il adapte ses réponses, ses recommandations et ses orchestrations selon la saison, l'heure et la pression réelle du territoire — sans jamais perdre le fil de l'expérience locale.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* ============================================================
+   FLUX SCHEMA — Schéma visuel flux saisonniers
+   Porto-Flow V4 Institutionnel
+   ============================================================ */
+
+.flux-schema {
+  padding: 5rem 0 6rem;
+  background: linear-gradient(180deg, var(--color-bg, #F7F2E8) 0%, var(--color-bg-alt, #E8DDC8) 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.flux-schema::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(95, 116, 135, 0.06) 39px,
+      rgba(95, 116, 135, 0.06) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(95, 116, 135, 0.06) 39px,
+      rgba(95, 116, 135, 0.06) 40px
+    );
+  pointer-events: none;
+}
+
+.flux-schema__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* En-tête */
+.flux-schema__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.flux-schema__title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--color-dark, #0B1F33);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+}
+
+.flux-schema__subtitle {
+  font-size: 1rem;
+  color: var(--color-mid, #5F7487);
+  margin: 0;
+  font-style: italic;
+}
+
+/* ============================================================
+   CANVAS PRINCIPAL
+   ============================================================ */
+
+.flux-schema__canvas {
+  position: relative;
+  background: rgba(11, 31, 51, 0.03);
+  border: 1px solid rgba(95, 116, 135, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 420px;
+  margin-bottom: 2.5rem;
+  backdrop-filter: blur(2px);
+}
+
+/* ============================================================
+   AXE TEMPOREL
+   ============================================================ */
+
+.flux-axis {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem 0.5rem;
+  gap: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.flux-axis__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-mid, #5F7487);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.flux-axis__label--center {
+  flex: 1;
+  text-align: center;
+  color: var(--color-accent, #C96A3A);
+}
+
+.flux-axis__line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(95,116,135,0.2), rgba(201,106,58,0.3), rgba(95,116,135,0.2));
+}
+
+/* ============================================================
+   ZONE DE FLUX
+   ============================================================ */
+
+.flux-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  min-height: 280px;
+}
+
+/* Bandes de flux */
+.flux-band {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.flux-band__fill {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.4s ease;
+}
+
+.flux-band--offseason .flux-band__fill {
+  background: linear-gradient(
+    135deg,
+    rgba(95, 116, 135, 0.08) 0%,
+    rgba(95, 116, 135, 0.04) 50%,
+    rgba(16, 32, 51, 0.06) 100%
+  );
+}
+
+.flux-band--highseason .flux-band__fill {
+  background: linear-gradient(
+    135deg,
+    rgba(201, 106, 58, 0.12) 0%,
+    rgba(184, 121, 74, 0.08) 50%,
+    rgba(201, 106, 58, 0.15) 100%
+  );
+}
+
+/* Particules de flux */
+.flux-band__particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.flux-particle {
+  position: absolute;
+  top: var(--top, 50%);
+  left: -12px;
+  width: 8px;
+  height: 2px;
+  border-radius: 2px;
+  animation: flux-move var(--speed, 12s) var(--delay, 0s) infinite linear;
+}
+
+.flux-particle--blue {
+  background: linear-gradient(90deg, transparent, rgba(95, 116, 135, 0.7), transparent);
+  width: 24px;
+  height: 1.5px;
+}
+
+.flux-particle--orange {
+  background: linear-gradient(90deg, transparent, rgba(201, 106, 58, 0.85), transparent);
+  width: 12px;
+  height: 2px;
+  box-shadow: 0 0 4px rgba(201, 106, 58, 0.4);
+}
+
+@keyframes flux-move {
+  0%   { left: -20px; opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { left: calc(100% + 20px); opacity: 0; }
+}
+
+/* Labels des bandes */
+.flux-band__label {
+  position: relative;
+  z-index: 5;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.flux-band__label span:not(.flux-band__icon) {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-dark, #0B1F33);
+  letter-spacing: 0.02em;
+}
+
+.flux-band--highseason .flux-band__label span:not(.flux-band__icon) {
+  color: var(--color-accent, #C96A3A);
+}
+
+.flux-band__label em {
+  font-size: 0.75rem;
+  font-style: normal;
+  color: var(--color-mid, #5F7487);
+  letter-spacing: 0.03em;
+}
+
+.flux-band__icon {
+  font-size: 1.1rem;
+  color: var(--color-mid, #5F7487);
+  margin-bottom: 0.1rem;
+}
+
+.flux-band--highseason .flux-band__icon {
+  color: var(--color-accent, #C96A3A);
+}
+
+/* ============================================================
+   SÉPARATEUR DE TRANSITION
+   ============================================================ */
+
+.flux-separator {
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.flux-separator__wave {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  left: -50%;
+}
+
+.flux-separator__wave--1 {
+  background: linear-gradient(90deg,
+    rgba(95,116,135,0.15) 0%,
+    rgba(201,106,58,0.15) 50%,
+    rgba(95,116,135,0.15) 100%
+  );
+  animation: wave-shift 8s ease-in-out infinite;
+}
+
+.flux-separator__wave--2 {
+  background: linear-gradient(90deg,
+    rgba(201,106,58,0.08) 0%,
+    rgba(95,116,135,0.08) 50%,
+    rgba(201,106,58,0.08) 100%
+  );
+  animation: wave-shift 12s ease-in-out infinite reverse;
+  top: 4px;
+}
+
+.flux-separator__wave--3 {
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(184,121,74,0.1) 30%,
+    rgba(95,116,135,0.1) 70%,
+    transparent 100%
+  );
+  animation: wave-shift 6s ease-in-out infinite;
+  top: 8px;
+}
+
+@keyframes wave-shift {
+  0%, 100% { transform: translateX(0); }
+  50%       { transform: translateX(8%); }
+}
+
+/* ============================================================
+   NOEUDS TERRITORIAUX
+   ============================================================ */
+
+.flux-nodes {
+  position: absolute;
+  inset: 40px 0 0 0;
+  pointer-events: none;
+}
+
+.flux-node {
+  position: absolute;
+  left: var(--nx, 50%);
+  top: var(--ny, 50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 20;
+}
+
+.flux-node__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.flux-node__dot--primary {
+  width: 14px;
+  height: 14px;
+  background: var(--color-accent, #C96A3A);
+  box-shadow: 0 0 0 3px rgba(201,106,58,0.2), 0 0 12px rgba(201,106,58,0.4);
+}
+
+.flux-node__dot--secondary {
+  background: var(--color-mid, #5F7487);
+  box-shadow: 0 0 0 2px rgba(95,116,135,0.2), 0 0 8px rgba(95,116,135,0.3);
+}
+
+.flux-node__dot--tertiary {
+  width: 8px;
+  height: 8px;
+  background: var(--color-dark, #0B1F33);
+  opacity: 0.5;
+}
+
+.flux-node__pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(201,106,58,0.4);
+  animation: node-pulse 3s ease-out infinite;
+  z-index: 1;
+}
+
+.flux-node--bonifacio .flux-node__pulse,
+.flux-node--porto .flux-node__pulse {
+  border-color: rgba(95,116,135,0.4);
+}
+
+@keyframes node-pulse {
+  0%   { transform: translate(-50%, -50%) scale(0.8); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+
+.flux-node__label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-dark, #0B1F33);
+  background: rgba(247, 242, 232, 0.9);
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  border: 1px solid rgba(95,116,135,0.15);
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================================
+   CONNEXIONS SVG
+   ============================================================ */
+
+.flux-connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.flux-conn {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 6 4;
+  animation: conn-dash 4s linear infinite;
+}
+
+.flux-conn--orange {
+  stroke-width: 2;
+  animation-duration: 3s;
+}
+
+.flux-conn--blue {
+  animation-duration: 5s;
+  animation-direction: reverse;
+}
+
+@keyframes conn-dash {
+  to { stroke-dashoffset: -40; }
+}
+
+/* ============================================================
+   INDICATEURS DE PRESSION
+   ============================================================ */
+
+.flux-indicators {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 20;
+}
+
+.flux-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(247, 242, 232, 0.92);
+  border: 1px solid rgba(95,116,135,0.15);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  backdrop-filter: blur(6px);
+}
+
+.flux-indicator__bar {
+  width: 48px;
+  height: 5px;
+  background: rgba(95,116,135,0.15);
+  border-radius: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.flux-indicator__fill {
+  height: 100%;
+  border-radius: 3px;
+  animation: bar-fill 2s ease-out forwards;
+}
+
+.flux-indicator__fill--high {
+  background: linear-gradient(90deg, #C96A3A, #B8794A);
+  width: 0;
+  animation-delay: 0.5s;
+}
+
+.flux-indicator__fill--low {
+  background: linear-gradient(90deg, #5F7487, #687B57);
+  width: 0;
+  animation-delay: 0.8s;
+}
+
+@keyframes bar-fill {
+  to { width: var(--target-width, 100%); }
+}
+
+.flux-indicator--high .flux-indicator__fill--high { --target-width: 92%; }
+.flux-indicator--low  .flux-indicator__fill--low  { --target-width: 38%; }
+
+.flux-indicator__label {
+  font-size: 0.65rem;
+  color: var(--color-mid, #5F7487);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.flux-indicator__value {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-dark, #0B1F33);
+  margin-left: auto;
+  padding-left: 0.5rem;
+}
+
+.flux-indicator--high .flux-indicator__value {
+  color: var(--color-accent, #C96A3A);
+}
+
+/* ============================================================
+   LÉGENDE
+   ============================================================ */
+
+.flux-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(11, 31, 51, 0.03);
+  border: 1px solid rgba(95, 116, 135, 0.12);
+  border-radius: 12px;
+}
+
+.flux-legend__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.flux-legend__swatch {
+  width: 28px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.flux-legend__swatch--orange {
+  background: linear-gradient(90deg, #C96A3A, #B8794A);
+  box-shadow: 0 0 6px rgba(201,106,58,0.3);
+}
+
+.flux-legend__swatch--blue {
+  background: linear-gradient(90deg, #5F7487, #687B57);
+}
+
+.flux-legend__swatch--node {
+  background: radial-gradient(circle, #C96A3A 30%, rgba(201,106,58,0.2) 100%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(201,106,58,0.4);
+}
+
+.flux-legend__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.flux-legend__text strong {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-dark, #0B1F33);
+  letter-spacing: 0.01em;
+}
+
+.flux-legend__text span {
+  font-size: 0.75rem;
+  color: var(--color-mid, #5F7487);
+  line-height: 1.4;
+}
+
+/* ============================================================
+   SYNTHÈSE
+   ============================================================ */
+
+.flux-synthesis {
+  border-left: 3px solid var(--color-accent, #C96A3A);
+  padding: 0;
+}
+
+.flux-synthesis__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  background: rgba(201, 106, 58, 0.04);
+  border-radius: 0 10px 10px 0;
+}
+
+.flux-synthesis__icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  animation: compass-spin 20s linear infinite;
+}
+
+@keyframes compass-spin {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(5deg); }
+  75%       { transform: rotate(-5deg); }
+}
+
+.flux-synthesis__text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-dark, #0B1F33);
+  margin: 0;
+  font-style: italic;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .flux-schema {
+    padding: 3rem 0 4rem;
+  }
+
+  .flux-schema__canvas {
+    min-height: 320px;
+  }
+
+  .flux-band {
+    min-height: 90px;
+  }
+
+  .flux-band__label {
+    padding: 1rem;
+  }
+
+  .flux-band__label span:not(.flux-band__icon) {
+    font-size: 0.85rem;
+  }
+
+  .flux-indicators {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid rgba(95,116,135,0.1);
+    background: rgba(247,242,232,0.95);
+  }
+
+  .flux-indicator {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .flux-nodes {
+    display: none;
+  }
+
+  .flux-legend {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .flux-legend__item {
+    min-width: unset;
+  }
+
+  .flux-synthesis__inner {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+
+  .flux-axis__label--center {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .flux-schema__canvas {
+    min-height: 260px;
+    border-radius: 10px;
+  }
+
+  .flux-band {
+    min-height: 70px;
+  }
+
+  .flux-band__label em {
+    display: none;
+  }
+
+  .flux-indicator__label {
+    display: none;
+  }
+
+  .flux-synthesis__text {
+    font-size: 0.88rem;
+  }
+}
+
+/* ============================================================
+   ACCESSIBILITÉ — REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .flux-particle,
+  .flux-node__pulse,
+  .flux-conn,
+  .flux-separator__wave,
+  .flux-synthesis__icon,
+  .flux-indicator__fill {
+    animation: none;
+  }
+
+  .flux-indicator__fill--high { width: 92%; }
+  .flux-indicator__fill--low  { width: 38%; }
+}
+</style>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo" aria-label="Porto-Flow — Retour à l'accueil">
+        <span class="footer-logo-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="18" cy="18" r="17" stroke="#C96A3A" stroke-width="1.5" fill="none"/>
+            <circle cx="18" cy="18" r="3" fill="#C96A3A"/>
+            <line x1="18" y1="1" x2="18" y2="9" stroke="#C96A3A" stroke-width="1.2"/>
+            <line x1="18" y1="27" x2="18" y2="35" stroke="#5F7487" stroke-width="1.2"/>
+            <line x1="1" y1="18" x2="9" y2="18" stroke="#5F7487" stroke-width="1.2"/>
+            <line x1="27" y1="18" x2="35" y2="18" stroke="#5F7487" stroke-width="1.2"/>
+            <circle cx="18" cy="18" r="9" stroke="#5F7487" stroke-width="0.8" stroke-dasharray="2 3" fill="none"/>
+          </svg>
+        </span>
+        <span class="footer-logo-text">Porto<span class="accent">Flow</span></span>
+      </a>
+      <p class="footer-tagline">Le copilote intelligent du territoire</p>
+      <p class="footer-territory">Corse-du-Sud · Ajaccio &amp; environs</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation secondaire">
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">Pages</h3>
+        <ul class="footer-nav-list" role="list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html" aria-current="page">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">Approche</h3>
+        <ul class="footer-nav-list" role="list">
+          <li><a href="orchestration.html">Orchestration</a></li>
+          <li><a href="production-ia.html">Production IA</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">Partenaires</h3>
+        <ul class="footer-nav-list" role="list">
+          <li><span class="footer-partner-tag">Collectivités</span></li>
+          <li><span class="footer-partner-tag">Offices de tourisme</span></li>
+          <li><span class="footer-partner-tag">Acteurs économiques</span></li>
+          <li><span class="footer-partner-tag">Institutions publiques</span></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer-manifesto">
+      <blockquote class="footer-quote">
+        <p>« Un territoire qui se comprend lui-même<br>peut enfin se projeter. »</p>
+      </blockquote>
+      <a href="contact.html" class="footer-cta-link">
+        Présenter Porto-Flow à votre territoire
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div class="footer-topo-line" aria-hidden="true">
+        <svg width="100%" height="24" viewBox="0 0 1200 24" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 18 Q60 8 120 16 Q180 22 240 12 Q300 4 360 14 Q420 20 480 10 Q540 2 600 14 Q660 22 720 12 Q780 4 840 16 Q900 22 960 10 Q1020 2 1080 14 Q1140 20 1200 12" stroke="#5F7487" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+          <path d="M0 20 Q80 12 160 18 Q240 22 320 14 Q400 6 480 18 Q560 24 640 14 Q720 6 800 18 Q880 24 960 14 Q1040 6 1120 18 Q1160 22 1200 16" stroke="#C96A3A" stroke-width="0.5" stroke-opacity="0.2" fill="none"/>
+        </svg>
+      </div>
+      <div class="footer-bottom-content">
+        <p class="footer-legal">
+          <span>&copy; <span id="footer-year">2025</span> Porto-Flow</span>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          <span>Corse-du-Sud, France</span>
+          <span class="footer-sep" aria-hidden="true">·</span>
+          <span>Tous droits réservés</span>
+        </p>
+        <p class="footer-tech-note">
+          Conçu avec précision · Propulsé par l'intelligence territoriale
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background-color: #0B1F33;
+    color: #F7F2E8;
+    border-top: 1px solid rgba(95, 116, 135, 0.25);
+    margin-top: auto;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* Brand */
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: #F7F2E8;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-logo:hover {
+    opacity: 0.8;
+  }
+
+  .footer-logo:focus-visible {
+    outline: 2px solid #C96A3A;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  .footer-logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .footer-logo-text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #F7F2E8;
+  }
+
+  .footer-logo-text .accent {
+    color: #C96A3A;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+    color: #5F7487;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .footer-territory {
+    font-size: 0.78rem;
+    color: #687B57;
+    margin: 0;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* Navigation */
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-nav-heading {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #5F7487;
+    margin: 0 0 1rem 0;
+  }
+
+  .footer-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .footer-nav-list a {
+    color: #E8DDC8;
+    text-decoration: none;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+
+  .footer-nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #C96A3A;
+    transition: width 0.25s ease;
+  }
+
+  .footer-nav-list a:hover {
+    color: #F7F2E8;
+  }
+
+  .footer-nav-list a:hover::after {
+    width: 100%;
+  }
+
+  .footer-nav-list a:focus-visible {
+    outline: 2px solid #C96A3A;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .footer-nav-list a[aria-current="page"] {
+    color: #C96A3A;
+  }
+
+  .footer-partner-tag {
+    font-size: 0.8rem;
+    color: #687B57;
+    line-height: 1.5;
+  }
+
+  /* Manifesto */
+  .footer-manifesto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .footer-quote {
+    margin: 0;
+    padding: 0 0 0 1rem;
+    border-left: 2px solid #C96A3A;
+  }
+
+  .footer-quote p {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #E8DDC8;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .footer-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #C96A3A;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: gap 0.2s ease, color 0.2s ease;
+  }
+
+  .footer-cta-link:hover {
+    color: #F7F2E8;
+    gap: 0.75rem;
+  }
+
+  .footer-cta-link:focus-visible {
+    outline: 2px solid #C96A3A;
+    outline-offset: 4px;
+    border-radius: 3px;
+  }
+
+  .footer-cta-link svg {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .footer-cta-link:hover svg {
+    transform: translateX(3px);
+  }
+
+  /* Bottom bar */
+  .footer-bottom {
+    border-top: 1px solid rgba(95, 116, 135, 0.15);
+  }
+
+  .footer-bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+  }
+
+  .footer-topo-line {
+    margin-bottom: 1.25rem;
+    overflow: hidden;
+  }
+
+  .footer-bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-legal {
+    font-size: 0.78rem;
+    color: #5F7487;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-sep {
+    color: #5F7487;
+    opacity: 0.5;
+  }
+
+  .footer-tech-note {
+    font-size: 0.75rem;
+    color: #687B57;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .footer-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-manifesto {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(95, 116, 135, 0.15);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem 2rem;
+      gap: 2rem;
+    }
+
+    .footer-nav {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .footer-manifesto {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    .footer-bottom-inner {
+      padding: 0 1.5rem 1.75rem;
+    }
+
+    .footer-bottom-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-nav {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+      padding: 2.5rem 1.25rem 1.5rem;
+    }
+
+    .footer-bottom-inner {
+      padding: 0 1.25rem 1.5rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  })();
+</script>
+</body>
+</html>
