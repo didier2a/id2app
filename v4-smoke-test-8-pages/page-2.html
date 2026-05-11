@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - V4 Smoke Test</title>
+  <meta name="description" content="Description des services proposés dans ce micro-site test." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">V4 Smoke Test</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="page-1.html" class="nav-link">Présentation</a></li>
+          <li class="nav-item"><a href="page-2.html" class="nav-link nav-link--active" aria-current="page">Services</a></li>
+          <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li class="nav-item"><a href="page-4.html" class="nav-link">Équipe</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link">Références</a></li>
+          <li class="nav-item"><a href="page-6.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="page-7.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 id="page-title">Nos services simplifiés</h1>
+        <p class="page-hero__subtitle">Des prestations claires, adaptées aux besoins des développeurs, testeurs et équipes produit.</p>
+      </div>
+    </section>
+
+    <section class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading" class="section-title">Ce que nous proposons</h2>
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">⚙️</div>
+            <h3 class="service-card__title">Génération automatisée</h3>
+            <p class="service-card__desc">Production rapide de fichiers structurés à partir de spécifications, sans intervention manuelle répétitive.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🧪</div>
+            <h3 class="service-card__title">Validation de workflow</h3>
+            <p class="service-card__desc">Vérification complète du pipeline ID2App V4 sur un périmètre réduit et maîtrisé, pour détecter les anomalies tôt.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">📐</div>
+            <h3 class="service-card__title">Structure modulaire</h3>
+            <p class="service-card__desc">Chaque page et composant est conçu pour être réutilisable, maintenable et facilement adaptable à d'autres projets.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🚀</div>
+            <h3 class="service-card__title">Déploiement GitHub Pages</h3>
+            <p class="service-card__desc">Compatibilité native avec GitHub Pages : aucune dépendance serveur, livraison immédiate via un simple push.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-section__inner">
+        <p class="cta-section__text">Curieux de savoir comment nous travaillons concrètement ?</p>
+        <a href="page-3.html" class="btn btn--primary">Comprendre notre méthode</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav">
+          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
+          <li><a href="page-6.html" class="footer-nav__link">FAQ</a></li>
+          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
