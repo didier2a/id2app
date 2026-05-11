@@ -10,14 +10,17 @@
   <style>
     /* ══ TERRITOIRE PAGE STYLES ══ */
 
-    /* Hero */
+    /* Hero photo */
     .territoire-hero {
       position: relative;
       min-height: 96vh;
       display: flex;
       align-items: center;
       overflow: hidden;
-      background: linear-gradient(160deg, #071524 0%, #0B1F33 35%, #0d2a42 65%, #0f3352 100%);
+      background:
+        linear-gradient(160deg, rgba(7,21,36,0.88) 0%, rgba(11,31,51,0.82) 40%, rgba(13,42,66,0.78) 70%, rgba(15,51,82,0.85) 100%),
+        url('assets/images/porto-vecchio-hero.jpg') center center / cover no-repeat,
+        linear-gradient(160deg, #071524 0%, #0B1F33 35%, #0d2a42 65%, #0f3352 100%);
       padding: 130px 0 90px;
     }
 
@@ -222,6 +225,118 @@
       50% { transform: translateX(-50%) translateY(8px); }
     }
 
+    /* ══ GALERIE TERRITOIRE ══ */
+    .galerie-territoire {
+      padding: 90px 0;
+      background: #0B1F33;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .galerie-territoire::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(31,111,139,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    .galerie-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .galerie-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .galerie-item--large {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+    }
+
+    .galerie-item__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .galerie-item:hover .galerie-item__img {
+      transform: scale(1.06);
+    }
+
+    .galerie-item__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11,31,51,0.85) 0%, rgba(11,31,51,0.2) 50%, transparent 100%);
+      transition: opacity 0.35s ease;
+    }
+
+    .galerie-item__caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 18px 16px;
+      z-index: 2;
+    }
+
+    .galerie-item__tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #D86F3C;
+      background: rgba(216,111,60,0.15);
+      border: 1px solid rgba(216,111,60,0.3);
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 6px;
+    }
+
+    .galerie-item__title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    /* Fallback backgrounds pour galerie */
+    .galerie-item--palombaggia {
+      background: linear-gradient(135deg, #1a4a6e 0%, #0d6e8a 50%, #1a8fa0 100%);
+    }
+    .galerie-item--port {
+      background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 60%, #2a8aaa 100%);
+    }
+    .galerie-item--cote {
+      background: linear-gradient(135deg, #0d3a5a 0%, #1a6a8a 50%, #8FC7DA 100%);
+    }
+    .galerie-item--maquis {
+      background: linear-gradient(135deg, #1a3a1a 0%, #2a5a2a 50%, #3a7a3a 100%);
+    }
+    .galerie-item--route {
+      background: linear-gradient(135deg, #2a1a0a 0%, #4a3a1a 50%, #6a5a2a 100%);
+    }
+    .galerie-item--santa-giulia {
+      background: linear-gradient(135deg, #0a2a4a 0%, #1a5a7a 50%, #2a8aaa 100%);
+    }
+
     /* ══ DEUX RYTHMES ══ */
     .deux-rythmes {
       padding: 110px 0;
@@ -277,6 +392,36 @@
     }
 
     .rythme-card--intense:hover { box-shadow: 0 20px 64px rgba(216,111,60,0.22); }
+
+    /* Photo band dans les rythme cards */
+    .rythme-card__photo {
+      width: 100%;
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .rythme-card__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .rythme-card:hover .rythme-card__photo img {
+      transform: scale(1.05);
+    }
+
+    .rythme-card__photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 40%, rgba(11,31,51,0.9) 100%);
+    }
+
+    .rythme-card--intense .rythme-card__photo-overlay {
+      background: linear-gradient(to bottom, transparent 40%, rgba(26,15,6,0.9) 100%);
+    }
 
     .rythme-card__header {
       display: flex;
@@ -514,6 +659,109 @@
       font-style: italic;
       font-weight: 500;
     }
+
+    /* ══ REGARDS SUR LE TERRITOIRE ══ */
+    .regards-territoire {
+      padding: 100px 0;
+      background: linear-gradient(160deg, #071524 0%, #0B1F33 50%, #0d2a42 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .regards-territoire::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(31,111,139,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .regards-mosaic {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      gap: 14px;
+      margin-top: 52px;
+    }
+
+    .regard-item {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .regard-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+    }
+
+    .regard-item--featured {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .regard-item__bg {
+      width: 100%;
+      height: 100%;
+      min-height: 180px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .regard-item--featured .regard-item__bg {
+      min-height: 380px;
+    }
+
+    .regard-item:hover .regard-item__bg {
+      transform: scale(1.06);
+    }
+
+    .regard-item__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11,31,51,0.9) 0%, rgba(11,31,51,0.3) 50%, transparent 100%);
+    }
+
+    .regard-item__info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 14px 14px;
+      z-index: 2;
+    }
+
+    .regard-item__cat {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8FC7DA;
+      margin-bottom: 4px;
+    }
+
+    .regard-item__name {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .regard-item--featured .regard-item__name {
+      font-size: 1.1rem;
+    }
+
+    /* Fallback backgrounds */
+    .regard-bg--port { background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 100%); }
+    .regard-bg--plage { background: linear-gradient(135deg, #0d4a6e 0%, #1a8aaa 100%); }
+    .regard-bg--maquis { background: linear-gradient(135deg, #1a3a1a 0%, #3a7a3a 100%); }
+    .regard-bg--route { background: linear-gradient(135deg, #2a1a0a 0%, #6a5a2a 100%); }
+    .regard-bg--ville { background: linear-gradient(135deg, #1a2a3a 0%, #2a4a6a 100%); }
+    .regard-bg--cote { background: linear-gradient(135deg, #0a2a4a 0%, #2a8aaa 100%); }
 
     /* ══ FLUX TERRITOIRE ══ */
     .flux-territoire {
@@ -1056,6 +1304,56 @@
 
     .enjeux-visual { position: relative; }
 
+    .enjeux-photo-container {
+      position: relative;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 72px rgba(0,0,0,0.5);
+    }
+
+    .enjeux-photo-container img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .enjeux-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(11,31,51,0.6) 0%, rgba(31,111,139,0.3) 100%);
+    }
+
+    .enjeux-photo-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: rgba(11,31,51,0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(143,199,218,0.2);
+      border-radius: 14px;
+      padding: 16px 20px;
+    }
+
+    .enjeux-photo-badge__title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8FC7DA;
+      margin-bottom: 6px;
+    }
+
+    .enjeux-photo-badge__text {
+      font-size: 0.84rem;
+      color: rgba(250,246,236,0.7);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Fallback map container */
     .enjeux-map-container {
       position: relative;
       width: 100%;
@@ -1130,375 +1428,274 @@
       font-weight: 500;
     }
 
-    /* ══ CTA TERRITOIRE ══ */
-    .territoire-cta {
-      padding: 110px 0;
-      background: linear-gradient(135deg, #F5F0E8 0%, #EDE8DC 100%);
+    /* ══ GALERIE LOCALE PORTO FLOW ══ */
+    .galerie-locale {
+      padding: 100px 0;
+      background: #F5F0E8;
       position: relative;
-      overflow: hidden;
     }
 
-    .territoire-cta::before {
+    .galerie-locale::before {
       content: '';
       position: absolute;
-      top: -120px; right: -120px;
-      width: 440px; height: 440px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(31,111,139,0.07) 0%, transparent 70%);
-      pointer-events: none;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1F6F8B 0%, #D86F3C 50%, #1F6F8B 100%);
     }
 
-    .territoire-cta::after {
-      content: '';
-      position: absolute;
-      bottom: -80px; left: -80px;
-      width: 320px; height: 320px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(216,111,60,0.05) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .territoire-cta__inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 72px;
-      align-items: center;
-    }
-
-    .territoire-cta__title {
-      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
-      font-weight: 900;
-      color: #0B1F33;
-      line-height: 1.15;
-      margin-bottom: 18px;
-      letter-spacing: -0.03em;
-    }
-
-    .territoire-cta__text {
-      font-size: 1rem;
-      color: #5a6a7a;
-      line-height: 1.75;
-      margin-bottom: 38px;
-      max-width: 540px;
-    }
-
-    .territoire-cta__actions {
+    .galerie-locale__notice {
       display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 14px;
+      background: rgba(31,111,139,0.06);
+      border: 1px solid rgba(31,111,139,0.18);
+      border-radius: 14px;
+      padding: 18px 22px;
+      margin-top: 36px;
+      margin-bottom: 40px;
     }
 
-    .territoire-cta__decoration { flex-shrink: 0; }
-
-    .cta-compass {
-      opacity: 0.55;
-      animation: rotateSlow 32s linear infinite;
+    .galerie-locale__notice-icon {
+      flex-shrink: 0;
+      font-size: 1.3rem;
+      margin-top: 2px;
     }
 
-    @keyframes rotateSlow {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    /* ══ SECTION HEADER SHARED ══ */
-    .section-header {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .section-header--left {
-      text-align: left;
+    .galerie-locale__notice p {
+      font-size: 0.84rem;
+      color: #2C4A5A;
+      line-height: 1.7;
       margin: 0;
     }
 
-    .section-tag {
-      display: inline-block;
-      font-size: 0.7rem;
+    .galerie-locale__notice strong {
+      color: #1F6F8B;
+    }
+
+    /* Formulaire ajout photo */
+    .galerie-add-form {
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 40px;
+      border: 1px solid rgba(11,31,51,0.08);
+      box-shadow: 0 4px 24px rgba(11,31,51,0.06);
+      margin-bottom: 48px;
+    }
+
+    .galerie-add-form__title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0B1F33;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .galerie-add-form__title-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      background: rgba(31,111,139,0.08);
+      border: 1px solid rgba(31,111,139,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .galerie-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .galerie-form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .galerie-form-group--full {
+      grid-column: span 2;
+    }
+
+    .galerie-form-group label {
+      font-size: 0.78rem;
       font-weight: 700;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 100px;
-      margin-bottom: 16px;
+      color: #2C4A5A;
     }
 
-    .section-tag--light {
-      color: #8FC7DA;
-      background: rgba(143,199,218,0.1);
-      border: 1px solid rgba(143,199,218,0.2);
+    .galerie-form-group input[type="text"],
+    .galerie-form-group input[type="url"],
+    .galerie-form-group select {
+      padding: 11px 16px;
+      border: 1.5px solid rgba(11,31,51,0.14);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      color: #0B1F33;
+      background: #FAF6EC;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+      outline: none;
+      font-family: inherit;
     }
 
-    .section-tag--dark {
+    .galerie-form-group input[type="text"]:focus,
+    .galerie-form-group input[type="url"]:focus,
+    .galerie-form-group select:focus {
+      border-color: #1F6F8B;
+      box-shadow: 0 0 0 3px rgba(31,111,139,0.1);
+    }
+
+    .galerie-form-group input[type="file"] {
+      padding: 10px 14px;
+      border: 2px dashed rgba(31,111,139,0.3);
+      border-radius: 10px;
+      font-size: 0.87rem;
+      color: #2C4A5A;
+      background: rgba(31,111,139,0.03);
+      cursor: pointer;
+      transition: border-color 0.25s ease, background 0.25s ease;
+      font-family: inherit;
+    }
+
+    .galerie-form-group input[type="file"]:hover {
+      border-color: #1F6F8B;
+      background: rgba(31,111,139,0.06);
+    }
+
+    .galerie-form-separator {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 4px 0;
+      grid-column: span 2;
+    }
+
+    .galerie-form-separator span {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(11,31,51,0.35);
+      white-space: nowrap;
+    }
+
+    .galerie-form-separator::before,
+    .galerie-form-separator::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(11,31,51,0.1);
+    }
+
+    .galerie-form-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .galerie-form-error {
+      font-size: 0.82rem;
+      color: #c0522a;
+      background: rgba(216,111,60,0.07);
+      border: 1px solid rgba(216,111,60,0.2);
+      border-radius: 8px;
+      padding: 8px 14px;
+      display: none;
+    }
+
+    .galerie-form-error.visible { display: block; }
+
+    /* Grille galerie locale */
+    .galerie-locale__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      min-height: 80px;
+    }
+
+    .galerie-locale__empty {
+      grid-column: span 3;
+      text-align: center;
+      padding: 52px 20px;
+      color: rgba(11,31,51,0.35);
+      font-size: 0.9rem;
+      border: 2px dashed rgba(11,31,51,0.1);
+      border-radius: 16px;
+    }
+
+    .galerie-locale__empty-icon {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: 12px;
+      opacity: 0.4;
+    }
+
+    .galerie-photo-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(11,31,51,0.07);
+      box-shadow: 0 4px 16px rgba(11,31,51,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .galerie-photo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(11,31,51,0.12);
+    }
+
+    .galerie-photo-card__img-wrap {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #e8e0d0, #d8d0c0);
+      position: relative;
+    }
+
+    .galerie-photo-card__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .galerie-photo-card:hover .galerie-photo-card__img {
+      transform: scale(1.05);
+    }
+
+    .galerie-photo-card__body {
+      padding: 14px 16px 16px;
+    }
+
+    .galerie-photo-card__cat {
+      display: inline-block;
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: #1F6F8B;
       background: rgba(31,111,139,0.08);
       border: 1px solid rgba(31,111,139,0.18);
+      padding: 3px 9px;
+      border-radius: 100px;
+      margin-bottom: 7px;
     }
 
-    .section-title {
-      font-size: clamp(1.9rem, 3.5vw, 2.6rem);
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      margin-bottom: 18px;
-      line-height: 1.15;
+    .galerie-photo-card__title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #0B1F33;
+      line-height: 1.35;
+      margin: 0 0 10px;
     }
 
-    .deux-rythmes .section-title,
-    .problemes-solutions .section-title,
-    .publics-cibles .section-title,
-    .territoire-cta .section-title { color: #0B1F33; }
-
-    .flux-territoire .section-title,
-    .cas-usage .section-title,
-    .enjeux-environnement .section-title { color: #FAF6EC; }
-
-    .section-subtitle {
-      font-size: 1rem;
-      line-height: 1.75;
-    }
-
-    .deux-rythmes .section-subtitle,
-    .problemes-solutions .section-subtitle,
-    .publics-cibles .section-subtitle { color: #5a6a7a; }
-
-    .flux-territoire .section-subtitle,
-    .cas-usage .section-subtitle,
-    .enjeux-environnement .section-subtitle { color: rgba(250,246,236,0.58); }
-
-    /* ══ RESPONSIVE ══ */
-    @media (max-width: 1024px) {
-      .territoire-hero__stats { grid-template-columns: repeat(2, 1fr); }
-      .flux-grid { grid-template-columns: repeat(2, 1fr); }
-      .publics-grid { grid-template-columns: repeat(2, 1fr); }
-      .enjeux-inner { grid-template-columns: 1fr; gap: 48px; }
-      .enjeux-visual { display: none; }
-      .territoire-cta__inner { grid-template-columns: 1fr; }
-      .territoire-cta__decoration { display: none; }
-      .compare-row { grid-template-columns: 110px 1fr 50px; }
-    }
-
-    @media (max-width: 768px) {
-      .territoire-hero { min-height: auto; padding: 110px 0 70px; }
-      .territoire-hero__stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .rythmes-grid { grid-template-columns: 1fr; }
-      .rythmes-bridge { flex-direction: column; text-align: center; padding: 26px; }
-      .bridge-line { width: 100%; height: 1px; }
-      .bridge-content { flex-direction: column; text-align: center; }
-      .flux-grid { grid-template-columns: 1fr; }
-      .problems-grid { grid-template-columns: 1fr; }
-      .cas-item { grid-template-columns: 1fr; gap: 16px; }
-      .cas-item__number { font-size: 2rem; }
-      .cas-item__scenario { grid-template-columns: 1fr; }
-      .scenario-divider { padding: 0; transform: rotate(90deg); }
-      .publics-grid { grid-template-columns: 1fr; }
-      .territoire-cta__actions { flex-direction: column; }
-      .territoire-cta__actions .btn { width: 100%; justify-content: center; }
-      .saison-compare { padding: 24px 20px; }
-      .compare-row { grid-template-columns: 90px 1fr 44px; gap: 10px; }
-    }
-
-    @media (max-width: 480px) {
-      .territoire-hero__stats { grid-template-columns: 1fr 1fr; }
-      .stat-card { padding: 16px 10px; }
-    }
-  </style>
-</head>
-<body class="page-territoire">
-
-  <!-- ══ HEADER ══ -->
-  <header class="site-header" id="site-header">
-    <div class="header-inner container">
-
-      <a href="index.html" class="logo" aria-label="Porto Flow — Accueil">
-        <span class="logo-mark" aria-hidden="true">◈</span>
-        <span class="logo-text">Porto <strong>Flow</strong></span>
-      </a>
-
-      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
-        <ul class="nav-list" role="list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a href="territoire.html" class="nav-link nav-link--active" aria-current="page">Territoire</a>
-          </li>
-          <li class="nav-item">
-            <a href="application.html" class="nav-link">Application</a>
-          </li>
-          <li class="nav-item">
-            <a href="ecosysteme.html" class="nav-link">Écosystème</a>
-          </li>
-          <li class="nav-item">
-            <a href="ingenierie.html" class="nav-link">Ingénierie</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="application.html" class="btn btn--nav" aria-label="Découvrir l'application Porto Flow">
-        Découvrir l'app
-      </a>
-
-      <button
-        class="burger"
-        id="burger-btn"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="mobile-nav"
-        type="button"
-      >
-        <span class="burger-bar" aria-hidden="true"></span>
-        <span class="burger-bar" aria-hidden="true"></span>
-        <span class="burger-bar" aria-hidden="true"></span>
-      </button>
-
-    </div>
-
-    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-      <ul class="mobile-nav-list" role="list">
-        <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
-        <li><a href="territoire.html" class="mobile-nav-link mobile-nav-link--active" aria-current="page">Territoire</a></li>
-        <li><a href="application.html" class="mobile-nav-link">Application</a></li>
-        <li><a href="ecosysteme.html" class="mobile-nav-link">Écosystème</a></li>
-        <li><a href="ingenierie.html" class="mobile-nav-link">Ingénierie</a></li>
-        <li><a href="application.html" class="btn btn--primary mobile-nav-cta">Découvrir l'app</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
-
-  <!-- ══ MAIN ══ -->
-  <main id="main-content">
-
-    <!-- ── HERO ── -->
-    <section class="territoire-hero" aria-labelledby="territoire-hero-title">
-      <div class="territoire-hero__topo" aria-hidden="true"></div>
-      <div class="territoire-hero__glow" aria-hidden="true"></div>
-      <div class="territoire-hero__glow2" aria-hidden="true"></div>
-      <div class="territoire-hero__contour" aria-hidden="true">
-        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M200 40 C240 50 290 80 310 120 C330 160 320 200 300 240 C280 280 240 310 200 320 C160 330 120 310 100 280 C80 250 70 210 80 170 C90 130 120 90 160 65 C180 52 190 38 200 40Z" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-          <path d="M200 70 C230 78 270 100 285 135 C300 170 292 205 275 238 C258 271 228 295 200 302 C172 309 142 295 125 270 C108 245 100 212 108 180 C116 148 140 115 168 95 C184 84 190 68 200 70Z" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.7"/>
-          <path d="M200 100 C222 107 252 124 264 152 C276 180 270 210 256 236 C242 262 218 280 200 285 C182 290 158 278 146 256 C134 234 128 206 135 180 C142 154 162 130 182 116 C192 109 196 98 200 100Z" stroke="#8FC7DA" stroke-width="0.6" fill="none" opacity="0.5"/>
-          <circle cx="200" cy="200" r="8" fill="#D86F3C" opacity="0.6"/>
-          <circle cx="200" cy="200" r="16" stroke="#D86F3C" stroke-width="0.5" fill="none" opacity="0.3"/>
-          <circle cx="200" cy="200" r="28" stroke="#D86F3C" stroke-width="0.3" fill="none" opacity="0.15"/>
-        </svg>
-      </div>
-
-      <div class="container">
-        <div class="territoire-hero__inner" data-animate="fade-up">
-          <div class="territoire-hero__badge">
-            <span class="badge-dot" aria-hidden="true"></span>
-            <span>Territoire &amp; Usagers — Porto-Vecchio</span>
-          </div>
-          <h1 id="territoire-hero-title" class="territoire-hero__title">
-            Porto-Vecchio,<br>
-            <em>un territoire à deux vitesses</em>
-          </h1>
-          <p class="territoire-hero__subtitle">
-            Une micro-région insulaire d'exception, traversée chaque année par une vague humaine qui transforme radicalement ses besoins, ses flux et ses tensions. Porto Flow est conçu pour lire ce territoire en temps réel, quelle que soit la saison.
-          </p>
-          <div class="territoire-hero__stats" role="list" aria-label="Chiffres clés du territoire">
-            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="100">
-              <span class="stat-card__number">15 000</span>
-              <span class="stat-card__label">habitants permanents</span>
-            </div>
-            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="200">
-              <span class="stat-card__number">+200 000</span>
-              <span class="stat-card__label">visiteurs en haute saison</span>
-            </div>
-            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="300">
-              <span class="stat-card__number">×13</span>
-              <span class="stat-card__label">pic de population estival</span>
-            </div>
-            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="400">
-              <span class="stat-card__number">3 mois</span>
-              <span class="stat-card__label">de tension maximale</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="territoire-hero__scroll" aria-hidden="true">
-        <svg width="16" height="22" viewBox="0 0 16 22" fill="none">
-          <rect x="1" y="1" width="14" height="20" rx="7" stroke="currentColor" stroke-width="1.5"/>
-          <circle cx="8" cy="8" r="2" fill="currentColor"/>
-        </svg>
-        <span>Défiler</span>
-      </div>
-    </section>
-
-    <!-- ── DEUX RYTHMES ── -->
-    <section class="deux-rythmes" aria-labelledby="deux-rythmes-title">
-      <div class="container">
-        <div class="section-header" data-animate="fade-up">
-          <span class="section-tag section-tag--dark">Analyse territoriale</span>
-          <h2 id="deux-rythmes-title" class="section-title">Un territoire, deux réalités</h2>
-          <p class="section-subtitle">Porto-Vecchio n'est pas un territoire ordinaire. Il vit une dualité permanente entre calme insulaire et effervescence méditerranéenne — deux états que Porto Flow lit et accompagne en continu.</p>
-        </div>
-
-        <div class="rythmes-grid">
-
-          <!-- Hors saison -->
-          <article class="rythme-card rythme-card--calme" aria-labelledby="rythme-calme-title" data-animate="fade-up" data-delay="100">
-            <div class="rythme-card__header">
-              <div class="rythme-card__icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <circle cx="14" cy="14" r="10" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-                  <path d="M14 8 L14 14 L18 18" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="rythme-card__season">
-                <span class="season-tag season-tag--calme">Octobre → Mai</span>
-                <h3 id="rythme-calme-title">Porto-Vecchio au repos</h3>
-              </div>
-            </div>
-            <div class="rythme-card__body">
-              <p>Le territoire retrouve son souffle. Les habitants permanents reprennent possession de leur espace. Les commerces tournent au ralenti, les services publics fonctionnent à régime normal, les routes sont fluides.</p>
-              <ul class="rythme-card__list" aria-label="Caractéristiques hors saison">
-                <li>
-                  <span class="list-icon" aria-hidden="true">◦</span>
-                  Économie locale fragilisée, dépendance aux revenus estivaux
-                </li>
-                <li>
-                  <span class="list-icon" aria-hidden="true">◦</span>
-                  Services sous-utilisés, offre culturelle et commerciale réduite
-                </li>
-                <li>
-                  <span class="list-icon" aria-hidden="true">◦</span>
-                  Habitants isolés, mobilité contrainte par l'insularité
-                </li>
-                <li>
-                  <span class="list-icon" aria-hidden="true">◦</span>
-                  Opportunité de structuration et d'anticipation territoriale
-                </li>
-              </ul>
-            </div>
-            <div class="rythme-card__footer">
-              <div class="rythme-indicator rythme-indicator--low">
-                <span class="indicator-bar" style="--level: 20%"></span>
-                <span class="indicator-label">Intensité territoriale faible</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Haute saison -->
-          <article class="rythme-card rythme-card--intense" aria-labelledby="rythme-intense-title" data-animate="fade-up" data-delay="200">
-            <div class="rythme-card__header">
-              <div class="rythme-card__icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <circle cx="14" cy="14" r="5" fill="#D86F3C" opacity="0.3"/>
-                  <circle cx="14" cy="14" r="2.5" fill="#D86F3C"/>
-                  <path d="M14 4 L14 7 M14 21 L14 24 M4 14 L7 14 M21 14 L24 14" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M7 7 L9.2 9.2 M18.8 18.8 L21 21 M7 21 L9.2 18.8 M18.8 9.2 L21 7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="rythme-card__season">
-                <span class="season-tag season-tag--intense">Juin → Septembre</span>
-                <h3 id="rythme-intense-title">Porto-Vecchio sous tension</h3>
-              </div>
-            </div>
-            <div class="rythme-card__body">
-              <p>Le territoire explose. En quelques semaines, la population est multipliée par treize. Les infrastructures atteignent leurs limites, les flux deviennent ingérables, l'information se fragmente et les tensions montent.</p>
-              <ul class
+    .galerie-
