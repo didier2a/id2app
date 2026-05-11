@@ -74,9 +74,20 @@
   <main id="main-content">
 
     <!-- ═══════════════════════════════════════
-         HERO ÉCOSYSTÈME
+         HERO ÉCOSYSTÈME — PHOTO LOCALE
     ═══════════════════════════════════════ -->
-    <section class="eco-hero">
+    <section class="eco-hero eco-hero--photo">
+      <div class="eco-hero__photo-bg" aria-hidden="true">
+        <!-- Fallback: gradient CSS si l'image ne charge pas -->
+        <img
+          src="assets/images/port-marina.jpg"
+          alt=""
+          class="eco-hero__photo-img"
+          onerror="this.style.display='none'"
+          aria-hidden="true"
+        />
+        <div class="eco-hero__photo-overlay"></div>
+      </div>
       <div class="eco-hero__bg">
         <div class="eco-hero__grid"></div>
         <div class="eco-hero__halo eco-hero__halo--1"></div>
@@ -98,7 +109,7 @@
             <em>chaque acteur du territoire</em>
           </h1>
           <p class="eco-hero__subtitle">
-            Commerçants, restaurateurs, hôteliers, offices de tourisme, collectivités — Porto Flow crée un réseau vivant où chaque acteur contribue à la fluidité du territoire et en tire une valeur directe.
+            Commerçants, restaurateurs, hôteliers, offices de tourisme, collectivités — Porto Flow crée un réseau vivant où chaque acteur contribue à la fluidité du territoire et en tire une valeur directe. Du port de plaisance aux plages de Palombaggia, de la citadelle aux routes du maquis.
           </p>
           <div class="eco-hero__stats">
             <div class="eco-stat">
@@ -129,14 +140,143 @@
     </section>
 
     <!-- ═══════════════════════════════════════
+         VISUELS LOCAUX — ÉCONOMIE PORTOVECCHIENNE
+    ═══════════════════════════════════════ -->
+    <section class="eco-local-visuals section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Porto-Vecchio &amp; sa micro-région</div>
+          <h2 class="section-title">Un territoire économique<br>vivant et connecté</h2>
+          <p class="section-desc">Porto Flow s'ancre dans la réalité économique du bassin portovecchien : port de plaisance, commerces du centre historique, hôtellerie de prestige, restauration locale, activités nautiques et culturelles.</p>
+        </div>
+
+        <div class="eco-local-grid">
+
+          <div class="eco-local-card eco-local-card--large" data-reveal>
+            <div class="eco-local-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=75"
+                alt="Port de plaisance méditerranéen, bateaux amarrés, eau turquoise"
+                class="eco-local-card__img"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('eco-local-card__img-wrap--fallback-port')"
+              />
+              <div class="eco-local-card__overlay"></div>
+              <div class="eco-local-card__badge-photo">Port &amp; Marina</div>
+            </div>
+            <div class="eco-local-card__body">
+              <h3 class="eco-local-card__title">Le port, cœur économique</h3>
+              <p class="eco-local-card__desc">Le port de Porto-Vecchio est un hub d'activité : plaisance, pêche, ferry, nautisme. Porto Flow connecte tous les acteurs portuaires dans un flux de données unifié.</p>
+              <div class="eco-local-card__tags">
+                <span class="eco-tag">Plaisance</span>
+                <span class="eco-tag">Pêche locale</span>
+                <span class="eco-tag">Nautisme</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-local-card" data-reveal>
+            <div class="eco-local-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=75"
+                alt="Restaurant méditerranéen, terrasse, vue mer"
+                class="eco-local-card__img"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('eco-local-card__img-wrap--fallback-resto')"
+              />
+              <div class="eco-local-card__overlay"></div>
+              <div class="eco-local-card__badge-photo">Restauration</div>
+            </div>
+            <div class="eco-local-card__body">
+              <h3 class="eco-local-card__title">Restauration &amp; terroir</h3>
+              <p class="eco-local-card__desc">Charcuterie corse, fromages, vins locaux, poissons frais — la restauration portovecchienne est une vitrine du terroir insulaire.</p>
+              <div class="eco-local-card__tags">
+                <span class="eco-tag">Terroir corse</span>
+                <span class="eco-tag">Vue mer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-local-card" data-reveal>
+            <div class="eco-local-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=75"
+                alt="Hôtel de luxe balnéaire, piscine, mer en arrière-plan"
+                class="eco-local-card__img"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('eco-local-card__img-wrap--fallback-hotel')"
+              />
+              <div class="eco-local-card__overlay"></div>
+              <div class="eco-local-card__badge-photo">Hébergement</div>
+            </div>
+            <div class="eco-local-card__body">
+              <h3 class="eco-local-card__title">Hôtellerie de prestige</h3>
+              <p class="eco-local-card__desc">Des hôtels 5 étoiles aux résidences de charme, l'hébergement portovecchien représente une offre premium que Porto Flow valorise et connecte.</p>
+              <div class="eco-local-card__tags">
+                <span class="eco-tag">Luxe</span>
+                <span class="eco-tag">Balnéaire</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-local-card" data-reveal>
+            <div class="eco-local-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=75"
+                alt="Activités nautiques, voile, mer méditerranéenne"
+                class="eco-local-card__img"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('eco-local-card__img-wrap--fallback-nautisme')"
+              />
+              <div class="eco-local-card__overlay"></div>
+              <div class="eco-local-card__badge-photo">Activités</div>
+            </div>
+            <div class="eco-local-card__body">
+              <h3 class="eco-local-card__title">Activités &amp; expériences</h3>
+              <p class="eco-local-card__desc">Plongée, voile, kayak, randonnée dans le maquis, visites culturelles — Porto Flow orchestre la découverte de toutes les expériences locales.</p>
+              <div class="eco-local-card__tags">
+                <span class="eco-tag">Nautisme</span>
+                <span class="eco-tag">Randonnée</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="eco-local-card eco-local-card--wide" data-reveal>
+            <div class="eco-local-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=900&q=75"
+                alt="Marché local méditerranéen, produits du terroir, commerces"
+                class="eco-local-card__img"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('eco-local-card__img-wrap--fallback-marche')"
+              />
+              <div class="eco-local-card__overlay"></div>
+              <div class="eco-local-card__badge-photo">Commerce local</div>
+            </div>
+            <div class="eco-local-card__body">
+              <h3 class="eco-local-card__title">Commerce &amp; artisanat local</h3>
+              <p class="eco-local-card__desc">Épiceries fines, artisans corses, boutiques de créateurs, marchés saisonniers — l'économie de proximité portovecchienne trouve dans Porto Flow un amplificateur numérique qui lui donne une visibilité à la hauteur de sa qualité.</p>
+              <div class="eco-local-card__tags">
+                <span class="eco-tag">Artisanat</span>
+                <span class="eco-tag">Produits locaux</span>
+                <span class="eco-tag">Marché</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
          ACTEURS DU RÉSEAU
     ═══════════════════════════════════════ -->
-    <section class="actors section" id="acteurs">
+    <section class="actors section section--tinted" id="acteurs">
       <div class="container">
         <div class="section-header">
           <div class="section-tag">Les acteurs du réseau</div>
           <h2 class="section-title">Un écosystème complet,<br>chaque maillon compte</h2>
-          <p class="section-desc">Porto Flow n'est pas une application isolée. C'est un réseau vivant qui connecte l'ensemble des acteurs économiques, institutionnels et culturels du territoire.</p>
+          <p class="section-desc">Porto Flow n'est pas une application isolée. C'est un réseau vivant qui connecte l'ensemble des acteurs économiques, institutionnels et culturels du territoire portovecchien.</p>
         </div>
 
         <div class="actors__grid">
@@ -152,7 +292,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Collectivités &amp; Mairies</h3>
-              <p class="actor-card__desc">Pilotage territorial en temps réel, gestion des flux, communication citoyenne, indicateurs de saturation et outils de décision.</p>
+              <p class="actor-card__desc">Pilotage territorial en temps réel, gestion des flux, communication citoyenne, indicateurs de saturation et outils de décision pour Porto-Vecchio et sa micro-région.</p>
               <ul class="actor-card__features">
                 <li>Dashboard de gouvernance</li>
                 <li>Alertes de saturation</li>
@@ -174,7 +314,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Offices de Tourisme</h3>
-              <p class="actor-card__desc">Valorisation de l'offre touristique, recommandations personnalisées, gestion des flux de visiteurs et promotion des sites moins connus.</p>
+              <p class="actor-card__desc">Valorisation de l'offre touristique portovecchienne, recommandations personnalisées, gestion des flux de visiteurs et promotion des sites moins connus du bassin.</p>
               <ul class="actor-card__features">
                 <li>Catalogue d'expériences enrichi</li>
                 <li>Redirection des flux touristiques</li>
@@ -196,7 +336,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Hôteliers &amp; Hébergeurs</h3>
-              <p class="actor-card__desc">Visibilité accrue, gestion des disponibilités, connexion avec les flux de visiteurs entrants et recommandations contextuelles.</p>
+              <p class="actor-card__desc">Visibilité accrue, gestion des disponibilités, connexion avec les flux de visiteurs entrants et recommandations contextuelles pour l'hôtellerie du littoral.</p>
               <ul class="actor-card__features">
                 <li>Fiche établissement enrichie</li>
                 <li>Synchronisation disponibilités</li>
@@ -218,7 +358,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Commerçants &amp; Artisans</h3>
-              <p class="actor-card__desc">Présence numérique locale, mise en avant des produits du terroir, gestion des horaires et connexion directe avec les visiteurs.</p>
+              <p class="actor-card__desc">Présence numérique locale, mise en avant des produits du terroir corse, gestion des horaires et connexion directe avec les visiteurs de passage.</p>
               <ul class="actor-card__features">
                 <li>Vitrine numérique locale</li>
                 <li>Horaires et disponibilités live</li>
@@ -240,7 +380,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Restaurateurs</h3>
-              <p class="actor-card__desc">Gestion des réservations, affichage des menus du jour, recommandations contextuelles selon météo et affluence, fidélisation locale.</p>
+              <p class="actor-card__desc">Gestion des réservations, affichage des menus du jour, recommandations contextuelles selon météo et affluence, fidélisation locale. De la pizzeria du port au restaurant gastronomique.</p>
               <ul class="actor-card__features">
                 <li>Menu du jour en temps réel</li>
                 <li>Gestion des réservations</li>
@@ -261,7 +401,7 @@
             </div>
             <div class="actor-card__content">
               <h3 class="actor-card__title">Prestataires d'Activités</h3>
-              <p class="actor-card__desc">Nautisme, randonnée, culture, bien-être — chaque prestataire d'expérience trouve sa place dans le flux de recommandations intelligentes.</p>
+              <p class="actor-card__desc">Nautisme, randonnée dans le maquis, culture, bien-être — chaque prestataire d'expérience trouve sa place dans le flux de recommandations intelligentes de Porto Flow.</p>
               <ul class="actor-card__features">
                 <li>Calendrier d'activités live</li>
                 <li>Recommandations contextuelles</li>
@@ -287,7 +427,7 @@
         <div class="section-header section-header--light">
           <div class="section-tag section-tag--light">Fonctionnalités économiques</div>
           <h2 class="section-title section-title--light">Des outils concrets<br>pour chaque acteur</h2>
-          <p class="section-desc section-desc--light">Porto Flow n'est pas qu'une carte. C'est une infrastructure économique locale qui génère de la valeur à chaque interaction.</p>
+          <p class="section-desc section-desc--light">Porto Flow n'est pas qu'une carte. C'est une infrastructure économique locale qui génère de la valeur à chaque interaction sur le territoire portovecchien.</p>
         </div>
 
         <div class="eco-features__grid">
@@ -296,7 +436,7 @@
             <div class="eco-feature-item__number">01</div>
             <div class="eco-feature-item__content">
               <h3>Profil Acteur Enrichi</h3>
-              <p>Chaque établissement dispose d'une fiche vivante : horaires temps réel, photos, services, avis, disponibilités, événements et promotions actives.</p>
+              <p>Chaque établissement dispose d'une fiche vivante : horaires temps réel, photos, services, avis, disponibilités, événements et promotions actives. Une vitrine numérique ancrée dans le territoire.</p>
             </div>
             <div class="eco-feature-item__visual">
               <div class="mini-card">
@@ -322,7 +462,7 @@
             <div class="eco-feature-item__number">02</div>
             <div class="eco-feature-item__content">
               <h3>Recommandations IA Contextuelles</h3>
-              <p>L'assistant Porto Flow recommande les bons acteurs au bon moment : selon la météo, l'heure, le profil utilisateur, la localisation et la saturation des lieux.</p>
+              <p>L'assistant Porto Flow recommande les bons acteurs au bon moment : selon la météo méditerranéenne, l'heure, le profil utilisateur, la localisation et la saturation des lieux.</p>
             </div>
             <div class="eco-feature-item__visual">
               <div class="ai-suggestion">
@@ -345,7 +485,7 @@
             <div class="eco-feature-item__number">03</div>
             <div class="eco-feature-item__content">
               <h3>Tableau de Bord Partenaire</h3>
-              <p>Chaque acteur accède à ses statistiques : vues, clics, recommandations reçues, comparaison saisonnière, et insights sur les comportements des visiteurs.</p>
+              <p>Chaque acteur accède à ses statistiques : vues, clics, recommandations reçues, comparaison saisonnière, et insights sur les comportements des visiteurs du bassin portovecchien.</p>
             </div>
             <div class="eco-feature-item__visual">
               <div class="mini-dashboard">
@@ -376,7 +516,7 @@
             <div class="eco-feature-item__number">04</div>
             <div class="eco-feature-item__content">
               <h3>Offres &amp; Promotions Locales</h3>
-              <p>Les acteurs peuvent publier des offres flash, des promotions saisonnières ou des événements directement dans le flux de l'application, ciblées par profil et localisation.</p>
+              <p>Les acteurs peuvent publier des offres flash, des promotions saisonnières ou des événements directement dans le flux de l'application, ciblées par profil et localisation dans la micro-région.</p>
             </div>
             <div class="eco-feature-item__visual">
               <div class="promo-card">
@@ -408,7 +548,7 @@
         <div class="section-header">
           <div class="section-tag">Modèle économique</div>
           <h2 class="section-title">Un modèle viable,<br>ancré dans le territoire</h2>
-          <p class="section-desc">Porto Flow repose sur un modèle économique hybride, combinant abonnements partenaires, licences institutionnelles et services à valeur ajoutée.</p>
+          <p class="section-desc">Porto Flow repose sur un modèle économique hybride, combinant abonnements partenaires, licences institutionnelles et services à valeur ajoutée. Conçu pour Porto-Vecchio, extensible à d'autres territoires.</p>
         </div>
 
         <div class="business-model__grid">
@@ -423,7 +563,7 @@
             </div>
             <div class="bm-pillar__label">Pilier 1</div>
             <h3 class="bm-pillar__title">Abonnements Partenaires</h3>
-            <p class="bm-pillar__desc">Formules mensuelles ou annuelles pour les acteurs économiques locaux : commerçants, restaurateurs, hôteliers, prestataires d'activités.</p>
+            <p class="bm-pillar__desc">Formules mensuelles ou annuelles pour les acteurs économiques locaux : commerçants, restaurateurs, hôteliers, prestataires d'activités du bassin portovecchien.</p>
             <div class="bm-pillar__tiers">
               <div class="bm-tier">
                 <span class="bm-tier__name">Essentiel</span>
@@ -467,7 +607,7 @@
             </div>
             <div class="bm-pillar__label">Pilier 3</div>
             <h3 class="bm-pillar__title">Services à Valeur Ajoutée</h3>
-            <p class="bm-pillar__desc">Publicité contextuelle locale, mise en avant premium, analytics avancés, intégrations sur mesure et déploiement dans d'autres territoires.</p>
+            <p class="bm-pillar__desc">Publicité contextuelle locale, mise en avant premium, analytics avancés, intégrations sur mesure et déploiement dans d'autres territoires méditerranéens.</p>
             <div class="bm-pillar__features">
               <div class="bm-feature"><span class="bm-feature__dot"></span>Publicité contextuelle locale</div>
               <div class="bm-feature"><span class="bm-feature__dot"></span>Analytics avancés</div>
@@ -493,7 +633,7 @@
     <!-- ═══════════════════════════════════════
          VALEUR PAR CIBLE
     ═══════════════════════════════════════ -->
-    <section class="value-by-target section section--tinted">
+    <section class="value-by-target section">
       <div class="container">
         <div class="section-header">
           <div class="section-tag">Valeur par cible</div>
@@ -515,7 +655,7 @@
               <div class="value-panel__grid">
                 <div class="value-panel__text">
                   <h3>Pour les collectivités et mairies</h3>
-                  <p>Porto Flow transforme la gestion territoriale en donnant aux élus et agents une vision en temps réel de leur territoire. Fini les décisions à l'aveugle en pleine saison haute.</p>
+                  <p>Porto Flow transforme la gestion territoriale en donnant aux élus et agents une vision en temps réel de leur territoire. Fini les décisions à l'aveugle en pleine saison haute à Porto-Vecchio.</p>
                   <div class="value-list">
                     <div class="value-item">
                       <div class="value-item__icon value-item__icon--green">✓</div>
@@ -565,7 +705,7 @@
               <div class="value-panel__grid">
                 <div class="value-panel__text">
                   <h3>Pour les offices de tourisme</h3>
-                  <p>Porto Flow devient le canal numérique principal de valorisation de l'offre touristique, avec une capacité de personnalisation et de ciblage inégalée.</p>
+                  <p>Porto Flow devient le canal numérique principal de valorisation de l'offre touristique portovecchienne, avec une capacité de personnalisation et de ciblage inégalée.</p>
                   <div class="value-list">
                     <div class="value-item">
                       <div class="value-item__icon value-item__icon--blue">✓</div>
@@ -614,7 +754,7 @@
               <div class="value-panel__grid">
                 <div class="value-panel__text">
                   <h3>Pour les commerçants et restaurateurs</h3>
-                  <p>Porto Flow est le meilleur commercial local : il envoie les bons clients au bon moment, sans effort de leur part.</p>
+                  <p>Porto Flow est le meilleur commercial local : il envoie les bons clients au bon moment, sans effort de leur part. Idéal pour les acteurs du centre historique et du port.</p>
                   <div class="value-list">
                     <div class="value-item">
                       <div class="value-item__icon value-item__icon--orange">✓</div>
@@ -660,7 +800,7 @@
               <div class="value-panel__grid">
                 <div class="value-panel__text">
                   <h3>Pour les visiteurs</h3>
-                  <p>Porto Flow est le copilote idéal pour découvrir Porto-Vecchio sans stress, sans saturation, avec des recommandations qui correspondent vraiment à leurs envies.</p>
+                  <p>Porto Flow est le copilote idéal pour découvrir Porto-Vecchio sans stress, sans saturation, avec des recommandations qui correspondent vraiment à leurs envies du moment.</p>
                   <div class="value-list">
                     <div class="value-item">
                       <div class="value-item__icon value-item__icon--teal">✓</div>
@@ -747,7 +887,7 @@
         <div class="section-header section-header--light">
           <div class="section-tag section-tag--light">Tableau de bord simulé</div>
           <h2 class="section-title section-title--light">Le territoire en temps réel</h2>
-          <p class="section-desc section-desc--light">Visualisez comment Porto Flow agrège et présente les données territoriales pour une prise de décision éclairée.</p>
+          <p class="section-desc section-desc--light">Visualisez comment Porto Flow agrège et présente les données territoriales pour une prise de décision éclairée sur l'ensemble du bassin portovecchien.</p>
         </div>
 
         <div class="dashboard-sim__wrapper">
@@ -811,104 +951,4 @@
                 <div class="sim-kpi__icon sim-kpi__icon--teal">
                   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                  </svg>
-                </div>
-                <div class="sim-kpi__data">
-                  <div class="sim-kpi__value">4 891</div>
-                  <div class="sim-kpi__label">Recommandations IA / jour</div>
-                  <div class="sim-kpi__trend sim-kpi__trend--up">↑ Record saison</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sim-seasonal">
-              <div class="sim-seasonal__header">
-                <h4>Activité saisonnière — Porto Flow</h4>
-                <div class="sim-seasonal__legend">
-                  <span class="legend-dot legend-dot--blue"></span> Visiteurs
-                  <span class="legend-dot legend-dot--orange"></span> Recommandations IA
-                </div>
-              </div>
-              <div class="sim-chart">
-                <div class="sim-chart__bars">
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:20%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:15%"></div></div><div class="sim-chart__label">Jan</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:22%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:18%"></div></div><div class="sim-chart__label">Fév</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:28%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:24%"></div></div><div class="sim-chart__label">Mar</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:38%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:32%"></div></div><div class="sim-chart__label">Avr</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:55%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:48%"></div></div><div class="sim-chart__label">Mai</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:72%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:65%"></div></div><div class="sim-chart__label">Jun</div></div>
-                  <div class="sim-chart__group sim-chart__group--active"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:100%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:92%"></div></div><div class="sim-chart__label">Juil ●</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:95%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:88%"></div></div><div class="sim-chart__label">Aoû</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:60%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:54%"></div></div><div class="sim-chart__label">Sep</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:35%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:30%"></div></div><div class="sim-chart__label">Oct</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:22%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:18%"></div></div><div class="sim-chart__label">Nov</div></div>
-                  <div class="sim-chart__group"><div class="sim-chart__bar-wrap"><div class="sim-chart__bar sim-chart__bar--blue" style="height:18%"></div><div class="sim-chart__bar sim-chart__bar--orange" style="height:14%"></div></div><div class="sim-chart__label">Déc</div></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sim-zones">
-              <div class="sim-zones__header">
-                <h4>Saturation des zones — Temps réel</h4>
-                <span class="sim-zones__update">Mis à jour il y a 2 min</span>
-              </div>
-              <div class="sim-zones__list">
-                <div class="sim-zone">
-                  <div class="sim-zone__name">Plage de Palombaggia</div>
-                  <div class="sim-zone__bar-wrap">
-                    <div class="sim-zone__bar"><div class="sim-zone__fill sim-zone__fill--critical" style="width:87%"></div></div>
-                    <span class="sim-zone__pct sim-zone__pct--critical">87%</span>
-                  </div>
-                  <div class="sim-zone__status sim-zone__status--critical">Critique</div>
-                </div>
-                <div class="sim-zone">
-                  <div class="sim-zone__name">Centre-ville Porto-Vecchio</div>
-                  <div class="sim-zone__bar-wrap">
-                    <div class="sim-zone__bar"><div class="sim-zone__fill sim-zone__fill--warning" style="width:68%"></div></div>
-                    <span class="sim-zone__pct sim-zone__pct--warning">68%</span>
-                  </div>
-                  <div class="sim-zone__status sim-zone__status--warning">Élevé</div>
-                </div>
-                <div class="sim-zone">
-                  <div class="sim-zone__name">Plage de Santa Giulia</div>
-                  <div class="sim-zone__bar-wrap">
-                    <div class="sim-zone__bar"><div class="sim-zone__fill sim-zone__fill--warning" style="width:72%"></div></div>
-                    <span class="sim-zone__pct sim-zone__pct--warning">72%</span>
-                  </div>
-                  <div class="sim-zone__status sim-zone__status--warning">Élevé</div>
-                </div>
-                <div class="sim-zone">
-                  <div class="sim-zone__name">Cala Rossa</div>
-                  <div class="sim-zone__bar-wrap">
-                    <div class="sim-zone__bar"><div class="sim-zone__fill sim-zone__fill--ok" style="width:34%"></div></div>
-                    <span class="sim-zone__pct sim-zone__pct--ok">34%</span>
-                  </div>
-                  <div class="sim-zone__status sim-zone__status--ok">Disponible</div>
-                </div>
-                <div class="sim-zone">
-                  <div class="sim-zone__name">Golfe de Rondinara</div>
-                  <div class="sim-zone__bar-wrap">
-                    <div class="sim-zone__bar"><div class="sim-zone__fill sim-zone__fill--ok" style="width:28%"></div></div>
-                    <span class="sim-zone__pct sim-zone__pct--ok">28%</span>
-                  </div>
-                  <div class="sim-zone__status sim-zone__status--ok">Disponible</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════
-         CTA PARTENARIAT
-    ═══════════════════════════════════════ -->
-    <section class="eco-cta section">
-      <div class="container">
-        <div class="eco-cta__inner">
-          <div class="eco-cta__bg-motif" aria-hidden="true"></div>
-          <div class="eco-cta__content">
-            <div class="section-tag">Rejoindre l'écosystème</div>
-            <h2 class="eco-cta__title">Votre établissement
+                    <path d="M12 6v6l4 2" stroke="currentColor" stroke
