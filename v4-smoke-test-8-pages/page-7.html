@@ -11,24 +11,22 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
-        V4 Smoke Test
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">V4 Smoke Test</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
         <span class="nav-toggle__bar"></span>
       </button>
-      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="page-1.html" class="nav-link">Présentation</a></li>
-          <li><a href="page-2.html" class="nav-link">Services</a></li>
-          <li><a href="page-3.html" class="nav-link">Méthode</a></li>
-          <li><a href="page-4.html" class="nav-link">Équipe</a></li>
-          <li><a href="page-5.html" class="nav-link">Références</a></li>
-          <li><a href="page-6.html" class="nav-link">FAQ</a></li>
-          <li><a href="page-7.html" class="nav-link nav-link--active" aria-current="page">Contact</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="page-1.html" class="nav-link">Présentation</a></li>
+          <li class="nav-item"><a href="page-2.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li class="nav-item"><a href="page-4.html" class="nav-link">Équipe</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link">Références</a></li>
+          <li class="nav-item"><a href="page-6.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="page-7.html" class="nav-link nav-link--active" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,97 +34,102 @@
 
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="page-heading">
+    <section class="page-hero">
       <div class="container">
-        <h1 id="page-heading">Contactez notre équipe</h1>
-        <p class="page-hero__subtitle">Une question, une remarque ou une demande ? Nous sommes disponibles et vous répondrons dans les meilleurs délais.</p>
+        <h1 class="page-hero__title">Contactez notre équipe</h1>
+        <p class="page-hero__intro">Une question, une remarque ou une demande de collaboration ? Nous sommes disponibles et vous répondrons dans les meilleurs délais.</p>
       </div>
     </section>
 
-    <section class="contact-section" aria-label="Informations de contact">
+    <section class="contact-section section">
       <div class="container contact-grid">
 
         <div class="contact-info">
-          <h2 class="section-title">Restons en contact</h2>
-          <p class="contact-info__text">
-            Notre équipe est joignable du lundi au vendredi, de 9h à 18h. N'hésitez pas à nous écrire pour toute question relative au workflow ID2App V4 ou à ce micro-site de test.
-          </p>
-          <ul class="contact-details">
-            <li class="contact-details__item">
-              <span class="contact-details__label">Email</span>
-              <a href="mailto:contact@v4smoketest.dev" class="contact-details__value">contact@v4smoketest.dev</a>
+          <h2 class="section-title">Nos coordonnées</h2>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:contact@v4smoketest.dev" class="contact-list__value">contact@v4smoketest.dev</a>
             </li>
-            <li class="contact-details__item">
-              <span class="contact-details__label">Disponibilité</span>
-              <span class="contact-details__value">Lun – Ven, 9h – 18h</span>
+            <li class="contact-list__item">
+              <span class="contact-list__label">Téléphone</span>
+              <span class="contact-list__value">+33 1 00 00 00 00</span>
             </li>
-            <li class="contact-details__item">
-              <span class="contact-details__label">Réponse</span>
-              <span class="contact-details__value">Sous 24 heures ouvrées</span>
+            <li class="contact-list__item">
+              <span class="contact-list__label">Localisation</span>
+              <span class="contact-list__value">Paris, France</span>
+            </li>
+            <li class="contact-list__item">
+              <span class="contact-list__label">Disponibilité</span>
+              <span class="contact-list__value">Lundi – Vendredi, 9h – 18h</span>
             </li>
           </ul>
         </div>
 
         <div class="contact-form-wrapper">
-          <h2 class="section-title">Envoyez-nous un message</h2>
-          <form class="contact-form" id="contactForm" novalidate aria-label="Formulaire de contact">
+          <h2 class="section-title">Envoyer un message</h2>
+          <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
-              <label for="contactName" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
+              <label for="contact-name" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
               <input
                 type="text"
-                id="contactName"
+                id="contact-name"
                 name="name"
                 class="form-input"
-                placeholder="Votre nom"
-                required
                 autocomplete="name"
+                required
                 aria-required="true"
+                placeholder="Votre nom"
               />
-              <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+              <span class="form-error" id="error-name" role="alert" aria-live="polite"></span>
             </div>
+
             <div class="form-group">
-              <label for="contactEmail" class="form-label">Adresse email <span aria-hidden="true">*</span></label>
+              <label for="contact-email" class="form-label">Adresse email <span aria-hidden="true">*</span></label>
               <input
                 type="email"
-                id="contactEmail"
+                id="contact-email"
                 name="email"
                 class="form-input"
-                placeholder="votre@email.com"
-                required
                 autocomplete="email"
+                required
                 aria-required="true"
+                placeholder="votre@email.com"
               />
-              <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              <span class="form-error" id="error-email" role="alert" aria-live="polite"></span>
             </div>
+
             <div class="form-group">
-              <label for="contactSubject" class="form-label">Sujet</label>
+              <label for="contact-subject" class="form-label">Sujet</label>
               <input
                 type="text"
-                id="contactSubject"
+                id="contact-subject"
                 name="subject"
                 class="form-input"
                 placeholder="Objet de votre message"
-                autocomplete="off"
               />
             </div>
+
             <div class="form-group">
-              <label for="contactMessage" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <label for="contact-message" class="form-label">Message <span aria-hidden="true">*</span></label>
               <textarea
-                id="contactMessage"
+                id="contact-message"
                 name="message"
-                class="form-textarea"
+                class="form-input form-textarea"
                 rows="5"
-                placeholder="Décrivez votre demande..."
                 required
                 aria-required="true"
+                placeholder="Décrivez votre demande..."
               ></textarea>
-              <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+              <span class="form-error" id="error-message" role="alert" aria-live="polite"></span>
             </div>
+
             <div class="form-actions">
               <button type="submit" class="btn btn--primary">Envoyer le message</button>
             </div>
-            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
-              Merci ! Votre message a bien été envoyé. Nous vous répondrons rapidement.
+
+            <div class="form-success" id="form-success" aria-live="polite" hidden>
+              <p>Merci pour votre message. Nous vous répondrons très prochainement.</p>
             </div>
           </form>
         </div>
@@ -134,10 +137,10 @@
       </div>
     </section>
 
-    <section class="cta-section" aria-label="Retour à l'accueil">
+    <section class="cta-section section">
       <div class="container cta-section__inner">
         <p class="cta-section__text">Vous avez exploré toutes les pages du micro-site test V4.</p>
-        <a href="index.html" class="btn btn--primary btn--lg">Retour à l'accueil</a>
+        <a href="index.html" class="btn btn--primary">Retour à l'accueil</a>
       </div>
     </section>
 
@@ -146,14 +149,9 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
-      <nav class="footer-nav" aria-label="Navigation secondaire">
-        <ul class="footer-nav__list">
+      <nav aria-label="Navigation secondaire">
+        <ul class="footer-nav">
           <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
-          <li><a href="page-1.html" class="footer-nav__link">Présentation</a></li>
-          <li><a href="page-2.html" class="footer-nav__link">Services</a></li>
-          <li><a href="page-3.html" class="footer-nav__link">Méthode</a></li>
-          <li><a href="page-4.html" class="footer-nav__link">Équipe</a></li>
-          <li><a href="page-5.html" class="footer-nav__link">Références</a></li>
           <li><a href="page-6.html" class="footer-nav__link">FAQ</a></li>
           <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
         </ul>
