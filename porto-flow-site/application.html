@@ -57,19 +57,30 @@
       <div class="app-hero__bg" aria-hidden="true">
         <svg class="app-hero__bg-svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
           <defs>
-            <radialGradient id="heroGrad" cx="60%" cy="40%" r="70%">
+            <radialGradient id="heroGradApp" cx="60%" cy="40%" r="70%">
               <stop offset="0%" stop-color="#0B2A3D" stop-opacity="1"/>
               <stop offset="100%" stop-color="#061520" stop-opacity="1"/>
             </radialGradient>
+            <radialGradient id="heroGlowApp" cx="70%" cy="30%" r="50%">
+              <stop offset="0%" stop-color="#1F6F8B" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#061520" stop-opacity="0"/>
+            </radialGradient>
           </defs>
-          <rect width="1440" height="700" fill="url(#heroGrad)"/>
+          <rect width="1440" height="700" fill="url(#heroGradApp)"/>
+          <rect width="1440" height="700" fill="url(#heroGlowApp)"/>
           <path d="M0,350 Q200,280 400,320 T800,300 T1200,330 T1440,310 L1440,700 L0,700Z" fill="#0D3349" opacity="0.5"/>
           <path d="M0,420 Q300,360 600,400 T1100,380 T1440,400 L1440,700 L0,700Z" fill="#0A2535" opacity="0.6"/>
-          <circle cx="900" cy="200" r="300" fill="#1F6F8B" opacity="0.06"/>
-          <circle cx="200" cy="500" r="200" fill="#D86F3C" opacity="0.04"/>
-          <path d="M0,200 Q360,140 720,200 T1440,190" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.18"/>
-          <path d="M0,280 Q400,200 800,260 T1440,250" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.12"/>
+          <circle cx="900" cy="200" r="300" fill="#1F6F8B" opacity="0.07"/>
+          <circle cx="200" cy="500" r="200" fill="#D86F3C" opacity="0.05"/>
+          <path d="M0,200 Q360,140 720,200 T1440,190" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.2"/>
+          <path d="M0,280 Q400,200 800,260 T1440,250" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.14"/>
           <path d="M0,450 Q300,390 700,430 T1440,420" stroke="#1F6F8B" stroke-width="0.6" fill="none" opacity="0.1"/>
+          <!-- Grid lines -->
+          <line x1="0" y1="0" x2="0" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
+          <line x1="360" y1="0" x2="360" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
+          <line x1="720" y1="0" x2="720" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
+          <line x1="1080" y1="0" x2="1080" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
+          <line x1="1440" y1="0" x2="1440" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
         </svg>
       </div>
 
@@ -77,7 +88,7 @@
         <div class="app-hero__layout">
 
           <div class="app-hero__text" data-animate="fade-right">
-            <span class="section-badge section-badge--glow">Interface & Expérience</span>
+            <span class="section-badge section-badge--glow">Interface &amp; Expérience</span>
             <h1 class="app-hero__title">
               Porto Flow<br/>
               <span class="app-hero__title-accent">dans votre poche</span>
@@ -133,7 +144,13 @@
 
                     <div class="app-screen__map-preview">
                       <svg viewBox="0 0 260 130" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%">
-                        <rect width="260" height="130" fill="#0D2B3E"/>
+                        <defs>
+                          <radialGradient id="mapPreviewBg" cx="50%" cy="50%" r="70%">
+                            <stop offset="0%" stop-color="#0D2B3E"/>
+                            <stop offset="100%" stop-color="#061520"/>
+                          </radialGradient>
+                        </defs>
+                        <rect width="260" height="130" fill="url(#mapPreviewBg)"/>
                         <path d="M0,65 Q65,50 130,65 T260,62" stroke="#D86F3C" stroke-width="3" fill="none" opacity="0.8"/>
                         <path d="M130,0 Q128,40 130,65 T132,130" stroke="#8FC7DA" stroke-width="2" fill="none" opacity="0.6"/>
                         <path d="M0,95 Q80,85 160,90 T260,95" stroke="#8FC7DA" stroke-width="1.5" fill="none" opacity="0.4"/>
@@ -193,6 +210,32 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         STATS RAPIDES
+    ═══════════════════════════════════════════ -->
+    <section class="app-stats-bar">
+      <div class="container">
+        <div class="app-stats-bar__grid">
+          <div class="app-stat-item" data-animate="fade-up">
+            <div class="app-stat-item__value">4</div>
+            <div class="app-stat-item__label">Modules temps réel</div>
+          </div>
+          <div class="app-stat-item" data-animate="fade-up" data-delay="100">
+            <div class="app-stat-item__value">12</div>
+            <div class="app-stat-item__label">Parkings connectés</div>
+          </div>
+          <div class="app-stat-item" data-animate="fade-up" data-delay="200">
+            <div class="app-stat-item__value">5s</div>
+            <div class="app-stat-item__label">Fréquence de mise à jour</div>
+          </div>
+          <div class="app-stat-item" data-animate="fade-up" data-delay="300">
+            <div class="app-stat-item__value">IA</div>
+            <div class="app-stat-item__label">Copilote territorial intégré</div>
+          </div>
         </div>
       </div>
     </section>
@@ -501,12 +544,12 @@
               <div class="map-interactive-sim__body">
                 <svg class="map-topo" viewBox="0 0 520 360" preserveAspectRatio="xMidYMid slice">
                   <defs>
-                    <radialGradient id="mapBg" cx="50%" cy="50%" r="70%">
+                    <radialGradient id="mapBgSim" cx="50%" cy="50%" r="70%">
                       <stop offset="0%" stop-color="#0D2B3E"/>
                       <stop offset="100%" stop-color="#061520"/>
                     </radialGradient>
                   </defs>
-                  <rect width="520" height="360" fill="url(#mapBg)"/>
+                  <rect width="520" height="360" fill="url(#mapBgSim)"/>
                   <!-- Topo lines -->
                   <path d="M0,290 Q130,250 260,270 T520,260" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.2"/>
                   <path d="M0,270 Q100,230 260,250 T520,240" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.15"/>
@@ -753,7 +796,7 @@
                 </div>
               </div>
               <div class="journey-step__info">
-                <h3 class="journey-step__title">Arrivée & Onboarding</h3>
+                <h3 class="journey-step__title">Arrivée &amp; Onboarding</h3>
                 <p class="journey-step__desc">Dès votre arrivée, Porto Flow détecte votre contexte (touriste, habitant, professionnel) et personnalise immédiatement l'interface. Pas de formulaire interminable — trois questions suffisent.</p>
                 <ul class="journey-step__features">
                   <li>Détection automatique de la langue</li>
@@ -801,7 +844,7 @@
                 </div>
               </div>
               <div class="journey-step__info">
-                <h3 class="journey-step__title">Exploration & Découverte</h3>
+                <h3 class="journey-step__title">Exploration &amp; Découverte</h3>
                 <p class="journey-step__desc">Porto Flow vous présente le territoire de façon intelligente. Chaque lieu est enrichi de données en temps réel : affluence, horaires, avis, disponibilités. Vous explorez sans mauvaises surprises.</p>
                 <ul class="journey-step__features">
                   <li>Carte interactive multicouche</li>
@@ -841,7 +884,7 @@
                 </div>
               </div>
               <div class="journey-step__info">
-                <h3 class="journey-step__title">Navigation & Mobilité</h3>
+                <h3 class="journey-step__title">Navigation &amp; Mobilité</h3>
                 <p class="journey-step__desc">Porto Flow optimise vos déplacements en intégrant trafic, parkings et alternatives piétonnes. Il anticipe les congestions et vous propose des itinéraires fluides, adaptés à votre mode de transport.</p>
                 <ul class="journey-step__features">
                   <li>Itinéraires multimodaux</li>
@@ -878,7 +921,7 @@
                 </div>
               </div>
               <div class="journey-step__info">
-                <h3 class="journey-step__title">Bilan & Continuité</h3>
+                <h3 class="journey-step__title">Bilan &amp; Continuité</h3>
                 <p class="journey-step__desc">En fin de journée, Porto Flow dresse un bilan de votre expérience et prépare le lendemain. Il apprend de vos préférences pour affiner ses recommandations au fil du séjour.</p>
                 <ul class="journey-step__features">
                   <li>Récapitulatif de journée</li>
@@ -920,64 +963,4 @@
             </div>
             <span class="page-nav-card__arrow">→</span>
           </a>
-          <a href="ingenierie.html" class="page-nav-card" data-animate="fade-up" data-delay="200">
-            <div class="page-nav-card__icon">⚙️</div>
-            <div class="page-nav-card__content">
-              <h3 class="page-nav-card__title">Ingénierie</h3>
-              <p class="page-nav-card__desc">n8n, CloudCode, IA, boucle récursive et vision technique.</p>
-            </div>
-            <span class="page-nav-card__arrow">→</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         CTA FINAL
-    ═══════════════════════════════════════════ -->
-    <section class="app-cta section-padding">
-      <div class="container">
-        <div class="app-cta__inner" data-animate="fade-up">
-          <div class="app-cta__content">
-            <h2 class="app-cta__title">Prêt à découvrir Porto-Vecchio autrement ?</h2>
-            <p class="app-cta__subtitle">Porto Flow est en cours de déploiement. Rejoignez les premiers utilisateurs et partenaires qui façonnent le territoire de demain.</p>
-            <div class="app-cta__actions">
-              <a href="ecosysteme.html" class="btn btn--primary btn--lg">Voir l'écosystème</a>
-              <a href="ingenierie.html" class="btn btn--outline btn--outline-light btn--lg">Notre ingénierie</a>
-            </div>
-          </div>
-          <div class="app-cta__orbs" aria-hidden="true">
-            <div class="cta-orb cta-orb--1"></div>
-            <div class="cta-orb cta-orb--2"></div>
-            <div class="cta-orb cta-orb--3"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="site-footer__grid">
-
-        <div class="site-footer__brand">
-          <div class="footer-logo">
-            <span class="footer-logo__mark">PF</span>
-            <span class="footer-logo__name">Porto Flow</span>
-          </div>
-          <p class="site-footer__tagline">Le système nerveux numérique de Porto-Vecchio. Un territoire lisible, fluide et accessible en temps réel.</p>
-          <div class="site-footer__badge">
-            <span>🌊</span>
-            <span>Porto-Vecchio, Corse du Sud</span>
-          </div>
-        </div>
-
-        <div class="site-footer__nav">
-          <h4 class="site-footer__nav-title">Navigation</h4>
-          <ul class="site-footer__nav-list">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="territoire.html">Territoire</a></li>
-            <li><a href="application.html">Application</a></li>
-            <li><a href="ecos
+          <a href="ingenierie.html" class="page
