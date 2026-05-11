@@ -3,18 +3,1330 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Porto Flow — Territoire et Usagers. Découvrez Porto-Vecchio à deux rythmes, ses enjeux saisonniers et la fonction territoriale de Porto Flow." />
+  <meta name="description" content="Porto Flow — Territoire et Usagers. Découvrez Porto-Vecchio à deux rythmes, ses enjeux saisonniers, ses flux, ses plages et la fonction territoriale de Porto Flow." />
   <meta name="theme-color" content="#0B1F33" />
-  <title>Territoire et Usagers — Porto Flow</title>
+  <title>Territoire — Porto Flow</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── TERRITOIRE PAGE STYLES ── */
+
+    /* Hero Territoire */
+    .territoire-hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(160deg, #0B1F33 0%, #0d2a42 40%, #0f3352 70%, #0B1F33 100%);
+      padding: 120px 0 80px;
+    }
+
+    .territoire-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(31,111,139,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(216,111,60,0.12) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .territoire-hero__bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .territoire-hero__topo {
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 38px,
+          rgba(143,199,218,0.04) 38px,
+          rgba(143,199,218,0.04) 39px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 38px,
+          rgba(143,199,218,0.03) 38px,
+          rgba(143,199,218,0.03) 39px
+        );
+    }
+
+    .territoire-hero__glow {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(31,111,139,0.2) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: pulseGlow 6s ease-in-out infinite;
+    }
+
+    .territoire-hero__contour {
+      position: absolute;
+      right: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 520px;
+      height: 520px;
+      opacity: 0.07;
+    }
+
+    .territoire-hero__contour svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.08); }
+    }
+
+    .territoire-hero__inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+
+    .territoire-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(31,111,139,0.2);
+      border: 1px solid rgba(143,199,218,0.25);
+      border-radius: 100px;
+      padding: 8px 18px;
+      margin-bottom: 28px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8FC7DA;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #D86F3C;
+      box-shadow: 0 0 8px rgba(216,111,60,0.8);
+      animation: blinkDot 2s ease-in-out infinite;
+    }
+
+    @keyframes blinkDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .territoire-hero__title {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: #FAF6EC;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+
+    .territoire-hero__title em {
+      font-style: normal;
+      color: #8FC7DA;
+      display: block;
+    }
+
+    .territoire-hero__subtitle {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(250,246,236,0.72);
+      line-height: 1.75;
+      max-width: 620px;
+      margin-bottom: 48px;
+    }
+
+    .territoire-hero__stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(143,199,218,0.15);
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .stat-card:hover {
+      background: rgba(31,111,139,0.15);
+      border-color: rgba(143,199,218,0.35);
+      transform: translateY(-3px);
+    }
+
+    .stat-card__number {
+      display: block;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 800;
+      color: #D86F3C;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-card__label {
+      display: block;
+      font-size: 0.72rem;
+      color: rgba(250,246,236,0.55);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.3;
+    }
+
+    /* Scroll indicator */
+    .territoire-hero__scroll {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(143,199,218,0.5);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: bounceScroll 2.5s ease-in-out infinite;
+    }
+
+    .territoire-hero__scroll svg {
+      opacity: 0.5;
+    }
+
+    @keyframes bounceScroll {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── SECTION DEUX RYTHMES ── */
+    .deux-rythmes {
+      padding: 100px 0;
+      background: #F5F0E8;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .deux-rythmes::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1F6F8B, #D86F3C, #1F6F8B);
+    }
+
+    .rythmes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    .rythme-card {
+      border-radius: 20px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .rythme-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .rythme-card--calme {
+      background: linear-gradient(145deg, #1a3a52 0%, #0d2a42 100%);
+      border: 1px solid rgba(143,199,218,0.2);
+      box-shadow: 0 8px 40px rgba(11,31,51,0.3);
+    }
+
+    .rythme-card--calme:hover {
+      box-shadow: 0 16px 60px rgba(11,31,51,0.4);
+    }
+
+    .rythme-card--intense {
+      background: linear-gradient(145deg, #2a1a0d 0%, #1a0f06 100%);
+      border: 1px solid rgba(216,111,60,0.25);
+      box-shadow: 0 8px 40px rgba(216,111,60,0.15);
+    }
+
+    .rythme-card--intense:hover {
+      box-shadow: 0 16px 60px rgba(216,111,60,0.25);
+    }
+
+    .rythme-card__header {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 28px 28px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .rythme-card__icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rythme-card--calme .rythme-card__icon {
+      background: rgba(143,199,218,0.1);
+      border: 1px solid rgba(143,199,218,0.2);
+    }
+
+    .rythme-card--intense .rythme-card__icon {
+      background: rgba(216,111,60,0.1);
+      border: 1px solid rgba(216,111,60,0.2);
+    }
+
+    .rythme-card__season {
+      flex: 1;
+    }
+
+    .season-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+    }
+
+    .season-tag--calme {
+      background: rgba(143,199,218,0.15);
+      color: #8FC7DA;
+      border: 1px solid rgba(143,199,218,0.25);
+    }
+
+    .season-tag--intense {
+      background: rgba(216,111,60,0.15);
+      color: #D86F3C;
+      border: 1px solid rgba(216,111,60,0.25);
+    }
+
+    .rythme-card__header h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      margin: 0;
+    }
+
+    .rythme-card__body {
+      padding: 24px 28px;
+    }
+
+    .rythme-card__body > p {
+      font-size: 0.92rem;
+      color: rgba(250,246,236,0.65);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .rythme-card__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .rythme-card__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: rgba(250,246,236,0.7);
+      line-height: 1.5;
+    }
+
+    .list-icon {
+      flex-shrink: 0;
+      color: #8FC7DA;
+      margin-top: 2px;
+      font-size: 1rem;
+    }
+
+    .list-icon--alert {
+      color: #D86F3C;
+    }
+
+    .rythme-card__footer {
+      padding: 20px 28px 28px;
+    }
+
+    .rythme-indicator {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .indicator-bar {
+      display: block;
+      height: 6px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .indicator-bar::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: var(--level, 50%);
+      border-radius: 100px;
+      transition: width 1.5s ease;
+    }
+
+    .rythme-indicator--low .indicator-bar::after {
+      background: linear-gradient(90deg, #8FC7DA, #1F6F8B);
+    }
+
+    .rythme-indicator--high .indicator-bar::after {
+      background: linear-gradient(90deg, #D86F3C, #c0522a);
+      box-shadow: 0 0 12px rgba(216,111,60,0.5);
+    }
+
+    .indicator-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(250,246,236,0.4);
+    }
+
+    /* Bridge */
+    .rythmes-bridge {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 32px 40px;
+      background: linear-gradient(135deg, rgba(31,111,139,0.08), rgba(216,111,60,0.05));
+      border: 1px solid rgba(31,111,139,0.2);
+      border-radius: 16px;
+    }
+
+    .bridge-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(31,111,139,0.4), transparent);
+    }
+
+    .bridge-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-shrink: 0;
+      max-width: 480px;
+    }
+
+    .bridge-icon {
+      flex-shrink: 0;
+    }
+
+    .bridge-text {
+      font-size: 0.95rem;
+      color: #2C4A5A;
+      line-height: 1.65;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    /* ── FLUX CARDS ── */
+    .flux-territoire {
+      padding: 100px 0;
+      background: #0B1F33;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flux-territoire::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(31,111,139,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(216,111,60,0.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .flux-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .flux-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(143,199,218,0.12);
+      border-radius: 18px;
+      padding: 28px 24px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flux-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--flux-color, #1F6F8B), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .flux-card:hover {
+      background: rgba(31,111,139,0.08);
+      border-color: rgba(143,199,218,0.25);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .flux-card:hover::before {
+      opacity: 1;
+    }
+
+    .flux-card--routes { --flux-color: #D86F3C; }
+    .flux-card--plages { --flux-color: #8FC7DA; }
+    .flux-card--parkings { --flux-color: #4CAF50; }
+    .flux-card--services { --flux-color: #9C6FD8; }
+    .flux-card--events { --flux-color: #F0C040; }
+    .flux-card--meteo { --flux-color: #40B0F0; }
+
+    .flux-card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .flux-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 1.3rem;
+    }
+
+    .flux-card__status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .status-dot--ok { background: #4CAF50; box-shadow: 0 0 6px rgba(76,175,80,0.6); }
+    .status-dot--warn { background: #F0C040; box-shadow: 0 0 6px rgba(240,192,64,0.6); }
+    .status-dot--alert { background: #D86F3C; box-shadow: 0 0 6px rgba(216,111,60,0.6); animation: blinkDot 1.5s infinite; }
+
+    .status-ok { color: #4CAF50; }
+    .status-warn { color: #F0C040; }
+    .status-alert { color: #D86F3C; }
+
+    .flux-card__title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      margin-bottom: 8px;
+    }
+
+    .flux-card__desc {
+      font-size: 0.85rem;
+      color: rgba(250,246,236,0.55);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .flux-card__meter {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .meter-bar {
+      height: 5px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .meter-fill {
+      height: 100%;
+      border-radius: 100px;
+      background: var(--flux-color, #1F6F8B);
+      width: var(--fill, 50%);
+      transition: width 1.5s ease;
+    }
+
+    .meter-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.68rem;
+      color: rgba(250,246,236,0.35);
+    }
+
+    /* ── PROBLÈMES & SOLUTIONS ── */
+    .problemes-solutions {
+      padding: 100px 0;
+      background: #FAF6EC;
+      position: relative;
+    }
+
+    .problems-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 56px;
+    }
+
+    .problem-item {
+      background: #fff;
+      border-radius: 18px;
+      padding: 32px;
+      border: 1px solid rgba(11,31,51,0.08);
+      box-shadow: 0 4px 24px rgba(11,31,51,0.06);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #D86F3C, #1F6F8B);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .problem-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 48px rgba(11,31,51,0.12);
+    }
+
+    .problem-item:hover::before {
+      opacity: 1;
+    }
+
+    .problem-item__visual {
+      margin-bottom: 16px;
+    }
+
+    .problem-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(216,111,60,0.08);
+      border: 1px solid rgba(216,111,60,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .problem-item__content h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0B1F33;
+      margin-bottom: 10px;
+    }
+
+    .problem-desc {
+      font-size: 0.88rem;
+      color: #5a6a7a;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .solution-arrow {
+      font-size: 1.2rem;
+      color: #1F6F8B;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .solution-desc {
+      font-size: 0.88rem;
+      color: #1F6F8B;
+      line-height: 1.65;
+      font-weight: 500;
+      padding: 14px 16px;
+      background: rgba(31,111,139,0.06);
+      border-radius: 10px;
+      border-left: 3px solid #1F6F8B;
+    }
+
+    /* ── CAS D'USAGE ── */
+    .cas-usage {
+      padding: 100px 0;
+      background: #0B1F33;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cas-usage::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(31,111,139,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cas-usage-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 56px;
+    }
+
+    .cas-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 28px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(143,199,218,0.1);
+      border-radius: 20px;
+      padding: 36px;
+      transition: all 0.3s ease;
+    }
+
+    .cas-item:hover {
+      background: rgba(31,111,139,0.07);
+      border-color: rgba(143,199,218,0.2);
+      transform: translateX(4px);
+    }
+
+    .cas-item__number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(143,199,218,0.15);
+      line-height: 1;
+      letter-spacing: -0.04em;
+      align-self: flex-start;
+      padding-top: 4px;
+    }
+
+    .cas-item__context {
+      margin-bottom: 24px;
+    }
+
+    .cas-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #D86F3C;
+      background: rgba(216,111,60,0.1);
+      border: 1px solid rgba(216,111,60,0.2);
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 10px;
+    }
+
+    .cas-item__content h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      margin: 0;
+    }
+
+    .cas-item__scenario {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .scenario-before,
+    .scenario-after {
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .scenario-before {
+      background: rgba(216,111,60,0.06);
+      border: 1px solid rgba(216,111,60,0.15);
+    }
+
+    .scenario-after {
+      background: rgba(31,111,139,0.08);
+      border: 1px solid rgba(143,199,218,0.2);
+    }
+
+    .scenario-label {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(216,111,60,0.8);
+      margin-bottom: 10px;
+    }
+
+    .scenario-label--after {
+      color: #8FC7DA;
+    }
+
+    .scenario-before p,
+    .scenario-after p {
+      font-size: 0.87rem;
+      color: rgba(250,246,236,0.65);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .scenario-after p {
+      color: rgba(250,246,236,0.75);
+    }
+
+    .scenario-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+    }
+
+    .divider-icon {
+      font-size: 1.5rem;
+      color: #1F6F8B;
+      opacity: 0.6;
+    }
+
+    /* ── PUBLICS CIBLÉS ── */
+    .publics-cibles {
+      padding: 100px 0;
+      background: #F5F0E8;
+      position: relative;
+    }
+
+    .publics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .public-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px;
+      border: 1px solid rgba(11,31,51,0.08);
+      box-shadow: 0 4px 20px rgba(11,31,51,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .public-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #1F6F8B, #8FC7DA);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .public-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 48px rgba(11,31,51,0.12);
+    }
+
+    .public-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .public-card__icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: rgba(31,111,139,0.06);
+      border: 1px solid rgba(31,111,139,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .public-card__content h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #0B1F33;
+      margin-bottom: 10px;
+    }
+
+    .public-card__desc {
+      font-size: 0.85rem;
+      color: #5a6a7a;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .public-card__benefits {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .public-card__benefits li {
+      font-size: 0.82rem;
+      color: #2C4A5A;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .public-card__benefits li::before {
+      content: '◦';
+      position: absolute;
+      left: 0;
+      color: #1F6F8B;
+    }
+
+    .public-card__tag {
+      margin-top: auto;
+    }
+
+    .tag-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #1F6F8B;
+      background: rgba(31,111,139,0.08);
+      border: 1px solid rgba(31,111,139,0.2);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    /* ── ENJEUX ENVIRONNEMENT ── */
+    .enjeux-environnement {
+      padding: 100px 0;
+      background: linear-gradient(160deg, #0B1F33 0%, #0d2a42 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .enjeux-environnement::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 80% 50%, rgba(31,111,139,0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .enjeux-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .enjeux-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 36px;
+    }
+
+    .enjeu-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .enjeu-item__icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(31,111,139,0.15);
+      border: 1px solid rgba(31,111,139,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .enjeu-item__text h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #FAF6EC;
+      margin-bottom: 6px;
+    }
+
+    .enjeu-item__text p {
+      font-size: 0.85rem;
+      color: rgba(250,246,236,0.6);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .enjeux-visual {
+      position: relative;
+    }
+
+    .enjeux-map-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .enjeux-map-bg {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(31,111,139,0.15) 0%, rgba(11,31,51,0.5) 70%);
+      border: 1px solid rgba(143,199,218,0.15);
+    }
+
+    .enjeux-map-bg::before {
+      content: '';
+      position: absolute;
+      inset: 15%;
+      border-radius: 50%;
+      border: 1px solid rgba(143,199,218,0.1);
+    }
+
+    .enjeux-map-bg::after {
+      content: '';
+      position: absolute;
+      inset: 30%;
+      border-radius: 50%;
+      border: 1px solid rgba(143,199,218,0.08);
+    }
+
+    .enjeux-map-overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    .map-point {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .map-point--1 { top: 20%; left: 15%; }
+    .map-point--2 { top: 35%; right: 10%; }
+    .map-point--3 { bottom: 30%; left: 20%; }
+    .map-point--4 { bottom: 20%; right: 20%; }
+
+    .map-point__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #8FC7DA;
+      border: 2px solid rgba(143,199,218,0.4);
+      flex-shrink: 0;
+    }
+
+    .map-point__dot--active {
+      background: #D86F3C;
+      border-color: rgba(216,111,60,0.4);
+      box-shadow: 0 0 12px rgba(216,111,60,0.6);
+      animation: pulsePoint 2s ease-in-out infinite;
+    }
+
+    @keyframes pulsePoint {
+      0%, 100% { box-shadow: 0 0 12px rgba(216,111,60,0.6); }
+      50% { box-shadow: 0 0 24px rgba(216,111,60,0.9); }
+    }
+
+    .map-point__label {
+      font-size: 0.72rem;
+      color: rgba(250,246,236,0.6);
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    /* ── CTA TERRITOIRE ── */
+    .territoire-cta {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #F5F0E8 0%, #EDE8DC 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .territoire-cta::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(31,111,139,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .territoire-cta__inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .territoire-cta__title {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: #0B1F33;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .territoire-cta__text {
+      font-size: 1rem;
+      color: #5a6a7a;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+
+    .territoire-cta__actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .territoire-cta__decoration {
+      flex-shrink: 0;
+    }
+
+    .cta-compass {
+      opacity: 0.6;
+      animation: rotateSlow 30s linear infinite;
+    }
+
+    @keyframes rotateSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* ── SECTION HEADER SHARED ── */
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 0;
+    }
+
+    .section-header--left {
+      text-align: left;
+      margin: 0;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .deux-rythmes .section-title,
+    .problemes-solutions .section-title,
+    .publics-cibles .section-title,
+    .territoire-cta .section-title {
+      color: #0B1F33;
+    }
+
+    .flux-territoire .section-title,
+    .cas-usage .section-title,
+    .enjeux-environnement .section-title {
+      color: #FAF6EC;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .deux-rythmes .section-subtitle,
+    .problemes-solutions .section-subtitle,
+    .publics-cibles .section-subtitle {
+      color: #5a6a7a;
+    }
+
+    .flux-territoire .section-subtitle,
+    .cas-usage .section-subtitle,
+    .enjeux-environnement .section-subtitle {
+      color: rgba(250,246,236,0.6);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .territoire-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .flux-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .publics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .enjeux-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .enjeux-visual {
+        display: none;
+      }
+
+      .territoire-cta__inner {
+        grid-template-columns: 1fr;
+      }
+
+      .territoire-cta__decoration {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .territoire-hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+      }
+
+      .territoire-hero__stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .rythmes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rythmes-bridge {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+      }
+
+      .bridge-line {
+        width: 100%;
+        height: 1px;
+      }
+
+      .bridge-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .flux-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .problems-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cas-item {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .cas-item__number {
+        font-size: 2rem;
+      }
+
+      .cas-item__scenario {
+        grid-template-columns: 1fr;
+      }
+
+      .scenario-divider {
+        padding: 0;
+        transform: rotate(90deg);
+      }
+
+      .publics-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .territoire-cta__actions {
+        flex-direction: column;
+      }
+
+      .territoire-cta__actions .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .territoire-hero__stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stat-card {
+        padding: 14px 10px;
+      }
+    }
+  </style>
 </head>
 <body class="page-territoire">
 
+  <!-- ══ HEADER ══ -->
   <header class="site-header" id="site-header">
     <div class="header-inner container">
 
       <a href="index.html" class="logo" aria-label="Porto Flow — Accueil">
-        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-mark" aria-hidden="true">◈</span>
         <span class="logo-text">Porto <strong>Flow</strong></span>
       </a>
 
@@ -47,7 +1359,7 @@
         id="burger-btn"
         aria-label="Ouvrir le menu de navigation"
         aria-expanded="false"
-        aria-controls="main-nav"
+        aria-controls="mobile-nav"
         type="button"
       >
         <span class="burger-bar" aria-hidden="true"></span>
@@ -59,695 +1371,229 @@
 
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
       <ul class="mobile-nav-list" role="list">
-        <li>
-          <a href="index.html" class="mobile-nav-link">Accueil</a>
-        </li>
-        <li>
-          <a href="territoire.html" class="mobile-nav-link mobile-nav-link--active" aria-current="page">Territoire</a>
-        </li>
-        <li>
-          <a href="application.html" class="mobile-nav-link">Application</a>
-        </li>
-        <li>
-          <a href="ecosysteme.html" class="mobile-nav-link">Écosystème</a>
-        </li>
-        <li>
-          <a href="ingenierie.html" class="mobile-nav-link">Ingénierie</a>
-        </li>
-        <li>
-          <a href="application.html" class="btn btn--primary mobile-nav-cta">Découvrir l'app</a>
-        </li>
+        <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+        <li><a href="territoire.html" class="mobile-nav-link mobile-nav-link--active" aria-current="page">Territoire</a></li>
+        <li><a href="application.html" class="mobile-nav-link">Application</a></li>
+        <li><a href="ecosysteme.html" class="mobile-nav-link">Écosystème</a></li>
+        <li><a href="ingenierie.html" class="mobile-nav-link">Ingénierie</a></li>
+        <li><a href="application.html" class="btn btn--primary mobile-nav-cta">Découvrir l'app</a></li>
       </ul>
     </div>
-
   </header>
 
   <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true"></div>
 
-<main id="main-content">
+  <!-- ══ MAIN ══ -->
+  <main id="main-content">
 
-  <!-- Section Hero Territoire -->
-  <section class="territoire-hero" aria-labelledby="territoire-hero-title">
-    <div class="container">
-      <div class="territoire-hero__inner">
-        <div class="territoire-hero__badge">
-          <span class="badge-dot"></span>
-          <span>Territoire & Usagers</span>
-        </div>
-        <h1 id="territoire-hero-title" class="territoire-hero__title">
-          Porto-Vecchio,<br>
-          <em>un territoire à deux vitesses</em>
-        </h1>
-        <p class="territoire-hero__subtitle">
-          Une micro-région insulaire d'exception, traversée chaque année par une vague humaine qui transforme radicalement ses besoins, ses flux et ses tensions. Porto Flow est conçu pour lire ce territoire en temps réel, quelle que soit la saison.
-        </p>
-        <div class="territoire-hero__stats" role="list" aria-label="Chiffres clés du territoire">
-          <div class="stat-card" role="listitem">
-            <span class="stat-card__number">15 000</span>
-            <span class="stat-card__label">habitants permanents</span>
-          </div>
-          <div class="stat-card" role="listitem">
-            <span class="stat-card__number">+200 000</span>
-            <span class="stat-card__label">visiteurs en haute saison</span>
-          </div>
-          <div class="stat-card" role="listitem">
-            <span class="stat-card__number">×13</span>
-            <span class="stat-card__label">pic de population estival</span>
-          </div>
-          <div class="stat-card" role="listitem">
-            <span class="stat-card__number">3 mois</span>
-            <span class="stat-card__label">de tension maximale</span>
-          </div>
+    <!-- ── HERO ── -->
+    <section class="territoire-hero" aria-labelledby="territoire-hero-title">
+      <div class="territoire-hero__bg" aria-hidden="true">
+        <div class="territoire-hero__topo"></div>
+        <div class="territoire-hero__glow"></div>
+        <div class="territoire-hero__contour">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M200 40 C240 50 290 80 310 120 C330 160 320 200 300 240 C280 280 240 310 200 320 C160 330 120 310 100 280 C80 250 70 210 80 170 C90 130 120 90 160 65 C180 52 190 38 200 40Z" stroke="#8FC7DA" stroke-width="1" fill="none"/>
+            <path d="M200 70 C230 78 270 100 285 135 C300 170 292 205 275 238 C258 271 228 295 200 302 C172 309 142 295 125 270 C108 245 100 212 108 180 C116 148 140 115 168 95 C184 84 190 68 200 70Z" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.7"/>
+            <path d="M200 100 C222 107 252 124 264 152 C276 180 270 210 256 236 C242 262 218 280 200 285 C182 290 158 278 146 256 C134 234 128 206 135 180 C142 154 162 130 182 116 C192 109 196 98 200 100Z" stroke="#8FC7DA" stroke-width="0.6" fill="none" opacity="0.5"/>
+            <circle cx="200" cy="200" r="8" fill="#D86F3C" opacity="0.6"/>
+            <circle cx="200" cy="200" r="16" stroke="#D86F3C" stroke-width="0.5" fill="none" opacity="0.3"/>
+          </svg>
         </div>
       </div>
-    </div>
-    <div class="territoire-hero__map-bg" aria-hidden="true">
-      <div class="topo-lines"></div>
-      <div class="map-glow"></div>
-    </div>
-  </section>
 
-  <!-- Section Deux Rythmes -->
-  <section class="deux-rythmes" aria-labelledby="deux-rythmes-title">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="deux-rythmes-title" class="section-title">Un territoire, deux réalités</h2>
-        <p class="section-subtitle">Porto-Vecchio n'est pas un territoire ordinaire. Il vit une dualité permanente entre calme insulaire et effervescence méditerranéenne.</p>
-      </div>
-
-      <div class="rythmes-grid">
-        <!-- Hors saison -->
-        <article class="rythme-card rythme-card--calme" aria-labelledby="rythme-calme-title">
-          <div class="rythme-card__header">
-            <div class="rythme-card__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="12" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-                <path d="M16 8 L16 16 L20 20" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="rythme-card__season">
-              <span class="season-tag season-tag--calme">Octobre → Mai</span>
-              <h3 id="rythme-calme-title">Porto-Vecchio au repos</h3>
-            </div>
+      <div class="container">
+        <div class="territoire-hero__inner" data-animate="fade-up">
+          <div class="territoire-hero__badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Territoire &amp; Usagers</span>
           </div>
-          <div class="rythme-card__body">
-            <p>Le territoire retrouve son souffle. Les habitants permanents reprennent possession de leur espace. Les commerces tournent au ralenti, les services publics fonctionnent à régime normal, les routes sont fluides.</p>
-            <ul class="rythme-card__list" aria-label="Caractéristiques hors saison">
-              <li>
-                <span class="list-icon" aria-hidden="true">◦</span>
-                Économie locale fragilisée, dépendance aux revenus estivaux
-              </li>
-              <li>
-                <span class="list-icon" aria-hidden="true">◦</span>
-                Services sous-utilisés, offre culturelle et commerciale réduite
-              </li>
-              <li>
-                <span class="list-icon" aria-hidden="true">◦</span>
-                Habitants isolés, mobilité contrainte par l'insularité
-              </li>
-              <li>
-                <span class="list-icon" aria-hidden="true">◦</span>
-                Opportunité de structuration et d'anticipation territoriale
-              </li>
-            </ul>
-          </div>
-          <div class="rythme-card__footer">
-            <div class="rythme-indicator rythme-indicator--low">
-              <span class="indicator-bar" style="--level: 20%"></span>
-              <span class="indicator-label">Intensité territoriale faible</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- Haute saison -->
-        <article class="rythme-card rythme-card--intense" aria-labelledby="rythme-intense-title">
-          <div class="rythme-card__header">
-            <div class="rythme-card__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-                <circle cx="16" cy="16" r="6" fill="#D86F3C" opacity="0.3"/>
-                <circle cx="16" cy="16" r="3" fill="#D86F3C"/>
-                <path d="M16 4 L16 8 M16 24 L16 28 M4 16 L8 16 M24 16 L28 16" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M7.5 7.5 L10.3 10.3 M21.7 21.7 L24.5 24.5 M7.5 24.5 L10.3 21.7 M21.7 10.3 L24.5 7.5" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="rythme-card__season">
-              <span class="season-tag season-tag--intense">Juin → Septembre</span>
-              <h3 id="rythme-intense-title">Porto-Vecchio sous tension</h3>
-            </div>
-          </div>
-          <div class="rythme-card__body">
-            <p>Le territoire explose. En quelques semaines, la population est multipliée par treize. Les infrastructures atteignent leurs limites, les flux deviennent ingérables, l'information se fragmente et les tensions montent.</p>
-            <ul class="rythme-card__list" aria-label="Caractéristiques haute saison">
-              <li>
-                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
-                Saturation des axes routiers, embouteillages chroniques
-              </li>
-              <li>
-                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
-                Plages et sites naturels surpeuplés, pression environnementale
-              </li>
-              <li>
-                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
-                Visiteurs désorientés, manque d'information en temps réel
-              </li>
-              <li>
-                <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
-                Commerçants débordés, coordination impossible entre acteurs
-              </li>
-            </ul>
-          </div>
-          <div class="rythme-card__footer">
-            <div class="rythme-indicator rythme-indicator--high">
-              <span class="indicator-bar" style="--level: 95%"></span>
-              <span class="indicator-label">Intensité territoriale critique</span>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <!-- Pont entre les deux -->
-      <div class="rythmes-bridge" aria-label="Porto Flow comme pont entre les deux rythmes">
-        <div class="bridge-line" aria-hidden="true"></div>
-        <div class="bridge-content">
-          <div class="bridge-icon" aria-hidden="true">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="24" cy="24" r="20" stroke="#1F6F8B" stroke-width="1" fill="rgba(31,111,139,0.1)"/>
-              <path d="M14 24 C14 18 20 14 24 14 C28 14 34 18 34 24 C34 30 28 34 24 34 C20 34 14 30 14 24Z" stroke="#8FC7DA" stroke-width="1" fill="none" stroke-dasharray="3 2"/>
-              <circle cx="24" cy="24" r="4" fill="#1F6F8B"/>
-              <path d="M24 20 L24 24 L27 24" stroke="#FAF6EC" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <p class="bridge-text">Porto Flow lit le territoire en continu, s'adapte à chaque rythme et transforme la complexité saisonnière en intelligence partagée.</p>
-        </div>
-        <div class="bridge-line" aria-hidden="true"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Problèmes et Solutions -->
-  <section class="problemes-solutions" aria-labelledby="problemes-title">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="problemes-title" class="section-title">Ce que Porto Flow résout</h2>
-        <p class="section-subtitle">Des problèmes réels, structurels, que ni les applications génériques ni les outils institutionnels classiques ne savent adresser.</p>
-      </div>
-
-      <div class="problems-grid">
-
-        <article class="problem-item" aria-labelledby="prob-1-title">
-          <div class="problem-item__visual" aria-hidden="true">
-            <div class="problem-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M14 4 L14 14 M14 18 L14 20" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="14" cy="14" r="11" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
-              </svg>
-            </div>
-          </div>
-          <div class="problem-item__content">
-            <h3 id="prob-1-title">L'information fragmentée</h3>
-            <p class="problem-desc">Les visiteurs arrivent sans carte mentale du territoire. Les informations sont dispersées entre sites institutionnels, réseaux sociaux, bouche-à-oreille et panneaux physiques obsolètes.</p>
-            <div class="solution-arrow" aria-hidden="true">→</div>
-            <p class="solution-desc">Porto Flow centralise et contextualise l'information en temps réel, géolocalisée, personnalisée selon le profil et le moment.</p>
-          </div>
-        </article>
-
-        <article class="problem-item" aria-labelledby="prob-2-title">
-          <div class="problem-item__visual" aria-hidden="true">
-            <div class="problem-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M4 14 L10 8 L16 14 L22 8" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-                <path d="M4 20 L10 14 L16 20 L22 14" stroke="#D86F3C" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
-              </svg>
-            </div>
-          </div>
-          <div class="problem-item__content">
-            <h3 id="prob-2-title">La saturation des flux</h3>
-            <p class="problem-desc">Chaque matin d'été, les mêmes plages se remplissent en premier, les mêmes routes saturent, les mêmes restaurants affichent complet. Le territoire souffre d'une concentration irrationnelle des flux.</p>
-            <div class="solution-arrow" aria-hidden="true">→</div>
-            <p class="solution-desc">Porto Flow redistribue intelligemment les flux en suggérant des alternatives en temps réel, réduisant la pression sur les points chauds.</p>
-          </div>
-        </article>
-
-        <article class="problem-item" aria-labelledby="prob-3-title">
-          <div class="problem-item__visual" aria-hidden="true">
-            <div class="problem-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <rect x="6" y="8" width="16" height="12" rx="2" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
-                <path d="M10 8 L10 6 M18 8 L18 6" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M10 14 L18 14" stroke="#D86F3C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-              </svg>
-            </div>
-          </div>
-          <div class="problem-item__content">
-            <h3 id="prob-3-title">L'invisibilité des acteurs locaux</h3>
-            <p class="problem-desc">Les commerçants, artisans et producteurs locaux n'ont pas les outils pour se rendre visibles au bon moment, au bon endroit, auprès des bonnes personnes.</p>
-            <div class="solution-arrow" aria-hidden="true">→</div>
-            <p class="solution-desc">Porto Flow connecte l'offre locale à la demande en temps réel, avec une logique de recommandation contextuelle et de mise en avant dynamique.</p>
-          </div>
-        </article>
-
-        <article class="problem-item" aria-labelledby="prob-4-title">
-          <div class="problem-item__visual" aria-hidden="true">
-            <div class="problem-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <circle cx="14" cy="10" r="4" stroke="#D86F3C" stroke-width="1.5" fill="none"/>
-                <path d="M6 22 C6 18 9.5 15 14 15 C18.5 15 22 18 22 22" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-                <path d="M20 8 L24 8 M22 6 L22 10" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="problem-item__content">
-            <h3 id="prob-4-title">L'absence de pilotage territorial</h3>
-            <p class="problem-desc">Les collectivités manquent d'outils de lecture en temps réel. Les décisions se prennent sur des données obsolètes, sans vision dynamique du territoire.</p>
-            <div class="solution-arrow" aria-hidden="true">→</div>
-            <p class="solution-desc">Porto Flow offre un tableau de bord territorial aux décideurs, avec des indicateurs vivants pour piloter le territoire avec précision.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Cas d'Usage -->
-  <section class="cas-usage" aria-labelledby="cas-usage-title">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="cas-usage-title" class="section-title">Porto Flow en action</h2>
-        <p class="section-subtitle">Des situations concrètes, vécues chaque jour sur le territoire, transformées par l'intelligence de Porto Flow.</p>
-      </div>
-
-      <div class="cas-usage-list">
-
-        <article class="cas-item" aria-labelledby="cas-1-title">
-          <div class="cas-item__number" aria-hidden="true">01</div>
-          <div class="cas-item__content">
-            <div class="cas-item__context">
-              <span class="cas-tag">Visiteur · Haute saison</span>
-              <h3 id="cas-1-title">La famille qui arrive sans plan</h3>
-            </div>
-            <div class="cas-item__scenario">
-              <div class="scenario-before">
-                <span class="scenario-label">Avant Porto Flow</span>
-                <p>Une famille débarque à Porto-Vecchio en juillet. Elle cherche une plage accessible avec des enfants, un restaurant ouvert le midi, et un parking disponible. Elle passe deux heures à chercher, se retrouve sur une plage bondée, mange dans un fast-food faute de mieux.</p>
-              </div>
-              <div class="scenario-divider" aria-hidden="true">
-                <span class="divider-icon">⟶</span>
-              </div>
-              <div class="scenario-after">
-                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
-                <p>L'assistant IA détecte leur profil, suggère la plage de Palombaggia Nord moins fréquentée à cette heure, indique un parking disponible à 200m, réserve une table chez un restaurateur partenaire avec vue mer. Expérience mémorable, retour garanti.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cas-item" aria-labelledby="cas-2-title">
-          <div class="cas-item__number" aria-hidden="true">02</div>
-          <div class="cas-item__content">
-            <div class="cas-item__context">
-              <span class="cas-tag">Restaurateur · Toute l'année</span>
-              <h3 id="cas-2-title">Le restaurateur qui veut remplir ses tables</h3>
-            </div>
-            <div class="cas-item__scenario">
-              <div class="scenario-before">
-                <span class="scenario-label">Avant Porto Flow</span>
-                <p>Un restaurateur du centre-ville voit ses tables vides le mardi soir alors que des centaines de visiteurs cherchent où dîner. Il n'a aucun moyen de se signaler en temps réel, aucun outil pour attirer les bonnes personnes au bon moment.</p>
-              </div>
-              <div class="scenario-divider" aria-hidden="true">
-                <span class="divider-icon">⟶</span>
-              </div>
-              <div class="scenario-after">
-                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
-                <p>Il publie une offre flash sur Porto Flow : "5 tables disponibles ce soir, menu spécial poisson local". L'IA la pousse aux visiteurs dans un rayon de 2km cherchant un restaurant. Ses tables se remplissent en 30 minutes.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cas-item" aria-labelledby="cas-3-title">
-          <div class="cas-item__number" aria-hidden="true">03</div>
-          <div class="cas-item__content">
-            <div class="cas-item__context">
-              <span class="cas-tag">Collectivité · Gestion de crise</span>
-              <h3 id="cas-3-title">La mairie face à une saturation imprévue</h3>
-            </div>
-            <div class="cas-item__scenario">
-              <div class="scenario-before">
-                <span class="scenario-label">Avant Porto Flow</span>
-                <p>Un samedi de juillet, la plage de Santa Giulia atteint sa capacité maximale. Des centaines de voitures cherchent à se garer, la route est bloquée sur 3km. La mairie apprend la situation par des appels de riverains excédés, deux heures après le début de l'engorgement.</p>
-              </div>
-              <div class="scenario-divider" aria-hidden="true">
-                <span class="divider-icon">⟶</span>
-              </div>
-              <div class="scenario-after">
-                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
-                <p>Le tableau de bord territorial détecte la montée en charge dès 9h. Une alerte est envoyée aux équipes. Porto Flow redirige automatiquement les visiteurs vers des plages alternatives. La saturation est évitée, la décision est prise en 10 minutes.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="cas-item" aria-labelledby="cas-4-title">
-          <div class="cas-item__number" aria-hidden="true">04</div>
-          <div class="cas-item__content">
-            <div class="cas-item__context">
-              <span class="cas-tag">Habitant · Hors saison</span>
-              <h3 id="cas-4-title">L'habitant qui redécouvre son territoire</h3>
-            </div>
-            <div class="cas-item__scenario">
-              <div class="scenario-before">
-                <span class="scenario-label">Avant Porto Flow</span>
-                <p>En novembre, un habitant de Porto-Vecchio cherche une activité pour le week-end. Il ne sait pas quels commerces sont ouverts, quels événements ont lieu, quels sentiers sont praticables. L'information hors saison est quasi inexistante.</p>
-              </div>
-              <div class="scenario-divider" aria-hidden="true">
-                <span class="divider-icon">⟶</span>
-              </div>
-              <div class="scenario-after">
-                <span class="scenario-label scenario-label--after">Avec Porto Flow</span>
-                <p>Porto Flow lui propose un programme personnalisé : marché de producteurs locaux samedi matin, randonnée sur le sentier des douaniers l'après-midi, concert au village le soir. Le territoire vit toute l'année, pas seulement en été.</p>
-              </div>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Publics Ciblés -->
-  <section class="publics-cibles" aria-labelledby="publics-title">
-    <div class="container">
-      <div class="section-header">
-        <h2 id="publics-title" class="section-title">Un outil pour chaque acteur du territoire</h2>
-        <p class="section-subtitle">Porto Flow n'est pas une application généraliste. Chaque public trouve une valeur spécifique, conçue pour ses besoins réels.</p>
-      </div>
-
-      <div class="publics-grid">
-
-        <article class="public-card" aria-labelledby="public-visiteurs-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <circle cx="18" cy="12" r="5" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M8 30 C8 24 12.5 20 18 20 C23.5 20 28 24 28 30" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-              <path d="M24 10 L28 10 M26 8 L26 12" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-visiteurs-title">Visiteurs & Touristes</h3>
-            <p class="public-card__desc">Découverte fluide du territoire, recommandations personnalisées, navigation en temps réel, réservations simplifiées.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les visiteurs">
-              <li>Carte interactive intelligente</li>
-              <li>Assistant IA multilingue</li>
-              <li>Alertes saturation en temps réel</li>
-              <li>Découverte de l'offre locale</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Usage principal</span>
-          </div>
-        </article>
-
-        <article class="public-card" aria-labelledby="public-habitants-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <path d="M18 6 L30 16 L30 30 L6 30 L6 16 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
-              <rect x="14" y="20" width="8" height="10" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-              <path d="M12 16 L18 10 L24 16" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-habitants-title">Habitants permanents</h3>
-            <p class="public-card__desc">Vie locale enrichie toute l'année, accès aux services, événements de proximité, lien avec le tissu local.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les habitants">
-              <li>Agenda local dynamique</li>
-              <li>Services de proximité</li>
-              <li>Alerte événements communautaires</li>
-              <li>Réseau de producteurs locaux</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Toute l'année</span>
-          </div>
-        </article>
-
-        <article class="public-card" aria-labelledby="public-commercants-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <path d="M6 14 L8 8 L28 8 L30 14 L6 14 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M6 14 L6 28 L30 28 L30 14" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M14 28 L14 20 L22 20 L22 28" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-commercants-title">Commerçants & Restaurateurs</h3>
-            <p class="public-card__desc">Visibilité augmentée, gestion des flux clients, offres flash, tableau de bord de performance locale.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les commerçants">
-              <li>Profil établissement enrichi</li>
-              <li>Offres et promotions en temps réel</li>
-              <li>Statistiques de visibilité</li>
-              <li>Connexion avec les visiteurs</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Partenaire économique</span>
-          </div>
-        </article>
-
-        <article class="public-card" aria-labelledby="public-hoteliers-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <rect x="6" y="10" width="24" height="18" rx="2" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M6 18 L30 18" stroke="#8FC7DA" stroke-width="1" opacity="0.5"/>
-              <rect x="10" y="14" width="4" height="3" rx="0.5" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-              <rect x="22" y="14" width="4" height="3" rx="0.5" stroke="#8FC7DA" stroke-width="1" fill="none"/>
-              <path d="M18 10 L18 6 M14 6 L22 6" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-hoteliers-title">Hôteliers & Hébergeurs</h3>
-            <p class="public-card__desc">Enrichissement de l'expérience client, services concierge augmentés, recommandations personnalisées pour les séjours.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les hôteliers">
-              <li>Intégration concierge digital</li>
-              <li>Recommandations pour les clients</li>
-              <li>Partenariats avec acteurs locaux</li>
-              <li>Données de satisfaction</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Partenaire premium</span>
-          </div>
-        </article>
-
-        <article class="public-card" aria-labelledby="public-collectivites-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <path d="M18 4 L32 12 L32 14 L4 14 L4 12 Z" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M8 14 L8 28 M14 14 L14 28 M22 14 L22 28 M28 14 L28 28" stroke="#8FC7DA" stroke-width="1" opacity="0.6"/>
-              <path d="M4 28 L32 28" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-collectivites-title">Collectivités & Mairie</h3>
-            <p class="public-card__desc">Tableau de bord territorial, pilotage des flux, données de fréquentation, aide à la décision en temps réel.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les collectivités">
-              <li>Dashboard territorial temps réel</li>
-              <li>Alertes de saturation</li>
-              <li>Données de fréquentation</li>
-              <li>Outils de communication citoyenne</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Partenaire institutionnel</span>
-          </div>
-        </article>
-
-        <article class="public-card" aria-labelledby="public-offices-title">
-          <div class="public-card__icon" aria-hidden="true">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-              <circle cx="18" cy="18" r="12" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
-              <path d="M18 6 L18 30 M6 18 L30 18" stroke="#8FC7DA" stroke-width="1" opacity="0.4"/>
-              <path d="M10 10 C12 14 16 16 18 18 C20 20 24 22 26 26" stroke="#8FC7DA" stroke-width="1" fill="none" opacity="0.6"/>
-              <circle cx="18" cy="18" r="2" fill="#D86F3C"/>
-            </svg>
-          </div>
-          <div class="public-card__content">
-            <h3 id="public-offices-title">Offices de Tourisme</h3>
-            <p class="public-card__desc">Amplification de la promotion territoriale, données de fréquentation, mise en valeur de l'offre touristique locale.</p>
-            <ul class="public-card__benefits" aria-label="Bénéfices pour les offices de tourisme">
-              <li>Promotion territoriale augmentée</li>
-              <li>Données visiteurs anonymisées</li>
-              <li>Mise en avant des événements</li>
-              <li>Partenariats avec acteurs locaux</li>
-            </ul>
-          </div>
-          <div class="public-card__tag">
-            <span class="tag-badge">Partenaire stratégique</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Enjeux Environnementaux -->
-  <section class="enjeux-environnement" aria-labelledby="enjeux-title">
-    <div class="container">
-      <div class="enjeux-inner">
-        <div class="enjeux-content">
-          <div class="section-header section-header--left">
-            <h2 id="enjeux-title" class="section-title">Un territoire à préserver</h2>
-            <p class="section-subtitle">Porto-Vecchio est un joyau naturel fragile. Porto Flow intègre une dimension environnementale au cœur de sa logique territoriale.</p>
-          </div>
-          <div class="enjeux-list">
-            <div class="enjeu-item">
-              <div class="enjeu-item__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2 C12 2 4 8 4 14 C4 18.4 7.6 22 12 22 C16.4 22 20 18.4 20 14 C20 8 12 2 12 2Z" stroke="#1F6F8B" stroke-width="1.5" fill="none"/>
-                  <path d="M12 22 L12 12 M12 12 L8 8 M12 12 L16 9" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="enjeu-item__text">
-                <h4>Réduction de la pression sur les sites naturels</h4>
-                <p>En redistribuant les flux, Porto Flow protège les écosystèmes fragiles des plages et du maquis corse.</p>
-              </div>
-            </div>
-            <div class="enjeu-item">
-              <div class="enjeu-item__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="9" stroke="#1F6F8B" stroke-width="1.5" fill="none"/>
-                  <path d="M8 12 L11 15 L16 9" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="enjeu-item__text">
-                <h4>Mobilité douce et alternatives à la voiture</h4>
-                <p>Porto Flow valorise les modes de déplacement alternatifs, les navettes, les pistes cyclables et les sentiers pédestres.</p>
-              </div>
-            </div>
-            <div class="enjeu-item">
-              <div class="enjeu-item__icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M3 12 C3 7 7 3 12 3 C17 3 21 7 21 12" stroke="#1F6F8B" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-                  <path d="M3 12 C3 17 7 21 12 21 C17 21 21 17 21 12" stroke="#1F6F8B" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-                  <path d="M12 7 L12 12 L15 15" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="enjeu-item__text">
-                <h4>Tourisme durable et économie circulaire</h4>
-                <p>En connectant visiteurs et producteurs locaux, Porto Flow favorise une économie territoriale plus vertueuse et moins dépendante des grandes plateformes.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="enjeux-visual" aria-hidden="true">
-          <div class="enjeux-map-container">
-            <div class="enjeux-map-bg"></div>
-            <div class="enjeux-map-overlay">
-              <div class="map-point map-point--1">
-                <span class="map-point__dot"></span>
-                <span class="map-point__label">Plages protégées</span>
-              </div>
-              <div class="map-point map-point--2">
-                <span class="map-point__dot"></span>
-                <span class="map-point__label">Maquis corse</span>
-              </div>
-              <div class="map-point map-point--3">
-                <span class="map-point__dot"></span>
-                <span class="map-point__label">Zones naturelles</span>
-              </div>
-              <div class="map-point map-point--4">
-                <span class="map-point__dot map-point__dot--active"></span>
-                <span class="map-point__label">Porto-Vecchio</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section CTA Territoire -->
-  <section class="territoire-cta" aria-labelledby="territoire-cta-title">
-    <div class="container">
-      <div class="territoire-cta__inner">
-        <div class="territoire-cta__content">
-          <h2 id="territoire-cta-title" class="territoire-cta__title">
-            Prêt à explorer Porto Flow en détail ?
-          </h2>
-          <p class="territoire-cta__text">
-            Découvrez l'application, l'écosystème économique et la vision d'ingénierie qui font de Porto Flow un projet unique.
+          <h1 id="territoire-hero-title" class="territoire-hero__title">
+            Porto-Vecchio,<br>
+            <em>un territoire à deux vitesses</em>
+          </h1>
+          <p class="territoire-hero__subtitle">
+            Une micro-région insulaire d'exception, traversée chaque année par une vague humaine qui transforme radicalement ses besoins, ses flux et ses tensions. Porto Flow est conçu pour lire ce territoire en temps réel, quelle que soit la saison.
           </p>
-          <div class="territoire-cta__actions">
-            <a href="application.html" class="btn btn--primary" aria-label="Découvrir l'application Porto Flow">
-              <span>Voir l'application</span>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M3 8 L13 8 M9 4 L13 8 L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <div class="territoire-hero__stats" role="list" aria-label="Chiffres clés du territoire">
+            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="100">
+              <span class="stat-card__number">15 000</span>
+              <span class="stat-card__label">habitants permanents</span>
+            </div>
+            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="200">
+              <span class="stat-card__number">+200 000</span>
+              <span class="stat-card__label">visiteurs en haute saison</span>
+            </div>
+            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="300">
+              <span class="stat-card__number">×13</span>
+              <span class="stat-card__label">pic de population estival</span>
+            </div>
+            <div class="stat-card" role="listitem" data-animate="fade-up" data-delay="400">
+              <span class="stat-card__number">3 mois</span>
+              <span class="stat-card__label">de tension maximale</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="territoire-hero__scroll" aria-hidden="true">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
+          <rect x="1" y="1" width="14" height="18" rx="7" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="8" cy="7" r="2" fill="currentColor"/>
+        </svg>
+        <span>Défiler</span>
+      </div>
+    </section>
+
+    <!-- ── DEUX RYTHMES ── -->
+    <section class="deux-rythmes" aria-labelledby="deux-rythmes-title">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 id="deux-rythmes-title" class="section-title">Un territoire, deux réalités</h2>
+          <p class="section-subtitle">Porto-Vecchio n'est pas un territoire ordinaire. Il vit une dualité permanente entre calme insulaire et effervescence méditerranéenne.</p>
+        </div>
+
+        <div class="rythmes-grid" style="margin-top: 56px;">
+
+          <!-- Hors saison -->
+          <article class="rythme-card rythme-card--calme" aria-labelledby="rythme-calme-title" data-animate="fade-up" data-delay="100">
+            <div class="rythme-card__header">
+              <div class="rythme-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <circle cx="14" cy="14" r="10" stroke="#8FC7DA" stroke-width="1.5" fill="none"/>
+                  <path d="M14 8 L14 14 L18 18" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="rythme-card__season">
+                <span class="season-tag season-tag--calme">Octobre → Mai</span>
+                <h3 id="rythme-calme-title">Porto-Vecchio au repos</h3>
+              </div>
+            </div>
+            <div class="rythme-card__body">
+              <p>Le territoire retrouve son souffle. Les habitants permanents reprennent possession de leur espace. Les commerces tournent au ralenti, les services publics fonctionnent à régime normal, les routes sont fluides.</p>
+              <ul class="rythme-card__list" aria-label="Caractéristiques hors saison">
+                <li>
+                  <span class="list-icon" aria-hidden="true">◦</span>
+                  Économie locale fragilisée, dépendance aux revenus estivaux
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◦</span>
+                  Services sous-utilisés, offre culturelle et commerciale réduite
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◦</span>
+                  Habitants isolés, mobilité contrainte par l'insularité
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◦</span>
+                  Opportunité de structuration et d'anticipation territoriale
+                </li>
+              </ul>
+            </div>
+            <div class="rythme-card__footer">
+              <div class="rythme-indicator rythme-indicator--low">
+                <span class="indicator-bar" style="--level: 20%"></span>
+                <span class="indicator-label">Intensité territoriale faible</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Haute saison -->
+          <article class="rythme-card rythme-card--intense" aria-labelledby="rythme-intense-title" data-animate="fade-up" data-delay="200">
+            <div class="rythme-card__header">
+              <div class="rythme-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <circle cx="14" cy="14" r="5" fill="#D86F3C" opacity="0.3"/>
+                  <circle cx="14" cy="14" r="2.5" fill="#D86F3C"/>
+                  <path d="M14 4 L14 7 M14 21 L14 24 M4 14 L7 14 M21 14 L24 14" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M7 7 L9.2 9.2 M18.8 18.8 L21 21 M7 21 L9.2 18.8 M18.8 9.2 L21 7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="rythme-card__season">
+                <span class="season-tag season-tag--intense">Juin → Septembre</span>
+                <h3 id="rythme-intense-title">Porto-Vecchio sous tension</h3>
+              </div>
+            </div>
+            <div class="rythme-card__body">
+              <p>Le territoire explose. En quelques semaines, la population est multipliée par treize. Les infrastructures atteignent leurs limites, les flux deviennent ingérables, l'information se fragmente et les tensions montent.</p>
+              <ul class="rythme-card__list" aria-label="Caractéristiques haute saison">
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                  Saturation des axes routiers, embouteillages chroniques
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                  Plages et sites naturels surpeuplés, pression environnementale
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                  Visiteurs désorientés, manque d'information en temps réel
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">◦</span>
+                  Commerçants débordés, coordination impossible entre acteurs
+                </li>
+              </ul>
+            </div>
+            <div class="rythme-card__footer">
+              <div class="rythme-indicator rythme-indicator--high">
+                <span class="indicator-bar" style="--level: 95%"></span>
+                <span class="indicator-label">Intensité territoriale critique</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Bridge -->
+        <div class="rythmes-bridge" data-animate="fade-up">
+          <div class="bridge-line" aria-hidden="true"></div>
+          <div class="bridge-content">
+            <div class="bridge-icon" aria-hidden="true">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <circle cx="22" cy="22" r="18" stroke="#1F6F8B" stroke-width="1" fill="rgba(31,111,139,0.1)"/>
+                <path d="M13 22 C13 17 17 13 22 13 C27 13 31 17 31 22 C31 27 27 31 22 31 C17 31 13 27 13 22Z" stroke="#8FC7DA" stroke-width="0.8" fill="none" stroke-dasharray="3 2"/>
+                <circle cx="22" cy="22" r="4" fill="#1F6F8B"/>
+                <path d="M22 19 L22 22 L25 22" stroke="#FAF6EC" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
-            </a>
-            <a href="ecosysteme.html" class="btn btn--secondary" aria-label="Découvrir l'écosystème Porto Flow">
-              <span>L'écosystème local</span>
-            </a>
+            </div>
+            <p class="bridge-text">Porto Flow lit le territoire en continu, s'adapte à chaque rythme et transforme la complexité saisonnière en intelligence partagée.</p>
           </div>
-        </div>
-        <div class="territoire-cta__decoration" aria-hidden="true">
-          <div class="cta-compass">
-            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-              <circle cx="60" cy="60" r="55" stroke="#1F6F8B" stroke-width="0.5" opacity="0.3"/>
-              <circle cx="60" cy="60" r="40" stroke="#1F6F8B" stroke-width="0.5" opacity="0.2"/>
-              <circle cx="60" cy="60" r="25" stroke="#1F6F8B" stroke-width="0.5" opacity="0.15"/>
-              <path d="M60 10 L60 110 M10 60 L110 60" stroke="#1F6F8B" stroke-width="0.5" opacity="0.2"/>
-              <path d="M60 20 L65 60 L60 100 L55 60 Z" fill="#D86F3C" opacity="0.8"/>
-              <path d="M20 60 L60 55 L100 60 L60 65 Z" fill="#8FC7DA" opacity="0.6"/>
-              <circle cx="60" cy="60" r="4" fill="#FAF6EC"/>
-              <text x="60" y="8" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">N</text>
-              <text x="60" y="116" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">S</text>
-              <text x="6" y="63" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">O</text>
-              <text x="114" y="63" text-anchor="middle" fill="#8FC7DA" font-size="8" opacity="0.6">E</text>
-            </svg>
-          </div>
+          <div class="bridge-line" aria-hidden="true"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <!-- ── FLUX TERRITOIRE ── -->
+    <section class="flux-territoire" aria-labelledby="flux-title">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 id="flux-title" class="section-title">Les flux du territoire en temps réel</h2>
+          <p class="section-subtitle">Porto Flow surveille et optimise six dimensions clés du territoire, de la route à la plage, du parking aux événements.</p>
+        </div>
 
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo" aria-label="Porto Flow - Retour à l'accueil">
-          <span class="footer-logo__mark" aria-hidden="true">◈</span>
-          <span class="footer-logo__name">Porto Flow</span>
-        </a>
-        <p class="footer-tagline">Le système nerveux numérique de Porto-Vecchio.</p>
-      </div>
-      <nav class="footer-nav" aria-label="Navigation secondaire">
-        <ul class="footer-nav__list" role="list">
-          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
-          <li><a href="territoire.html" class="footer-nav__link footer-nav__link--active" aria-current="page">Territoire</a></li>
-          <li><a href="application.html" class="footer-nav__link">Application</a></li>
-          <li><a href="ecosysteme.html" class="footer-nav__link">Écosystème</a></li>
-          <li><a href="ingenierie.html" class="footer-nav__link">Ingénierie</a></li>
-        </ul>
-      </nav>
-      <div class="footer-meta">
-        <p class="footer-copyright">
-          <span aria-hidden="true">©</span> 2024 Porto Flow. Tous droits réservés.
-        </p>
-        <p class="footer-location">
-          <span aria-hidden="true">◦</span> Porto-Vecchio, Corse-du-Sud
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
+        <div class="flux-grid">
 
-<button class="back-to-top" id="backToTop" aria-label="Retour en haut de page" hidden>
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <path d="M10 16 L10 4 M4 10 L10 4 L16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</button>
+          <article class="flux-card flux-card--routes" aria-labelledby="flux-routes-title" data-animate="fade-up" data-delay="50">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-label="Routes">🛣️</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--warn" aria-hidden="true"></span>
+                <span class="status-warn">Modéré</span>
+              </div>
+            </div>
+            <h3 id="flux-routes-title" class="flux-card__title">Trafic routier</h3>
+            <p class="flux-card__desc">Surveillance des axes principaux, détection des bouchons, suggestions d'itinéraires alternatifs en temps réel.</p>
+            <div class="flux-card__meter">
+              <div class="meter-bar"><div class="meter-fill" style="--fill: 62%"></div></div>
+              <div class="meter-labels"><span>Fluide</span><span>62%</span><span>Saturé</span></div>
+            </div>
+          </article>
 
-<script src="script.js"></script>
-</body>
-</html>
+          <article class="flux-card flux-card--plages" aria-labelledby="flux-plages-title" data-animate="fade-up" data-delay="100">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-label="Plages">🏖️</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--alert" aria-hidden="true"></span>
+                <span class="status-alert">Saturé</span>
+              </div>
+            </div>
