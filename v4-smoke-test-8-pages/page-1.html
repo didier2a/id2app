@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Présentation du test rapide V4 et ses objectifs." />
+  <title>Présentation - V4 Smoke Test</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Accueil V4 Smoke Test">
+        V4 Smoke Test
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-1.html" class="nav-link nav-link--active" aria-current="page">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-2.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-3.html" class="nav-link">Méthode</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-4.html" class="nav-link">Équipe</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-5.html" class="nav-link">Références</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-6.html" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="page-7.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <h1 id="page-heading" class="page-hero__title">Présentation du test rapide V4</h1>
+        <p class="page-hero__subtitle">
+          Découvrez les objectifs et le périmètre du workflow ID2App V4 à travers ce micro-site de validation.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section" aria-label="Objectifs du test V4">
+      <div class="container">
+        <div class="content-block">
+          <h2 class="content-block__title">Pourquoi ce test ?</h2>
+          <p class="content-block__text">
+            Le micro-site V4 Smoke Test a été conçu pour valider rapidement l'ensemble du workflow ID2App V4 dans des conditions réelles. Il couvre la génération de pages HTML statiques, la cohérence de la navigation, l'intégration des styles et des scripts, ainsi que la compatibilité avec GitHub Pages.
+          </p>
+          <p class="content-block__text">
+            Chaque page de ce site représente un segment du workflow : de la spécification initiale jusqu'au déploiement final. L'objectif est de détecter les points de friction et de garantir une expérience fluide pour les développeurs, testeurs et équipes produit.
+          </p>
+        </div>
+
+        <div class="content-grid">
+          <article class="card" aria-label="Objectif 1">
+            <div class="card__icon" aria-hidden="true">✓</div>
+            <h3 class="card__title">Validation du workflow</h3>
+            <p class="card__text">Tester chaque étape du pipeline ID2App V4 de bout en bout, sans dépendance externe.</p>
+          </article>
+          <article class="card" aria-label="Objectif 2">
+            <div class="card__icon" aria-hidden="true">⚡</div>
+            <h3 class="card__title">Rapidité d'exécution</h3>
+            <p class="card__text">Générer un site complet en un minimum de cycles, avec un résultat immédiatement déployable.</p>
+          </article>
+          <article class="card" aria-label="Objectif 3">
+            <div class="card__icon" aria-hidden="true">♿</div>
+            <h3 class="card__title">Accessibilité et qualité</h3>
+            <p class="card__text">Respecter les standards HTML5 sémantiques, l'accessibilité ARIA et la compatibilité multi-navigateurs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Appel à l'action">
+      <div class="container cta-section__inner">
+        <p class="cta-section__text">Prêt à explorer ce que nous proposons concrètement ?</p>
+        <a href="page-2.html" class="btn btn--primary">
+          Voir les services
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; 2024 V4 Smoke Test 8 Pages — Micro-site de validation ID2App V4
+      </p>
+      <nav aria-label="Navigation de pied de page">
+        <ul class="footer-nav">
+          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
+          <li><a href="page-7.html" class="footer-nav__link">Contact</a></li>
+          <li><a href="page-6.html" class="footer-nav__link">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
