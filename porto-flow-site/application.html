@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Porto Flow — Application mobile intelligente pour explorer Porto-Vecchio en temps réel. Carte interactive, assistant IA, trafic, parkings, événements." />
+  <meta name="description" content="Porto Flow — Application mobile intelligente pour explorer Porto-Vecchio en temps réel. Carte interactive, assistant IA, trafic, parkings, événements, photos locales." />
   <title>Application — Porto Flow</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -38,6 +38,8 @@
         </ul>
       </nav>
 
+      <a href="application.html" class="btn btn--primary btn--sm header-cta" aria-label="Découvrir l'application Porto Flow">Découvrir l'application</a>
+
       <button class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
         <span class="burger-bar"></span>
         <span class="burger-bar"></span>
@@ -51,36 +53,59 @@
   <main id="main-content">
 
     <!-- ═══════════════════════════════════════════
-         HERO APPLICATION
+         HERO APPLICATION — PHOTO LOCALE
     ═══════════════════════════════════════════ -->
-    <section class="app-hero">
-      <div class="app-hero__bg" aria-hidden="true">
-        <svg class="app-hero__bg-svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+    <section class="app-hero app-hero--photo">
+      <div class="app-hero__photo-bg" aria-hidden="true">
+        <!-- Emplacement prévu pour assets/images/dashboard-local.jpg -->
+        <img
+          src="assets/images/dashboard-local.jpg"
+          alt=""
+          class="app-hero__photo-img"
+          onerror="this.style.display='none'"
+          aria-hidden="true"
+        />
+        <div class="app-hero__photo-overlay"></div>
+        <!-- Fallback SVG animé -->
+        <svg class="app-hero__bg-svg" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
           <defs>
             <radialGradient id="heroGradApp" cx="60%" cy="40%" r="70%">
               <stop offset="0%" stop-color="#0B2A3D" stop-opacity="1"/>
               <stop offset="100%" stop-color="#061520" stop-opacity="1"/>
             </radialGradient>
             <radialGradient id="heroGlowApp" cx="70%" cy="30%" r="50%">
-              <stop offset="0%" stop-color="#1F6F8B" stop-opacity="0.18"/>
+              <stop offset="0%" stop-color="#1F6F8B" stop-opacity="0.22"/>
+              <stop offset="100%" stop-color="#061520" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="heroGlowOrange" cx="20%" cy="70%" r="40%">
+              <stop offset="0%" stop-color="#D86F3C" stop-opacity="0.12"/>
               <stop offset="100%" stop-color="#061520" stop-opacity="0"/>
             </radialGradient>
           </defs>
           <rect width="1440" height="700" fill="url(#heroGradApp)"/>
           <rect width="1440" height="700" fill="url(#heroGlowApp)"/>
+          <rect width="1440" height="700" fill="url(#heroGlowOrange)"/>
           <path d="M0,350 Q200,280 400,320 T800,300 T1200,330 T1440,310 L1440,700 L0,700Z" fill="#0D3349" opacity="0.5"/>
           <path d="M0,420 Q300,360 600,400 T1100,380 T1440,400 L1440,700 L0,700Z" fill="#0A2535" opacity="0.6"/>
-          <circle cx="900" cy="200" r="300" fill="#1F6F8B" opacity="0.07"/>
-          <circle cx="200" cy="500" r="200" fill="#D86F3C" opacity="0.05"/>
-          <path d="M0,200 Q360,140 720,200 T1440,190" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.2"/>
-          <path d="M0,280 Q400,200 800,260 T1440,250" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.14"/>
-          <path d="M0,450 Q300,390 700,430 T1440,420" stroke="#1F6F8B" stroke-width="0.6" fill="none" opacity="0.1"/>
-          <!-- Grid lines -->
+          <circle cx="900" cy="200" r="300" fill="#1F6F8B" opacity="0.08"/>
+          <circle cx="200" cy="500" r="200" fill="#D86F3C" opacity="0.06"/>
+          <path d="M0,200 Q360,140 720,200 T1440,190" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.25"/>
+          <path d="M0,280 Q400,200 800,260 T1440,250" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.18"/>
+          <path d="M0,450 Q300,390 700,430 T1440,420" stroke="#1F6F8B" stroke-width="0.6" fill="none" opacity="0.12"/>
           <line x1="0" y1="0" x2="0" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
           <line x1="360" y1="0" x2="360" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
           <line x1="720" y1="0" x2="720" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
           <line x1="1080" y1="0" x2="1080" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
           <line x1="1440" y1="0" x2="1440" y2="700" stroke="#1F6F8B" stroke-width="0.3" opacity="0.08"/>
+          <!-- Données visuelles dashboard -->
+          <rect x="900" y="120" width="420" height="260" rx="12" fill="#0D2B3E" opacity="0.55"/>
+          <rect x="920" y="140" width="180" height="80" rx="8" fill="#1F6F8B" opacity="0.3"/>
+          <rect x="1110" y="140" width="190" height="80" rx="8" fill="#D86F3C" opacity="0.2"/>
+          <rect x="920" y="235" width="380" height="6" rx="3" fill="#1F6F8B" opacity="0.2"/>
+          <rect x="920" y="255" width="280" height="6" rx="3" fill="#8FC7DA" opacity="0.15"/>
+          <rect x="920" y="275" width="340" height="6" rx="3" fill="#1F6F8B" opacity="0.18"/>
+          <circle cx="940" cy="158" r="18" fill="#D86F3C" opacity="0.5"/>
+          <circle cx="1130" cy="158" r="18" fill="#1F6F8B" opacity="0.5"/>
         </svg>
       </div>
 
@@ -94,7 +119,7 @@
               <span class="app-hero__title-accent">dans votre poche</span>
             </h1>
             <p class="app-hero__subtitle">
-              Une application pensée pour le territoire, conçue pour l'humain. Trafic, parkings, événements, recommandations locales — tout en temps réel, tout en un.
+              Une application pensée pour le territoire portovecchien, conçue pour l'humain. Trafic, parkings, événements, recommandations locales — tout en temps réel, tout en un. De la plage de Palombaggia à la Citadelle génoise.
             </p>
             <div class="app-hero__pills">
               <div class="hero-pill">
@@ -112,6 +137,10 @@
               <div class="hero-pill">
                 <span class="hero-pill__icon">🗺️</span>
                 <span class="hero-pill__label">Carte multicouche</span>
+              </div>
+              <div class="hero-pill">
+                <span class="hero-pill__icon">📸</span>
+                <span class="hero-pill__label">Photos locales</span>
               </div>
             </div>
             <div class="app-hero__cta-row">
@@ -236,6 +265,144 @@
             <div class="app-stat-item__value">IA</div>
             <div class="app-stat-item__label">Copilote territorial intégré</div>
           </div>
+          <div class="app-stat-item" data-animate="fade-up" data-delay="400">
+            <div class="app-stat-item__value">📸</div>
+            <div class="app-stat-item__label">Galerie locale Porto-Vecchio</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         VISUELS LOCAUX — AMBIANCE PORTOVECCHIENNE
+    ═══════════════════════════════════════════ -->
+    <section class="local-visuals section-padding section-padding--light">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-badge">Porto-Vecchio en images</span>
+          <h2 class="section-title">L'application au cœur du territoire</h2>
+          <p class="section-subtitle">Porto Flow s'ancre dans les réalités visuelles et géographiques du bassin portovecchien — mer, port, plages, relief, mobilité, économie locale.</p>
+        </div>
+
+        <div class="local-visuals__grid">
+
+          <div class="local-visual-card local-visual-card--large" data-animate="fade-up">
+            <div class="local-visual-card__img-wrap">
+              <!-- Emplacement prévu : assets/images/port-marina.jpg -->
+              <img
+                src="assets/images/port-marina.jpg"
+                alt="Port de plaisance de Porto-Vecchio — marina et bateaux"
+                class="local-visual-card__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=75"
+                alt="Port de plaisance méditerranéen — ambiance balnéaire"
+                class="local-visual-card__img local-visual-card__img--fallback"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="local-visual-card__overlay"></div>
+            </div>
+            <div class="local-visual-card__content">
+              <span class="local-visual-card__badge">📍 Marina</span>
+              <h3 class="local-visual-card__title">Port de plaisance</h3>
+              <p class="local-visual-card__desc">Affluence en temps réel, disponibilités amarrage, météo marine, restaurants du quai.</p>
+              <div class="local-visual-card__data">
+                <span class="data-pill data-pill--live">🔴 Animé</span>
+                <span class="data-pill">⚓ 340 anneaux</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="local-visual-card" data-animate="fade-up" data-delay="100">
+            <div class="local-visual-card__img-wrap">
+              <!-- Emplacement prévu : assets/images/plage-palombaggia.jpg -->
+              <img
+                src="assets/images/plage-palombaggia.jpg"
+                alt="Plage de Palombaggia — sable blanc et eau turquoise"
+                class="local-visual-card__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=75"
+                alt="Plage méditerranéenne — eau turquoise et sable blanc"
+                class="local-visual-card__img local-visual-card__img--fallback"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="local-visual-card__overlay"></div>
+            </div>
+            <div class="local-visual-card__content">
+              <span class="local-visual-card__badge">🏖️ Plage</span>
+              <h3 class="local-visual-card__title">Palombaggia</h3>
+              <p class="local-visual-card__desc">Affluence, parkings proches, qualité de l'eau, navettes.</p>
+              <div class="local-visual-card__data">
+                <span class="data-pill data-pill--busy">🟠 Très fréquentée</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="local-visual-card" data-animate="fade-up" data-delay="200">
+            <div class="local-visual-card__img-wrap">
+              <!-- Emplacement prévu : assets/images/santa-giulia.jpg -->
+              <img
+                src="assets/images/santa-giulia.jpg"
+                alt="Plage de Santa Giulia — lagune et pinède"
+                class="local-visual-card__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=75"
+                alt="Lagune méditerranéenne — eau calme et pinède"
+                class="local-visual-card__img local-visual-card__img--fallback"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="local-visual-card__overlay"></div>
+            </div>
+            <div class="local-visual-card__content">
+              <span class="local-visual-card__badge">🏖️ Plage</span>
+              <h3 class="local-visual-card__title">Santa Giulia</h3>
+              <p class="local-visual-card__desc">Lagune protégée, activités nautiques, restaurants de plage.</p>
+              <div class="local-visual-card__data">
+                <span class="data-pill data-pill--ok">🟢 Calme ce matin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="local-visual-card" data-animate="fade-up" data-delay="300">
+            <div class="local-visual-card__img-wrap">
+              <!-- Emplacement prévu : assets/images/route-littorale.jpg -->
+              <img
+                src="assets/images/route-littorale.jpg"
+                alt="Route littorale corse — vue mer et maquis"
+                class="local-visual-card__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75"
+                alt="Route côtière méditerranéenne — vue panoramique"
+                class="local-visual-card__img local-visual-card__img--fallback"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="local-visual-card__overlay"></div>
+            </div>
+            <div class="local-visual-card__content">
+              <span class="local-visual-card__badge">🚗 Mobilité</span>
+              <h3 class="local-visual-card__title">Route littorale</h3>
+              <p class="local-visual-card__desc">Trafic N198, alternatives, temps de trajet, alertes saisonnières.</p>
+              <div class="local-visual-card__data">
+                <span class="data-pill data-pill--live">🔴 Dense · +18 min</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -522,11 +689,21 @@
                 <span class="map-layer__name">Météo marine</span>
                 <span class="map-layer__toggle">OFF</span>
               </div>
+              <div class="map-layer">
+                <span class="map-layer__dot" style="background:#8FC7DA"></span>
+                <span class="map-layer__name">Photos locales</span>
+                <span class="map-layer__toggle">OFF</span>
+              </div>
             </div>
 
-            <a href="territoire.html" class="btn btn--outline btn--outline-light" style="margin-top:2rem;display:inline-flex">
-              Voir le territoire complet →
-            </a>
+            <div class="map-section__cta-row">
+              <a href="territoire.html" class="btn btn--outline btn--outline-light">
+                Voir le territoire complet →
+              </a>
+              <a href="#galerie-locale" class="btn btn--ghost btn--outline-light">
+                📸 Galerie locale →
+              </a>
+            </div>
           </div>
 
           <div class="map-section__visual" data-animate="fade-left">
@@ -550,34 +727,31 @@
                     </radialGradient>
                   </defs>
                   <rect width="520" height="360" fill="url(#mapBgSim)"/>
-                  <!-- Topo lines -->
                   <path d="M0,290 Q130,250 260,270 T520,260" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.2"/>
                   <path d="M0,270 Q100,230 260,250 T520,240" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.15"/>
                   <path d="M0,310 Q150,280 310,295 T520,285" stroke="#8FC7DA" stroke-width="0.8" fill="none" opacity="0.12"/>
                   <path d="M50,0 Q80,100 60,200 T80,360" stroke="#1F6F8B" stroke-width="0.8" fill="none" opacity="0.1"/>
                   <path d="M210,0 Q230,80 210,180 T230,360" stroke="#1F6F8B" stroke-width="0.8" fill="none" opacity="0.1"/>
-                  <!-- Roads -->
                   <path d="M0,180 Q130,168 260,180 T520,175" stroke="#D86F3C" stroke-width="3.5" fill="none" opacity="0.75"/>
                   <path d="M260,0 Q255,100 260,180 T265,360" stroke="#8FC7DA" stroke-width="2.5" fill="none" opacity="0.55"/>
                   <path d="M0,290 Q200,278 360,268 T520,290" stroke="#8FC7DA" stroke-width="1.5" fill="none" opacity="0.4"/>
                   <path d="M0,100 Q150,85 300,95 T520,90" stroke="#1F6F8B" stroke-width="1" fill="none" opacity="0.25"/>
-                  <!-- Parking markers -->
                   <circle cx="120" cy="165" r="11" fill="#1F6F8B" opacity="0.95"/>
                   <text x="120" y="169" text-anchor="middle" fill="white" font-size="9" font-weight="bold">P</text>
                   <circle cx="340" cy="195" r="11" fill="#D86F3C" opacity="0.95"/>
                   <text x="340" y="199" text-anchor="middle" fill="white" font-size="9" font-weight="bold">P</text>
                   <circle cx="80" cy="260" r="9" fill="#2ECC71" opacity="0.85"/>
                   <text x="80" y="264" text-anchor="middle" fill="white" font-size="8" font-weight="bold">P</text>
-                  <!-- Event markers -->
                   <circle cx="200" cy="135" r="9" fill="#F4E8D0" opacity="0.9"/>
                   <text x="200" y="139" text-anchor="middle" fill="#0B1F33" font-size="9">★</text>
                   <circle cx="400" cy="110" r="9" fill="#F4E8D0" opacity="0.9"/>
                   <text x="400" y="114" text-anchor="middle" fill="#0B1F33" font-size="9">★</text>
-                  <!-- User position -->
+                  <!-- Photo pin -->
+                  <circle cx="450" cy="220" r="9" fill="#8FC7DA" opacity="0.9"/>
+                  <text x="450" y="224" text-anchor="middle" fill="#0B1F33" font-size="9">📸</text>
                   <circle cx="260" cy="180" r="7" fill="#2ECC71"/>
                   <circle cx="260" cy="180" r="14" fill="#2ECC71" opacity="0.2"/>
                   <circle cx="260" cy="180" r="22" fill="#2ECC71" opacity="0.08"/>
-                  <!-- Labels -->
                   <text x="75" y="205" fill="#8FC7DA" font-size="9" opacity="0.85">Citadelle</text>
                   <text x="310" y="245" fill="#8FC7DA" font-size="9" opacity="0.85">Marina</text>
                   <text x="400" y="155" fill="#8FC7DA" font-size="9" opacity="0.85">Plages</text>
@@ -599,6 +773,7 @@
                   <span class="map-legend-dot" style="background:#D86F3C"></span><span>Trafic</span>
                   <span class="map-legend-dot" style="background:#1F6F8B"></span><span>Parking</span>
                   <span class="map-legend-dot" style="background:#2ECC71"></span><span>Vous</span>
+                  <span class="map-legend-dot" style="background:#8FC7DA"></span><span>Photos</span>
                 </div>
               </div>
             </div>
@@ -707,6 +882,13 @@
                 </div>
               </div>
               <div class="ai-capability" data-animate="fade-up" data-delay="400">
+                <div class="ai-capability__icon">📸</div>
+                <div class="ai-capability__content">
+                  <h4>Enrichissement photo local</h4>
+                  <p>Les photos locales ajoutées par la communauté enrichissent les recommandations et la carte.</p>
+                </div>
+              </div>
+              <div class="ai-capability" data-animate="fade-up" data-delay="500">
                 <div class="ai-capability__icon">🔒</div>
                 <div class="ai-capability__content">
                   <h4>Respect de la vie privée</h4>
@@ -758,209 +940,4 @@
           </div>
           <div class="question-card" data-animate="fade-up" data-delay="500">
             <div class="question-card__q">"Quels artisans locaux proposent des produits corses authentiques ?"</div>
-            <div class="question-card__a">Porto Flow référence les producteurs et artisans locaux avec leurs horaires, localisation et spécialités.</div>
-            <div class="question-card__tag">🧀 Local</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         PARCOURS UTILISATEUR
-    ═══════════════════════════════════════════ -->
-    <section class="user-journey section-padding section-padding--dark">
-      <div class="container">
-        <div class="section-header" data-animate="fade-up">
-          <span class="section-badge section-badge--light">Parcours utilisateur</span>
-          <h2 class="section-title section-title--light">De l'arrivée à l'expérience complète</h2>
-          <p class="section-subtitle section-subtitle--light">Porto Flow accompagne chaque étape de votre séjour à Porto-Vecchio, du premier instant à la dernière impression.</p>
-        </div>
-
-        <div class="journey-steps">
-
-          <div class="journey-step" data-animate="fade-up">
-            <div class="journey-step__number">01</div>
-            <div class="journey-step__content">
-              <div class="journey-step__visual">
-                <div class="phone-mockup phone-mockup--mini">
-                  <div class="phone-mockup__frame">
-                    <div class="phone-mockup__screen">
-                      <div class="app-screen app-screen--onboard">
-                        <div class="onboard-icon">✈️</div>
-                        <div class="onboard-title">Bienvenue à Porto-Vecchio</div>
-                        <div class="onboard-sub">Activez Porto Flow pour découvrir le territoire</div>
-                        <div class="onboard-btn">Commencer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="journey-step__info">
-                <h3 class="journey-step__title">Arrivée &amp; Onboarding</h3>
-                <p class="journey-step__desc">Dès votre arrivée, Porto Flow détecte votre contexte (touriste, habitant, professionnel) et personnalise immédiatement l'interface. Pas de formulaire interminable — trois questions suffisent.</p>
-                <ul class="journey-step__features">
-                  <li>Détection automatique de la langue</li>
-                  <li>Profil en 30 secondes</li>
-                  <li>Recommandations immédiates</li>
-                  <li>Mode hors ligne activé</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="journey-step journey-step--reverse" data-animate="fade-up" data-delay="100">
-            <div class="journey-step__number">02</div>
-            <div class="journey-step__content">
-              <div class="journey-step__visual">
-                <div class="phone-mockup phone-mockup--mini">
-                  <div class="phone-mockup__frame">
-                    <div class="phone-mockup__screen">
-                      <div class="app-screen app-screen--explore">
-                        <div class="explore-header">Explorer</div>
-                        <div class="explore-item">
-                          <span>🏖️</span>
-                          <div>
-                            <div class="explore-item__name">Plage de Palombaggia</div>
-                            <div class="explore-item__status status--busy">Animée · 15 min</div>
-                          </div>
-                        </div>
-                        <div class="explore-item">
-                          <span>🏛️</span>
-                          <div>
-                            <div class="explore-item__name">Citadelle Génoise</div>
-                            <div class="explore-item__status status--calm">Calme · 6 min</div>
-                          </div>
-                        </div>
-                        <div class="explore-item">
-                          <span>🍽️</span>
-                          <div>
-                            <div class="explore-item__name">Restaurants ouverts</div>
-                            <div class="explore-item__status status--ok">24 disponibles</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="journey-step__info">
-                <h3 class="journey-step__title">Exploration &amp; Découverte</h3>
-                <p class="journey-step__desc">Porto Flow vous présente le territoire de façon intelligente. Chaque lieu est enrichi de données en temps réel : affluence, horaires, avis, disponibilités. Vous explorez sans mauvaises surprises.</p>
-                <ul class="journey-step__features">
-                  <li>Carte interactive multicouche</li>
-                  <li>Affluence en temps réel par lieu</li>
-                  <li>Filtres par intérêt et budget</li>
-                  <li>Suggestions contextuelles IA</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="journey-step" data-animate="fade-up" data-delay="200">
-            <div class="journey-step__number">03</div>
-            <div class="journey-step__content">
-              <div class="journey-step__visual">
-                <div class="phone-mockup phone-mockup--mini">
-                  <div class="phone-mockup__frame">
-                    <div class="phone-mockup__screen">
-                      <div class="app-screen app-screen--navigate">
-                        <div class="nav-header">Navigation active</div>
-                        <div class="nav-route">
-                          <div class="nav-route__from">📍 Parking Citadelle</div>
-                          <div class="nav-route__arrow">↓</div>
-                          <div class="nav-route__to">🍽️ La Tonnelle</div>
-                        </div>
-                        <div class="nav-info">
-                          <span>8 min</span>
-                          <span>·</span>
-                          <span>650 m</span>
-                          <span>·</span>
-                          <span>À pied</span>
-                        </div>
-                        <div class="nav-alert">⚠️ Rue Borgo animée ce soir</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="journey-step__info">
-                <h3 class="journey-step__title">Navigation &amp; Mobilité</h3>
-                <p class="journey-step__desc">Porto Flow optimise vos déplacements en intégrant trafic, parkings et alternatives piétonnes. Il anticipe les congestions et vous propose des itinéraires fluides, adaptés à votre mode de transport.</p>
-                <ul class="journey-step__features">
-                  <li>Itinéraires multimodaux</li>
-                  <li>Alertes trafic proactives</li>
-                  <li>Parkings en temps réel</li>
-                  <li>Alternatives suggérées automatiquement</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="journey-step journey-step--reverse" data-animate="fade-up" data-delay="300">
-            <div class="journey-step__number">04</div>
-            <div class="journey-step__content">
-              <div class="journey-step__visual">
-                <div class="phone-mockup phone-mockup--mini">
-                  <div class="phone-mockup__frame">
-                    <div class="phone-mockup__screen">
-                      <div class="app-screen app-screen--recap">
-                        <div class="recap-header">Votre journée</div>
-                        <div class="recap-score">
-                          <div class="recap-score__value">9.2</div>
-                          <div class="recap-score__label">Score d'expérience</div>
-                        </div>
-                        <div class="recap-items">
-                          <div class="recap-item">✅ Citadelle visitée</div>
-                          <div class="recap-item">✅ Déjeuner La Tonnelle</div>
-                          <div class="recap-item">✅ Marché nocturne</div>
-                        </div>
-                        <div class="recap-suggestion">Demain : Forêt d'Ospédale 🌲</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="journey-step__info">
-                <h3 class="journey-step__title">Bilan &amp; Continuité</h3>
-                <p class="journey-step__desc">En fin de journée, Porto Flow dresse un bilan de votre expérience et prépare le lendemain. Il apprend de vos préférences pour affiner ses recommandations au fil du séjour.</p>
-                <ul class="journey-step__features">
-                  <li>Récapitulatif de journée</li>
-                  <li>Score d'expérience territorial</li>
-                  <li>Suggestions pour le lendemain</li>
-                  <li>Apprentissage progressif des préférences</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         NAVIGATION VERS LES AUTRES PAGES
-    ═══════════════════════════════════════════ -->
-    <section class="page-nav-section section-padding section-padding--light">
-      <div class="container">
-        <div class="section-header" data-animate="fade-up">
-          <span class="section-badge">Explorer Porto Flow</span>
-          <h2 class="section-title">Continuez votre découverte</h2>
-        </div>
-        <div class="page-nav-grid">
-          <a href="territoire.html" class="page-nav-card" data-animate="fade-up">
-            <div class="page-nav-card__icon">🗺️</div>
-            <div class="page-nav-card__content">
-              <h3 class="page-nav-card__title">Territoire</h3>
-              <p class="page-nav-card__desc">Flux, saisons, publics, données territoriales de Porto-Vecchio.</p>
-            </div>
-            <span class="page-nav-card__arrow">→</span>
-          </a>
-          <a href="ecosysteme.html" class="page-nav-card" data-animate="fade-up" data-delay="100">
-            <div class="page-nav-card__icon">🤝</div>
-            <div class="page-nav-card__content">
-              <h3 class="page-nav-card__title">Écosystème</h3>
-              <p class="page-nav-card__desc">Partenaires locaux, modèle économique, dashboard collectivité.</p>
-            </div>
-            <span class="page-nav-card__arrow">→</span>
-          </a>
-          <a href="ingenierie.html" class="page
+            <div class="question-card__a">Porto
