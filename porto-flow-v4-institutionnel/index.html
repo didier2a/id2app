@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez Porto-Flow, le copilote intelligent du territoire de Porto-Vecchio et de la Corse-du-Sud, orchestrant la complexité territoriale en intelligence opérationnelle." />
+  <title>Accueil - Porto-Flow, le copilote intelligent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       VARIABLES & RESET
+    ============================================================ */
+    :root {
+      --color-deep:       #0B1F33;
+      --color-slate:      #5F7487;
+      --color-cream:      #F7F2E8;
+      --color-sand:       #E8DDC8;
+      --color-terracotta: #C96A3A;
+      --color-amber:      #B8794A;
+      --color-maquis:     #687B57;
+      --color-navy:       #102033;
+
+      --font-serif:  'Cormorant Garamond', Georgia, serif;
+      --font-sans:   'Inter', system-ui, sans-serif;
+
+      --header-h:    72px;
+      --header-h-sm: 60px;
+
+      --radius-sm:   4px;
+      --radius-md:   8px;
+
+      --transition-fast: 180ms ease;
+      --transition-med:  320ms ease;
+
+      --z-header: 900;
+      --z-overlay: 800;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-cream);
+      color: var(--color-deep);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* ============================================================
+       SKIP LINK (ACCESSIBILITÉ)
+    ============================================================ */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      z-index: 9999;
+      padding: 0.6rem 1.2rem;
+      background: var(--color-terracotta);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      transition: top var(--transition-fast);
+    }
+
+    .skip-link:focus {
+      top: 1rem;
+      outline: 3px solid #fff;
+      outline-offset: 2px;
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: var(--z-header);
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+      background: rgba(11, 31, 51, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      transition: background var(--transition-med),
+                  box-shadow var(--transition-med),
+                  height var(--transition-med);
+    }
+
+    .site-header.scrolled {
+      background: rgba(11, 31, 51, 0.99);
+      box-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
+      height: calc(var(--header-h) - 8px);
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    /* ---- LOGO ---- */
+    .site-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      flex-shrink: 0;
+      text-decoration: none;
+      outline-offset: 4px;
+    }
+
+    .site-logo:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      border-radius: var(--radius-sm);
+    }
+
+    .logo-wordmark {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--color-cream);
+      line-height: 1.1;
+      transition: color var(--transition-fast);
+    }
+
+    .logo-wordmark span {
+      color: var(--color-terracotta);
+    }
+
+    .logo-baseline {
+      font-family: var(--font-sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-slate);
+      line-height: 1;
+      margin-top: 2px;
+    }
+
+    .site-logo:hover .logo-wordmark {
+      color: #fff;
+    }
+
+    /* ---- NAV DESKTOP ---- */
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.125rem;
+    }
+
+    .nav-list li a {
+      display: inline-block;
+      padding: 0.45rem 0.85rem;
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(247, 242, 232, 0.72);
+      border-radius: var(--radius-sm);
+      transition: color var(--transition-fast),
+                  background var(--transition-fast);
+      position: relative;
+    }
+
+    .nav-list li a::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0.85rem;
+      right: 0.85rem;
+      height: 1px;
+      background: var(--color-terracotta);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform var(--transition-med);
+    }
+
+    .nav-list li a:hover {
+      color: var(--color-cream);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-list li a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-list li a:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: 2px;
+      color: var(--color-cream);
+    }
+
+    .nav-list li a[aria-current="page"] {
+      color: var(--color-cream);
+    }
+
+    .nav-list li a[aria-current="page"]::after {
+      transform: scaleX(1);
+    }
+
+    /* ---- CTA HEADER ---- */
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      background: var(--color-terracotta);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--color-terracotta);
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background var(--transition-fast),
+                  border-color var(--transition-fast),
+                  transform var(--transition-fast),
+                  box-shadow var(--transition-fast);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .header-cta:hover {
+      background: #b85c2e;
+      border-color: #b85c2e;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(201, 106, 58, 0.35);
+    }
+
+    .header-cta:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .header-cta:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    .header-cta-icon {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    /* ---- BURGER BUTTON ---- */
+    .burger-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      padding: 0;
+      flex-shrink: 0;
+      transition: border-color var(--transition-fast),
+                  background var(--transition-fast);
+    }
+
+    .burger-btn:hover {
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .burger-btn:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: 2px;
+    }
+
+    .burger-line {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--color-cream);
+      border-radius: 2px;
+      transition: transform var(--transition-med),
+                  opacity var(--transition-fast),
+                  width var(--transition-med);
+      transform-origin: center;
+    }
+
+    /* Burger → X animation */
+    .burger-btn[aria-expanded="true"] .burger-line:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .burger-btn[aria-expanded="true"] .burger-line:nth-child(2) {
+      opacity: 0;
+      width: 0;
+    }
+
+    .burger-btn[aria-expanded="true"] .burger-line:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    /* ---- MOBILE NAV OVERLAY ---- */
+    .mobile-nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: var(--z-overlay);
+      background: rgba(11, 31, 51, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      opacity: 0;
+      transition: opacity var(--transition-med);
+    }
+
+    .mobile-nav-overlay.visible {
+      opacity: 1;
+    }
+
+    .mobile-nav-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: calc(var(--z-overlay) + 1);
+      width: min(320px, 88vw);
+      background: var(--color-navy);
+      border-left: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      transform: translateX(100%);
+      transition: transform var(--transition-med);
+      overflow-y: auto;
+    }
+
+    .mobile-nav-panel.open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      height: var(--header-h-sm);
+      flex-shrink: 0;
+    }
+
+    .mobile-nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-cream);
+      letter-spacing: 0.04em;
+    }
+
+    .mobile-nav-logo span {
+      color: var(--color-terracotta);
+    }
+
+    .mobile-close-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      color: var(--color-cream);
+      transition: background var(--transition-fast);
+    }
+
+    .mobile-close-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .mobile-close-btn:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: 2px;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      padding: 1.5rem 0;
+      flex: 1;
+    }
+
+    .mobile-nav-list li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .mobile-nav-list li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: rgba(247, 242, 232, 0.75);
+      letter-spacing: 0.04em;
+      transition: color var(--transition-fast),
+                  background var(--transition-fast),
+                  padding-left var(--transition-fast);
+    }
+
+    .mobile-nav-list li a:hover {
+      color: var(--color-cream);
+      background: rgba(255, 255, 255, 0.04);
+      padding-left: 2rem;
+    }
+
+    .mobile-nav-list li a:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: -2px;
+      color: var(--color-cream);
+    }
+
+    .mobile-nav-list li a[aria-current="page"] {
+      color: var(--color-cream);
+      border-left: 2px solid var(--color-terracotta);
+      padding-left: calc(1.5rem - 2px);
+    }
+
+    .mobile-nav-arrow {
+      width: 16px;
+      height: 16px;
+      opacity: 0.4;
+      flex-shrink: 0;
+    }
+
+    .mobile-nav-footer {
+      padding: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      flex-shrink: 0;
+    }
+
+    .mobile-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      background: var(--color-terracotta);
+      color: #fff;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background var(--transition-fast);
+    }
+
+    .mobile-cta:hover {
+      background: #b85c2e;
+    }
+
+    .mobile-cta:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
+
+    .mobile-nav-tagline {
+      margin-top: 1rem;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-slate);
+      text-align: center;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .nav-list li a {
+        padding: 0.45rem 0.6rem;
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .site-nav,
+      .header-cta {
+        display: none;
+      }
+
+      .burger-btn {
+        display: flex;
+      }
+
+      .mobile-nav-overlay,
+      .mobile-nav-panel {
+        display: flex;
+      }
+
+      .site-header {
+        height: var(--header-h-sm);
+      }
+
+      .header-inner {
+        padding: 0 1.25rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-wordmark {
+        font-size: 1.3rem;
+      }
+
+      .logo-baseline {
+        font-size: 0.55rem;
+      }
+    }
+
+    /* ============================================================
+       BODY OFFSET (pour le contenu sous le header fixe)
+    ============================================================ */
+    body > *:not(.site-header):not(.skip-link):first-of-type,
+    main {
+      padding-top: var(--header-h);
+    }
+
+    @media (max-width: 860px) {
+      main {
+        padding-top: var(--header-h-sm);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SKIP LINK -->
+  <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- LOGO -->
+      <a href="index.html" class="site-logo" aria-label="Porto-Flow — Retour à l'accueil">
+        <span class="logo-wordmark">Porto<span>-Flow</span></span>
+        <span class="logo-baseline" aria-hidden="true">Copilote intelligent du territoire</span>
+      </a>
+
+      <!-- NAV DESKTOP -->
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li>
+            <a href="index.html" aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="territoire.html">Territoire</a>
+          </li>
+          <li>
+            <a href="experience.html">Expérience</a>
+          </li>
+          <li>
+            <a href="ecosysteme.html">Écosystème</a>
+          </li>
+          <li>
+            <a href="orchestration.html">Orchestration</a>
+          </li>
+          <li>
+            <a href="production-ia.html">Production IA</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- CTA DESKTOP -->
+      <a href="contact.html" class="header-cta" aria-label="Demander une présentation de Porto-Flow">
+        <svg class="header-cta-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        Demander une présentation
+      </a>
+
+      <!-- BURGER MOBILE -->
+      <button
+        class="burger-btn"
+        id="burger-btn"
+        type="button"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="mobile-nav-panel"
+      >
+        <span class="burger-line" aria-hidden="true"></span>
+        <span class="burger-line" aria-hidden="true"></span>
+        <span class="burger-line" aria-hidden="true"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MOBILE NAV OVERLAY + PANEL
+  ============================================================ -->
+  <div
+    class="mobile-nav-overlay"
+    id="mobile-nav-overlay"
+    aria-hidden="true"
+    role="presentation"
+  ></div>
+
+  <nav
+    class="mobile-nav-panel"
+    id="mobile-nav-panel"
+    aria-label="Navigation mobile"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="mobile-nav-header">
+      <span class="mobile-nav-logo" aria-hidden="true">Porto<span>-Flow</span></span>
+      <button
+        class="mobile-close-btn"
+        id="mobile-close-btn"
+        type="button"
+        aria-label="Fermer le menu de navigation"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-list" role="list">
+      <li>
+        <a href="index.html" aria-current="page">
+          Accueil
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="territoire.html">
+          Territoire
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="experience.html">
+          Expérience
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="ecosysteme.html">
+          Écosystème
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="orchestration.html">
+          Orchestration
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="production-ia.html">
+          Production IA
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          Contact
+          <svg class="mobile-nav-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="mobile-cta" aria-label="Demander une présentation de Porto-Flow">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        Demander une présentation
+      </a>
+      <p class="mobile-nav-tagline">Porto-Vecchio · Corse-du-Sud</p>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT (placeholder pour les segments suivants)
+  ============================================================ -->
+  <main id="main-content" tabindex="-1">
+    <!-- Les segments suivants (hero, sections, footer) seront insérés ici -->
+  </main>
+
+  <!-- ============================================================
+       JAVASCRIPT — HEADER & NAVIGATION MOBILE
+  ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---- Éléments ---- */
+      var header      = document.getElementById('site-header');
+      var burgerBtn   = document.getElementById('burger-btn');
+      var closeBtn    = document.getElementById('mobile-close-btn');
+      var overlay     = document.getElementById('mobile-nav-overlay');
+      var panel       = document.getElementById('mobile-nav-panel');
+
+      if (!header || !burgerBtn || !closeBtn || !overlay || !panel) return;
+
+      /* ---- État ---- */
+      var isOpen = false;
+      var lastFocused = null;
+
+      /* ---- Scroll → header scrolled ---- */
+      function onScroll() {
+        if (window.scrollY > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll(); // état initial
+
+      /* ---- Ouvrir le menu mobile ---- */
+      function openMenu() {
+        isOpen = true;
+        lastFocused = document.activeElement;
+
+        burgerBtn.setAttribute('aria-expanded', 'true');
+        burgerBtn.setAttribute('aria-label', 'Fermer le menu de navigation');
+
+        overlay.style.display = 'flex';
+        panel.style.display   = 'flex';
+
+        // Force reflow pour la transition
+        overlay.getBoundingClientRect();
+        panel.getBoundingClientRect();
+
+        overlay.classList.add('visible');
+        panel.classList.add('open');
+
+        panel.setAttribute('aria-hidden', 'false');
+        overlay.setAttribute('aria-hidden', 'true');
+
+        document.body.style.overflow = 'hidden';
+
+        // Focus sur le bouton fermer
+        closeBtn.focus();
+
+        // Trap focus
+        document.addEventListener('keydown', trapFocus);
+        document.addEventListener('keydown', onEscape);
+      }
+
+      /* ---- Fermer le menu mobile ---- */
+      function closeMenu() {
+        isOpen = false;
+
+        burgerBtn.setAttribute('aria-expanded', 'false');
+        burgerBtn.setAttribute('aria-label', 'Ouvrir le menu de navigation');
+
+        overlay.classList.remove('visible');
+        panel.classList.remove('open');
+
+        panel.setAttribute('aria-hidden', 'true');
+
+        document.body.style.overflow = '';
+
+        document.removeEventListener('keydown', trapFocus);
+        document.removeEventListener('keydown', onEscape);
+
+        // Masquer après transition
+        var duration = 320;
+        setTimeout(function () {
+          if (!isOpen) {
+            overlay.style.display = 'none';
+            panel.style.display   = 'none';
+          }
+        }, duration);
+
+        // Rendre le focus à l'élément déclencheur
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+          lastFocused.focus();
+        }
+      }
+
+      /* ---- Trap focus dans le panel ---- */
+      function trapFocus(e) {
+        if (e.key !== 'Tab') return;
+
+        var focusable = panel.querySelectorAll(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
+        var focusableArr = Array.prototype.slice.call(focusable);
+        if (focusableArr.length === 0) return;
+
+        var first = focusableArr[0];
+        var last  = focusableArr[focusableArr.length - 1];
+
+        if (e.shiftKey) {
+          if (document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          }
+        } else {
+          if (document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+      }
+
+      /* ---- Fermer avec Escape ---- */
+      function onEscape(e) {
+        if (e.key === 'Escape') {
+          closeMenu();
+        }
+      }
+
+      /* ---- Événements ---- */
+      burgerBtn.addEventListener('click', function () {
+        if (isOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      closeBtn.addEventListener('click', closeMenu);
+
+      overlay.addEventListener('click', closeMenu);
+
+      /* ---- Fermer si redimensionnement vers desktop ---- */
+      var mq = window.matchMedia('(min-width: 861px)');
+      function onBreakpoint(e) {
+        if (e.matches && isOpen) {
+          closeMenu();
+        }
+      }
+
+      if (mq.addEventListener) {
+        mq.addEventListener('change', onBreakpoint);
+      } else if (mq.addListener) {
+        mq.addListener(onBreakpoint);
+      }
+
+      /* ---- Initialisation : masquer le panel mobile au départ ---- */
+      overlay.style.display = 'none';
+      panel.style.display   = 'none';
+
+    }());
+  </script>
+
+</body>
+</html>
+
+<section class="hero" id="hero" aria-labelledby="hero-heading">
+
+  <!-- Carte topographique SVG en arrière-plan -->
+  <div class="hero__map-bg" aria-hidden="true">
+    <svg class="hero__topo-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- Lignes de niveau topographiques - Corse-du-Sud stylisée -->
+      <defs>
+        <radialGradient id="topoGradient" cx="55%" cy="45%" r="60%">
+          <stop offset="0%" stop-color="#1a3a5c" stop-opacity="0.6"/>
+          <stop offset="60%" stop-color="#0B1F33" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#102033" stop-opacity="0.95"/>
+        </radialGradient>
+        <filter id="topoBlur">
+          <feGaussianBlur stdDeviation="0.8"/>
+        </filter>
+        <pattern id="gridPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#5F7487" stroke-width="0.3" stroke-opacity="0.25"/>
+        </pattern>
+        <clipPath id="heroClip">
+          <rect width="1440" height="900"/>
+        </clipPath>
+      </defs>
+
+      <!-- Grille cartographique de fond -->
+      <rect width="1440" height="900" fill="url(#gridPattern)"/>
+
+      <!-- Courbes de niveau - masse principale (relief Corse-du-Sud) -->
+      <g class="topo-contours" filter="url(#topoBlur)" clip-path="url(#heroClip)">
+        <!-- Courbe extérieure - côte -->
+        <path d="M 200,750 C 280,720 340,680 420,640 C 500,600 560,580 640,540 C 720,500 780,460 860,420 C 940,380 1020,360 1100,320 C 1160,290 1220,260 1280,230 C 1320,210 1360,195 1400,180"
+              fill="none" stroke="#5F7487" stroke-width="1.2" stroke-opacity="0.4"/>
+        <!-- Courbe 2 -->
+        <path d="M 240,700 C 320,668 390,630 470,592 C 550,554 620,528 700,490 C 780,452 850,418 930,378 C 1010,338 1090,310 1160,278 C 1220,252 1270,228 1320,205"
+              fill="none" stroke="#5F7487" stroke-width="1" stroke-opacity="0.35"/>
+        <!-- Courbe 3 -->
+        <path d="M 300,640 C 380,608 460,572 540,536 C 620,500 690,470 770,434 C 850,398 930,366 1010,330 C 1080,300 1140,272 1200,248"
+              fill="none" stroke="#687B57" stroke-width="1.1" stroke-opacity="0.3"/>
+        <!-- Courbe 4 - relief intermédiaire -->
+        <path d="M 380,570 C 460,540 540,508 620,474 C 700,440 770,410 850,376 C 930,342 1010,312 1080,282 C 1130,260 1170,242 1210,224"
+              fill="none" stroke="#5F7487" stroke-width="0.9" stroke-opacity="0.3"/>
+        <!-- Courbe 5 -->
+        <path d="M 460,500 C 540,470 620,440 700,408 C 780,376 850,348 930,316 C 1000,288 1060,264 1110,244"
+              fill="none" stroke="#687B57" stroke-width="0.8" stroke-opacity="0.28"/>
+        <!-- Courbe 6 - sommet -->
+        <path d="M 560,420 C 640,392 720,364 800,334 C 870,308 940,282 1010,256 C 1060,238 1100,224 1140,210"
+              fill="none" stroke="#5F7487" stroke-width="0.7" stroke-opacity="0.25"/>
+        <!-- Courbe 7 - crête -->
+        <path d="M 660,350 C 740,324 820,298 900,270 C 960,250 1020,232 1070,216"
+              fill="none" stroke="#C96A3A" stroke-width="0.6" stroke-opacity="0.2"/>
+
+        <!-- Lignes secondaires - vallées -->
+        <path d="M 150,820 C 200,790 260,755 330,718 C 400,681 470,652 550,618 C 630,584 710,554 790,520 C 870,486 950,456 1030,422 C 1100,392 1160,366 1220,340 C 1270,318 1320,298 1380,278"
+              fill="none" stroke="#5F7487" stroke-width="0.8" stroke-opacity="0.2"/>
+        <path d="M 100,860 C 160,832 230,800 310,764 C 390,728 470,698 560,662 C 650,626 730,596 810,562 C 890,528 970,498 1050,464 C 1120,434 1180,408 1240,382"
+              fill="none" stroke="#5F7487" stroke-width="0.6" stroke-opacity="0.18"/>
+
+        <!-- Lignes de flux - routes principales -->
+        <path d="M 720,900 C 740,840 760,780 790,720 C 820,660 860,610 900,560 C 940,510 980,468 1020,420 C 1060,372 1100,330 1140,285 C 1170,252 1200,220 1230,185"
+              fill="none" stroke="#C96A3A" stroke-width="1.4" stroke-opacity="0.35" stroke-dasharray="8,4"/>
+        <path d="M 400,900 C 430,850 460,800 500,748 C 540,696 580,652 630,606 C 680,560 730,520 780,478 C 830,436 880,398 930,358"
+              fill="none" stroke="#B8794A" stroke-width="1" stroke-opacity="0.28" stroke-dasharray="6,5"/>
+
+        <!-- Points nodaux - villes/lieux clés -->
+        <circle cx="820" cy="480" r="4" fill="#C96A3A" fill-opacity="0.6"/>
+        <circle cx="820" cy="480" r="8" fill="none" stroke="#C96A3A" stroke-width="1" stroke-opacity="0.4"/>
+        <circle cx="820" cy="480" r="14" fill="none" stroke="#C96A3A" stroke-width="0.6" stroke-opacity="0.2"/>
+
+        <circle cx="640" cy="580" r="3" fill="#5F7487" fill-opacity="0.5"/>
+        <circle cx="640" cy="580" r="7" fill="none" stroke="#5F7487" stroke-width="0.8" stroke-opacity="0.3"/>
+
+        <circle cx="1020" cy="360" r="3" fill="#687B57" fill-opacity="0.5"/>
+        <circle cx="1020" cy="360" r="6" fill="none" stroke="#687B57" stroke-width="0.8" stroke-opacity="0.3"/>
+
+        <circle cx="480" cy="660" r="2.5" fill="#5F7487" fill-opacity="0.4"/>
+        <circle cx="480" cy="660" r="6" fill="none" stroke="#5F7487" stroke-width="0.6" stroke-opacity="0.25"/>
+
+        <!-- Boussole stylisée -->
+        <g transform="translate(1320, 120)" opacity="0.35">
+          <circle cx="0" cy="0" r="28" fill="none" stroke="#5F7487" stroke-width="1"/>
+          <circle cx="0" cy="0" r="22" fill="none" stroke="#5F7487" stroke-width="0.5"/>
+          <line x1="0" y1="-28" x2="0" y2="28" stroke="#5F7487" stroke-width="0.8"/>
+          <line x1="-28" y1="0" x2="28" y2="0" stroke="#5F7487" stroke-width="0.8"/>
+          <polygon points="0,-18 4,-6 0,-2 -4,-6" fill="#C96A3A" fill-opacity="0.7"/>
+          <polygon points="0,18 4,6 0,2 -4,6" fill="#5F7487" fill-opacity="0.5"/>
+          <text x="0" y="-34" text-anchor="middle" fill="#5F7487" font-size="9" font-family="serif" letter-spacing="1">N</text>
+        </g>
+
+        <!-- Flux animés légers -->
+        <circle class="flow-dot flow-dot--1" r="2.5" fill="#C96A3A" fill-opacity="0.7">
+          <animateMotion dur="8s" repeatCount="indefinite" begin="0s">
+            <mpath href="#flowPath1"/>
+          </animateMotion>
+        </circle>
+        <circle class="flow-dot flow-dot--2" r="2" fill="#B8794A" fill-opacity="0.5">
+          <animateMotion dur="12s" repeatCount="indefinite" begin="2s">
+            <mpath href="#flowPath2"/>
+          </animateMotion>
+        </circle>
+        <circle class="flow-dot flow-dot--3" r="1.8" fill="#687B57" fill-opacity="0.5">
+          <animateMotion dur="10s" repeatCount="indefinite" begin="4s">
+            <mpath href="#flowPath1"/>
+          </animateMotion>
+        </circle>
+
+        <path id="flowPath1" d="M 720,900 C 740,840 760,780 790,720 C 820,660 860,610 900,560 C 940,510 980,468 1020,420 C 1060,372 1100,330 1140,285" fill="none"/>
+        <path id="flowPath2" d="M 400,900 C 430,850 460,800 500,748 C 540,696 580,652 630,606 C 680,560 730,520 780,478 C 830,436 880,398 930,358" fill="none"/>
+      </g>
+
+      <!-- Overlay gradient -->
+      <rect width="1440" height="900" fill="url(#topoGradient)"/>
+
+      <!-- Vignette latérale gauche -->
+      <rect width="300" height="900" fill="url(#leftVignette)"/>
+      <defs>
+        <linearGradient id="leftVignette" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#0B1F33" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#0B1F33" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="bottomVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#0B1F33" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#0B1F33" stop-opacity="0.9"/>
+        </linearGradient>
+      </defs>
+      <!-- Vignette bas -->
+      <rect y="500" width="1440" height="400" fill="url(#bottomVignette)"/>
+    </svg>
+
+    <!-- Fallback image slot hero_topographic_map -->
+    <picture class="hero__map-fallback">
+      <source srcset="assets/images/hero-topographic-map.webp" type="image/webp"/>
+      <img
+        src="assets/images/hero-topographic-map.jpg"
+        alt=""
+        role="presentation"
+        aria-hidden="true"
+        class="hero__map-img"
+        loading="eager"
+        decoding="async"
+      />
+    </picture>
+  </div>
+
+  <!-- Contenu hero -->
+  <div class="hero__inner container">
+    <div class="hero__content">
+
+      <!-- Badge territorial -->
+      <div class="hero__badge" aria-label="Territoire d'ancrage">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        <span class="hero__badge-text">Porto-Vecchio · Corse-du-Sud</span>
+      </div>
+
+      <!-- Titre principal H1 -->
+      <h1 class="hero__title" id="hero-heading">
+        Porto-Flow&nbsp;:
+        <span class="hero__title-line hero__title-line--accent">Le Copilote Intelligent</span>
+        <span class="hero__title-line hero__title-line--light">du Territoire</span>
+      </h1>
+
+      <!-- Sous-titre -->
+      <p class="hero__subtitle">
+        Orchestrer la complexité territoriale en intelligence opérationnelle
+      </p>
+
+      <!-- Paragraphe descriptif -->
+      <p class="hero__description">
+        Porto-Flow transforme les flux d'un territoire à deux vitesses — haute saison et hors-saison — en une expérience fluide et lisible pour les usagers, les acteurs économiques et les institutions. Un système vivant, ancré dans la réalité corse, conçu pour servir ceux qui font vivre le territoire.
+      </p>
+
+      <!-- Boutons CTA -->
+      <div class="hero__actions" role="group" aria-label="Actions principales">
+        <a
+          href="territoire.html"
+          class="btn btn--primary hero__cta-primary"
+          aria-label="Découvrir la vision de Porto-Flow"
+        >
+          <span class="btn__text">Découvrir la vision</span>
+          <span class="btn__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+
+        <a
+          href="experience.html"
+          class="btn btn--secondary hero__cta-secondary"
+          aria-label="Explorer le démonstrateur Porto-Flow"
+        >
+          <span class="btn__text">Explorer le démonstrateur</span>
+          <span class="btn__icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M7.5 6.75L11.25 9L7.5 11.25V6.75Z" fill="currentColor"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Indicateurs de confiance -->
+      <div class="hero__trust" aria-label="Indicateurs clés">
+        <div class="hero__trust-item">
+          <span class="hero__trust-value" aria-label="Territoire couvert">1</span>
+          <span class="hero__trust-label">Territoire pilote</span>
+        </div>
+        <div class="hero__trust-divider" aria-hidden="true"></div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-value" aria-label="Acteurs connectés">+40</span>
+          <span class="hero__trust-label">Acteurs connectés</span>
+        </div>
+        <div class="hero__trust-divider" aria-hidden="true"></div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-value" aria-label="Flux orchestrés en temps réel">Temps réel</span>
+          <span class="hero__trust-label">Orchestration</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">Découvrir</span>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="manifeste" aria-labelledby="manifeste-phrase" role="region">
+  <div class="manifeste__inner">
+    <p class="manifeste__phrase" id="manifeste-phrase">
+      <span class="manifeste__line" aria-hidden="true"></span>
+      <span class="manifeste__text">Porto-Vecchio respire mieux quand l'information circule.</span>
+      <span class="manifeste__line" aria-hidden="true"></span>
+    </p>
+  </div>
+</section>
+
+<style>
+  .manifeste {
+    background-color: #0B1F33;
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .manifeste::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 38px,
+        rgba(95, 116, 135, 0.06) 38px,
+        rgba(95, 116, 135, 0.06) 39px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 38px,
+        rgba(95, 116, 135, 0.04) 38px,
+        rgba(95, 116, 135, 0.04) 39px
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .manifeste__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .manifeste__phrase {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .manifeste__line {
+    display: block;
+    flex: 1 1 60px;
+    min-width: 40px;
+    max-width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #C96A3A, transparent);
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+  }
+
+  .manifeste__phrase:hover .manifeste__line {
+    opacity: 1;
+  }
+
+  .manifeste__text {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 400;
+    font-style: italic;
+    color: #F7F2E8;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    padding: 0 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .manifeste__text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #C96A3A;
+    margin: 0.75rem auto 0;
+    transition: width 0.6s ease;
+  }
+
+  .manifeste.is-visible .manifeste__text::after {
+    width: 60%;
+  }
+
+  @media (max-width: 600px) {
+    .manifeste {
+      padding: 3.5rem 1.5rem;
+    }
+
+    .manifeste__line {
+      display: none;
+    }
+
+    .manifeste__phrase {
+      gap: 0;
+    }
+
+    .manifeste__text {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var manifesteSection = document.querySelector('.manifeste');
+    if (!manifesteSection) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      observer.observe(manifesteSection);
+    } else {
+      manifesteSection.classList.add('is-visible');
+    }
+  })();
+</script>
+
+<section class="double-promesse" aria-labelledby="double-promesse-heading">
+  <div class="container">
+    <h2 id="double-promesse-heading" class="sr-only">Deux dimensions d'innovation</h2>
+    <div class="double-promesse__grid">
+
+      <article class="promesse-card promesse-card--territoire" aria-labelledby="promesse-territoire-title">
+        <div class="promesse-card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icône territoire">
+            <circle cx="24" cy="24" r="22" stroke="#C96A3A" stroke-width="1.5" fill="none" opacity="0.3"/>
+            <circle cx="24" cy="24" r="14" stroke="#C96A3A" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="24" cy="24" r="6" stroke="#C96A3A" stroke-width="1.5" fill="none"/>
+            <line x1="24" y1="2" x2="24" y2="46" stroke="#C96A3A" stroke-width="1" opacity="0.4"/>
+            <line x1="2" y1="24" x2="46" y2="24" stroke="#C96A3A" stroke-width="1" opacity="0.4"/>
+            <circle cx="24" cy="24" r="2.5" fill="#C96A3A"/>
+          </svg>
+        </div>
+        <div class="promesse-card__content">
+          <span class="promesse-card__label" aria-hidden="true">01</span>
+          <h3 id="promesse-territoire-title" class="promesse-card__title">Innovation pour le territoire</h3>
+          <p class="promesse-card__text">
+            Porto-Flow orchestre en temps réel la complexité des flux touristiques, économiques et institutionnels de Porto-Vecchio et de la Corse-du-Sud. Un copilote intelligent qui transforme la donnée territoriale en décisions opérationnelles claires, au service des collectivités, des acteurs économiques et des usagers.
+          </p>
+          <a href="territoire.html" class="promesse-card__link" aria-label="Découvrir l'innovation territoriale de Porto-Flow">
+            <span>Explorer le territoire</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="promesse-card__decoration" aria-hidden="true">
+          <div class="topo-lines">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+              <path d="M20 160 Q60 120 100 140 Q140 160 180 120" stroke="#C96A3A" stroke-width="0.8" fill="none" opacity="0.15"/>
+              <path d="M10 140 Q50 100 100 120 Q150 140 190 100" stroke="#C96A3A" stroke-width="0.8" fill="none" opacity="0.12"/>
+              <path d="M15 120 Q55 80 100 100 Q145 120 185 80" stroke="#C96A3A" stroke-width="0.8" fill="none" opacity="0.10"/>
+              <path d="M20 100 Q60 60 100 80 Q140 100 180 60" stroke="#C96A3A" stroke-width="0.8" fill="none" opacity="0.08"/>
+              <path d="M30 80 Q65 45 100 60 Q135 80 170 45" stroke="#C96A3A" stroke-width="0.8" fill="none" opacity="0.06"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <article class="promesse-card promesse-card--production" aria-labelledby="promesse-production-title">
+        <div class="promesse-card__icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Icône ingénierie logicielle">
+            <rect x="6" y="10" width="36" height="28" rx="3" stroke="#687B57" stroke-width="1.5" fill="none"/>
+            <path d="M15 20L10 24L15 28" stroke="#687B57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M33 20L38 24L33 28" stroke="#687B57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 17L21 31" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="6" y1="16" x2="42" y2="16" stroke="#687B57" stroke-width="1" opacity="0.5"/>
+            <circle cx="10" cy="13" r="1.2" fill="#687B57" opacity="0.6"/>
+            <circle cx="14" cy="13" r="1.2" fill="#687B57" opacity="0.6"/>
+            <circle cx="18" cy="13" r="1.2" fill="#687B57" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="promesse-card__content">
+          <span class="promesse-card__label" aria-hidden="true">02</span>
+          <h3 id="promesse-production-title" class="promesse-card__title">Innovation de production logicielle</h3>
+          <p class="promesse-card__text">
+            Porto-Flow est aussi une démonstration concrète d'une nouvelle ingénierie logicielle augmentée par l'IA. Chaque composant, chaque flux, chaque interface est conçu selon une méthode rigoureuse alliant agilité, qualité et intelligence artificielle — un modèle reproductible pour les territoires qui souhaitent innover vite et bien.
+          </p>
+          <a href="production-ia.html" class="promesse-card__link" aria-label="Découvrir la méthode d'ingénierie logicielle augmentée de Porto-Flow">
+            <span>Découvrir la méthode</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="promesse-card__decoration" aria-hidden="true">
+          <div class="code-lines">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+              <line x1="20" y1="50" x2="120" y2="50" stroke="#687B57" stroke-width="0.8" opacity="0.15"/>
+              <line x1="20" y1="65" x2="160" y2="65" stroke="#687B57" stroke-width="0.8" opacity="0.12"/>
+              <line x1="20" y1="80" x2="90" y2="80" stroke="#687B57" stroke-width="0.8" opacity="0.10"/>
+              <line x1="20" y1="95" x2="140" y2="95" stroke="#687B57" stroke-width="0.8" opacity="0.12"/>
+              <line x1="20" y1="110" x2="110" y2="110" stroke="#687B57" stroke-width="0.8" opacity="0.10"/>
+              <line x1="20" y1="125" x2="170" y2="125" stroke="#687B57" stroke-width="0.8" opacity="0.08"/>
+              <line x1="20" y1="140" x2="80" y2="140" stroke="#687B57" stroke-width="0.8" opacity="0.10"/>
+              <line x1="20" y1="155" x2="130" y2="155" stroke="#687B57" stroke-width="0.8" opacity="0.08"/>
+              <rect x="20" y="46" width="8" height="8" rx="1" fill="#687B57" opacity="0.12"/>
+              <rect x="20" y="76" width="8" height="8" rx="1" fill="#687B57" opacity="0.10"/>
+              <rect x="20" y="106" width="8" height="8" rx="1" fill="#687B57" opacity="0.10"/>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.double-promesse {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-bg-alt, #F7F2E8);
+  position: relative;
+  overflow: hidden;
+}
+
+.double-promesse::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent, #C96A3A), transparent);
+  opacity: 0.3;
+}
+
+.double-promesse__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg, 2rem);
+  align-items: stretch;
+}
+
+.promesse-card {
+  position: relative;
+  background: var(--color-surface, #FFFFFF);
+  border-radius: 4px;
+  padding: var(--spacing-xl, 2.5rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md, 1.5rem);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.promesse-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(11, 31, 51, 0.10);
+}
+
+.promesse-card--territoire {
+  border-color: rgba(201, 106, 58, 0.15);
+}
+
+.promesse-card--territoire:hover {
+  border-color: rgba(201, 106, 58, 0.3);
+}
+
+.promesse-card--production {
+  border-color: rgba(104, 123, 87, 0.15);
+}
+
+.promesse-card--production:hover {
+  border-color: rgba(104, 123, 87, 0.3);
+}
+
+.promesse-card__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.promesse-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm, 0.75rem);
+  position: relative;
+  z-index: 1;
+}
+
+.promesse-card__label {
+  font-family: var(--font-mono, 'Courier New', monospace);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--color-muted, #5F7487);
+  opacity: 0.7;
+}
+
+.promesse-card__title {
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--color-primary, #0B1F33);
+  line-height: 1.3;
+  margin: 0;
+}
+
+.promesse-card--territoire .promesse-card__title {
+  color: var(--color-primary, #0B1F33);
+}
+
+.promesse-card--production .promesse-card__title {
+  color: var(--color-primary, #0B1F33);
+}
+
+.promesse-card__text {
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary, #5F7487);
+  margin: 0;
+  flex: 1;
+}
+
+.promesse-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  margin-top: var(--spacing-sm, 0.75rem);
+  transition: gap 0.2s ease, opacity 0.2s ease;
+  align-self: flex-start;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+.promesse-card--territoire .promesse-card__link {
+  color: var(--color-accent, #C96A3A);
+  border-bottom-color: rgba(201, 106, 58, 0.3);
+}
+
+.promesse-card--territoire .promesse-card__link:hover {
+  gap: 0.75rem;
+  border-bottom-color: var(--color-accent, #C96A3A);
+}
+
+.promesse-card--production .promesse-card__link {
+  color: var(--color-green, #687B57);
+  border-bottom-color: rgba(104, 123, 87, 0.3);
+}
+
+.promesse-card--production .promesse-card__link:hover {
+  gap: 0.75rem;
+  border-bottom-color: var(--color-green, #687B57);
+}
+
+.promesse-card__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.promesse-card__decoration {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.promesse-card:hover .promesse-card__decoration {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .double-promesse__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md, 1.5rem);
+  }
+
+  .promesse-card {
+    padding: var(--spacing-lg, 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .double-promesse {
+    padding: var(--spacing-xl, 2.5rem) 0;
+  }
+
+  .promesse-card {
+    padding: var(--spacing-md, 1.5rem);
+  }
+
+  .promesse-card__title {
+    font-size: 1.125rem;
+  }
+
+  .promesse-card__decoration {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .promesse-card {
+    transition: none;
+  }
+
+  .promesse-card__link {
+    transition: none;
+  }
+
+  .promesse-card__decoration {
+    transition: none;
+  }
+}
+</style>
+
+<section id="apercu-boucle" class="boucle-section" aria-labelledby="boucle-title">
+  <div class="boucle-container">
+
+    <header class="boucle-header">
+      <span class="boucle-eyebrow">Intelligence continue</span>
+      <h2 id="boucle-title" class="boucle-title">La boucle qui apprend du territoire</h2>
+      <p class="boucle-subtitle">
+        Porto-Flow ne se contente pas de répondre — il observe, apprend et s'affine en permanence,
+        ancré dans la réalité vivante de Porto-Vecchio et de la Corse-du-Sud.
+      </p>
+    </header>
+
+    <div class="boucle-diagram" role="img" aria-label="Diagramme de la boucle d'amélioration continue : Captation, Analyse, Génération, Test, Déploiement">
+
+      <svg class="boucle-orbit" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="260" cy="260" r="200" stroke="#5F7487" stroke-width="1" stroke-dasharray="6 10" opacity="0.35"/>
+        <circle cx="260" cy="260" r="140" stroke="#C96A3A" stroke-width="1" stroke-dasharray="3 8" opacity="0.2"/>
+        <circle cx="260" cy="260" r="60" fill="#0B1F33" opacity="0.6"/>
+        <circle cx="260" cy="260" r="60" stroke="#C96A3A" stroke-width="1.5" opacity="0.5"/>
+
+        <path class="boucle-arc" d="M260 60 A200 200 0 0 1 460 260" stroke="#C96A3A" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <path class="boucle-arc boucle-arc--delay1" d="M460 260 A200 200 0 0 1 260 460" stroke="#687B57" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <path class="boucle-arc boucle-arc--delay2" d="M260 460 A200 200 0 0 1 60 260" stroke="#5F7487" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+        <path class="boucle-arc boucle-arc--delay3" d="M60 260 A200 200 0 0 1 260 60" stroke="#B8794A" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+        <polygon points="260,52 254,68 266,68" fill="#C96A3A" opacity="0.8"/>
+        <polygon points="468,260 452,254 452,266" fill="#687B57" opacity="0.8"/>
+        <polygon points="260,468 266,452 254,452" fill="#5F7487" opacity="0.8"/>
+        <polygon points="52,260 68,266 68,254" fill="#B8794A" opacity="0.8"/>
+      </svg>
+
+      <ul class="boucle-steps" role="list">
+
+        <li class="boucle-step boucle-step--top" data-step="1">
+          <div class="boucle-step__inner">
+            <div class="boucle-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#C96A3A" stroke-width="1.5"/>
+                <path d="M12 20 Q16 12 20 20 Q24 28 28 20" stroke="#C96A3A" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <circle cx="20" cy="20" r="2.5" fill="#C96A3A"/>
+              </svg>
+            </div>
+            <span class="boucle-step__number" aria-hidden="true">01</span>
+            <h3 class="boucle-step__label">Captation</h3>
+            <p class="boucle-step__desc">Signaux du territoire en temps réel — flux, usages, données locales</p>
+          </div>
+        </li>
+
+        <li class="boucle-step boucle-step--right" data-step="2">
+          <div class="boucle-step__inner">
+            <div class="boucle-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#687B57" stroke-width="1.5"/>
+                <path d="M14 26 L20 14 L26 26" stroke="#687B57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="16" y1="22" x2="24" y2="22" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="boucle-step__number" aria-hidden="true">02</span>
+            <h3 class="boucle-step__label">Analyse</h3>
+            <p class="boucle-step__desc">Modélisation contextuelle, détection de patterns, priorisation intelligente</p>
+          </div>
+        </li>
+
+        <li class="boucle-step boucle-step--bottom" data-step="3">
+          <div class="boucle-step__inner">
+            <div class="boucle-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#5F7487" stroke-width="1.5"/>
+                <path d="M15 20 L19 24 L25 16" stroke="#5F7487" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="20" cy="20" r="6" stroke="#5F7487" stroke-width="1" stroke-dasharray="2 3"/>
+              </svg>
+            </div>
+            <span class="boucle-step__number" aria-hidden="true">03</span>
+            <h3 class="boucle-step__label">Génération</h3>
+            <p class="boucle-step__desc">Production de réponses, contenus et recommandations adaptées au contexte local</p>
+          </div>
+        </li>
+
+        <li class="boucle-step boucle-step--left" data-step="4">
+          <div class="boucle-step__inner">
+            <div class="boucle-step__icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#B8794A" stroke-width="1.5"/>
+                <path d="M13 20 C13 16 17 13 20 13 C23 13 27 16 27 20" stroke="#B8794A" stroke-width="2" stroke-linecap="round" fill="none"/>
+                <path d="M27 20 C27 24 23 27 20 27 C17 27 13 24 13 20" stroke="#B8794A" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 3" fill="none"/>
+                <circle cx="20" cy="20" r="2" fill="#B8794A"/>
+              </svg>
+            </div>
+            <span class="boucle-step__number" aria-hidden="true">04</span>
+            <h3 class="boucle-step__label">Déploiement</h3>
+            <p class="boucle-step__desc">Mise en production continue, retour terrain, amélioration itérative permanente</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="boucle-core" aria-hidden="true">
+        <span class="boucle-core__label">Porto<br>Flow</span>
+        <span class="boucle-core__pulse"></span>
+      </div>
+
+    </div>
+
+    <div class="boucle-metrics" role="list" aria-label="Indicateurs clés de la boucle intelligente">
+      <div class="boucle-metric" role="listitem">
+        <span class="boucle-metric__value" data-target="98">0</span><span class="boucle-metric__unit">%</span>
+        <span class="boucle-metric__label">de disponibilité opérationnelle</span>
+      </div>
+      <div class="boucle-metric" role="listitem">
+        <span class="boucle-metric__value" data-target="4">0</span><span class="boucle-metric__unit">×</span>
+        <span class="boucle-metric__label">cycles d'amélioration par saison</span>
+      </div>
+      <div class="boucle-metric" role="listitem">
+        <span class="boucle-metric__value" data-target="360">0</span><span class="boucle-metric__unit">°</span>
+        <span class="boucle-metric__label">couverture des flux territoriaux</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.boucle-section {
+  background: linear-gradient(180deg, #0B1F33 0%, #102033 60%, #0B1F33 100%);
+  padding: var(--space-2xl, 6rem) var(--space-md, 1.5rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.boucle-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 60% 40% at 50% 50%, rgba(201,106,58,0.06) 0%, transparent 70%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(95,116,135,0.04) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(95,116,135,0.04) 40px
+    );
+  pointer-events: none;
+}
+
+.boucle-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.boucle-header {
+  text-align: center;
+  margin-bottom: var(--space-xl, 4rem);
+}
+
+.boucle-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C96A3A;
+  margin-bottom: 1rem;
+  padding: 0.35rem 1rem;
+  border: 1px solid rgba(201,106,58,0.3);
+  border-radius: 2rem;
+}
+
+.boucle-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: #F7F2E8;
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.boucle-subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #5F7487;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.boucle-diagram {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto var(--space-xl, 4rem);
+  aspect-ratio: 1 / 1;
+}
+
+.boucle-orbit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.boucle-arc {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: boucle-draw 1.2s ease forwards;
+}
+.boucle-arc--delay1 { animation-delay: 0.3s; }
+.boucle-arc--delay2 { animation-delay: 0.6s; }
+.boucle-arc--delay3 { animation-delay: 0.9s; }
+
+@keyframes boucle-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+.boucle-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  inset: 0;
+}
+
+.boucle-step {
+  position: absolute;
+  width: 160px;
+}
+
+.boucle-step--top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  text-align: center;
+}
+
+.boucle-step--right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(8px);
+  text-align: left;
+}
+
+.boucle-step--bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  text-align: center;
+}
+
+.boucle-step--left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-8px);
+  text-align: right;
+}
+
+.boucle-step__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  gap: 0.3rem;
+  opacity: 0;
+  animation: boucle-fadein 0.6s ease forwards;
+}
+
+.boucle-step[data-step="1"] .boucle-step__inner { animation-delay: 0.4s; }
+.boucle-step[data-step="2"] .boucle-step__inner { animation-delay: 0.7s; }
+.boucle-step[data-step="3"] .boucle-step__inner { animation-delay: 1.0s; }
+.boucle-step[data-step="4"] .boucle-step__inner { animation-delay: 1.3s; }
+
+@keyframes boucle-fadein {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.boucle-step__icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.boucle-step--top .boucle-step__icon,
+.boucle-step--bottom .boucle-step__icon {
+  margin: 0 auto;
+}
+
+.boucle-step__number {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(247,242,232,0.25);
+}
+
+.boucle-step__label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #F7F2E8;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.boucle-step__desc {
+  font-size: 0.72rem;
+  color: #5F7487;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.boucle-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.boucle-core__label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #C96A3A;
+  text-align: center;
+  line-height: 1.3;
+  position: relative;
+  z-index: 1;
+}
+
+.boucle-core__pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(201,106,58,0.4);
+  animation: boucle-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes boucle-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50%       { transform: scale(1.18); opacity: 0.15; }
+}
+
+.boucle-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  border-top: 1px solid rgba(95,116,135,0.2);
+  padding-top: var(--space-lg, 3rem);
+}
+
+.boucle-metric {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(95,116,135,0.12);
+  border-radius: 0.75rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.boucle-metric:hover {
+  border-color: rgba(201,106,58,0.3);
+  background: rgba(201,106,58,0.04);
+}
+
+.boucle-metric__value {
+  display: inline-block;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #F7F2E8;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.boucle-metric__unit {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #C96A3A;
+  vertical-align: super;
+  margin-left: 0.1em;
+}
+
+.boucle-metric__label {
+  display: block;
+  font-size: 0.8rem;
+  color: #5F7487;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .boucle-diagram {
+    max-width: 340px;
+  }
+
+  .boucle-step {
+    width: 100px;
+  }
+
+  .boucle-step__desc {
+    display: none;
+  }
+
+  .boucle-step__label {
+    font-size: 0.75rem;
+  }
+
+  .boucle-metrics {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .boucle-diagram {
+    max-width: 280px;
+  }
+
+  .boucle-step {
+    width: 80px;
+  }
+
+  .boucle-step__icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boucle-arc,
+  .boucle-step__inner,
+  .boucle-core__pulse {
+    animation: none;
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  function animateMetrics(entries, observer) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+
+      var metrics = entry.target.querySelectorAll('.boucle-metric__value[data-target]');
+      metrics.forEach(function (el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var duration = 1400;
+        var start = null;
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          var progress = Math.min((timestamp - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = target;
+          }
+        }
+
+        requestAnimationFrame(step);
+      });
+
+      observer.unobserve(entry.target);
+    });
+  }
+
+  function initBoucle() {
+    var section = document.getElementById('apercu-boucle');
+    if (!section) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(animateMetrics, {
+        threshold: 0.3
+      });
+      observer.observe(section);
+    } else {
+      var metrics = section.querySelectorAll('.boucle-metric__value[data-target]');
+      metrics.forEach(function (el) {
+        el.textContent = el.getAttribute('data-target');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBoucle);
+  } else {
+    initBoucle();
+  }
+}());
+</script>
+
+<footer class="site-footer" role="contentinfo" aria-label="Pied de page Porto-Flow">
+
+  <div class="footer-inner">
+
+    <!-- Identité & baseline -->
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo-link" aria-label="Porto-Flow – Retour à l'accueil">
+        <span class="footer-logo-mark" aria-hidden="true">⬡</span>
+        <span class="footer-logo-text">Porto-Flow</span>
+      </a>
+      <p class="footer-baseline">
+        Le copilote intelligent du territoire.<br>
+        <span class="footer-baseline-sub">Porto-Vecchio · Corse-du-Sud</span>
+      </p>
+    </div>
+
+    <!-- Navigation secondaire -->
+    <nav class="footer-nav" aria-label="Navigation secondaire">
+      <ul class="footer-nav-list" role="list">
+        <li><a href="index.html" class="footer-nav-link">Accueil</a></li>
+        <li><a href="territoire.html" class="footer-nav-link">Territoire</a></li>
+        <li><a href="experience.html" class="footer-nav-link">Expérience</a></li>
+        <li><a href="ecosysteme.html" class="footer-nav-link">Écosystème</a></li>
+        <li><a href="orchestration.html" class="footer-nav-link">Orchestration</a></li>
+        <li><a href="production-ia.html" class="footer-nav-link">Production IA</a></li>
+        <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Informations légales & crédits -->
+    <div class="footer-legal">
+      <p class="footer-legal-text">
+        &copy; <span id="footer-year"></span> Porto-Flow. Tous droits réservés.
+      </p>
+      <p class="footer-legal-text footer-credits">
+        Conçu et développé avec <abbr title="Intelligence Artificielle">IA</abbr> augmentée &mdash;
+        <span class="footer-credits-location">Porto-Vecchio, Corse-du-Sud</span>
+      </p>
+      <ul class="footer-legal-links" role="list" aria-label="Liens légaux">
+        <li><a href="#mentions-legales" class="footer-legal-link">Mentions légales</a></li>
+        <li><a href="#confidentialite" class="footer-legal-link">Politique de confidentialité</a></li>
+        <li><a href="#accessibilite" class="footer-legal-link">Accessibilité</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Ligne décorative topographique -->
+  <div class="footer-topo-line" aria-hidden="true">
+    <svg class="footer-topo-svg" viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+      <path d="M0,16 C120,6 240,26 360,16 C480,6 600,26 720,16 C840,6 960,26 1080,16 C1200,6 1320,26 1440,16 L1440,32 L0,32 Z" fill="rgba(201,106,58,0.12)"/>
+      <path d="M0,22 C180,12 360,28 540,20 C720,12 900,28 1080,20 C1260,12 1380,26 1440,22 L1440,32 L0,32 Z" fill="rgba(201,106,58,0.07)"/>
+    </svg>
+  </div>
+
+</footer>
+
+<style>
+/* ============================================================
+   FOOTER – Porto-Flow V4 Institutionnel
+   ============================================================ */
+
+.site-footer {
+  background-color: #0B1F33;
+  color: #F7F2E8;
+  padding-top: 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* --- Brand --- */
+.footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #F7F2E8;
+  margin-bottom: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus-visible {
+  opacity: 0.8;
+  outline: 2px solid #C96A3A;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.footer-logo-mark {
+  font-size: 1.5rem;
+  color: #C96A3A;
+  line-height: 1;
+}
+
+.footer-logo-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+.footer-baseline {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #A8B8C8;
+  margin: 0;
+}
+
+.footer-baseline-sub {
+  font-size: 0.8rem;
+  color: #C96A3A;
+  font-style: italic;
+  letter-spacing: 0.06em;
+}
+
+/* --- Navigation secondaire --- */
+.footer-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-nav-link {
+  color: #A8B8C8;
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-nav-link::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: #C96A3A;
+  vertical-align: middle;
+  margin-right: 0;
+  transition: width 0.2s ease, margin-right 0.2s ease;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus-visible {
+  color: #F7F2E8;
+  padding-left: 0.75rem;
+  outline: none;
+}
+
+.footer-nav-link:hover::before,
+.footer-nav-link:focus-visible::before {
+  width: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.footer-nav-link:focus-visible {
+  outline: 2px solid #C96A3A;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* --- Légal & crédits --- */
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-legal-text {
+  font-size: 0.8rem;
+  color: #7A8FA0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-credits {
+  font-style: italic;
+}
+
+.footer-credits-location {
+  color: #C96A3A;
+}
+
+.footer-legal-links {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+}
+
+.footer-legal-link {
+  color: #7A8FA0;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus-visible {
+  color: #F7F2E8;
+  border-bottom-color: #C96A3A;
+  outline: none;
+}
+
+.footer-legal-link:focus-visible {
+  outline: 2px solid #C96A3A;
+  outline-offset: 2px;
+  border-radius: 1px;
+}
+
+/* --- Ligne décorative topographique --- */
+.footer-topo-line {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  margin-top: 0;
+}
+
+.footer-topo-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.25rem 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-legal-links {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-nav-link,
+  .footer-nav-link::before,
+  .footer-logo-link,
+  .footer-legal-link {
+    transition: none;
+  }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+  var yearEl = document.getElementById('footer-year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+}());
+</script>
