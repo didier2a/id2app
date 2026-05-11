@@ -1,6 +1,7 @@
 /* ============================================================
    Porto Flow — script.js
    Vanilla JS — No dependencies — GitHub Pages compatible
+   Version V3 — Refonte complète
    ============================================================ */
 
 /* ============================================================
@@ -23,14 +24,21 @@ function ready(fn) {
   }
 }
 
+function safeEl(selector, context) {
+  try {
+    return (context || document).querySelector(selector);
+  } catch (e) {
+    return null;
+  }
+}
+
 /* ============================================================
-   2. MENU MOBILE — BURGER TOGGLE
+   2. MENU MOBILE — BURGER TOGGLE ROBUSTE
    ============================================================ */
 
 function initMobileMenu() {
   var burger = qs('.nav-burger');
   var navMenu = qs('.nav-menu');
-  var navLinks = qsa('.nav-menu a');
   var overlay = qs('.nav-overlay');
 
   if (!burger || !navMenu) return;
@@ -39,6 +47,7 @@ function initMobileMenu() {
     burger.classList.add('is-active');
     navMenu.classList.add('is-open');
     burger.setAttribute('aria-expanded', 'true');
+    burger.setAttribute('aria-label', 'Fermer le menu');
     document.body.classList.add('menu-open');
     if (overlay) overlay.classList.add('is-visible');
   }
@@ -47,20 +56,21 @@ function initMobileMenu() {
     burger.classList.remove('is-active');
     navMenu.classList.remove('is-open');
     burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Ouvrir le menu');
     document.body.classList.remove('menu-open');
     if (overlay) overlay.classList.remove('is-visible');
   }
 
-  burger.addEventListener('click', function () {
-    var isOpen = navMenu.classList.contains('is-open');
-    if (isOpen) {
+  burger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (navMenu.classList.contains('is-open')) {
       closeMenu();
     } else {
       openMenu();
     }
   });
 
-  navLinks.forEach(function (link) {
+  qsa('.nav-menu a').forEach(function (link) {
     link.addEventListener('click', function () {
       closeMenu();
     });
@@ -77,29 +87,49 @@ function initMobileMenu() {
       closeMenu();
     }
   });
+
+  document.addEventListener('click', function (e) {
+    if (
+      navMenu.classList.contains('is-open') &&
+      !navMenu.contains(e.target) &&
+      !burger.contains(e.target)
+    ) {
+      closeMenu();
+    }
+  });
 }
 
 /* ============================================================
-   3. NAVIGATION ACTIVE — MISE À JOUR SELON PAGE COURANTE
+   3. NAVIGATION ACTIVE — PAGE COURANTE
    ============================================================ */
 
 function initActiveNav() {
   var currentPath = window.location.pathname;
   var currentFile = currentPath.split('/').pop() || 'index.html';
 
+  if (currentFile === '') currentFile = 'index.html';
+
   var navLinks = qsa('.nav-menu a, .nav-link');
 
   navLinks.forEach(function (link) {
     var href = link.getAttribute('href') || '';
-    var linkFile = href.split('/').pop();
+    var linkFile = href.split('/').pop().split('?')[0].split('#')[0];
 
     link.classList.remove('is-active');
+    link.removeAttribute('aria-current');
 
-    if (
-      linkFile === currentFile ||
-      (currentFile === '' && linkFile === 'index.html') ||
-      (currentFile === 'index.html' && linkFile === 'index.html')
+    var isActive = false;
+
+    if (linkFile === currentFile) {
+      isActive = true;
+    } else if (
+      (currentFile === 'index.html' || currentFile === '') &&
+      (linkFile === 'index.html' || linkFile === '')
     ) {
+      isActive = true;
+    }
+
+    if (isActive) {
       link.classList.add('is-active');
       link.setAttribute('aria-current', 'page');
     }
@@ -107,72 +137,112 @@ function initActiveNav() {
 }
 
 /* ============================================================
-   4. ANIMATIONS D'ENTRÉE AU SCROLL — INTERSECTION OBSERVER
+   4. HEADER STICKY + COMPORTEMENT AU SCROLL
+   ============================================================ */
+
+function initStickyHeader() {
+  var header = qs('.site-header');
+  if (!header) return;
+
+  var lastScroll = 0;
+  var scrollThreshold = 80;
+  var hideThreshold = 300;
+
+  window.addEventListener('scroll', function () {
+    var currentScroll = window.scrollY;
+
+    if (currentScroll > scrollThreshold) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+      header.classList.remove('is-hidden');
+    }
+
+    if (currentScroll > hideThreshold) {
+      if (currentScroll > lastScroll + 5) {
+        header.classList.add('is-hidden');
+      } else if (currentScroll < lastScroll - 5) {
+        header.classList.remove('is-hidden');
+      }
+    }
+
+    lastScroll = currentScroll;
+  }, { passive: true });
+}
+
+/* ============================================================
+   5. ANIMATIONS AU SCROLL — INTERSECTION OBSERVER
    ============================================================ */
 
 function initScrollAnimations() {
   if (!('IntersectionObserver' in window)) {
-    qsa('[data-animate]').forEach(function (el) {
+    qsa('[data-animate], [data-stagger-item]').forEach(function (el) {
       el.classList.add('is-visible');
     });
     return;
   }
 
-  var options = {
+  var animOptions = {
     root: null,
-    rootMargin: '0px 0px -60px 0px',
-    threshold: 0.12
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
   };
 
-  var observer = new IntersectionObserver(function (entries) {
+  var animObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         var el = entry.target;
-        var delay = el.getAttribute('data-delay') || '0';
+        var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
         setTimeout(function () {
           el.classList.add('is-visible');
-        }, parseInt(delay, 10));
-        observer.unobserve(el);
+        }, delay);
+        animObserver.unobserve(el);
       }
     });
-  }, options);
+  }, animOptions);
 
   qsa('[data-animate]').forEach(function (el) {
-    observer.observe(el);
+    animObserver.observe(el);
   });
 
-  var staggerGroups = qsa('[data-stagger]');
-  staggerGroups.forEach(function (group) {
-    var children = qsa('[data-stagger-item]', group);
-    var staggerObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          children.forEach(function (child, index) {
-            setTimeout(function () {
-              child.classList.add('is-visible');
-            }, index * 120);
-          });
-          staggerObserver.unobserve(entry.target);
-        }
-      });
-    }, { root: null, rootMargin: '0px 0px -40px 0px', threshold: 0.1 });
+  var staggerOptions = {
+    root: null,
+    rootMargin: '0px 0px -30px 0px',
+    threshold: 0.08
+  };
 
+  var staggerObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var group = entry.target;
+        var items = qsa('[data-stagger-item]', group);
+        items.forEach(function (item, index) {
+          setTimeout(function () {
+            item.classList.add('is-visible');
+          }, index * 100);
+        });
+        staggerObserver.unobserve(group);
+      }
+    });
+  }, staggerOptions);
+
+  qsa('[data-stagger]').forEach(function (group) {
     staggerObserver.observe(group);
   });
 }
 
 /* ============================================================
-   5. BOUTON RETOUR HAUT DE PAGE
+   6. BOUTON RETOUR HAUT DE PAGE
    ============================================================ */
 
 function initBackToTop() {
   var btn = qs('.back-to-top');
   if (!btn) return;
 
-  var scrollThreshold = 400;
+  var threshold = 500;
 
   function updateVisibility() {
-    if (window.scrollY > scrollThreshold) {
+    if (window.scrollY > threshold) {
       btn.classList.add('is-visible');
     } else {
       btn.classList.remove('is-visible');
@@ -183,42 +253,10 @@ function initBackToTop() {
 
   btn.addEventListener('click', function (e) {
     e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   updateVisibility();
-}
-
-/* ============================================================
-   6. HEADER — COMPORTEMENT AU SCROLL (STICKY + SHADOW)
-   ============================================================ */
-
-function initStickyHeader() {
-  var header = qs('.site-header, header');
-  if (!header) return;
-
-  var lastScroll = 0;
-
-  window.addEventListener('scroll', function () {
-    var currentScroll = window.scrollY;
-
-    if (currentScroll > 60) {
-      header.classList.add('is-scrolled');
-    } else {
-      header.classList.remove('is-scrolled');
-    }
-
-    if (currentScroll > lastScroll && currentScroll > 200) {
-      header.classList.add('is-hidden');
-    } else {
-      header.classList.remove('is-hidden');
-    }
-
-    lastScroll = currentScroll;
-  }, { passive: true });
 }
 
 /* ============================================================
@@ -227,10 +265,11 @@ function initStickyHeader() {
 
 function animateCounter(el) {
   var target = parseInt(el.getAttribute('data-target') || el.textContent, 10);
+  if (isNaN(target)) return;
+
   var duration = parseInt(el.getAttribute('data-duration') || '1800', 10);
   var suffix = el.getAttribute('data-suffix') || '';
   var prefix = el.getAttribute('data-prefix') || '';
-  var start = 0;
   var startTime = null;
 
   function easeOutQuart(t) {
@@ -241,11 +280,8 @@ function animateCounter(el) {
     if (!startTime) startTime = timestamp;
     var elapsed = timestamp - startTime;
     var progress = Math.min(elapsed / duration, 1);
-    var eased = easeOutQuart(progress);
-    var current = Math.round(start + (target - start) * eased);
-
+    var current = Math.round(easeOutQuart(progress) * target);
     el.textContent = prefix + current.toLocaleString('fr-FR') + suffix;
-
     if (progress < 1) {
       requestAnimationFrame(step);
     } else {
@@ -257,10 +293,11 @@ function animateCounter(el) {
 }
 
 function initCounters() {
+  var counters = qsa('[data-counter]');
+  if (counters.length === 0) return;
+
   if (!('IntersectionObserver' in window)) {
-    qsa('[data-counter]').forEach(function (el) {
-      animateCounter(el);
-    });
+    counters.forEach(animateCounter);
     return;
   }
 
@@ -271,20 +308,23 @@ function initCounters() {
         counterObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.4 });
 
-  qsa('[data-counter]').forEach(function (el) {
+  counters.forEach(function (el) {
     counterObserver.observe(el);
   });
 }
 
 /* ============================================================
-   8. SIMULATION ASSISTANT IA VISUEL
+   8. SIMULATION ASSISTANT IA
    ============================================================ */
 
 function initAIAssistant() {
   var assistant = qs('.ai-assistant-demo');
   if (!assistant) return;
+
+  var chatContainer = qs('.ai-chat-messages', assistant);
+  if (!chatContainer) return;
 
   var messages = [
     { role: 'user', text: 'Où manger ce soir à Porto-Vecchio ?' },
@@ -292,11 +332,10 @@ function initAIAssistant() {
     { role: 'user', text: 'Y a-t-il de la place au port ce soir ?' },
     { role: 'ai', text: 'Le port de plaisance affiche 12 anneaux disponibles. Réservation possible directement depuis l\'app.' },
     { role: 'user', text: 'Quel est le trafic vers la citadelle ?' },
-    { role: 'ai', text: 'Trafic fluide. Temps estimé depuis votre position : 6 minutes. Parking Génois disponible.' }
+    { role: 'ai', text: 'Trafic fluide. Temps estimé depuis votre position : 6 minutes. Parking Génois disponible.' },
+    { role: 'user', text: 'Quelle plage est la moins fréquentée maintenant ?' },
+    { role: 'ai', text: 'Palombaggia Nord affiche 34% d\'affluence. Accès libre, parking disponible, eau à 26°C.' }
   ];
-
-  var chatContainer = qs('.ai-chat-messages', assistant);
-  if (!chatContainer) return;
 
   var currentIndex = 0;
   var isRunning = false;
@@ -327,7 +366,7 @@ function initAIAssistant() {
 
   function typeText(textEl, content, callback) {
     var i = 0;
-    var speed = 28;
+    var speed = 24;
 
     function type() {
       if (i < content.length) {
@@ -335,7 +374,7 @@ function initAIAssistant() {
         i++;
         setTimeout(type, speed);
       } else if (callback) {
-        callback();
+        setTimeout(callback, 0);
       }
     }
 
@@ -347,23 +386,22 @@ function initAIAssistant() {
       setTimeout(function () {
         chatContainer.innerHTML = '';
         currentIndex = 0;
-        setTimeout(showNextMessage, 800);
-      }, 3000);
+        setTimeout(showNextMessage, 1000);
+      }, 3500);
       return;
     }
 
     var msg = messages[currentIndex];
     var created = createMessageEl(msg);
-
     chatContainer.appendChild(created.el);
     chatContainer.scrollTop = chatContainer.scrollHeight;
 
-    var delay = msg.role === 'ai' ? 600 : 200;
+    var delay = msg.role === 'ai' ? 500 : 150;
 
     setTimeout(function () {
       typeText(created.textEl, msg.text, function () {
         currentIndex++;
-        var nextDelay = msg.role === 'ai' ? 1400 : 800;
+        var nextDelay = msg.role === 'ai' ? 1200 : 700;
         setTimeout(showNextMessage, nextDelay);
       });
     }, delay);
@@ -382,13 +420,13 @@ function initAIAssistant() {
         aiObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.4 });
+  }, { threshold: 0.3 });
 
   aiObserver.observe(assistant);
 }
 
 /* ============================================================
-   9. SIMULATION CARTE / DASHBOARD TERRITORIAL
+   9. SIMULATION CARTE TERRITORIALE
    ============================================================ */
 
 function initMapSimulation() {
@@ -396,19 +434,20 @@ function initMapSimulation() {
   if (!mapCanvas) return;
 
   var points = [
-    { x: 30, y: 40, label: 'Port', active: true },
-    { x: 55, y: 25, label: 'Citadelle', active: false },
-    { x: 70, y: 60, label: 'Plage', active: true },
-    { x: 20, y: 70, label: 'Marché', active: false },
-    { x: 80, y: 35, label: 'Hôtel', active: true }
+    { x: 28, y: 42, label: 'Port', type: 'port', active: true },
+    { x: 52, y: 22, label: 'Citadelle', type: 'monument', active: false },
+    { x: 72, y: 58, label: 'Palombaggia', type: 'plage', active: true },
+    { x: 18, y: 68, label: 'Marché', type: 'commerce', active: false },
+    { x: 82, y: 32, label: 'Hôtel', type: 'hebergement', active: false },
+    { x: 45, y: 72, label: 'Parking', type: 'parking', active: true },
+    { x: 62, y: 38, label: 'Plage Cala', type: 'plage', active: false }
   ];
 
-  var dots = qsa('.map-dot', mapCanvas);
-
-  if (dots.length === 0) {
+  var existingDots = qsa('.map-dot', mapCanvas);
+  if (existingDots.length === 0) {
     points.forEach(function (point) {
       var dot = document.createElement('div');
-      dot.className = 'map-dot' + (point.active ? ' map-dot--active' : '');
+      dot.className = 'map-dot map-dot--' + point.type + (point.active ? ' map-dot--active' : '');
       dot.style.left = point.x + '%';
       dot.style.top = point.y + '%';
       dot.setAttribute('title', point.label);
@@ -436,42 +475,36 @@ function initMapSimulation() {
       allDots[activeIndex].classList.add('map-dot--active');
     }
     activeIndex = (activeIndex + 1) % allDots.length;
-  }, 2000);
+  }, 1800);
 }
 
 /* ============================================================
-   10. SMOOTH SCROLL POUR ANCRES INTERNES
+   10. SMOOTH SCROLL ANCRES INTERNES
    ============================================================ */
 
 function initSmoothScroll() {
   qsa('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      var targetId = link.getAttribute('href').slice(1);
-      if (!targetId) return;
+      var href = link.getAttribute('href');
+      if (!href || href === '#') return;
 
+      var targetId = href.slice(1);
       var target = document.getElementById(targetId);
       if (!target) return;
 
       e.preventDefault();
 
-      var headerHeight = 0;
-      var header = qs('.site-header, header');
-      if (header) {
-        headerHeight = header.getBoundingClientRect().height;
-      }
+      var header = qs('.site-header');
+      var headerHeight = header ? header.getBoundingClientRect().height : 0;
+      var targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
 
-      var targetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 16;
-
-      window.scrollTo({
-        top: targetTop,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
     });
   });
 }
 
 /* ============================================================
-   11. TABS / ONGLETS SIMPLES
+   11. TABS / ONGLETS
    ============================================================ */
 
 function initTabs() {
@@ -481,12 +514,15 @@ function initTabs() {
     var tabs = qsa('[data-tab]', group);
     var panels = qsa('[data-tab-panel]', group);
 
+    if (tabs.length === 0) return;
+
     function activateTab(tabEl) {
       var target = tabEl.getAttribute('data-tab');
 
       tabs.forEach(function (t) {
         t.classList.remove('is-active');
         t.setAttribute('aria-selected', 'false');
+        t.setAttribute('tabindex', '-1');
       });
 
       panels.forEach(function (p) {
@@ -496,6 +532,7 @@ function initTabs() {
 
       tabEl.classList.add('is-active');
       tabEl.setAttribute('aria-selected', 'true');
+      tabEl.setAttribute('tabindex', '0');
 
       var panel = qs('[data-tab-panel="' + target + '"]', group);
       if (panel) {
@@ -526,9 +563,7 @@ function initTabs() {
       });
     });
 
-    if (tabs.length > 0) {
-      activateTab(tabs[0]);
-    }
+    activateTab(tabs[0]);
   });
 }
 
@@ -548,6 +583,8 @@ function initAccordion() {
 
       if (!trigger || !content) return;
 
+      trigger.setAttribute('aria-expanded', 'false');
+
       trigger.addEventListener('click', function () {
         var isOpen = item.classList.contains('is-open');
 
@@ -565,8 +602,6 @@ function initAccordion() {
           trigger.setAttribute('aria-expanded', 'true');
         }
       });
-
-      trigger.setAttribute('aria-expanded', 'false');
     });
   });
 }
@@ -576,8 +611,8 @@ function initAccordion() {
    ============================================================ */
 
 function initParallax() {
-  var heroParallax = qsa('[data-parallax]');
-  if (heroParallax.length === 0) return;
+  var parallaxEls = qsa('[data-parallax]');
+  if (parallaxEls.length === 0) return;
 
   var ticking = false;
 
@@ -585,23 +620,19 @@ function initParallax() {
     if (!ticking) {
       requestAnimationFrame(function () {
         var scrollY = window.scrollY;
-
-        heroParallax.forEach(function (el) {
+        parallaxEls.forEach(function (el) {
           var speed = parseFloat(el.getAttribute('data-parallax') || '0.3');
-          var offset = scrollY * speed;
-          el.style.transform = 'translateY(' + offset + 'px)';
+          el.style.transform = 'translateY(' + (scrollY * speed) + 'px)';
         });
-
         ticking = false;
       });
-
       ticking = true;
     }
   }, { passive: true });
 }
 
 /* ============================================================
-   14. NOTIFICATION / TOAST LÉGER
+   14. TOAST / NOTIFICATION
    ============================================================ */
 
 function showToast(message, type, duration) {
@@ -621,25 +652,24 @@ function showToast(message, type, duration) {
   toast.className = 'toast toast--' + type;
   toast.textContent = message;
   toast.setAttribute('role', 'status');
-
   container.appendChild(toast);
 
   requestAnimationFrame(function () {
-    toast.classList.add('is-visible');
+    requestAnimationFrame(function () {
+      toast.classList.add('is-visible');
+    });
   });
 
   setTimeout(function () {
     toast.classList.remove('is-visible');
     setTimeout(function () {
-      if (toast.parentNode) {
-        toast.parentNode.removeChild(toast);
-      }
+      if (toast.parentNode) toast.parentNode.removeChild(toast);
     }, 400);
   }, duration);
 }
 
 /* ============================================================
-   15. FORMULAIRE — VALIDATION LÉGÈRE
+   15. FORMULAIRES — VALIDATION
    ============================================================ */
 
 function initForms() {
@@ -647,12 +677,12 @@ function initForms() {
 
   forms.forEach(function (form) {
     form.addEventListener('submit', function (e) {
+      e.preventDefault();
       var valid = true;
       var fields = qsa('[required]', form);
 
       fields.forEach(function (field) {
         var errorEl = qs('[data-error-for="' + field.name + '"]', form);
-
         field.classList.remove('is-invalid');
         if (errorEl) errorEl.textContent = '';
 
@@ -671,11 +701,9 @@ function initForms() {
       });
 
       if (!valid) {
-        e.preventDefault();
         var firstInvalid = qs('.is-invalid', form);
         if (firstInvalid) firstInvalid.focus();
       } else {
-        e.preventDefault();
         showToast('Message envoyé. Nous vous répondrons rapidement.', 'success');
         form.reset();
       }
@@ -700,15 +728,288 @@ function initReadingProgress() {
 }
 
 /* ============================================================
-   17. INITIALISATION GLOBALE
+   17. DASHBOARD STATS — MISE À JOUR DYNAMIQUE
+   ============================================================ */
+
+function initDashboardStats() {
+  var statItems = qsa('[data-live-stat]');
+  if (statItems.length === 0) return;
+
+  function randomVariation(base, range) {
+    return base + Math.floor((Math.random() - 0.5) * range);
+  }
+
+  statItems.forEach(function (el) {
+    var base = parseInt(el.getAttribute('data-base') || el.textContent, 10);
+    var range = parseInt(el.getAttribute('data-range') || '10', 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+
+    if (isNaN(base)) return;
+
+    setInterval(function () {
+      var newVal = randomVariation(base, range);
+      newVal = Math.max(0, newVal);
+      el.textContent = newVal.toLocaleString('fr-FR') + suffix;
+      el.classList.add('stat-updated');
+      setTimeout(function () {
+        el.classList.remove('stat-updated');
+      }, 600);
+    }, 4000 + Math.random() * 3000);
+  });
+}
+
+/* ============================================================
+   18. FLUX TEMPS RÉEL — SIMULATION TRAFIC
+   ============================================================ */
+
+function initTrafficSimulation() {
+  var trafficBars = qsa('[data-traffic-bar]');
+  if (trafficBars.length === 0) return;
+
+  function updateBars() {
+    trafficBars.forEach(function (bar) {
+      var min = parseInt(bar.getAttribute('data-min') || '10', 10);
+      var max = parseInt(bar.getAttribute('data-max') || '90', 10);
+      var current = parseInt(bar.getAttribute('data-current') || '50', 10);
+      var delta = Math.floor((Math.random() - 0.5) * 15);
+      var newVal = Math.min(max, Math.max(min, current + delta));
+
+      bar.setAttribute('data-current', newVal);
+      bar.style.width = newVal + '%';
+
+      bar.className = bar.className.replace(/traffic--(low|medium|high)/g, '');
+      if (newVal < 40) {
+        bar.classList.add('traffic--low');
+      } else if (newVal < 70) {
+        bar.classList.add('traffic--medium');
+      } else {
+        bar.classList.add('traffic--high');
+      }
+    });
+  }
+
+  updateBars();
+  setInterval(updateBars, 3500);
+}
+
+/* ============================================================
+   19. HERO — ANIMATION PARTICULES LÉGÈRES (CANVAS)
+   ============================================================ */
+
+function initHeroParticles() {
+  var canvas = qs('.hero-particles-canvas');
+  if (!canvas) return;
+
+  var ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  var particles = [];
+  var particleCount = 40;
+  var animFrame;
+
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+  }
+
+  function createParticle() {
+    return {
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: (Math.random() - 0.5) * 0.4,
+      radius: Math.random() * 2 + 0.5,
+      alpha: Math.random() * 0.4 + 0.1
+    };
+  }
+
+  function initParticles() {
+    particles = [];
+    for (var i = 0; i < particleCount; i++) {
+      particles.push(createParticle());
+    }
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach(function (p) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255, 255, 255, ' + p.alpha + ')';
+      ctx.fill();
+
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0) p.x = canvas.width;
+      if (p.x > canvas.width) p.x = 0;
+      if (p.y < 0) p.y = canvas.height;
+      if (p.y > canvas.height) p.y = 0;
+    });
+
+    for (var i = 0; i < particles.length; i++) {
+      for (var j = i + 1; j < particles.length; j++) {
+        var dx = particles[i].x - particles[j].x;
+        var dy = particles[i].y - particles[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 80) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = 'rgba(255, 255, 255, ' + (0.08 * (1 - dist / 80)) + ')';
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+
+    animFrame = requestAnimationFrame(drawParticles);
+  }
+
+  resize();
+  initParticles();
+  drawParticles();
+
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      cancelAnimationFrame(animFrame);
+      resize();
+      initParticles();
+      drawParticles();
+    }, 200);
+  });
+}
+
+/* ============================================================
+   20. SAISON TOGGLE — TERRITOIRE
+   ============================================================ */
+
+function initSeasonToggle() {
+  var toggleBtns = qsa('[data-season-toggle]');
+  var seasonPanels = qsa('[data-season-panel]');
+
+  if (toggleBtns.length === 0 || seasonPanels.length === 0) return;
+
+  function activateSeason(season) {
+    toggleBtns.forEach(function (btn) {
+      btn.classList.toggle('is-active', btn.getAttribute('data-season-toggle') === season);
+    });
+    seasonPanels.forEach(function (panel) {
+      var isTarget = panel.getAttribute('data-season-panel') === season;
+      panel.classList.toggle('is-active', isTarget);
+      if (isTarget) {
+        panel.removeAttribute('hidden');
+      } else {
+        panel.setAttribute('hidden', '');
+      }
+    });
+  }
+
+  toggleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activateSeason(btn.getAttribute('data-season-toggle'));
+    });
+  });
+
+  if (toggleBtns[0]) {
+    activateSeason(toggleBtns[0].getAttribute('data-season-toggle'));
+  }
+}
+
+/* ============================================================
+   21. MODULES APP — NAVIGATION INTERNE
+   ============================================================ */
+
+function initAppModules() {
+  var moduleBtns = qsa('[data-module-btn]');
+  var modulePanels = qsa('[data-module-panel]');
+
+  if (moduleBtns.length === 0 || modulePanels.length === 0) return;
+
+  function activateModule(moduleId) {
+    moduleBtns.forEach(function (btn) {
+      btn.classList.toggle('is-active', btn.getAttribute('data-module-btn') === moduleId);
+    });
+    modulePanels.forEach(function (panel) {
+      var isTarget = panel.getAttribute('data-module-panel') === moduleId;
+      panel.classList.toggle('is-active', isTarget);
+    });
+  }
+
+  moduleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      activateModule(btn.getAttribute('data-module-btn'));
+    });
+  });
+
+  if (moduleBtns[0]) {
+    activateModule(moduleBtns[0].getAttribute('data-module-btn'));
+  }
+}
+
+/* ============================================================
+   22. PARTNER CARDS — HOVER INTERACTIF
+   ============================================================ */
+
+function initPartnerCards() {
+  var cards = qsa('.partner-card[data-partner]');
+
+  cards.forEach(function (card) {
+    card.addEventListener('mouseenter', function () {
+      card.classList.add('is-hovered');
+    });
+    card.addEventListener('mouseleave', function () {
+      card.classList.remove('is-hovered');
+    });
+    card.addEventListener('focus', function () {
+      card.classList.add('is-hovered');
+    });
+    card.addEventListener('blur', function () {
+      card.classList.remove('is-hovered');
+    });
+  });
+}
+
+/* ============================================================
+   23. TECH STACK — ANIMATION BOUCLE RÉCURSIVE
+   ============================================================ */
+
+function initTechLoop() {
+  var loopEl = qs('.tech-loop-visual');
+  if (!loopEl) return;
+
+  var steps = qsa('.tech-loop-step', loopEl);
+  if (steps.length === 0) return;
+
+  var currentStep = 0;
+
+  function activateStep(index) {
+    steps.forEach(function (s, i) {
+      s.classList.toggle('is-active', i === index);
+    });
+  }
+
+  activateStep(0);
+
+  setInterval(function () {
+    currentStep = (currentStep + 1) % steps.length;
+    activateStep(currentStep);
+  }, 2200);
+}
+
+/* ============================================================
+   24. INITIALISATION GLOBALE
    ============================================================ */
 
 ready(function () {
   initMobileMenu();
   initActiveNav();
+  initStickyHeader();
   initScrollAnimations();
   initBackToTop();
-  initStickyHeader();
   initCounters();
   initAIAssistant();
   initMapSimulation();
@@ -718,4 +1019,11 @@ ready(function () {
   initParallax();
   initForms();
   initReadingProgress();
+  initDashboardStats();
+  initTrafficSimulation();
+  initHeroParticles();
+  initSeasonToggle();
+  initAppModules();
+  initPartnerCards();
+  initTechLoop();
 });
