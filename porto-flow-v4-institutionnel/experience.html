@@ -1,0 +1,4417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porto-Flow – Filtrer le chaos en une fraction de seconde. Découvrez comment Porto-Flow transforme la complexité territoriale en expérience utilisateur claire et fluide.">
+  <meta name="theme-color" content="#0B1F33">
+  <title>L'expérience utilisateur – Filtrer le chaos | Porto-Flow V4</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Variables globales ── */
+    :root {
+      --color-deep:       #0B1F33;
+      --color-slate:      #5F7487;
+      --color-cream:      #F7F2E8;
+      --color-sand:       #E8DDC8;
+      --color-terracotta: #C96A3A;
+      --color-amber:      #B8794A;
+      --color-maquis:     #687B57;
+      --color-ink:        #102033;
+
+      --font-heading: 'Georgia', 'Times New Roman', serif;
+      --font-body:    system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+      --header-h:     72px;
+      --radius-sm:    4px;
+      --radius-md:    8px;
+      --transition:   0.25s ease;
+      --shadow-nav:   0 2px 24px rgba(11,31,51,0.13);
+    }
+
+    /* ── Reset minimal ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--color-cream);
+      color: var(--color-ink);
+      line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      height: var(--header-h);
+      background: rgba(11, 31, 51, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(95, 116, 135, 0.22);
+      box-shadow: var(--shadow-nav);
+      display: flex;
+      align-items: center;
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    /* ── Logo / marque ── */
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-shrink: 0;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+
+    .logo-wordmark {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-cream);
+      letter-spacing: 0.03em;
+    }
+
+    .logo-tagline {
+      font-size: 0.62rem;
+      color: var(--color-slate);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ── Navigation principale ── */
+    .site-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.15rem;
+    }
+
+    .nav-list a {
+      display: inline-block;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: rgba(247, 242, 232, 0.72);
+      border-radius: var(--radius-sm);
+      transition: color var(--transition), background var(--transition);
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .nav-list a:hover,
+    .nav-list a:focus-visible {
+      color: var(--color-cream);
+      background: rgba(95, 116, 135, 0.18);
+      outline: none;
+    }
+
+    .nav-list a:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: 2px;
+    }
+
+    /* État actif – page courante */
+    .nav-list a[aria-current="page"] {
+      color: var(--color-cream);
+      background: rgba(201, 106, 58, 0.18);
+    }
+
+    .nav-list a[aria-current="page"]::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0.85rem;
+      right: 0.85rem;
+      height: 2px;
+      background: var(--color-terracotta);
+      border-radius: 2px;
+    }
+
+    /* ── CTA header ── */
+    .header-cta {
+      flex-shrink: 0;
+    }
+
+    .btn-header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: var(--color-cream);
+      background: var(--color-terracotta);
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-header-cta:hover,
+    .btn-header-cta:focus-visible {
+      background: var(--color-amber);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .btn-header-cta:focus-visible {
+      outline: 2px solid var(--color-cream);
+      outline-offset: 2px;
+    }
+
+    /* ── Bouton menu mobile ── */
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background: transparent;
+      border: 1px solid rgba(95, 116, 135, 0.35);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      color: var(--color-cream);
+      transition: background var(--transition), border-color var(--transition);
+      flex-shrink: 0;
+    }
+
+    .nav-toggle:hover,
+    .nav-toggle:focus-visible {
+      background: rgba(95, 116, 135, 0.2);
+      border-color: rgba(95, 116, 135, 0.6);
+      outline: none;
+    }
+
+    .nav-toggle:focus-visible {
+      outline: 2px solid var(--color-terracotta);
+      outline-offset: 2px;
+    }
+
+    .nav-toggle svg {
+      pointer-events: none;
+      transition: opacity var(--transition);
+    }
+
+    .icon-close { display: none; }
+
+    .nav-toggle[aria-expanded="true"] .icon-open  { display: none; }
+    .nav-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+    /* ── Responsive mobile ── */
+    @media (max-width: 900px) {
+      .header-cta { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: flex; }
+
+      .site-nav {
+        position: fixed;
+        top: var(--header-h);
+        left: 0;
+        right: 0;
+        background: rgba(11, 31, 51, 0.98);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(95, 116, 135, 0.2);
+        padding: 1rem 0 1.5rem;
+        transform: translateY(-110%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        pointer-events: none;
+      }
+
+      .site-nav.is-open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0 1.5rem;
+      }
+
+      .nav-list a {
+        display: block;
+        padding: 0.85rem 1rem;
+        font-size: 0.95rem;
+        border-radius: var(--radius-md);
+        border-bottom: 1px solid rgba(95, 116, 135, 0.1);
+      }
+
+      .nav-list li:last-child a {
+        border-bottom: none;
+      }
+
+      .nav-list a[aria-current="page"]::after {
+        display: none;
+      }
+
+      .nav-list a[aria-current="page"] {
+        border-left: 3px solid var(--color-terracotta);
+        padding-left: calc(1rem - 3px);
+      }
+
+      /* CTA mobile dans le menu */
+      .nav-mobile-cta {
+        display: block;
+        margin: 1rem 1.5rem 0;
+      }
+
+      .nav-mobile-cta .btn-header-cta {
+        width: 100%;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.88rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .header-inner { padding: 0 1rem; }
+      .logo-tagline { display: none; }
+    }
+
+    /* ── Offset contenu sous header fixe ── */
+    .page-content-offset {
+      padding-top: var(--header-h);
+    }
+  </style>
+</head>
+<body class="page-content-offset">
+
+  <!-- ═══════════════════════════════════════════
+       HEADER PREMIUM – Porto-Flow V4
+       Page active : experience.html
+  ════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="site-logo" aria-label="Porto-Flow – Retour à l'accueil">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <!-- Cercle de base -->
+          <circle cx="18" cy="18" r="17" stroke="#5F7487" stroke-width="1.2" fill="none" opacity="0.5"/>
+          <!-- Lignes de niveau topographiques -->
+          <ellipse cx="18" cy="18" rx="12" ry="7" stroke="#5F7487" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <ellipse cx="18" cy="18" rx="7"  ry="4" stroke="#5F7487" stroke-width="0.8" fill="none" opacity="0.4"/>
+          <!-- Point central / boussole -->
+          <circle cx="18" cy="18" r="2.5" fill="#C96A3A"/>
+          <!-- Flux nord -->
+          <line x1="18" y1="15.5" x2="18" y2="5"  stroke="#C96A3A" stroke-width="1.4" stroke-linecap="round"/>
+          <!-- Flèche nord -->
+          <polyline points="15.5,8 18,5 20.5,8" stroke="#C96A3A" stroke-width="1.4" stroke-linejoin="round" fill="none"/>
+          <!-- Flux est -->
+          <line x1="20.5" y1="18" x2="31" y2="18" stroke="#5F7487" stroke-width="0.9" stroke-linecap="round" opacity="0.6"/>
+          <!-- Flux sud -->
+          <line x1="18" y1="20.5" x2="18" y2="29" stroke="#5F7487" stroke-width="0.9" stroke-linecap="round" opacity="0.6"/>
+          <!-- Flux ouest -->
+          <line x1="15.5" y1="18" x2="5" y2="18"  stroke="#5F7487" stroke-width="0.9" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+
+        <span class="logo-wordmark">
+          <span class="logo-name">Porto-Flow</span>
+          <span class="logo-tagline">Corse-du-Sud · Territoire intelligent</span>
+        </span>
+      </a>
+
+      <!-- Navigation principale -->
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li>
+            <a href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="territoire.html">Territoire</a>
+          </li>
+          <li>
+            <a href="experience.html" aria-current="page">Expérience</a>
+          </li>
+          <li>
+            <a href="ecosysteme.html">Écosystème</a>
+          </li>
+          <li>
+            <a href="orchestration.html">Orchestration</a>
+          </li>
+          <li>
+            <a href="production-ia.html">Production IA</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- CTA mobile intégré dans le menu -->
+        <div class="nav-mobile-cta" aria-hidden="true">
+          <a href="contact.html" class="btn-header-cta" tabindex="-1">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1L13 7L7 13M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Nous contacter
+          </a>
+        </div>
+      </nav>
+
+      <!-- CTA desktop -->
+      <div class="header-cta">
+        <a href="contact.html" class="btn-header-cta">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+            <path d="M7 1L13 7L7 13M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Bouton menu burger (mobile) -->
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-controls="site-nav"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <!-- Icône hamburger -->
+        <svg class="icon-open" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <line x1="2" y1="5"  x2="18" y2="5"  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="2" y1="15" x2="18" y2="15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <!-- Icône fermeture -->
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <line x1="3" y1="3"  x2="17" y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="17" y1="3" x2="3"  y2="17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+    </div>
+  </header>
+  <!-- /HEADER -->
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Menu mobile ── */
+      var toggle = document.getElementById('nav-toggle');
+      var nav    = document.getElementById('site-nav');
+
+      if (!toggle || !nav) return;
+
+      function openMenu() {
+        nav.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'Fermer le menu de navigation');
+        /* Rendre le CTA mobile accessible */
+        var mobileCta = nav.querySelector('.nav-mobile-cta');
+        if (mobileCta) {
+          mobileCta.removeAttribute('aria-hidden');
+          var ctaLink = mobileCta.querySelector('a');
+          if (ctaLink) ctaLink.removeAttribute('tabindex');
+        }
+      }
+
+      function closeMenu() {
+        nav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Ouvrir le menu de navigation');
+        /* Masquer le CTA mobile */
+        var mobileCta = nav.querySelector('.nav-mobile-cta');
+        if (mobileCta) {
+          mobileCta.setAttribute('aria-hidden', 'true');
+          var ctaLink = mobileCta.querySelector('a');
+          if (ctaLink) ctaLink.setAttribute('tabindex', '-1');
+        }
+      }
+
+      toggle.addEventListener('click', function () {
+        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        if (isOpen) { closeMenu(); } else { openMenu(); }
+      });
+
+      /* Fermer sur Échap */
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+          toggle.focus();
+        }
+      });
+
+      /* Fermer si clic en dehors */
+      document.addEventListener('click', function (e) {
+        if (
+          toggle.getAttribute('aria-expanded') === 'true' &&
+          !nav.contains(e.target) &&
+          !toggle.contains(e.target)
+        ) {
+          closeMenu();
+        }
+      });
+
+      /* Fermer si redimensionnement vers desktop */
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768 && toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu();
+        }
+      });
+
+      /* ── Scroll : ombre renforcée sur le header ── */
+      var header = document.querySelector('.site-header');
+      if (header) {
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 8) {
+            header.style.boxShadow = '0 4px 32px rgba(11,31,51,0.22)';
+          } else {
+            header.style.boxShadow = '0 2px 24px rgba(11,31,51,0.13)';
+          }
+        }, { passive: true });
+      }
+
+    }());
+  </script>
+
+</body>
+</html>
+
+<section class="experience-hero" aria-labelledby="experience-hero-heading">
+  <div class="experience-hero__backdrop" aria-hidden="true">
+    <div class="experience-hero__topo-lines">
+      <svg class="topo-svg" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="heroGradExp" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0B1F33;stop-opacity:1" />
+            <stop offset="60%" style="stop-color:#102033;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a3550;stop-opacity:1" />
+          </linearGradient>
+          <filter id="glow-exp">
+            <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <rect width="1440" height="520" fill="url(#heroGradExp)"/>
+        <!-- Lignes topographiques animées -->
+        <path class="topo-line topo-line--1" d="M-80,180 C120,140 280,200 480,160 C680,120 820,190 1040,155 C1200,128 1340,170 1520,145" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.25"/>
+        <path class="topo-line topo-line--2" d="M-80,230 C100,195 260,255 460,215 C660,175 800,240 1020,205 C1190,178 1350,220 1520,198" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.2"/>
+        <path class="topo-line topo-line--3" d="M-80,280 C140,248 300,305 500,268 C700,230 840,292 1060,258 C1220,232 1360,272 1520,252" stroke="#5F7487" stroke-width="0.8" fill="none" opacity="0.18"/>
+        <path class="topo-line topo-line--4" d="M-80,330 C160,300 320,355 520,318 C720,280 860,342 1080,308 C1240,282 1370,325 1520,305" stroke="#5F7487" stroke-width="0.8" fill="none" opacity="0.15"/>
+        <path class="topo-line topo-line--5" d="M-80,380 C180,352 340,405 540,368 C740,330 880,392 1100,358 C1260,332 1380,378 1520,358" stroke="#5F7487" stroke-width="0.6" fill="none" opacity="0.12"/>
+        <!-- Flux animé principal -->
+        <path class="flux-path flux-path--main" d="M0,260 C200,220 400,300 640,240 C880,180 1100,280 1440,230" stroke="#C96A3A" stroke-width="1.5" fill="none" opacity="0.35" filter="url(#glow-exp)"/>
+        <!-- Points de flux -->
+        <circle class="flux-dot flux-dot--1" cx="320" cy="248" r="3" fill="#C96A3A" opacity="0.6"/>
+        <circle class="flux-dot flux-dot--2" cx="640" cy="240" r="4" fill="#C96A3A" opacity="0.7"/>
+        <circle class="flux-dot flux-dot--3" cx="960" cy="255" r="3" fill="#C96A3A" opacity="0.5"/>
+        <circle class="flux-dot flux-dot--4" cx="1200" cy="242" r="3.5" fill="#C96A3A" opacity="0.6"/>
+        <!-- Accent lumière méditerranéenne -->
+        <ellipse cx="720" cy="80" rx="480" ry="120" fill="#5F7487" opacity="0.06"/>
+      </svg>
+    </div>
+    <div class="experience-hero__grain" aria-hidden="true"></div>
+  </div>
+
+  <div class="experience-hero__container">
+    <div class="experience-hero__breadcrumb" aria-label="Fil d'Ariane">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html" class="breadcrumb-link">Accueil</a>
+          </li>
+          <li class="breadcrumb-separator" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 2L8 6L4 10" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </li>
+          <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">
+            Expérience
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="experience-hero__content">
+      <div class="experience-hero__label" aria-hidden="true">
+        <span class="label-marker"></span>
+        <span class="label-text">Interface & Clarté</span>
+      </div>
+
+      <h1 id="experience-hero-heading" class="experience-hero__title">
+        Filtrer le chaos<br>
+        <em class="experience-hero__title-accent">en une fraction de seconde</em>
+      </h1>
+
+      <p class="experience-hero__subtitle">
+        En Corse-du-Sud, chaque journée de haute saison génère des milliers de micro-décisions simultanées. Porto-Flow transforme cette complexité en clarté immédiate — pour le visiteur, le résident, l'acteur local.
+      </p>
+
+      <div class="experience-hero__metrics" role="list" aria-label="Indicateurs clés de l'expérience">
+        <div class="metric-card" role="listitem">
+          <span class="metric-card__value" aria-label="Moins de deux secondes">
+            <span class="metric-number" data-target="2" data-suffix="s">—</span>
+          </span>
+          <span class="metric-card__label">Pour une réponse contextualisée</span>
+        </div>
+        <div class="metric-card metric-card--accent" role="listitem">
+          <span class="metric-card__value" aria-label="Plus de deux cents points d'intérêt connectés">
+            <span class="metric-number" data-target="200" data-suffix="+">—</span>
+          </span>
+          <span class="metric-card__label">Points d'intérêt connectés</span>
+        </div>
+        <div class="metric-card" role="listitem">
+          <span class="metric-card__value" aria-label="Un seul point d'entrée">
+            <span class="metric-number" data-target="1" data-suffix="">—</span>
+          </span>
+          <span class="metric-card__label">Point d'entrée unifié</span>
+        </div>
+      </div>
+
+      <div class="experience-hero__cta-group">
+        <a href="#experience-scenario" class="btn btn--primary btn--hero" aria-label="Découvrir le scénario d'usage de Porto-Flow">
+          <span>Voir le scénario</span>
+          <svg class="btn-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M9 3L9 15M9 15L4 10M9 15L14 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="ecosysteme.html" class="btn btn--ghost btn--hero" aria-label="Explorer l'écosystème connecté">
+          <span>L'écosystème</span>
+          <svg class="btn-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="experience-hero__visual" aria-hidden="true">
+      <div class="hero-device">
+        <div class="hero-device__frame">
+          <div class="hero-device__screen">
+            <div class="device-ui">
+              <div class="device-ui__topbar">
+                <div class="device-ui__dot device-ui__dot--red"></div>
+                <div class="device-ui__dot device-ui__dot--yellow"></div>
+                <div class="device-ui__dot device-ui__dot--green"></div>
+                <div class="device-ui__address">porto-flow.corse-du-sud</div>
+              </div>
+              <div class="device-ui__content">
+                <div class="device-map">
+                  <div class="device-map__bg"></div>
+                  <div class="device-map__pin device-map__pin--1">
+                    <span class="pin-pulse"></span>
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 18 7 18C7 18 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#C96A3A"/>
+                    </svg>
+                  </div>
+                  <div class="device-map__pin device-map__pin--2">
+                    <svg width="10" height="13" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 18 7 18C7 18 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#687B57"/>
+                    </svg>
+                  </div>
+                  <div class="device-map__pin device-map__pin--3">
+                    <svg width="10" height="13" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 18 7 18C7 18 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#5F7487"/>
+                    </svg>
+                  </div>
+                  <svg class="device-map__route" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40,110 C60,90 80,70 100,60 C120,50 150,45 170,35" stroke="#C96A3A" stroke-width="2" stroke-dasharray="4 3" opacity="0.7"/>
+                  </svg>
+                </div>
+                <div class="device-assistant">
+                  <div class="device-assistant__bubble device-assistant__bubble--in">
+                    <span class="bubble-icon">🧭</span>
+                    <span class="bubble-text">Où manger local ce soir à Bonifacio ?</span>
+                  </div>
+                  <div class="device-assistant__bubble device-assistant__bubble--out">
+                    <span class="bubble-icon">✦</span>
+                    <span class="bubble-text">3 tables disponibles, terrasse vue mer, cuisine corse authentique — à 8 min.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-device__reflection" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="experience-hero__scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span class="scroll-label">Explorer</span>
+  </div>
+</section>
+
+<style>
+/* ============================================
+   EXPERIENCE HERO — Porto-Flow V4
+   ============================================ */
+
+.experience-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #0B1F33;
+  padding-top: var(--header-height, 80px);
+}
+
+/* Backdrop */
+.experience-hero__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.experience-hero__topo-lines {
+  position: absolute;
+  inset: 0;
+}
+
+.topo-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animations topographiques */
+.topo-line {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: drawLine 3s ease forwards;
+}
+.topo-line--1 { animation-delay: 0.2s; }
+.topo-line--2 { animation-delay: 0.4s; }
+.topo-line--3 { animation-delay: 0.6s; }
+.topo-line--4 { animation-delay: 0.8s; }
+.topo-line--5 { animation-delay: 1s; }
+
+@keyframes drawLine {
+  to { stroke-dashoffset: 0; }
+}
+
+.flux-path--main {
+  stroke-dasharray: 1600;
+  stroke-dashoffset: 1600;
+  animation: drawFlux 2.5s ease 0.5s forwards;
+}
+
+@keyframes drawFlux {
+  to { stroke-dashoffset: 0; }
+}
+
+.flux-dot {
+  opacity: 0;
+  animation: dotAppear 0.4s ease forwards;
+}
+.flux-dot--1 { animation-delay: 1.2s; }
+.flux-dot--2 { animation-delay: 1.5s; }
+.flux-dot--3 { animation-delay: 1.8s; }
+.flux-dot--4 { animation-delay: 2.1s; }
+
+@keyframes dotAppear {
+  from { opacity: 0; transform: scale(0); }
+  to { opacity: 0.7; transform: scale(1); }
+}
+
+/* Grain texture */
+.experience-hero__grain {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Container principal */
+.experience-hero__container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 2rem 4rem;
+  align-items: center;
+}
+
+/* Breadcrumb */
+.experience-hero__breadcrumb {
+  grid-column: 1 / -1;
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb-item {
+  font-size: 0.8rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  letter-spacing: 0.05em;
+  color: #5F7487;
+}
+
+.breadcrumb-link {
+  color: #5F7487;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:focus {
+  color: #F7F2E8;
+  outline: none;
+}
+
+.breadcrumb-link:focus-visible {
+  outline: 2px solid #C96A3A;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.breadcrumb-item--current {
+  color: #C96A3A;
+}
+
+.breadcrumb-separator {
+  display: flex;
+  align-items: center;
+  color: #5F7487;
+}
+
+/* Contenu hero */
+.experience-hero__content {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Label */
+.experience-hero__label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease 0.3s forwards;
+}
+
+.label-marker {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #C96A3A;
+  border-radius: 1px;
+}
+
+.label-text {
+  font-size: 0.75rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #C96A3A;
+}
+
+/* Titre */
+.experience-hero__title {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-family: var(--font-display, Georgia, serif);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #F7F2E8;
+  margin: 0;
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease 0.5s forwards;
+}
+
+.experience-hero__title-accent {
+  font-style: italic;
+  color: #C96A3A;
+  display: block;
+}
+
+/* Sous-titre */
+.experience-hero__subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.7;
+  color: #8fa3b8;
+  margin: 0;
+  max-width: 520px;
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease 0.7s forwards;
+}
+
+/* Métriques */
+.experience-hero__metrics {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease 0.9s forwards;
+}
+
+.metric-card {
+  background: rgba(95, 116, 135, 0.12);
+  border: 1px solid rgba(95, 116, 135, 0.2);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 110px;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.metric-card:hover {
+  border-color: rgba(201, 106, 58, 0.4);
+  background: rgba(201, 106, 58, 0.08);
+}
+
+.metric-card--accent {
+  border-color: rgba(201, 106, 58, 0.3);
+  background: rgba(201, 106, 58, 0.1);
+}
+
+.metric-card__value {
+  font-size: 1.6rem;
+  font-family: var(--font-display, Georgia, serif);
+  font-weight: 700;
+  color: #F7F2E8;
+  line-height: 1;
+}
+
+.metric-card--accent .metric-card__value {
+  color: #C96A3A;
+}
+
+.metric-card__label {
+  font-size: 0.72rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  letter-spacing: 0.04em;
+  color: #5F7487;
+  line-height: 1.3;
+}
+
+/* CTA group */
+.experience-hero__cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease 1.1s forwards;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #C96A3A;
+  outline-offset: 3px;
+}
+
+.btn--primary {
+  background: #C96A3A;
+  color: #F7F2E8;
+}
+
+.btn--primary:hover {
+  background: #B8794A;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(201, 106, 58, 0.3);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #F7F2E8;
+  border: 1px solid rgba(247, 242, 232, 0.25);
+}
+
+.btn--ghost:hover {
+  border-color: rgba(247, 242, 232, 0.5);
+  background: rgba(247, 242, 232, 0.06);
+  transform: translateY(-1px);
+}
+
+.btn-icon {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateY(2px);
+}
+
+.btn--ghost:hover .btn-icon {
+  transform: translateX(3px);
+}
+
+/* Visual hero */
+.experience-hero__visual {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeSlideLeft 0.9s ease 0.6s forwards;
+}
+
+/* Device mockup */
+.hero-device {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+}
+
+.hero-device__frame {
+  background: linear-gradient(145deg, #1e3a52, #0d2035);
+  border-radius: 20px;
+  padding: 3px;
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(95, 116, 135, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hero-device__screen {
+  background: #0a1929;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.device-ui {
+  display: flex;
+  flex-direction: column;
+}
+
+.device-ui__topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.75rem;
+  background: #0d2035;
+  border-bottom: 1px solid rgba(95, 116, 135, 0.15);
+}
+
+.device-ui__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.device-ui__dot--red { background: #ff5f57; }
+.device-ui__dot--yellow { background: #febc2e; }
+.device-ui__dot--green { background: #28c840; }
+
+.device-ui__address {
+  margin-left: auto;
+  font-size: 0.65rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  color: #5F7487;
+  letter-spacing: 0.04em;
+}
+
+.device-ui__content {
+  padding: 0;
+}
+
+/* Device map */
+.device-map {
+  position: relative;
+  height: 160px;
+  background: linear-gradient(160deg, #0f2a40 0%, #0a1e30 50%, #0d2438 100%);
+  overflow: hidden;
+}
+
+.device-map__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(95, 116, 135, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(95, 116, 135, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.device-map__pin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.device-map__pin--1 {
+  top: 30%;
+  left: 45%;
+}
+
+.device-map__pin--2 {
+  top: 20%;
+  left: 65%;
+}
+
+.device-map__pin--3 {
+  top: 55%;
+  left: 25%;
+}
+
+.pin-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(201, 106, 58, 0.5);
+  animation: pinPulse 2s ease-in-out infinite;
+}
+
+@keyframes pinPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.8; }
+  50% { transform: translate(-50%, -50%) scale(1.4); opacity: 0; }
+}
+
+.device-map__route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Device assistant */
+.device-assistant {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #0a1929;
+}
+
+.device-assistant__bubble {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  font-family: var(--font-body, system-ui, sans-serif);
+}
+
+.device-assistant__bubble--in {
+  background: rgba(95, 116, 135, 0.15);
+  color: #a8bfcf;
+  border-bottom-left-radius: 3px;
+  align-self: flex-start;
+  max-width: 85%;
+  opacity: 0;
+  animation: bubbleIn 0.5s ease 1.8s forwards;
+}
+
+.device-assistant__bubble--out {
+  background: rgba(201, 106, 58, 0.15);
+  color: #d4956e;
+  border-bottom-right-radius: 3px;
+  align-self: flex-end;
+  max-width: 90%;
+  opacity: 0;
+  animation: bubbleIn 0.5s ease 2.4s forwards;
+}
+
+@keyframes bubbleIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bubble-icon {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.bubble-text {
+  flex: 1;
+}
+
+/* Reflection */
+.hero-device__reflection {
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  right: 10%;
+  height: 40px;
+  background: radial-gradient(ellipse at center, rgba(201, 106, 58, 0.15) 0%, transparent 70%);
+  filter: blur(8px);
+  border-radius: 50%;
+}
+
+/* Scroll indicator */
+.experience-hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 0.6s ease 2s forwards;
+  z-index: 2;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #C96A3A);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(0.8); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+.scroll-label {
+  font-size: 0.65rem;
+  font-family: var(--font-mono, 'Courier New', monospace);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5F7487;
+}
+
+/* Animations globales */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .experience-hero__container {
+    grid-template-columns: 1fr;
+    gap: 3rem 0;
+    padding: 4rem 2rem 3rem;
+  }
+
+  .experience-hero__content {
+    grid-column: 1;
+  }
+
+  .experience-hero__visual {
+    grid-column: 1;
+    animation-name: fadeSlideUp;
+  }
+
+  .hero-device {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-hero {
+    min-height: auto;
+    padding-top: var(--header-height, 70px);
+  }
+
+  .experience-hero__container {
+    padding: 3rem 1.25rem 2.5rem;
+    gap: 2.5rem;
+  }
+
+  .experience-hero__title {
+    font-size: clamp(1.9rem, 7vw, 2.8rem);
+  }
+
+  .experience-hero__metrics {
+    gap: 0.75rem;
+  }
+
+  .metric-card {
+    padding: 0.75rem 1rem;
+    min-width: 90px;
+  }
+
+  .metric-card__value {
+    font-size: 1.3rem;
+  }
+
+  .experience-hero__cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn--hero {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-device {
+    max-width: 300px;
+  }
+
+  .device-map {
+    height: 130px;
+  }
+
+  .experience-hero__scroll-indicator {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-hero__container {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .experience-hero__metrics {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .metric-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: unset;
+  }
+
+  .metric-card__value {
+    font-size: 1.4rem;
+    min-width: 50px;
+  }
+
+  .hero-device {
+    max-width: 260px;
+  }
+}
+
+/* Respect préférence mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  .topo-line,
+  .flux-path--main,
+  .flux-dot,
+  .experience-hero__label,
+  .experience-hero__title,
+  .experience-hero__subtitle,
+  .experience-hero__metrics,
+  .experience-hero__cta-group,
+  .experience-hero__visual,
+  .device-assistant__bubble--in,
+  .device-assistant__bubble--out,
+  .experience-hero__scroll-indicator {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .pin-pulse,
+  .scroll-line {
+    animation: none;
+  }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Compteur animé pour les métriques */
+  function animateMetricNumbers() {
+    var numbers = document.querySelectorAll('.metric-number[data-target]');
+    if (!numbers.length) return;
+
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    numbers.forEach(function (el) {
+      var target = parseInt(el.getAttribute('data-target'), 10);
+      var suffix = el.getAttribute('data-suffix') || '';
+
+      if (prefersReduced) {
+        el.textContent = target + suffix;
+        return;
+      }
+
+      var duration = 1200;
+      var startTime = null;
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+
+      requestAnimationFrame(step);
+    });
+  }
+
+  /* Observer pour déclencher les compteurs à l'entrée dans le viewport */
+  function initMetricsObserver() {
+    var metricsBlock = document.querySelector('.experience-hero__metrics');
+    if (!metricsBlock) return;
+
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animateMetricNumbers();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      observer.observe(metricsBlock);
+    } else {
+      animateMetricNumbers();
+    }
+  }
+
+  /* Smooth scroll pour le CTA interne */
+  function initSmoothScroll() {
+    var ctaScenario = document.querySelector('a[href="#experience-scenario"]');
+    if (!ctaScenario) return;
+
+    ctaScenario.addEventListener('click', function (e) {
+      var target = document.getElementById('experience-scenario');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }
+    });
+  }
+
+  /* Init au chargement DOM */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      initMetricsObserver();
+      initSmoothScroll();
+    });
+  } else {
+    initMetricsObserver();
+    initSmoothScroll();
+  }
+}());
+</script>
+
+<section id="scenario-narratif" class="scenario-section" aria-labelledby="scenario-heading">
+  <div class="scenario-container">
+
+    <div class="scenario-eyebrow">
+      <span class="scenario-tag" aria-hidden="true">&#9632;</span>
+      <span class="scenario-label">Cas d'usage réel</span>
+    </div>
+
+    <h2 id="scenario-heading" class="scenario-title">
+      Août, 19h00.<br>
+      <span class="scenario-title-accent">Le territoire est en surchauffe.</span>
+    </h2>
+
+    <div class="scenario-narrative">
+
+      <div class="scenario-block scenario-block--context">
+        <div class="scenario-block-marker" aria-hidden="true">
+          <span class="marker-line"></span>
+          <span class="marker-dot"></span>
+        </div>
+        <div class="scenario-block-content">
+          <p class="scenario-text scenario-text--lead">
+            La route des Calanques est saturée depuis 16h. Trois cents véhicules attendent à l'entrée de Porto. Les parkings du front de mer affichent complet. La capitainerie signale un afflux inhabituel de plaisanciers en escale imprévue. Deux restaurants du port ont fermé leur liste d'attente. La pharmacie de garde est introuvable pour un touriste allemand dont l'enfant a de la fièvre.
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-block scenario-block--actor">
+        <div class="scenario-block-marker" aria-hidden="true">
+          <span class="marker-line"></span>
+          <span class="marker-dot marker-dot--accent"></span>
+        </div>
+        <div class="scenario-block-content">
+          <p class="scenario-text">
+            <strong class="scenario-actor">Luisa</strong> arrive de Marseille. Elle a loué un appartement à Piana pour cinq jours. Elle ne connaît pas le territoire. Son téléphone lui indique une heure d'attente sur la route principale. Elle cherche une alternative, un endroit où manger ce soir, et une activité pour demain matin avant la chaleur.
+          </p>
+          <p class="scenario-text">
+            Elle a trois questions. Le territoire en a des centaines de réponses possibles. Sans Porto-Flow, elle en trouvera peut-être deux, au hasard, après vingt minutes de recherche dispersée entre quatre applications différentes.
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-block scenario-block--tension">
+        <div class="scenario-block-marker" aria-hidden="true">
+          <span class="marker-line"></span>
+          <span class="marker-dot marker-dot--warm"></span>
+        </div>
+        <div class="scenario-block-content">
+          <p class="scenario-text">
+            C'est précisément ce moment — <em>ce point de friction entre un visiteur désorienté et un territoire qui déborde</em> — que Porto-Flow a été conçu pour absorber.
+          </p>
+          <p class="scenario-text">
+            Non pas en simplifiant à l'excès. Mais en lisant simultanément l'état du trafic, la disponibilité des acteurs locaux, les conditions météo du lendemain, les préférences implicites de Luisa, et en composant une réponse cohérente, locale, utile — en moins d'une seconde.
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-block scenario-block--resolution">
+        <div class="scenario-block-marker" aria-hidden="true">
+          <span class="marker-line"></span>
+          <span class="marker-dot marker-dot--green"></span>
+        </div>
+        <div class="scenario-block-content">
+          <p class="scenario-text">
+            Porto-Flow lui propose un itinéraire alternatif par Évisa, moins fréquenté, avec une vue sur le golfe au coucher du soleil. Il lui indique une table disponible chez un restaurateur partenaire à Ota — deux couverts, terrasse, cuisine locale. Et pour demain matin, une sortie kayak au départ de Girolata, réservable directement, avant 9h, avant la chaleur.
+          </p>
+          <p class="scenario-text scenario-text--closing">
+            Luisa n'a pas cherché. Elle a reçu. Le territoire lui a parlé — avec précision, avec pertinence, avec le soin d'un hôte qui connaît ses propres routes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="scenario-meta" aria-hidden="true">
+      <div class="scenario-meta-line">
+        <span class="scenario-meta-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="7" r="6" stroke="#C96A3A" stroke-width="1.5"/>
+            <path d="M7 4v3.5l2 1.5" stroke="#C96A3A" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          19h03 — Requête reçue
+        </span>
+        <span class="scenario-meta-separator" aria-hidden="true">·</span>
+        <span class="scenario-meta-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M9 4l3 3-3 3" stroke="#687B57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          19h03 — Réponse composée
+        </span>
+        <span class="scenario-meta-separator" aria-hidden="true">·</span>
+        <span class="scenario-meta-item">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M3 7l3 3 5-5" stroke="#687B57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          3 acteurs locaux activés
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .scenario-section {
+      background-color: #F7F2E8;
+      padding: 6rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scenario-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C96A3A40, transparent);
+    }
+
+    .scenario-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .scenario-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .scenario-tag {
+      color: #C96A3A;
+      font-size: 0.5rem;
+    }
+
+    .scenario-label {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #5F7487;
+      font-style: italic;
+    }
+
+    .scenario-title {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: #0B1F33;
+      line-height: 1.25;
+      margin-bottom: 3.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .scenario-title-accent {
+      color: #C96A3A;
+    }
+
+    .scenario-narrative {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .scenario-block {
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0 1.5rem;
+      padding-bottom: 2.5rem;
+    }
+
+    .scenario-block:last-child {
+      padding-bottom: 0;
+    }
+
+    .scenario-block-marker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0.35rem;
+    }
+
+    .marker-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #5F7487;
+      border: 2px solid #F7F2E8;
+      outline: 1.5px solid #5F7487;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+
+    .marker-dot--accent {
+      background-color: #C96A3A;
+      outline-color: #C96A3A;
+    }
+
+    .marker-dot--warm {
+      background-color: #B8794A;
+      outline-color: #B8794A;
+    }
+
+    .marker-dot--green {
+      background-color: #687B57;
+      outline-color: #687B57;
+    }
+
+    .marker-line {
+      flex: 1;
+      width: 1.5px;
+      background: linear-gradient(to bottom, #5F748740, transparent);
+      margin-top: 0.4rem;
+      min-height: 2rem;
+    }
+
+    .scenario-block:last-child .marker-line {
+      display: none;
+    }
+
+    .scenario-block-content {
+      padding-top: 0;
+    }
+
+    .scenario-text {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #102033;
+      margin: 0 0 1rem 0;
+    }
+
+    .scenario-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .scenario-text--lead {
+      font-size: 1.08rem;
+      color: #0B1F33;
+    }
+
+    .scenario-text--closing {
+      font-style: italic;
+      color: #5F7487;
+      border-left: 2px solid #C96A3A;
+      padding-left: 1.2rem;
+      margin-top: 1.2rem;
+    }
+
+    .scenario-actor {
+      color: #C96A3A;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .scenario-meta {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid #E8DDC8;
+    }
+
+    .scenario-meta-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem 1rem;
+    }
+
+    .scenario-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 0.78rem;
+      color: #5F7487;
+      letter-spacing: 0.04em;
+      font-style: italic;
+    }
+
+    .scenario-meta-separator {
+      color: #C96A3A;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    @media (max-width: 600px) {
+      .scenario-section {
+        padding: 4rem 1.25rem;
+      }
+
+      .scenario-block {
+        grid-template-columns: 1.5rem 1fr;
+        gap: 0 1rem;
+      }
+
+      .scenario-text {
+        font-size: 1rem;
+      }
+
+      .scenario-meta-line {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .scenario-meta-separator {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .scenario-block {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+      }
+
+      .scenario-block.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .scenario-block:nth-child(2) { transition-delay: 0.1s; }
+      .scenario-block:nth-child(3) { transition-delay: 0.2s; }
+      .scenario-block:nth-child(4) { transition-delay: 0.3s; }
+    }
+  </style>
+
+  <script>
+    (function () {
+      var blocks = document.querySelectorAll('#scenario-narratif .scenario-block');
+      if (!blocks.length) return;
+
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        blocks.forEach(function (block) {
+          observer.observe(block);
+        });
+      } else {
+        blocks.forEach(function (block) {
+          block.classList.add('is-visible');
+        });
+      }
+    })();
+  </script>
+
+</section>
+
+<!-- ============================================================
+     SEGMENT : experience-chaine — Chaîne d'actions (4/7)
+     Porto-Flow V4 Institutionnel — experience.html
+     ============================================================ -->
+
+<section class="chain-section" id="chaine-actions" aria-labelledby="chain-title">
+
+  <div class="chain-container">
+
+    <!-- En-tête de section -->
+    <header class="chain-header">
+      <span class="chain-eyebrow" aria-hidden="true">Chaîne d'actions</span>
+      <h2 class="chain-title" id="chain-title">
+        Du chaos local à la réponse fluide
+      </h2>
+      <p class="chain-subtitle">
+        En quelques millisecondes, Porto-Flow transforme la complexité du territoire
+        en une décision claire, utile, localement ancrée.
+      </p>
+    </header>
+
+    <!-- Chaîne principale : flux horizontal animé -->
+    <div class="chain-flow" role="list" aria-label="Étapes de la chaîne d'actions Porto-Flow">
+
+      <!-- Étape 1 : Signal brut -->
+      <article class="chain-step chain-step--signal" role="listitem" data-step="1">
+        <div class="chain-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/>
+            <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="32" cy="32" r="6" fill="currentColor"/>
+            <line x1="32" y1="4" x2="32" y2="14" stroke="currentColor" stroke-width="2"/>
+            <line x1="32" y1="50" x2="32" y2="60" stroke="currentColor" stroke-width="2"/>
+            <line x1="4" y1="32" x2="14" y2="32" stroke="currentColor" stroke-width="2"/>
+            <line x1="50" y1="32" x2="60" y2="32" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="chain-step__content">
+          <span class="chain-step__number" aria-hidden="true">01</span>
+          <h3 class="chain-step__title">Signal brut</h3>
+          <p class="chain-step__desc">
+            Un visiteur cherche. Un résident signale. Un acteur met à jour.
+            Des centaines de signaux simultanés traversent le territoire.
+          </p>
+          <ul class="chain-step__tags" aria-label="Sources de signaux">
+            <li>Requête utilisateur</li>
+            <li>Données GPS</li>
+            <li>Flux partenaires</li>
+          </ul>
+        </div>
+        <div class="chain-step__pulse" aria-hidden="true"></div>
+      </article>
+
+      <!-- Connecteur animé 1→2 -->
+      <div class="chain-connector" aria-hidden="true">
+        <div class="chain-connector__line">
+          <div class="chain-connector__dot chain-connector__dot--1"></div>
+          <div class="chain-connector__dot chain-connector__dot--2"></div>
+          <div class="chain-connector__dot chain-connector__dot--3"></div>
+        </div>
+        <span class="chain-connector__label">Collecte</span>
+      </div>
+
+      <!-- Étape 2 : Agrégation contextuelle -->
+      <article class="chain-step chain-step--aggregate" role="listitem" data-step="2">
+        <div class="chain-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <rect x="8" y="8" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="36" y="8" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="8" y="36" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="36" y="36" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+            <line x1="28" y1="18" x2="36" y2="18" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="18" y1="28" x2="18" y2="36" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="46" y1="28" x2="46" y2="36" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="28" y1="46" x2="36" y2="46" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="chain-step__content">
+          <span class="chain-step__number" aria-hidden="true">02</span>
+          <h3 class="chain-step__title">Agrégation contextuelle</h3>
+          <p class="chain-step__desc">
+            Porto-Flow croise les données en temps réel : météo, affluence,
+            horaires, disponibilités, événements locaux, état des routes.
+          </p>
+          <ul class="chain-step__tags" aria-label="Données agrégées">
+            <li>Météo locale</li>
+            <li>Affluence temps réel</li>
+            <li>Événements</li>
+          </ul>
+        </div>
+        <div class="chain-step__pulse" aria-hidden="true"></div>
+      </article>
+
+      <!-- Connecteur animé 2→3 -->
+      <div class="chain-connector" aria-hidden="true">
+        <div class="chain-connector__line">
+          <div class="chain-connector__dot chain-connector__dot--1"></div>
+          <div class="chain-connector__dot chain-connector__dot--2"></div>
+          <div class="chain-connector__dot chain-connector__dot--3"></div>
+        </div>
+        <span class="chain-connector__label">Analyse</span>
+      </div>
+
+      <!-- Étape 3 : Intelligence territoriale -->
+      <article class="chain-step chain-step--intelligence" role="listitem" data-step="3">
+        <div class="chain-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <path d="M32 8 C18 8 10 18 10 28 C10 38 18 44 28 46 L28 54 L36 54 L36 46 C46 44 54 38 54 28 C54 18 46 8 32 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="24" cy="26" r="3" fill="currentColor"/>
+            <circle cx="40" cy="26" r="3" fill="currentColor"/>
+            <path d="M24 34 Q32 40 40 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <line x1="32" y1="8" x2="32" y2="14" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="chain-step__content">
+          <span class="chain-step__number" aria-hidden="true">03</span>
+          <h3 class="chain-step__title">Intelligence territoriale</h3>
+          <p class="chain-step__desc">
+            Le moteur IA interprète, pondère et comprend le contexte local.
+            Il connaît la Corse-du-Sud : ses rythmes, ses acteurs, ses contraintes.
+          </p>
+          <ul class="chain-step__tags" aria-label="Capacités IA">
+            <li>Compréhension locale</li>
+            <li>Pondération saisonnière</li>
+            <li>Mémoire territoriale</li>
+          </ul>
+        </div>
+        <div class="chain-step__pulse chain-step__pulse--active" aria-hidden="true"></div>
+      </article>
+
+      <!-- Connecteur animé 3→4 -->
+      <div class="chain-connector" aria-hidden="true">
+        <div class="chain-connector__line">
+          <div class="chain-connector__dot chain-connector__dot--1"></div>
+          <div class="chain-connector__dot chain-connector__dot--2"></div>
+          <div class="chain-connector__dot chain-connector__dot--3"></div>
+        </div>
+        <span class="chain-connector__label">Décision</span>
+      </div>
+
+      <!-- Étape 4 : Réponse fluide -->
+      <article class="chain-step chain-step--response" role="listitem" data-step="4">
+        <div class="chain-step__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <path d="M8 32 L24 16 L24 26 L52 26 L52 38 L24 38 L24 48 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="none"/>
+            <circle cx="48" cy="20" r="8" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M45 20 L47 22 L52 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="chain-step__content">
+          <span class="chain-step__number" aria-hidden="true">04</span>
+          <h3 class="chain-step__title">Réponse fluide</h3>
+          <p class="chain-step__desc">
+            Une réponse claire, utile, immédiate. Adaptée à l'utilisateur,
+            au moment, au lieu. Sans friction, sans surcharge cognitive.
+          </p>
+          <ul class="chain-step__tags" aria-label="Qualités de la réponse">
+            <li>Clarté immédiate</li>
+            <li>Pertinence locale</li>
+            <li>Zéro friction</li>
+          </ul>
+        </div>
+        <div class="chain-step__pulse" aria-hidden="true"></div>
+      </article>
+
+    </div>
+    <!-- /chain-flow -->
+
+    <!-- Barre de progression visuelle -->
+    <div class="chain-progress" aria-hidden="true">
+      <div class="chain-progress__track">
+        <div class="chain-progress__fill" id="chainProgressFill"></div>
+      </div>
+      <div class="chain-progress__labels">
+        <span>Chaos</span>
+        <span>Collecte</span>
+        <span>Analyse</span>
+        <span>Décision</span>
+        <span>Fluidité</span>
+      </div>
+    </div>
+
+    <!-- Bloc métrique bas de section -->
+    <div class="chain-metrics" aria-label="Indicateurs de performance de la chaîne">
+      <div class="chain-metric">
+        <span class="chain-metric__value" data-target="340">0</span>
+        <span class="chain-metric__unit">ms</span>
+        <span class="chain-metric__label">Temps de réponse moyen</span>
+      </div>
+      <div class="chain-metric chain-metric--divider" aria-hidden="true"></div>
+      <div class="chain-metric">
+        <span class="chain-metric__value" data-target="97">0</span>
+        <span class="chain-metric__unit">%</span>
+        <span class="chain-metric__label">Pertinence contextuelle</span>
+      </div>
+      <div class="chain-metric chain-metric--divider" aria-hidden="true"></div>
+      <div class="chain-metric">
+        <span class="chain-metric__value" data-target="4">0</span>
+        <span class="chain-metric__unit">étapes</span>
+        <span class="chain-metric__label">Du signal à la réponse</span>
+      </div>
+    </div>
+
+  </div>
+  <!-- /chain-container -->
+
+</section>
+
+<!-- ============================================================
+     STYLES SEGMENT : experience-chaine
+     ============================================================ -->
+<style>
+/* ── Variables locales ── */
+.chain-section {
+  --chain-bg: #F7F2E8;
+  --chain-bg-card: #FFFFFF;
+  --chain-ink: #0B1F33;
+  --chain-ink-soft: #5F7487;
+  --chain-accent: #C96A3A;
+  --chain-accent-warm: #B8794A;
+  --chain-green: #687B57;
+  --chain-border: rgba(11, 31, 51, 0.10);
+  --chain-shadow: 0 4px 24px rgba(11, 31, 51, 0.08);
+  --chain-shadow-hover: 0 12px 40px rgba(11, 31, 51, 0.14);
+  --chain-radius: 16px;
+  --chain-connector-color: #C96A3A;
+  --chain-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: var(--chain-bg);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Motif topographique de fond */
+.chain-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 39px,
+      rgba(11, 31, 51, 0.03) 39px,
+      rgba(11, 31, 51, 0.03) 40px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 39px,
+      rgba(11, 31, 51, 0.03) 39px,
+      rgba(11, 31, 51, 0.03) 40px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Container ── */
+.chain-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+.chain-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.chain-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--chain-accent);
+  margin-bottom: 0.75rem;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid rgba(201, 106, 58, 0.3);
+  border-radius: 100px;
+  background: rgba(201, 106, 58, 0.06);
+}
+
+.chain-title {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  color: var(--chain-ink);
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.chain-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: var(--chain-ink-soft);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* ── Flux principal ── */
+.chain-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+/* ── Étape individuelle ── */
+.chain-step {
+  background: var(--chain-bg-card);
+  border: 1px solid var(--chain-border);
+  border-radius: var(--chain-radius);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--chain-shadow);
+  transition: transform var(--chain-transition), box-shadow var(--chain-transition);
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.chain-step.chain-step--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chain-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--chain-shadow-hover);
+}
+
+/* Bande colorée latérale par type */
+.chain-step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: var(--chain-radius) 0 0 var(--chain-radius);
+}
+
+.chain-step--signal::before    { background: var(--chain-ink-soft); }
+.chain-step--aggregate::before { background: var(--chain-green); }
+.chain-step--intelligence::before { background: var(--chain-accent); }
+.chain-step--response::before  { background: var(--chain-green); }
+
+/* Icône */
+.chain-step__icon {
+  color: var(--chain-accent);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chain-step--signal .chain-step__icon    { color: var(--chain-ink-soft); }
+.chain-step--aggregate .chain-step__icon { color: var(--chain-green); }
+.chain-step--intelligence .chain-step__icon { color: var(--chain-accent); }
+.chain-step--response .chain-step__icon  { color: var(--chain-green); }
+
+/* Numéro */
+.chain-step__number {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--chain-ink-soft);
+  opacity: 0.5;
+}
+
+/* Titre étape */
+.chain-step__title {
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  font-weight: 700;
+  color: var(--chain-ink);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Description */
+.chain-step__desc {
+  font-size: clamp(0.82rem, 1vw, 0.92rem);
+  color: var(--chain-ink-soft);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+/* Tags */
+.chain-step__tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.chain-step__tags li {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--chain-ink);
+  background: rgba(11, 31, 51, 0.06);
+  border-radius: 100px;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--chain-border);
+}
+
+/* Pulse animé */
+.chain-step__pulse {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--chain-ink-soft);
+  opacity: 0.3;
+}
+
+.chain-step__pulse--active {
+  background: var(--chain-accent);
+  opacity: 1;
+  animation: chainPulse 2s ease-in-out infinite;
+}
+
+@keyframes chainPulse {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 rgba(201, 106, 58, 0.4); }
+  50%       { transform: scale(1.3); opacity: 0.8; box-shadow: 0 0 0 8px rgba(201, 106, 58, 0); }
+}
+
+/* ── Connecteurs ── */
+.chain-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(0.5rem, 1.5vw, 1.25rem);
+  gap: 0.5rem;
+  min-width: 60px;
+}
+
+.chain-connector__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  justify-content: center;
+}
+
+.chain-connector__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--chain-connector-color);
+  opacity: 0;
+  animation: connectorFlow 1.8s ease-in-out infinite;
+}
+
+.chain-connector__dot--1 { animation-delay: 0s; }
+.chain-connector__dot--2 { animation-delay: 0.3s; }
+.chain-connector__dot--3 { animation-delay: 0.6s; }
+
+@keyframes connectorFlow {
+  0%   { opacity: 0; transform: translateY(-6px); }
+  30%  { opacity: 1; }
+  70%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(6px); }
+}
+
+.chain-connector__label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--chain-accent);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+
+/* ── Barre de progression ── */
+.chain-progress {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.chain-progress__track {
+  height: 4px;
+  background: rgba(11, 31, 51, 0.1);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.chain-progress__fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--chain-ink-soft), var(--chain-accent), var(--chain-green));
+  border-radius: 100px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chain-progress__labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--chain-ink-soft);
+  opacity: 0.6;
+}
+
+/* ── Métriques ── */
+.chain-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  background: var(--chain-ink);
+  border-radius: var(--chain-radius);
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 4vw, 3rem);
+  flex-wrap: wrap;
+}
+
+.chain-metric {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.chain-metric--divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(247, 242, 232, 0.15);
+  flex-shrink: 0;
+}
+
+.chain-metric__value {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #F7F2E8;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.chain-metric__unit {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--chain-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chain-metric__label {
+  font-size: 0.78rem;
+  color: rgba(247, 242, 232, 0.55);
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+}
+
+/* ── Transitions d'entrée décalées ── */
+.chain-step[data-step="1"] { transition-delay: 0.05s; }
+.chain-step[data-step="2"] { transition-delay: 0.18s; }
+.chain-step[data-step="3"] { transition-delay: 0.31s; }
+.chain-step[data-step="4"] { transition-delay: 0.44s; }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .chain-flow {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0;
+  }
+
+  .chain-connector {
+    flex-direction: row;
+    min-width: unset;
+    padding: 0.5rem clamp(1rem, 3vw, 2rem);
+    min-height: 48px;
+  }
+
+  .chain-connector__line {
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .chain-connector__dot {
+    animation-name: connectorFlowH;
+  }
+
+  @keyframes connectorFlowH {
+    0%   { opacity: 0; transform: translateX(-6px); }
+    30%  { opacity: 1; }
+    70%  { opacity: 1; }
+    100% { opacity: 0; transform: translateX(6px); }
+  }
+
+  .chain-connector__label {
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+  }
+
+  .chain-metric--divider {
+    width: 100%;
+    height: 1px;
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .chain-metrics {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .chain-metric--divider {
+    display: none;
+  }
+
+  .chain-progress__labels {
+    font-size: 0.6rem;
+    gap: 0.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chain-step__pulse--active,
+  .chain-connector__dot {
+    animation: none;
+  }
+
+  .chain-step {
+    transition: none;
+  }
+
+  .chain-progress__fill {
+    transition: none;
+  }
+}
+</style>
+
+<!-- ============================================================
+     SCRIPT SEGMENT : experience-chaine
+     ============================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Utilitaire : sécurité querySelector ── */
+  function qs(sel, ctx) {
+    return (ctx || document).querySelector(sel);
+  }
+  function qsa(sel, ctx) {
+    return Array.from((ctx || document).querySelectorAll(sel));
+  }
+
+  /* ── Animation compteur numérique ── */
+  function animateCounter(el, target, duration) {
+    if (!el) return;
+    var start = 0;
+    var startTime = null;
+    var isFloat = String(target).includes('.');
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.round(start + (target - start) * eased);
+      el.textContent = isFloat ? current.toFixed(1) : current;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target;
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ── IntersectionObserver : étapes de la chaîne ── */
+  function initChainSteps() {
+    var steps = qsa('.chain-step');
+    if (!steps.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      steps.forEach(function (s) { s.classList.add('chain-step--visible'); });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('chain-step--visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    steps.forEach(function (s) { observer.observe(s); });
+  }
+
+  /* ── IntersectionObserver : barre de progression ── */
+  function initProgressBar() {
+    var fill = qs('#chainProgressFill');
+    if (!fill) return;
+
+    if (!('IntersectionObserver' in window)) {
+      fill.style.width = '100%';
+      return;
+    }
+
+    var triggered = false;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !triggered) {
+          triggered = true;
+          setTimeout(function () {
+            fill.style.width = '100%';
+          }, 400);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(fill.parentElement || fill);
+  }
+
+  /* ── IntersectionObserver : métriques ── */
+  function initMetrics() {
+    var metrics = qsa('.chain-metric__value');
+    if (!metrics.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      metrics.forEach(function (el) {
+        el.textContent = el.getAttribute('data-target') || el.textContent;
+      });
+      return;
+    }
+
+    var triggered = false;
+    var section = qs('.chain-metrics');
+    if (!section) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && !triggered) {
+          triggered = true;
+          metrics.forEach(function (el) {
+            var target = parseFloat(el.getAttribute('data-target') || '0');
+            animateCounter(el, target, 1400);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(section);
+  }
+
+  /* ── Init global ── */
+  function init() {
+    initChainSteps();
+    initProgressBar();
+    initMetrics();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+
+<!-- ============================================================
+     SEGMENT 5/7 — Cartes simulées
+     experience.html › #experience-cartes-simulees
+     Porto-Flow V4 Institutionnel
+     ============================================================ -->
+
+<section id="experience-cartes-simulees" class="sim-cards-section" aria-labelledby="sim-cards-title">
+
+  <div class="container">
+
+    <header class="sim-cards-header">
+      <span class="section-eyebrow" aria-hidden="true">Visualisation en temps réel</span>
+      <h2 id="sim-cards-title">Ce que voit Porto-Flow, en un instant</h2>
+      <p class="sim-cards-intro">
+        Cinq flux simultanés. Cinq couches d'information superposées sur le territoire.
+        Porto-Flow les lit, les croise et les transforme en décisions utiles.
+      </p>
+    </header>
+
+    <!-- Grille des cartes simulées -->
+    <div class="sim-cards-grid" role="list">
+
+      <!-- Carte 1 : Parking -->
+      <article class="sim-card sim-card--parking" role="listitem" aria-label="Carte parking en temps réel">
+        <div class="sim-card__map-area" aria-hidden="true">
+          <div class="sim-map sim-map--parking">
+            <svg class="sim-map__topo" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M0 120 Q40 100 80 110 Q120 120 160 105 Q200 90 240 100 Q260 105 280 98" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.3"/>
+              <path d="M0 140 Q60 130 120 135 Q180 140 240 128 Q260 124 280 120" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.2"/>
+              <path d="M0 100 Q50 85 100 92 Q150 99 200 82 Q240 70 280 78" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.15"/>
+            </svg>
+            <!-- Zones parking -->
+            <div class="sim-parking-zone sim-parking-zone--full" style="left:18%;top:28%;" title="Parking Ajaccio Centre — Complet">
+              <span class="sim-parking-icon" aria-hidden="true">P</span>
+              <span class="sim-parking-badge sim-parking-badge--full">Complet</span>
+            </div>
+            <div class="sim-parking-zone sim-parking-zone--busy" style="left:52%;top:42%;" title="Parking Napoléon — 12 places">
+              <span class="sim-parking-icon" aria-hidden="true">P</span>
+              <span class="sim-parking-badge sim-parking-badge--busy">12 places</span>
+            </div>
+            <div class="sim-parking-zone sim-parking-zone--free" style="left:72%;top:22%;" title="Parking Mezzavia — Disponible">
+              <span class="sim-parking-icon" aria-hidden="true">P</span>
+              <span class="sim-parking-badge sim-parking-badge--free">Libre</span>
+            </div>
+            <!-- Pulse animé sur zone libre -->
+            <div class="sim-pulse" style="left:72%;top:22%;" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="sim-card__content">
+          <div class="sim-card__type-badge sim-card__type-badge--parking" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg>
+            Parking
+          </div>
+          <h3 class="sim-card__title">Stationnement</h3>
+          <p class="sim-card__desc">3 parkings analysés. 1 disponible à 400 m de votre position.</p>
+          <div class="sim-card__data-row">
+            <span class="sim-data-item sim-data-item--alert">
+              <span class="sim-data-dot sim-data-dot--red" aria-hidden="true"></span>
+              Centre : complet
+            </span>
+            <span class="sim-data-item sim-data-item--ok">
+              <span class="sim-data-dot sim-data-dot--green" aria-hidden="true"></span>
+              Mezzavia : libre
+            </span>
+          </div>
+          <div class="sim-card__ia-hint" aria-label="Recommandation IA">
+            <span class="sim-ia-label" aria-hidden="true">IA</span>
+            <span>Itinéraire alternatif calculé — +3 min</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 2 : Trafic -->
+      <article class="sim-card sim-card--traffic" role="listitem" aria-label="Carte trafic en temps réel">
+        <div class="sim-card__map-area" aria-hidden="true">
+          <div class="sim-map sim-map--traffic">
+            <svg class="sim-map__topo" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M0 120 Q40 100 80 110 Q120 120 160 105 Q200 90 240 100 Q260 105 280 98" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.3"/>
+              <path d="M0 140 Q60 130 120 135 Q180 140 240 128 Q260 124 280 120" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.2"/>
+            </svg>
+            <!-- Routes avec état trafic -->
+            <svg class="sim-traffic-routes" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Route saturée -->
+              <path d="M20 80 Q70 75 110 85 Q130 90 150 82" stroke="#C96A3A" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9">
+                <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.5s" repeatCount="indefinite"/>
+              </path>
+              <!-- Route fluide -->
+              <path d="M150 82 Q190 72 230 68 Q255 65 275 60" stroke="#687B57" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9"/>
+              <!-- Route secondaire -->
+              <path d="M60 110 Q100 100 140 108 Q180 116 220 105" stroke="#B8794A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+              <!-- Points de congestion -->
+              <circle cx="110" cy="85" r="6" fill="#C96A3A" opacity="0.85">
+                <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="60" cy="110" r="4" fill="#B8794A" opacity="0.7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sim-card__content">
+          <div class="sim-card__type-badge sim-card__type-badge--traffic" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            Trafic
+          </div>
+          <h3 class="sim-card__title">Flux routier</h3>
+          <p class="sim-card__desc">Congestion détectée sur la RN 193. Déviation active proposée.</p>
+          <div class="sim-card__data-row">
+            <span class="sim-data-item sim-data-item--alert">
+              <span class="sim-data-dot sim-data-dot--red" aria-hidden="true"></span>
+              RN 193 : saturée
+            </span>
+            <span class="sim-data-item sim-data-item--ok">
+              <span class="sim-data-dot sim-data-dot--green" aria-hidden="true"></span>
+              D81 : fluide
+            </span>
+          </div>
+          <div class="sim-card__ia-hint" aria-label="Recommandation IA">
+            <span class="sim-ia-label" aria-hidden="true">IA</span>
+            <span>Déviation via D81 — gain estimé 8 min</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 3 : Restaurant -->
+      <article class="sim-card sim-card--restaurant" role="listitem" aria-label="Carte restaurant à proximité">
+        <div class="sim-card__map-area" aria-hidden="true">
+          <div class="sim-map sim-map--restaurant">
+            <svg class="sim-map__topo" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M0 120 Q40 100 80 110 Q120 120 160 105 Q200 90 240 100 Q260 105 280 98" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.3"/>
+            </svg>
+            <!-- Pins restaurants -->
+            <div class="sim-pin sim-pin--restaurant sim-pin--highlight" style="left:38%;top:30%;" aria-hidden="true">
+              <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 0C5.477 0 1 4.477 1 10c0 7.5 10 18 10 18s10-10.5 10-18C21 4.477 16.523 0 11 0z" fill="#C96A3A"/>
+                <text x="11" y="13" text-anchor="middle" font-size="10" fill="white" font-weight="bold">🍽</text>
+              </svg>
+              <div class="sim-pin-tooltip">
+                <strong>A Nepita</strong>
+                <span>Cuisine corse · 2 min</span>
+                <span class="sim-pin-rating" aria-label="Note 4.8">★ 4.8</span>
+              </div>
+            </div>
+            <div class="sim-pin sim-pin--restaurant" style="left:62%;top:50%;" aria-hidden="true">
+              <svg width="18" height="22" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 0C5.477 0 1 4.477 1 10c0 7.5 10 18 10 18s10-10.5 10-18C21 4.477 16.523 0 11 0z" fill="#B8794A" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="sim-pin sim-pin--restaurant" style="left:22%;top:58%;" aria-hidden="true">
+              <svg width="18" height="22" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 0C5.477 0 1 4.477 1 10c0 7.5 10 18 10 18s10-10.5 10-18C21 4.477 16.523 0 11 0z" fill="#B8794A" opacity="0.7"/>
+              </svg>
+            </div>
+            <!-- Rayon de proximité -->
+            <div class="sim-radius-circle" style="left:38%;top:30%;" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="sim-card__content">
+          <div class="sim-card__type-badge sim-card__type-badge--restaurant" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+            Restaurant
+          </div>
+          <h3 class="sim-card__title">Restauration locale</h3>
+          <p class="sim-card__desc">3 établissements corses dans un rayon de 500 m. Table disponible maintenant.</p>
+          <div class="sim-card__data-row">
+            <span class="sim-data-item">
+              <span class="sim-data-dot sim-data-dot--amber" aria-hidden="true"></span>
+              A Nepita · ★ 4.8
+            </span>
+            <span class="sim-data-item sim-data-item--ok">
+              <span class="sim-data-dot sim-data-dot--green" aria-hidden="true"></span>
+              Table libre · 2 min
+            </span>
+          </div>
+          <div class="sim-card__ia-hint" aria-label="Recommandation IA">
+            <span class="sim-ia-label" aria-hidden="true">IA</span>
+            <span>Sélection affinée selon vos préférences</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 4 : Événement -->
+      <article class="sim-card sim-card--event" role="listitem" aria-label="Carte événement local">
+        <div class="sim-card__map-area" aria-hidden="true">
+          <div class="sim-map sim-map--event">
+            <svg class="sim-map__topo" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M0 120 Q40 100 80 110 Q120 120 160 105 Q200 90 240 100 Q260 105 280 98" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.3"/>
+              <path d="M0 140 Q60 130 120 135 Q180 140 240 128 Q260 124 280 120" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.2"/>
+            </svg>
+            <!-- Zone événement -->
+            <div class="sim-event-zone" style="left:30%;top:20%;width:40%;height:45%;" aria-hidden="true">
+              <div class="sim-event-zone__inner">
+                <span class="sim-event-icon" aria-hidden="true">🎭</span>
+                <span class="sim-event-label">Marché artisanal</span>
+              </div>
+            </div>
+            <!-- Flux de personnes animé -->
+            <svg class="sim-event-flows" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 150 Q60 130 100 110 Q120 100 140 90" stroke="#687B57" stroke-width="2" fill="none" stroke-dasharray="4 3" opacity="0.6">
+                <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/>
+              </path>
+              <path d="M270 155 Q220 135 180 115 Q160 105 140 90" stroke="#687B57" stroke-width="2" fill="none" stroke-dasharray="4 3" opacity="0.6">
+                <animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2.5s" repeatCount="indefinite"/>
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="sim-card__content">
+          <div class="sim-card__type-badge sim-card__type-badge--event" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Événement
+          </div>
+          <h3 class="sim-card__title">Agenda territorial</h3>
+          <p class="sim-card__desc">Marché artisanal corse — Place du Diamant. Aujourd'hui 9h–18h. Forte affluence prévue.</p>
+          <div class="sim-card__data-row">
+            <span class="sim-data-item">
+              <span class="sim-data-dot sim-data-dot--amber" aria-hidden="true"></span>
+              Affluence : élevée
+            </span>
+            <span class="sim-data-item">
+              <span class="sim-data-dot sim-data-dot--blue" aria-hidden="true"></span>
+              Durée : 9h–18h
+            </span>
+          </div>
+          <div class="sim-card__ia-hint" aria-label="Recommandation IA">
+            <span class="sim-ia-label" aria-hidden="true">IA</span>
+            <span>Impact trafic anticipé — arrivée conseillée avant 10h</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Carte 5 : Recommandation IA -->
+      <article class="sim-card sim-card--ia sim-card--featured" role="listitem" aria-label="Recommandation IA Porto-Flow">
+        <div class="sim-card__map-area" aria-hidden="true">
+          <div class="sim-map sim-map--ia">
+            <!-- Fond cartographique enrichi -->
+            <svg class="sim-map__topo" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M0 130 Q35 115 70 122 Q105 129 140 115 Q175 101 210 110 Q245 119 280 108" stroke="#5F7487" stroke-width="1.5" fill="none" opacity="0.4"/>
+              <path d="M0 110 Q40 95 80 102 Q120 109 160 94 Q200 79 240 88 Q260 93 280 85" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.25"/>
+              <path d="M0 90 Q50 75 100 82 Q150 89 200 72 Q240 60 280 68" stroke="#5F7487" stroke-width="1" fill="none" opacity="0.15"/>
+            </svg>
+            <!-- Nœuds de synthèse IA -->
+            <svg class="sim-ia-network" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Connexions -->
+              <line x1="140" y1="80" x2="60" y2="40" stroke="#C96A3A" stroke-width="1.5" opacity="0.5" stroke-dasharray="3 2">
+                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+              </line>
+              <line x1="140" y1="80" x2="220" y2="40" stroke="#C96A3A" stroke-width="1.5" opacity="0.5" stroke-dasharray="3 2">
+                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.5s" repeatCount="indefinite"/>
+              </line>
+              <line x1="140" y1="80" x2="60" y2="130" stroke="#C96A3A" stroke-width="1.5" opacity="0.5" stroke-dasharray="3 2">
+                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
+              </line>
+              <line x1="140" y1="80" x2="220" y2="130" stroke="#C96A3A" stroke-width="1.5" opacity="0.5" stroke-dasharray="3 2">
+                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+              </line>
+              <!-- Nœuds satellites -->
+              <circle cx="60" cy="40" r="8" fill="#0B1F33" stroke="#5F7487" stroke-width="1.5"/>
+              <text x="60" y="44" text-anchor="middle" font-size="8" fill="#F7F2E8">P</text>
+              <circle cx="220" cy="40" r="8" fill="#0B1F33" stroke="#5F7487" stroke-width="1.5"/>
+              <text x="220" y="44" text-anchor="middle" font-size="8" fill="#F7F2E8">🚗</text>
+              <circle cx="60" cy="130" r="8" fill="#0B1F33" stroke="#5F7487" stroke-width="1.5"/>
+              <text x="60" y="134" text-anchor="middle" font-size="8" fill="#F7F2E8">🍽</text>
+              <circle cx="220" cy="130" r="8" fill="#0B1F33" stroke="#5F7487" stroke-width="1.5"/>
+              <text x="220" y="134" text-anchor="middle" font-size="8" fill="#F7F2E8">🎭</text>
+              <!-- Nœud central IA -->
+              <circle cx="140" cy="80" r="18" fill="#C96A3A" opacity="0.15">
+                <animate attributeName="r" values="18;24;18" dur="3s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="140" cy="80" r="14" fill="#C96A3A" opacity="0.3"/>
+              <circle cx="140" cy="80" r="10" fill="#C96A3A"/>
+              <text x="140" y="84" text-anchor="middle" font-size="10" fill="white" font-weight="bold">IA</text>
+            </svg>
+          </div>
+        </div>
+        <div class="sim-card__content">
+          <div class="sim-card__type-badge sim-card__type-badge--ia" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3" fill="currentColor"/></svg>
+            Recommandation IA
+          </div>
+          <h3 class="sim-card__title">Synthèse intelligente</h3>
+          <p class="sim-card__desc">
+            Porto-Flow croise les 4 flux en temps réel et génère une recommandation personnalisée, cohérente avec le contexte territorial du moment.
+          </p>
+          <div class="sim-ia-synthesis" aria-label="Synthèse des recommandations IA">
+            <div class="sim-ia-synthesis__item">
+              <span class="sim-ia-synthesis__icon" aria-hidden="true">→</span>
+              <span>Parking Mezzavia — 400 m, libre</span>
+            </div>
+            <div class="sim-ia-synthesis__item">
+              <span class="sim-ia-synthesis__icon" aria-hidden="true">→</span>
+              <span>Itinéraire D81 — évite la congestion</span>
+            </div>
+            <div class="sim-ia-synthesis__item">
+              <span class="sim-ia-synthesis__icon" aria-hidden="true">→</span>
+              <span>A Nepita — table disponible à 12h30</span>
+            </div>
+            <div class="sim-ia-synthesis__item">
+              <span class="sim-ia-synthesis__icon" aria-hidden="true">→</span>
+              <span>Marché artisanal — arrivée avant 10h conseillée</span>
+            </div>
+          </div>
+          <div class="sim-card__ia-hint sim-card__ia-hint--featured" aria-label="Message clé IA">
+            <span class="sim-ia-label" aria-hidden="true">IA</span>
+            <span>4 flux croisés · 1 décision claire · 0 friction</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- /sim-cards-grid -->
+
+    <!-- Légende -->
+    <div class="sim-cards-legend" aria-label="Légende des cartes simulées">
+      <span class="sim-legend-item">
+        <span class="sim-data-dot sim-data-dot--red" aria-hidden="true"></span>
+        Alerte / Saturé
+      </span>
+      <span class="sim-legend-item">
+        <span class="sim-data-dot sim-data-dot--amber" aria-hidden="true"></span>
+        Attention / Chargé
+      </span>
+      <span class="sim-legend-item">
+        <span class="sim-data-dot sim-data-dot--green" aria-hidden="true"></span>
+        Disponible / Fluide
+      </span>
+      <span class="sim-legend-item">
+        <span class="sim-data-dot sim-data-dot--blue" aria-hidden="true"></span>
+        Information
+      </span>
+    </div>
+
+  </div>
+  <!-- /container -->
+
+</section>
+
+<!-- ============================================================
+     STYLES SEGMENT — Cartes simulées
+     ============================================================ -->
+<style>
+/* ── Variables locales ── */
+.sim-cards-section {
+  --sim-bg: #F7F2E8;
+  --sim-card-bg: #ffffff;
+  --sim-card-border: #E8DDC8;
+  --sim-map-bg: #0B1F33;
+  --sim-map-bg-alt: #102033;
+  --sim-navy: #0B1F33;
+  --sim-slate: #5F7487;
+  --sim-terracotta: #C96A3A;
+  --sim-amber: #B8794A;
+  --sim-green: #687B57;
+  --sim-cream: #F7F2E8;
+  --sim-sand: #E8DDC8;
+  --sim-radius: 16px;
+  --sim-radius-sm: 8px;
+  --sim-shadow: 0 4px 24px rgba(11,31,51,0.10);
+  --sim-shadow-hover: 0 8px 40px rgba(11,31,51,0.18);
+  --sim-transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ── Section ── */
+.sim-cards-section {
+  background: var(--sim-bg);
+  padding: 96px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.sim-cards-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--sim-sand), transparent);
+}
+
+/* ── Container ── */
+.sim-cards-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Header ── */
+.sim-cards-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sim-cards-header .section-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sim-terracotta);
+  margin-bottom: 12px;
+}
+
+.sim-cards-header h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--sim-navy);
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.sim-cards-intro {
+  font-size: 1.05rem;
+  color: var(--sim-slate);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ── Grille ── */
+.sim-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 900px) {
+  .sim-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Carte featured (IA) prend toute la largeur */
+.sim-card--featured {
+  grid-column: 1 / -1;
+}
+
+/* ── Carte ── */
+.sim-card {
+  background: var(--sim-card-bg);
+  border: 1px solid var(--sim-card-border);
+  border-radius: var(--sim-radius);
+  overflow: hidden;
+  box-shadow: var(--sim-shadow);
+  transition: transform var(--sim-transition), box-shadow var(--sim-transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.sim-card:hover,
+.sim-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--sim-shadow-hover);
+}
+
+/* ── Zone carte / map ── */
+.sim-card__map-area {
+  position: relative;
+  height: 160px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sim-card--featured .sim-card__map-area {
+  height: 200px;
+}
+
+.sim-map {
+  position: absolute;
+  inset: 0;
+  background: var(--sim-map-bg);
+}
+
+.sim-map--parking  { background: linear-gradient(135deg, #0B1F33 0%, #102033 60%, #0d2540 100%); }
+.sim-map--traffic  { background: linear-gradient(135deg, #102033 0%, #0B1F33 60%, #0a1c2e 100%); }
+.sim-map--restaurant { background: linear-gradient(135deg, #0d2540 0%, #0B1F33 60%, #102033 100%); }
+.sim-map--event    { background: linear-gradient(135deg, #0B1F33 0%, #0d2540 60%, #102033 100%); }
+.sim-map--ia       { background: linear-gradient(135deg, #0B1F33 0%, #102033 40%, #0a1c2e 100%); }
+
+.sim-map__topo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Parking zones ── */
+.sim-parking-zone {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: default;
+}
+
+.sim-parking-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.sim-parking-zone--full  .sim-parking-icon { background: #C96A3A; }
+.sim-parking-zone--busy  .sim-parking-icon { background: #B8794A; }
+.sim-parking-zone--free  .sim-parking-icon { background: #687B57; }
+
+.sim-parking-badge {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 20px;
+  white-space: nowrap;
+  color: white;
+}
+
+.sim-parking-badge--full  { background: rgba(201,106,58,0.85); }
+.sim-parking-badge--busy  { background: rgba(184,121,74,0.85); }
+.sim-parking-badge--free  { background: rgba(104,123,87,0.85); }
+
+/* ── Pulse animation ── */
+.sim-pulse {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(104,123,87,0.3);
+  animation: sim-pulse-anim 2s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sim-pulse-anim {
+  0%   { transform: translate(-50%,-50%) scale(1); opacity: 0.7; }
+  100% { transform: translate(-50%,-50%) scale(2.5); opacity: 0; }
+}
+
+/* ── Traffic routes SVG ── */
+.sim-traffic-routes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Pins ── */
+.sim-pin {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  cursor: default;
+}
+
+.sim-pin--highlight {
+  z-index: 2;
+  filter: drop-shadow(0 4px 8px rgba(201,106,58,0.5));
+}
+
+.sim-pin-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(11,31,51,0.95);
+  border: 1px solid rgba(201,106,58,0.4);
+  border-radius: 8px;
+  padding: 8px 12px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.sim-pin--highlight:hover .sim-pin-tooltip,
+.sim-pin--highlight:focus .sim-pin-tooltip {
+  opacity: 1;
+}
+
+.sim-pin-tooltip strong {
+  font-size: 0.75rem;
+  color: #F7F2E8;
+  font-weight: 700;
+}
+
+.sim-pin-tooltip span {
+  font-size: 0.65rem;
+  color: #5F7487;
+}
+
+.sim-pin-rating {
+  color: #C96A3A !important;
+  font-weight: 600 !important;
+}
+
+/* ── Rayon de proximité ── */
+.sim-radius-circle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1.5px dashed rgba(201,106,58,0.4);
+  animation: sim-radius-pulse 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sim-radius-pulse {
+  0%, 100% { opacity: 0.4; transform: translate(-50%,-50%) scale(1); }
+  50%       { opacity: 0.7; transform: translate(-50%,-50%) scale(1.08); }
+}
+
+/* ── Zone événement ── */
+.sim-event-zone {
+  position: absolute;
+  border: 1.5px dashed rgba(104,123,87,0.6);
+  border-radius: 12px;
+  background: rgba(104,123,87,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sim-event-zone__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.sim-event-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.sim-event-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: rgba(247,242,232,0.8);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.sim-event-flows {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Réseau IA ── */
+.sim-ia-network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Contenu carte ── */
+.sim-card__content {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.sim-card--featured .sim-card__content {
+  padding: 24px 32px 28px;
+}
+
+/* ── Badge type ── */
+.sim-card__type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.sim-card__type-badge--parking    { background: rgba(201,106,58,0.1); color: #C96A3A; }
+.sim-card__type-badge--traffic    { background: rgba(184,121,74,0.1); color: #B8794A; }
+.sim-card__type-badge--restaurant { background: rgba(104,123,87,0.1); color: #687B57; }
+.sim-card__type-badge--event      { background: rgba(95,116,135,0.1); color: #5F7487; }
+.sim-card__type-badge--ia         { background: rgba(201,106,58,0.15); color: #C96A3A; }
+
+/* ── Titre carte ── */
+.sim-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--sim-navy);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ── Description ── */
+.sim-card__desc {
+  font-size: 0.875rem;
+  color: var(--sim-slate);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Rangée de données ── */
+.sim-card__data-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 2px;
+}
+
+.sim-data-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--sim-slate);
+  font-weight: 500;
+}
+
+.sim-data-item--alert { color: #C96A3A; }
+.sim-data-item--ok    { color: #687B57; }
+
+/* ── Points de statut ── */
+.sim-data-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.sim-data-dot--red   { background: #C96A3A; box-shadow: 0 0 0 2px rgba(201,106,58,0.2); }
+.sim-data-dot--amber { background: #B8794A; box-shadow: 0 0 0 2px rgba(184,121,74,0.2); }
+.sim-data-dot--green { background: #687B57; box-shadow: 0 0 0 2px rgba(104,123,87,0.2); }
+.sim-data-dot--blue  { background: #5F7487; box-shadow: 0 0 0 2px rgba(95,116,135,0.2); }
+
+/* ── Hint IA ── */
+.sim-card__ia-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(11,31,51,0.04);
+  border: 1px solid rgba(11,31,51,0.08);
+  border-left: 3px solid var(--sim-terracotta);
+  border-radius: 0 var(--sim-radius-sm) var(--sim-radius-sm) 0;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--sim-slate);
+  margin-top: 4px;
+}
+
+.sim-card__ia-hint--featured {
+  background: rgba(201,106,58,0.06);
+  border-color: rgba(201,106,58,0.2);
+  border-left-color: var(--sim-terracotta);
+  font-weight: 600;
+  color: var(--sim-navy);
+}
+
+.sim-ia-label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: white;
+  background: var(--sim-terracotta);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* ── Synthèse IA ── */
+.sim-ia-synthesis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .sim-ia-synthesis {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sim-ia-synthesis__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--sim-slate);
+  background: rgba(11,31,51,0.03);
+  border: 1px solid var(--sim-sand);
+  border-radius: var(--sim-radius-sm);
+  padding: 10px 12px;
+  line-height: 1.4;
+}
+
+.sim-ia-synthesis__icon {
+  color: var(--sim-terracotta);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Légende ── */
+.sim-cards-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.sim-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--sim-slate);
+  font-weight: 500;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .sim-cards-section {
+    padding: 64px 0 56px;
+  }
+
+  .sim-cards-header {
+    margin-bottom: 36px;
+  }
+
+  .sim-card__content {
+    padding: 16px 18px 20px;
+  }
+
+  .sim-card--featured .sim-card__content {
+    padding: 18px 20px 22px;
+  }
+
+  .sim-card__map-area {
+    height: 140px;
+  }
+
+  .sim-card--featured .sim-card__map-area {
+    height: 160px;
+  }
+}
+
+/* ── Accessibilité ── */
+@media (prefers-reduced-motion: reduce) {
+  .sim-pulse,
+  .sim-radius-circle,
+  .sim-card {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+
+<section class="assistant-territorial" id="assistant-territorial" aria-labelledby="assistant-territorial-title">
+
+  <div class="container">
+
+    <div class="assistant-territorial__inner">
+
+      <div class="assistant-territorial__header">
+        <span class="assistant-territorial__eyebrow" aria-hidden="true">Intelligence de terrain</span>
+        <h2 class="assistant-territorial__title" id="assistant-territorial-title">
+          Un assistant territorial qui connaît vraiment le territoire
+        </h2>
+        <p class="assistant-territorial__lead">
+          Pas de données périmées. Pas de réponses génériques. Pas de poussière numérique accumulée au fil des saisons.
+          Porto-Flow s'alimente en continu aux sources vivantes du territoire pour offrir une vision claire, fiable et ancrée dans le réel.
+        </p>
+      </div>
+
+      <div class="assistant-territorial__grid">
+
+        <div class="assistant-territorial__pillar" data-animate="fade-up" data-delay="0">
+          <div class="pillar__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <title>Données fiables</title>
+              <circle cx="20" cy="20" r="18" stroke="#C96A3A" stroke-width="1.5" fill="none"/>
+              <path d="M12 20.5l5.5 5.5 10.5-11" stroke="#C96A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Données fiables, pas supposées</h3>
+          <p class="pillar__text">
+            Chaque information diffusée par Porto-Flow est vérifiée, datée et contextualisée.
+            Les horaires d'un service public, la disponibilité d'un parking, l'état d'une route de montagne :
+            rien n'est affiché sans source identifiée. Le territoire mérite mieux que des approximations.
+          </p>
+        </div>
+
+        <div class="assistant-territorial__pillar" data-animate="fade-up" data-delay="150">
+          <div class="pillar__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <title>Vision claire</title>
+              <circle cx="20" cy="20" r="18" stroke="#687B57" stroke-width="1.5" fill="none"/>
+              <circle cx="20" cy="20" r="5" stroke="#687B57" stroke-width="1.5" fill="none"/>
+              <line x1="20" y1="2" x2="20" y2="10" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="30" x2="20" y2="38" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="2" y1="20" x2="10" y2="20" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="30" y1="20" x2="38" y2="20" stroke="#687B57" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Vision claire, pas encombrée</h3>
+          <p class="pillar__text">
+            L'intelligence de Porto-Flow ne consiste pas à tout montrer, mais à montrer ce qui compte.
+            Filtrer le bruit, hiérarchiser l'essentiel, présenter une réponse lisible en une fraction de seconde :
+            c'est la discipline que le territoire impose, et que Porto-Flow a intégrée comme principe fondateur.
+          </p>
+        </div>
+
+        <div class="assistant-territorial__pillar" data-animate="fade-up" data-delay="300">
+          <div class="pillar__icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <title>Zéro poussière numérique</title>
+              <circle cx="20" cy="20" r="18" stroke="#5F7487" stroke-width="1.5" fill="none"/>
+              <path d="M14 26l12-12M14 14h12v12" stroke="#5F7487" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="pillar__title">Zéro poussière numérique</h3>
+          <p class="pillar__text">
+            Les systèmes vieillissent. Les bases de données s'encrassent. Les informations obsolètes s'accumulent
+            et finissent par tromper ceux qui en ont le plus besoin. Porto-Flow intègre une logique de mise à jour
+            continue : les données qui ne sont plus valides disparaissent. Ce qui reste est vivant.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="assistant-territorial__demo" aria-label="Simulation de l'assistant territorial actif">
+
+        <div class="demo__terminal" role="region" aria-label="Interface assistant Porto-Flow">
+
+          <div class="demo__terminal-bar" aria-hidden="true">
+            <span class="terminal-dot terminal-dot--red"></span>
+            <span class="terminal-dot terminal-dot--yellow"></span>
+            <span class="terminal-dot terminal-dot--green"></span>
+            <span class="terminal-bar__label">Porto-Flow — Assistant territorial</span>
+          </div>
+
+          <div class="demo__terminal-body">
+
+            <div class="demo__exchange demo__exchange--user" data-animate="slide-in" data-delay="0">
+              <span class="exchange__role" aria-label="Question utilisateur">Visiteur</span>
+              <p class="exchange__message">
+                Je cherche un restaurant ouvert ce soir à Bonifacio avec vue sur les falaises, accessible en voiture depuis Porto-Vecchio.
+              </p>
+            </div>
+
+            <div class="demo__exchange demo__exchange--assistant" data-animate="slide-in" data-delay="400">
+              <span class="exchange__role" aria-label="Réponse Porto-Flow">Porto-Flow</span>
+              <div class="exchange__message exchange__message--rich">
+                <p class="exchange__intro">
+                  Voici trois établissements ouverts ce soir, vérifiés à <strong>14h37</strong>, accessibles depuis Porto-Vecchio en <strong>55 min</strong> via la D859 :
+                </p>
+                <ul class="exchange__list" role="list">
+                  <li class="exchange__list-item">
+                    <span class="list-item__name">Le Goéland des Falaises</span>
+                    <span class="list-item__detail">Terrasse panoramique · Ouvert jusqu'à 23h · 3 tables disponibles</span>
+                  </li>
+                  <li class="exchange__list-item">
+                    <span class="list-item__name">A Tana</span>
+                    <span class="list-item__detail">Cuisine corse · Vue mer · Réservation recommandée</span>
+                  </li>
+                  <li class="exchange__list-item">
+                    <span class="list-item__name">Chez Madeleine</span>
+                    <span class="list-item__detail">Table familiale · Falaises accessibles à pied · Ouvert</span>
+                  </li>
+                </ul>
+                <p class="exchange__note">
+                  <span class="exchange__note-icon" aria-hidden="true">↳</span>
+                  Données mises à jour aujourd'hui. Aucune information non vérifiée n'a été incluse dans cette réponse.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="demo__terminal-footer" aria-hidden="true">
+            <span class="terminal-status terminal-status--live">
+              <span class="status-dot" aria-hidden="true"></span>
+              Connecté aux sources territoriales · Dernière synchronisation il y a 4 min
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="assistant-territorial__manifeste">
+        <blockquote class="manifeste__quote" cite="Porto-Flow">
+          <p>
+            Un territoire n'est pas une base de données. C'est un organisme vivant, avec ses rythmes, ses tensions,
+            ses silences et ses urgences. Porto-Flow ne prétend pas tout savoir — il s'engage à ne jamais mentir.
+          </p>
+          <footer class="manifeste__attribution">
+            <cite>Porto-Flow — Principe de fiabilité territoriale</cite>
+          </footer>
+        </blockquote>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+  /* ============================================================
+     ASSISTANT TERRITORIAL — Section 6/7
+     experience.html · Porto-Flow V4 Institutionnel
+  ============================================================ */
+
+  .assistant-territorial {
+    background-color: var(--color-bg-dark, #0B1F33);
+    padding: var(--space-2xl, 6rem) 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .assistant-territorial::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(201, 106, 58, 0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(104, 123, 87, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .assistant-territorial .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md, 1.5rem);
+    position: relative;
+    z-index: 1;
+  }
+
+  .assistant-territorial__inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl, 4rem);
+  }
+
+  /* Header */
+  .assistant-territorial__header {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .assistant-territorial__eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent, #C96A3A);
+    margin-bottom: 1rem;
+    padding: 0.35rem 1rem;
+    border: 1px solid rgba(201, 106, 58, 0.3);
+    border-radius: 2px;
+  }
+
+  .assistant-territorial__title {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-text-light, #F7F2E8);
+    line-height: 1.2;
+    margin: 0 0 1.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .assistant-territorial__lead {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    color: var(--color-text-muted, #5F7487);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  /* Grid piliers */
+  .assistant-territorial__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .assistant-territorial__grid {
+      grid-template-columns: 1fr;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+  }
+
+  .assistant-territorial__pillar {
+    background: rgba(247, 242, 232, 0.03);
+    border: 1px solid rgba(247, 242, 232, 0.08);
+    border-radius: 4px;
+    padding: 2rem 1.75rem;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .assistant-territorial__pillar:hover {
+    border-color: rgba(201, 106, 58, 0.25);
+    background: rgba(247, 242, 232, 0.05);
+  }
+
+  .pillar__icon {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .pillar__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text-light, #F7F2E8);
+    margin: 0 0 0.875rem;
+    line-height: 1.3;
+  }
+
+  .pillar__text {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted, #5F7487);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* Terminal demo */
+  .assistant-territorial__demo {
+    max-width: 820px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .demo__terminal {
+    background: #0a1929;
+    border: 1px solid rgba(247, 242, 232, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(0,0,0,0.3),
+      0 24px 64px rgba(0,0,0,0.4);
+  }
+
+  .demo__terminal-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.875rem 1.25rem;
+    background: rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(247, 242, 232, 0.07);
+  }
+
+  .terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .terminal-dot--red    { background: #ff5f57; }
+  .terminal-dot--yellow { background: #febc2e; }
+  .terminal-dot--green  { background: #28c840; }
+
+  .terminal-bar__label {
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    color: rgba(247, 242, 232, 0.4);
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  .demo__terminal-body {
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .demo__exchange {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .exchange__role {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .demo__exchange--user .exchange__role {
+    color: var(--color-accent, #C96A3A);
+  }
+
+  .demo__exchange--assistant .exchange__role {
+    color: var(--color-secondary, #687B57);
+  }
+
+  .exchange__message {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: rgba(247, 242, 232, 0.75);
+    margin: 0;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+  }
+
+  .demo__exchange--user .exchange__message {
+    background: rgba(201, 106, 58, 0.08);
+    border-left: 2px solid rgba(201, 106, 58, 0.4);
+  }
+
+  .demo__exchange--assistant .exchange__message {
+    background: rgba(104, 123, 87, 0.08);
+    border-left: 2px solid rgba(104, 123, 87, 0.4);
+  }
+
+  .exchange__message--rich {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .exchange__intro {
+    margin: 0;
+    color: rgba(247, 242, 232, 0.85);
+  }
+
+  .exchange__intro strong {
+    color: var(--color-text-light, #F7F2E8);
+    font-weight: 600;
+  }
+
+  .exchange__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .exchange__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.625rem 0.875rem;
+    background: rgba(247, 242, 232, 0.04);
+    border-radius: 3px;
+    border: 1px solid rgba(247, 242, 232, 0.06);
+  }
+
+  .list-item__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-light, #F7F2E8);
+  }
+
+  .list-item__detail {
+    font-size: 0.8125rem;
+    color: rgba(247, 242, 232, 0.5);
+  }
+
+  .exchange__note {
+    margin: 0;
+    font-size: 0.8125rem;
+    color: rgba(104, 123, 87, 0.9);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-style: italic;
+  }
+
+  .exchange__note-icon {
+    flex-shrink: 0;
+    margin-top: 0.05em;
+  }
+
+  .demo__terminal-footer {
+    padding: 0.75rem 1.25rem;
+    background: rgba(255,255,255,0.02);
+    border-top: 1px solid rgba(247, 242, 232, 0.06);
+  }
+
+  .terminal-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    color: rgba(247, 242, 232, 0.3);
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    letter-spacing: 0.04em;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #28c840;
+    flex-shrink: 0;
+    animation: pulse-status 2.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-status {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.5; transform: scale(0.85); }
+  }
+
+  /* Manifeste */
+  .assistant-territorial__manifeste {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .manifeste__quote {
+    margin: 0;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(201, 106, 58, 0.2);
+    border-radius: 4px;
+    background: rgba(201, 106, 58, 0.04);
+    position: relative;
+  }
+
+  .manifeste__quote::before {
+    content: '"';
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    line-height: 1;
+    color: rgba(201, 106, 58, 0.25);
+    font-family: Georgia, serif;
+    pointer-events: none;
+  }
+
+  .manifeste__quote p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    color: rgba(247, 242, 232, 0.8);
+    line-height: 1.75;
+    margin: 0 0 1.25rem;
+    font-style: italic;
+  }
+
+  .manifeste__attribution {
+    margin: 0;
+  }
+
+  .manifeste__attribution cite {
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-accent, #C96A3A);
+    opacity: 0.8;
+  }
+
+  /* Animations */
+  [data-animate="fade-up"] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  [data-animate="fade-up"].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  [data-animate="slide-in"] {
+    opacity: 0;
+    transform: translateX(-12px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  [data-animate="slide-in"].is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-animate] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+    .status-dot {
+      animation: none;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .assistant-territorial {
+      padding: var(--space-xl, 3.5rem) 0;
+    }
+
+    .demo__terminal-body {
+      padding: 1.5rem 1.25rem;
+    }
+
+    .manifeste__quote {
+      padding: 2rem 1.25rem;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    'use strict';
+
+    function initAssistantTerritorial() {
+      var section = document.querySelector('.assistant-territorial');
+      if (!section) return;
+
+      var animatedElements = section.querySelectorAll('[data-animate]');
+      if (!animatedElements.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        animatedElements.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var el = entry.target;
+            var delay = parseInt(el.getAttribute('data-delay') || '0', 10);
+            setTimeout(function () {
+              el.classList.add('is-visible');
+            }, delay);
+            observer.unobserve(el);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      animatedElements.forEach(function (el) {
+        observer.observe(el);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAssistantTerritorial);
+    } else {
+      initAssistantTerritorial();
+    }
+  }());
+</script>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo" aria-label="Porto-Flow — Retour à l'accueil">
+        <span class="footer-logo-mark" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="#C96A3A" stroke-width="1.5" fill="none"/>
+            <circle cx="16" cy="16" r="3" fill="#C96A3A"/>
+            <line x1="16" y1="2" x2="16" y2="10" stroke="#C96A3A" stroke-width="1.2"/>
+            <line x1="16" y1="22" x2="16" y2="30" stroke="#5F7487" stroke-width="1.2"/>
+            <line x1="2" y1="16" x2="10" y2="16" stroke="#5F7487" stroke-width="1.2"/>
+            <line x1="22" y1="16" x2="30" y2="16" stroke="#5F7487" stroke-width="1.2"/>
+          </svg>
+        </span>
+        <span class="footer-logo-text">Porto<span class="accent">Flow</span></span>
+      </a>
+      <p class="footer-tagline">Le copilote intelligent du territoire corse.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Navigation secondaire">
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">Le projet</h3>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html" aria-current="page">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">La méthode</h3>
+        <ul class="footer-nav-list">
+          <li><a href="orchestration.html">Orchestration</a></li>
+          <li><a href="production-ia.html">Production IA</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-group">
+        <h3 class="footer-nav-heading">Contact</h3>
+        <ul class="footer-nav-list">
+          <li><a href="contact.html">Présenter Porto-Flow</a></li>
+          <li><a href="contact.html#formulaire">Formulaire institutionnel</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer-territory">
+      <div class="footer-territory-marker" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 1C5.686 1 3 3.686 3 7c0 4.5 6 10 6 10s6-5.5 6-10c0-3.314-2.686-6-6-6z" stroke="#C96A3A" stroke-width="1.2" fill="none"/>
+          <circle cx="9" cy="7" r="2" fill="#C96A3A"/>
+        </svg>
+      </div>
+      <span class="footer-territory-label">Corse-du-Sud, France</span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-legal">
+        &copy; <span id="footer-year"></span> Porto-Flow — Tous droits réservés.
+      </p>
+      <p class="footer-mention">
+        Conçu pour les territoires qui avancent.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background-color: #0B1F33;
+    color: #F7F2E8;
+    border-top: 1px solid rgba(95, 116, 135, 0.25);
+    font-family: inherit;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* Brand */
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: #F7F2E8;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-logo:hover,
+  .footer-logo:focus-visible {
+    opacity: 0.8;
+  }
+
+  .footer-logo:focus-visible {
+    outline: 2px solid #C96A3A;
+    outline-offset: 4px;
+    border-radius: 3px;
+  }
+
+  .footer-logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .footer-logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .footer-logo-text .accent {
+    color: #C96A3A;
+  }
+
+  .footer-tagline {
+    font-size: 0.85rem;
+    color: #5F7487;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 22ch;
+  }
+
+  /* Navigation */
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-nav-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-nav-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #C96A3A;
+    margin: 0 0 0.25rem;
+  }
+
+  .footer-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-nav-list a {
+    font-size: 0.875rem;
+    color: #E8DDC8;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    display: inline-block;
+  }
+
+  .footer-nav-list a:hover,
+  .footer-nav-list a:focus-visible {
+    opacity: 1;
+    color: #F7F2E8;
+  }
+
+  .footer-nav-list a:focus-visible {
+    outline: 2px solid #C96A3A;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .footer-nav-list a[aria-current="page"] {
+    color: #C96A3A;
+    opacity: 1;
+  }
+
+  /* Territory marker */
+  .footer-territory {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: start;
+    padding-top: 0.25rem;
+  }
+
+  .footer-territory-label {
+    font-size: 0.78rem;
+    color: #5F7487;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  /* Bottom bar */
+  .footer-bottom {
+    border-top: 1px solid rgba(95, 116, 135, 0.2);
+    background-color: #102033;
+  }
+
+  .footer-bottom-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-legal {
+    font-size: 0.78rem;
+    color: #5F7487;
+    margin: 0;
+  }
+
+  .footer-mention {
+    font-size: 0.78rem;
+    color: #5F7487;
+    margin: 0;
+    font-style: italic;
+    opacity: 0.75;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .footer-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+
+    .footer-territory {
+      grid-column: 1 / -1;
+    }
+
+    .footer-nav {
+      grid-column: 1 / -1;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.25rem 2rem;
+      gap: 2rem;
+    }
+
+    .footer-brand {
+      grid-column: auto;
+    }
+
+    .footer-nav {
+      grid-column: auto;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .footer-territory {
+      grid-column: auto;
+    }
+
+    .footer-bottom-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+      padding: 1rem 1.25rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .footer-nav {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var yearEl = document.getElementById('footer-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  })();
+</script>
