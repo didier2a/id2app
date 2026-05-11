@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Foire aux questions du micro-site test V4.">
   <title>FAQ - V4 Smoke Test</title>
-  <meta name="description" content="Foire aux questions du micro-site test V4." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -15,20 +15,20 @@
         V4 Smoke Test
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Accueil</a></li>
-          <li><a href="page-1.html" class="nav-link">Présentation</a></li>
-          <li><a href="page-2.html" class="nav-link">Services</a></li>
-          <li><a href="page-3.html" class="nav-link">Méthode</a></li>
-          <li><a href="page-4.html" class="nav-link">Équipe</a></li>
-          <li><a href="page-5.html" class="nav-link">Références</a></li>
-          <li><a href="page-6.html" class="nav-link active" aria-current="page">FAQ</a></li>
-          <li><a href="page-7.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+          <li class="nav-item"><a href="page-1.html" class="nav-link">Présentation</a></li>
+          <li class="nav-item"><a href="page-2.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="page-3.html" class="nav-link">Méthode</a></li>
+          <li class="nav-item"><a href="page-4.html" class="nav-link">Équipe</a></li>
+          <li class="nav-item"><a href="page-5.html" class="nav-link">Références</a></li>
+          <li class="nav-item"><a href="page-6.html" class="nav-link active" aria-current="page">FAQ</a></li>
+          <li class="nav-item"><a href="page-7.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -38,14 +38,14 @@
 
     <section class="page-hero">
       <div class="container">
-        <h1>Questions fréquentes</h1>
-        <p class="page-intro">Retrouvez ici les réponses aux questions les plus courantes sur le workflow ID2App V4 et ce micro-site de test.</p>
+        <h1 class="page-hero__title">Questions fréquentes</h1>
+        <p class="page-hero__intro">Retrouvez ici les réponses aux questions les plus courantes sur le workflow ID2App V4 et ce micro-site de test.</p>
       </div>
     </section>
 
     <section class="faq-section" aria-labelledby="faq-heading">
       <div class="container">
-        <h2 id="faq-heading" class="section-title">Toutes les questions</h2>
+        <h2 id="faq-heading" class="section-title">Vos questions, nos réponses</h2>
 
         <dl class="faq-list">
 
@@ -53,11 +53,11 @@
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-1">
                 Qu'est-ce que le workflow ID2App V4 ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-1" hidden>
-              <p>ID2App V4 est un workflow de génération de sites et d'applications à partir d'une spécification structurée. Il produit des fichiers HTML, CSS et JavaScript prêts à déployer, compatibles GitHub Pages.</p>
+              <p>ID2App V4 est un workflow de génération automatisée de fichiers pour des projets web statiques. Il permet de produire rapidement des sites HTML/CSS/JS structurés, accessibles et compatibles GitHub Pages à partir d'une spécification de projet.</p>
             </dd>
           </div>
 
@@ -65,70 +65,69 @@
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-2">
                 À quoi sert ce micro-site de 8 pages ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-2" hidden>
-              <p>Ce micro-site est un smoke test : il permet de valider rapidement que l'ensemble du pipeline de génération fonctionne correctement, de la spécification jusqu'au déploiement final.</p>
+              <p>Ce micro-site est un smoke test conçu pour valider rapidement l'ensemble du pipeline V4 : génération des fichiers, cohérence de la navigation, qualité du code produit et compatibilité avec un hébergement statique comme GitHub Pages.</p>
             </dd>
           </div>
 
           <div class="faq-item">
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-3">
-                Le site est-il compatible avec tous les navigateurs modernes ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                Le site est-il responsive et accessible ?
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-3" hidden>
-              <p>Oui. Le site utilise du HTML5 sémantique, du CSS moderne avec variables et du JavaScript vanilla sans dépendance externe. Il est compatible avec tous les navigateurs modernes et fonctionne sans build step.</p>
+              <p>Oui. Chaque page est construite avec du HTML5 sémantique, des attributs ARIA appropriés et un CSS responsive basé sur des variables et des media queries. La navigation mobile est gérée via JavaScript vanilla sans dépendance externe.</p>
             </dd>
           </div>
 
           <div class="faq-item">
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-4">
-                Comment déployer ce site sur GitHub Pages ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                Peut-on déployer ce site directement sur GitHub Pages ?
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-4" hidden>
-              <p>Il suffit de pousser les fichiers dans un dépôt GitHub et d'activer GitHub Pages depuis les paramètres du dépôt. Aucune configuration supplémentaire n'est nécessaire car tous les liens sont relatifs.</p>
+              <p>Absolument. Le site utilise uniquement des fichiers statiques avec des liens relatifs. Il suffit de pousser le dossier du projet dans un dépôt GitHub et d'activer GitHub Pages depuis les paramètres du dépôt.</p>
             </dd>
           </div>
 
           <div class="faq-item">
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-5">
-                Peut-on personnaliser les styles et le contenu ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                Quelles technologies sont utilisées ?
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-5" hidden>
-              <p>Absolument. Le fichier <code>styles.css</code> utilise des variables CSS pour les couleurs, typographies et espacements. Il suffit de modifier ces variables pour adapter l'ensemble du site en quelques lignes.</p>
+              <p>Le projet repose exclusivement sur HTML5, CSS3 avec variables personnalisées, et JavaScript vanilla. Aucune bibliothèque ou framework externe n'est requis, ce qui garantit légèreté et rapidité de chargement.</p>
             </dd>
           </div>
 
           <div class="faq-item">
             <dt class="faq-question">
               <button class="faq-toggle" aria-expanded="false" aria-controls="faq-answer-6">
-                Le site respecte-t-il les standards d'accessibilité ?
-                <span class="faq-icon" aria-hidden="true"></span>
+                Comment personnaliser ce site pour un vrai projet ?
+                <span class="faq-toggle__icon" aria-hidden="true"></span>
               </button>
             </dt>
             <dd class="faq-answer" id="faq-answer-6" hidden>
-              <p>Oui. Le site suit les bonnes pratiques WCAG : balises sémantiques, attributs ARIA, contrastes suffisants, navigation au clavier et indicateurs de focus visibles sur tous les éléments interactifs.</p>
+              <p>Il suffit de modifier les variables CSS dans <code>styles.css</code> pour adapter la palette de couleurs, de remplacer les contenus textuels dans chaque fichier HTML, et d'ajuster les comportements dans <code>script.js</code> selon les besoins du projet cible.</p>
             </dd>
           </div>
 
         </dl>
-      </div>
-    </section>
 
-    <section class="cta-section">
-      <div class="container cta-inner">
-        <p class="cta-text">Une question non listée ici ? Notre équipe est disponible pour vous répondre.</p>
-        <a href="page-7.html" class="btn btn-primary">Contactez-nous</a>
+        <div class="cta-block">
+          <p class="cta-block__text">Une question sans réponse ici ? Contactez directement notre équipe.</p>
+          <a href="page-7.html" class="btn btn--primary">Contactez-nous</a>
+        </div>
+
       </div>
     </section>
 
@@ -137,16 +136,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="footer-copy">&copy; 2024 V4 Smoke Test 8 Pages. Tous droits réservés.</p>
-      <nav aria-label="Navigation secondaire">
+      <nav aria-label="Navigation de pied de page">
         <ul class="footer-nav">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="page-1.html">Présentation</a></li>
-          <li><a href="page-2.html">Services</a></li>
-          <li><a href="page-3.html">Méthode</a></li>
-          <li><a href="page-4.html">Équipe</a></li>
-          <li><a href="page-5.html">Références</a></li>
-          <li><a href="page-6.html">FAQ</a></li>
-          <li><a href="page-7.html">Contact</a></li>
+          <li><a href="index.html" class="footer-link">Accueil</a></li>
+          <li><a href="page-1.html" class="footer-link">Présentation</a></li>
+          <li><a href="page-7.html" class="footer-link">Contact</a></li>
         </ul>
       </nav>
     </div>
