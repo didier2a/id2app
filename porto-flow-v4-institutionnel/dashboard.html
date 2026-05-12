@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard territorial PortoFlow V4 — Suivi en temps réel des flux, trafic, parkings, plages et événements du territoire méditerranéen.">
+  <meta name="robots" content="index, follow">
+  <title>Dashboard territorial — PortoFlow V4 Institutionnel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="PortoFlow V4 — Accueil">
+        <span class="logo-mark">PF</span>
+        <span class="logo-text">PortoFlow <em>V4</em></span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="dashboard.html" aria-current="page">Dashboard territorial</a></li>
+          <li><a href="ingenierie.html">Ingénierie IA</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO DASHBOARD -->
+  <section class="page-hero" aria-labelledby="dashboard-title">
+    <div class="container">
+      <p class="page-label">Tableau de bord</p>
+      <h1 id="dashboard-title">Dashboard territorial</h1>
+      <p class="page-intro">Visualisation consolidée des indicateurs clés du territoire méditerranéen : mobilité, stationnement, fréquentation des plages, agenda événementiel et dynamiques saisonnières.</p>
+    </div>
+  </section>
+
+  <main id="main-content" class="container dashboard-main">
+
+    <!-- SECTION FLUX ET TRAFIC -->
+    <section class="dashboard-section" aria-labelledby="section-flux">
+      <div class="section-header">
+        <h2 id="section-flux">Flux et trafic</h2>
+        <span class="badge badge-live">Indicateurs</span>
+      </div>
+      <p class="section-desc">Synthèse des flux de circulation sur les axes principaux du territoire. Données actualisées selon les périodes de référence.</p>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">Axe Nord — RD 559</span>
+          <span class="kpi-value">Fluide</span>
+          <span class="kpi-sub">Trafic nominal</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Axe Centre — RD 98</span>
+          <span class="kpi-value">Modéré</span>
+          <span class="kpi-sub">Ralentissements ponctuels</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Axe Sud — Accès port</span>
+          <span class="kpi-value">Dense</span>
+          <span class="kpi-sub">Période haute saison</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Entrées territoire / jour</span>
+          <span class="kpi-value">12 400</span>
+          <span class="kpi-sub">Véhicules estimés</span>
+        </div>
+      </div>
+
+      <table class="data-table" aria-label="Détail des flux par axe">
+        <thead>
+          <tr>
+            <th scope="col">Axe</th>
+            <th scope="col">Sens</th>
+            <th scope="col">Niveau de trafic</th>
+            <th scope="col">Tendance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>RD 559 Nord</td>
+            <td>Entrant</td>
+            <td>Fluide</td>
+            <td>Stable</td>
+          </tr>
+          <tr>
+            <td>RD 559 Nord</td>
+            <td>Sortant</td>
+            <td>Fluide</td>
+            <td>Stable</td>
+          </tr>
+          <tr>
+            <td>RD 98 Centre</td>
+            <td>Entrant</td>
+            <td>Modéré</td>
+            <td>En hausse</td>
+          </tr>
+          <tr>
+            <td>RD 98 Centre</td>
+            <td>Sortant</td>
+            <td>Modéré</td>
+            <td>Stable</td>
+          </tr>
+          <tr>
+            <td>Accès port Sud</td>
+            <td>Entrant</td>
+            <td>Dense</td>
+            <td>En forte hausse</td>
+          </tr>
+          <tr>
+            <td>Accès port Sud</td>
+            <td>Sortant</td>
+            <td>Modéré</td>
+            <td>En hausse</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION PARKINGS -->
+    <section class="dashboard-section" aria-labelledby="section-parkings">
+      <div class="section-header">
+        <h2 id="section-parkings">Parkings</h2>
+        <span class="badge badge-info">Stationnement</span>
+      </div>
+      <p class="section-desc">État de la capacité de stationnement sur les principaux sites du territoire. Taux d'occupation indicatifs par zone.</p>
+      <div class="kpi-grid">
+        <div class="kpi-card kpi-alert">
+          <span class="kpi-label">Parking Port Central</span>
+          <span class="kpi-value">94 %</span>
+          <span class="kpi-sub">Quasi complet</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Parking Plage Nord</span>
+          <span class="kpi-value">67 %</span>
+          <span class="kpi-sub">Disponibilités réduites</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Parking Centre-ville</span>
+          <span class="kpi-value">48 %</span>
+          <span class="kpi-sub">Disponible</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Parking Événementiel</span>
+          <span class="kpi-value">22 %</span>
+          <span class="kpi-sub">Large disponibilité</span>
+        </div>
+      </div>
+
+      <table class="data-table" aria-label="Capacité et occupation des parkings">
+        <thead>
+          <tr>
+            <th scope="col">Site</th>
+            <th scope="col">Capacité totale</th>
+            <th scope="col">Places disponibles</th>
+            <th scope="col">Taux d'occupation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Port Central</td>
+            <td>320 places</td>
+            <td>19 places</td>
+            <td>94 %</td>
+          </tr>
+          <tr>
+            <td>Plage Nord</td>
+            <td>180 places</td>
+            <td>59 places</td>
+            <td>67 %</td>
+          </tr>
+          <tr>
+            <td>Centre-ville</td>
+            <td>250 places</td>
+            <td>130 places</td>
+            <td>48 %</td>
+          </tr>
+          <tr>
+            <td>Événementiel</td>
+            <td>500 places</td>
+            <td>390 places</td>
+            <td>22 %</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION PLAGES -->
+    <section class="dashboard-section" aria-labelledby="section-plages">
+      <div class="section-header">
+        <h2 id="section-plages">Plages</h2>
+        <span class="badge badge-nature">Fréquentation</span>
+      </div>
+      <p class="section-desc">Suivi de la fréquentation et des conditions d'accueil sur les plages du territoire. Qualité de l'eau et niveau de surveillance inclus.</p>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">Plage des Lecques</span>
+          <span class="kpi-value">Élevée</span>
+          <span class="kpi-sub">Surveillance active</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Plage de la Madrague</span>
+          <span class="kpi-value">Modérée</span>
+          <span class="kpi-sub">Surveillance active</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Plage du Jonquet</span>
+          <span class="kpi-value">Faible</span>
+          <span class="kpi-sub">Surveillance partielle</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Qualité eau globale</span>
+          <span class="kpi-value">Excellente</span>
+          <span class="kpi-sub">Conforme normes EU</span>
+        </div>
+      </div>
+
+      <table class="data-table" aria-label="État des plages du territoire">
+        <thead>
+          <tr>
+            <th scope="col">Plage</th>
+            <th scope="col">Fréquentation</th>
+            <th scope="col">Qualité eau</th>
+            <th scope="col">Surveillance</th>
+            <th scope="col">Accessibilité PMR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Les Lecques</td>
+            <td>Élevée</td>
+            <td>Excellente</td>
+            <td>Active — 9h/19h</td>
+            <td>Oui</td>
+          </tr>
+          <tr>
+            <td>La Madrague</td>
+            <td>Modérée</td>
+            <td>Bonne</td>
+            <td>Active — 10h/18h</td>
+            <td>Partielle</td>
+          </tr>
+          <tr>
+            <td>Le Jonquet</td>
+            <td>Faible</td>
+            <td>Excellente</td>
+            <td>Partielle — 11h/17h</td>
+            <td>Non</td>
+          </tr>
+          <tr>
+            <td>La Fossette</td>
+            <td>Modérée</td>
+            <td>Bonne</td>
+            <td>Active — 10h/18h</td>
+            <td>Oui</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION ÉVÉNEMENTS ET SAISONNALITÉ -->
+    <section class="dashboard-section" aria-labelledby="section-evenements">
+      <div class="section-header">
+        <h2 id="section-evenements">Événements et saisonnalité</h2>
+        <span class="badge badge-event">Agenda</span>
+      </div>
+      <p class="section-desc">Calendrier des événements structurants du territoire et analyse des dynamiques saisonnières impactant les flux et services.</p>
+
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <span class="kpi-label">Événements ce mois</span>
+          <span class="kpi-value">7</span>
+          <span class="kpi-sub">Manifestations programmées</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Période en cours</span>
+          <span class="kpi-value">Haute saison</span>
+          <span class="kpi-sub">Juillet — Août</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Impact mobilité</span>
+          <span class="kpi-value">Fort</span>
+          <span class="kpi-sub">Vigilance recommandée</span>
+        </div>
+        <div class="kpi-card">
+          <span class="kpi-label">Prochaine échéance</span>
+          <span class="kpi-value">Fête du port</span>
+          <span class="kpi-sub">Dans 4 jours</span>
+        </div>
+      </div>
+
+      <table class="data-table" aria-label="Agenda des événements territoriaux">
+        <thead>
+          <tr>
+            <th scope="col">Événement</th>
+            <th scope="col">Date</th>
+            <th scope="col">Lieu</th>
+            <th scope="col">Impact flux</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fête du port</td>
+            <td>15 juillet</td>
+            <td>Port Central</td>
+            <td>Fort</td>
+          </tr>
+          <tr>
+            <td>Marché nocturne</td>
+            <td>Chaque vendredi</td>
+            <td>Place du village</td>
+            <td>Modéré</td>
+          </tr>
+          <tr>
+            <td>Tournoi de pétanque</td>
+            <td>20 juillet</td>
+            <td>Boulodrome municipal</td>
+            <td>Faible</td>
+          </tr>
+          <tr>
+            <td>Concert estival</td>
+            <td>28 juillet</td>
+            <td>Scène du port</td>
+            <td>Fort</td>
+          </tr>
+          <tr>
+            <td>Journée du patrimoine</td>
+            <td>21 septembre</td>
+            <td>Centre historique</td>
+            <td>Modéré</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="saisonnalite-bloc">
+        <h3>Dynamiques saisonnières</h3>
+        <ul class="saisonnalite-list">
+          <li>
+            <strong>Basse saison (oct. — mai) :</strong> Fréquentation réduite, trafic nominal, services en régime standard.
+          </li>
+          <li>
+            <strong>Pré-saison (juin) :</strong> Montée progressive des flux, ouverture des services saisonniers, préparation des sites.
+          </li>
+          <li>
+            <strong>Haute saison (juil. — août) :</strong> Pic de fréquentation, saturation ponctuelle des parkings et axes côtiers, surveillance renforcée des plages.
+          </li>
+          <li>
+            <strong>Post-saison (septembre) :</strong> Décrue progressive, maintien partiel des services, bilan territorial.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION SYNTHÈSE -->
+    <section class="dashboard-section dashboard-synthese" aria-labelledby="section-synthese">
+      <div class="section-header">
+        <h2 id="section-synthese">Synthèse territoriale</h2>
+      </div>
+      <p class="section-desc">Vue consolidée de l'état du territoire à la date de consultation. Ce dashboard est produit par l'ingénierie IA ID2App V4.2 dans le cadre du projet PortoFlow.</p>
+      <div class="synthese-grid">
+        <div class="synthese-item">
+          <span class="synthese-icon" aria-hidden="true">&#9679;</span>
+          <div>
+            <strong>Mobilité</strong>
+            <p>Trafic dense sur l'axe port. Axes secondaires fluides.</p>
+          </div>
+        </div>
+        <div class="synthese-item">
+          <span class="synthese-icon" aria-hidden="true">&#9679;</span>
+          <div>
+            <strong>Stationnement</strong>
+            <p>Parking port quasi saturé. Alternatives disponibles en centre-ville.</p>
+          </div>
+        </div>
+        <div class="synthese-item">
+          <span class="synthese-icon" aria-hidden="true">&#9679;</span>
+          <div>
+            <strong>Plages</strong>
+            <p>Qualité de l'eau excellente. Surveillance active sur les sites principaux.</p>
+          </div>
+        </div>
+        <div class="synthese-item">
+          <span class="synthese-icon" aria-hidden="true">&#9679;</span>
+          <div>
+            <strong>Événements</strong>
+            <p>7 manifestations ce mois. Impact fort attendu mi-juillet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">PF</span>
+        <span class="footer-name">PortoFlow <em>V4</em></span>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie IA</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-legal">Site institutionnel statique — Produit par l'ingénierie IA ID2App V4.2 — Compatible GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+</html>
