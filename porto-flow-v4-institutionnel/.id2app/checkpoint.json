@@ -9,12 +9,15 @@
   "mode": "repair_failed_file",
   "status": "running",
   "started_at": "2026-05-12T16:38:04.907Z",
-  "last_updated_at": "2026-05-12T16:42:48.589Z",
+  "last_updated_at": "2026-05-12T21:01:36.157Z",
   "expected_files": [
     "porto-flow-v4-institutionnel/dashboard.html",
     "porto-flow-v4-institutionnel/ingenierie.html",
     "porto-flow-v4-institutionnel/contact.html",
-    "porto-flow-v4-institutionnel/styles.css"
+    "porto-flow-v4-institutionnel/styles.css",
+    "porto-flow-v4-institutionnel/script.js",
+    "porto-flow-v4-institutionnel/media-manifest.json",
+    "porto-flow-v4-institutionnel/assets/images/README.md"
   ],
   "completed_files": [
     "porto-flow-v4-institutionnel/dashboard.html",
@@ -25,59 +28,15 @@
   "failed_files": [],
   "skipped_files": [],
   "protected_files": [],
-  "created_files": [
-    "porto-flow-v4-institutionnel/dashboard.html",
-    "porto-flow-v4-institutionnel/ingenierie.html",
-    "porto-flow-v4-institutionnel/contact.html",
-    "porto-flow-v4-institutionnel/styles.css"
-  ],
+  "created_files": [],
   "updated_files": [
     {
       "file_path": "porto-flow-v4-institutionnel/dashboard.html",
-      "action": "create",
-      "file_sha": "9066ba40f5f5fefe045a2e517d4bc5cd8129af5d",
-      "commit_sha": "25ddb3d8ecc1ec991426aaedcc8c785b83d11c94",
+      "action": "repair",
+      "file_sha": "79cba379b7c44536ec7658e133a043dc57f90513",
+      "commit_sha": "b06adcc15eed765cb056596b3a0762c6674d9a97",
       "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/dashboard.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/25ddb3d8ecc1ec991426aaedcc8c785b83d11c94",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-v4-institutionnel/ingenierie.html",
-      "action": "create",
-      "file_sha": "d71b1a7260ee87ed57989c6fb820bf97ecb2f244",
-      "commit_sha": "eab6ed2bd07882a479825a640b4fd5f384b5f07d",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/ingenierie.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/eab6ed2bd07882a479825a640b4fd5f384b5f07d",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-v4-institutionnel/contact.html",
-      "action": "create",
-      "file_sha": "a526804f1cf4938e6a44444a214484c225e06e94",
-      "commit_sha": "ac48cad8242baf2141e6f1a59041f27aaf7f034e",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/contact.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/ac48cad8242baf2141e6f1a59041f27aaf7f034e",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-v4-institutionnel/styles.css",
-      "action": "create",
-      "file_sha": "884be815af705918218298be6fa4807c8c2789de",
-      "commit_sha": "4fc9178ff2bb788d007df9761ddfd4c542a57247",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/styles.css",
-      "commit_url": "https://github.com/didier2a/id2app/commit/4fc9178ff2bb788d007df9761ddfd4c542a57247",
+      "commit_url": "https://github.com/didier2a/id2app/commit/b06adcc15eed765cb056596b3a0762c6674d9a97",
       "validation_status": "passed",
       "warnings": [],
       "gemini_execution_job_audit": null,
@@ -85,37 +44,50 @@
       "dry_run": false
     }
   ],
-  "repaired_files": [],
+  "repaired_files": [
+    "porto-flow-v4-institutionnel/dashboard.html"
+  ],
   "warnings": [],
   "execution_plan": {
     "expected_files": [
       "porto-flow-v4-institutionnel/dashboard.html",
       "porto-flow-v4-institutionnel/ingenierie.html",
       "porto-flow-v4-institutionnel/contact.html",
-      "porto-flow-v4-institutionnel/styles.css"
+      "porto-flow-v4-institutionnel/styles.css",
+      "porto-flow-v4-institutionnel/script.js",
+      "porto-flow-v4-institutionnel/media-manifest.json",
+      "porto-flow-v4-institutionnel/assets/images/README.md"
     ],
     "existing_files": [
+      "porto-flow-v4-institutionnel/.id2app/checkpoint.json",
+      "porto-flow-v4-institutionnel/contact.html",
+      "porto-flow-v4-institutionnel/dashboard.html",
       "porto-flow-v4-institutionnel/ecosysteme.html",
       "porto-flow-v4-institutionnel/experience.html",
       "porto-flow-v4-institutionnel/index.html",
+      "porto-flow-v4-institutionnel/ingenierie.html",
+      "porto-flow-v4-institutionnel/styles.css",
       "porto-flow-v4-institutionnel/territoire.html"
     ],
     "missing_files": [
-      "porto-flow-v4-institutionnel/dashboard.html",
-      "porto-flow-v4-institutionnel/ingenierie.html",
-      "porto-flow-v4-institutionnel/contact.html",
-      "porto-flow-v4-institutionnel/styles.css"
+      "porto-flow-v4-institutionnel/script.js",
+      "porto-flow-v4-institutionnel/media-manifest.json",
+      "porto-flow-v4-institutionnel/assets/images/README.md"
     ],
     "protected_files": [],
     "files_to_create": [
+      "porto-flow-v4-institutionnel/script.js",
+      "porto-flow-v4-institutionnel/media-manifest.json",
+      "porto-flow-v4-institutionnel/assets/images/README.md"
+    ],
+    "files_to_update": [
       "porto-flow-v4-institutionnel/dashboard.html",
       "porto-flow-v4-institutionnel/ingenierie.html",
       "porto-flow-v4-institutionnel/contact.html",
       "porto-flow-v4-institutionnel/styles.css"
     ],
-    "files_to_update": [],
     "files_to_skip": [],
-    "jobs_count": 4
+    "jobs_count": 7
   },
   "runtime": {
     "schema_version": "4.2",
@@ -134,10 +106,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-v4-institutionnel/styles.css",
+  "last_successful_file": "porto-flow-v4-institutionnel/dashboard.html",
   "last_failed_file": null,
   "completed_count": 4,
-  "updated_count": 4,
+  "updated_count": 1,
   "failed_count": 0,
   "skipped_count": 0
 }
