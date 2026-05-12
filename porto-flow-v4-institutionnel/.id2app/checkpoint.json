@@ -9,7 +9,7 @@
   "mode": "repair_failed_file",
   "status": "running",
   "started_at": "2026-05-12T16:38:04.907Z",
-  "last_updated_at": "2026-05-12T21:01:36.157Z",
+  "last_updated_at": "2026-05-12T21:02:10.035Z",
   "expected_files": [
     "porto-flow-v4-institutionnel/dashboard.html",
     "porto-flow-v4-institutionnel/ingenierie.html",
@@ -42,10 +42,24 @@
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": null,
       "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-v4-institutionnel/ingenierie.html",
+      "action": "repair",
+      "file_sha": "796c0421d5d9967a8da74d237fe58e4ac8664ce3",
+      "commit_sha": "1f644d7ad420448a71280e4cdb40b15f4f9c5f3f",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/ingenierie.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1f644d7ad420448a71280e4cdb40b15f4f9c5f3f",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
     }
   ],
   "repaired_files": [
-    "porto-flow-v4-institutionnel/dashboard.html"
+    "porto-flow-v4-institutionnel/dashboard.html",
+    "porto-flow-v4-institutionnel/ingenierie.html"
   ],
   "warnings": [],
   "execution_plan": {
@@ -106,10 +120,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-v4-institutionnel/dashboard.html",
+  "last_successful_file": "porto-flow-v4-institutionnel/ingenierie.html",
   "last_failed_file": null,
   "completed_count": 4,
-  "updated_count": 1,
+  "updated_count": 2,
   "failed_count": 0,
   "skipped_count": 0
 }
