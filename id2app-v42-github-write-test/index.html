@@ -4,10 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ID2App V4.2 - Test GitHub réel</title>
-    <meta name="description" content="Mini site statique de test de publication GitHub via workflow CloudSafe." />
+    <meta name="description" content="Mini site statique de test de publication GitHub via workflow CloudSafe. Mise à jour contrôlée V4.2 — test SHA frais validé." />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .bandeau-sha {
+        background-color: #C96F43;
+        color: #FAF8F2;
+        text-align: center;
+        padding: 0.65rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .bandeau-sha .sha-inner {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .bandeau-sha .sha-icon {
+        display: inline-block;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background-color: #FAF8F2;
+        flex-shrink: 0;
+        aria-hidden: true;
+      }
+      .badge-sha {
+        display: inline-block;
+        background-color: #C96F43;
+        color: #FAF8F2;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 0.3rem 0.75rem;
+        border-radius: 2rem;
+        letter-spacing: 0.03em;
+        margin-top: 0.75rem;
+        vertical-align: middle;
+      }
+    </style>
   </head>
   <body>
+
+    <div class="bandeau-sha" role="status" aria-live="polite">
+      <span class="sha-inner">
+        <span class="sha-icon" aria-hidden="true"></span>
+        Mise à jour contrôlée V4.2 — test SHA frais validé
+      </span>
+    </div>
+
     <header class="site-header">
       <div class="container">
         <span class="badge">CloudSafe Workflow</span>
@@ -34,6 +81,10 @@
               <span class="status-dot" aria-hidden="true"></span>
               <span>Workflow CloudSafe — écriture distante opérationnelle</span>
             </li>
+            <li class="status-item status-ok">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Mise à jour contrôlée V4.2 — test SHA frais validé</span>
+            </li>
           </ul>
         </section>
 
@@ -45,6 +96,9 @@
           </p>
           <p>
             Si vous lisez cette page, le workflow a correctement écrit dans le dépôt GitHub cible et GitHub Pages a servi le contenu avec succès.
+          </p>
+          <p>
+            <span class="badge-sha" aria-label="Statut de mise à jour">Mise à jour contrôlée V4.2 — test SHA frais validé</span>
           </p>
         </section>
 
@@ -61,6 +115,8 @@
             <dd><code>styles.css</code> externalisée</dd>
             <dt>Compatibilité</dt>
             <dd>Responsive, accessible, sans dépendance externe</dd>
+            <dt>Validation SHA</dt>
+            <dd>Mise à jour contrôlée V4.2 — test SHA frais validé</dd>
           </dl>
         </section>
 
