@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingénierie IA — PortoFlow V4 Institutionnel</title>
+  <meta name="description" content="Présentation de la méthode d'ingénierie IA ID2App V4.2 : orchestration n8n, génération fichier par fichier, checkpoint et reprise résiliente.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">PortoFlow <span>V4</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="dashboard.html">Dashboard territorial</a></li>
+          <li><a href="ingenierie.html" class="nav-active" aria-current="page">Ingénierie IA</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-label">Méthode</p>
+        <h1>Ingénierie IA ID2App V4.2</h1>
+        <p class="page-intro">Une architecture d'orchestration résiliente, conçue pour produire des applications institutionnelles complètes, fichier par fichier, sans interruption.</p>
+      </div>
+    </section>
+
+    <section class="section-block" id="introduction">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>Qu'est-ce qu'ID2App V4.2 ?</h2>
+        </div>
+        <div class="section-body">
+          <p>ID2App V4.2 est un moteur de génération d'applications statiques piloté par intelligence artificielle. Il transforme un cahier des charges structuré en un ensemble cohérent de fichiers HTML, CSS et JavaScript, prêts à déployer sur GitHub Pages ou tout hébergement statique.</p>
+          <p>La version 4.2 introduit la résilience native : chaque génération est tracée, chaque fichier est validé, et le processus peut reprendre à tout moment sans perte de contexte.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-alt" id="orchestration">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>Orchestration via n8n</h2>
+        </div>
+        <div class="section-body">
+          <p>L'orchestration repose sur <strong>n8n</strong>, un moteur de workflow open source. Chaque étape de génération est un nœud indépendant : lecture du contexte projet, appel au modèle IA, validation du fichier produit, écriture dans le dépôt.</p>
+          <ul class="method-list">
+            <li>Lecture du manifeste projet et des audits disponibles</li>
+            <li>Construction du prompt contextuel pour chaque fichier</li>
+            <li>Appel au modèle IA avec instructions strictes de format</li>
+            <li>Extraction et validation du contenu généré</li>
+            <li>Écriture du fichier dans le dépôt cible</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="generation">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2>Génération fichier par fichier</h2>
+        </div>
+        <div class="section-body">
+          <p>Chaque fichier est généré dans une transaction isolée. Le modèle IA reçoit un job précis : un seul fichier, un seul rôle, un seul contexte. Cette approche garantit la cohérence et évite les conflits entre composants.</p>
+          <div class="cards-grid">
+            <div class="card">
+              <h3>Isolation</h3>
+              <p>Un job = un fichier. Aucune dépendance croisée dans la génération.</p>
+            </div>
+            <div class="card">
+              <h3>Cohérence</h3>
+              <p>Le contexte projet est injecté à chaque appel pour garantir l'homogénéité visuelle et fonctionnelle.</p>
+            </div>
+            <div class="card">
+              <h3>Validation</h3>
+              <p>Les marqueurs de délimitation sont vérifiés avant toute écriture. Un fichier incomplet est rejeté et régénéré.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-alt" id="checkpoint">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2>Checkpoint et reprise résiliente</h2>
+        </div>
+        <div class="section-body">
+          <p>ID2App V4.2 maintient un état de progression persistant. À chaque fichier généré avec succès, le checkpoint est mis à jour. En cas d'interruption — timeout, erreur réseau, sortie tronquée — le processus reprend exactement là où il s'est arrêté.</p>
+          <ul class="method-list">
+            <li>État stocké dans un fichier JSON versionné</li>
+            <li>Détection automatique des fichiers manquants ou invalides</li>
+            <li>Mode <em>repair</em> : régénération ciblée sans reconstruire l'ensemble</li>
+            <li>Audit Gemini intégré pour valider l'état final du projet</li>
+          </ul>
+          <p>Cette architecture permet de livrer des projets complets même dans des environnements contraints, avec des modèles IA soumis à des limites de contexte ou de débit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <div class="container">
+        <h2>Déployer votre territoire avec ID2App</h2>
+        <p>Contactez-nous pour initier un projet institutionnel sur mesure.</p>
+        <a href="contact.html" class="btn-primary">Prendre contact</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">PortoFlow V4 Institutionnel</p>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="ingenierie.html">Ingénierie IA</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 PortoFlow — Territoire méditerranéen</p>
+    </div>
+  </footer>
+
+</body>
+</html>
