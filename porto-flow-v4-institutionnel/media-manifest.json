@@ -1,0 +1,69 @@
+{
+  "manifest_version": "1.0",
+  "project": "PortoFlow V4 Institutionnel",
+  "project_slug": "porto-flow-v4-institutionnel",
+  "description": "Manifeste des emplacements d'images remplaçables du site institutionnel PortoFlow. Chaque slot définit le chemin attendu, les dimensions recommandées, le texte alternatif, le format accepté, le fallback CSS et les pages d'utilisation.",
+  "generated_by": "ID2App V4.2 Résiliente",
+  "image_slots": [
+    {
+      "slot_id": "hero_portovecchio",
+      "current_path": "assets/images/hero-portovecchio.jpg",
+      "recommended_dimensions": {
+        "width": 1600,
+        "height": 900,
+        "ratio": "16:9"
+      },
+      "alt": "Vue locale de Porto-Vecchio et de son territoire",
+      "accepted_formats": ["jpg", "webp", "png"],
+      "fallback_type": "css_gradient",
+      "fallback_description": "Dégradé CSS institutionnel du bleu profond #0E2A3B vers le bleu sombre #14212B, utilisé si l'image est absente.",
+      "replace_instruction": "Déposer la nouvelle image dans assets/images/ en conservant le nom hero-portovecchio.jpg. Aucune modification de code requise.",
+      "used_in": ["index.html", "styles.css"],
+      "role": "Image principale du hero de la page d'accueil, pleine largeur, fond de section d'introduction.",
+      "required": true
+    },
+    {
+      "slot_id": "dashboard_territorial",
+      "current_path": "assets/images/dashboard-territorial.jpg",
+      "recommended_dimensions": {
+        "width": 1400,
+        "height": 900,
+        "ratio": "14:9"
+      },
+      "alt": "Interface conceptuelle de dashboard territorial PortoFlow",
+      "accepted_formats": ["jpg", "webp", "png"],
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau CSS simulant une interface de données avec fond #14212B et grille de blocs colorés, utilisé si l'image est absente.",
+      "replace_instruction": "Déposer la nouvelle image dans assets/images/ en conservant le nom dashboard-territorial.jpg. Aucune modification de code requise.",
+      "used_in": ["dashboard.html", "styles.css"],
+      "role": "Illustration visuelle du dashboard territorial dans la section de présentation de l'interface simulée.",
+      "required": false
+    },
+    {
+      "slot_id": "acteurs_locaux",
+      "current_path": "assets/images/acteurs-locaux.jpg",
+      "recommended_dimensions": {
+        "width": 1400,
+        "height": 900,
+        "ratio": "14:9"
+      },
+      "alt": "Acteurs économiques et services locaux du territoire",
+      "accepted_formats": ["jpg", "webp", "png"],
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau CSS avec fond dégradé terracotta #C96F43 vers beige #E9E3D5, utilisé si l'image est absente.",
+      "replace_instruction": "Déposer la nouvelle image dans assets/images/ en conservant le nom acteurs-locaux.jpg. Aucune modification de code requise.",
+      "used_in": ["ecosysteme.html", "contact.html"],
+      "role": "Illustration des acteurs économiques locaux et partenaires institutionnels dans les pages Écosystème et Contact.",
+      "required": false
+    }
+  ],
+  "assets_directory": "assets/images/",
+  "global_replace_note": "Pour remplacer une image, déposer le nouveau fichier dans assets/images/ en conservant exactement le nom de fichier indiqué dans current_path. Aucune modification du code HTML ou CSS n'est nécessaire. Les fallbacks CSS s'activent automatiquement si le fichier image est absent ou non chargé.",
+  "fallback_palette": {
+    "bleu_profond": "#0E2A3B",
+    "terracotta": "#C96F43",
+    "beige_clair": "#E9E3D5",
+    "beige_fond": "#F8F4EA",
+    "bleu_sombre": "#14212B"
+  }
+}
