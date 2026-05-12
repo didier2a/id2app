@@ -213,6 +213,72 @@ img {
   color: var(--color-terracotta);
 }
 
+/* ─── BADGE ÉTAT — MISE À JOUR CONTRÔLÉE ─────────────────── */
+
+.badge-update {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: var(--color-dark-navy);
+  color: var(--color-off-white);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  padding: 0.3rem 0.85rem;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  border: 1.5px solid var(--color-terracotta);
+  white-space: nowrap;
+}
+
+.badge-update::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  flex-shrink: 0;
+}
+
+/* ─── BANDEAU NOTIFICATION — MISE À JOUR CONTRÔLÉE ───────── */
+
+.update-banner {
+  width: 100%;
+  background-color: var(--color-dark-navy);
+  border-top: 3px solid var(--color-terracotta);
+  border-bottom: 1px solid rgba(201, 111, 67, 0.3);
+  padding: 0.65rem var(--spacing-sm);
+}
+
+.update-banner__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.update-banner__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  flex-shrink: 0;
+}
+
+.update-banner__text {
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  color: var(--color-light-warm);
+  letter-spacing: 0.02em;
+}
+
+.update-banner__text strong {
+  color: var(--color-off-white);
+}
+
 /* ─── CARD ────────────────────────────────────────────────── */
 
 .card {
@@ -383,6 +449,21 @@ img {
   .status-block {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .update-banner__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .update-banner__text {
+    font-size: 0.8rem;
+  }
+
+  .badge-update {
+    font-size: 0.8rem;
+    white-space: normal;
   }
 }
 
