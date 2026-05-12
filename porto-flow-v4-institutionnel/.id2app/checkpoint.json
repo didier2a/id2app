@@ -9,7 +9,7 @@
   "mode": "repair_failed_file",
   "status": "running",
   "started_at": "2026-05-12T16:38:04.907Z",
-  "last_updated_at": "2026-05-12T21:04:20.625Z",
+  "last_updated_at": "2026-05-12T21:04:41.277Z",
   "expected_files": [
     "porto-flow-v4-institutionnel/dashboard.html",
     "porto-flow-v4-institutionnel/ingenierie.html",
@@ -24,13 +24,15 @@
     "porto-flow-v4-institutionnel/ingenierie.html",
     "porto-flow-v4-institutionnel/contact.html",
     "porto-flow-v4-institutionnel/styles.css",
-    "porto-flow-v4-institutionnel/script.js"
+    "porto-flow-v4-institutionnel/script.js",
+    "porto-flow-v4-institutionnel/media-manifest.json"
   ],
   "failed_files": [],
   "skipped_files": [],
   "protected_files": [],
   "created_files": [
-    "porto-flow-v4-institutionnel/script.js"
+    "porto-flow-v4-institutionnel/script.js",
+    "porto-flow-v4-institutionnel/media-manifest.json"
   ],
   "updated_files": [
     {
@@ -92,6 +94,19 @@
       "commit_sha": "4f1d38b6cbeb0fc23dfbb1d7759f09676908e146",
       "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/script.js",
       "commit_url": "https://github.com/didier2a/id2app/commit/4f1d38b6cbeb0fc23dfbb1d7759f09676908e146",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-v4-institutionnel/media-manifest.json",
+      "action": "create",
+      "file_sha": "435cbc48fb67ddc1c310f73a3fa9bb7600f4f44c",
+      "commit_sha": "8815051bf443aef915bbc0f9ccb9e516be50a404",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-v4-institutionnel/media-manifest.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8815051bf443aef915bbc0f9ccb9e516be50a404",
       "validation_status": "passed",
       "warnings": [],
       "gemini_execution_job_audit": null,
@@ -164,10 +179,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-v4-institutionnel/script.js",
+  "last_successful_file": "porto-flow-v4-institutionnel/media-manifest.json",
   "last_failed_file": null,
-  "completed_count": 5,
-  "updated_count": 5,
+  "completed_count": 6,
+  "updated_count": 6,
   "failed_count": 0,
   "skipped_count": 0
 }
