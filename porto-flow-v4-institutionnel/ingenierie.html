@@ -12,11 +12,17 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="site-logo">PortoFlow <span>V4</span></a>
-      <nav class="site-nav" aria-label="Navigation principale">
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="main-nav" aria-label="Navigation principale">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="dashboard.html">Dashboard territorial</a></li>
-          <li><a href="ingenierie.html" class="nav-active" aria-current="page">Ingénierie IA</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html" class="nav-active" aria-current="page">Ingénierie</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -110,6 +116,24 @@
       </div>
     </section>
 
+    <section class="section-block" id="publication">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2>Publication automatique sur GitHub Pages</h2>
+        </div>
+        <div class="section-body">
+          <p>Une fois l'ensemble des fichiers validés, le workflow n8n déclenche la publication automatique vers le dépôt GitHub cible. Le site est accessible en ligne sans intervention manuelle.</p>
+          <ul class="method-list">
+            <li>Commit automatique des fichiers générés</li>
+            <li>Activation de GitHub Pages sur la branche principale</li>
+            <li>URL publique disponible immédiatement après déploiement</li>
+            <li>Compatibilité totale avec les hébergements statiques alternatifs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="section-cta">
       <div class="container">
         <h2>Déployer votre territoire avec ID2App</h2>
@@ -125,13 +149,18 @@
       <p class="footer-brand">PortoFlow V4 Institutionnel</p>
       <nav class="footer-nav" aria-label="Navigation pied de page">
         <a href="index.html">Accueil</a>
+        <a href="territoire.html">Territoire</a>
+        <a href="experience.html">Expérience</a>
+        <a href="ecosysteme.html">Écosystème</a>
         <a href="dashboard.html">Dashboard</a>
-        <a href="ingenierie.html">Ingénierie IA</a>
+        <a href="ingenierie.html">Ingénierie</a>
         <a href="contact.html">Contact</a>
       </nav>
       <p class="footer-copy">&copy; 2025 PortoFlow — Territoire méditerranéen</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
