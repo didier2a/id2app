@@ -1,0 +1,85 @@
+{
+  "schema_version": "4.2",
+  "project_id": "id2app-v42-github-write-test",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "id2app-v42-github-write-test",
+  "checkpoint_path": "id2app-v42-github-write-test/.id2app/checkpoint.json",
+  "mode": "new_project",
+  "status": "running",
+  "started_at": "2026-05-12T14:58:06.777Z",
+  "last_updated_at": "2026-05-12T14:59:48.727Z",
+  "expected_files": [
+    "id2app-v42-github-write-test/index.html",
+    "id2app-v42-github-write-test/styles.css"
+  ],
+  "completed_files": [
+    "id2app-v42-github-write-test/index.html"
+  ],
+  "failed_files": [],
+  "skipped_files": [],
+  "protected_files": [],
+  "created_files": [
+    "id2app-v42-github-write-test/index.html"
+  ],
+  "updated_files": [
+    {
+      "file_path": "id2app-v42-github-write-test/index.html",
+      "action": "create",
+      "file_sha": "17f2dea4fbdeb891c6bfa7c7255329221848aa58",
+      "commit_sha": "6b2a6864b8e53c4a2b8e39fb218b145c02450515",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v42-github-write-test/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6b2a6864b8e53c4a2b8e39fb218b145c02450515",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    }
+  ],
+  "repaired_files": [],
+  "warnings": [],
+  "execution_plan": {
+    "expected_files": [
+      "id2app-v42-github-write-test/index.html",
+      "id2app-v42-github-write-test/styles.css"
+    ],
+    "existing_files": [],
+    "missing_files": [
+      "id2app-v42-github-write-test/index.html",
+      "id2app-v42-github-write-test/styles.css"
+    ],
+    "protected_files": [],
+    "files_to_create": [
+      "id2app-v42-github-write-test/index.html",
+      "id2app-v42-github-write-test/styles.css"
+    ],
+    "files_to_update": [],
+    "files_to_skip": [],
+    "jobs_count": 2
+  },
+  "runtime": {
+    "schema_version": "4.2",
+    "cloudsafe": true,
+    "dry_run": false,
+    "provider_strategy": {
+      "openai": "http_request_runtime_header",
+      "gemini": "http_request_runtime_header",
+      "anthropic": "http_request_runtime_header",
+      "github": "http_request_runtime_header",
+      "gateway_enabled": false
+    },
+    "preflight": null
+  },
+  "quality_audits": {
+    "gemini_state_audit": {},
+    "gemini_manifest_audit": {}
+  },
+  "last_successful_file": "id2app-v42-github-write-test/index.html",
+  "last_failed_file": null,
+  "completed_count": 1,
+  "updated_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0
+}
