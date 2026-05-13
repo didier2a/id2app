@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — PortoFlow</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="PortoFlow accueil">
+      <img src="assets/logo-portoflow.svg" alt="PortoFlow" width="140" height="36">
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="territoire.html" class="nav__link">Territoire</a></li>
+        <li><a href="experience.html" class="nav__link">Expérience</a></li>
+        <li><a href="ecosysteme.html" class="nav__link">Écosystème</a></li>
+        <li><a href="dashboard.html" class="nav__link">Dashboard</a></li>
+        <li><a href="ingenierie.html" class="nav__link">Ingénierie</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero__inner hero__inner--split">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Contact &amp; Démonstration</p>
+        <h1 class="hero__title">Parlons de votre projet portuaire</h1>
+        <p class="hero__sub">Collectivités, opérateurs, partenaires : notre équipe vous répond sous 48 h. Demandez une démonstration live de la plateforme PortoFlow.</p>
+        <div class="hero__actions">
+          <a href="#formulaire" class="btn-primary">Envoyer un message</a>
+          <a href="#contacts" class="btn-secondary">Voir les contacts</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/contact-illustration.svg" alt="Illustration contact PortoFlow" width="480" height="360">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts">
+    <div class="container">
+      <p class="section__eyebrow">Interlocuteurs</p>
+      <h2 class="section__title">À qui s'adresser ?</h2>
+      <p class="section__lead">Deux filières, deux équipes dédiées. Choisissez votre interlocuteur selon votre profil.</p>
+      <div class="rail">
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">🏛️</span>
+          <div class="callout__body">
+            <strong class="callout__title">Collectivités &amp; Autorités portuaires</strong>
+            <p class="callout__desc">Partenariats institutionnels, intégration territoriale, pilotage stratégique.</p>
+            <a href="mailto:collectivites@portoflow.fr" class="btn-secondary">collectivites@portoflow.fr</a>
+          </div>
+        </div>
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">🚢</span>
+          <div class="callout__body">
+            <strong class="callout__title">Opérateurs &amp; Professionnels</strong>
+            <p class="callout__desc">Intégration technique, API, démonstration produit, support opérationnel.</p>
+            <a href="mailto:pro@portoflow.fr" class="btn-secondary">pro@portoflow.fr</a>
+          </div>
+        </div>
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">📍</span>
+          <div class="callout__body">
+            <strong class="callout__title">Siège PortoFlow</strong>
+            <p class="callout__desc">Quai de la Fosse, 44000 Nantes — France.</p>
+            <a href="tel:+33240000000" class="btn-secondary">+33 2 40 00 00 00</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="formulaire">
+    <div class="container">
+      <p class="section__eyebrow">Formulaire</p>
+      <h2 class="section__title">Envoyez-nous un message</h2>
+      <p class="section__lead">Remplissez ce formulaire court. Nous vous recontactons sous 48 heures ouvrées.</p>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
+            <input type="text" id="nom" name="nom" class="form-input" placeholder="Jean Dupont" required autocomplete="name">
+            <span class="form-error" id="nom-error" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Adresse e-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="jean@exemple.fr" required autocomplete="email">
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="organisation" class="form-label">Organisation</label>
+            <input type="text" id="organisation" name="organisation" class="form-input" placeholder="Port de Nantes" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="profil" class="form-label">Profil <span aria-hidden="true">*</span></label>
+            <select id="profil" name="profil" class="form-input" required>
+              <option value="">Sélectionnez…</option>
+              <option value="collectivite">Collectivité / Autorité portuaire</option>
+              <option value="operateur">Opérateur / Professionnel</option>
+              <option value="partenaire">Partenaire / Investisseur</option>
+              <option value="autre">Autre</option>
+            </select>
+            <span class="form-error" id="profil-error" role="alert"></span>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message" class="form-label">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
+          <span class="form-error" id="message-error" role="alert"></span>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Envoyer le message</button>
+          <p class="form-notice">Champs marqués <span aria-hidden="true">*</span> obligatoires. Données traitées conformément au RGPD.</p>
+        </div>
+        <div class="form-success" id="form-success" aria-live="polite" hidden>
+          ✅ Message envoyé. Nous vous répondons sous 48 h.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="metrics-panel">
+        <p class="section__eyebrow">PortoFlow en chiffres</p>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-card__value">12</span>
+            <span class="metric-card__label">Ports partenaires</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__value">48 h</span>
+            <span class="metric-card__label">Délai de réponse garanti</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__value">3 pays</span>
+            <span class="metric-card__label">Présence européenne</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__value">100 %</span>
+            <span class="metric-card__label">Données hébergées en France</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo-portoflow.svg" alt="PortoFlow" width="120" height="30">
+      <p class="footer__tagline">Intelligence portuaire augmentée.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Navigation pied de page">
+      <a href="index.html" class="footer__link">Accueil</a>
+      <a href="territoire.html" class="footer__link">Territoire</a>
+      <a href="experience.html" class="footer__link">Expérience</a>
+      <a href="ecosysteme.html" class="footer__link">Écosystème</a>
+      <a href="dashboard.html" class="footer__link">Dashboard</a>
+      <a href="ingenierie.html" class="footer__link">Ingénierie</a>
+      <a href="contact.html" class="footer__link">Contact</a>
+    </nav>
+    <p class="footer__copy">&copy; 2025 PortoFlow. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+(function () {
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  function showError(id, msg) {
+    var el = document.getElementById(id);
+    if (el) { el.textContent = msg; }
+  }
+  function clearErrors() {
+    ['nom-error','email-error','profil-error','message-error'].forEach(function(id){
+      showError(id, '');
+    });
+  }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    clearErrors();
+    var valid = true;
+    var nom = form.nom.value.trim();
+    var email = form.email.value.trim();
+    var profil = form.profil.value;
+    var message = form.message.value.trim();
+    if (!nom) { showError('nom-error', 'Veuillez saisir votre nom.'); valid = false; }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email-error', 'Adresse e-mail invalide.'); valid = false; }
+    if (!profil) { showError('profil-error', 'Veuillez sélectionner un profil.'); valid = false; }
+    if (!message) { showError('message-error', 'Veuillez saisir un message.'); valid = false; }
+    if (valid) {
+      var success = document.getElementById('form-success');
+      form.reset();
+      if (success) { success.hidden = false; }
+    }
+  });
+}());
+</script>
+
+</body>
+</html>
