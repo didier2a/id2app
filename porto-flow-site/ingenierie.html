@@ -3,128 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Porto Flow — Ingénierie & Vision. Boucle récursive, n8n, IA et humain augmenté au cœur du système territorial intelligent de Porto-Vecchio.">
+  <meta name="description" content="Porto Flow — Ingénierie & Vision. Architecture récursive, n8n, IA et humain augmenté au cœur du système territorial de Porto-Vecchio.">
   <meta name="theme-color" content="#0B1F33">
   <title>Ingénierie & Vision — Porto Flow</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    :root{--navy:#0B1F33;--teal:#1F6F8B;--sky:#8FC7DA;--coral:#D86F3C;--white:#F5F8FA;--card-bg:#0f2840;--radius:14px;--gap:24px;}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    body{background:var(--navy);color:var(--white);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;}
-    a{color:inherit;text-decoration:none;}
-    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
-
-    /* NAV */
-    .site-header{position:sticky;top:0;z-index:100;background:rgba(11,31,51,0.97);border-bottom:1px solid rgba(31,111,139,0.25);backdrop-filter:blur(8px);}
-    .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
-    .brand{display:flex;align-items:center;gap:10px;}
-    .brand-name{font-size:1.1rem;font-weight:700;color:var(--sky);}
-    .brand-tagline{display:block;font-size:.65rem;color:rgba(143,199,218,.6);letter-spacing:.04em;}
-    .nav-list{display:flex;gap:4px;list-style:none;}
-    .nav-link{padding:6px 12px;border-radius:8px;font-size:.85rem;color:rgba(245,248,250,.7);transition:background .2s,color .2s;}
-    .nav-link:hover,.nav-link--active{background:rgba(31,111,139,.2);color:var(--sky);}
-    .btn--header{background:var(--coral);color:#fff;padding:8px 18px;border-radius:8px;font-size:.82rem;font-weight:600;transition:opacity .2s;}
-    .btn--header:hover{opacity:.85;}
-    .burger-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
-    .burger-line{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s;}
-    @media(max-width:768px){
-      .main-nav,.btn--header{display:none;}
-      .burger-btn{display:flex;}
-    }
-    .mobile-nav{display:none;position:fixed;inset:0;z-index:200;}
-    .mobile-nav.open{display:block;}
-    .mobile-nav-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6);}
-    .mobile-nav-panel{position:absolute;top:0;right:0;width:280px;height:100%;background:var(--navy);padding:24px;display:flex;flex-direction:column;gap:8px;}
-    .mobile-nav-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
-    .mobile-nav-brand{font-weight:700;color:var(--sky);}
-    .mobile-nav-close{background:none;border:none;color:var(--white);cursor:pointer;font-size:1.4rem;}
-    .mobile-nav-link{display:flex;align-items:center;gap:10px;padding:12px;border-radius:10px;color:var(--white);font-size:.95rem;transition:background .2s;}
-    .mobile-nav-link:hover{background:rgba(31,111,139,.2);}
-
-    /* HERO SPLIT 60/40 */
-    .hero-split{display:grid;grid-template-columns:1fr 1fr;min-height:480px;overflow:hidden;}
-    .hero-split__text{display:flex;flex-direction:column;justify-content:center;padding:64px 48px 64px 0;gap:20px;}
-    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(31,111,139,.2);border:1px solid rgba(31,111,139,.4);color:var(--sky);font-size:.75rem;font-weight:600;letter-spacing:.08em;padding:6px 14px;border-radius:20px;text-transform:uppercase;width:fit-content;}
-    .hero-split__title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.15;color:var(--white);}
-    .hero-split__title span{color:var(--sky);}
-    .hero-split__sub{font-size:1rem;color:rgba(245,248,250,.7);max-width:420px;}
-    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
-    .btn-primary{background:var(--coral);color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.9rem;transition:opacity .2s;}
-    .btn-primary:hover{opacity:.85;}
-    .btn-secondary{border:1.5px solid var(--teal);color:var(--sky);padding:12px 24px;border-radius:10px;font-weight:600;font-size:.9rem;transition:background .2s;}
-    .btn-secondary:hover{background:rgba(31,111,139,.15);}
-    .hero-split__visual{position:relative;background:linear-gradient(135deg,rgba(31,111,139,.3),rgba(11,31,51,.8));display:flex;align-items:center;justify-content:center;overflow:hidden;}
-    .hero-split__visual img{width:100%;height:100%;object-fit:cover;opacity:.55;}
-    .hero-visual-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,51,.6),rgba(31,111,139,.3));}
-    .hero-badge{position:absolute;bottom:28px;left:28px;background:rgba(11,31,51,.9);border:1px solid rgba(31,111,139,.4);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:4px;}
-    .hero-badge__val{font-size:1.6rem;font-weight:800;color:var(--sky);}
-    .hero-badge__lbl{font-size:.72rem;color:rgba(245,248,250,.6);}
-    @media(max-width:768px){
-      .hero-split{grid-template-columns:1fr;}
-      .hero-split__text{padding:48px 0 32px;}
-      .hero-split__visual{min-height:220px;}
-    }
-
-    /* METRICS RAIL */
-    .metrics-rail{padding:40px 0;border-top:1px solid rgba(31,111,139,.15);border-bottom:1px solid rgba(31,111,139,.15);}
-    .metrics-rail__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);}
-    .metric-card{background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:24px;text-align:center;}
-    .metric-card__val{font-size:2rem;font-weight:800;color:var(--sky);}
-    .metric-card__lbl{font-size:.78rem;color:rgba(245,248,250,.6);margin-top:4px;}
-    @media(max-width:768px){.metrics-rail__grid{grid-template-columns:repeat(2,1fr);}}
-    @media(max-width:480px){.metrics-rail__grid{grid-template-columns:1fr;}}
-
-    /* BENTO GRID */
-    .bento-section{padding:64px 0;}
-    .section-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;}
-    .section-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:var(--white);margin-bottom:8px;}
-    .section-sub{font-size:.95rem;color:rgba(245,248,250,.65);max-width:520px;margin-bottom:32px;}
-    .bento-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);}
-    .bento-card{background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,transform .2s;}
-    .bento-card:hover{border-color:var(--teal);transform:translateY(-3px);}
-    .bento-card--wide{grid-column:span 2;}
-    .bento-card__icon{font-size:1.8rem;}
-    .bento-card__num{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--coral);text-transform:uppercase;}
-    .bento-card__title{font-size:1.05rem;font-weight:700;color:var(--white);}
-    .bento-card__desc{font-size:.85rem;color:rgba(245,248,250,.65);line-height:1.55;}
-    .bento-card__tag{display:inline-block;background:rgba(31,111,139,.2);color:var(--sky);font-size:.7rem;padding:3px 10px;border-radius:20px;font-weight:600;}
-    @media(max-width:900px){.bento-grid{grid-template-columns:repeat(2,1fr);}.bento-card--wide{grid-column:span 1;}}
-    @media(max-width:560px){.bento-grid{grid-template-columns:1fr;}}
-
-    /* CALLOUT PANEL */
-    .callout-section{padding:0 0 64px;}
-    .callout-panel{background:linear-gradient(135deg,rgba(31,111,139,.18),rgba(216,111,60,.1));border:1px solid rgba(31,111,139,.35);border-radius:var(--radius);padding:40px 48px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;}
-    .callout-panel__title{font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:8px;}
-    .callout-panel__text{font-size:.9rem;color:rgba(245,248,250,.7);}
-    @media(max-width:640px){.callout-panel{grid-template-columns:1fr;padding:28px 24px;}}
-
-    /* EXPERTISE SPLIT */
-    .expertise-section{padding:0 0 64px;}
-    .expertise-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
-    .expertise-list{display:flex;flex-direction:column;gap:16px;}
-    .expertise-item{display:flex;gap:16px;align-items:flex-start;background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:20px;}
-    .expertise-item__icon{font-size:1.4rem;flex-shrink:0;}
-    .expertise-item__title{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:4px;}
-    .expertise-item__desc{font-size:.82rem;color:rgba(245,248,250,.6);}
-    .expertise-callout{background:var(--card-bg);border:1px solid rgba(216,111,60,.3);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:16px;}
-    .expertise-callout__label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);}
-    .expertise-callout__quote{font-size:1.1rem;font-weight:700;color:var(--white);line-height:1.4;}
-    .expertise-callout__sub{font-size:.85rem;color:rgba(245,248,250,.6);}
-    @media(max-width:768px){.expertise-split{grid-template-columns:1fr;}}
-
-    /* FOOTER */
-    .site-footer{background:rgba(7,18,30,.95);border-top:1px solid rgba(31,111,139,.2);padding:48px 0 28px;}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
-    .footer-brand-name{font-size:1.1rem;font-weight:700;color:var(--sky);margin-bottom:8px;}
-    .footer-brand-desc{font-size:.82rem;color:rgba(245,248,250,.5);max-width:260px;}
-    .footer-col-title{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-bottom:12px;}
-    .footer-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
-    .footer-links a{font-size:.85rem;color:rgba(245,248,250,.6);transition:color .2s;}
-    .footer-links a:hover{color:var(--sky);}
-    .footer-bottom{border-top:1px solid rgba(31,111,139,.15);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
-    .footer-copy{font-size:.75rem;color:rgba(245,248,250,.35);}
-    @media(max-width:640px){.footer-grid{grid-template-columns:1fr;}}
-  </style>
 </head>
 <body class="page-ingenierie">
 
@@ -174,13 +56,13 @@
         <span class="mobile-nav-brand">Porto Flow</span>
         <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fermer le menu" type="button">✕</button>
       </div>
-      <ul class="mobile-nav-list" role="list" style="list-style:none;display:flex;flex-direction:column;gap:4px;">
+      <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">◎ Accueil</a></li>
         <li><a href="territoire.html" class="mobile-nav-link">◎ Territoire</a></li>
         <li><a href="experience.html" class="mobile-nav-link">◎ Expérience</a></li>
         <li><a href="ecosysteme.html" class="mobile-nav-link">◎ Écosystème</a></li>
         <li><a href="dashboard.html" class="mobile-nav-link">◎ Dashboard</a></li>
-        <li><a href="ingenierie.html" class="mobile-nav-link" style="color:#8FC7DA;">◎ Ingénierie</a></li>
+        <li><a href="ingenierie.html" class="mobile-nav-link mobile-nav-link--active">◎ Ingénierie</a></li>
         <li><a href="contact.html" class="mobile-nav-link">◎ Contact</a></li>
       </ul>
     </nav>
@@ -188,15 +70,14 @@
 
   <main>
 
-    <!-- HERO SPLIT 60/40 -->
-    <section class="container" style="padding-top:48px;">
+    <section class="hero-split-section container">
       <div class="hero-split">
         <div class="hero-split__text">
-          <span class="hero-tag">⚙ Ingénierie & Vision</span>
+          <span class="hero-tag">⚙ Ingénierie &amp; Vision</span>
           <h1 class="hero-split__title">La boucle récursive<br><span>au cœur du système</span></h1>
           <p class="hero-split__sub">n8n, CloudCode et IA forment une architecture vivante. Chaque itération enrichit la mémoire territoriale de Porto-Vecchio.</p>
           <div class="hero-ctas">
-            <a href="#architecture" class="btn-primary">Voir l'architecture</a>
+            <a href="#processus" class="btn-primary">Voir l'architecture</a>
             <a href="contact.html" class="btn-secondary">Collaborer</a>
           </div>
         </div>
@@ -211,7 +92,6 @@
       </div>
     </section>
 
-    <!-- METRICS RAIL -->
     <section class="metrics-rail">
       <div class="container">
         <div class="metrics-rail__grid">
@@ -220,129 +100,55 @@
             <div class="metric-card__lbl">Orchestration des flux</div>
           </div>
           <div class="metric-card">
+            <div class="metric-card__val">IA</div>
+            <div class="metric-card__lbl">Analyse contextuelle</div>
+          </div>
+          <div class="metric-card">
             <div class="metric-card__val">100%</div>
-            <div class="metric-card__lbl">Open source & souverain</div>
+            <div class="metric-card__lbl">Données souveraines</div>
           </div>
           <div class="metric-card">
-            <div class="metric-card__val">∞</div>
-            <div class="metric-card__lbl">Boucles d'apprentissage</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-card__val">4</div>
-            <div class="metric-card__lbl">Piliers architecturaux</div>
+            <div class="metric-card__val">24/7</div>
+            <div class="metric-card__lbl">Boucle active</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BENTO GRID — ARCHITECTURE -->
-    <section class="bento-section" id="architecture">
-      <div class="container">
-        <div class="section-label">Architecture</div>
-        <h2 class="section-title">Quatre piliers, un système vivant</h2>
-        <p class="section-sub">Chaque couche est indépendante, évolutive et interopérable. Porto Flow grandit sans se fragiliser.</p>
-        <div class="bento-grid">
-          <div class="bento-card bento-card--wide">
-            <div class="bento-card__icon">🔄</div>
-            <div class="bento-card__num">Pilier I</div>
-            <div class="bento-card__title">Boucle récursive humain-IA</div>
-            <div class="bento-card__desc">L'humain définit l'intention, l'IA propose et exécute, le territoire valide. Chaque cycle produit une version plus précise et plus utile du système.</div>
-            <span class="bento-card__tag">Core Loop</span>
-          </div>
-          <div class="bento-card">
-            <div class="bento-card__icon">🧩</div>
-            <div class="bento-card__num">Pilier II</div>
-            <div class="bento-card__title">Complexité maîtrisée</div>
-            <div class="bento-card__desc">n8n visualise les flux, CloudCode génère les composants. L'humain voit l'essentiel, pas la mécanique.</div>
-            <span class="bento-card__tag">n8n · CloudCode</span>
-          </div>
-          <div class="bento-card">
-            <div class="bento-card__icon">🧠</div>
-            <div class="bento-card__num">Pilier III</div>
-            <div class="bento-card__title">Connaissance capitalisée</div>
-            <div class="bento-card__desc">Chaque itération enrichit la mémoire du système. Les patterns s'accumulent en avantage compétitif durable.</div>
-            <span class="bento-card__tag">Mémoire territoriale</span>
-          </div>
-          <div class="bento-card">
-            <div class="bento-card__icon">🏝️</div>
-            <div class="bento-card__num">Pilier IV</div>
-            <div class="bento-card__title">Réplicabilité territoriale</div>
-            <div class="bento-card__desc">Ce qui fonctionne pour Porto-Vecchio s'adapte à d'autres territoires insulaires. La méthode est le produit.</div>
-            <span class="bento-card__tag">Scalable</span>
-          </div>
-          <div class="bento-card">
-            <div class="bento-card__icon">⚡</div>
-            <div class="bento-card__num">Pilier V</div>
-            <div class="bento-card__title">Résilience saisonnière</div>
-            <div class="bento-card__desc">Scalable ×10 en haute saison, sobre hors-saison. L'architecture s'adapte au rythme insulaire.</div>
-            <span class="bento-card__tag">Haute disponibilité</span>
-          </div>
+    <section class="section-cards container" id="processus">
+      <h2 class="section-title">Processus en trois temps</h2>
+      <div class="cards-bento cards-bento--3">
+        <div class="card">
+          <div class="card__icon">📡</div>
+          <div class="card__title">Collecte</div>
+          <div class="card__desc">Les capteurs, formulaires et flux tiers alimentent le système en continu. La donnée brute est normalisée dès l'entrée.</div>
+        </div>
+        <div class="card">
+          <div class="card__icon">⚙</div>
+          <div class="card__title">Traitement</div>
+          <div class="card__desc">n8n orchestre les pipelines. L'IA détecte les patterns, les anomalies et les opportunités territoriales.</div>
+        </div>
+        <div class="card">
+          <div class="card__icon">📊</div>
+          <div class="card__title">Restitution</div>
+          <div class="card__desc">Le dashboard expose les insights en temps réel. Chaque acteur accède à sa vue métier, sans surcharge.</div>
         </div>
       </div>
     </section>
 
-    <!-- CALLOUT PANEL -->
     <section class="callout-section">
       <div class="container">
-        <div class="callout-panel">
-          <div>
-            <div class="callout-panel__title">🎯 L'IA augmente, l'humain décide.</div>
-            <div class="callout-panel__text">Porto Flow ne remplace pas l'intelligence territoriale — il l'amplifie. Chaque décision reste ancrée dans la réalité locale et la vision des acteurs du territoire.</div>
-          </div>
-          <a href="ecosysteme.html" class="btn-primary" style="white-space:nowrap;">Voir l'écosystème</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERTISE SPLIT -->
-    <section class="expertise-section">
-      <div class="container">
-        <div class="section-label">Expertise technique</div>
-        <h2 class="section-title" style="margin-bottom:32px;">Stack & savoir-faire</h2>
-        <div class="expertise-split">
-          <div class="expertise-list">
-            <div class="expertise-item">
-              <div class="expertise-item__icon">🔗</div>
-              <div>
-                <div class="expertise-item__title">Orchestration n8n</div>
-                <div class="expertise-item__desc">Automatisation des flux de données entre sources territoriales, APIs et interfaces utilisateurs.</div>
-              </div>
-            </div>
-            <div class="expertise-item">
-              <div class="expertise-item__icon">☁️</div>
-              <div>
-                <div class="expertise-item__title">CloudCode & déploiement</div>
-                <div class="expertise-item__desc">Génération et déploiement continu des composants applicatifs via IA assistée.</div>
-              </div>
-            </div>
-            <div class="expertise-item">
-              <div class="expertise-item__icon">📊</div>
-              <div>
-                <div class="expertise-item__title">Dashboard & visualisation</div>
-                <div class="expertise-item__desc">Tableaux de bord temps réel pour les décideurs territoriaux et les opérateurs locaux.</div>
-              </div>
-            </div>
-            <div class="expertise-item">
-              <div class="expertise-item__icon">🔒</div>
-              <div>
-                <div class="expertise-item__title">Souveraineté des données</div>
-                <div class="expertise-item__desc">Architecture hébergée localement, sans dépendance à des tiers non maîtrisés.</div>
-              </div>
-            </div>
-          </div>
-          <div class="expertise-callout">
-            <div class="expertise-callout__label">Vision fondatrice</div>
-            <div class="expertise-callout__quote">"Un territoire qui se comprend lui-même est un territoire qui se gouverne mieux."</div>
-            <div class="expertise-callout__sub">Porto Flow transforme les données dispersées en intelligence collective, accessible à tous les acteurs du territoire.</div>
-            <a href="dashboard.html" class="btn-primary" style="margin-top:8px;text-align:center;">Accéder au Dashboard</a>
-          </div>
+        <div class="callout-block">
+          <div class="callout-block__label">Vision fondatrice</div>
+          <div class="callout-block__quote">« Un territoire qui se comprend lui-même est un territoire qui se gouverne mieux. »</div>
+          <div class="callout-block__sub">Porto Flow transforme les données dispersées en intelligence collective, accessible à tous les acteurs du territoire.</div>
+          <a href="dashboard.html" class="btn-primary">Accéder au Dashboard</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -377,20 +183,7 @@
     </div>
   </footer>
 
-  <script>
-    (function(){
-      var burger=document.getElementById('burger-btn');
-      var mobileNav=document.getElementById('mobile-nav');
-      var closeBtn=document.getElementById('mobile-nav-close');
-      var backdrop=document.getElementById('mobile-nav-backdrop');
-      function openNav(){mobileNav.classList.add('open');mobileNav.setAttribute('aria-hidden','false');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
-      function closeNav(){mobileNav.classList.remove('open');mobileNav.setAttribute('aria-hidden','true');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
-      if(burger)burger.addEventListener('click',openNav);
-      if(closeBtn)closeBtn.addEventListener('click',closeNav);
-      if(backdrop)backdrop.addEventListener('click',closeNav);
-      document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});
-    })();
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
