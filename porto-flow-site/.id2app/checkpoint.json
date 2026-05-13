@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:40:36.151Z",
+  "last_updated_at": "2026-05-13T08:41:54.778Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -98,6 +98,19 @@
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": null,
       "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/experience.html",
+      "action": "update",
+      "file_sha": "84cbd0c9d9fea5ee7c72f530f7114f36b48cda48",
+      "commit_sha": "e3c86251c89d17c29746a27230e13d8126ff11d7",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/experience.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e3c86251c89d17c29746a27230e13d8126ff11d7",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
     }
   ],
   "repaired_files": [],
@@ -168,10 +181,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/territoire.html",
+  "last_successful_file": "porto-flow-site/experience.html",
   "last_failed_file": "porto-flow-site/index.html",
   "completed_count": 7,
-  "updated_count": 1,
+  "updated_count": 2,
   "failed_count": 1,
   "skipped_count": 0
 }
