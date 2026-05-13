@@ -61,7 +61,26 @@
         </div>
       </div>
       <div class="hero-split-media" aria-hidden="true">
-        <img src="assets/images/dashboard-local.jpg" alt="" loading="eager" onerror="this.style.display='none'">
+        <div class="hero-dashboard-table">
+          <div class="db-table-row db-table-row--head">
+            <span>Zone</span><span>Statut</span><span>Niveau</span>
+          </div>
+          <div class="db-table-row">
+            <span>🚗 RN198</span><span class="status status--warn">Modéré</span><span class="bar-wrap"><span class="bar bar--60"></span></span>
+          </div>
+          <div class="db-table-row">
+            <span>🅿 Centre</span><span class="status status--alert">Saturé</span><span class="bar-wrap"><span class="bar bar--90"></span></span>
+          </div>
+          <div class="db-table-row">
+            <span>🏖 Palombaggia</span><span class="status status--alert">Forte aff.</span><span class="bar-wrap"><span class="bar bar--85"></span></span>
+          </div>
+          <div class="db-table-row">
+            <span>☀️ Météo</span><span class="status status--ok">28 °C</span><span class="bar-wrap"><span class="bar bar--30"></span></span>
+          </div>
+          <div class="db-table-row">
+            <span>📡 Services</span><span class="status status--ok">Nominal</span><span class="bar-wrap"><span class="bar bar--20"></span></span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -159,13 +178,14 @@
       </div>
     </section>
 
-    <section class="section-block section-block--alt" aria-label="Notice données">
+    <section class="callout-panel" aria-label="Notice données">
       <div class="container">
-        <div class="notice-strip">
-          <span class="notice-icon">ℹ</span>
-          <div>
-            <strong>Données simulées à titre illustratif</strong>
-            <p>Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale. Les données réelles seraient alimentées par les partenaires institutionnels.</p>
+        <div class="callout-panel-inner callout-panel--info">
+          <span class="callout-icon">ℹ</span>
+          <div class="callout-body">
+            <strong class="callout-title">Données simulées à titre illustratif</strong>
+            <p class="callout-text">Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale.</p>
+            <p class="callout-text">Les données réelles seraient alimentées par les partenaires institutionnels.</p>
           </div>
         </div>
       </div>
@@ -174,7 +194,7 @@
     <section class="cta-band" aria-labelledby="cta-db-title">
       <div class="container">
         <div class="cta-band-inner">
-          <div>
+          <div class="cta-band-text">
             <h2 id="cta-db-title" class="cta-band-title">Intégrer PortoFlow à votre territoire</h2>
             <p class="cta-band-sub">Collectivités et partenaires : devenez acteurs du copilote intelligent territorial.</p>
           </div>
