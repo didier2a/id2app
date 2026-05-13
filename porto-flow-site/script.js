@@ -1,15 +1,13 @@
 /* ============================================================
-   Porto Flow — script.js
+   PortoFlow — script.js
    Vanilla JS — No dependencies — GitHub Pages compatible
-   Version V3.1 — Enrichissement local + Galerie photo
+   Version V4.2 — Consolidation complète
    ============================================================ */
 
 /* ============================================================
    CONSTANTE WEBHOOK FUTUR (non utilisée tant que vide)
    ============================================================ */
 var PHOTO_UPLOAD_WEBHOOK_URL = '';
-/* Pour activer un futur upload serveur, renseigner l'URL ci-dessus.
-   Le code vérifie si cette constante est non vide avant tout appel. */
 
 /* ============================================================
    1. UTILITAIRES
@@ -40,7 +38,7 @@ function safeEl(selector, context) {
 }
 
 /* ============================================================
-   2. MENU MOBILE — BURGER TOGGLE ROBUSTE
+   2. MENU MOBILE — BURGER TOGGLE ACCESSIBLE
    ============================================================ */
 
 function initMobileMenu() {
@@ -114,9 +112,9 @@ function initActiveNav() {
   var currentPath = window.location.pathname;
   var currentFile = currentPath.split('/').pop() || 'index.html';
 
-  if (currentFile === '') currentFile = 'index.html';
+  if (currentFile === '' || currentFile === '/') currentFile = 'index.html';
 
-  var navLinks = qsa('.nav-menu a, .nav-link');
+  var navLinks = qsa('.nav-menu a, .nav-link, .footer-nav a');
 
   navLinks.forEach(function (link) {
     var href = link.getAttribute('href') || '';
@@ -131,7 +129,7 @@ function initActiveNav() {
       isActive = true;
     } else if (
       (currentFile === 'index.html' || currentFile === '') &&
-      (linkFile === 'index.html' || linkFile === '')
+      (linkFile === 'index.html' || linkFile === '' || linkFile === '/')
     ) {
       isActive = true;
     }
@@ -1008,322 +1006,117 @@ function initTechLoop() {
 }
 
 /* ============================================================
-   24. GALERIE PHOTO LOCALE — PORTO FLOW
+   24. GALERIE PHOTO LOCALE
    Prévisualisation locale, localStorage, ajout par fichier ou URL
    ============================================================ */
 
-/* Taille max recommandée pour localStorage : 800 Ko en base64 */
-var GALLERY_MAX_FILE_SIZE_BYTES = 800 * 1024;
-var GALLERY_STORAGE_KEY = 'portoflow_local_gallery_v1';
+function initPhotoGallery() {
+  var gallery = qs('[data-photo-gallery]');
+  if (!gallery) return;
 
-/* Catégories disponibles */
-var GALLERY_CATEGORIES = [
-  'Littoral',
-  'Port',
-  'Plage',
-  'Mobilité',
-  'Économie locale',
-  'Technologie',
-  'Événement'
-];
+  var grid = qs('[data-gallery-grid]', gallery);
+  var fileInput = qs('[data-gallery-file-input]', gallery);
+  var urlInput = qs('[data-gallery-url-input]', gallery);
+  var addUrlBtn = qs('[data-gallery-add-url]', gallery);
+  var clearBtn = qs('[data-gallery-clear]', gallery);
 
-/* État en mémoire de la galerie */
-var galleryItems = [];
+  var storageKey = 'portoflow_gallery_v1';
 
-/* Vérifie si localStorage est disponible */
-function isLocalStorageAvailable() {
-  try {
-    var test = '__pf_ls_test__';
-    localStorage.setItem(test, '1');
-    localStorage.removeItem(test);
-    return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-/* Sauvegarde la galerie dans localStorage */
-function saveGalleryToStorage() {
-  if (!isLocalStorageAvailable()) return;
-  try {
-    localStorage.setItem(GALLERY_STORAGE_KEY, JSON.stringify(galleryItems));
-  } catch (e) {
-    /* localStorage plein ou indisponible — on continue sans planter */
-    showToast('Espace de stockage local insuffisant. Certaines photos ne seront pas conservées.', 'warning');
-  }
-}
-
-/* Charge la galerie depuis localStorage */
-function loadGalleryFromStorage() {
-  if (!isLocalStorageAvailable()) return [];
-  try {
-    var raw = localStorage.getItem(GALLERY_STORAGE_KEY);
-    if (!raw) return [];
-    var parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed;
-  } catch (e) {
-    return [];
-  }
-}
-
-/* Génère un identifiant unique simple */
-function generateId() {
-  return 'pf_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
-}
-
-/* Crée une carte photo dans la galerie DOM */
-function createGalleryCard(item) {
-  var card = document.createElement('div');
-  card.className = 'local-gallery-card';
-  card.setAttribute('data-gallery-id', item.id);
-
-  var imgWrap = document.createElement('div');
-  imgWrap.className = 'local-gallery-img-wrap';
-
-  var img = document.createElement('img');
-  img.src = item.src;
-  img.alt = item.title || 'Photo locale Porto Flow';
-  img.loading = 'lazy';
-  img.className = 'local-gallery-img';
-
-  img.onerror = function () {
-    imgWrap.classList.add('local-gallery-img-error');
-    img.style.display = 'none';
-    var errMsg = document.createElement('span');
-    errMsg.className = 'local-gallery-img-error-msg';
-    errMsg.textContent = 'Image non disponible';
-    imgWrap.appendChild(errMsg);
-  };
-
-  imgWrap.appendChild(img);
-
-  var info = document.createElement('div');
-  info.className = 'local-gallery-info';
-
-  if (item.title) {
-    var titleEl = document.createElement('p');
-    titleEl.className = 'local-gallery-title';
-    titleEl.textContent = item.title;
-    info.appendChild(titleEl);
-  }
-
-  if (item.category) {
-    var catEl = document.createElement('span');
-    catEl.className = 'local-gallery-category';
-    catEl.textContent = item.category;
-    info.appendChild(catEl);
-  }
-
-  var removeBtn = document.createElement('button');
-  removeBtn.className = 'local-gallery-remove';
-  removeBtn.setAttribute('aria-label', 'Supprimer cette photo');
-  removeBtn.setAttribute('type', 'button');
-  removeBtn.textContent = '✕';
-  removeBtn.addEventListener('click', function () {
-    removeGalleryItem(item.id, card);
-  });
-
-  card.appendChild(imgWrap);
-  card.appendChild(info);
-  card.appendChild(removeBtn);
-
-  return card;
-}
-
-/* Supprime un item de la galerie */
-function removeGalleryItem(id, cardEl) {
-  galleryItems = galleryItems.filter(function (item) {
-    return item.id !== id;
-  });
-  saveGalleryToStorage();
-  if (cardEl && cardEl.parentNode) {
-    cardEl.classList.add('local-gallery-card--removing');
-    setTimeout(function () {
-      if (cardEl.parentNode) cardEl.parentNode.removeChild(cardEl);
-      updateGalleryEmptyState();
-    }, 300);
-  }
-}
-
-/* Met à jour l'état vide de la galerie */
-function updateGalleryEmptyState() {
-  var grid = qs('.local-gallery-grid');
-  var empty = qs('.local-gallery-empty');
-  if (!grid || !empty) return;
-
-  var cards = qsa('.local-gallery-card', grid);
-  if (cards.length === 0) {
-    empty.style.display = 'block';
-  } else {
-    empty.style.display = 'none';
-  }
-}
-
-/* Ajoute un item à la galerie */
-function addGalleryItem(src, title, category) {
-  var item = {
-    id: generateId(),
-    src: src,
-    title: title || '',
-    category: category || '',
-    addedAt: new Date().toISOString()
-  };
-
-  galleryItems.push(item);
-  saveGalleryToStorage();
-
-  var grid = qs('.local-gallery-grid');
-  if (grid) {
-    var card = createGalleryCard(item);
-    grid.appendChild(card);
-
-    /* Animation d'entrée */
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        card.classList.add('local-gallery-card--visible');
-      });
-    });
-  }
-
-  updateGalleryEmptyState();
-  showToast('Photo ajoutée à la galerie locale.', 'success');
-}
-
-/* Initialise la galerie locale */
-function initLocalGallery() {
-  var gallerySection = qs('.local-gallery-section');
-  if (!gallerySection) return;
-
-  var grid = qs('.local-gallery-grid', gallerySection);
-  var fileInput = qs('.local-gallery-file-input', gallerySection);
-  var urlInput = qs('.local-gallery-url-input', gallerySection);
-  var titleInput = qs('.local-gallery-title-input', gallerySection);
-  var categorySelect = qs('.local-gallery-category-select', gallerySection);
-  var addFileBtn = qs('.local-gallery-add-file-btn', gallerySection);
-  var addUrlBtn = qs('.local-gallery-add-url-btn', gallerySection);
-  var resetBtn = qs('.local-gallery-reset-btn', gallerySection);
-  var fileLabel = qs('.local-gallery-file-label', gallerySection);
-
-  if (!grid) return;
-
-  /* Peupler le select des catégories si vide */
-  if (categorySelect && categorySelect.options.length <= 1) {
-    GALLERY_CATEGORIES.forEach(function (cat) {
-      var opt = document.createElement('option');
-      opt.value = cat;
-      opt.textContent = cat;
-      categorySelect.appendChild(opt);
-    });
-  }
-
-  /* Charger depuis localStorage */
-  galleryItems = loadGalleryFromStorage();
-
-  if (galleryItems.length > 0) {
-    galleryItems.forEach(function (item) {
-      var card = createGalleryCard(item);
-      grid.appendChild(card);
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          card.classList.add('local-gallery-card--visible');
-        });
-      });
-    });
-  }
-
-  updateGalleryEmptyState();
-
-  /* Gestion du bouton déclencheur de l'input file */
-  if (addFileBtn && fileInput) {
-    addFileBtn.addEventListener('click', function () {
-      fileInput.click();
-    });
-  }
-
-  /* Lecture du fichier sélectionné */
-  if (fileInput) {
-    fileInput.addEventListener('change', function () {
-      var file = fileInput.files && fileInput.files[0];
-      if (!file) return;
-
-      if (!file.type.startsWith('image/')) {
-        showToast('Veuillez sélectionner un fichier image (JPG, PNG, WebP…)', 'error');
-        fileInput.value = '';
-        return;
-      }
-
-      if (file.size > GALLERY_MAX_FILE_SIZE_BYTES) {
-        showToast(
-          'Cette image est trop lourde (' + Math.round(file.size / 1024) + ' Ko). ' +
-          'Pour un stockage local optimal, utilisez une image de moins de 800 Ko.',
-          'warning',
-          5000
-        );
-        /* On continue quand même pour l'aperçu en mémoire, mais on avertit */
-      }
-
-      var title = titleInput ? titleInput.value.trim() : '';
-      var category = categorySelect ? categorySelect.value : '';
-
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        var src = e.target.result;
-        addGalleryItem(src, title, category);
-        fileInput.value = '';
-        if (titleInput) titleInput.value = '';
-        if (categorySelect) categorySelect.selectedIndex = 0;
-        if (fileLabel) fileLabel.textContent = 'Aucun fichier sélectionné';
-      };
-      reader.onerror = function () {
-        showToast('Erreur lors de la lecture du fichier.', 'error');
-        fileInput.value = '';
-      };
-      reader.readAsDataURL(file);
-    });
-
-    /* Mise à jour du label fichier */
-    if (fileLabel) {
-      fileInput.addEventListener('change', function () {
-        var file = fileInput.files && fileInput.files[0];
-        fileLabel.textContent = file ? file.name : 'Aucun fichier sélectionné';
-      });
+  function loadFromStorage() {
+    try {
+      var raw = localStorage.getItem(storageKey);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) {
+      return [];
     }
   }
 
-  /* Ajout par URL externe */
+  function saveToStorage(items) {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(items));
+    } catch (e) {
+      showToast('Stockage local indisponible.', 'error');
+    }
+  }
+
+  function renderGallery(items) {
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    if (items.length === 0) {
+      var empty = document.createElement('p');
+      empty.className = 'gallery-empty';
+      empty.textContent = 'Aucune photo locale. Ajoutez des images ci-dessus.';
+      grid.appendChild(empty);
+      return;
+    }
+
+    items.forEach(function (src, index) {
+      var item = document.createElement('div');
+      item.className = 'gallery-item';
+
+      var img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Photo locale Porto-Vecchio ' + (index + 1);
+      img.loading = 'lazy';
+      img.onerror = function () {
+        item.classList.add('gallery-item--error');
+        img.alt = 'Image non disponible';
+      };
+
+      var removeBtn = document.createElement('button');
+      removeBtn.className = 'gallery-item-remove';
+      removeBtn.setAttribute('aria-label', 'Supprimer cette photo');
+      removeBtn.textContent = '×';
+      removeBtn.addEventListener('click', function () {
+        var current = loadFromStorage();
+        current.splice(index, 1);
+        saveToStorage(current);
+        renderGallery(current);
+      });
+
+      item.appendChild(img);
+      item.appendChild(removeBtn);
+      grid.appendChild(item);
+    });
+  }
+
+  function addImageSrc(src) {
+    if (!src || typeof src !== 'string') return;
+    var current = loadFromStorage();
+    if (current.indexOf(src) === -1) {
+      current.push(src);
+      saveToStorage(current);
+      renderGallery(current);
+      showToast('Photo ajoutée à la galerie.', 'success');
+    } else {
+      showToast('Cette image est déjà dans la galerie.', 'info');
+    }
+  }
+
+  if (fileInput) {
+    fileInput.addEventListener('change', function () {
+      var files = Array.from(fileInput.files || []);
+      files.forEach(function (file) {
+        if (!file.type.startsWith('image/')) return;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+          addImageSrc(e.target.result);
+        };
+        reader.readAsDataURL(file);
+      });
+      fileInput.value = '';
+    });
+  }
+
   if (addUrlBtn && urlInput) {
     addUrlBtn.addEventListener('click', function () {
       var url = urlInput.value.trim();
-      if (!url) {
-        showToast('Veuillez saisir une URL d\'image valide.', 'error');
-        return;
-      }
-
-      /* Validation basique d'URL */
-      var isValidUrl = false;
-      try {
-        var parsed = new URL(url);
-        isValidUrl = parsed.protocol === 'http:' || parsed.protocol === 'https:';
-      } catch (e) {
-        isValidUrl = false;
-      }
-
-      if (!isValidUrl) {
-        showToast('L\'URL saisie ne semble pas valide. Elle doit commencer par http:// ou https://', 'error');
-        return;
-      }
-
-      var title = titleInput ? titleInput.value.trim() : '';
-      var category = categorySelect ? categorySelect.value : '';
-
-      addGalleryItem(url, title, category);
+      if (!url) return;
+      addImageSrc(url);
       urlInput.value = '';
-      if (titleInput) titleInput.value = '';
-      if (categorySelect) categorySelect.selectedIndex = 0;
     });
 
-    /* Ajout par URL avec touche Entrée */
     urlInput.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') {
         e.preventDefault();
@@ -1332,222 +1125,177 @@ function initLocalGallery() {
     });
   }
 
-  /* Réinitialisation de la galerie */
-  if (resetBtn) {
-    resetBtn.addEventListener('click', function () {
-      if (!confirm('Réinitialiser la galerie locale ? Toutes les photos ajoutées seront supprimées de votre navigateur.')) {
-        return;
-      }
-      galleryItems = [];
-      if (isLocalStorageAvailable()) {
-        try {
-          localStorage.removeItem(GALLERY_STORAGE_KEY);
-        } catch (e) {
-          /* silencieux */
-        }
-      }
-      var cards = qsa('.local-gallery-card', grid);
-      cards.forEach(function (card) {
-        if (card.parentNode) card.parentNode.removeChild(card);
-      });
-      updateGalleryEmptyState();
-      showToast('Galerie locale réinitialisée.', 'info');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', function () {
+      saveToStorage([]);
+      renderGallery([]);
+      showToast('Galerie vidée.', 'info');
     });
   }
 
-  /* Filtrage par catégorie */
-  var filterBtns = qsa('.local-gallery-filter-btn', gallerySection);
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var filterCat = btn.getAttribute('data-filter-cat') || 'all';
-
-      filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
-      btn.classList.add('is-active');
-
-      var cards = qsa('.local-gallery-card', grid);
-      cards.forEach(function (card) {
-        var id = card.getAttribute('data-gallery-id');
-        var item = galleryItems.find(function (i) { return i.id === id; });
-        if (!item) {
-          card.style.display = '';
-          return;
-        }
-        if (filterCat === 'all' || item.category === filterCat) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
+  renderGallery(loadFromStorage());
 }
 
 /* ============================================================
-   25. IMAGES HERO — FALLBACK GRACIEUX
-   Gère les images de fond qui pourraient ne pas charger
+   25. IMAGE SLOTS — FALLBACK GRACIEUX
+   Applique un gradient CSS si l'image ne charge pas
    ============================================================ */
 
-function initHeroImageFallbacks() {
-  var heroImgs = qsa('.hero-bg-img');
-  heroImgs.forEach(function (img) {
-    img.addEventListener('error', function () {
-      img.style.display = 'none';
-      var parent = img.closest('.hero-bg-wrap') || img.parentElement;
-      if (parent) {
-        parent.classList.add('hero-bg--fallback');
-      }
-    });
-  });
+function initImageSlots() {
+  var slots = qsa('[data-image-slot]');
 
-  /* Gestion des background-image inline avec data-bg */
-  var bgEls = qsa('[data-bg]');
-  bgEls.forEach(function (el) {
-    var url = el.getAttribute('data-bg');
-    if (!url) return;
-
-    var testImg = new Image();
-    testImg.onload = function () {
-      el.style.backgroundImage = 'url("' + url + '")';
-      el.classList.add('bg-loaded');
-    };
-    testImg.onerror = function () {
-      el.classList.add('bg-fallback');
-      /* Le gradient CSS de fallback prend le relais */
-    };
-    testImg.src = url;
-  });
-}
-
-/* ============================================================
-   26. PHOTO CARDS TERRITOIRE — HOVER OVERLAY
-   ============================================================ */
-
-function initPhotoCards() {
-  var photoCards = qsa('.photo-card');
-
-  photoCards.forEach(function (card) {
-    var overlay = qs('.photo-card-overlay', card);
-    if (!overlay) return;
-
-    card.addEventListener('mouseenter', function () {
-      card.classList.add('is-hovered');
-    });
-    card.addEventListener('mouseleave', function () {
-      card.classList.remove('is-hovered');
-    });
-    card.addEventListener('focus', function () {
-      card.classList.add('is-hovered');
-    });
-    card.addEventListener('blur', function () {
-      card.classList.remove('is-hovered');
-    });
-  });
-}
-
-/* ============================================================
-   27. LIGHTBOX SIMPLE POUR GALERIE LOCALE
-   ============================================================ */
-
-function initGalleryLightbox() {
-  var lightbox = qs('.gallery-lightbox');
-  if (!lightbox) {
-    /* Créer le lightbox dynamiquement */
-    lightbox = document.createElement('div');
-    lightbox.className = 'gallery-lightbox';
-    lightbox.setAttribute('role', 'dialog');
-    lightbox.setAttribute('aria-modal', 'true');
-    lightbox.setAttribute('aria-label', 'Aperçu photo');
-    lightbox.setAttribute('hidden', '');
-
-    var lbInner = document.createElement('div');
-    lbInner.className = 'gallery-lightbox-inner';
-
-    var lbImg = document.createElement('img');
-    lbImg.className = 'gallery-lightbox-img';
-    lbImg.alt = 'Aperçu agrandi';
-
-    var lbCaption = document.createElement('p');
-    lbCaption.className = 'gallery-lightbox-caption';
-
-    var lbClose = document.createElement('button');
-    lbClose.className = 'gallery-lightbox-close';
-    lbClose.setAttribute('type', 'button');
-    lbClose.setAttribute('aria-label', 'Fermer l\'aperçu');
-    lbClose.textContent = '✕';
-
-    lbInner.appendChild(lbClose);
-    lbInner.appendChild(lbImg);
-    lbInner.appendChild(lbCaption);
-    lightbox.appendChild(lbInner);
-    document.body.appendChild(lightbox);
-
-    function closeLightbox() {
-      lightbox.setAttribute('hidden', '');
-      lightbox.classList.remove('is-open');
-      document.body.classList.remove('lightbox-open');
-    }
-
-    lbClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', function (e) {
-      if (e.target === lightbox) closeLightbox();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
-        closeLightbox();
-      }
-    });
-  }
-
-  /* Délégation d'événements sur les images de galerie */
-  document.addEventListener('click', function (e) {
-    var img = e.target.closest('.local-gallery-img');
+  slots.forEach(function (slot) {
+    var img = slot.tagName === 'IMG' ? slot : qs('img', slot);
     if (!img) return;
 
-    var card = img.closest('.local-gallery-card');
-    var id = card ? card.getAttribute('data-gallery-id') : null;
-    var item = id ? galleryItems.find(function (i) { return i.id === id; }) : null;
+    img.addEventListener('error', function () {
+      slot.classList.add('image-slot--fallback');
+      img.style.display = 'none';
+    });
 
-    var lbImg = qs('.gallery-lightbox-img', lightbox);
-    var lbCaption = qs('.gallery-lightbox-caption', lightbox);
-
-    if (lbImg) {
-      lbImg.src = img.src;
-      lbImg.alt = img.alt || 'Aperçu photo';
+    if (img.complete && img.naturalWidth === 0) {
+      slot.classList.add('image-slot--fallback');
+      img.style.display = 'none';
     }
-    if (lbCaption && item) {
-      lbCaption.textContent = [item.title, item.category].filter(Boolean).join(' — ');
-    } else if (lbCaption) {
-      lbCaption.textContent = '';
-    }
-
-    lightbox.removeAttribute('hidden');
-    lightbox.classList.add('is-open');
-    document.body.classList.add('lightbox-open');
-
-    var closeBtn = qs('.gallery-lightbox-close', lightbox);
-    if (closeBtn) closeBtn.focus();
   });
 }
 
 /* ============================================================
-   28. INITIALISATION GLOBALE
+   26. FOCUS TRAP — MENU MOBILE ACCESSIBLE
+   ============================================================ */
+
+function initFocusTrap() {
+  var navMenu = qs('.nav-menu');
+  var burger = qs('.nav-burger');
+  if (!navMenu || !burger) return;
+
+  document.addEventListener('keydown', function (e) {
+    if (!navMenu.classList.contains('is-open')) return;
+    if (e.key !== 'Tab') return;
+
+    var focusable = qsa(
+      'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      navMenu
+    );
+
+    if (focusable.length === 0) return;
+
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else {
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  });
+}
+
+/* ============================================================
+   27. MICRO-INTERACTIONS — BOUTONS ET LIENS
+   ============================================================ */
+
+function initMicroInteractions() {
+  qsa('.btn, .cta-btn, [data-ripple]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      var ripple = document.createElement('span');
+      ripple.className = 'ripple-effect';
+
+      var rect = el.getBoundingClientRect();
+      var size = Math.max(rect.width, rect.height);
+      var x = e.clientX - rect.left - size / 2;
+      var y = e.clientY - rect.top - size / 2;
+
+      ripple.style.cssText = [
+        'width:' + size + 'px',
+        'height:' + size + 'px',
+        'left:' + x + 'px',
+        'top:' + y + 'px'
+      ].join(';');
+
+      el.style.position = el.style.position || 'relative';
+      el.style.overflow = 'hidden';
+      el.appendChild(ripple);
+
+      setTimeout(function () {
+        if (ripple.parentNode) ripple.parentNode.removeChild(ripple);
+      }, 600);
+    });
+  });
+}
+
+/* ============================================================
+   28. SKIP LINK — ACCESSIBILITÉ
+   ============================================================ */
+
+function initSkipLink() {
+  var skip = qs('.skip-link');
+  if (!skip) return;
+
+  skip.addEventListener('click', function (e) {
+    var targetId = skip.getAttribute('href');
+    if (!targetId || targetId === '#') return;
+    var target = document.querySelector(targetId);
+    if (target) {
+      e.preventDefault();
+      target.setAttribute('tabindex', '-1');
+      target.focus();
+    }
+  });
+}
+
+/* ============================================================
+   29. RESPONSIVE NAV — RESIZE HANDLER
+   ============================================================ */
+
+function initResponsiveNav() {
+  var navMenu = qs('.nav-menu');
+  var burger = qs('.nav-burger');
+  if (!navMenu || !burger) return;
+
+  var resizeTimer;
+
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      if (window.innerWidth >= 1024) {
+        navMenu.classList.remove('is-open');
+        burger.classList.remove('is-active');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+        var overlay = qs('.nav-overlay');
+        if (overlay) overlay.classList.remove('is-visible');
+      }
+    }, 150);
+  });
+}
+
+/* ============================================================
+   30. INIT GLOBAL
    ============================================================ */
 
 ready(function () {
+  initSkipLink();
   initMobileMenu();
+  initFocusTrap();
+  initResponsiveNav();
   initActiveNav();
   initStickyHeader();
   initScrollAnimations();
   initBackToTop();
   initCounters();
-  initAIAssistant();
-  initMapSimulation();
   initSmoothScroll();
   initTabs();
   initAccordion();
   initParallax();
-  initForms();
   initReadingProgress();
+  initForms();
   initDashboardStats();
   initTrafficSimulation();
   initHeroParticles();
@@ -1555,8 +1303,9 @@ ready(function () {
   initAppModules();
   initPartnerCards();
   initTechLoop();
-  initLocalGallery();
-  initHeroImageFallbacks();
-  initPhotoCards();
-  initGalleryLightbox();
+  initAIAssistant();
+  initMapSimulation();
+  initPhotoGallery();
+  initImageSlots();
+  initMicroInteractions();
 });
