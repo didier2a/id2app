@@ -45,162 +45,132 @@
 
   <main id="main-content">
 
-    <section class="hero-split" aria-labelledby="db-hero-title">
-      <div class="hero-split-text">
-        <span class="section-kicker">Tableau de bord territorial</span>
-        <h1 id="db-hero-title" class="hero-title">Dashboard PortoFlow</h1>
-        <p class="hero-lead">Visualisez l'état du territoire en temps simulé : trafic, parkings, plages et événements.</p>
-        <div class="tag-row">
-          <span class="tag tag--live">● Données illustratives</span>
-          <span class="tag">Porto-Vecchio</span>
-          <span class="tag">Corse-du-Sud</span>
-        </div>
-        <div class="hero-actions">
-          <a href="#kpi-section" class="btn btn-cta">Voir les indicateurs</a>
-          <a href="contact.html" class="btn btn-outline">Intégrer PortoFlow</a>
-        </div>
-      </div>
-      <div class="hero-split-media" aria-hidden="true">
-        <div class="hero-dashboard-table">
-          <div class="db-table-row db-table-row--head">
-            <span>Zone</span><span>Statut</span><span>Niveau</span>
-          </div>
-          <div class="db-table-row">
-            <span>🚗 RN198</span><span class="status status--warn">Modéré</span><span class="bar-wrap"><span class="bar bar--60"></span></span>
-          </div>
-          <div class="db-table-row">
-            <span>🅿 Centre</span><span class="status status--alert">Saturé</span><span class="bar-wrap"><span class="bar bar--90"></span></span>
-          </div>
-          <div class="db-table-row">
-            <span>🏖 Palombaggia</span><span class="status status--alert">Forte aff.</span><span class="bar-wrap"><span class="bar bar--85"></span></span>
-          </div>
-          <div class="db-table-row">
-            <span>☀️ Météo</span><span class="status status--ok">28 °C</span><span class="bar-wrap"><span class="bar bar--30"></span></span>
-          </div>
-          <div class="db-table-row">
-            <span>📡 Services</span><span class="status status--ok">Nominal</span><span class="bar-wrap"><span class="bar bar--20"></span></span>
+    <section class="hero" aria-labelledby="db-hero-title">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Tableau de bord territorial</span>
+          <h1 id="db-hero-title" class="hero__title">Dashboard PortoFlow</h1>
+          <p class="hero__sub">Visualisez l'état du territoire en temps simulé : trafic, parkings, plages et événements.</p>
+          <div class="hero__actions">
+            <a href="#kpi-section" class="btn-primary">Voir les indicateurs</a>
+            <a href="contact.html" class="btn-secondary">Intégrer PortoFlow</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="alert-strip" role="alert" aria-live="polite" id="alert-strip">
-      <span aria-hidden="true">⚠</span>
-      <span>Forte affluence prévue ce week-end sur les plages du Sud — Anticipez vos déplacements.</span>
-      <button aria-label="Fermer l'alerte" onclick="document.getElementById('alert-strip').hidden=true">✕</button>
-    </div>
-
-    <section class="section-block" id="kpi-section" aria-labelledby="kpi-title">
+    <section class="section" id="kpi-section" aria-labelledby="kpi-title">
       <div class="container">
-        <div class="section-intro">
-          <span class="section-kicker">Indicateurs en temps simulé</span>
-          <h2 id="kpi-title" class="section-title">État du territoire</h2>
-        </div>
-        <div class="bento-grid bento-grid--4">
-          <article class="card card--metric" aria-label="Trafic routier">
-            <div class="card-icon">🚗</div>
-            <div class="card-label">Trafic routier</div>
-            <div class="card-value">Modéré</div>
-            <div class="card-detail">RN198 fluide · D468 chargée</div>
-            <div class="progress-bar progress-bar--warn"></div>
-          </article>
-          <article class="card card--metric" aria-label="Parkings">
-            <div class="card-icon">🅿</div>
-            <div class="card-label">Parkings</div>
-            <div class="card-value">4 / 7 libres</div>
-            <div class="card-detail">Centre saturé · Plages libres</div>
-            <div class="progress-bar progress-bar--ok"></div>
-          </article>
-          <article class="card card--metric" aria-label="Plages">
-            <div class="card-icon">🏖</div>
-            <div class="card-label">Plages</div>
-            <div class="card-value">Forte affluence</div>
-            <div class="card-detail">Palombaggia · Santa Giulia</div>
-            <div class="progress-bar progress-bar--alert"></div>
-          </article>
-          <article class="card card--metric" aria-label="Météo locale">
-            <div class="card-icon">☀️</div>
-            <div class="card-label">Météo locale</div>
-            <div class="card-value">28 °C</div>
-            <div class="card-detail">Ensoleillé · Vent faible</div>
-            <div class="progress-bar progress-bar--ok"></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block section-block--alt" aria-labelledby="rails-title">
-      <div class="container">
-        <div class="section-intro">
-          <span class="section-kicker">Assistants IA & flux résilients</span>
-          <h2 id="rails-title" class="section-title">Intelligence embarquée</h2>
-        </div>
-        <div class="content-rails">
-          <div class="rail-card">
-            <span class="rail-icon">🤖</span>
-            <h3 class="rail-title">Assistant IA territorial</h3>
-            <p class="rail-text">Analyse prédictive des flux et alertes contextuelles en temps réel.</p>
-          </div>
-          <div class="rail-card">
-            <span class="rail-icon">🔄</span>
-            <h3 class="rail-title">Workflow résilient</h3>
-            <p class="rail-text">Continuité de service garantie même en cas de rupture de données sources.</p>
-          </div>
-          <div class="rail-card">
-            <span class="rail-icon">📡</span>
-            <h3 class="rail-title">Données multi-sources</h3>
-            <p class="rail-text">Agrégation institutionnelle, capteurs terrain et signaux partenaires.</p>
+        <span class="section__eyebrow">Indicateurs clés</span>
+        <h2 id="kpi-title" class="section__title">État du territoire en direct</h2>
+        <p class="section__lead">Données illustratives — Porto-Vecchio · Corse-du-Sud.</p>
+        <div class="metrics-panel">
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <span class="metric-card__icon">🚗</span>
+              <span class="metric-card__value">60 %</span>
+              <span class="metric-card__label">Trafic RN198</span>
+              <span class="metric-card__tag">Modéré</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__icon">🅿</span>
+              <span class="metric-card__value">90 %</span>
+              <span class="metric-card__label">Parking Centre</span>
+              <span class="metric-card__tag">Saturé</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__icon">🏖</span>
+              <span class="metric-card__value">85 %</span>
+              <span class="metric-card__label">Palombaggia</span>
+              <span class="metric-card__tag">Forte affluence</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__icon">☀️</span>
+              <span class="metric-card__value">28 °C</span>
+              <span class="metric-card__label">Météo locale</span>
+              <span class="metric-card__tag">Ensoleillé</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-block" aria-label="Métriques clés">
+    <section class="section" aria-labelledby="copilote-title">
       <div class="container">
-        <div class="metrics-strip">
-          <div class="metric-block">
-            <div class="metric-value">42 000</div>
-            <div class="metric-label">Visiteurs estimés / semaine</div>
+        <span class="section__eyebrow">Copilote intelligent</span>
+        <h2 id="copilote-title" class="section__title">Décisions assistées par PortoFlow</h2>
+        <p class="section__lead">Le copilote agrège flux, alertes et recommandations en un seul tableau de bord.</p>
+        <div class="bento">
+          <div class="bento-card">
+            <span class="bento-card__icon">📡</span>
+            <h3 class="bento-card__title">Flux temps réel</h3>
+            <p class="bento-card__desc">Agrégation des capteurs trafic, parkings et plages en continu.</p>
+            <span class="bento-card__tag">Capteurs IoT</span>
           </div>
-          <div class="metric-block">
-            <div class="metric-value">3</div>
-            <div class="metric-label">Événements actifs</div>
+          <div class="bento-card">
+            <span class="bento-card__icon">🔔</span>
+            <h3 class="bento-card__title">Alertes proactives</h3>
+            <p class="bento-card__desc">Détection automatique des seuils critiques et notification des équipes.</p>
+            <span class="bento-card__tag">Temps simulé</span>
           </div>
-          <div class="metric-block">
-            <div class="metric-value">6 / 6</div>
-            <div class="metric-label">Services nominaux</div>
+          <div class="bento-card">
+            <span class="bento-card__icon">🧭</span>
+            <h3 class="bento-card__title">Aide à la décision</h3>
+            <p class="bento-card__desc">Recommandations contextuelles pour les gestionnaires territoriaux.</p>
+            <span class="bento-card__tag">IA territoriale</span>
           </div>
-          <div class="metric-block">
-            <div class="metric-value">28 °C</div>
-            <div class="metric-label">Température locale</div>
+          <div class="bento-card">
+            <span class="bento-card__icon">📊</span>
+            <h3 class="bento-card__title">Rapports synthétiques</h3>
+            <p class="bento-card__desc">Exports et synthèses automatiques pour les élus et partenaires.</p>
+            <span class="bento-card__tag">Institutionnel</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="callout-panel" aria-label="Notice données">
+    <section class="section" aria-labelledby="analyses-title">
       <div class="container">
-        <div class="callout-panel-inner callout-panel--info">
-          <span class="callout-icon">ℹ</span>
-          <div class="callout-body">
-            <strong class="callout-title">Données simulées à titre illustratif</strong>
-            <p class="callout-text">Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale.</p>
-            <p class="callout-text">Les données réelles seraient alimentées par les partenaires institutionnels.</p>
+        <span class="section__eyebrow">Analyses territoriales</span>
+        <h2 id="analyses-title" class="section__title">Modules de suivi</h2>
+        <p class="section__lead">Naviguez entre les axes d'analyse du territoire.</p>
+        <div class="rail">
+          <div class="rail__card">
+            <span class="rail__card-icon">🗺</span>
+            <span class="rail__card-title">Cartographie</span>
+            <span class="rail__card-desc">Visualisation géospatiale des flux et zones sensibles.</span>
+          </div>
+          <div class="rail__card">
+            <span class="rail__card-icon">📈</span>
+            <span class="rail__card-title">Tendances</span>
+            <span class="rail__card-desc">Évolution saisonnière des indicateurs clés.</span>
+          </div>
+          <div class="rail__card">
+            <span class="rail__card-icon">🌊</span>
+            <span class="rail__card-title">Littoral</span>
+            <span class="rail__card-desc">Suivi des plages, mouillages et zones côtières.</span>
+          </div>
+          <div class="rail__card">
+            <span class="rail__card-icon">🏙</span>
+            <span class="rail__card-title">Urbain</span>
+            <span class="rail__card-desc">Densité, stationnement et mobilité en centre-ville.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" aria-labelledby="cta-db-title">
+    <section class="section" aria-labelledby="callout-db-title">
       <div class="container">
-        <div class="cta-band-inner">
-          <div class="cta-band-text">
-            <h2 id="cta-db-title" class="cta-band-title">Intégrer PortoFlow à votre territoire</h2>
-            <p class="cta-band-sub">Collectivités et partenaires : devenez acteurs du copilote intelligent territorial.</p>
-          </div>
-          <div class="cta-actions">
-            <a href="contact.html" class="btn btn-cta">Prendre contact</a>
-            <a href="ecosysteme.html" class="btn btn-outline-light">Voir l'écosystème</a>
+        <div class="callout">
+          <span class="callout__icon">ℹ</span>
+          <div class="callout__body">
+            <h2 id="callout-db-title" class="callout__title">Données simulées à titre illustratif</h2>
+            <p class="callout__text">Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale.</p>
+            <p class="callout__text">Les données réelles seraient alimentées par les partenaires institutionnels.</p>
+            <div class="callout__actions">
+              <a href="contact.html" class="btn-primary">Prendre contact</a>
+              <a href="ecosysteme.html" class="btn-secondary">Voir l'écosystème</a>
+            </div>
           </div>
         </div>
       </div>
@@ -235,6 +205,21 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    const burger = document.querySelector('.burger');
+    const mobileNav = document.getElementById('main-nav-mobile');
+    if (burger && mobileNav) {
+      burger.addEventListener('click', () => {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!expanded));
+        mobileNav.hidden = expanded;
+      });
+    }
+    document.querySelectorAll('.bento-card, .metric-card, .rail__card').forEach((el, i) => {
+      el.style.animationDelay = (i * 0.07) + 's';
+      el.classList.add('fade-in');
+    });
+  </script>
+
 </body>
 </html>
