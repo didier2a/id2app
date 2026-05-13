@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:57:23.126Z",
+  "last_updated_at": "2026-05-13T08:58:10.925Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -250,6 +250,19 @@
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": null,
       "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/media-manifest.json",
+      "action": "update",
+      "file_sha": "47b544979b4607d7c20feaf5c66b43f52e9082ef",
+      "commit_sha": "574c6303977d56d8ccad3aa08b94c3542e81aad8",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/media-manifest.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/574c6303977d56d8ccad3aa08b94c3542e81aad8",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
     }
   ],
   "repaired_files": [],
@@ -320,10 +333,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/script.js",
+  "last_successful_file": "porto-flow-site/media-manifest.json",
   "last_failed_file": "porto-flow-site/styles.css",
   "completed_count": 8,
-  "updated_count": 6,
+  "updated_count": 7,
   "failed_count": 3,
   "skipped_count": 0
 }
