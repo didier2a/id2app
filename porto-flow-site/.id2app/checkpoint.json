@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:41:04.918Z",
+  "last_updated_at": "2026-05-13T07:42:32.044Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -23,7 +23,9 @@
     "porto-flow-site/media-manifest.json",
     "porto-flow-site/assets/images/README.md"
   ],
-  "completed_files": [],
+  "completed_files": [
+    "porto-flow-site/experience.html"
+  ],
   "failed_files": [
     {
       "file_path": "porto-flow-site/index.html",
@@ -115,8 +117,24 @@
   ],
   "skipped_files": [],
   "protected_files": [],
-  "created_files": [],
-  "updated_files": [],
+  "created_files": [
+    "porto-flow-site/experience.html"
+  ],
+  "updated_files": [
+    {
+      "file_path": "porto-flow-site/experience.html",
+      "action": "create",
+      "file_sha": "f1604deedf5aa1e5e5d16bc4ee738edfa4537115",
+      "commit_sha": "4022254b3d266177f07e413019cf7417cc96fda7",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/experience.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/4022254b3d266177f07e413019cf7417cc96fda7",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    }
+  ],
   "repaired_files": [],
   "warnings": [],
   "execution_plan": {
@@ -186,10 +204,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": null,
+  "last_successful_file": "porto-flow-site/experience.html",
   "last_failed_file": "porto-flow-site/territoire.html",
-  "completed_count": 0,
-  "updated_count": 0,
+  "completed_count": 1,
+  "updated_count": 1,
   "failed_count": 2,
   "skipped_count": 0
 }
