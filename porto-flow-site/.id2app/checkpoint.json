@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:36:57.538Z",
+  "last_updated_at": "2026-05-13T07:41:04.918Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -68,6 +68,49 @@
         "recommended_prompt_addendum": "Le fichier HTML est incomplet. Reprends la génération à partir de la fin du contenu fourni, complète la section en cours, ajoute les sections manquantes (notamment le footer homogène), et assure-toi que le HTML est valide et correctement fermé avec `</body>` et `</html>`. N'oublie pas d'inclure le lien vers `script.js` avant la fermeture de `</body>`."
       },
       "at": "2026-05-13T07:36:57.493Z"
+    },
+    {
+      "file_path": "porto-flow-site/territoire.html",
+      "action": "repair",
+      "reason": "parse_failed",
+      "parse_warnings": [
+        "repair_missing_end_content_marker",
+        "repair_missing_file_end_marker",
+        "repair_empty_or_too_short_content"
+      ],
+      "validation_errors": [
+        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
+        "content_too_short",
+        "html_open_missing",
+        "html_close_missing",
+        "head_missing",
+        "body_missing",
+        "charset_missing",
+        "viewport_missing",
+        "title_missing"
+      ],
+      "validation_warnings": [
+        "meta_description_missing",
+        "h1_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "parse",
+        "root_cause": "Le fichier HTML est tronqué, manquant la fin de la structure HTML et les marqueurs de fin de contenu et de fichier ID2App.",
+        "repair_strategy": "Compléter la structure HTML de la page 'territoire.html' en ajoutant les sections manquantes (notamment le reste de la section 'maquis-relief', le footer, le header uniforme si non présent, et les inclusions de scripts), puis s'assurer que le fichier se termine correctement avec les marqueurs '__ID2APP_END_CONTENT__' et '__ID2APP_FILE_END__'.",
+        "constraints": [
+          "Maintenir les styles CSS existants et la structure des sections déjà présentes.",
+          "Assurer l'uniformité du header et du footer avec le reste du site.",
+          "Vérifier l'inclusion correcte de 'styles.css' et 'script.js' avec des liens relatifs."
+        ],
+        "must_not_change": [
+          "Les styles CSS déjà définis pour les sections existantes.",
+          "La structure de base des sections 'territoire-hero', 'galerie-territoire', 'deux-rythmes', 'plages-littoral'."
+        ],
+        "recommended_prompt_addendum": "Assure-toi de compléter intégralement la page HTML, en incluant toutes les sections demandées dans l'instruction initiale, et de terminer le fichier avec les marqueurs '__ID2APP_END_CONTENT__' et '__ID2APP_FILE_END__'."
+      },
+      "at": "2026-05-13T07:41:04.881Z"
     }
   ],
   "skipped_files": [],
@@ -144,9 +187,9 @@
     "gemini_manifest_audit": {}
   },
   "last_successful_file": null,
-  "last_failed_file": "porto-flow-site/index.html",
+  "last_failed_file": "porto-flow-site/territoire.html",
   "completed_count": 0,
   "updated_count": 0,
-  "failed_count": 1,
+  "failed_count": 2,
   "skipped_count": 0
 }
