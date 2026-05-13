@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expérience – PortoFlow, copilote intelligent du territoire</title>
+  <meta name="description" content="Découvrez l'expérience PortoFlow : assistant intelligent, parcours utilisateur, carte interactive, recommandations locales et réponse contextuelle pour Porto-Vecchio et la Corse-du-Sud.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="PortoFlow – Accueil">
+        <span class="logo-name">PortoFlow</span>
+        <span class="logo-tagline">Le copilote intelligent du territoire</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html" aria-current="page">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-cta header-cta">Contact</a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="main-nav-mobile" aria-label="Navigation mobile" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="territoire.html">Territoire</a></li>
+        <li><a href="experience.html" aria-current="page">Expérience</a></li>
+        <li><a href="ecosysteme.html">Écosystème</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO EXPERIENCE -->
+    <section class="hero hero-experience" aria-labelledby="hero-title">
+      <div class="hero-image-slot">
+        <img
+          src="assets/images/plage-palombaggia.jpg"
+          alt="Plage et littoral emblématique autour de Porto-Vecchio"
+          class="hero-img"
+          loading="eager"
+          onerror="this.style.display='none'"
+        >
+        <div class="hero-image-fallback" aria-hidden="true"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Expérience utilisateur</p>
+        <h1 id="hero-title">Votre territoire, à portée de main</h1>
+        <p class="hero-lead">PortoFlow accompagne chaque habitant, visiteur et professionnel avec un assistant intelligent, des recommandations contextuelles et une lecture claire du territoire en temps réel.</p>
+        <div class="hero-actions">
+          <a href="#parcours" class="btn btn-primary">Découvrir le parcours</a>
+          <a href="#assistant" class="btn btn-secondary">L'assistant intelligent</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO EDITORIALE -->
+    <section class="section section-intro" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <h2 id="intro-title">Une expérience pensée pour le territoire</h2>
+            <p>PortoFlow n'est pas une application de plus. C'est un copilote territorial conçu pour répondre aux besoins réels des habitants, des visiteurs et des professionnels de Porto-Vecchio et de la Corse-du-Sud.</p>
+            <p>En haute saison comme hors saison, l'expérience s'adapte : informations de mobilité, recommandations locales, alertes contextuelles, accès aux services et lecture intelligente des flux du territoire.</p>
+          </div>
+          <div class="intro-stats">
+            <div class="stat-card glass">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Profils utilisateurs</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Assistant disponible</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Local et contextuel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARCOURS UTILISATEUR -->
+    <section class="section section-parcours bg-light" id="parcours" aria-labelledby="parcours-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="parcours-title">Trois parcours, une seule plateforme</h2>
+          <p class="section-lead">Chaque profil dispose d'un accès adapté à ses besoins réels sur le territoire.</p>
+        </div>
+        <div class="parcours-grid">
+
+          <article class="parcours-card glass" aria-labelledby="parcours-habitant">
+            <div class="parcours-icon" aria-hidden="true">🏡</div>
+            <h3 id="parcours-habitant">Habitant</h3>
+            <p>Accès rapide aux services locaux, alertes de circulation, événements de proximité, parkings disponibles et informations municipales en temps réel.</p>
+            <ul class="parcours-list">
+              <li>Alertes trafic et routes</li>
+              <li>Agenda local et événements</li>
+              <li>Services municipaux</li>
+              <li>Météo et conditions locales</li>
+            </ul>
+          </article>
+
+          <article class="parcours-card glass parcours-card--featured" aria-labelledby="parcours-visiteur">
+            <div class="parcours-icon" aria-hidden="true">🧭</div>
+            <h3 id="parcours-visiteur">Visiteur</h3>
+            <p>Orientation intelligente, recommandations de plages, restaurants, activités et hébergements locaux, avec gestion des flux en haute saison.</p>
+            <ul class="parcours-list">
+              <li>Carte interactive du territoire</li>
+              <li>Recommandations personnalisées</li>
+              <li>Parkings et accès plages</li>
+              <li>Itinéraires et mobilité douce</li>
+            </ul>
+          </article>
+
+          <article class="parcours-card glass" aria-labelledby="parcours-pro">
+            <div class="parcours-icon" aria-hidden="true">💼</div>
+            <h3 id="parcours-pro">Professionnel</h3>
+            <p>Visibilité sur la plateforme, accès aux données de fréquentation, outils de communication locale et intégration dans l'écosystème territorial.</p>
+            <ul class="parcours-list">
+              <li>Tableau de bord partenaire</li>
+              <li>Données de fréquentation</li>
+              <li>Mise en avant locale</li>
+              <li>Alertes et opportunités</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSISTANT INTELLIGENT -->
+    <section class="section section-assistant" id="assistant" aria-labelledby="assistant-title">
+      <div class="container">
+        <div class="assistant-layout">
+          <div class="assistant-content">
+            <h2 id="assistant-title">L'assistant intelligent PortoFlow</h2>
+            <p class="section-lead">Un interlocuteur disponible en permanence, capable de comprendre le contexte local et de répondre avec précision aux questions du quotidien territorial.</p>
+            <div class="assistant-features">
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🗣️</span>
+                <div>
+                  <h3>Réponse contextuelle</h3>
+                  <p>L'assistant comprend la saison, la localisation et le profil pour adapter chaque réponse au contexte réel du territoire.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🗺️</span>
+                <div>
+                  <h3>Connaissance locale</h3>
+                  <p>Alimenté par les données du territoire : plages, routes, commerces, événements, parkings, météo et services publics.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <h3>Disponibilité permanente</h3>
+                  <p>Accessible 24h/24, 7j/7, en haute saison comme hors saison, pour les habitants, visiteurs et professionnels.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🔒</span>
+                <div>
+                  <h3>Données maîtrisées</h3>
+                  <p>Aucune donnée personnelle collectée sans consentement. Architecture respectueuse de la vie privée et des réglementations en vigueur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assistant-demo glass" aria-label="Démonstration de l'assistant PortoFlow">
+            <div class="demo-header">
+              <span class="demo-dot" aria-hidden="true"></span>
+              <span class="demo-title">Assistant PortoFlow</span>
+              <span class="demo-status" aria-label="En ligne">● En ligne</span>
+            </div>
+            <div class="demo-messages" id="demo-messages" aria-live="polite" aria-atomic="false">
+              <div class="demo-msg demo-msg--bot">
+                <p>Bonjour ! Je suis votre assistant territorial PortoFlow. Comment puis-je vous aider aujourd'hui ?</p>
+              </div>
+              <div class="demo-msg demo-msg--user">
+                <p>Quelle plage est la moins fréquentée ce matin ?</p>
+              </div>
+              <div class="demo-msg demo-msg--bot">
+                <p>D'après les données de fréquentation en temps réel, la plage de Cala Rossa présente actuellement une affluence modérée. Palombaggia est à forte fréquentation. Je vous recommande également Tamaricciu pour une expérience plus tranquille ce matin.</p>
+              </div>
+              <div class="demo-msg demo-msg--user">
+                <p>Y a-t-il un parking disponible à proximité ?</p>
+              </div>
+              <div class="demo-msg demo-msg--bot demo-msg--typing" id="demo-typing" aria-label="L'assistant est en train de répondre">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="demo-input-row" aria-label="Zone de saisie simulée">
+              <input type="text" class="demo-input" placeholder="Posez votre question…" aria-label="Question à l'assistant (démonstration)" readonly>
+              <button class="demo-send btn btn-primary" aria-label="Envoyer">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTE INTERACTIVE -->
+    <section class="section section-carte bg-light" aria-labelledby="carte-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="carte-title">Carte du territoire</h2>
+          <p class="section-lead">Une lecture géographique claire des points d'intérêt, des flux et des services disponibles sur Porto-Vecchio et la Corse-du-Sud.</p>
+        </div>
+        <div class="carte-wrapper glass" role="img" aria-label="Carte simulée du territoire de Porto-Vecchio">
+          <div class="carte-simulee" id="carte-simulee">
+            <div class="carte-bg" aria-hidden="true"></div>
+            <div class="carte-points" aria-hidden="true">
+              <div class="carte-point carte-point--port" style="left:52%;top:38%;" title="Port de Porto-Vecchio">
+                <span class="point-dot"></span>
+                <span class="point-label">Port</span>
+              </div>
+              <div class="carte-point carte-point--plage" style="left:68%;top:62%;" title="Palombaggia">
+                <span class="point-dot"></span>
+                <span class="point-label">Palombaggia</span>
+              </div>
+              <div class="carte-point carte-point--plage" style="left:74%;top:50%;" title="Cala Rossa">
+                <span class="point-dot"></span>
+                <span class="point-label">Cala Rossa</span>
+              </div>
+              <div class="carte-point carte-point--parking" style="left:48%;top:44%;" title="Parking centre">
+                <span class="point-dot"></span>
+                <span class="point-label">Parking</span>
+              </div>
+              <div class="carte-point carte-point--ville" style="left:50%;top:35%;" title="Centre-ville">
+                <span class="point-dot"></span>
+                <span class="point-label">Centre-ville</span>
+              </div>
+              <div class="carte-point carte-point--maquis" style="left:30%;top:28%;" title="Arrière-pays">
+                <span class="point-dot"></span>
+                <span class="point-label">Arrière-pays</span>
+              </div>
+            </div>
+            <div class="carte-legende" aria-label="Légende de la carte">
+              <span class="legende-item legende-port">Port</span>
+              <span class="legende-item legende-plage">Plage</span>
+              <span class="legende-item legende-parking">Parking</span>
+              <span class="legende-item legende-ville">Centre</span>
+            </div>
+          </div>
+        </div>
+        <p class="carte-note">Carte illustrative. L'intégration cartographique complète est disponible dans le dashboard territorial.</p>
+      </div>
+    </section>
+
+    <!-- RECOMMANDATIONS LOCALES -->
+    <section class="section section-recommandations" aria-labelledby="reco-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="reco-title">Recommandations locales</h2>
+          <p class="section-lead">PortoFlow valorise les acteurs du territoire et oriente les utilisateurs vers les meilleures expériences locales.</p>
+        </div>
+        <div class="reco-grid">
+
+          <article class="reco-card glass" aria-labelledby="reco-plages">
+            <div class="reco-img-slot">
+              <img
+                src="assets/images/plage-palombaggia.jpg"
+                alt="Plage et littoral emblématique autour de Porto-Vecchio"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+              <div class="reco-img-fallback reco-img-fallback--plage" aria-hidden="true"></div>
+            </div>
+            <div class="reco-body">
+              <h3 id="reco-plages">Plages et littoral</h3>
+              <p>Palombaggia, Tamaricciu, Cala Rossa, Santa Giulia… PortoFlow guide vers les plages les moins fréquentées selon la saison et l'heure.</p>
+              <a href="territoire.html" class="btn btn-outline btn-sm">Voir le territoire</a>
+            </div>
+          </article>
+
+          <article class="reco-card glass" aria-labelledby="reco-mobilite">
+            <div class="reco-img-slot reco-img-slot--icon" aria-hidden="true">
+              <div class="reco-icon-bg">🚗</div>
+            </div>
+            <div class="reco-body">
+              <h3 id="reco-mobilite">Mobilité et accès</h3>
+              <p>Parkings disponibles, routes alternatives, navettes et mobilité douce : PortoFlow optimise les déplacements sur le territoire en temps réel.</p>
+              <a href="dashboard.html" class="btn btn-outline btn-sm">Voir le dashboard</a>
+            </div>
+          </article>
+
+          <article class="reco-card glass" aria-labelledby="reco-acteurs">
+            <div class="reco-img-slot reco-img-slot--icon" aria-hidden="true">
+              <div class="reco-icon-bg">🍽️</div>
+            </div>
+            <div class="reco-body">
+              <h3 id="reco-acteurs">Acteurs locaux</h3>
+              <p>Restaurants, hôtels, commerces, artisans et producteurs locaux : l'écosystème territorial mis en valeur pour chaque utilisateur.</p>
+              <a href="ecosysteme.html" class="btn btn-outline btn-sm">Voir l'écosystème</a>
+            </div>
+          </article>
+
+          <article class="reco-card glass" aria-labelledby="reco-evenements">
+            <div class="reco-img-slot reco-img-slot--icon" aria-hidden="true">
+              <div class="reco-icon-bg">🎉</div>
+            </div>
+            <div class="reco-body">
+              <h3 id="reco-evenements">Événements et agenda</h3>
+              <p>Marchés, festivals, animations culturelles et sportives : PortoFlow agrège l'agenda local et le diffuse en temps réel aux utilisateurs.</p>
+              <a href="dashboard.html" class="btn btn-outline btn-sm">Voir le dashboard</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REPONSE CONTEXTUELLE -->
+    <section class="section section-contextuel bg-navy" aria-labelledby="ctx-title">
+      <div class="container">
+        <div class="contextuel-layout">
+          <div class="contextuel-content">
+            <h2 id="ctx-title">Une réponse adaptée à chaque moment</h2>
+            <p>PortoFlow comprend le contexte territorial : saison, météo, événements, flux de circulation et fréquentation des sites. Chaque réponse est calibrée pour être utile ici et maintenant.</p>
+            <div class="contextuel-scenarios">
+              <div class="scenario glass-dark">
+                <span class="scenario-icon" aria-hidden="true">☀️</span>
+                <div>
+                  <strong>Haute saison</strong>
+                  <p>Gestion des flux, alternatives aux sites saturés, parkings relais, navettes et itinéraires de délestage.</p>
+                </div>
+              </div>
+              <div class="scenario glass-dark">
+                <span class="scenario-icon" aria-hidden="true">🍂</span>
+                <div>
+                  <strong>Hors saison</strong>
+                  <p>Mise en valeur des acteurs locaux, agenda culturel, randonnées, arrière-pays et vie de territoire authentique.</p>
+                </div>
+              </div>
+              <div class="scenario glass-dark">
+                <span class="scenario-icon" aria-hidden="true">⚠️</span>
+                <div>
+                  <strong>Alertes et urgences</strong>
+                  <p>Diffusion rapide d'alertes météo, fermetures de routes, restrictions d'accès et informations de sécurité.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contextuel-visual" aria-hidden="true">
+            <div class="ctx-badge glass-dark">
+              <span class="ctx-badge-icon">📍</span>
+              <span>Porto-Vecchio</span>
+            </div>
+            <div class="ctx-badge glass-dark">
+              <span class="ctx-badge-icon">🌡️</span>
+              <span>28°C · Ensoleillé</span>
+            </div>
+            <div class="ctx-badge glass-dark">
+              <span class="ctx-badge-icon">🚦</span>
+              <span>Trafic modéré</span>
+            </div>
+            <div class="ctx-badge glass-dark">
+              <span class="ctx-badge-icon">🏖️</span>
+              <span>Palombaggia : forte affluence</span>
+            </div>
+            <div class="ctx-badge glass-dark">
+              <span class="ctx-badge-icon">🅿️</span>
+              <span>Parking Citadelle : 12 places</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section-cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-block glass">
+          <h2 id="cta-title">Rejoindre l'expérience PortoFlow</h2>
+          <p>Collectivités, professionnels, partenaires : intégrez PortoFlow dans votre stratégie territoriale et offrez une expérience de qualité à vos usagers.</p>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+            <a href="ecosysteme.html" class="btn btn-secondary">Voir l'écosystème</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <span class="logo-name">PortoFlow</span>
+        <span class="logo-tagline">Le copilote intelligent du territoire</span>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html" aria-current="page">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© Porto-Vecchio / Corse-du-Sud</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
