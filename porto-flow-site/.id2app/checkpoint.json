@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:43:54.037Z",
+  "last_updated_at": "2026-05-13T08:45:38.018Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -125,6 +125,19 @@
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": null,
       "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/dashboard.html",
+      "action": "update",
+      "file_sha": "74ba5bb60d02d7ef6f5f471aed9e7db4be9ce736",
+      "commit_sha": "5c0bedf7023eb608dbe4cbf303ee3713a930989b",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/dashboard.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/5c0bedf7023eb608dbe4cbf303ee3713a930989b",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
     }
   ],
   "repaired_files": [],
@@ -195,10 +208,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/ecosysteme.html",
+  "last_successful_file": "porto-flow-site/dashboard.html",
   "last_failed_file": "porto-flow-site/index.html",
   "completed_count": 8,
-  "updated_count": 3,
+  "updated_count": 4,
   "failed_count": 1,
   "skipped_count": 0
 }
