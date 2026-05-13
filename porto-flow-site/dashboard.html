@@ -4,91 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Territorial – PortoFlow</title>
-  <meta name="description" content="Dashboard territorial simulé PortoFlow : trafic, parkings, plages, météo, événements, fréquentation et alertes pour Porto-Vecchio et Corse-du-Sud.">
+  <meta name="description" content="Dashboard territorial PortoFlow : trafic, parkings, plages, météo et indicateurs pour Porto-Vecchio et Corse-du-Sud.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* ── DASHBOARD LOCAL STYLES ── */
-    .db-hero{display:grid;grid-template-columns:60% 40%;min-height:420px;background:#0a1628;overflow:hidden}
-    .db-hero-left{padding:56px 48px;display:flex;flex-direction:column;justify-content:center;gap:20px}
-    .db-hero-right{position:relative;background:linear-gradient(135deg,#0d2244 0%,#1a3a6b 60%,#0e4d6e 100%);display:flex;align-items:center;justify-content:center}
-    .db-hero-right img{width:100%;height:100%;object-fit:cover;opacity:.55;position:absolute;inset:0}
-    .db-hero-visual{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:32px}
-    .db-mini-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:10px;padding:16px 14px;text-align:center;backdrop-filter:blur(6px)}
-    .db-mini-card .val{font-size:1.5rem;font-weight:700;color:#7dd3fc;line-height:1}
-    .db-mini-card .lbl{font-size:.7rem;color:#94a3b8;margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
-    .db-kicker{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#38bdf8}
-    .db-hero-title{font-size:2.2rem;font-weight:800;color:#f1f5f9;line-height:1.15;margin:0}
-    .db-hero-lead{font-size:.95rem;color:#94a3b8;max-width:480px;line-height:1.6;margin:0}
-    .db-chips{display:flex;flex-wrap:wrap;gap:8px}
-    .db-chip{font-size:.72rem;padding:4px 12px;border-radius:20px;background:rgba(56,189,248,.12);color:#38bdf8;border:1px solid rgba(56,189,248,.25)}
-    .db-chip--live{background:rgba(34,197,94,.12);color:#4ade80;border-color:rgba(34,197,94,.25)}
-
-    .alert-strip{background:#7c2d12;border-left:4px solid #f97316;padding:14px 24px;display:flex;align-items:center;gap:12px}
-    .alert-strip span{color:#fed7aa;font-size:.88rem;flex:1}
-    .alert-strip button{background:none;border:none;color:#fed7aa;cursor:pointer;font-size:1rem;padding:0 4px}
-
-    .kpi-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0}
-    .kpi-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px 18px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-    .kpi-icon{font-size:1.6rem;line-height:1}
-    .kpi-label{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:#64748b;margin:0}
-    .kpi-value{font-size:1.45rem;font-weight:800;color:#0f172a;line-height:1}
-    .kpi-detail{font-size:.75rem;color:#94a3b8}
-    .kpi-bar{height:4px;border-radius:2px;margin-top:4px}
-    .kpi-bar--ok{background:#22c55e}.kpi-bar--warn{background:#f59e0b}.kpi-bar--alert{background:#ef4444}
-
-    .db-panel{background:#fff;border:1px solid #e2e8f0;border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06)}
-    .db-panel-header{background:#0a1628;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
-    .db-panel-header h2{color:#f1f5f9;font-size:1rem;font-weight:700;margin:0}
-    .db-panel-header .db-badge{font-size:.68rem;padding:3px 10px;border-radius:12px;background:rgba(56,189,248,.18);color:#38bdf8;border:1px solid rgba(56,189,248,.3)}
-    .db-panel-body{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .db-row-item{display:flex;align-items:center;gap:14px;padding:14px;background:#f8fafc;border-radius:10px;border:1px solid #f1f5f9}
-    .db-row-icon{font-size:1.4rem;width:40px;text-align:center}
-    .db-row-title{font-size:.82rem;font-weight:700;color:#0f172a}
-    .db-row-sub{font-size:.73rem;color:#64748b;margin-top:2px}
-    .db-row-badge{margin-left:auto;font-size:.68rem;padding:3px 9px;border-radius:10px;font-weight:600;white-space:nowrap}
-    .badge-ok{background:#dcfce7;color:#16a34a}.badge-warn{background:#fef9c3;color:#a16207}.badge-alert{background:#fee2e2;color:#dc2626}
-
-    .callout-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-    .callout{border-radius:14px;padding:28px 24px;display:flex;flex-direction:column;gap:10px}
-    .callout--blue{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #bfdbfe}
-    .callout--green{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #bbf7d0}
-    .callout-icon{font-size:1.8rem}
-    .callout-title{font-size:1rem;font-weight:700;color:#0f172a;margin:0}
-    .callout-text{font-size:.83rem;color:#475569;line-height:1.55;margin:0}
-    .callout-metric{font-size:1.6rem;font-weight:800;color:#1d4ed8}
-    .callout--green .callout-metric{color:#15803d}
-
-    .metrics-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .metric-block{background:#0a1628;border-radius:12px;padding:24px 20px;text-align:center}
-    .metric-block .m-val{font-size:2rem;font-weight:800;color:#38bdf8;line-height:1}
-    .metric-block .m-lbl{font-size:.75rem;color:#94a3b8;margin-top:6px;text-transform:uppercase;letter-spacing:.07em}
-
-    .notice-strip{background:#f0f9ff;border:1px solid #bae6fd;border-radius:12px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start}
-    .notice-strip .ni{font-size:1.4rem;margin-top:2px}
-    .notice-strip h3{font-size:.9rem;font-weight:700;color:#0369a1;margin:0 0 4px}
-    .notice-strip p{font-size:.8rem;color:#0c4a6e;margin:0;line-height:1.5}
-
-    .cta-band{background:linear-gradient(135deg,#0a1628 0%,#1e3a5f 100%);padding:56px 0}
-    .cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-    .cta-band-title{font-size:1.5rem;font-weight:800;color:#f1f5f9;margin:0 0 8px}
-    .cta-band-sub{font-size:.88rem;color:#94a3b8;margin:0;max-width:480px}
-    .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-
-    @media(max-width:900px){
-      .db-hero{grid-template-columns:1fr}.db-hero-right{display:none}
-      .kpi-rail{grid-template-columns:1fr 1fr}
-      .db-panel-body{grid-template-columns:1fr}
-      .callout-grid{grid-template-columns:1fr}
-      .metrics-strip{grid-template-columns:1fr 1fr}
-      .cta-band-inner{flex-direction:column;text-align:center}
-    }
-    @media(max-width:540px){
-      .db-hero-left{padding:36px 20px}
-      .db-hero-title{font-size:1.6rem}
-      .kpi-rail{grid-template-columns:1fr}
-      .metrics-strip{grid-template-columns:1fr}
-    }
-  </style>
 </head>
 <body>
 
@@ -128,175 +45,153 @@
 
   <main id="main-content">
 
-    <!-- HERO SPLIT 60/40 -->
-    <section class="db-hero" aria-labelledby="db-hero-title">
-      <div class="db-hero-left">
-        <div class="db-kicker">Tableau de bord territorial</div>
-        <h1 id="db-hero-title" class="db-hero-title">Dashboard PortoFlow</h1>
-        <p class="db-hero-lead">Visualisez l'état du territoire en un coup d'œil : trafic, parkings, plages, météo et événements.</p>
-        <div class="db-chips">
-          <span class="db-chip db-chip--live">● Données illustratives</span>
-          <span class="db-chip">Porto-Vecchio</span>
-          <span class="db-chip">Corse-du-Sud</span>
+    <section class="hero-split" aria-labelledby="db-hero-title">
+      <div class="hero-split-text">
+        <span class="section-kicker">Tableau de bord territorial</span>
+        <h1 id="db-hero-title" class="hero-title">Dashboard PortoFlow</h1>
+        <p class="hero-lead">Visualisez l'état du territoire en temps simulé : trafic, parkings, plages et événements.</p>
+        <div class="tag-row">
+          <span class="tag tag--live">● Données illustratives</span>
+          <span class="tag">Porto-Vecchio</span>
+          <span class="tag">Corse-du-Sud</span>
         </div>
       </div>
-      <div class="db-hero-right" aria-hidden="true">
+      <div class="hero-split-media" aria-hidden="true">
         <img src="assets/images/dashboard-local.jpg" alt="" loading="eager" onerror="this.style.display='none'">
-        <div class="db-hero-visual">
-          <div class="db-mini-card"><div class="val">4/7</div><div class="lbl">Parkings libres</div></div>
-          <div class="db-mini-card"><div class="val">28°C</div><div class="lbl">Température</div></div>
-          <div class="db-mini-card"><div class="val">Modéré</div><div class="lbl">Trafic RN198</div></div>
-          <div class="db-mini-card"><div class="val">3</div><div class="lbl">Événements</div></div>
-        </div>
       </div>
     </section>
 
-    <!-- ALERTE -->
     <div class="alert-strip" role="alert" aria-live="polite" id="alert-strip">
       <span aria-hidden="true">⚠</span>
-      <span>Forte affluence prévue ce week-end sur les plages du Sud — Anticipez vos déplacements et privilégiez les parkings périphériques.</span>
-      <button aria-label="Fermer l'alerte" onclick="document.getElementById('alert-strip').style.display='none'">✕</button>
+      <span>Forte affluence prévue ce week-end sur les plages du Sud — Anticipez vos déplacements.</span>
+      <button aria-label="Fermer l'alerte" onclick="document.getElementById('alert-strip').hidden=true">✕</button>
     </div>
 
-    <!-- KPI RAIL -->
     <section class="section-block" aria-labelledby="kpi-title">
       <div class="container">
         <div class="section-intro">
           <span class="section-kicker">Indicateurs en temps simulé</span>
           <h2 id="kpi-title" class="section-title">État du territoire</h2>
         </div>
-        <div class="kpi-rail">
-          <article class="kpi-card" aria-label="Trafic routier">
-            <div class="kpi-icon">🚗</div>
-            <div class="kpi-label">Trafic routier</div>
-            <div class="kpi-value">Modéré</div>
-            <div class="kpi-detail">RN198 fluide · D468 chargée</div>
-            <div class="kpi-bar kpi-bar--warn"></div>
+        <div class="bento-grid bento-grid--4">
+          <article class="card card--metric" aria-label="Trafic routier">
+            <div class="card-icon">🚗</div>
+            <div class="card-label">Trafic routier</div>
+            <div class="card-value">Modéré</div>
+            <div class="card-detail">RN198 fluide · D468 chargée</div>
+            <div class="progress-bar progress-bar--warn"></div>
           </article>
-          <article class="kpi-card" aria-label="Parkings">
-            <div class="kpi-icon">🅿</div>
-            <div class="kpi-label">Parkings</div>
-            <div class="kpi-value">4 / 7 libres</div>
-            <div class="kpi-detail">Centre saturé · Plages libres</div>
-            <div class="kpi-bar kpi-bar--ok"></div>
+          <article class="card card--metric" aria-label="Parkings">
+            <div class="card-icon">🅿</div>
+            <div class="card-label">Parkings</div>
+            <div class="card-value">4 / 7 libres</div>
+            <div class="card-detail">Centre saturé · Plages libres</div>
+            <div class="progress-bar progress-bar--ok"></div>
           </article>
-          <article class="kpi-card" aria-label="Plages">
-            <div class="kpi-icon">🏖</div>
-            <div class="kpi-label">Plages</div>
-            <div class="kpi-value">Forte affluence</div>
-            <div class="kpi-detail">Palombaggia · Santa Giulia</div>
-            <div class="kpi-bar kpi-bar--alert"></div>
+          <article class="card card--metric" aria-label="Plages">
+            <div class="card-icon">🏖</div>
+            <div class="card-label">Plages</div>
+            <div class="card-value">Forte affluence</div>
+            <div class="card-detail">Palombaggia · Santa Giulia</div>
+            <div class="progress-bar progress-bar--alert"></div>
           </article>
-          <article class="kpi-card" aria-label="Météo">
-            <div class="kpi-icon">☀️</div>
-            <div class="kpi-label">Météo locale</div>
-            <div class="kpi-value">28 °C</div>
-            <div class="kpi-detail">Ensoleillé · Vent faible</div>
-            <div class="kpi-bar kpi-bar--ok"></div>
+          <article class="card card--metric" aria-label="Météo locale">
+            <div class="card-icon">☀️</div>
+            <div class="card-label">Météo locale</div>
+            <div class="card-value">28 °C</div>
+            <div class="card-detail">Ensoleillé · Vent faible</div>
+            <div class="progress-bar progress-bar--ok"></div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- DASHBOARD PANEL -->
-    <section class="section-block" aria-labelledby="panel-title">
+    <section class="section-block section-block--alt" aria-labelledby="rails-title">
       <div class="container">
-        <div class="db-panel">
-          <div class="db-panel-header">
-            <h2 id="panel-title">Flux & Services en cours</h2>
-            <span class="db-badge">Simulé · V4.3</span>
+        <div class="section-intro">
+          <span class="section-kicker">Tendances saisonnières</span>
+          <h2 id="rails-title" class="section-title">Lecture territoriale</h2>
+        </div>
+        <div class="content-rails">
+          <div class="rail-item">
+            <span class="rail-icon">📈</span>
+            <div>
+              <strong>Fréquentation estivale</strong>
+              <p>+18 % de visiteurs estimés vs. saison précédente. Pic attendu mi-août sur le littoral sud.</p>
+            </div>
           </div>
-          <div class="db-panel-body">
-            <div class="db-row-item">
-              <div class="db-row-icon">🚌</div>
-              <div><div class="db-row-title">Navettes périphériques</div><div class="db-row-sub">3 lignes actives · Fréquence 15 min</div></div>
-              <span class="db-row-badge badge-ok">Actif</span>
+          <div class="rail-item">
+            <span class="rail-icon">🗓</span>
+            <div>
+              <strong>Événements actifs</strong>
+              <p>3 manifestations en cours cette semaine. Coordination mobilité activée pour les accès centre-ville.</p>
             </div>
-            <div class="db-row-item">
-              <div class="db-row-icon">🎉</div>
-              <div><div class="db-row-title">Événements du jour</div><div class="db-row-sub">Marché artisanal · Concert port</div></div>
-              <span class="db-row-badge badge-warn">3 actifs</span>
-            </div>
-            <div class="db-row-item">
-              <div class="db-row-icon">🌊</div>
-              <div><div class="db-row-title">Qualité des eaux</div><div class="db-row-sub">Toutes plages conformes</div></div>
-              <span class="db-row-badge badge-ok">Conforme</span>
-            </div>
-            <div class="db-row-item">
-              <div class="db-row-icon">🔥</div>
-              <div><div class="db-row-title">Risque incendie</div><div class="db-row-sub">Niveau modéré · Vigilance orange</div></div>
-              <span class="db-row-badge badge-warn">Modéré</span>
-            </div>
-            <div class="db-row-item">
-              <div class="db-row-icon">⚡</div>
-              <div><div class="db-row-title">Réseau électrique</div><div class="db-row-sub">Aucune coupure signalée</div></div>
-              <span class="db-row-badge badge-ok">Normal</span>
-            </div>
-            <div class="db-row-item">
-              <div class="db-row-icon">🚑</div>
-              <div><div class="db-row-title">Services d'urgence</div><div class="db-row-sub">Disponibilité nominale</div></div>
-              <span class="db-row-badge badge-ok">Opérationnel</span>
+          </div>
+          <div class="rail-item">
+            <span class="rail-icon">🌊</span>
+            <div>
+              <strong>Qualité des eaux</strong>
+              <p>Toutes les plages surveillées affichent une qualité excellente. Aucune restriction en vigueur.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CALLOUTS -->
-    <section class="section-block" aria-labelledby="callout-title">
+    <section class="section-block" aria-label="Intelligence collective">
       <div class="container">
-        <span class="section-kicker">Analyse & Recommandations</span>
-        <h2 id="callout-title" class="section-title" style="margin-bottom:24px">Points d'attention</h2>
-        <div class="callout-grid">
-          <div class="callout callout--blue">
-            <div class="callout-icon">📊</div>
-            <h3 class="callout-title">Fréquentation en hausse</h3>
-            <p class="callout-text">Les flux touristiques atteignent leur pic saisonnier. Les parkings périphériques absorbent la demande.</p>
-            <div class="callout-metric">+18 %</div>
-            <p class="callout-text" style="font-size:.75rem;color:#3b82f6">vs semaine précédente</p>
-          </div>
-          <div class="callout callout--green">
-            <div class="callout-icon">✅</div>
-            <h3 class="callout-title">Services opérationnels</h3>
-            <p class="callout-text">L'ensemble des services territoriaux fonctionne normalement. Aucune alerte critique active.</p>
-            <div class="callout-metric">6 / 6</div>
-            <p class="callout-text" style="font-size:.75rem;color:#16a34a">services nominaux</p>
+        <div class="callout-panel callout-panel--accent">
+          <div class="callout-icon">🧠</div>
+          <div class="callout-body">
+            <h3 class="callout-title">Copilote intelligent du territoire</h3>
+            <p class="callout-text">PortoFlow agrège les signaux territoriaux pour anticiper les tensions et orienter les décisions. Chaque indicateur alimente une intelligence collective au service des acteurs locaux.</p>
+            <a href="ingenierie.html" class="btn btn-outline">Découvrir l'ingénierie IA</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- METRICS STRIP -->
-    <section class="section-block" aria-label="Métriques clés">
+    <section class="section-block section-block--alt" aria-label="Métriques clés">
       <div class="container">
         <div class="metrics-strip">
-          <div class="metric-block"><div class="m-val">42 000</div><div class="m-lbl">Visiteurs estimés / semaine</div></div>
-          <div class="metric-block"><div class="m-val">3</div><div class="m-lbl">Événements actifs</div></div>
-          <div class="metric-block"><div class="m-val">28 °C</div><div class="m-lbl">Température locale</div></div>
+          <div class="metric-block">
+            <div class="metric-value">42 000</div>
+            <div class="metric-label">Visiteurs estimés / semaine</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value">3</div>
+            <div class="metric-label">Événements actifs</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value">6 / 6</div>
+            <div class="metric-label">Services nominaux</div>
+          </div>
+          <div class="metric-block">
+            <div class="metric-value">28 °C</div>
+            <div class="metric-label">Température locale</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- NOTICE -->
     <section class="section-block" aria-label="Notice données">
       <div class="container">
         <div class="notice-strip">
-          <div class="ni">ℹ</div>
+          <span class="notice-icon">ℹ</span>
           <div>
-            <h3>Données simulées à titre illustratif</h3>
-            <p>Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale. Les données réelles seraient alimentées par les partenaires institutionnels de Porto-Vecchio et Corse-du-Sud.</p>
+            <strong>Données simulées à titre illustratif</strong>
+            <p>Ce dashboard démontre les capacités de PortoFlow en visualisation territoriale. Les données réelles seraient alimentées par les partenaires institutionnels.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
-    <section class="cta-band" aria-labelledby="cta-title">
+    <section class="cta-band" aria-labelledby="cta-db-title">
       <div class="container">
         <div class="cta-band-inner">
           <div>
-            <h2 id="cta-title" class="cta-band-title">Intégrer PortoFlow à votre territoire</h2>
-            <p class="cta-band-sub">Collectivités et partenaires : découvrez comment PortoFlow devient le copilote intelligent de votre territoire.</p>
+            <h2 id="cta-db-title" class="cta-band-title">Intégrer PortoFlow à votre territoire</h2>
+            <p class="cta-band-sub">Collectivités et partenaires : devenez acteurs du copilote intelligent territorial.</p>
           </div>
           <div class="cta-actions">
             <a href="contact.html" class="btn btn-cta">Prendre contact</a>
