@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:46:44.348Z",
+  "last_updated_at": "2026-05-13T07:48:12.182Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -24,7 +24,8 @@
     "porto-flow-site/assets/images/README.md"
   ],
   "completed_files": [
-    "porto-flow-site/experience.html"
+    "porto-flow-site/experience.html",
+    "porto-flow-site/dashboard.html"
   ],
   "failed_files": [
     {
@@ -163,7 +164,8 @@
   "skipped_files": [],
   "protected_files": [],
   "created_files": [
-    "porto-flow-site/experience.html"
+    "porto-flow-site/experience.html",
+    "porto-flow-site/dashboard.html"
   ],
   "updated_files": [
     {
@@ -173,6 +175,19 @@
       "commit_sha": "4022254b3d266177f07e413019cf7417cc96fda7",
       "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/experience.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/4022254b3d266177f07e413019cf7417cc96fda7",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/dashboard.html",
+      "action": "create",
+      "file_sha": "89db377cdd91c7fa8e5e41c477c1f17b65016f15",
+      "commit_sha": "de3f45d4133859e1639d28080f86683ed46e046d",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/dashboard.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/de3f45d4133859e1639d28080f86683ed46e046d",
       "validation_status": "passed",
       "warnings": [],
       "gemini_execution_job_audit": null,
@@ -249,10 +264,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/experience.html",
+  "last_successful_file": "porto-flow-site/dashboard.html",
   "last_failed_file": "porto-flow-site/ecosysteme.html",
-  "completed_count": 1,
-  "updated_count": 1,
+  "completed_count": 2,
+  "updated_count": 2,
   "failed_count": 3,
   "skipped_count": 0
 }
