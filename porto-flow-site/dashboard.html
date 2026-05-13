@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Territorial – PortoFlow</title>
+  <meta name="description" content="Dashboard territorial simulé de PortoFlow : trafic, parkings, plages, météo, événements, fréquentation et alertes en temps réel pour Porto-Vecchio et Corse-du-Sud.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="PortoFlow – Accueil">
+        <span class="logo-name">PortoFlow</span>
+        <span class="logo-tagline">Le copilote intelligent du territoire</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-cta header-cta">Contact</a>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="main-nav-mobile" aria-label="Navigation mobile" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="territoire.html">Territoire</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="ecosysteme.html">Écosystème</a></li>
+        <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO DASHBOARD -->
+    <section class="dashboard-hero" aria-labelledby="dashboard-hero-title">
+      <div class="dashboard-hero-image-wrap">
+        <img
+          src="assets/images/dashboard-local.jpg"
+          alt="Dashboard territorial PortoFlow"
+          class="dashboard-hero-img"
+          onerror="this.style.display='none'"
+          loading="eager"
+        >
+        <div class="dashboard-hero-overlay"></div>
+      </div>
+      <div class="dashboard-hero-content container">
+        <div class="dashboard-hero-badge">Tableau de bord territorial</div>
+        <h1 id="dashboard-hero-title">Dashboard PortoFlow</h1>
+        <p class="dashboard-hero-lead">Visualisez en un coup d'œil l'état du territoire : trafic, parkings, plages, météo, événements et fréquentation. Un outil de pilotage au service des collectivités et des habitants.</p>
+        <div class="dashboard-hero-meta">
+          <span class="meta-chip" id="dash-last-update">Mise à jour simulée</span>
+          <span class="meta-chip meta-chip--live">● Données illustratives</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALERTES -->
+    <section class="dashboard-alerts container" aria-label="Alertes territoriales">
+      <div class="alerts-bar" id="alerts-bar" role="alert" aria-live="polite">
+        <span class="alert-icon">⚠</span>
+        <span class="alert-text" id="alert-text">Forte affluence prévue ce week-end sur les plages du Sud – Anticipez vos déplacements.</span>
+        <button class="alert-close" aria-label="Fermer l'alerte" id="alert-close-btn">✕</button>
+      </div>
+    </section>
+
+    <!-- KPI RAPIDES -->
+    <section class="dashboard-kpis container" aria-labelledby="kpis-title">
+      <h2 id="kpis-title" class="section-title">Indicateurs clés du territoire</h2>
+      <p class="section-subtitle">Synthèse en temps simulé des flux et de l'état des services territoriaux.</p>
+      <div class="kpi-grid">
+
+        <article class="kpi-card kpi-card--traffic" aria-label="Trafic routier">
+          <div class="kpi-icon" aria-hidden="true">🚗</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Trafic routier</h3>
+            <div class="kpi-value" id="kpi-traffic">Modéré</div>
+            <div class="kpi-detail">RN198 fluide · D468 chargée</div>
+          </div>
+          <div class="kpi-status kpi-status--warn" aria-label="Niveau modéré"></div>
+        </article>
+
+        <article class="kpi-card kpi-card--parking" aria-label="Parkings disponibles">
+          <div class="kpi-icon" aria-hidden="true">🅿</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Parkings</h3>
+            <div class="kpi-value" id="kpi-parking">4 / 7 disponibles</div>
+            <div class="kpi-detail">Centre-ville saturé · Plages libres</div>
+          </div>
+          <div class="kpi-status kpi-status--ok" aria-label="Niveau correct"></div>
+        </article>
+
+        <article class="kpi-card kpi-card--beach" aria-label="Fréquentation des plages">
+          <div class="kpi-icon" aria-hidden="true">🏖</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Plages</h3>
+            <div class="kpi-value" id="kpi-beach">Forte affluence</div>
+            <div class="kpi-detail">Palombaggia · Santa Giulia · Rondinara</div>
+          </div>
+          <div class="kpi-status kpi-status--alert" aria-label="Niveau élevé"></div>
+        </article>
+
+        <article class="kpi-card kpi-card--weather" aria-label="Météo locale">
+          <div class="kpi-icon" aria-hidden="true">☀</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Météo</h3>
+            <div class="kpi-value" id="kpi-weather">28 °C · Ensoleillé</div>
+            <div class="kpi-detail">Vent faible · Mer calme</div>
+          </div>
+          <div class="kpi-status kpi-status--ok" aria-label="Conditions favorables"></div>
+        </article>
+
+        <article class="kpi-card kpi-card--events" aria-label="Événements en cours">
+          <div class="kpi-icon" aria-hidden="true">📅</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Événements</h3>
+            <div class="kpi-value" id="kpi-events">3 ce week-end</div>
+            <div class="kpi-detail">Marché · Concert · Fête locale</div>
+          </div>
+          <div class="kpi-status kpi-status--info" aria-label="Informations disponibles"></div>
+        </article>
+
+        <article class="kpi-card kpi-card--visitors" aria-label="Fréquentation globale">
+          <div class="kpi-icon" aria-hidden="true">👥</div>
+          <div class="kpi-body">
+            <h3 class="kpi-label">Fréquentation</h3>
+            <div class="kpi-value" id="kpi-visitors">+18 % vs semaine passée</div>
+            <div class="kpi-detail">Haute saison · Juillet–Août</div>
+          </div>
+          <div class="kpi-status kpi-status--warn" aria-label="Niveau élevé"></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TRAFIC DÉTAIL -->
+    <section class="dashboard-section container" aria-labelledby="traffic-title">
+      <div class="dashboard-section-inner dashboard-section-inner--split">
+        <div class="dashboard-section-text">
+          <h2 id="traffic-title" class="section-title">Trafic &amp; mobilité</h2>
+          <p>Le réseau routier de Porto-Vecchio concentre des flux intenses en haute saison. PortoFlow agrège les données de circulation pour anticiper les congestions et orienter les usagers vers des itinéraires alternatifs.</p>
+          <ul class="dashboard-list">
+            <li><strong>RN198</strong> – Axe principal Nord-Sud, fluide en ce moment</li>
+            <li><strong>D468</strong> – Accès plages Sud, chargé en journée</li>
+            <li><strong>D859</strong> – Route de Bonifacio, circulation normale</li>
+            <li><strong>Centre-ville</strong> – Saturation fréquente entre 10h et 14h</li>
+          </ul>
+          <a href="territoire.html" class="btn btn-secondary">Voir la carte du territoire</a>
+        </div>
+        <div class="dashboard-section-visual">
+          <div class="traffic-map-placeholder" aria-label="Carte de trafic simulée">
+            <div class="traffic-map-inner">
+              <div class="traffic-route traffic-route--ok" style="top:20%;left:10%;width:60%;transform:rotate(-5deg);" aria-hidden="true"><span>RN198</span></div>
+              <div class="traffic-route traffic-route--warn" style="top:45%;left:30%;width:45%;transform:rotate(20deg);" aria-hidden="true"><span>D468</span></div>
+              <div class="traffic-route traffic-route--ok" style="top:65%;left:15%;width:50%;transform:rotate(-10deg);" aria-hidden="true"><span>D859</span></div>
+              <div class="traffic-dot traffic-dot--alert" style="top:35%;left:55%;" aria-hidden="true" title="Centre-ville saturé"></div>
+              <div class="traffic-dot traffic-dot--ok" style="top:75%;left:40%;" aria-hidden="true" title="Port fluide"></div>
+              <div class="traffic-legend">
+                <span class="legend-item legend-item--ok">Fluide</span>
+                <span class="legend-item legend-item--warn">Chargé</span>
+                <span class="legend-item legend-item--alert">Saturé</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARKINGS -->
+    <section class="dashboard-section dashboard-section--alt" aria-labelledby="parking-title">
+      <div class="container">
+        <h2 id="parking-title" class="section-title">État des parkings</h2>
+        <p class="section-subtitle">Disponibilité simulée des principaux parkings du territoire.</p>
+        <div class="parking-grid">
+
+          <div class="parking-card parking-card--full" role="article" aria-label="Parking Centre-ville">
+            <div class="parking-name">Centre-ville</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:95%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">285 / 300</span>
+              <span class="parking-status parking-status--full">Complet</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--warn" role="article" aria-label="Parking Port de plaisance">
+            <div class="parking-name">Port de plaisance</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:72%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">180 / 250</span>
+              <span class="parking-status parking-status--warn">Chargé</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--ok" role="article" aria-label="Parking Palombaggia">
+            <div class="parking-name">Palombaggia</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:55%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">220 / 400</span>
+              <span class="parking-status parking-status--ok">Disponible</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--ok" role="article" aria-label="Parking Santa Giulia">
+            <div class="parking-name">Santa Giulia</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:40%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">160 / 400</span>
+              <span class="parking-status parking-status--ok">Disponible</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--warn" role="article" aria-label="Parking Rondinara">
+            <div class="parking-name">Rondinara</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:68%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">136 / 200</span>
+              <span class="parking-status parking-status--warn">Chargé</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--ok" role="article" aria-label="Parking Piantarella">
+            <div class="parking-name">Piantarella</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:30%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">60 / 200</span>
+              <span class="parking-status parking-status--ok">Disponible</span>
+            </div>
+          </div>
+
+          <div class="parking-card parking-card--full" role="article" aria-label="Parking Vieux-Port">
+            <div class="parking-name">Vieux-Port</div>
+            <div class="parking-bar-wrap" aria-hidden="true">
+              <div class="parking-bar" style="width:98%"></div>
+            </div>
+            <div class="parking-stats">
+              <span class="parking-used">147 / 150</span>
+              <span class="parking-status parking-status--full">Complet</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAGES -->
+    <section class="dashboard-section container" aria-labelledby="beach-title">
+      <h2 id="beach-title" class="section-title">Fréquentation des plages</h2>
+      <p class="section-subtitle">Niveaux d'affluence simulés sur les plages emblématiques du territoire.</p>
+      <div class="beach-grid">
+
+        <article class="beach-card" aria-label="Plage de Palombaggia">
+          <div class="beach-header">
+            <h3 class="beach-name">Palombaggia</h3>
+            <span class="beach-badge beach-badge--high">Forte affluence</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill" style="width:88%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Mer calme</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking chargé</span>
+          </div>
+        </article>
+
+        <article class="beach-card" aria-label="Plage de Santa Giulia">
+          <div class="beach-header">
+            <h3 class="beach-name">Santa Giulia</h3>
+            <span class="beach-badge beach-badge--medium">Affluence modérée</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill beach-gauge-fill--medium" style="width:60%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Mer calme</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking disponible</span>
+          </div>
+        </article>
+
+        <article class="beach-card" aria-label="Plage de Rondinara">
+          <div class="beach-header">
+            <h3 class="beach-name">Rondinara</h3>
+            <span class="beach-badge beach-badge--medium">Affluence modérée</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill beach-gauge-fill--medium" style="width:55%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Légère houle</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking chargé</span>
+          </div>
+        </article>
+
+        <article class="beach-card" aria-label="Plage de Piantarella">
+          <div class="beach-header">
+            <h3 class="beach-name">Piantarella</h3>
+            <span class="beach-badge beach-badge--low">Faible affluence</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill beach-gauge-fill--low" style="width:28%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Mer calme</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking disponible</span>
+          </div>
+        </article>
+
+        <article class="beach-card" aria-label="Plage de Cala Rossa">
+          <div class="beach-header">
+            <h3 class="beach-name">Cala Rossa</h3>
+            <span class="beach-badge beach-badge--high">Forte affluence</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill" style="width:82%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Mer calme</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking limité</span>
+          </div>
+        </article>
+
+        <article class="beach-card" aria-label="Plage de Tamaricciu">
+          <div class="beach-header">
+            <h3 class="beach-name">Tamaricciu</h3>
+            <span class="beach-badge beach-badge--medium">Affluence modérée</span>
+          </div>
+          <div class="beach-gauge" aria-hidden="true">
+            <div class="beach-gauge-fill beach-gauge-fill--medium" style="width:50%"></div>
+          </div>
+          <div class="beach-info">
+            <span>🌊 Mer calme</span>
+            <span>🚿 Sanitaires ouverts</span>
+            <span>🅿 Parking disponible</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MÉTÉO & SAISONNALITÉ -->
+    <section class="dashboard-section dashboard-section--alt" aria-labelledby="weather-title">
+      <div class="container">
+        <div class="dashboard-section-inner dashboard-section-inner--split">
+          <div class="dashboard-section-text">
+            <h2 id="weather-title" class="section-title">Météo &amp; saisonnalité</h2>
+            <p>La météo méditerranéenne conditionne directement les flux touristiques et la fréquentation du territoire. PortoFlow intègre les données climatiques pour anticiper les pics d'affluence et adapter les services.</p>
+            <div class="weather-widget" aria-label="Conditions météo actuelles">
+              <div class="weather-main">
+                <span class="weather-icon" aria-hidden="true">☀</span>
+                <div class="weather-temp" id="weather-temp">28 °C</div>
+                <div class="weather-desc" id="weather-desc">Ensoleillé</div>
+              </div>
+              <div class="weather-details">
+                <div class="weather-detail-item">
+                  <span class="weather-detail-label">Vent</span>
+                  <span class="weather-detail-value" id="weather-wind">12 km/h NE</span>
+                </div>
+                <div class="weather-detail-item">
+                  <span class="weather-detail-label">Humidité</span>
+                  <span class="weather-detail-value" id="weather-humidity">58 %</span>
+                </div>
+                <div class="weather-detail-item">
+                  <span class="weather-detail-label">Mer</span>
+                  <span class="weather-detail-value" id="weather-sea">Calme · 24 °C</span>
+                </div>
+                <div class="weather-detail-item">
+                  <span class="weather-detail-label">UV</span>
+                  <span class="weather-detail-value" id="weather-uv">Élevé · 8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-section-visual">
+            <div class="season-chart" aria-label="Graphique de saisonnalité">
+              <h3 class="season-chart-title">Fréquentation mensuelle simulée</h3>
+              <div class="season-bars" role="img" aria-label="Histogramme de fréquentation par mois">
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:15%" aria-label="Janvier : faible"></div>
+                  <span class="season-bar-label">Jan</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:18%" aria-label="Février : faible"></div>
+                  <span class="season-bar-label">Fév</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:22%" aria-label="Mars : faible"></div>
+                  <span class="season-bar-label">Mar</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:30%" aria-label="Avril : modéré"></div>
+                  <span class="season-bar-label">Avr</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:45%" aria-label="Mai : modéré"></div>
+                  <span class="season-bar-label">Mai</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar season-bar--high" style="height:70%" aria-label="Juin : élevé"></div>
+                  <span class="season-bar-label">Jun</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar season-bar--peak" style="height:100%" aria-label="Juillet : pic"></div>
+                  <span class="season-bar-label">Jul</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar season-bar--peak" style="height:95%" aria-label="Août : pic"></div>
+                  <span class="season-bar-label">Aoû</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar season-bar--high" style="height:65%" aria-label="Septembre : élevé"></div>
+                  <span class="season-bar-label">Sep</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:35%" aria-label="Octobre : modéré"></div>
+                  <span class="season-bar-label">Oct</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:20%" aria-label="Novembre : faible"></div>
+                  <span class="season-bar-label">Nov</span>
+                </div>
+                <div class="season-bar-group">
+                  <div class="season-bar" style="height:14%" aria-label="Décembre : faible"></div>
+                  <span class="season-bar-label">Déc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉVÉNEMENTS -->
+    <section class="dashboard-section container" aria-labelledby="events-title">
+      <h2 id="events-title" class="section-title">Événements du territoire</h2>
+      <p class="section-subtitle">Agenda simulé des événements locaux impactant les flux et la fréquentation.</p>
+      <div class="events-grid">
+
+        <article class="event-card" aria-label="Marché traditionnel">
+          <div class="event-date">
+            <span class="event-day" id="event-day-1">Sam</span>
+            <span class="event-num">12</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Marché traditionnel</h3>
+            <p class="event-desc">Marché artisanal et produits locaux – Place de la République. Impact trafic : modéré.</p>
+            <div class="event-tags">
+              <span class="event-tag">Commerce local</span>
+              <span class="event-tag event-tag--impact">Impact trafic</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" aria-label="Concert en plein air">
+          <div class="event-date">
+            <span class="event-day">Sam</span>
+            <span class="event-num">12</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Concert en plein air</h3>
+            <p class="event-desc">Soirée musicale au port de plaisance. Affluence attendue : 800 personnes. Parking conseillé : Piantarella.</p>
+            <div class="event-tags">
+              <span class="event-tag">Culture</span>
+              <span class="event-tag event-tag--impact">Fort impact</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" aria-label="Fête locale de quartier">
+          <div class="event-date">
+            <span class="event-day">Dim</span>
+            <span class="event-num">13</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Fête locale</h3>
+            <p class="event-desc">Festivités de quartier – Borgo Antico. Fermeture partielle de la rue principale de 10h à 22h.</p>
+            <div class="event-tags">
+              <span class="event-tag">Vie locale</span>
+              <span class="event-tag event-tag--warn">Voirie modifiée</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card event-card--upcoming" aria-label="Régates de Porto-Vecchio">
+          <div class="event-date">
+            <span class="event-day">Ven</span>
+            <span class="event-num">18</span>
+          </div>
+          <div class="event-body">
+            <h3 class="event-title">Régates de Porto-Vecchio</h3>
+            <p class="event-desc">Compétition nautique internationale. Accès port restreint vendredi et samedi. Navettes depuis parking Piantarella.</p>
+            <div class="event-tags">
+              <span class="event-tag">Nautisme</span>
+              <span class="event-tag event-tag--impact">Fort impact</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- DONNÉES SIMULÉES NOTICE -->
+    <section class="dashboard-notice container" aria-label="Notice sur les données">
+      <div class="notice-card">
+        <div class="notice-icon" aria-hidden="true">ℹ</div>
+        <div class="notice-body">
+          <h3 class="notice-title">Données illustratives</h3>
+          <p>Ce dashboard présente des données simulées à des fins de démonstration. PortoFlow est conçu pour intégrer des flux de données réels provenant des collectivités, des capteurs IoT, des services de mobilité et des partenaires institutionnels. <a href="contact.html">Contactez-nous</a> pour discuter d'une intégration sur votre territoire.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="dashboard-cta-section" aria-labelledby="dashboard-cta-title">
+      <div class="container dashboard-cta-inner">
+        <h2 id="dashboard-cta-title">Déployez ce dashboard sur votre territoire</h2>
+        <p>PortoFlow accompagne les collectivités dans la mise en place d'un pilotage territorial intelligent, adapté aux réalités locales de Porto-Vecchio et de la Corse-du-Sud.</p>
+        <div class="cta-group">
+          <a href="contact.html" class="btn btn-primary">Prendre contact</a>
+          <a href="ingenierie.html" class="btn btn-secondary">Voir l'ingénierie</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-logo">
+        <span class="logo-name">PortoFlow</span>
+        <span class="logo-tagline">Le copilote intelligent du territoire</span>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-copy">
+        <p>© Porto-Vecchio / Corse-du-Sud</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
