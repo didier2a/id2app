@@ -9,7 +9,7 @@
   "mode": "patch_existing_files",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T11:06:49.665Z",
+  "last_updated_at": "2026-05-13T11:08:33.743Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -30,7 +30,8 @@
     "porto-flow-site/assets/images/README.md",
     "porto-flow-site/territoire.html",
     "porto-flow-site/ecosysteme.html",
-    "porto-flow-site/index.html"
+    "porto-flow-site/index.html",
+    "porto-flow-site/ingenierie.html"
   ],
   "failed_files": [
     {
@@ -131,6 +132,19 @@
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": null,
       "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/ingenierie.html",
+      "action": "update",
+      "file_sha": "3f4bd8817030513120125ea2c85949a06307d064",
+      "commit_sha": "1b02dcfe14df5267a0c6441f1b11818c3e6a1301",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/ingenierie.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1b02dcfe14df5267a0c6441f1b11818c3e6a1301",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
     }
   ],
   "repaired_files": [],
@@ -197,10 +211,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/dashboard.html",
+  "last_successful_file": "porto-flow-site/ingenierie.html",
   "last_failed_file": "porto-flow-site/ecosysteme.html",
-  "completed_count": 9,
-  "updated_count": 4,
+  "completed_count": 10,
+  "updated_count": 5,
   "failed_count": 1,
   "skipped_count": 0
 }
