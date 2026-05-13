@@ -29,11 +29,13 @@
           <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
           <li class="nav-item"><a href="ecosysteme.html" class="nav-link nav-link--active" aria-current="page">Écosystème</a></li>
           <li class="nav-item"><a href="territoire.html" class="nav-link">Territoire</a></li>
+          <li class="nav-item"><a href="ingenierie.html" class="nav-link">Ingénierie</a></li>
+          <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="contact.html" class="btn btn--header">Contact</a>
+        <a href="dashboard.html" class="btn btn--header">Dashboard</a>
         <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
           <span class="nav-toggle__bar"></span>
           <span class="nav-toggle__bar"></span>
@@ -47,6 +49,8 @@
           <li><a href="index.html" class="mobile-nav__link">Accueil</a></li>
           <li><a href="ecosysteme.html" class="mobile-nav__link mobile-nav__link--active" aria-current="page">Écosystème</a></li>
           <li><a href="territoire.html" class="mobile-nav__link">Territoire</a></li>
+          <li><a href="ingenierie.html" class="mobile-nav__link">Ingénierie</a></li>
+          <li><a href="dashboard.html" class="mobile-nav__link">Dashboard</a></li>
           <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
         </ul>
         <div class="mobile-nav__cta">
@@ -92,84 +96,81 @@
       </div>
     </section>
 
-    <section class="section section--light" aria-labelledby="partners-title">
+    <section class="section section--light" aria-labelledby="bento-title">
       <div class="container">
         <header class="section-header">
           <span class="section-kicker">Acteurs du réseau</span>
-          <h2 class="section-title" id="partners-title">Les partenaires de l'écosystème</h2>
+          <h2 class="section-title" id="bento-title">Les piliers de l'écosystème</h2>
           <p class="section-intro">Chaque acteur local contribue à la richesse du territoire. PortoFlow les rend visibles, connectés et mesurables.</p>
         </header>
-        <div class="bento-grid bento-grid--partners" role="list">
+        <div class="bento-grid bento-grid--4" role="list">
+          <article class="bento-card bento-card--accent" role="listitem">
+            <div class="bento-card__icon" aria-hidden="true">🌐</div>
+            <h3 class="bento-card__title">PortoFlow</h3>
+            <p class="bento-card__text">Copilote intelligent du territoire. Il agrège, analyse et restitue les données en temps réel pour tous les acteurs.</p>
+          </article>
           <article class="bento-card" role="listitem">
             <div class="bento-card__icon" aria-hidden="true">🏨</div>
-            <h3 class="bento-card__title">Hôtellerie</h3>
-            <p class="bento-card__text">Hôtels, résidences et locations saisonnières. Visibilité accrue et gestion des flux visiteurs.</p>
-          </article>
-          <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">🍽️</div>
-            <h3 class="bento-card__title">Restauration</h3>
-            <p class="bento-card__text">Restaurants et traiteurs locaux. Mise en avant des spécialités corses et gestion des réservations.</p>
-          </article>
-          <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">🛍️</div>
-            <h3 class="bento-card__title">Commerce local</h3>
-            <p class="bento-card__text">Artisans, boutiques et producteurs. Ancrage territorial fort et circuit court valorisé.</p>
+            <h3 class="bento-card__title">Acteurs économiques</h3>
+            <p class="bento-card__text">Hôteliers, restaurateurs, commerçants — chacun dispose d'une visibilité renforcée et d'indicateurs de performance locaux.</p>
           </article>
           <article class="bento-card" role="listitem">
             <div class="bento-card__icon" aria-hidden="true">🏛️</div>
-            <h3 class="bento-card__title">Institutions</h3>
-            <p class="bento-card__text">Collectivités, offices de tourisme et CCI. Pilotage des données territoriales en temps réel.</p>
+            <h3 class="bento-card__title">Collectivités</h3>
+            <p class="bento-card__text">La commune et la communauté de communes pilotent leur territoire avec des données fiables et actionnables.</p>
           </article>
           <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">⛵</div>
-            <h3 class="bento-card__title">Nautisme</h3>
-            <p class="bento-card__text">Ports de plaisance, loueurs et prestataires maritimes. Gestion des flux et des saisons.</p>
-          </article>
-          <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">🌿</div>
-            <h3 class="bento-card__title">Tourisme durable</h3>
-            <p class="bento-card__text">Randonnées, nature et patrimoine. Valorisation des ressources naturelles de Corse-du-Sud.</p>
-          </article>
-          <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">🎭</div>
-            <h3 class="bento-card__title">Culture & Événements</h3>
-            <p class="bento-card__text">Festivals, expositions et animations locales. Agenda territorial centralisé et partagé.</p>
-          </article>
-          <article class="bento-card" role="listitem">
-            <div class="bento-card__icon" aria-hidden="true">🚗</div>
-            <h3 class="bento-card__title">Mobilité</h3>
-            <p class="bento-card__text">Transports, location de véhicules et navettes. Fluidité des déplacements sur le territoire.</p>
+            <div class="bento-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="bento-card__title">Partenariat</h3>
+            <p class="bento-card__text">Un modèle collaboratif ouvert aux offices de tourisme, agences et structures d'accompagnement territorial.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--callout" aria-labelledby="metrics-title">
+    <section class="section section--metrics" aria-labelledby="metrics-title">
       <div class="container">
-        <div class="callout-panel">
-          <div class="callout-panel__header">
-            <span class="section-kicker">Impact territorial</span>
-            <h2 class="callout-panel__title" id="metrics-title">La visibilité en chiffres</h2>
+        <header class="section-header section-header--center">
+          <span class="section-kicker">Indicateurs clés</span>
+          <h2 class="section-title" id="metrics-title">Le territoire en chiffres</h2>
+        </header>
+        <div class="metrics-rail" role="list">
+          <div class="metric-card" role="listitem">
+            <span class="metric-card__value">3 M+</span>
+            <span class="metric-card__label">Visiteurs / an</span>
           </div>
-          <div class="metrics-rail" role="list">
-            <div class="metric-item" role="listitem">
-              <span class="metric-item__value">+40%</span>
-              <span class="metric-item__label">Visibilité partenaires</span>
-            </div>
-            <div class="metric-item" role="listitem">
-              <span class="metric-item__value">3×</span>
-              <span class="metric-item__label">Engagement visiteurs</span>
-            </div>
-            <div class="metric-item" role="listitem">
-              <span class="metric-item__value">24/7</span>
-              <span class="metric-item__label">Données disponibles</span>
-            </div>
-            <div class="metric-item" role="listitem">
-              <span class="metric-item__value">1 hub</span>
-              <span class="metric-item__label">Réseau unifié</span>
-            </div>
+          <div class="metric-card" role="listitem">
+            <span class="metric-card__value">850+</span>
+            <span class="metric-card__label">Établissements référencés</span>
           </div>
-          <p class="callout-panel__note">Rejoindre PortoFlow, c'est intégrer un réseau structuré et mesurable. Chaque partenaire bénéficie d'une présence renforcée auprès des visiteurs et des décideurs locaux.</p>
+          <div class="metric-card" role="listitem">
+            <span class="metric-card__value">72 %</span>
+            <span class="metric-card__label">Saisonnalité estivale</span>
+          </div>
+          <div class="metric-card" role="listitem">
+            <span class="metric-card__value">4 axes</span>
+            <span class="metric-card__label">Filières structurantes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="callout-title">
+      <div class="container">
+        <div class="callout-panel callout-panel--strategic">
+          <div class="callout-panel__body">
+            <span class="section-kicker">Vision stratégique</span>
+            <h2 class="callout-panel__title" id="callout-title">« Un territoire qui se pilote, c'est un territoire qui se développe. »</h2>
+            <p class="callout-panel__text">PortoFlow transforme la donnée locale en levier de décision. Les acteurs du territoire disposent enfin d'un langage commun et d'une lecture partagée de leur environnement.</p>
+          </div>
+          <div class="callout-panel__aside">
+            <ul class="feature-list" role="list">
+              <li class="feature-list__item">Données temps réel centralisées</li>
+              <li class="feature-list__item">Tableaux de bord personnalisés</li>
+              <li class="feature-list__item">Alertes et recommandations IA</li>
+              <li class="feature-list__item">Interopérabilité des acteurs</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -179,11 +180,11 @@
         <div class="cta-band__inner">
           <div class="cta-band__body">
             <h2 class="cta-band__title" id="cta-title">Rejoignez l'écosystème PortoFlow</h2>
-            <p class="cta-band__text">Commerçant, hôtelier, collectivité — votre place est dans le réseau. Soyez présent au bon moment, pour le bon visiteur.</p>
+            <p class="cta-band__text">Commerçant, hôtelier, collectivité — votre place est dans le réseau. Accédez au dashboard ou contactez-nous.</p>
           </div>
           <div class="cta-band__actions">
-            <a href="contact.html" class="btn btn--primary btn--lg">Devenir partenaire</a>
-            <a href="territoire.html" class="btn btn--outline-light btn--lg">Voir le territoire</a>
+            <a href="dashboard.html" class="btn btn--primary btn--lg">Accéder au dashboard</a>
+            <a href="contact.html" class="btn btn--outline-light btn--lg">Devenir partenaire</a>
           </div>
         </div>
       </div>
