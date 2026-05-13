@@ -44,7 +44,7 @@
         <p class="hero-sub">Porto-Vecchio concentre littoral, maquis et port de plaisance en quelques km². PortoFlow cartographie ses flux et anticipe ses tensions — toute l'année.</p>
         <div class="hero-actions">
           <a href="dashboard.html" class="btn btn--primary">Dashboard territorial</a>
-          <a href="#bento-territoire" class="btn btn--ghost">Explorer les flux</a>
+          <a href="#rail-territoire" class="btn btn--ghost">Explorer les flux</a>
         </div>
       </div>
       <div class="hero-split__right">
@@ -69,7 +69,39 @@
       </div>
     </section>
 
-    <section class="section" id="bento-territoire" aria-labelledby="bento-title">
+    <section class="section" id="rail-territoire" aria-labelledby="rail-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker"><span class="kicker-dot"></span>Points clés du territoire</p>
+          <h2 class="section-title" id="rail-title">Ce qui définit Porto-Vecchio</h2>
+        </div>
+        <div class="card-rail">
+          <article class="card-h">
+            <div class="card-h__icon card-h__icon--sky">🏖️</div>
+            <div class="card-h__body">
+              <h3 class="card-h__title">Littoral d'exception</h3>
+              <p class="card-h__desc">35 plages et criques classées parmi les plus belles de Méditerranée. Un capital naturel à préserver face à la pression touristique.</p>
+            </div>
+          </article>
+          <article class="card-h">
+            <div class="card-h__icon card-h__icon--terra">⚓</div>
+            <div class="card-h__body">
+              <h3 class="card-h__title">Port de plaisance stratégique</h3>
+              <p class="card-h__desc">Nœud de mobilité maritime en haute saison. PortoFlow intègre les flux nautiques dans sa cartographie territoriale.</p>
+            </div>
+          </article>
+          <article class="card-h">
+            <div class="card-h__icon card-h__icon--green">🌿</div>
+            <div class="card-h__body">
+              <h3 class="card-h__title">Maquis et réserves protégées</h3>
+              <p class="card-h__desc">Zones Natura 2000 et réserves marines encadrent le territoire. PortoFlow mesure leur fréquentation pour alerter en temps réel.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="bento-title">
       <div class="container">
         <div class="section-head">
           <p class="section-kicker"><span class="kicker-dot"></span>Dynamiques territoriales</p>
@@ -111,7 +143,7 @@
       </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="callout-title">
+    <section class="section" aria-labelledby="callout-title">
       <div class="container">
         <div class="callout" aria-labelledby="callout-title">
           <div class="callout__body">
@@ -165,32 +197,32 @@
       </nav>
       <div class="footer-meta">
         <p class="footer-copy">&copy; 2025 PortoFlow · Projet territorial Corse-du-Sud</p>
-        <p class="footer-tech">Généré par ID2App V4.3.2 DesignOps</p>
+        <p class="footer-tech">Généré par ID2App V4.3.2.2 Design Director</p>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
   <script>
-    const burger = document.getElementById('burger');
-    const nav = document.getElementById('main-nav');
-    if (burger && nav) {
-      burger.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        burger.setAttribute('aria-expanded', open);
+    (function () {
+      var burger = document.getElementById('burger');
+      var nav = document.getElementById('main-nav');
+      if (burger && nav) {
+        burger.addEventListener('click', function () {
+          var open = nav.classList.toggle('open');
+          burger.setAttribute('aria-expanded', String(open));
+        });
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('visible'); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.bento-card, .stat-card, .callout, .metric, .card-h').forEach(function (el) {
+        el.classList.add('fade-up');
+        observer.observe(el);
       });
-    }
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.bento-card, .stat-card, .callout, .metric').forEach(el => {
-      el.classList.add('fade-up');
-      observer.observe(el);
-    });
+    }());
   </script>
 
 </body>
