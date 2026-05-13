@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:59:56.582Z",
+  "last_updated_at": "2026-05-13T08:00:30.301Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -28,7 +28,8 @@
     "porto-flow-site/dashboard.html",
     "porto-flow-site/contact.html",
     "porto-flow-site/script.js",
-    "porto-flow-site/media-manifest.json"
+    "porto-flow-site/media-manifest.json",
+    "porto-flow-site/assets/images/README.md"
   ],
   "failed_files": [
     {
@@ -227,7 +228,8 @@
     "porto-flow-site/experience.html",
     "porto-flow-site/dashboard.html",
     "porto-flow-site/contact.html",
-    "porto-flow-site/media-manifest.json"
+    "porto-flow-site/media-manifest.json",
+    "porto-flow-site/assets/images/README.md"
   ],
   "updated_files": [
     {
@@ -289,6 +291,19 @@
       "commit_sha": "2c4deb7219889dd0775bed81efbaae5635cc01c4",
       "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/media-manifest.json",
       "commit_url": "https://github.com/didier2a/id2app/commit/2c4deb7219889dd0775bed81efbaae5635cc01c4",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/assets/images/README.md",
+      "action": "create",
+      "file_sha": "8a38d432ca46a130f3e44e72c9c4951e41cf4a96",
+      "commit_sha": "9c5f61a181f56a8e215add12495dbc610c432341",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/assets/images/README.md",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9c5f61a181f56a8e215add12495dbc610c432341",
       "validation_status": "passed",
       "warnings": [],
       "gemini_execution_job_audit": null,
@@ -365,10 +380,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/media-manifest.json",
+  "last_successful_file": "porto-flow-site/assets/images/README.md",
   "last_failed_file": "porto-flow-site/styles.css",
-  "completed_count": 5,
-  "updated_count": 5,
+  "completed_count": 6,
+  "updated_count": 6,
   "failed_count": 5,
   "skipped_count": 0
 }
