@@ -4,122 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expérience – PortoFlow, copilote intelligent du territoire</title>
-  <meta name="description" content="Découvrez l'expérience PortoFlow : parcours utilisateur, assistant intelligent, usages habitants, visiteurs et professionnels à Porto-Vecchio.">
+  <meta name="description" content="Parcours utilisateur, assistant IA et workflows PortoFlow à Porto-Vecchio.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* ── EXPERIENCE PAGE OVERRIDES ── */
-    .exp-hero{display:grid;grid-template-columns:60% 40%;min-height:88vh;align-items:stretch}
-    .exp-hero-left{display:flex;flex-direction:column;justify-content:center;padding:80px 56px 80px 40px;background:var(--color-bg,#f8f9fb)}
-    .exp-hero-right{position:relative;overflow:hidden;background:#0a1628}
-    .exp-hero-right img{width:100%;height:100%;object-fit:cover;opacity:.45;display:block}
-    .exp-hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 36px}
-    .chat-card{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:24px;color:#fff}
-    .chat-dot{width:8px;height:8px;border-radius:50%;background:#22c55e;display:inline-block;margin-right:8px}
-    .chat-status{font-size:.75rem;color:#a3e635;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center}
-    .chat-msg{font-size:.85rem;line-height:1.5;padding:10px 14px;border-radius:10px;margin-bottom:8px}
-    .chat-msg.bot{background:rgba(255,255,255,.12)}
-    .chat-msg.user{background:rgba(99,179,237,.2);text-align:right}
-    .chat-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
-    .chat-metric{text-align:center}
-    .chat-metric-val{display:block;font-size:1.1rem;font-weight:700;color:#fff}
-    .chat-metric-lbl{display:block;font-size:.7rem;color:rgba(255,255,255,.55);margin-top:2px}
-    .kicker{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary,#1a56db);margin-bottom:12px}
-    .exp-h1{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;color:#0a1628;margin-bottom:20px}
-    .exp-lead{font-size:1.05rem;color:#4b5563;max-width:480px;margin-bottom:32px;line-height:1.65}
-    .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-    .badge{font-size:.72rem;font-weight:600;padding:5px 14px;border-radius:999px;border:1.5px solid var(--color-primary,#1a56db);color:var(--color-primary,#1a56db);background:transparent}
-    .btn-row{display:flex;flex-wrap:wrap;gap:12px}
-    .btn-p{display:inline-flex;align-items:center;padding:13px 28px;background:var(--color-primary,#1a56db);color:#fff;border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .2s}
-    .btn-p:hover{background:#1447b8}
-    .btn-s{display:inline-flex;align-items:center;padding:13px 28px;background:transparent;color:var(--color-primary,#1a56db);border:2px solid var(--color-primary,#1a56db);border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .2s}
-    .btn-s:hover{background:var(--color-primary,#1a56db);color:#fff}
-    /* METRICS RAIL */
-    .metrics-rail{background:#0a1628;padding:48px 0}
-    .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);max-width:1180px;margin:0 auto;padding:0 24px}
-    .metric-card{background:#0a1628;padding:36px 28px;text-align:center}
-    .metric-val{font-size:2.4rem;font-weight:800;color:#fff;line-height:1}
-    .metric-unit{font-size:1rem;color:#60a5fa;margin-left:2px}
-    .metric-lbl{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:8px;letter-spacing:.04em;text-transform:uppercase}
-    /* BENTO */
-    .bento-section{padding:80px 0;background:#f8f9fb}
-    .bento-header{text-align:center;margin-bottom:48px}
-    .bento-h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#0a1628;margin-bottom:10px}
-    .bento-sub{font-size:1rem;color:#6b7280;max-width:520px;margin:0 auto}
-    .bento-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto;gap:20px;max-width:1180px;margin:0 auto;padding:0 24px}
-    .bento-card{background:#fff;border-radius:16px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,.06);display:flex;flex-direction:column;gap:12px}
-    .bento-card.span-5{grid-column:span 5}
-    .bento-card.span-4{grid-column:span 4}
-    .bento-card.span-3{grid-column:span 3}
-    .bento-card.span-7{grid-column:span 7}
-    .bento-icon{font-size:1.8rem;margin-bottom:4px}
-    .bento-title{font-size:1.05rem;font-weight:700;color:#0a1628}
-    .bento-text{font-size:.88rem;color:#6b7280;line-height:1.6}
-    .bento-tag{display:inline-block;font-size:.68rem;font-weight:700;padding:3px 10px;border-radius:999px;background:#eff6ff;color:#1a56db;margin-top:4px}
-    /* CALLOUT */
-    .callout-section{padding:64px 0;background:#fff}
-    .callout-panel{max-width:1180px;margin:0 auto;padding:0 24px}
-    .callout-inner{background:linear-gradient(135deg,#0a1628 60%,#1a3a6b);border-radius:20px;padding:56px 64px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-    .callout-kicker{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#60a5fa;margin-bottom:12px}
-    .callout-h2{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:800;color:#fff;margin-bottom:12px}
-    .callout-text{font-size:.95rem;color:rgba(255,255,255,.65);max-width:480px;line-height:1.65}
-    .callout-actions{display:flex;flex-direction:column;gap:12px;min-width:200px}
-    /* CTA BAND */
-    .cta-band-exp{padding:72px 0;background:#f0f4ff}
-    .cta-band-inner{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
-    .cta-band-h2{font-size:clamp(1.3rem,2.5vw,1.9rem);font-weight:800;color:#0a1628;margin-bottom:8px}
-    .cta-band-p{font-size:.95rem;color:#4b5563}
-    /* FOOTER */
-    .site-footer-exp{background:#0a1628;color:rgba(255,255,255,.6);padding:48px 0 32px}
-    .footer-exp-inner{max-width:1180px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:center}
-    .footer-exp-brand{display:flex;align-items:center;gap:12px}
-    .footer-logo-mark{width:40px;height:40px;background:var(--color-primary,#1a56db);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.9rem}
-    .footer-brand-name{font-weight:700;color:#fff;font-size:1rem}
-    .footer-brand-tag{font-size:.72rem;color:rgba(255,255,255,.45)}
-    .footer-exp-nav{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:center}
-    .footer-exp-nav a{color:rgba(255,255,255,.55);font-size:.82rem;text-decoration:none;transition:color .2s}
-    .footer-exp-nav a:hover,.footer-exp-nav a[aria-current]{color:#fff}
-    .footer-exp-copy{font-size:.75rem;color:rgba(255,255,255,.35);white-space:nowrap}
-    /* NAV */
-    .site-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e5e7eb}
-    .header-inner{max-width:1180px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:32px;height:64px}
-    .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-    .logo-mark{width:36px;height:36px;background:#1a56db;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.85rem}
-    .logo-name{font-weight:800;color:#0a1628;font-size:1rem}
-    .logo-tagline{font-size:.65rem;color:#9ca3af;display:block}
-    .main-nav{margin-left:auto}
-    .nav-list{display:flex;gap:4px;list-style:none;margin:0;padding:0}
-    .nav-link{padding:8px 14px;border-radius:6px;font-size:.85rem;font-weight:500;color:#374151;text-decoration:none;transition:all .2s}
-    .nav-link:hover{background:#f3f4f6;color:#0a1628}
-    .nav-link--active{background:#eff6ff;color:#1a56db;font-weight:700}
-    .btn-cta{padding:9px 20px;background:#1a56db;color:#fff;border-radius:7px;font-size:.85rem;font-weight:700;text-decoration:none;transition:background .2s}
-    .btn-cta:hover{background:#1447b8}
-    .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
-    .burger span{display:block;width:22px;height:2px;background:#374151;border-radius:2px;transition:all .3s}
-    .mobile-nav{background:#fff;border-top:1px solid #e5e7eb;padding:16px 24px}
-    .mobile-nav-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
-    .mobile-nav-link{display:block;padding:10px 14px;border-radius:7px;font-size:.9rem;color:#374151;text-decoration:none;font-weight:500}
-    .mobile-nav-link--active{background:#eff6ff;color:#1a56db;font-weight:700}
-    .mobile-nav-cta{background:#1a56db;color:#fff!important;text-align:center;margin-top:8px;border-radius:7px}
-    @media(max-width:900px){
-      .exp-hero{grid-template-columns:1fr;min-height:auto}
-      .exp-hero-right{min-height:320px}
-      .exp-hero-left{padding:48px 24px}
-      .metrics-grid{grid-template-columns:repeat(2,1fr)}
-      .bento-grid{grid-template-columns:1fr 1fr}
-      .bento-card.span-5,.bento-card.span-4,.bento-card.span-3,.bento-card.span-7{grid-column:span 1}
-      .callout-inner{grid-template-columns:1fr;padding:40px 32px}
-      .cta-band-inner{grid-template-columns:1fr}
-      .footer-exp-inner{grid-template-columns:1fr;gap:24px;text-align:center}
-      .footer-exp-nav{justify-content:center}
-      .main-nav{display:none}
-      .burger{display:flex}
-    }
-    @media(max-width:540px){
-      .metrics-grid{grid-template-columns:1fr 1fr}
-      .bento-grid{grid-template-columns:1fr}
-      .btn-row{flex-direction:column}
-    }
-  </style>
 </head>
 <body>
 
@@ -142,7 +28,7 @@
           <li><a href="ingenierie.html" class="nav-link">Ingénierie</a></li>
         </ul>
       </nav>
-      <div style="display:flex;align-items:center;gap:12px;margin-left:auto">
+      <div class="header-actions">
         <a href="contact.html" class="btn-cta">Contact</a>
         <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
@@ -164,146 +50,125 @@
 
   <main id="main-content">
 
-    <!-- HERO SPLIT 60/40 -->
-    <section class="exp-hero" aria-labelledby="hero-exp-title">
-      <div class="exp-hero-left">
+    <!-- HERO SPLIT -->
+    <section class="hero" aria-labelledby="hero-exp-title">
+      <div class="hero-content">
         <p class="kicker">Expérience utilisateur</p>
-        <h1 id="hero-exp-title" class="exp-h1">Votre territoire,<br>à portée de main</h1>
-        <p class="exp-lead">PortoFlow accompagne habitants, visiteurs et professionnels avec un assistant intelligent et des recommandations contextuelles en temps réel.</p>
+        <h1 id="hero-exp-title" class="hero-title">Votre territoire,<br>à portée de main</h1>
+        <p class="hero-lead">PortoFlow accompagne habitants, visiteurs et professionnels avec un assistant intelligent et des recommandations contextuelles en temps réel.</p>
         <div class="btn-row">
-          <a href="#bento-profils" class="btn-p">Découvrir les profils</a>
-          <a href="contact.html" class="btn-s">Nous contacter</a>
-        </div>
-        <div class="badge-row">
-          <span class="badge">3 profils utilisateurs</span>
-          <span class="badge">Assistant 24/7</span>
-          <span class="badge">100 % local</span>
+          <a href="#rail-profils" class="btn-primary">Découvrir les profils</a>
+          <a href="contact.html" class="btn-secondary">Nous contacter</a>
         </div>
       </div>
-      <div class="exp-hero-right" aria-hidden="true">
-        <img src="assets/images/plage-littoral.jpg" alt="Littoral de Porto-Vecchio" loading="eager" onerror="this.style.display='none'">
-        <div class="exp-hero-overlay">
-          <div class="chat-card">
-            <div class="chat-status"><span class="chat-dot"></span>Assistant PortoFlow · En ligne</div>
-            <div class="chat-msg bot">Bonjour ! Comment puis-je vous aider sur le territoire ?</div>
-            <div class="chat-msg user">Quelle plage est la moins fréquentée ce matin ?</div>
-            <div class="chat-msg bot">Tamaricciu présente une affluence faible. Cala Rossa reste modérée.</div>
-            <div class="chat-metrics">
-              <div class="chat-metric"><span class="chat-metric-val">28°C</span><span class="chat-metric-lbl">Température</span></div>
-              <div class="chat-metric"><span class="chat-metric-val">Modéré</span><span class="chat-metric-lbl">Trafic</span></div>
-              <div class="chat-metric"><span class="chat-metric-val">12</span><span class="chat-metric-lbl">Parkings libres</span></div>
-            </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <p class="hero-card-label">Assistant PortoFlow · En ligne</p>
+          <p class="hero-card-msg">Quelle plage est la moins fréquentée ce matin ?</p>
+          <p class="hero-card-reply">Tamaricciu : affluence faible. Cala Rossa : modérée.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="metrics-section" aria-label="Métriques clés">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">3 <span class="metric-unit">profils</span></div>
+          <div class="metric-label">Habitants · Visiteurs · Pros</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">24<span class="metric-unit">/7</span></div>
+          <div class="metric-label">Assistant disponible</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">+40<span class="metric-unit">k</span></div>
+          <div class="metric-label">Requêtes / saison</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100<span class="metric-unit">%</span></div>
+          <div class="metric-label">Données locales</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RAIL PROFILS -->
+    <section class="section" id="rail-profils" aria-labelledby="rail-title">
+      <div class="section-inner">
+        <p class="kicker">Trois profils, une plateforme</p>
+        <h2 id="rail-title" class="section-title">Des expériences pensées pour chacun</h2>
+        <div class="cards-rail">
+          <div class="card">
+            <div class="card-icon">🏡</div>
+            <h3 class="card-title">Habitant</h3>
+            <p class="card-text">Accès aux services locaux, alertes de proximité et suivi des flux en temps réel.</p>
+            <span class="card-tag">Quotidien</span>
+          </div>
+          <div class="card">
+            <div class="card-icon">🧳</div>
+            <h3 class="card-title">Visiteur</h3>
+            <p class="card-text">Recommandations personnalisées, plages, restaurants et itinéraires selon l'affluence.</p>
+            <span class="card-tag">Découverte</span>
+          </div>
+          <div class="card">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">Professionnel</h3>
+            <p class="card-text">Tableaux de bord, données de fréquentation et outils de pilotage territorial.</p>
+            <span class="card-tag">Pilotage</span>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏛️</div>
+            <h3 class="card-title">Collectivité</h3>
+            <p class="card-text">Supervision des flux, gestion des alertes et coordination des services publics.</p>
+            <span class="card-tag">Gouvernance</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- METRICS RAIL -->
-    <section class="metrics-rail" aria-label="Métriques clés">
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-val">3<span class="metric-unit">profils</span></div>
-          <div class="metric-lbl">Habitants · Visiteurs · Pros</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val">24<span class="metric-unit">/7</span></div>
-          <div class="metric-lbl">Assistant disponible</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val">+40<span class="metric-unit">k</span></div>
-          <div class="metric-lbl">Requêtes traitées / saison</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-val">100<span class="metric-unit">%</span></div>
-          <div class="metric-lbl">Données locales & souveraines</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BENTO GRID PROFILS -->
-    <section class="bento-section" id="bento-profils" aria-labelledby="bento-h2">
-      <div class="bento-header">
-        <p class="kicker">Usages & profils</p>
-        <h2 id="bento-h2" class="bento-h2">Une expérience pour chaque utilisateur</h2>
-        <p class="bento-sub">Trois parcours distincts, une plateforme unifiée. PortoFlow s'adapte à chaque besoin.</p>
-      </div>
-      <div class="bento-grid">
-        <div class="bento-card span-5">
-          <div class="bento-icon">🏡</div>
-          <div class="bento-title">Habitants</div>
-          <div class="bento-text">Accès aux services locaux, alertes de proximité et suivi des flux en temps réel pour mieux vivre le territoire au quotidien.</div>
-          <span class="bento-tag">Vie quotidienne</span>
-        </div>
-        <div class="bento-card span-4">
-          <div class="bento-icon">🧳</div>
-          <div class="bento-title">Visiteurs</div>
-          <div class="bento-text">Recommandations personnalisées, itinéraires optimisés et informations pratiques pour profiter pleinement de Porto-Vecchio.</div>
-          <span class="bento-tag">Tourisme intelligent</span>
-        </div>
-        <div class="bento-card span-3">
-          <div class="bento-icon">💼</div>
-          <div class="bento-title">Professionnels</div>
-          <div class="bento-text">Données de flux, indicateurs de fréquentation et outils d'aide à la décision pour les acteurs économiques du territoire.</div>
-          <span class="bento-tag">Pilotage & data</span>
-        </div>
-        <div class="bento-card span-7">
-          <div class="bento-icon">🤖</div>
-          <div class="bento-title">Assistant intelligent contextuel</div>
-          <div class="bento-text">Réponses précises, alertes météo, fermetures de routes, restrictions d'accès. L'assistant PortoFlow connaît chaque lieu et chaque flux du territoire.</div>
-          <span class="bento-tag">IA locale</span>
-        </div>
-        <div class="bento-card span-5">
-          <div class="bento-icon">📍</div>
-          <div class="bento-title">Géolocalisation & points d'intérêt</div>
-          <div class="bento-text">Palombaggia, Cala Rossa, Tamaricciu, la citadelle, le port… chaque lieu est référencé et enrichi en temps réel.</div>
-          <span class="bento-tag">Territoire complet</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CALLOUT PANEL -->
-    <section class="callout-section" aria-labelledby="callout-h2">
+    <!-- CALLOUT ASSISTANT IA -->
+    <section class="callout-section" aria-labelledby="callout-ia-title">
       <div class="callout-panel">
         <div class="callout-inner">
           <div>
-            <p class="callout-kicker">Pourquoi PortoFlow ?</p>
-            <h2 id="callout-h2" class="callout-h2">Un territoire d'exception mérite une expérience à la hauteur</h2>
-            <p class="callout-text">PortoFlow centralise données, flux et services pour offrir une lecture claire et intelligente du territoire — à chaque instant, pour chaque utilisateur.</p>
+            <p class="callout-kicker">Assistant IA & Workflow</p>
+            <h2 id="callout-ia-title" class="callout-title">Un copilote intelligent, disponible à chaque instant</h2>
+            <p class="callout-text">Réponses précises, alertes météo, fermetures de routes, restrictions d'accès. PortoFlow connaît chaque lieu et chaque flux du territoire.</p>
           </div>
           <div class="callout-actions">
-            <a href="territoire.html" class="btn-p">Explorer le territoire</a>
-            <a href="ecosysteme.html" class="btn-s" style="border-color:rgba(255,255,255,.4);color:#fff">Voir l'écosystème</a>
+            <a href="territoire.html" class="btn-primary">Explorer le territoire</a>
+            <a href="ecosysteme.html" class="btn-secondary">Voir l'écosystème</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CTA BAND -->
-    <section class="cta-band-exp" aria-labelledby="cta-exp-h2">
+    <section class="cta-band" aria-labelledby="cta-exp-title">
       <div class="cta-band-inner">
         <div>
-          <h2 id="cta-exp-h2" class="cta-band-h2">Rejoindre l'expérience PortoFlow</h2>
-          <p class="cta-band-p">Collectivités, professionnels, partenaires : intégrez PortoFlow dans votre stratégie territoriale.</p>
+          <h2 id="cta-exp-title" class="cta-band-title">Rejoindre l'expérience PortoFlow</h2>
+          <p class="cta-band-text">Collectivités, professionnels, partenaires : intégrez PortoFlow dans votre stratégie territoriale.</p>
         </div>
         <div class="btn-row">
-          <a href="contact.html" class="btn-p">Nous contacter</a>
-          <a href="dashboard.html" class="btn-s">Voir le dashboard</a>
+          <a href="contact.html" class="btn-primary">Nous contacter</a>
+          <a href="dashboard.html" class="btn-secondary">Voir le dashboard</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer-exp" role="contentinfo">
-    <div class="footer-exp-inner">
-      <div class="footer-exp-brand">
-        <span class="footer-logo-mark" aria-hidden="true">PF</span>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">PF</span>
         <div>
           <div class="footer-brand-name">PortoFlow</div>
           <div class="footer-brand-tag">Le copilote intelligent du territoire</div>
         </div>
       </div>
-      <nav class="footer-exp-nav" aria-label="Navigation secondaire">
+      <nav class="footer-nav" aria-label="Navigation secondaire">
         <a href="index.html">Accueil</a>
         <a href="territoire.html">Territoire</a>
         <a href="experience.html" aria-current="page">Expérience</a>
@@ -312,21 +177,10 @@
         <a href="ingenierie.html">Ingénierie</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <p class="footer-exp-copy">© PortoFlow · Porto-Vecchio / Corse-du-Sud</p>
+      <p class="footer-copy">© PortoFlow · Porto-Vecchio / Corse-du-Sud</p>
     </div>
   </footer>
 
-  <script>
-    (function(){
-      var btn=document.getElementById('burger-btn');
-      var nav=document.getElementById('mobile-nav');
-      if(!btn||!nav)return;
-      btn.addEventListener('click',function(){
-        var open=nav.hidden;
-        nav.hidden=!open;
-        btn.setAttribute('aria-expanded',open?'true':'false');
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
