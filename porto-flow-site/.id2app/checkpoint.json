@@ -1,0 +1,152 @@
+{
+  "schema_version": "4.2",
+  "project_id": "porto-flow-site",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "porto-flow-site",
+  "checkpoint_path": "porto-flow-site/.id2app/checkpoint.json",
+  "mode": "consolidate_existing_site",
+  "status": "running",
+  "started_at": "2026-05-13T07:29:29.679Z",
+  "last_updated_at": "2026-05-13T07:36:57.538Z",
+  "expected_files": [
+    "porto-flow-site/index.html",
+    "porto-flow-site/territoire.html",
+    "porto-flow-site/experience.html",
+    "porto-flow-site/ecosysteme.html",
+    "porto-flow-site/dashboard.html",
+    "porto-flow-site/ingenierie.html",
+    "porto-flow-site/contact.html",
+    "porto-flow-site/styles.css",
+    "porto-flow-site/script.js",
+    "porto-flow-site/media-manifest.json",
+    "porto-flow-site/assets/images/README.md"
+  ],
+  "completed_files": [],
+  "failed_files": [
+    {
+      "file_path": "porto-flow-site/index.html",
+      "action": "repair",
+      "reason": "parse_failed",
+      "parse_warnings": [
+        "repair_missing_end_content_marker",
+        "repair_missing_file_end_marker",
+        "repair_empty_or_too_short_content"
+      ],
+      "validation_errors": [
+        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
+        "content_too_short",
+        "html_open_missing",
+        "html_close_missing",
+        "head_missing",
+        "body_missing",
+        "charset_missing",
+        "viewport_missing",
+        "title_missing"
+      ],
+      "validation_warnings": [
+        "meta_description_missing",
+        "h1_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "parse",
+        "root_cause": "Le modèle a arrêté la génération de contenu HTML prématurément, laissant le fichier incomplet et sans les marqueurs de fin attendus.",
+        "repair_strategy": "Reprendre la génération du HTML à partir du point d'arrêt, compléter la structure du document (sections, footer) et s'assurer que le fichier est correctement fermé avec les balises </body> et </html>, en incluant le lien vers script.js.",
+        "constraints": [
+          "Préserver le contenu HTML déjà généré.",
+          "Respecter les instructions initiales concernant l'intégration des sections et du footer.",
+          "Assurer la validité et l'accessibilité du HTML final."
+        ],
+        "must_not_change": [
+          "Le header existant",
+          "La section hero existante",
+          "Le début de la section 'Territoire d'exception' déjà généré"
+        ],
+        "recommended_prompt_addendum": "Le fichier HTML est incomplet. Reprends la génération à partir de la fin du contenu fourni, complète la section en cours, ajoute les sections manquantes (notamment le footer homogène), et assure-toi que le HTML est valide et correctement fermé avec `</body>` et `</html>`. N'oublie pas d'inclure le lien vers `script.js` avant la fermeture de `</body>`."
+      },
+      "at": "2026-05-13T07:36:57.493Z"
+    }
+  ],
+  "skipped_files": [],
+  "protected_files": [],
+  "created_files": [],
+  "updated_files": [],
+  "repaired_files": [],
+  "warnings": [],
+  "execution_plan": {
+    "expected_files": [
+      "porto-flow-site/index.html",
+      "porto-flow-site/territoire.html",
+      "porto-flow-site/experience.html",
+      "porto-flow-site/ecosysteme.html",
+      "porto-flow-site/dashboard.html",
+      "porto-flow-site/ingenierie.html",
+      "porto-flow-site/contact.html",
+      "porto-flow-site/styles.css",
+      "porto-flow-site/script.js",
+      "porto-flow-site/media-manifest.json",
+      "porto-flow-site/assets/images/README.md"
+    ],
+    "existing_files": [
+      "porto-flow-site/README.md",
+      "porto-flow-site/application.html",
+      "porto-flow-site/ecosysteme.html",
+      "porto-flow-site/index.html",
+      "porto-flow-site/ingenierie.html",
+      "porto-flow-site/script.js",
+      "porto-flow-site/styles.css",
+      "porto-flow-site/territoire.html"
+    ],
+    "missing_files": [
+      "porto-flow-site/experience.html",
+      "porto-flow-site/dashboard.html",
+      "porto-flow-site/contact.html",
+      "porto-flow-site/media-manifest.json",
+      "porto-flow-site/assets/images/README.md"
+    ],
+    "protected_files": [],
+    "files_to_create": [
+      "porto-flow-site/experience.html",
+      "porto-flow-site/dashboard.html",
+      "porto-flow-site/contact.html",
+      "porto-flow-site/media-manifest.json",
+      "porto-flow-site/assets/images/README.md"
+    ],
+    "files_to_update": [
+      "porto-flow-site/index.html",
+      "porto-flow-site/territoire.html",
+      "porto-flow-site/ecosysteme.html",
+      "porto-flow-site/ingenierie.html",
+      "porto-flow-site/styles.css",
+      "porto-flow-site/script.js"
+    ],
+    "files_to_skip": [],
+    "jobs_count": 11
+  },
+  "runtime": {
+    "schema_version": "4.2",
+    "cloudsafe": true,
+    "dry_run": false,
+    "provider_strategy": {
+      "openai": "http_request_runtime_header",
+      "gemini": "http_request_runtime_header",
+      "anthropic": "http_request_runtime_header",
+      "github": "http_request_runtime_header",
+      "gateway_enabled": false
+    },
+    "preflight": null
+  },
+  "quality_audits": {
+    "gemini_state_audit": {},
+    "gemini_manifest_audit": {}
+  },
+  "last_successful_file": null,
+  "last_failed_file": "porto-flow-site/index.html",
+  "completed_count": 0,
+  "updated_count": 0,
+  "failed_count": 1,
+  "skipped_count": 0
+}
