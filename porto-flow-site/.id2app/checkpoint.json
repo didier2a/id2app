@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:42:32.044Z",
+  "last_updated_at": "2026-05-13T07:46:44.348Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -113,6 +113,51 @@
         "recommended_prompt_addendum": "Assure-toi de compléter intégralement la page HTML, en incluant toutes les sections demandées dans l'instruction initiale, et de terminer le fichier avec les marqueurs '__ID2APP_END_CONTENT__' et '__ID2APP_FILE_END__'."
       },
       "at": "2026-05-13T07:41:04.881Z"
+    },
+    {
+      "file_path": "porto-flow-site/ecosysteme.html",
+      "action": "repair",
+      "reason": "parse_failed",
+      "parse_warnings": [
+        "repair_missing_end_content_marker",
+        "repair_missing_file_end_marker",
+        "repair_empty_or_too_short_content"
+      ],
+      "validation_errors": [
+        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
+        "content_too_short",
+        "html_open_missing",
+        "html_close_missing",
+        "head_missing",
+        "body_missing",
+        "charset_missing",
+        "viewport_missing",
+        "title_missing"
+      ],
+      "validation_warnings": [
+        "meta_description_missing",
+        "h1_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "parse",
+        "root_cause": "La génération du fichier HTML a été interrompue prématurément, laissant le document incomplet et sans les marqueurs de fin de contenu et de fin de fichier ID2App requis.",
+        "repair_strategy": "Compléter le fichier HTML en fermant toutes les balises ouvertes, en terminant la section des acteurs, en ajoutant un footer uniforme comme spécifié dans l'instruction initiale, et en incluant les marqueurs `__ID2APP_END_CONTENT__` et `__ID2APP_FILE_END__`.",
+        "constraints": [
+          "Préserver tout le contenu HTML déjà généré.",
+          "Assurer la validité structurelle du HTML (fermeture des balises, etc.).",
+          "Maintenir les liens relatifs vers styles.css et script.js."
+        ],
+        "must_not_change": [
+          "Le header existant.",
+          "La section hero.",
+          "La section des visuels locaux.",
+          "Les cartes d'acteurs déjà définies."
+        ],
+        "recommended_prompt_addendum": "Continue la génération du fichier HTML à partir du point d'arrêt, en complétant la section des acteurs, en ajoutant un footer uniforme, et en incluant les marqueurs de fin de fichier `__ID2APP_END_CONTENT__` et `__ID2APP_FILE_END__`."
+      },
+      "at": "2026-05-13T07:46:44.306Z"
     }
   ],
   "skipped_files": [],
@@ -205,9 +250,9 @@
     "gemini_manifest_audit": {}
   },
   "last_successful_file": "porto-flow-site/experience.html",
-  "last_failed_file": "porto-flow-site/territoire.html",
+  "last_failed_file": "porto-flow-site/ecosysteme.html",
   "completed_count": 1,
   "updated_count": 1,
-  "failed_count": 2,
+  "failed_count": 3,
   "skipped_count": 0
 }
