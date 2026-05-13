@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T07:48:12.182Z",
+  "last_updated_at": "2026-05-13T07:52:50.280Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -159,6 +159,28 @@
         "recommended_prompt_addendum": "Continue la génération du fichier HTML à partir du point d'arrêt, en complétant la section des acteurs, en ajoutant un footer uniforme, et en incluant les marqueurs de fin de fichier `__ID2APP_END_CONTENT__` et `__ID2APP_FILE_END__`."
       },
       "at": "2026-05-13T07:46:44.306Z"
+    },
+    {
+      "file_path": "porto-flow-site/ingenierie.html",
+      "action": "repair",
+      "reason": "validation_failed",
+      "parse_warnings": [],
+      "validation_errors": [
+        "residual_id2app_marker",
+        "html_close_missing"
+      ],
+      "validation_warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "unknown",
+        "root_cause": "Diagnostic Gemini non parsable : Unterminated string in JSON at position 223 (line 4 column 168)",
+        "repair_strategy": "Réparer strictement les erreurs de parsing/validation signalées par ID2App.",
+        "constraints": [],
+        "must_not_change": [],
+        "recommended_prompt_addendum": ""
+      },
+      "at": "2026-05-13T07:52:50.244Z"
     }
   ],
   "skipped_files": [],
@@ -265,9 +287,9 @@
     "gemini_manifest_audit": {}
   },
   "last_successful_file": "porto-flow-site/dashboard.html",
-  "last_failed_file": "porto-flow-site/ecosysteme.html",
+  "last_failed_file": "porto-flow-site/ingenierie.html",
   "completed_count": 2,
   "updated_count": 2,
-  "failed_count": 3,
+  "failed_count": 4,
   "skipped_count": 0
 }
