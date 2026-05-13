@@ -3,1699 +3,529 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Porto Flow — Territoire et Usagers. Découvrez Porto-Vecchio à deux rythmes, ses enjeux saisonniers, ses flux, ses plages et la fonction territoriale de Porto Flow." />
+  <meta name="description" content="PortoFlow — Territoire. Découvrez Porto-Vecchio et la Corse-du-Sud à travers ses deux rythmes saisonniers, ses flux de mobilité, ses espaces naturels et la fonction territoriale de PortoFlow." />
   <meta name="theme-color" content="#0B1F33" />
-  <title>Territoire — Porto Flow</title>
+  <title>Territoire — PortoFlow</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* ══ TERRITOIRE PAGE STYLES ══ */
-
-    /* Hero photo */
-    .territoire-hero {
-      position: relative;
-      min-height: 96vh;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      background:
-        linear-gradient(160deg, rgba(7,21,36,0.88) 0%, rgba(11,31,51,0.82) 40%, rgba(13,42,66,0.78) 70%, rgba(15,51,82,0.85) 100%),
-        url('assets/images/porto-vecchio-hero.jpg') center center / cover no-repeat,
-        linear-gradient(160deg, #071524 0%, #0B1F33 35%, #0d2a42 65%, #0f3352 100%);
-      padding: 130px 0 90px;
-    }
-
-    .territoire-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 72% 38%, rgba(31,111,139,0.28) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 40% at 18% 82%, rgba(216,111,60,0.14) 0%, transparent 50%),
-        radial-gradient(ellipse 30% 30% at 50% 10%, rgba(143,199,218,0.06) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    .territoire-hero__topo {
-      position: absolute;
-      inset: 0;
-      background-image:
-        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(143,199,218,0.035) 40px, rgba(143,199,218,0.035) 41px),
-        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(143,199,218,0.025) 40px, rgba(143,199,218,0.025) 41px);
-      pointer-events: none;
-    }
-
-    .territoire-hero__glow {
-      position: absolute;
-      top: 15%;
-      right: 3%;
-      width: 560px;
-      height: 560px;
-      background: radial-gradient(circle, rgba(31,111,139,0.22) 0%, transparent 70%);
-      border-radius: 50%;
-      animation: pulseGlow 7s ease-in-out infinite;
-      pointer-events: none;
-    }
-
-    .territoire-hero__glow2 {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(216,111,60,0.1) 0%, transparent 70%);
-      border-radius: 50%;
-      animation: pulseGlow 9s ease-in-out infinite reverse;
-      pointer-events: none;
-    }
-
-    .territoire-hero__contour {
-      position: absolute;
-      right: -40px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 540px;
-      height: 540px;
-      opacity: 0.08;
-      pointer-events: none;
-    }
-
-    .territoire-hero__contour svg { width: 100%; height: 100%; }
-
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.5; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.1); }
-    }
-
-    .territoire-hero__inner {
-      position: relative;
-      z-index: 2;
-      max-width: 780px;
-    }
-
-    .territoire-hero__badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(31,111,139,0.18);
-      border: 1px solid rgba(143,199,218,0.28);
-      border-radius: 100px;
-      padding: 9px 20px;
-      margin-bottom: 32px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #8FC7DA;
-      backdrop-filter: blur(8px);
-    }
-
-    .badge-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #D86F3C;
-      box-shadow: 0 0 10px rgba(216,111,60,0.9);
-      animation: blinkDot 2s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-
-    @keyframes blinkDot {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.25; }
-    }
-
-    .territoire-hero__title {
-      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
-      font-weight: 900;
-      line-height: 1.08;
-      color: #FAF6EC;
-      margin-bottom: 26px;
-      letter-spacing: -0.03em;
-    }
-
-    .territoire-hero__title em {
-      font-style: normal;
-      color: #8FC7DA;
-      display: block;
-    }
-
-    .territoire-hero__subtitle {
-      font-size: clamp(1rem, 2vw, 1.18rem);
-      color: rgba(250,246,236,0.7);
-      line-height: 1.8;
-      max-width: 640px;
-      margin-bottom: 52px;
-    }
-
-    .territoire-hero__stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .stat-card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(143,199,218,0.14);
-      border-radius: 16px;
-      padding: 22px 14px;
-      text-align: center;
-      transition: all 0.35s ease;
-      backdrop-filter: blur(10px);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .stat-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(216,111,60,0.6), transparent);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .stat-card:hover {
-      background: rgba(31,111,139,0.14);
-      border-color: rgba(143,199,218,0.32);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.3);
-    }
-
-    .stat-card:hover::before { opacity: 1; }
-
-    .stat-card__number {
-      display: block;
-      font-size: clamp(1.5rem, 2.5vw, 2rem);
-      font-weight: 900;
-      color: #D86F3C;
-      letter-spacing: -0.03em;
-      line-height: 1;
-      margin-bottom: 8px;
-    }
-
-    .stat-card__label {
-      display: block;
-      font-size: 0.7rem;
-      color: rgba(250,246,236,0.5);
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      line-height: 1.4;
-    }
-
-    .territoire-hero__scroll {
-      position: absolute;
-      bottom: 38px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      color: rgba(143,199,218,0.45);
-      font-size: 0.68rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      z-index: 2;
-      animation: bounceScroll 2.8s ease-in-out infinite;
-    }
-
-    @keyframes bounceScroll {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(8px); }
-    }
-
-    /* ══ GALERIE TERRITOIRE ══ */
-    .galerie-territoire {
-      padding: 90px 0;
-      background: #0B1F33;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .galerie-territoire::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(31,111,139,0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .galerie-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 48px;
-    }
-
-    .galerie-item {
-      position: relative;
-      border-radius: 16px;
-      overflow: hidden;
-      aspect-ratio: 4/3;
-      cursor: pointer;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-
-    .galerie-item:hover {
-      transform: scale(1.02);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-    }
-
-    .galerie-item--large {
-      grid-column: span 2;
-      aspect-ratio: 16/9;
-    }
-
-    .galerie-item__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .galerie-item:hover .galerie-item__img {
-      transform: scale(1.06);
-    }
-
-    .galerie-item__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(11,31,51,0.85) 0%, rgba(11,31,51,0.2) 50%, transparent 100%);
-      transition: opacity 0.35s ease;
-    }
-
-    .galerie-item__caption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 20px 18px 16px;
-      z-index: 2;
-    }
-
-    .galerie-item__tag {
-      display: inline-block;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #D86F3C;
-      background: rgba(216,111,60,0.15);
-      border: 1px solid rgba(216,111,60,0.3);
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin-bottom: 6px;
-    }
-
-    .galerie-item__title {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: #FAF6EC;
-      line-height: 1.3;
-      margin: 0;
-    }
-
-    /* Fallback backgrounds pour galerie */
-    .galerie-item--palombaggia {
-      background: linear-gradient(135deg, #1a4a6e 0%, #0d6e8a 50%, #1a8fa0 100%);
-    }
-    .galerie-item--port {
-      background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 60%, #2a8aaa 100%);
-    }
-    .galerie-item--cote {
-      background: linear-gradient(135deg, #0d3a5a 0%, #1a6a8a 50%, #8FC7DA 100%);
-    }
-    .galerie-item--maquis {
-      background: linear-gradient(135deg, #1a3a1a 0%, #2a5a2a 50%, #3a7a3a 100%);
-    }
-    .galerie-item--route {
-      background: linear-gradient(135deg, #2a1a0a 0%, #4a3a1a 50%, #6a5a2a 100%);
-    }
-    .galerie-item--santa-giulia {
-      background: linear-gradient(135deg, #0a2a4a 0%, #1a5a7a 50%, #2a8aaa 100%);
-    }
-
-    /* ══ DEUX RYTHMES ══ */
-    .deux-rythmes {
-      padding: 110px 0;
-      background: #F5F0E8;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .deux-rythmes::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, #1F6F8B 0%, #D86F3C 50%, #1F6F8B 100%);
-    }
-
-    .deux-rythmes::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(11,31,51,0.1), transparent);
-    }
-
-    .rythmes-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      margin-top: 60px;
-      margin-bottom: 40px;
-    }
-
-    .rythme-card {
-      border-radius: 22px;
-      overflow: hidden;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-
-    .rythme-card:hover { transform: translateY(-5px); }
-
-    .rythme-card--calme {
-      background: linear-gradient(150deg, #1a3a52 0%, #0d2a42 100%);
-      border: 1px solid rgba(143,199,218,0.18);
-      box-shadow: 0 8px 40px rgba(11,31,51,0.28);
-    }
-
-    .rythme-card--calme:hover { box-shadow: 0 20px 64px rgba(11,31,51,0.4); }
-
-    .rythme-card--intense {
-      background: linear-gradient(150deg, #2d1a0a 0%, #1a0f06 100%);
-      border: 1px solid rgba(216,111,60,0.22);
-      box-shadow: 0 8px 40px rgba(216,111,60,0.12);
-    }
-
-    .rythme-card--intense:hover { box-shadow: 0 20px 64px rgba(216,111,60,0.22); }
-
-    /* Photo band dans les rythme cards */
-    .rythme-card__photo {
-      width: 100%;
-      height: 160px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .rythme-card__photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .rythme-card:hover .rythme-card__photo img {
-      transform: scale(1.05);
-    }
-
-    .rythme-card__photo-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, transparent 40%, rgba(11,31,51,0.9) 100%);
-    }
-
-    .rythme-card--intense .rythme-card__photo-overlay {
-      background: linear-gradient(to bottom, transparent 40%, rgba(26,15,6,0.9) 100%);
-    }
-
-    .rythme-card__header {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 30px 30px 22px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .rythme-card__icon {
-      flex-shrink: 0;
-      width: 54px;
-      height: 54px;
-      border-radius: 13px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .rythme-card--calme .rythme-card__icon {
-      background: rgba(143,199,218,0.1);
-      border: 1px solid rgba(143,199,218,0.2);
-    }
-
-    .rythme-card--intense .rythme-card__icon {
-      background: rgba(216,111,60,0.1);
-      border: 1px solid rgba(216,111,60,0.2);
-    }
-
-    .rythme-card__season { flex: 1; }
-
-    .season-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 4px 13px;
-      border-radius: 100px;
-      margin-bottom: 9px;
-    }
-
-    .season-tag--calme {
-      background: rgba(143,199,218,0.14);
-      color: #8FC7DA;
-      border: 1px solid rgba(143,199,218,0.25);
-    }
-
-    .season-tag--intense {
-      background: rgba(216,111,60,0.14);
-      color: #D86F3C;
-      border: 1px solid rgba(216,111,60,0.25);
-    }
-
-    .rythme-card__header h3 {
-      font-size: 1.22rem;
-      font-weight: 800;
-      color: #FAF6EC;
-      margin: 0;
-    }
-
-    .rythme-card__body { padding: 26px 30px; }
-
-    .rythme-card__body > p {
-      font-size: 0.9rem;
-      color: rgba(250,246,236,0.62);
-      line-height: 1.75;
-      margin-bottom: 22px;
-    }
-
-    .rythme-card__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 11px;
-    }
-
-    .rythme-card__list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.87rem;
-      color: rgba(250,246,236,0.68);
-      line-height: 1.55;
-    }
-
-    .list-icon {
-      flex-shrink: 0;
-      color: #8FC7DA;
-      margin-top: 2px;
-      font-size: 1rem;
-      line-height: 1;
-    }
-
-    .list-icon--alert { color: #D86F3C; }
-
-    .rythme-card__footer { padding: 20px 30px 30px; }
-
-    .rythme-indicator { display: flex; flex-direction: column; gap: 8px; }
-
-    .indicator-bar {
-      display: block;
-      height: 6px;
-      border-radius: 100px;
-      background: rgba(255,255,255,0.07);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .indicator-bar::after {
-      content: '';
-      position: absolute;
-      left: 0; top: 0;
-      height: 100%;
-      width: var(--level, 50%);
-      border-radius: 100px;
-      transition: width 1.8s ease;
-    }
-
-    .rythme-indicator--low .indicator-bar::after {
-      background: linear-gradient(90deg, #8FC7DA, #1F6F8B);
-    }
-
-    .rythme-indicator--high .indicator-bar::after {
-      background: linear-gradient(90deg, #D86F3C, #c0522a);
-      box-shadow: 0 0 14px rgba(216,111,60,0.55);
-    }
-
-    .indicator-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: rgba(250,246,236,0.38);
-    }
-
-    /* Saison comparison bar */
-    .saison-compare {
-      margin-top: 48px;
-      background: #fff;
-      border-radius: 20px;
-      padding: 36px 40px;
-      border: 1px solid rgba(11,31,51,0.08);
-      box-shadow: 0 4px 24px rgba(11,31,51,0.06);
-    }
-
-    .saison-compare__title {
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #2C4A5A;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
-    .saison-compare__bars {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .compare-row {
-      display: grid;
-      grid-template-columns: 140px 1fr 60px;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .compare-row__label {
-      font-size: 0.82rem;
-      color: #2C4A5A;
-      font-weight: 600;
-    }
-
-    .compare-row__track {
-      height: 8px;
-      background: rgba(11,31,51,0.06);
-      border-radius: 100px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .compare-row__fill {
-      height: 100%;
-      border-radius: 100px;
-      width: var(--w, 50%);
-      transition: width 1.5s ease;
-    }
-
-    .compare-row__fill--low { background: linear-gradient(90deg, #8FC7DA, #1F6F8B); }
-    .compare-row__fill--mid { background: linear-gradient(90deg, #F0C040, #D86F3C); }
-    .compare-row__fill--high { background: linear-gradient(90deg, #D86F3C, #c0522a); box-shadow: 0 0 8px rgba(216,111,60,0.4); }
-
-    .compare-row__value {
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #0B1F33;
-      text-align: right;
-    }
-
-    /* Bridge */
-    .rythmes-bridge {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      padding: 34px 44px;
-      background: linear-gradient(135deg, rgba(31,111,139,0.07), rgba(216,111,60,0.04));
-      border: 1px solid rgba(31,111,139,0.18);
-      border-radius: 18px;
-      margin-top: 32px;
-    }
-
-    .bridge-line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(31,111,139,0.35), transparent);
-    }
-
-    .bridge-content {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      flex-shrink: 0;
-      max-width: 500px;
-    }
-
-    .bridge-icon { flex-shrink: 0; }
-
-    .bridge-text {
-      font-size: 0.97rem;
-      color: #2C4A5A;
-      line-height: 1.7;
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    /* ══ REGARDS SUR LE TERRITOIRE ══ */
-    .regards-territoire {
-      padding: 100px 0;
-      background: linear-gradient(160deg, #071524 0%, #0B1F33 50%, #0d2a42 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .regards-territoire::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(31,111,139,0.12) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .regards-mosaic {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto;
-      gap: 14px;
-      margin-top: 52px;
-    }
-
-    .regard-item {
-      position: relative;
-      border-radius: 14px;
-      overflow: hidden;
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-
-    .regard-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.5);
-    }
-
-    .regard-item--featured {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-
-    .regard-item__bg {
-      width: 100%;
-      height: 100%;
-      min-height: 180px;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .regard-item--featured .regard-item__bg {
-      min-height: 380px;
-    }
-
-    .regard-item:hover .regard-item__bg {
-      transform: scale(1.06);
-    }
-
-    .regard-item__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(11,31,51,0.9) 0%, rgba(11,31,51,0.3) 50%, transparent 100%);
-    }
-
-    .regard-item__info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px 14px 14px;
-      z-index: 2;
-    }
-
-    .regard-item__cat {
-      display: inline-block;
-      font-size: 0.6rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #8FC7DA;
-      margin-bottom: 4px;
-    }
-
-    .regard-item__name {
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: #FAF6EC;
-      margin: 0;
-      line-height: 1.3;
-    }
-
-    .regard-item--featured .regard-item__name {
-      font-size: 1.1rem;
-    }
-
-    /* Fallback backgrounds */
-    .regard-bg--port { background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 100%); }
-    .regard-bg--plage { background: linear-gradient(135deg, #0d4a6e 0%, #1a8aaa 100%); }
-    .regard-bg--maquis { background: linear-gradient(135deg, #1a3a1a 0%, #3a7a3a 100%); }
-    .regard-bg--route { background: linear-gradient(135deg, #2a1a0a 0%, #6a5a2a 100%); }
-    .regard-bg--ville { background: linear-gradient(135deg, #1a2a3a 0%, #2a4a6a 100%); }
-    .regard-bg--cote { background: linear-gradient(135deg, #0a2a4a 0%, #2a8aaa 100%); }
-
-    /* ══ FLUX TERRITOIRE ══ */
-    .flux-territoire {
-      padding: 110px 0;
-      background: #0B1F33;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .flux-territoire::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(31,111,139,0.13) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(216,111,60,0.07) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    .flux-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 60px;
-    }
-
-    .flux-card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(143,199,218,0.11);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .flux-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--flux-color, #1F6F8B), transparent);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .flux-card:hover {
-      background: rgba(31,111,139,0.08);
-      border-color: rgba(143,199,218,0.24);
-      transform: translateY(-5px);
-      box-shadow: 0 16px 48px rgba(0,0,0,0.35);
-    }
-
-    .flux-card:hover::before { opacity: 1; }
-
-    .flux-card--routes { --flux-color: #D86F3C; }
-    .flux-card--plages { --flux-color: #8FC7DA; }
-    .flux-card--parkings { --flux-color: #4CAF50; }
-    .flux-card--services { --flux-color: #9C6FD8; }
-    .flux-card--events { --flux-color: #F0C040; }
-    .flux-card--meteo { --flux-color: #40B0F0; }
-
-    .flux-card__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 16px;
-    }
-
-    .flux-card__icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      font-size: 1.35rem;
-    }
-
-    .flux-card__status {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-    }
-
-    .status-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-    }
-
-    .status-dot--ok { background: #4CAF50; box-shadow: 0 0 7px rgba(76,175,80,0.7); }
-    .status-dot--warn { background: #F0C040; box-shadow: 0 0 7px rgba(240,192,64,0.7); }
-    .status-dot--alert { background: #D86F3C; box-shadow: 0 0 7px rgba(216,111,60,0.7); animation: blinkDot 1.5s infinite; }
-
-    .status-ok { color: #4CAF50; }
-    .status-warn { color: #F0C040; }
-    .status-alert { color: #D86F3C; }
-
-    .flux-card__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #FAF6EC;
-      margin-bottom: 8px;
-    }
-
-    .flux-card__desc {
-      font-size: 0.84rem;
-      color: rgba(250,246,236,0.52);
-      line-height: 1.65;
-      margin-bottom: 20px;
-    }
-
-    .flux-card__meter { display: flex; flex-direction: column; gap: 6px; }
-
-    .meter-bar {
-      height: 5px;
-      background: rgba(255,255,255,0.07);
-      border-radius: 100px;
-      overflow: hidden;
-    }
-
-    .meter-fill {
-      height: 100%;
-      border-radius: 100px;
-      background: var(--flux-color, #1F6F8B);
-      width: var(--fill, 50%);
-      transition: width 1.8s ease;
-    }
-
-    .meter-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.67rem;
-      color: rgba(250,246,236,0.32);
-    }
-
-    /* ══ PROBLÈMES & SOLUTIONS ══ */
-    .problemes-solutions {
-      padding: 110px 0;
-      background: #FAF6EC;
-      position: relative;
-    }
-
-    .problemes-solutions::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(11,31,51,0.1), transparent);
-    }
-
-    .problems-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 60px;
-    }
-
-    .problem-item {
-      background: #fff;
-      border-radius: 20px;
-      padding: 34px;
-      border: 1px solid rgba(11,31,51,0.07);
-      box-shadow: 0 4px 24px rgba(11,31,51,0.05);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .problem-item::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg, #D86F3C, #1F6F8B);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .problem-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 16px 52px rgba(11,31,51,0.11);
-    }
-
-    .problem-item:hover::before { opacity: 1; }
-
-    .problem-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 13px;
-      background: rgba(216,111,60,0.07);
-      border: 1px solid rgba(216,111,60,0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-      font-size: 1.4rem;
-    }
-
-    .problem-item__content h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #0B1F33;
-      margin-bottom: 10px;
-    }
-
-    .problem-desc {
-      font-size: 0.87rem;
-      color: #5a6a7a;
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
-
-    .solution-arrow {
-      font-size: 1.3rem;
-      color: #1F6F8B;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-
-    .solution-desc {
-      font-size: 0.87rem;
-      color: #1F6F8B;
-      line-height: 1.7;
-      font-weight: 500;
-      padding: 14px 18px;
-      background: rgba(31,111,139,0.06);
-      border-radius: 11px;
-      border-left: 3px solid #1F6F8B;
-    }
-
-    /* ══ CAS D'USAGE ══ */
-    .cas-usage {
-      padding: 110px 0;
-      background: #0B1F33;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cas-usage::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(31,111,139,0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .cas-usage-list {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      margin-top: 60px;
-    }
-
-    .cas-item {
-      display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 28px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(143,199,218,0.1);
-      border-radius: 22px;
-      padding: 38px;
-      transition: all 0.35s ease;
-    }
-
-    .cas-item:hover {
-      background: rgba(31,111,139,0.07);
-      border-color: rgba(143,199,218,0.2);
-      transform: translateX(5px);
-    }
-
-    .cas-item__number {
-      font-size: 3.2rem;
-      font-weight: 900;
-      color: rgba(143,199,218,0.13);
-      line-height: 1;
-      letter-spacing: -0.04em;
-      align-self: flex-start;
-      padding-top: 4px;
-    }
-
-    .cas-tag {
-      display: inline-block;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #D86F3C;
-      background: rgba(216,111,60,0.1);
-      border: 1px solid rgba(216,111,60,0.2);
-      padding: 4px 13px;
-      border-radius: 100px;
-      margin-bottom: 10px;
-    }
-
-    .cas-item__context { margin-bottom: 24px; }
-
-    .cas-item__content h3 {
-      font-size: 1.18rem;
-      font-weight: 800;
-      color: #FAF6EC;
-      margin: 0;
-    }
-
-    .cas-item__scenario {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 20px;
-      align-items: start;
-    }
-
-    .scenario-before, .scenario-after {
-      padding: 20px;
-      border-radius: 13px;
-    }
-
-    .scenario-before {
-      background: rgba(216,111,60,0.06);
-      border: 1px solid rgba(216,111,60,0.14);
-    }
-
-    .scenario-after {
-      background: rgba(31,111,139,0.08);
-      border: 1px solid rgba(143,199,218,0.18);
-    }
-
-    .scenario-label {
-      display: block;
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(216,111,60,0.8);
-      margin-bottom: 10px;
-    }
-
-    .scenario-label--after { color: #8FC7DA; }
-
-    .scenario-before p, .scenario-after p {
-      font-size: 0.86rem;
-      color: rgba(250,246,236,0.62);
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    .scenario-after p { color: rgba(250,246,236,0.75); }
-
-    .scenario-divider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 20px;
-    }
-
-    .divider-icon {
-      font-size: 1.5rem;
-      color: #1F6F8B;
-      opacity: 0.55;
-    }
-
-    /* ══ PUBLICS CIBLÉS ══ */
-    .publics-cibles {
-      padding: 110px 0;
-      background: #F5F0E8;
-      position: relative;
-    }
-
-    .publics-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 60px;
-    }
-
-    .public-card {
-      background: #fff;
-      border-radius: 20px;
-      padding: 30px;
-      border: 1px solid rgba(11,31,51,0.07);
-      box-shadow: 0 4px 20px rgba(11,31,51,0.05);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .public-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, #1F6F8B, #8FC7DA);
-      transform: scaleX(0);
-      transition: transform 0.35s ease;
-    }
-
-    .public-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 52px rgba(11,31,51,0.12);
-    }
-
-    .public-card:hover::after { transform: scaleX(1); }
-
-    .public-card__icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 15px;
-      background: rgba(31,111,139,0.06);
-      border: 1px solid rgba(31,111,139,0.14);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-      font-size: 1.6rem;
-    }
-
-    .public-card__content h3 {
-      font-size: 1.02rem;
-      font-weight: 800;
-      color: #0B1F33;
-      margin-bottom: 10px;
-    }
-
-    .public-card__desc {
-      font-size: 0.84rem;
-      color: #5a6a7a;
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
-
-    .public-card__benefits {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
-    }
-
-    .public-card__benefits li {
-      font-size: 0.82rem;
-      color: #2C4A5A;
-      padding-left: 16px;
-      position: relative;
-      line-height: 1.45;
-    }
-
-    .public-card__benefits li::before {
-      content: '◦';
-      position: absolute;
-      left: 0;
-      color: #1F6F8B;
-    }
-
-    .tag-badge {
-      display: inline-block;
-      font-size: 0.67rem;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: #1F6F8B;
-      background: rgba(31,111,139,0.08);
-      border: 1px solid rgba(31,111,139,0.18);
-      padding: 4px 11px;
-      border-radius: 100px;
-    }
-
-    /* ══ ENJEUX ENVIRONNEMENT ══ */
-    .enjeux-environnement {
-      padding: 110px 0;
-      background: linear-gradient(160deg, #071524 0%, #0B1F33 50%, #0d2a42 100%);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .enjeux-environnement::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 60% 60% at 80% 50%, rgba(31,111,139,0.14) 0%, transparent 60%);
-      pointer-events: none;
-    }
-
-    .enjeux-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 72px;
-      align-items: center;
-    }
-
-    .enjeux-list {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .enjeu-item {
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-    }
-
-    .enjeu-item__icon {
-      flex-shrink: 0;
-      width: 46px;
-      height: 46px;
-      border-radius: 11px;
-      background: rgba(31,111,139,0.14);
-      border: 1px solid rgba(31,111,139,0.28);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-    }
-
-    .enjeu-item__text h4 {
-      font-size: 0.97rem;
-      font-weight: 700;
-      color: #FAF6EC;
-      margin-bottom: 6px;
-    }
-
-    .enjeu-item__text p {
-      font-size: 0.84rem;
-      color: rgba(250,246,236,0.58);
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    .enjeux-visual { position: relative; }
-
-    .enjeux-photo-container {
-      position: relative;
-      width: 100%;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 24px 72px rgba(0,0,0,0.5);
-    }
-
-    .enjeux-photo-container img {
-      width: 100%;
-      height: 380px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .enjeux-photo-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(11,31,51,0.6) 0%, rgba(31,111,139,0.3) 100%);
-    }
-
-    .enjeux-photo-badge {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      background: rgba(11,31,51,0.85);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(143,199,218,0.2);
-      border-radius: 14px;
-      padding: 16px 20px;
-    }
-
-    .enjeux-photo-badge__title {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #8FC7DA;
-      margin-bottom: 6px;
-    }
-
-    .enjeux-photo-badge__text {
-      font-size: 0.84rem;
-      color: rgba(250,246,236,0.7);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    /* Fallback map container */
-    .enjeux-map-container {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 1;
-      max-width: 440px;
-      margin: 0 auto;
-    }
-
-    .enjeux-map-bg {
-      position: absolute;
-      inset: 0;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(31,111,139,0.14) 0%, rgba(11,31,51,0.5) 70%);
-      border: 1px solid rgba(143,199,218,0.14);
-    }
-
-    .enjeux-map-bg::before {
-      content: '';
-      position: absolute;
-      inset: 15%;
-      border-radius: 50%;
-      border: 1px solid rgba(143,199,218,0.09);
-    }
-
-    .enjeux-map-bg::after {
-      content: '';
-      position: absolute;
-      inset: 30%;
-      border-radius: 50%;
-      border: 1px solid rgba(143,199,218,0.07);
-    }
-
-    .enjeux-map-overlay { position: absolute; inset: 0; }
-
-    .map-point {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .map-point--1 { top: 20%; left: 15%; }
-    .map-point--2 { top: 35%; right: 10%; }
-    .map-point--3 { bottom: 30%; left: 20%; }
-    .map-point--4 { bottom: 20%; right: 20%; }
-
-    .map-point__dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #8FC7DA;
-      border: 2px solid rgba(143,199,218,0.4);
-      flex-shrink: 0;
-    }
-
-    .map-point__dot--active {
-      background: #D86F3C;
-      border-color: rgba(216,111,60,0.4);
-      box-shadow: 0 0 14px rgba(216,111,60,0.7);
-      animation: pulsePoint 2s ease-in-out infinite;
-    }
-
-    @keyframes pulsePoint {
-      0%, 100% { box-shadow: 0 0 14px rgba(216,111,60,0.7); }
-      50% { box-shadow: 0 0 28px rgba(216,111,60,1); }
-    }
-
-    .map-point__label {
-      font-size: 0.7rem;
-      color: rgba(250,246,236,0.58);
-      white-space: nowrap;
-      font-weight: 500;
-    }
-
-    /* ══ GALERIE LOCALE PORTO FLOW ══ */
-    .galerie-locale {
-      padding: 100px 0;
-      background: #F5F0E8;
-      position: relative;
-    }
-
-    .galerie-locale::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, #1F6F8B 0%, #D86F3C 50%, #1F6F8B 100%);
-    }
-
-    .galerie-locale__notice {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      background: rgba(31,111,139,0.06);
-      border: 1px solid rgba(31,111,139,0.18);
-      border-radius: 14px;
-      padding: 18px 22px;
-      margin-top: 36px;
-      margin-bottom: 40px;
-    }
-
-    .galerie-locale__notice-icon {
-      flex-shrink: 0;
-      font-size: 1.3rem;
-      margin-top: 2px;
-    }
-
-    .galerie-locale__notice p {
-      font-size: 0.84rem;
-      color: #2C4A5A;
-      line-height: 1.7;
-      margin: 0;
-    }
-
-    .galerie-locale__notice strong {
-      color: #1F6F8B;
-    }
-
-    /* Formulaire ajout photo */
-    .galerie-add-form {
-      background: #fff;
-      border-radius: 20px;
-      padding: 36px 40px;
-      border: 1px solid rgba(11,31,51,0.08);
-      box-shadow: 0 4px 24px rgba(11,31,51,0.06);
-      margin-bottom: 48px;
-    }
-
-    .galerie-add-form__title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #0B1F33;
-      margin-bottom: 28px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .galerie-add-form__title-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 9px;
-      background: rgba(31,111,139,0.08);
-      border: 1px solid rgba(31,111,139,0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-    }
-
-    .galerie-form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .galerie-form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-
-    .galerie-form-group--full {
-      grid-column: span 2;
-    }
-
-    .galerie-form-group label {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #2C4A5A;
-    }
-
-    .galerie-form-group input[type="text"],
-    .galerie-form-group input[type="url"],
-    .galerie-form-group select {
-      padding: 11px 16px;
-      border: 1.5px solid rgba(11,31,51,0.14);
-      border-radius: 10px;
-      font-size: 0.9rem;
-      color: #0B1F33;
-      background: #FAF6EC;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-      outline: none;
-      font-family: inherit;
-    }
-
-    .galerie-form-group input[type="text"]:focus,
-    .galerie-form-group input[type="url"]:focus,
-    .galerie-form-group select:focus {
-      border-color: #1F6F8B;
-      box-shadow: 0 0 0 3px rgba(31,111,139,0.1);
-    }
-
-    .galerie-form-group input[type="file"] {
-      padding: 10px 14px;
-      border: 2px dashed rgba(31,111,139,0.3);
-      border-radius: 10px;
-      font-size: 0.87rem;
-      color: #2C4A5A;
-      background: rgba(31,111,139,0.03);
-      cursor: pointer;
-      transition: border-color 0.25s ease, background 0.25s ease;
-      font-family: inherit;
-    }
-
-    .galerie-form-group input[type="file"]:hover {
-      border-color: #1F6F8B;
-      background: rgba(31,111,139,0.06);
-    }
-
-    .galerie-form-separator {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin: 4px 0;
-      grid-column: span 2;
-    }
-
-    .galerie-form-separator span {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(11,31,51,0.35);
-      white-space: nowrap;
-    }
-
-    .galerie-form-separator::before,
-    .galerie-form-separator::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: rgba(11,31,51,0.1);
-    }
-
-    .galerie-form-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-
-    .galerie-form-error {
-      font-size: 0.82rem;
-      color: #c0522a;
-      background: rgba(216,111,60,0.07);
-      border: 1px solid rgba(216,111,60,0.2);
-      border-radius: 8px;
-      padding: 8px 14px;
-      display: none;
-    }
-
-    .galerie-form-error.visible { display: block; }
-
-    /* Grille galerie locale */
-    .galerie-locale__grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      min-height: 80px;
-    }
-
-    .galerie-locale__empty {
-      grid-column: span 3;
-      text-align: center;
-      padding: 52px 20px;
-      color: rgba(11,31,51,0.35);
-      font-size: 0.9rem;
-      border: 2px dashed rgba(11,31,51,0.1);
-      border-radius: 16px;
-    }
-
-    .galerie-locale__empty-icon {
-      font-size: 2.5rem;
-      display: block;
-      margin-bottom: 12px;
-      opacity: 0.4;
-    }
-
-    .galerie-photo-card {
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(11,31,51,0.07);
-      box-shadow: 0 4px 16px rgba(11,31,51,0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
-    }
-
-    .galerie-photo-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 40px rgba(11,31,51,0.12);
-    }
-
-    .galerie-photo-card__img-wrap {
-      width: 100%;
-      height: 180px;
-      overflow: hidden;
-      background: linear-gradient(135deg, #e8e0d0, #d8d0c0);
-      position: relative;
-    }
-
-    .galerie-photo-card__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s ease;
-    }
-
-    .galerie-photo-card:hover .galerie-photo-card__img {
-      transform: scale(1.05);
-    }
-
-    .galerie-photo-card__body {
-      padding: 14px 16px 16px;
-    }
-
-    .galerie-photo-card__cat {
-      display: inline-block;
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #1F6F8B;
-      background: rgba(31,111,139,0.08);
-      border: 1px solid rgba(31,111,139,0.18);
-      padding: 3px 9px;
-      border-radius: 100px;
-      margin-bottom: 7px;
-    }
-
-    .galerie-photo-card__title {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: #0B1F33;
-      line-height: 1.35;
-      margin: 0 0 10px;
-    }
-
-    .galerie-
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner container">
+      <a href="index.html" class="site-logo" aria-label="PortoFlow — Accueil">
+        <span class="logo-mark">PF</span>
+        <span class="logo-text">Porto<strong>Flow</strong></span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Navigation principale" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="territoire.html" class="nav-link nav-link--active" aria-current="page">Territoire</a></li>
+          <li><a href="experience.html" class="nav-link">Expérience</a></li>
+          <li><a href="ecosysteme.html" class="nav-link">Écosystème</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="ingenierie.html" class="nav-link">Ingénierie IA</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact</a>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         HERO COMPACT TERRITOIRE
+    ═══════════════════════════════════════════ -->
+    <section class="hero-compact hero-compact--territoire" aria-labelledby="territoire-hero-title">
+      <div class="hero-compact__bg" aria-hidden="true">
+        <div class="hero-compact__topo"></div>
+        <div class="hero-compact__glow hero-compact__glow--ocean"></div>
+        <div class="hero-compact__glow hero-compact__glow--terra"></div>
+      </div>
+
+      <div class="container hero-compact__inner">
+        <div class="hero-compact__content">
+          <span class="section-kicker section-kicker--light">
+            <span class="kicker-dot"></span>
+            Porto-Vecchio · Corse-du-Sud
+          </span>
+          <h1 class="hero-compact__title" id="territoire-hero-title">
+            Un territoire,
+            <em class="text-sky">deux rythmes</em>
+          </h1>
+          <p class="hero-compact__subtitle">
+            Porto-Vecchio concentre en quelques kilomètres carrés une diversité exceptionnelle : littoral, maquis, routes de montagne, port de plaisance. PortoFlow cartographie ses flux, anticipe ses tensions et accompagne ses habitants comme ses visiteurs, toute l'année.
+          </p>
+          <div class="hero-compact__actions">
+            <a href="dashboard.html" class="btn btn--primary">Voir le dashboard territorial</a>
+            <a href="#flux-territoire" class="btn btn--ghost btn--light">Explorer les flux</a>
+          </div>
+        </div>
+
+        <div class="hero-compact__stats" aria-label="Chiffres clés du territoire">
+          <div class="stat-pill">
+            <span class="stat-pill__value">13 500</span>
+            <span class="stat-pill__label">habitants permanents</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-pill__value">×8</span>
+            <span class="stat-pill__label">population en juillet–août</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-pill__value">200 km</span>
+            <span class="stat-pill__label">de côtes en Corse-du-Sud</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-pill__value">35+</span>
+            <span class="stat-pill__label">plages et criques recensées</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION HAUTE SAISON / HORS SAISON
+    ═══════════════════════════════════════════ -->
+    <section class="section-saisons" aria-labelledby="saisons-title">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-kicker">Dynamiques saisonnières</span>
+          <h2 class="section-title" id="saisons-title">Porto-Vecchio à deux vitesses</h2>
+          <p class="section-desc">
+            Le territoire vit une transformation radicale entre l'hiver résidentiel et l'été touristique. PortoFlow accompagne ces deux réalités avec des données adaptées à chaque contexte.
+          </p>
+        </div>
+
+        <div class="saisons-grid">
+
+          <!-- Hors saison -->
+          <article class="saison-card saison-card--calme">
+            <div class="saison-card__header">
+              <div class="saison-card__icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              </div>
+              <div class="saison-card__meta">
+                <span class="season-badge season-badge--calme">Hors saison · Oct → Mai</span>
+                <h3 class="saison-card__title">Territoire résidentiel</h3>
+              </div>
+            </div>
+
+            <div class="saison-card__body">
+              <p class="saison-card__desc">
+                Porto-Vecchio retrouve son rythme local. Les services publics, les commerces de proximité et les déplacements quotidiens structurent la vie du territoire. La mobilité est fluide, les besoins sont prévisibles.
+              </p>
+              <ul class="saison-card__list">
+                <li>
+                  <span class="list-icon" aria-hidden="true">◆</span>
+                  Trafic routier stable et prévisible sur les axes principaux
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◆</span>
+                  Services municipaux accessibles sans saturation
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◆</span>
+                  Commerces locaux en activité régulière
+                </li>
+                <li>
+                  <span class="list-icon" aria-hidden="true">◆</span>
+                  Parkings disponibles, plages accessibles librement
+                </li>
+              </ul>
+            </div>
+
+            <div class="saison-card__footer">
+              <div class="saison-indicator">
+                <span class="saison-indicator__label">Niveau d'activité</span>
+                <div class="saison-bar">
+                  <div class="saison-bar__fill saison-bar__fill--low" style="--level: 28%"></div>
+                </div>
+                <span class="saison-indicator__value">Faible · Stable</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Haute saison -->
+          <article class="saison-card saison-card--intense">
+            <div class="saison-card__header">
+              <div class="saison-card__icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><path d="M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/></svg>
+              </div>
+              <div class="saison-card__meta">
+                <span class="season-badge season-badge--intense">Haute saison · Juin → Sept</span>
+                <h3 class="saison-card__title">Territoire sous tension</h3>
+              </div>
+            </div>
+
+            <div class="saison-card__body">
+              <p class="saison-card__desc">
+                La population peut être multipliée par huit. Les routes saturent, les parkings débordent, les plages atteignent leur capacité maximale. La gestion des flux devient un enjeu opérationnel critique pour les collectivités.
+              </p>
+              <ul class="saison-card__list">
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">▲</span>
+                  Congestion sur les axes côtiers et accès aux plages
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">▲</span>
+                  Saturation des parkings en zone littorale
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">▲</span>
+                  Pression sur les services d'urgence et de sécurité
+                </li>
+                <li>
+                  <span class="list-icon list-icon--alert" aria-hidden="true">▲</span>
+                  Forte demande d'information en temps réel
+                </li>
+              </ul>
+            </div>
+
+            <div class="saison-card__footer">
+              <div class="saison-indicator">
+                <span class="saison-indicator__label">Niveau d'activité</span>
+                <div class="saison-bar">
+                  <div class="saison-bar__fill saison-bar__fill--high" style="--level: 92%"></div>
+                </div>
+                <span class="saison-indicator__value">Critique · Pic estival</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Comparatif saisonnier -->
+        <div class="saison-compare">
+          <h3 class="saison-compare__title">Comparatif saisonnier — indicateurs clés</h3>
+          <div class="saison-compare__rows">
+            <div class="compare-row">
+              <span class="compare-row__label">Trafic routier</span>
+              <div class="compare-row__track">
+                <div class="compare-row__fill compare-row__fill--high" style="--w: 94%"></div>
+              </div>
+              <span class="compare-row__value">×6 en été</span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-row__label">Occupation parkings</span>
+              <div class="compare-row__track">
+                <div class="compare-row__fill compare-row__fill--high" style="--w: 88%"></div>
+              </div>
+              <span class="compare-row__value">88 % max</span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-row__label">Fréquentation plages</span>
+              <div class="compare-row__track">
+                <div class="compare-row__fill compare-row__fill--mid" style="--w: 76%"></div>
+              </div>
+              <span class="compare-row__value">+320 %</span>
+            </div>
+            <div class="compare-row">
+              <span class="compare-row__label">Demandes d'info</span>
+              <div class="compare-row__track">
+                <div class="compare-row__fill compare-row__fill--low" style="--w: 62%"></div>
+              </div>
+              <span class="compare-row__value">+180 %</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CARTES FLUX TERRITOIRE
+    ═══════════════════════════════════════════ -->
+    <section class="section-flux" id="flux-territoire" aria-labelledby="flux-title">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-kicker section-kicker--light">Mobilité & flux</span>
+          <h2 class="section-title section-title--light" id="flux-title">Les flux que PortoFlow surveille</h2>
+          <p class="section-desc section-desc--light">
+            Quatre dimensions de mobilité structurent la vie du territoire. PortoFlow les agrège, les contextualise et les restitue sous forme d'informations actionnables.
+          </p>
+        </div>
+
+        <div class="flux-grid feature-grid feature-grid--4">
+
+          <article class="flux-card feature-card flux-card--routes">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-hidden="true">🛣️</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--warn" aria-hidden="true"></span>
+                <span class="status-warn">Surveillance active</span>
+              </div>
+            </div>
+            <h3 class="flux-card__title">Routes & axes</h3>
+            <p class="flux-card__desc">
+              Suivi des axes principaux : RN198, accès Palombaggia, route des Iles Sanguinaires. Détection des points de congestion récurrents en période estivale.
+            </p>
+            <div class="flux-card__meter">
+              <div class="meter-bar">
+                <div class="meter-fill" style="--fill: 68%; background: #D86F3C;"></div>
+              </div>
+              <div class="meter-labels">
+                <span>Fluide</span>
+                <span>Saturé</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flux-card feature-card flux-card--parkings">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-hidden="true">🅿️</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--ok" aria-hidden="true"></span>
+                <span class="status-ok">Disponible</span>
+              </div>
+            </div>
+            <h3 class="flux-card__title">Parkings & stationnement</h3>
+            <p class="flux-card__desc">
+              Taux d'occupation des parkings publics, zones de stationnement côtières et alternatives disponibles. Orientation en temps réel vers les espaces libres.
+            </p>
+            <div class="flux-card__meter">
+              <div class="meter-bar">
+                <div class="meter-fill" style="--fill: 42%; background: #4CAF50;"></div>
+              </div>
+              <div class="meter-labels">
+                <span>Libre</span>
+                <span>Complet</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flux-card feature-card flux-card--plages">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-hidden="true">🏖️</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--ok" aria-hidden="true"></span>
+                <span class="status-ok">Accessible</span>
+              </div>
+            </div>
+            <h3 class="flux-card__title">Plages & littoral</h3>
+            <p class="flux-card__desc">
+              Fréquentation des plages emblématiques : Palombaggia, Santa Giulia, Rondinara. Conditions de baignade, accès et alternatives moins fréquentées.
+            </p>
+            <div class="flux-card__meter">
+              <div class="meter-bar">
+                <div class="meter-fill" style="--fill: 35%; background: #8FC7DA;"></div>
+              </div>
+              <div class="meter-labels">
+                <span>Calme</span>
+                <span>Bondé</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="flux-card feature-card flux-card--events">
+            <div class="flux-card__header">
+              <div class="flux-card__icon" aria-hidden="true">📅</div>
+              <div class="flux-card__status">
+                <span class="status-dot status-dot--warn" aria-hidden="true"></span>
+                <span class="status-warn">Événement proche</span>
+              </div>
+            </div>
+            <h3 class="flux-card__title">Événements & agenda</h3>
+            <p class="flux-card__desc">
+              Marchés, fêtes locales, concerts, régates. Anticipation des pics de fréquentation liés aux événements et information préventive des usagers.
+            </p>
+            <div class="flux-card__meter">
+              <div class="meter-bar">
+                <div class="meter-fill" style="--fill: 55%; background: #F0C040;"></div>
+              </div>
+              <div class="meter-labels">
+                <span>Calme</span>
+                <span>Intense</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         IMAGE LOCALE / CARTE STYLISÉE PANEL
+    ═══════════════════════════════════════════ -->
+    <section class="section-local-panel" aria-labelledby="local-panel-title">
+      <div class="container">
+        <div class="local-panel">
+
+          <div class="local-panel__content">
+            <span class="section-kicker">Ancrage territorial</span>
+            <h2 class="local-panel__title" id="local-panel-title">
+              Un territoire d'exception,<br>
+              <span class="text-sky">une responsabilité partagée</span>
+            </h2>
+            <p class="local-panel__desc">
+              Porto-Vecchio et la Corse-du-Sud concentrent des enjeux environnementaux, économiques et sociaux qui exigent une gestion fine et informée. PortoFlow n'est pas un outil touristique : c'est un copilote territorial conçu pour les habitants, les collectivités et les professionnels qui font vivre ce territoire au quotidien.
+            </p>
+            <ul class="local-panel__list">
+              <li>
+                <span class="local-panel__list-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Données contextualisées pour Porto-Vecchio et ses environs
+              </li>
+              <li>
+                <span class="local-panel__list-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Respect des équilibres environnementaux du littoral corse
+              </li>
+              <li>
+                <span class="local-panel__list-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Interface pensée pour tous les profils d'usagers
+              </li>
+              <li>
+                <span class="local-panel__list-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                Déployable par les collectivités locales sans dépendance externe
+              </li>
+            </ul>
+          </div>
+
+          <div class="local-panel__visual">
+            <div class="image-slot image-slot--territoire" role="img" aria-label="Plage, littoral et paysage méditerranéen autour de Porto-Vecchio">
+              <img
+                src="assets/images/plage-littoral.jpg"
+                alt="Plage, littoral et paysage méditerranéen autour de Porto-Vecchio"
+                class="image-slot__img"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
+              <div class="image-slot__overlay" aria-hidden="true"></div>
+              <div class="image-slot__badge" aria-hidden="true">
+                <span class="image-slot__badge-dot"></span>
+                Territoire actif
+              </div>
+              <div class="map-overlay" aria-hidden="true">
+                <div class="map-overlay__grid"></div>
+                <div class="map-overlay__point map-overlay__point--1">
+                  <span class="map-point-dot"></span>
+                  <span class="map-point-label">Porto-Vecchio</span>
+                </div>
+                <div class="map-overlay__point map-overlay__point--2">
+                  <span class="map-point-dot map-point-dot--terra"></span>
+                  <span class="map-point-label">Palombaggia</span>
+                </div>
+                <div class="map-overlay__point map-overlay__point--3">
+                  <span class="map-point-dot map-point-dot--sky"></span>
+                  <span class="map-point-label">Santa Giulia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA VERS DASHBOARD
+    ═══════════════════════════════════════════ -->
+    <section class="cta-band cta-band--dashboard" aria-labelledby="cta-dashboard-title">
+      <div class="container cta-band__inner">
+        <div class="cta-band__content">
+          <span class="section-kicker section-kicker--light">Dashboard territorial</span>
+          <h2 class="cta-band__title" id="cta-dashboard-title">
+            Visualisez le territoire en temps réel
+          </h2>
+          <p class="cta-band__desc">
+            Le dashboard PortoFlow agrège les indicateurs clés du territoire : flux de mobilité, occupation des espaces, alertes saisonnières et données de contexte local. Un outil de pilotage conçu pour les décideurs et les professionnels.
+          </p>
+          <div class="cta-band__actions">
+            <a href="dashboard.html" class="btn btn--primary btn--lg">
+              Accéder au dashboard
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="contact.html" class="btn btn--ghost btn--light btn--lg">Nous contacter</a>
+          </div>
+        </div>
+        <div class="cta-band__visual" aria-hidden="true">
+          <div class="cta-dashboard-preview">
+            <div class="cta-preview__bar">
+              <span class="cta-preview__dot cta-preview__dot--red"></span>
+              <span class="cta-preview__dot cta-preview__dot--yellow"></span>
+              <span class="cta-preview__dot cta-preview__dot--green"></span>
+              <span class="cta-preview__label">Dashboard territorial</span>
+            </div>
+            <div class="cta-preview__metrics">
+              <div class="cta-preview__metric">
+                <span class="cta-preview__metric-val">68%</span>
+                <span class="cta-preview__metric-lbl">Trafic</span>
+              </div>
+              <div class="cta-preview__metric">
+                <span class="cta-preview__metric-val">42%</span>
+                <span class="cta-preview__metric-lbl">Parkings</span>
+              </div>
+              <div class="cta-preview__metric">
+                <span class="cta-preview__metric-val">35%</span>
+                <span class="cta-preview__metric-lbl">Plages</span>
+              </div>
+            </div>
+            <div class="cta-preview__chart" aria-hidden="true">
+              <div class="cta-chart-bar" style="--h: 40%"></div>
+              <div class="cta-chart-bar" style="--h: 65%"></div>
+              <div class="cta-chart-bar" style="--h: 55%"></div>
+              <div class="cta-chart-bar" style="--h: 80%"></div>
+              <div class="cta-chart-bar" style="--h: 70%"></div>
+              <div class="cta-chart-bar cta-chart-bar--active" style="--h: 90%"></div>
+              <div class="cta-chart-bar" style="--h: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="page-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo site-logo--footer" aria-label="PortoFlow — Accueil">
+          <span class="logo-mark">PF</span>
+          <span class="logo-text">Porto<strong>Flow</strong></span>
+        </a>
+        <p class="footer-tagline">Copilote intelligent du territoire<br>Porto-Vecchio · Corse-du-Sud</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav__list">
+          <li><a href="index.html" class="footer-nav__link">Accueil</a></li>
+          <li><a href="territoire.html" class="footer-nav__link footer-nav__link--active">Territoire</a></li>
+          <li><a href="experience.html" class="footer-nav__link">Expérience</a></li>
+          <li><a href="ecosysteme.html" class="footer-nav__link">Écosystème</a></li>
+          <li><a href="dashboard.html" class="footer-nav__link">Dashboard</a></li>
+          <li><a href="ingenierie.html" class="footer-nav__link">Ingénierie IA</a></li>
+          <li><a href="contact.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-meta">
+        <p class="footer-copy">&copy; 2025 PortoFlow · Projet territorial Corse-du-Sud</p>
+        <p class="footer-tech">Généré par ID2App V4.3 DesignOps</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
