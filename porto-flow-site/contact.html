@@ -109,42 +109,70 @@
     </section>
 
     <section class="section-wrap" id="contact-form" aria-labelledby="form-title">
-      <p class="section-kicker-sm">Formulaire</p>
-      <h2 id="form-title" class="section-title-lg">Envoyez-nous un message</h2>
-      <div class="form-wrap">
-        <form id="pf-contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="cf-nom">Nom *</label>
-              <input type="text" id="cf-nom" name="nom" required placeholder="Votre nom">
+      <div class="split-form-layout">
+        <div class="split-form-left">
+          <p class="section-kicker-sm">Formulaire</p>
+          <h2 id="form-title" class="section-title-lg">Écrivez-nous</h2>
+          <div class="callout-block callout-block--inline">
+            <p class="callout-label">Pourquoi nous contacter ?</p>
+            <p class="callout-text">Partenariat, démo, question technique ou institutionnelle : chaque demande reçoit une réponse personnalisée.</p>
+          </div>
+          <div class="metric-rail">
+            <div class="metric-card">
+              <span class="metric-value">48 h</span>
+              <span class="metric-label">Délai de réponse</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value">100 %</span>
+              <span class="metric-label">Confidentiel</span>
+            </div>
+          </div>
+        </div>
+        <div class="split-form-right">
+          <form id="pf-contact-form" class="contact-form" novalidate aria-label="Formulaire de contact PortoFlow">
+            <div class="form-row form-row--2">
+              <div class="form-group">
+                <label for="cf-nom" class="form-label">Nom complet <span aria-hidden="true">*</span></label>
+                <input type="text" id="cf-nom" name="nom" class="form-input" required autocomplete="name" placeholder="Votre nom">
+              </div>
+              <div class="form-group">
+                <label for="cf-org" class="form-label">Organisation</label>
+                <input type="text" id="cf-org" name="organisation" class="form-input" autocomplete="organization" placeholder="Collectivité, entreprise…">
+              </div>
+            </div>
+            <div class="form-row form-row--2">
+              <div class="form-group">
+                <label for="cf-email" class="form-label">E-mail <span aria-hidden="true">*</span></label>
+                <input type="email" id="cf-email" name="email" class="form-input" required autocomplete="email" placeholder="vous@exemple.fr">
+              </div>
+              <div class="form-group">
+                <label for="cf-tel" class="form-label">Téléphone</label>
+                <input type="tel" id="cf-tel" name="telephone" class="form-input" autocomplete="tel" placeholder="+33 …">
+              </div>
             </div>
             <div class="form-group">
-              <label for="cf-email">E-mail *</label>
-              <input type="email" id="cf-email" name="email" required placeholder="votre@email.fr">
+              <label for="cf-sujet" class="form-label">Sujet <span aria-hidden="true">*</span></label>
+              <select id="cf-sujet" name="sujet" class="form-input form-select" required>
+                <option value="">Choisir un sujet…</option>
+                <option value="partenariat">Partenariat</option>
+                <option value="demo">Demande de démo</option>
+                <option value="technique">Question technique</option>
+                <option value="presse">Presse / Médias</option>
+                <option value="autre">Autre</option>
+              </select>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="cf-profil">Profil</label>
-            <select id="cf-profil" name="profil">
-              <option value="">Sélectionnez…</option>
-              <option value="collectivite">Collectivité territoriale</option>
-              <option value="partenaire">Partenaire économique</option>
-              <option value="professionnel">Professionnel local</option>
-              <option value="presse">Presse / Médias</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="cf-message">Message *</label>
-            <textarea id="cf-message" name="message" required placeholder="Décrivez votre projet ou votre question…" rows="5"></textarea>
-          </div>
-          <div class="form-group form-consent">
-            <input type="checkbox" id="cf-consent" name="consent" required>
-            <label for="cf-consent" class="label-consent">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité de PortoFlow.</label>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit">Envoyer ma demande →</button>
-          <div class="form-feedback" id="pf-feedback" role="status" aria-live="polite"></div>
-        </form>
+            <div class="form-group">
+              <label for="cf-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+              <textarea id="cf-message" name="message" class="form-input form-textarea" required placeholder="Décrivez votre projet ou votre question…" rows="5"></textarea>
+            </div>
+            <div class="form-group form-consent">
+              <input type="checkbox" id="cf-consent" name="consent" required>
+              <label for="cf-consent" class="label-consent">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité de PortoFlow.</label>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Envoyer ma demande →</button>
+            <div class="form-feedback" id="pf-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -203,9 +231,10 @@
         e.preventDefault();
         var nom=document.getElementById('cf-nom').value.trim();
         var email=document.getElementById('cf-email').value.trim();
+        var sujet=document.getElementById('cf-sujet').value;
         var msg=document.getElementById('cf-message').value.trim();
         var consent=document.getElementById('cf-consent').checked;
-        if(!nom||!email||!msg||!consent){
+        if(!nom||!email||!sujet||!msg||!consent){
           fb.className='form-feedback form-feedback--error';
           fb.textContent='Veuillez remplir tous les champs obligatoires et accepter la politique de confidentialité.';
           return;
