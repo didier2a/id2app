@@ -9,7 +9,7 @@
   "mode": "patch_existing_files",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T10:59:00.297Z",
+  "last_updated_at": "2026-05-13T11:00:47.664Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -47,6 +47,22 @@
       "validation_status": "passed",
       "warnings": [
         "stylesheet_link_missing_or_nonstandard",
+        "design_director_modern_layout_classes_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    },
+    {
+      "file_path": "porto-flow-site/territoire.html",
+      "action": "update",
+      "file_sha": "6a32bebf002741bf58cff8fa290519dbf6ccc3e0",
+      "commit_sha": "f9aa2cac2abc6f6632ca15ac300b713e309ca745",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/territoire.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f9aa2cac2abc6f6632ca15ac300b713e309ca745",
+      "validation_status": "passed",
+      "warnings": [
+        "design_director_too_many_consecutive_paragraphs",
         "design_director_modern_layout_classes_missing"
       ],
       "gemini_execution_job_audit": null,
@@ -118,10 +134,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/index.html",
+  "last_successful_file": "porto-flow-site/territoire.html",
   "last_failed_file": null,
   "completed_count": 9,
-  "updated_count": 1,
+  "updated_count": 2,
   "failed_count": 0,
   "skipped_count": 0
 }
