@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – PortoFlow, copilote intelligent du territoire</title>
+  <meta name="description" content="Contactez PortoFlow : collectivités, partenaires économiques, professionnels locaux et acteurs institutionnels de Porto-Vecchio et Corse-du-Sud.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="PortoFlow – Accueil">
+        <span class="logo-name">PortoFlow</span>
+        <span class="logo-tagline">Le copilote intelligent du territoire</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-cta header-cta" aria-label="Nous contacter">Contact</a>
+      <button class="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Menu mobile" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="territoire.html">Territoire</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="ecosysteme.html">Écosystème</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO CONTACT -->
+    <section class="page-hero contact-hero" aria-labelledby="contact-hero-title">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content container">
+        <p class="page-hero-label">Porto-Vecchio · Corse-du-Sud</p>
+        <h1 id="contact-hero-title">Entrons en contact</h1>
+        <p class="page-hero-sub">Collectivités, partenaires, professionnels et acteurs institutionnels : PortoFlow est à votre écoute pour construire ensemble le territoire de demain.</p>
+      </div>
+    </section>
+
+    <!-- CTA MULTISECTORIEL -->
+    <section class="contact-sectors section-padded" aria-labelledby="sectors-title">
+      <div class="container">
+        <h2 id="sectors-title" class="section-title">Vous êtes…</h2>
+        <p class="section-intro">Chaque acteur du territoire a un rôle à jouer dans l'écosystème PortoFlow. Identifiez votre profil pour une prise de contact adaptée.</p>
+        <div class="sectors-grid">
+
+          <article class="sector-card glass-card" aria-labelledby="sector-collectivite">
+            <div class="sector-icon" aria-hidden="true">🏛️</div>
+            <h3 id="sector-collectivite">Collectivité territoriale</h3>
+            <p>Mairie, communauté de communes, département, région : intégrez PortoFlow comme outil de pilotage et de service public intelligent.</p>
+            <a href="#contact-form" class="btn btn-secondary">Contacter pour un partenariat institutionnel</a>
+          </article>
+
+          <article class="sector-card glass-card" aria-labelledby="sector-professionnel">
+            <div class="sector-icon" aria-hidden="true">🏪</div>
+            <h3 id="sector-professionnel">Professionnel local</h3>
+            <p>Commerce, restaurant, hôtel, activité nautique ou culturelle : rejoignez l'écosystème et gagnez en visibilité auprès des habitants et visiteurs.</p>
+            <a href="#contact-form" class="btn btn-secondary">Rejoindre l'écosystème</a>
+          </article>
+
+          <article class="sector-card glass-card" aria-labelledby="sector-partenaire">
+            <div class="sector-icon" aria-hidden="true">🤝</div>
+            <h3 id="sector-partenaire">Partenaire économique</h3>
+            <p>Investisseur, opérateur, fournisseur de données ou de services : explorez les opportunités de co-développement territorial avec PortoFlow.</p>
+            <a href="#contact-form" class="btn btn-secondary">Explorer un partenariat</a>
+          </article>
+
+          <article class="sector-card glass-card" aria-labelledby="sector-institutionnel">
+            <div class="sector-icon" aria-hidden="true">📡</div>
+            <h3 id="sector-institutionnel">Acteur institutionnel ou technologique</h3>
+            <p>Agence, laboratoire, startup, acteur de la mobilité ou de la smart city : collaborez sur l'ingénierie IA et les données territoriales.</p>
+            <a href="#contact-form" class="btn btn-secondary">Collaborer sur l'ingénierie</a>
+          </article>
+
+          <article class="sector-card glass-card" aria-labelledby="sector-habitant">
+            <div class="sector-icon" aria-hidden="true">🏡</div>
+            <h3 id="sector-habitant">Habitant ou résident</h3>
+            <p>Vous vivez à Porto-Vecchio ou en Corse-du-Sud : partagez vos besoins, suggestions ou retours d'expérience pour améliorer le service.</p>
+            <a href="#contact-form" class="btn btn-secondary">Partager votre retour</a>
+          </article>
+
+          <article class="sector-card glass-card" aria-labelledby="sector-media">
+            <div class="sector-icon" aria-hidden="true">📰</div>
+            <h3 id="sector-media">Presse et médias</h3>
+            <p>Journaliste, blogueur ou créateur de contenu : demandez un dossier de presse, une interview ou une démonstration du système PortoFlow.</p>
+            <a href="#contact-form" class="btn btn-secondary">Demande presse</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE ACTEURS LOCAUX -->
+    <section class="contact-visual" aria-label="Acteurs économiques et services locaux">
+      <div class="contact-visual-inner">
+        <img
+          src="assets/images/acteurs-locaux.jpg"
+          alt="Acteurs économiques et services locaux de Porto-Vecchio"
+          class="contact-visual-img"
+          loading="lazy"
+          onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback-acteurs')"
+        >
+        <div class="contact-visual-caption">
+          <p>Porto-Vecchio · Corse-du-Sud · Acteurs locaux et partenaires de territoire</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section class="contact-form-section section-padded" id="contact-form" aria-labelledby="form-title">
+      <div class="container contact-form-layout">
+
+        <div class="contact-form-info">
+          <h2 id="form-title" class="section-title">Écrivez-nous</h2>
+          <p>Utilisez ce formulaire pour toute demande d'information, de partenariat ou de démonstration. Nous vous répondons sous 48 heures ouvrées.</p>
+          <ul class="contact-details-list">
+            <li>
+              <span class="contact-detail-icon" aria-hidden="true">📍</span>
+              <span>Porto-Vecchio, Corse-du-Sud, France</span>
+            </li>
+            <li>
+              <span class="contact-detail-icon" aria-hidden="true">🌐</span>
+              <span>Territoire numérique PortoFlow</span>
+            </li>
+            <li>
+              <span class="contact-detail-icon" aria-hidden="true">⏱️</span>
+              <span>Réponse sous 48 h ouvrées</span>
+            </li>
+          </ul>
+          <div class="contact-engagements">
+            <h3>Nos engagements</h3>
+            <ul>
+              <li>Confidentialité des échanges garantie</li>
+              <li>Aucune donnée revendue à des tiers</li>
+              <li>Réponse personnalisée selon votre profil</li>
+              <li>Approche locale, humaine et stratégique</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glass-card">
+          <form class="contact-form" id="portoflow-contact-form" novalidate aria-label="Formulaire de contact PortoFlow">
+            <div class="form-group">
+              <label for="contact-name">Nom complet <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-required="true"
+                placeholder="Votre nom et prénom"
+              >
+              <span class="form-error" id="error-name" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-org">Organisation ou structure</label>
+              <input
+                type="text"
+                id="contact-org"
+                name="organisation"
+                autocomplete="organization"
+                placeholder="Mairie, entreprise, association…"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Adresse e-mail <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                placeholder="votre@email.fr"
+              >
+              <span class="form-error" id="error-email" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-profile">Votre profil <span aria-hidden="true">*</span></label>
+              <select id="contact-profile" name="profile" required aria-required="true">
+                <option value="" disabled selected>Sélectionnez votre profil</option>
+                <option value="collectivite">Collectivité territoriale</option>
+                <option value="professionnel">Professionnel local</option>
+                <option value="partenaire">Partenaire économique</option>
+                <option value="institutionnel">Acteur institutionnel ou technologique</option>
+                <option value="habitant">Habitant ou résident</option>
+                <option value="media">Presse et médias</option>
+                <option value="autre">Autre</option>
+              </select>
+              <span class="form-error" id="error-profile" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Objet de votre demande <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                required
+                aria-required="true"
+                placeholder="Partenariat, démonstration, information…"
+              >
+              <span class="form-error" id="error-subject" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Votre message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                required
+                aria-required="true"
+                placeholder="Décrivez votre projet, votre besoin ou votre question…"
+              ></textarea>
+              <span class="form-error" id="error-message" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group form-consent">
+              <label class="checkbox-label">
+                <input type="checkbox" id="contact-consent" name="consent" required aria-required="true">
+                <span>J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité de PortoFlow.</span>
+              </label>
+              <span class="form-error" id="error-consent" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-large" id="contact-submit">
+                Envoyer ma demande
+              </button>
+            </div>
+
+            <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION VALEURS -->
+    <section class="contact-values section-padded" aria-labelledby="values-title">
+      <div class="container">
+        <h2 id="values-title" class="section-title">Pourquoi PortoFlow ?</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🌊</div>
+            <h3>Ancrage local</h3>
+            <p>Conçu pour et avec le territoire de Porto-Vecchio et Corse-du-Sud, PortoFlow est un outil de proximité avant tout.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🧠</div>
+            <h3>Intelligence territoriale</h3>
+            <p>Données en temps réel, IA contextuelle et dashboard territorial pour des décisions éclairées à chaque saison.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🔗</div>
+            <h3>Écosystème ouvert</h3>
+            <p>Professionnels, collectivités et visiteurs connectés dans un même système nerveux numérique cohérent.</p>
+          </div>
+          <div class="value-item">
+            <div class="value-icon" aria-hidden="true">🛡️</div>
+            <h3>Sobriété et fiabilité</h3>
+            <p>Architecture légère, compatible GitHub Pages, sans dépendance lourde, pensée pour durer et évoluer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="territoire.html">Territoire</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="ecosysteme.html">Écosystème</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="ingenierie.html">Ingénierie</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© Porto-Vecchio / Corse-du-Sud — PortoFlow, copilote intelligent du territoire</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
