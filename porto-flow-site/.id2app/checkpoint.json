@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:39:11.838Z",
+  "last_updated_at": "2026-05-13T08:40:36.151Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -29,7 +29,8 @@
     "porto-flow-site/contact.html",
     "porto-flow-site/script.js",
     "porto-flow-site/media-manifest.json",
-    "porto-flow-site/assets/images/README.md"
+    "porto-flow-site/assets/images/README.md",
+    "porto-flow-site/territoire.html"
   ],
   "failed_files": [
     {
@@ -84,7 +85,21 @@
   "skipped_files": [],
   "protected_files": [],
   "created_files": [],
-  "updated_files": [],
+  "updated_files": [
+    {
+      "file_path": "porto-flow-site/territoire.html",
+      "action": "update",
+      "file_sha": "e1d9102e3983cd2082ca91d0c5409ed541339f0d",
+      "commit_sha": "97804ddee5f75b67c42cef40a9d5c0b6c8aa83de",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/territoire.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/97804ddee5f75b67c42cef40a9d5c0b6c8aa83de",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    }
+  ],
   "repaired_files": [],
   "warnings": [],
   "execution_plan": {
@@ -153,10 +168,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": null,
+  "last_successful_file": "porto-flow-site/territoire.html",
   "last_failed_file": "porto-flow-site/index.html",
-  "completed_count": 6,
-  "updated_count": 0,
+  "completed_count": 7,
+  "updated_count": 1,
   "failed_count": 1,
   "skipped_count": 0
 }
