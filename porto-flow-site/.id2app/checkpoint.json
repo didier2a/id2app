@@ -9,7 +9,7 @@
   "mode": "consolidate_existing_site",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:45:38.018Z",
+  "last_updated_at": "2026-05-13T08:50:09.361Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -81,6 +81,54 @@
         "recommended_prompt_addendum": "Assure-toi de générer l'intégralité du fichier HTML, y compris toutes les sections spécifiées dans l'instruction, et de terminer le fichier avec les marqueurs ID2App de fin de contenu et de fin de fichier."
       },
       "at": "2026-05-13T08:39:11.780Z"
+    },
+    {
+      "file_path": "porto-flow-site/ingenierie.html",
+      "action": "repair",
+      "reason": "parse_failed",
+      "parse_warnings": [
+        "repair_missing_end_content_marker",
+        "repair_missing_file_end_marker",
+        "repair_empty_or_too_short_content"
+      ],
+      "validation_errors": [
+        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
+        "content_too_short",
+        "html_open_missing",
+        "html_close_missing",
+        "head_missing",
+        "body_missing",
+        "charset_missing",
+        "viewport_missing",
+        "title_missing"
+      ],
+      "validation_warnings": [
+        "meta_description_missing",
+        "h1_missing",
+        "stylesheet_link_missing_or_nonstandard",
+        "layout_header_missing",
+        "layout_nav_missing",
+        "layout_footer_missing",
+        "layout_hero_class_missing",
+        "layout_component_classes_weak"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "parse",
+        "root_cause": "The model stopped generating content prematurely, resulting in an incomplete HTML file and missing ID2App end markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__). The HTML structure itself is truncated.",
+        "repair_strategy": "Complete the HTML document, ensuring all necessary closing tags (e.g., </section>, </main>, </body>, </html>) are present. Add the 'footer institutionnel' as per the original instruction. Finally, ensure the ID2App end markers are correctly appended at the very end of the file.",
+        "constraints": [
+          "The HTML must be well-formed and complete.",
+          "A 'footer institutionnel' must be included.",
+          "All ID2App markers must be present and correctly placed."
+        ],
+        "must_not_change": [
+          "The existing, correctly generated HTML content up to the point of truncation."
+        ],
+        "recommended_prompt_addendum": "Ensure the HTML file is fully completed, including all closing tags and the specified 'footer institutionnel'. Verify that the __ID2APP_END_CONTENT__ and __ID2APP_FILE_END__ markers are present at the very end of the output."
+      },
+      "at": "2026-05-13T08:50:09.325Z"
     }
   ],
   "skipped_files": [],
@@ -209,9 +257,9 @@
     "gemini_manifest_audit": {}
   },
   "last_successful_file": "porto-flow-site/dashboard.html",
-  "last_failed_file": "porto-flow-site/index.html",
+  "last_failed_file": "porto-flow-site/ingenierie.html",
   "completed_count": 8,
   "updated_count": 4,
-  "failed_count": 1,
+  "failed_count": 2,
   "skipped_count": 0
 }
