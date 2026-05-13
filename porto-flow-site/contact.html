@@ -49,7 +49,6 @@
 
   <main id="main-content">
 
-    <!-- §1 HERO SPLIT 60/40 -->
     <section class="hero-split" aria-labelledby="contact-hero-title">
       <div class="hero-split-left">
         <p class="hero-kicker">Porto-Vecchio · Corse-du-Sud</p>
@@ -84,7 +83,6 @@
       </div>
     </section>
 
-    <!-- §2 BENTO COORDONNÉES -->
     <section class="section-wrap" id="contact-coords" aria-labelledby="coords-title">
       <p class="section-kicker-sm">Coordonnées</p>
       <h2 id="coords-title" class="section-title-lg">Nous trouver &amp; nous joindre</h2>
@@ -105,45 +103,32 @@
           <div class="bento-card-icon" aria-hidden="true">📍</div>
           <h3 class="bento-card-title">Adresse</h3>
           <p class="bento-card-body">Basés au cœur de Porto-Vecchio, Corse-du-Sud.</p>
-          <span class="bento-card-link">Porto-Vecchio, 20137 — Corse-du-Sud</span>
+          <span class="bento-card-link">Porto-Vecchio, 20137</span>
         </div>
       </div>
     </section>
 
-    <!-- §3 CALLOUT PARTENARIAT -->
-    <div class="section-wrap">
-      <div class="callout-panel" role="note">
-        <span class="callout-icon" aria-hidden="true">🤝</span>
-        <div class="callout-text">
-          <h3>Vous représentez une collectivité ou une institution ?</h3>
-          <p>PortoFlow propose des partenariats territoriaux sur mesure. Prenez contact pour explorer les modalités d'intégration à l'écosystème local.</p>
-        </div>
-        <a href="#contact-form" class="btn btn-primary">Proposer un partenariat →</a>
-      </div>
-    </div>
-
-    <!-- §4 FORMULAIRE -->
     <section class="section-wrap" id="contact-form" aria-labelledby="form-title">
       <p class="section-kicker-sm">Formulaire</p>
       <h2 id="form-title" class="section-title-lg">Envoyez-nous un message</h2>
-      <div class="form-layout">
-        <form class="contact-form" id="pf-contact-form" novalidate>
+      <div class="form-wrap">
+        <form id="pf-contact-form" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="cf-nom">Nom complet *</label>
+              <label for="cf-nom">Nom *</label>
               <input type="text" id="cf-nom" name="nom" required placeholder="Votre nom">
             </div>
             <div class="form-group">
-              <label for="cf-email">Adresse e-mail *</label>
+              <label for="cf-email">E-mail *</label>
               <input type="email" id="cf-email" name="email" required placeholder="votre@email.fr">
             </div>
           </div>
           <div class="form-group">
-            <label for="cf-sujet">Sujet</label>
-            <select id="cf-sujet" name="sujet">
-              <option value="">Choisir un sujet…</option>
+            <label for="cf-profil">Profil</label>
+            <select id="cf-profil" name="profil">
+              <option value="">Sélectionnez…</option>
               <option value="collectivite">Collectivité territoriale</option>
-              <option value="partenariat">Partenariat économique</option>
+              <option value="partenaire">Partenaire économique</option>
               <option value="professionnel">Professionnel local</option>
               <option value="presse">Presse / Médias</option>
               <option value="autre">Autre</option>
@@ -163,7 +148,14 @@
       </div>
     </section>
 
-    <!-- §5 CTA RAIL -->
+    <div class="section-wrap">
+      <div class="callout-block">
+        <p class="callout-label">Support</p>
+        <p class="callout-text">Une question urgente ? Notre équipe locale répond sous 48 h ouvrées. Nous privilégions les échanges directs et confidentiels.</p>
+        <a href="mailto:contact@portoflow.fr" class="btn btn-primary">Contacter le support</a>
+      </div>
+    </div>
+
     <div class="section-wrap">
       <div class="cta-rail">
         <div class="cta-rail-text">
