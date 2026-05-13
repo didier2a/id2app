@@ -1,15 +1,15 @@
 {
-  "schema_version": "4.3",
+  "schema_version": "4.3.1",
   "project_id": "porto-flow-site",
   "repo_owner": "didier2a",
   "repo_name": "id2app",
   "branch": "main",
   "site_folder": "porto-flow-site",
   "checkpoint_path": "porto-flow-site/.id2app/checkpoint.json",
-  "mode": "consolidate_existing_site",
+  "mode": "patch_existing_files",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T08:58:46.991Z",
+  "last_updated_at": "2026-05-13T09:26:03.805Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -19,9 +19,7 @@
     "porto-flow-site/ingenierie.html",
     "porto-flow-site/contact.html",
     "porto-flow-site/styles.css",
-    "porto-flow-site/script.js",
-    "porto-flow-site/media-manifest.json",
-    "porto-flow-site/assets/images/README.md"
+    "porto-flow-site/script.js"
   ],
   "completed_files": [
     "porto-flow-site/experience.html",
@@ -62,222 +60,26 @@
         "layout_nav_missing",
         "layout_footer_missing",
         "layout_hero_class_missing",
-        "layout_component_classes_weak"
+        "layout_component_classes_weak",
+        "design_director_modern_layout_classes_missing"
       ],
       "gemini_execution_job_audit": null,
       "gemini_repair_diagnosis": {
         "repair_required": true,
         "failure_type": "parse",
-        "root_cause": "Le contenu HTML est tronqué et les marqueurs de fin de fichier ID2App (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__) sont manquants. Le modèle a arrêté la génération prématurément.",
-        "repair_strategy": "Compléter le contenu HTML en suivant les instructions restantes (section territoire, preview dashboard, CTA bandeau, footer homogène) et s'assurer d'inclure les marqueurs de fin de fichier ID2App.",
-        "constraints": [
-          "Respecter le wireframe V4.3 pour les sections manquantes.",
-          "Maintenir la structure et le style des sections déjà générées."
-        ],
-        "must_not_change": [
-          "Les marqueurs de début de fichier ID2App.",
-          "Le contenu HTML déjà généré jusqu'au point de troncature."
-        ],
-        "recommended_prompt_addendum": "Assure-toi de générer l'intégralité du fichier HTML, y compris toutes les sections spécifiées dans l'instruction, et de terminer le fichier avec les marqueurs ID2App de fin de contenu et de fin de fichier."
-      },
-      "at": "2026-05-13T08:39:11.780Z"
-    },
-    {
-      "file_path": "porto-flow-site/ingenierie.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The model stopped generating content prematurely, resulting in an incomplete HTML file and missing ID2App end markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__). The HTML structure itself is truncated.",
-        "repair_strategy": "Complete the HTML document, ensuring all necessary closing tags (e.g., </section>, </main>, </body>, </html>) are present. Add the 'footer institutionnel' as per the original instruction. Finally, ensure the ID2App end markers are correctly appended at the very end of the file.",
-        "constraints": [
-          "The HTML must be well-formed and complete.",
-          "A 'footer institutionnel' must be included.",
-          "All ID2App markers must be present and correctly placed."
-        ],
-        "must_not_change": [
-          "The existing, correctly generated HTML content up to the point of truncation."
-        ],
-        "recommended_prompt_addendum": "Ensure the HTML file is fully completed, including all closing tags and the specified 'footer institutionnel'. Verify that the __ID2APP_END_CONTENT__ and __ID2APP_FILE_END__ markers are present at the very end of the output."
-      },
-      "at": "2026-05-13T08:50:09.325Z"
-    },
-    {
-      "file_path": "porto-flow-site/styles.css",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short"
-      ],
-      "validation_warnings": [
-        "design_tokens_root_missing",
-        "responsive_media_queries_missing",
-        "header_styles_missing",
-        "hero_styles_missing",
-        "card_component_styles_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "Le contenu du fichier CSS est tronqué, manquant la fin du fichier et les marqueurs de fin de contenu et de fichier.",
-        "repair_strategy": "Compléter le contenu du fichier CSS jusqu'à sa fin logique et s'assurer que les marqueurs de fin de contenu et de fin de fichier sont correctement ajoutés.",
+        "root_cause": "The generated HTML content is truncated, leading to an incomplete file and missing the required '__ID2APP_END_CONTENT__' and '__ID2APP_FILE_END__' markers. The content ends abruptly mid-declaration.",
+        "repair_strategy": "Regenerate the complete HTML file, ensuring the entire content is present and properly terminated with the ID2App end markers.",
         "constraints": [],
-        "must_not_change": [
-          "file_path",
-          "file_type",
-          "file_action",
-          "job_reason",
-          "file_instruction"
-        ],
-        "recommended_prompt_addendum": "Assure-toi que le fichier CSS est complet et se termine par les marqueurs `__ID2APP_END_CONTENT__` et `__ID2APP_FILE_END__`."
+        "must_not_change": [],
+        "recommended_prompt_addendum": "Ensure the entire file content is generated and properly terminated with '__ID2APP_END_CONTENT__' and '__ID2APP_FILE_END__' markers."
       },
-      "at": "2026-05-13T08:55:12.527Z"
+      "at": "2026-05-13T09:26:03.762Z"
     }
   ],
   "skipped_files": [],
   "protected_files": [],
   "created_files": [],
-  "updated_files": [
-    {
-      "file_path": "porto-flow-site/territoire.html",
-      "action": "update",
-      "file_sha": "e1d9102e3983cd2082ca91d0c5409ed541339f0d",
-      "commit_sha": "97804ddee5f75b67c42cef40a9d5c0b6c8aa83de",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/territoire.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/97804ddee5f75b67c42cef40a9d5c0b6c8aa83de",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/experience.html",
-      "action": "update",
-      "file_sha": "84cbd0c9d9fea5ee7c72f530f7114f36b48cda48",
-      "commit_sha": "e3c86251c89d17c29746a27230e13d8126ff11d7",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/experience.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/e3c86251c89d17c29746a27230e13d8126ff11d7",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/ecosysteme.html",
-      "action": "update",
-      "file_sha": "b8ea7356ae8c228857f3dd46554b7abb9b241276",
-      "commit_sha": "143a54d9869514543bf3dce274508efc568d6c8a",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/ecosysteme.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/143a54d9869514543bf3dce274508efc568d6c8a",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/dashboard.html",
-      "action": "update",
-      "file_sha": "74ba5bb60d02d7ef6f5f471aed9e7db4be9ce736",
-      "commit_sha": "5c0bedf7023eb608dbe4cbf303ee3713a930989b",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/dashboard.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/5c0bedf7023eb608dbe4cbf303ee3713a930989b",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/contact.html",
-      "action": "update",
-      "file_sha": "db89afff9834991581a7e17971cc49ec98220301",
-      "commit_sha": "43d335e0e6249f9df80a9d18b6047e174beb5077",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/contact.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/43d335e0e6249f9df80a9d18b6047e174beb5077",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/script.js",
-      "action": "update",
-      "file_sha": "2cd381a4ce59b2116983600062fb6f0c156a57ba",
-      "commit_sha": "5d1defe110be9de7cf119a89c142ee373646f099",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/script.js",
-      "commit_url": "https://github.com/didier2a/id2app/commit/5d1defe110be9de7cf119a89c142ee373646f099",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/media-manifest.json",
-      "action": "update",
-      "file_sha": "47b544979b4607d7c20feaf5c66b43f52e9082ef",
-      "commit_sha": "574c6303977d56d8ccad3aa08b94c3542e81aad8",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/media-manifest.json",
-      "commit_url": "https://github.com/didier2a/id2app/commit/574c6303977d56d8ccad3aa08b94c3542e81aad8",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    },
-    {
-      "file_path": "porto-flow-site/assets/images/README.md",
-      "action": "update",
-      "file_sha": "d513f5bac4d2e02a464bd143b253f91e672d4ad1",
-      "commit_sha": "d17e32c14db635fa50add2ad7a699d0db7f02ac3",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/assets/images/README.md",
-      "commit_url": "https://github.com/didier2a/id2app/commit/d17e32c14db635fa50add2ad7a699d0db7f02ac3",
-      "validation_status": "passed",
-      "warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": null,
-      "dry_run": false
-    }
-  ],
+  "updated_files": [],
   "repaired_files": [],
   "warnings": [],
   "execution_plan": {
@@ -290,9 +92,7 @@
       "porto-flow-site/ingenierie.html",
       "porto-flow-site/contact.html",
       "porto-flow-site/styles.css",
-      "porto-flow-site/script.js",
-      "porto-flow-site/media-manifest.json",
-      "porto-flow-site/assets/images/README.md"
+      "porto-flow-site/script.js"
     ],
     "existing_files": [
       "porto-flow-site/.id2app/checkpoint.json",
@@ -322,15 +122,13 @@
       "porto-flow-site/ingenierie.html",
       "porto-flow-site/contact.html",
       "porto-flow-site/styles.css",
-      "porto-flow-site/script.js",
-      "porto-flow-site/media-manifest.json",
-      "porto-flow-site/assets/images/README.md"
+      "porto-flow-site/script.js"
     ],
     "files_to_skip": [],
-    "jobs_count": 11
+    "jobs_count": 9
   },
   "runtime": {
-    "schema_version": "4.3",
+    "schema_version": "4.3.1",
     "cloudsafe": true,
     "dry_run": false,
     "provider_strategy": {
@@ -346,10 +144,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "porto-flow-site/assets/images/README.md",
-  "last_failed_file": "porto-flow-site/styles.css",
+  "last_successful_file": null,
+  "last_failed_file": "porto-flow-site/index.html",
   "completed_count": 8,
-  "updated_count": 8,
-  "failed_count": 3,
+  "updated_count": 0,
+  "failed_count": 1,
   "skipped_count": 0
 }
