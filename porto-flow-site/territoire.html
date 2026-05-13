@@ -27,7 +27,7 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="contact.html" class="btn btn--primary btn--sm">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn--sm">Contact</a>
         <button class="burger" id="burger" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -37,107 +37,98 @@
 
   <main id="main-content">
 
-    <section class="hero-split" aria-labelledby="hero-title">
-      <div class="hero-split__left">
-        <span class="kicker"><span class="kicker-dot"></span>Porto-Vecchio · Corse-du-Sud</span>
-        <h1 class="hero-title" id="hero-title">Un territoire,<br><em>deux rythmes</em></h1>
-        <p class="hero-sub">Porto-Vecchio concentre littoral, maquis et port de plaisance en quelques km². PortoFlow cartographie ses flux et anticipe ses tensions — toute l'année.</p>
-        <div class="hero-actions">
-          <a href="dashboard.html" class="btn btn--primary">Dashboard territorial</a>
-          <a href="#rail-territoire" class="btn btn--ghost">Explorer les flux</a>
-        </div>
-      </div>
-      <div class="hero-split__right">
-        <div class="hero-stats" aria-label="Chiffres clés">
-          <div class="stat-card">
-            <span class="stat-card__val">13 500</span>
-            <span class="stat-card__lbl">habitants permanents</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__val">×8</span>
-            <span class="stat-card__lbl">population en juillet–août</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__val">200 km</span>
-            <span class="stat-card__lbl">de côtes en Corse-du-Sud</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__val">35+</span>
-            <span class="stat-card__lbl">plages et criques recensées</span>
-          </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Porto-Vecchio · Corse-du-Sud</span>
+        <h1 class="hero__title" id="hero-title">Un territoire,<br><em>deux rythmes</em></h1>
+        <p class="hero__sub">Porto-Vecchio concentre littoral, maquis et port de plaisance en quelques km². PortoFlow cartographie ses flux et anticipe ses tensions.</p>
+        <div class="hero__actions">
+          <a href="dashboard.html" class="btn btn-primary">Dashboard territorial</a>
+          <a href="#section-flux" class="btn btn-secondary">Explorer les flux</a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="rail-territoire" aria-labelledby="rail-title">
+    <section class="section" aria-labelledby="bento-title">
       <div class="container">
-        <div class="section-head">
-          <p class="section-kicker"><span class="kicker-dot"></span>Points clés du territoire</p>
-          <h2 class="section-title" id="rail-title">Ce qui définit Porto-Vecchio</h2>
-        </div>
-        <div class="card-rail">
-          <article class="card-h">
-            <div class="card-h__icon card-h__icon--sky">🏖️</div>
-            <div class="card-h__body">
-              <h3 class="card-h__title">Littoral d'exception</h3>
-              <p class="card-h__desc">35 plages et criques classées parmi les plus belles de Méditerranée. Un capital naturel à préserver face à la pression touristique.</p>
-            </div>
-          </article>
-          <article class="card-h">
-            <div class="card-h__icon card-h__icon--terra">⚓</div>
-            <div class="card-h__body">
-              <h3 class="card-h__title">Port de plaisance stratégique</h3>
-              <p class="card-h__desc">Nœud de mobilité maritime en haute saison. PortoFlow intègre les flux nautiques dans sa cartographie territoriale.</p>
-            </div>
-          </article>
-          <article class="card-h">
-            <div class="card-h__icon card-h__icon--green">🌿</div>
-            <div class="card-h__body">
-              <h3 class="card-h__title">Maquis et réserves protégées</h3>
-              <p class="card-h__desc">Zones Natura 2000 et réserves marines encadrent le territoire. PortoFlow mesure leur fréquentation pour alerter en temps réel.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" aria-labelledby="bento-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-kicker"><span class="kicker-dot"></span>Dynamiques territoriales</p>
-          <h2 class="section-title" id="bento-title">Porto-Vecchio à deux vitesses</h2>
-          <p class="section-desc">Deux réalités coexistent : un hiver résidentiel calme et un été touristique sous tension. PortoFlow adapte ses données à chaque contexte.</p>
-        </div>
+        <span class="section__eyebrow">Points clés du territoire</span>
+        <h2 class="section__title" id="bento-title">Ce qui définit Porto-Vecchio</h2>
+        <p class="section__lead">Quatre dimensions structurantes pour comprendre les dynamiques locales.</p>
         <div class="bento">
-          <div class="bento-card">
-            <div class="bento-card__icon bento-card__icon--sky">❄️</div>
-            <span class="bento-card__label">Hors saison</span>
-            <p class="bento-card__title">Ville résidentielle apaisée</p>
-            <p class="bento-card__body">Trafic fluide, services locaux actifs, mobilité douce favorisée. PortoFlow optimise les liaisons quotidiennes des 13 500 habitants.</p>
-            <div class="bento-pills">
-              <span class="pill">Mobilité douce</span>
-              <span class="pill">Services locaux</span>
-            </div>
+          <article class="bento-card">
+            <div class="bento-card__icon">🏖️</div>
+            <h3 class="bento-card__title">Littoral d'exception</h3>
+            <p class="bento-card__desc">35 plages et criques classées parmi les plus belles de Méditerranée. Un capital naturel sous pression saisonnière.</p>
+            <span class="bento-card__tag">Côtes &amp; plages</span>
+          </article>
+          <article class="bento-card">
+            <div class="bento-card__icon">🛣️</div>
+            <h3 class="bento-card__title">Axes routiers critiques</h3>
+            <p class="bento-card__desc">3 axes concentrent 62 % du trafic estival. La N198 et les routes de plages saturent dès juillet.</p>
+            <span class="bento-card__tag">Mobilité</span>
+          </article>
+          <article class="bento-card">
+            <div class="bento-card__icon">🌿</div>
+            <h3 class="bento-card__title">Maquis &amp; espaces naturels</h3>
+            <p class="bento-card__desc">Forêts, réserves et zones Natura 2000 encadrent le territoire. La pression touristique exige une gestion fine.</p>
+            <span class="bento-card__tag">Environnement</span>
+          </article>
+          <article class="bento-card">
+            <div class="bento-card__icon">⚓</div>
+            <h3 class="bento-card__title">Port &amp; marina</h3>
+            <p class="bento-card__desc">Le port de plaisance accueille jusqu'à 1 200 anneaux. Un nœud logistique et touristique majeur en saison.</p>
+            <span class="bento-card__tag">Maritime</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section-flux" aria-labelledby="rail-title">
+      <div class="container">
+        <span class="section__eyebrow">Rythmes saisonniers</span>
+        <h2 class="section__title" id="rail-title">Flux et tensions du territoire</h2>
+        <p class="section__lead">De 13 500 habitants permanents à plus de 100 000 présences en août.</p>
+        <div class="rail">
+          <div class="callout">
+            <span class="callout__eyebrow">Hiver</span>
+            <p class="callout__text">Territoire apaisé, services en veille. Les flux sont stables et prévisibles.</p>
           </div>
-          <div class="bento-card">
-            <div class="bento-card__icon bento-card__icon--terra">☀️</div>
-            <span class="bento-card__label">Haute saison</span>
-            <p class="bento-card__title">Pression touristique maximale</p>
-            <p class="bento-card__body">Population multipliée par 8. Parkings saturés, plages bondées, routes congestionnées. PortoFlow anticipe et régule en temps réel.</p>
-            <div class="bento-pills">
-              <span class="pill pill--terra">Flux temps réel</span>
-              <span class="pill pill--terra">Régulation</span>
-            </div>
+          <div class="callout">
+            <span class="callout__eyebrow">Printemps</span>
+            <p class="callout__text">Montée progressive. Ouverture des hébergements et premières tensions sur le stationnement.</p>
           </div>
-          <div class="bento-card">
-            <div class="bento-card__icon bento-card__icon--green">🌿</div>
-            <span class="bento-card__label">Espaces naturels</span>
-            <p class="bento-card__title">Préserver le capital naturel</p>
-            <p class="bento-card__body">Maquis, réserves marines et criques classées subissent une fréquentation croissante. PortoFlow mesure et protège ces zones sensibles.</p>
-            <div class="bento-pills">
-              <span class="pill pill--green">Zones protégées</span>
-              <span class="pill pill--green">Écosystème</span>
-            </div>
+          <div class="callout">
+            <span class="callout__eyebrow">Été</span>
+            <p class="callout__text">Pic de fréquentation. Saturation des axes, des plages et des parkings en juillet–août.</p>
+          </div>
+          <div class="callout">
+            <span class="callout__eyebrow">Automne</span>
+            <p class="callout__text">Décrue rapide. Retour à l'équilibre, bilan des flux et ajustements pour la saison suivante.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="metrics-title">
+      <div class="container">
+        <span class="section__eyebrow">Chiffres clés</span>
+        <h2 class="section__title" id="metrics-title">Le territoire en données</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-card__val">13 500</span>
+            <span class="metric-card__lbl">habitants permanents</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__val">×8</span>
+            <span class="metric-card__lbl">population en juillet–août</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__val">35+</span>
+            <span class="metric-card__lbl">plages et criques recensées</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-card__val">62 %</span>
+            <span class="metric-card__lbl">trafic sur 3 axes principaux</span>
           </div>
         </div>
       </div>
@@ -145,29 +136,13 @@
 
     <section class="section" aria-labelledby="callout-title">
       <div class="container">
-        <div class="callout" aria-labelledby="callout-title">
-          <div class="callout__body">
-            <p class="callout__kicker"><span class="kicker-dot"></span>Métriques territoire</p>
-            <h2 class="callout__title" id="callout-title">Des chiffres qui parlent d'eux-mêmes</h2>
-            <p class="callout__desc">PortoFlow agrège données publiques et capteurs terrain pour produire une vision continue du territoire.</p>
-          </div>
-          <div class="callout__metrics">
-            <div class="metric">
-              <span class="metric__val">108 000</span>
-              <span class="metric__lbl">visiteurs en août</span>
-            </div>
-            <div class="metric">
-              <span class="metric__val">62 %</span>
-              <span class="metric__lbl">trafic concentré sur 3 axes</span>
-            </div>
-            <div class="metric">
-              <span class="metric__val">4 min</span>
-              <span class="metric__lbl">délai moyen d'alerte flux</span>
-            </div>
-          </div>
-          <div class="callout__actions">
-            <a href="dashboard.html" class="btn btn--primary">Voir le dashboard</a>
-            <a href="ecosysteme.html" class="btn btn--ghost">Écosystème partenaires</a>
+        <div class="metrics-panel">
+          <span class="section__eyebrow">PortoFlow en action</span>
+          <h2 class="section__title" id="callout-title">Anticiper, alerter, fluidifier</h2>
+          <p class="section__lead">PortoFlow surveille les flux en temps réel et déclenche des alertes en moins de 4 minutes. Le territoire reste lisible, même en pic de saison.</p>
+          <div class="hero__actions">
+            <a href="dashboard.html" class="btn btn-primary">Voir le dashboard</a>
+            <a href="ecosysteme.html" class="btn btn-secondary">Écosystème partenaires</a>
           </div>
         </div>
       </div>
@@ -197,32 +172,28 @@
       </nav>
       <div class="footer-meta">
         <p class="footer-copy">&copy; 2025 PortoFlow · Projet territorial Corse-du-Sud</p>
-        <p class="footer-tech">Généré par ID2App V4.3.2.2 Design Director</p>
+        <p class="footer-tech">Généré par ID2App V4.3.2.3 Canonical Template Enforcement</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
   <script>
-    (function () {
-      var burger = document.getElementById('burger');
-      var nav = document.getElementById('main-nav');
-      if (burger && nav) {
-        burger.addEventListener('click', function () {
-          var open = nav.classList.toggle('open');
-          burger.setAttribute('aria-expanded', String(open));
-        });
-      }
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) { e.target.classList.add('visible'); }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.bento-card, .stat-card, .callout, .metric, .card-h').forEach(function (el) {
-        el.classList.add('fade-up');
-        observer.observe(el);
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('main-nav');
+    if (burger && nav) {
+      burger.addEventListener('click', () => {
+        const open = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!open));
+        nav.classList.toggle('is-open', !open);
       });
-    }());
+    }
+  </script>
+
+  <script>
+    document.querySelectorAll('.bento-card, .metric-card, .callout').forEach((el, i) => {
+      el.style.animationDelay = (i * 0.07) + 's';
+      el.classList.add('fade-in');
+    });
   </script>
 
 </body>
