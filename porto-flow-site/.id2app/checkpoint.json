@@ -1,5 +1,5 @@
 {
-  "schema_version": "4.3.1",
+  "schema_version": "4.3.2",
   "project_id": "porto-flow-site",
   "repo_owner": "didier2a",
   "repo_name": "id2app",
@@ -9,7 +9,7 @@
   "mode": "patch_existing_files",
   "status": "running",
   "started_at": "2026-05-13T07:29:29.679Z",
-  "last_updated_at": "2026-05-13T09:59:06.666Z",
+  "last_updated_at": "2026-05-13T10:59:00.297Z",
   "expected_files": [
     "porto-flow-site/index.html",
     "porto-flow-site/territoire.html",
@@ -29,396 +29,31 @@
     "porto-flow-site/media-manifest.json",
     "porto-flow-site/assets/images/README.md",
     "porto-flow-site/territoire.html",
-    "porto-flow-site/ecosysteme.html"
+    "porto-flow-site/ecosysteme.html",
+    "porto-flow-site/index.html"
   ],
-  "failed_files": [
-    {
-      "file_path": "porto-flow-site/index.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The generated HTML content is truncated, leading to an incomplete file and missing the required '__ID2APP_END_CONTENT__' and '__ID2APP_FILE_END__' markers. The content ends abruptly mid-declaration.",
-        "repair_strategy": "Regenerate the complete HTML file, ensuring the entire content is present and properly terminated with the ID2App end markers.",
-        "constraints": [],
-        "must_not_change": [],
-        "recommended_prompt_addendum": "Ensure the entire file content is generated and properly terminated with '__ID2APP_END_CONTENT__' and '__ID2APP_FILE_END__' markers."
-      },
-      "at": "2026-05-13T09:26:03.762Z"
-    },
-    {
-      "file_path": "porto-flow-site/territoire.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The generated HTML file is truncated. It ends abruptly in the middle of a CSS media query, missing closing CSS rules, style tags, body, html tags, and ID2App end markers. This indicates an incomplete generation.",
-        "repair_strategy": "Complete the HTML file, ensuring all CSS rules, HTML tags (style, head, body, html), and ID2App markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__) are properly closed and present. Focus on completing the responsive CSS section and the main HTML structure.",
-        "constraints": [],
-        "must_not_change": [],
-        "recommended_prompt_addendum": "Ensure the generated HTML file is complete, including all closing tags for CSS media queries, style blocks, head, body, and html elements. Verify that the __ID2APP_END_CONTENT__ and __ID2APP_FILE_END__ markers are present at the very end of the output."
-      },
-      "at": "2026-05-13T09:30:46.926Z"
-    },
-    {
-      "file_path": "porto-flow-site/experience.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The generated HTML file content is truncated, leading to missing closing HTML tags and the ID2App end markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__).",
-        "repair_strategy": "Regenerate the complete HTML file, ensuring all content is present, all HTML tags are properly closed, and the ID2App end markers are correctly appended at the very end of the file.",
-        "constraints": [
-          "The output must be a complete and valid HTML5 document.",
-          "All ID2App markers must be present and correctly placed."
-        ],
-        "must_not_change": [
-          "The existing CSS styles and HTML structure that are correctly implemented so far."
-        ],
-        "recommended_prompt_addendum": "Assure that the generated file is complete, includes all necessary closing HTML tags, and correctly terminates with the __ID2APP_END_CONTENT__ and __ID2APP_FILE_END__ markers."
-      },
-      "at": "2026-05-13T09:34:29.250Z"
-    },
-    {
-      "file_path": "porto-flow-site/ecosysteme.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The model stopped generating content prematurely, leading to an incomplete HTML file. The `__ID2APP_END_CONTENT__` and `__ID2APP_FILE_END__` markers are missing, and the HTML structure is not properly closed.",
-        "repair_strategy": "Continue generating the HTML content for `porto-flow-site/ecosysteme.html` from the point of interruption. Ensure all remaining sections are completed, the HTML document is properly closed with `</body>` and `</html>` tags, and the `__ID2APP_END_CONTENT__` and `__ID2APP_FILE_END__` markers are included at the very end.",
-        "constraints": [],
-        "must_not_change": [],
-        "recommended_prompt_addendum": "Continue la génération du fichier HTML `porto-flow-site/ecosysteme.html` à partir du point d'interruption. Assure-toi de compléter toutes les sections, de fermer correctement les balises HTML (`</body>`, `</html>`) et d'inclure les marqueurs `__ID2APP_END_CONTENT__` et `__ID2APP_FILE_END__` à la fin du fichier."
-      },
-      "at": "2026-05-13T09:38:29.077Z"
-    },
-    {
-      "file_path": "porto-flow-site/dashboard.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The generated file content is truncated, leading to an incomplete HTML structure (missing closing tags for style, head, body, html) and the absence of the required ID2App end markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__).",
-        "repair_strategy": "Complete the HTML file by adding all necessary closing tags (</style>, </head>, <body>, </html>) and ensure the ID2App end markers are correctly appended at the very end of the file.",
-        "constraints": [
-          "The file must be valid HTML5.",
-          "All existing, correctly generated content must be preserved."
-        ],
-        "must_not_change": [
-          "The existing CSS rules and HTML structure up to the point of truncation."
-        ],
-        "recommended_prompt_addendum": "Ensure the generated file is complete, with all HTML tags properly closed, and that the __ID2APP_END_CONTENT__ and __ID2APP_FILE_END__ markers are present at the very end of the output."
-      },
-      "at": "2026-05-13T09:43:09.867Z"
-    },
-    {
-      "file_path": "porto-flow-site/ingenierie.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "Output truncated, leading to incomplete HTML structure and missing ID2App end markers.",
-        "repair_strategy": "Complete the HTML file, ensuring all tags are properly closed, the content instruction is fully addressed, and the ID2App end markers are present.",
-        "constraints": [],
-        "must_not_change": [
-          "__ID2APP_FILE_START__",
-          "__ID2APP_PATH__: porto-flow-site/ingenierie.html",
-          "__ID2APP_ACTION__: update",
-          "__ID2APP_BEGIN_CONTENT__"
-        ],
-        "recommended_prompt_addendum": "Continue generating the HTML content from where it left off. Ensure the entire HTML document is valid, all tags are properly closed, and the original instruction to 'Compléter et refondre la page ingénierie avec grille éditoriale, cartes, callouts et footer institutionnel' is fully implemented within the <body>. Finally, include the `__ID2APP_END_CONTENT__` and `__ID2APP_FILE_END__` markers at the very end of the file."
-      },
-      "at": "2026-05-13T09:47:17.365Z"
-    },
-    {
-      "file_path": "porto-flow-site/contact.html",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short",
-        "html_open_missing",
-        "html_close_missing",
-        "head_missing",
-        "body_missing",
-        "charset_missing",
-        "viewport_missing",
-        "title_missing"
-      ],
-      "validation_warnings": [
-        "meta_description_missing",
-        "h1_missing",
-        "stylesheet_link_missing_or_nonstandard",
-        "layout_header_missing",
-        "layout_nav_missing",
-        "layout_footer_missing",
-        "layout_hero_class_missing",
-        "layout_component_classes_weak",
-        "design_director_modern_layout_classes_missing"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The generated HTML content is truncated, missing closing HTML tags (e.g., </header>, </body>, </html>) and the mandatory ID2App end markers (__ID2APP_END_CONTENT__, __ID2APP_FILE_END__). This indicates an incomplete generation.",
-        "repair_strategy": "Regenerate the complete HTML file, ensuring all HTML elements are properly closed and the required ID2App end markers are present at the very end of the file.",
-        "constraints": [],
-        "must_not_change": [],
-        "recommended_prompt_addendum": "Ensure the generated file is a complete and well-formed HTML document, including all necessary closing tags (e.g., </header>, </body>, </html>). Crucially, terminate the output with the exact markers: __ID2APP_END_CONTENT__ followed by __ID2APP_FILE_END__."
-      },
-      "at": "2026-05-13T09:51:28.726Z"
-    },
-    {
-      "file_path": "porto-flow-site/styles.css",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short"
-      ],
-      "validation_warnings": [
-        "design_tokens_root_missing",
-        "responsive_media_queries_missing",
-        "header_styles_missing",
-        "hero_styles_missing",
-        "card_component_styles_missing",
-        "design_director_layout_classes_missing_in_css"
-      ],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The provided CSS content is truncated, ending abruptly in the middle of a CSS rule. This prevents proper parsing and validation of the file, and the expected ID2App end markers are missing.",
-        "repair_strategy": "Complete the truncated CSS file, ensuring all CSS rules are properly closed and the file ends with the required `__ID2APP_END_CONTENT__` and `__ID2APP_FILE_END__` markers.",
-        "constraints": [],
-        "must_not_change": [],
-        "recommended_prompt_addendum": "Ensure the CSS file is complete and properly terminated with `__ID2APP_END_CONTENT__` and `__ID2APP_FILE_END__` markers. The previous output was truncated."
-      },
-      "at": "2026-05-13T09:55:19.442Z"
-    },
-    {
-      "file_path": "porto-flow-site/script.js",
-      "action": "repair",
-      "reason": "parse_failed",
-      "parse_warnings": [
-        "repair_missing_end_content_marker",
-        "repair_missing_file_end_marker",
-        "repair_empty_or_too_short_content"
-      ],
-      "validation_errors": [
-        "parse_warnings_present:repair_missing_end_content_marker,repair_missing_file_end_marker,repair_empty_or_too_short_content",
-        "content_too_short"
-      ],
-      "validation_warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "Le contenu du fichier JavaScript est tronqué. Il se termine brusquement au milieu d'un bloc de commentaire, ce qui entraîne des marqueurs de fin de contenu et de fichier manquants, et est considéré comme incomplet.",
-        "repair_strategy": "Compléter le fichier JavaScript en ajoutant la section 14 (Toast / Notification) et toute autre section manquante, puis s'assurer que le fichier se termine correctement avec les marqueurs de fin ID2App.",
-        "constraints": [
-          "Maintenir la structure existante du script (sections 1 à 13).",
-          "Ajouter la fonctionnalité de Toast/Notification comme indiqué par le commentaire tronqué.",
-          "Assurer la compatibilité avec Vanilla JS et l'absence de dépendances externes."
-        ],
-        "must_not_change": [
-          "Les fonctions et logiques implémentées dans les sections 1 à 13.",
-          "Les commentaires de section et l'en-tête du fichier."
-        ],
-        "recommended_prompt_addendum": "Le fichier JS est tronqué. Veuillez compléter le fichier en incluant la section 14 (Toast / Notification) et toutes les sections suivantes, puis assurez-vous que le fichier se termine correctement avec les marqueurs de fin ID2App."
-      },
-      "at": "2026-05-13T09:59:06.638Z"
-    }
-  ],
+  "failed_files": [],
   "skipped_files": [],
   "protected_files": [],
   "created_files": [],
-  "updated_files": [],
+  "updated_files": [
+    {
+      "file_path": "porto-flow-site/index.html",
+      "action": "update",
+      "file_sha": "2a8003530b525e1593123c334e4afaf39f98e448",
+      "commit_sha": "64ef30c9a38eb675c3733fbcc51180bd0a562b72",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/64ef30c9a38eb675c3733fbcc51180bd0a562b72",
+      "validation_status": "passed",
+      "warnings": [
+        "stylesheet_link_missing_or_nonstandard",
+        "design_director_modern_layout_classes_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false
+    }
+  ],
   "repaired_files": [],
   "warnings": [],
   "execution_plan": {
@@ -467,7 +102,7 @@
     "jobs_count": 9
   },
   "runtime": {
-    "schema_version": "4.3.1",
+    "schema_version": "4.3.2",
     "cloudsafe": true,
     "dry_run": false,
     "provider_strategy": {
@@ -483,10 +118,10 @@
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": null,
-  "last_failed_file": "porto-flow-site/script.js",
-  "completed_count": 8,
-  "updated_count": 0,
-  "failed_count": 9,
+  "last_successful_file": "porto-flow-site/index.html",
+  "last_failed_file": null,
+  "completed_count": 9,
+  "updated_count": 1,
+  "failed_count": 0,
   "skipped_count": 0
 }
