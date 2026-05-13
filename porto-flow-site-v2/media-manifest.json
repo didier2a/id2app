@@ -1,0 +1,101 @@
+{
+  "manifest_version": "2.0.0",
+  "project": "PortoFlow Site V2",
+  "generated": "2025-01-01",
+  "description": "Manifeste des slots images remplaçables pour toutes les pages du site PortoFlow V2.",
+  "slots": {
+    "hero_map": {
+      "slot_id": "hero_map",
+      "page": "index.html",
+      "section": "hero",
+      "role": "Image principale du hero — carte ou vue aérienne du territoire portuaire",
+      "current_file": "assets/images/hero-map.webp",
+      "fallback_type": "svg_placeholder",
+      "fallback_file": "assets/images/placeholders/hero-map-placeholder.svg",
+      "dimensions": { "width": 900, "height": 600, "aspect_ratio": "3/2", "min_width": 640, "min_height": 427 },
+      "responsive": {
+        "desktop": { "width": 900, "height": 600 },
+        "tablet": { "width": 640, "height": 427 },
+        "mobile": { "width": 390, "height": 260 }
+      },
+      "format": ["webp", "jpg"],
+      "alt": "Vue cartographique du territoire portuaire PortoFlow",
+      "loading": "eager",
+      "priority": "high",
+      "css_slot": "hero__media",
+      "notes": "Image critique above-the-fold. Préférer WebP. Fond sombre ou neutre."
+    },
+    "territory_topography": {
+      "slot_id": "territory_topography",
+      "page": "territoire.html",
+      "section": "bento-card / section-split",
+      "role": "Illustration topographique ou schéma du territoire et de ses zones logistiques",
+      "current_file": "assets/images/territory-topography.webp",
+      "fallback_type": "svg_placeholder",
+      "fallback_file": "assets/images/placeholders/territory-topography-placeholder.svg",
+      "dimensions": { "width": 760, "height": 500, "aspect_ratio": "16/10", "min_width": 480, "min_height": 316 },
+      "responsive": {
+        "desktop": { "width": 760, "height": 500 },
+        "tablet": { "width": 560, "height": 368 },
+        "mobile": { "width": 360, "height": 237 }
+      },
+      "format": ["webp", "png"],
+      "alt": "Topographie et zones logistiques du territoire portuaire",
+      "loading": "lazy",
+      "priority": "medium",
+      "css_slot": "bento-card__media",
+      "notes": "Peut être un SVG interactif ou une image statique. Fond blanc ou très clair."
+    },
+    "ecosystem_network": {
+      "slot_id": "ecosystem_network",
+      "page": "ecosysteme.html",
+      "section": "bento-card / rail",
+      "role": "Schéma réseau de l'écosystème partenaires et acteurs portuaires",
+      "current_file": "assets/images/ecosystem-network.webp",
+      "fallback_type": "svg_placeholder",
+      "fallback_file": "assets/images/placeholders/ecosystem-network-placeholder.svg",
+      "dimensions": { "width": 800, "height": 520, "aspect_ratio": "16/10", "min_width": 480, "min_height": 312 },
+      "responsive": {
+        "desktop": { "width": 800, "height": 520 },
+        "tablet": { "width": 580, "height": 377 },
+        "mobile": { "width": 360, "height": 234 }
+      },
+      "format": ["webp", "svg"],
+      "alt": "Réseau des acteurs et partenaires de l'écosystème PortoFlow",
+      "loading": "lazy",
+      "priority": "medium",
+      "css_slot": "bento-card__media",
+      "notes": "Privilégier SVG pour la netteté des nœuds réseau. Palette #004080 / #0080c0."
+    },
+    "dashboard_map": {
+      "slot_id": "dashboard_map",
+      "page": "dashboard.html",
+      "section": "hero / metrics-panel",
+      "role": "Capture ou illustration du tableau de bord IA avec carte de flux en temps réel",
+      "current_file": "assets/images/dashboard-map.webp",
+      "fallback_type": "svg_placeholder",
+      "fallback_file": "assets/images/placeholders/dashboard-map-placeholder.svg",
+      "dimensions": { "width": 1040, "height": 620, "aspect_ratio": "16/9.5", "min_width": 640, "min_height": 381 },
+      "responsive": {
+        "desktop": { "width": 1040, "height": 620 },
+        "tablet": { "width": 700, "height": 417 },
+        "mobile": { "width": 390, "height": 232 }
+      },
+      "format": ["webp", "jpg"],
+      "alt": "Tableau de bord PortoFlow — carte des flux portuaires en temps réel",
+      "loading": "lazy",
+      "priority": "medium",
+      "css_slot": "hero__media",
+      "notes": "Image large. Fond sombre recommandé pour contraste des données. Éviter texte embarqué illisible en mobile."
+    }
+  },
+  "placeholder_spec": {
+    "svg_bg_color": "#e0f0ff",
+    "svg_icon_color": "#0080c0",
+    "svg_text_color": "#004080",
+    "svg_font": "sans-serif",
+    "svg_border_radius": 8,
+    "svg_label_template": "Image : {slot_id}",
+    "svg_size_label": true
+  }
+}
