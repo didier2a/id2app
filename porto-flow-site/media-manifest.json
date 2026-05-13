@@ -1,0 +1,130 @@
+{
+  "manifest_version": "1.0",
+  "project": "PortoFlow Site",
+  "project_slug": "porto-flow-site",
+  "description": "Inventaire complet des emplacements images du site PortoFlow. Chaque slot définit un emplacement remplaçable par une photo locale réelle. Conserver le nom de fichier indiqué dans current_path pour que le remplacement soit immédiatement pris en compte sans modifier le code HTML ou CSS.",
+  "generated_at": "2025-01-01",
+  "image_slots": [
+    {
+      "slot_id": "hero_portovecchio",
+      "recommended_dimensions": "1600x900",
+      "aspect_ratio": "16:9",
+      "alt": "Vue locale de Porto-Vecchio et de son territoire",
+      "fallback_type": "css_gradient",
+      "fallback_description": "Dégradé deep navy vers ocean blue utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Remplacer l'image en conservant le nom de fichier porto-vecchio-hero.jpg pour personnaliser le hero. Privilégier une vue panoramique du golfe, de la citadelle ou du littoral en lumière naturelle.",
+      "used_in": [
+        "index.html",
+        "styles.css"
+      ],
+      "current_path": "assets/images/porto-vecchio-hero.jpg",
+      "priority": "haute",
+      "notes": "Image principale du hero de la page d'accueil. Résolution minimale recommandée 1200px de large pour éviter le flou sur grands écrans."
+    },
+    {
+      "slot_id": "port_marina",
+      "recommended_dimensions": "1400x900",
+      "aspect_ratio": "16:10",
+      "alt": "Port et marina de Porto-Vecchio",
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau ocean blue avec opacité réduite utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Photo locale du port, des bateaux ou du front de mer. Idéalement prise en heure dorée ou en journée avec reflets sur l'eau.",
+      "used_in": [
+        "index.html",
+        "ecosysteme.html"
+      ],
+      "current_path": "assets/images/port-marina.jpg",
+      "priority": "haute",
+      "notes": "Utilisée dans la section présentation de l'accueil et dans la page écosystème pour illustrer l'activité économique locale."
+    },
+    {
+      "slot_id": "plage_palombaggia",
+      "recommended_dimensions": "1400x900",
+      "aspect_ratio": "16:10",
+      "alt": "Plage et littoral emblématique autour de Porto-Vecchio",
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau dégradé sky vers sand utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Photo locale de plage, littoral ou paysage méditerranéen. Palombaggia, Santa Giulia ou toute plage emblématique de la zone sont idéales.",
+      "used_in": [
+        "territoire.html",
+        "experience.html"
+      ],
+      "current_path": "assets/images/plage-palombaggia.jpg",
+      "priority": "haute",
+      "notes": "Illustre la dimension littorale et touristique du territoire dans les pages Territoire et Expérience."
+    },
+    {
+      "slot_id": "dashboard_local",
+      "recommended_dimensions": "1400x900",
+      "aspect_ratio": "16:10",
+      "alt": "Dashboard territorial PortoFlow",
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau deep navy avec grille simulée utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Capture d'écran ou mockup du dashboard territorial PortoFlow. Peut être une capture du dashboard.html lui-même ou une maquette graphique.",
+      "used_in": [
+        "dashboard.html",
+        "ingenierie.html"
+      ],
+      "current_path": "assets/images/dashboard-local.jpg",
+      "priority": "moyenne",
+      "notes": "Illustre la dimension technologique et de pilotage du territoire. Une capture du dashboard simulé en production est suffisante."
+    },
+    {
+      "slot_id": "maquis_relief",
+      "recommended_dimensions": "1400x900",
+      "aspect_ratio": "16:10",
+      "alt": "Maquis, relief et paysage de Corse-du-Sud",
+      "fallback_type": "css_gradient",
+      "fallback_description": "Dégradé maquis vert vers deep navy utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Photo locale de maquis, relief, route ou arrière-pays de Corse-du-Sud. Paysage naturel, végétation dense ou vue sur les montagnes depuis le territoire.",
+      "used_in": [
+        "territoire.html",
+        "ingenierie.html"
+      ],
+      "current_path": "assets/images/maquis-relief.jpg",
+      "priority": "moyenne",
+      "notes": "Renforce l'identité territoriale naturelle et la dimension hors-saison du territoire dans les pages Territoire et Ingénierie."
+    },
+    {
+      "slot_id": "acteurs_locaux",
+      "recommended_dimensions": "1400x900",
+      "aspect_ratio": "16:10",
+      "alt": "Acteurs économiques et services locaux",
+      "fallback_type": "css_panel",
+      "fallback_description": "Panneau terra avec opacité réduite utilisé si l'image est absente",
+      "expected_format": "jpg/webp/png",
+      "replace_instruction": "Photo locale de commerce, artisan, restaurant, producteur ou partenaire économique de Porto-Vecchio ou Corse-du-Sud. Préférer une image montrant l'activité humaine et locale.",
+      "used_in": [
+        "ecosysteme.html",
+        "contact.html"
+      ],
+      "current_path": "assets/images/acteurs-locaux.jpg",
+      "priority": "moyenne",
+      "notes": "Illustre la dimension humaine et économique de l'écosystème local dans les pages Écosystème et Contact."
+    }
+  ],
+  "assets_directory": "assets/images/",
+  "readme_path": "assets/images/README.md",
+  "replacement_guide": {
+    "step_1": "Identifier le slot_id de l'image à remplacer dans ce fichier.",
+    "step_2": "Préparer la nouvelle image aux dimensions recommandées ou proches.",
+    "step_3": "Nommer le fichier exactement comme indiqué dans current_path.",
+    "step_4": "Déposer le fichier dans le dossier assets/images/ du projet.",
+    "step_5": "Pousser les modifications sur GitHub. GitHub Pages servira automatiquement la nouvelle image.",
+    "step_6": "Si l'image n'est pas disponible, le fallback CSS défini dans styles.css s'affiche automatiquement."
+  },
+  "fallback_colors": {
+    "deep_navy": "#0B1F33",
+    "ocean_blue": "#1F6F8B",
+    "sky": "#8FC7DA",
+    "terra": "#D86F3C",
+    "sand": "#F4E8D0",
+    "cream": "#FDF9F2",
+    "maquis": "#2D4A3E"
+  }
+}
