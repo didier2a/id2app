@@ -3,865 +3,394 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Porto Flow — Ingénierie & Vision. Boucle récursive, n8n, CloudCode, IA et humain augmenté au cœur du système territorial intelligent de Porto-Vecchio.">
+  <meta name="description" content="Porto Flow — Ingénierie & Vision. Boucle récursive, n8n, IA et humain augmenté au cœur du système territorial intelligent de Porto-Vecchio.">
   <meta name="theme-color" content="#0B1F33">
   <title>Ingénierie & Vision — Porto Flow</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%231F6F8B'/><circle cx='16' cy='16' r='6' fill='%238FC7DA'/><line x1='16' y1='2' x2='16' y2='8' stroke='%23D86F3C' stroke-width='2'/><line x1='16' y1='24' x2='16' y2='30' stroke='%23D86F3C' stroke-width='2'/><line x1='2' y1='16' x2='8' y2='16' stroke='%23D86F3C' stroke-width='2'/><line x1='24' y1='16' x2='30' y2='16' stroke='%23D86F3C' stroke-width='2'/></svg>">
+  <style>
+    :root{--navy:#0B1F33;--teal:#1F6F8B;--sky:#8FC7DA;--coral:#D86F3C;--white:#F5F8FA;--card-bg:#0f2840;--radius:14px;--gap:24px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--navy);color:var(--white);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;}
+    a{color:inherit;text-decoration:none;}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+    /* NAV */
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(11,31,51,0.97);border-bottom:1px solid rgba(31,111,139,0.25);backdrop-filter:blur(8px);}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+    .brand{display:flex;align-items:center;gap:10px;}
+    .brand-name{font-size:1.1rem;font-weight:700;color:var(--sky);}
+    .brand-tagline{display:block;font-size:.65rem;color:rgba(143,199,218,.6);letter-spacing:.04em;}
+    .nav-list{display:flex;gap:4px;list-style:none;}
+    .nav-link{padding:6px 12px;border-radius:8px;font-size:.85rem;color:rgba(245,248,250,.7);transition:background .2s,color .2s;}
+    .nav-link:hover,.nav-link--active{background:rgba(31,111,139,.2);color:var(--sky);}
+    .btn--header{background:var(--coral);color:#fff;padding:8px 18px;border-radius:8px;font-size:.82rem;font-weight:600;transition:opacity .2s;}
+    .btn--header:hover{opacity:.85;}
+    .burger-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+    .burger-line{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s;}
+    @media(max-width:768px){
+      .main-nav,.btn--header{display:none;}
+      .burger-btn{display:flex;}
+    }
+    .mobile-nav{display:none;position:fixed;inset:0;z-index:200;}
+    .mobile-nav.open{display:block;}
+    .mobile-nav-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6);}
+    .mobile-nav-panel{position:absolute;top:0;right:0;width:280px;height:100%;background:var(--navy);padding:24px;display:flex;flex-direction:column;gap:8px;}
+    .mobile-nav-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;}
+    .mobile-nav-brand{font-weight:700;color:var(--sky);}
+    .mobile-nav-close{background:none;border:none;color:var(--white);cursor:pointer;font-size:1.4rem;}
+    .mobile-nav-link{display:flex;align-items:center;gap:10px;padding:12px;border-radius:10px;color:var(--white);font-size:.95rem;transition:background .2s;}
+    .mobile-nav-link:hover{background:rgba(31,111,139,.2);}
+
+    /* HERO SPLIT 60/40 */
+    .hero-split{display:grid;grid-template-columns:1fr 1fr;min-height:480px;overflow:hidden;}
+    .hero-split__text{display:flex;flex-direction:column;justify-content:center;padding:64px 48px 64px 0;gap:20px;}
+    .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(31,111,139,.2);border:1px solid rgba(31,111,139,.4);color:var(--sky);font-size:.75rem;font-weight:600;letter-spacing:.08em;padding:6px 14px;border-radius:20px;text-transform:uppercase;width:fit-content;}
+    .hero-split__title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;line-height:1.15;color:var(--white);}
+    .hero-split__title span{color:var(--sky);}
+    .hero-split__sub{font-size:1rem;color:rgba(245,248,250,.7);max-width:420px;}
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+    .btn-primary{background:var(--coral);color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;font-size:.9rem;transition:opacity .2s;}
+    .btn-primary:hover{opacity:.85;}
+    .btn-secondary{border:1.5px solid var(--teal);color:var(--sky);padding:12px 24px;border-radius:10px;font-weight:600;font-size:.9rem;transition:background .2s;}
+    .btn-secondary:hover{background:rgba(31,111,139,.15);}
+    .hero-split__visual{position:relative;background:linear-gradient(135deg,rgba(31,111,139,.3),rgba(11,31,51,.8));display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .hero-split__visual img{width:100%;height:100%;object-fit:cover;opacity:.55;}
+    .hero-visual-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,31,51,.6),rgba(31,111,139,.3));}
+    .hero-badge{position:absolute;bottom:28px;left:28px;background:rgba(11,31,51,.9);border:1px solid rgba(31,111,139,.4);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;gap:4px;}
+    .hero-badge__val{font-size:1.6rem;font-weight:800;color:var(--sky);}
+    .hero-badge__lbl{font-size:.72rem;color:rgba(245,248,250,.6);}
+    @media(max-width:768px){
+      .hero-split{grid-template-columns:1fr;}
+      .hero-split__text{padding:48px 0 32px;}
+      .hero-split__visual{min-height:220px;}
+    }
+
+    /* METRICS RAIL */
+    .metrics-rail{padding:40px 0;border-top:1px solid rgba(31,111,139,.15);border-bottom:1px solid rgba(31,111,139,.15);}
+    .metrics-rail__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);}
+    .metric-card{background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:24px;text-align:center;}
+    .metric-card__val{font-size:2rem;font-weight:800;color:var(--sky);}
+    .metric-card__lbl{font-size:.78rem;color:rgba(245,248,250,.6);margin-top:4px;}
+    @media(max-width:768px){.metrics-rail__grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:480px){.metrics-rail__grid{grid-template-columns:1fr;}}
+
+    /* BENTO GRID */
+    .bento-section{padding:64px 0;}
+    .section-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;}
+    .section-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:var(--white);margin-bottom:8px;}
+    .section-sub{font-size:.95rem;color:rgba(245,248,250,.65);max-width:520px;margin-bottom:32px;}
+    .bento-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);}
+    .bento-card{background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,transform .2s;}
+    .bento-card:hover{border-color:var(--teal);transform:translateY(-3px);}
+    .bento-card--wide{grid-column:span 2;}
+    .bento-card__icon{font-size:1.8rem;}
+    .bento-card__num{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--coral);text-transform:uppercase;}
+    .bento-card__title{font-size:1.05rem;font-weight:700;color:var(--white);}
+    .bento-card__desc{font-size:.85rem;color:rgba(245,248,250,.65);line-height:1.55;}
+    .bento-card__tag{display:inline-block;background:rgba(31,111,139,.2);color:var(--sky);font-size:.7rem;padding:3px 10px;border-radius:20px;font-weight:600;}
+    @media(max-width:900px){.bento-grid{grid-template-columns:repeat(2,1fr);}.bento-card--wide{grid-column:span 1;}}
+    @media(max-width:560px){.bento-grid{grid-template-columns:1fr;}}
+
+    /* CALLOUT PANEL */
+    .callout-section{padding:0 0 64px;}
+    .callout-panel{background:linear-gradient(135deg,rgba(31,111,139,.18),rgba(216,111,60,.1));border:1px solid rgba(31,111,139,.35);border-radius:var(--radius);padding:40px 48px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;}
+    .callout-panel__title{font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:8px;}
+    .callout-panel__text{font-size:.9rem;color:rgba(245,248,250,.7);}
+    @media(max-width:640px){.callout-panel{grid-template-columns:1fr;padding:28px 24px;}}
+
+    /* EXPERTISE SPLIT */
+    .expertise-section{padding:0 0 64px;}
+    .expertise-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+    .expertise-list{display:flex;flex-direction:column;gap:16px;}
+    .expertise-item{display:flex;gap:16px;align-items:flex-start;background:var(--card-bg);border:1px solid rgba(31,111,139,.2);border-radius:var(--radius);padding:20px;}
+    .expertise-item__icon{font-size:1.4rem;flex-shrink:0;}
+    .expertise-item__title{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:4px;}
+    .expertise-item__desc{font-size:.82rem;color:rgba(245,248,250,.6);}
+    .expertise-callout{background:var(--card-bg);border:1px solid rgba(216,111,60,.3);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:16px;}
+    .expertise-callout__label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral);}
+    .expertise-callout__quote{font-size:1.1rem;font-weight:700;color:var(--white);line-height:1.4;}
+    .expertise-callout__sub{font-size:.85rem;color:rgba(245,248,250,.6);}
+    @media(max-width:768px){.expertise-split{grid-template-columns:1fr;}}
+
+    /* FOOTER */
+    .site-footer{background:rgba(7,18,30,.95);border-top:1px solid rgba(31,111,139,.2);padding:48px 0 28px;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+    .footer-brand-name{font-size:1.1rem;font-weight:700;color:var(--sky);margin-bottom:8px;}
+    .footer-brand-desc{font-size:.82rem;color:rgba(245,248,250,.5);max-width:260px;}
+    .footer-col-title{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral);margin-bottom:12px;}
+    .footer-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
+    .footer-links a{font-size:.85rem;color:rgba(245,248,250,.6);transition:color .2s;}
+    .footer-links a:hover{color:var(--sky);}
+    .footer-bottom{border-top:1px solid rgba(31,111,139,.15);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+    .footer-copy{font-size:.75rem;color:rgba(245,248,250,.35);}
+    @media(max-width:640px){.footer-grid{grid-template-columns:1fr;}}
+  </style>
 </head>
 <body class="page-ingenierie">
 
-  <!-- HEADER COMMUN -->
   <header class="site-header" id="site-header">
     <div class="header-inner container">
-
       <a href="index.html" class="brand" aria-label="Porto Flow — Accueil">
-        <span class="brand-icon" aria-hidden="true">
-          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="19" cy="19" r="17" stroke="#1F6F8B" stroke-width="2" fill="rgba(31,111,139,0.08)"/>
-            <circle cx="19" cy="19" r="7" fill="#1F6F8B"/>
-            <circle cx="19" cy="19" r="3.5" fill="#8FC7DA"/>
-            <line x1="19" y1="2" x2="19" y2="10" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
-            <line x1="19" y1="28" x2="19" y2="36" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
-            <line x1="2" y1="19" x2="10" y2="19" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
-            <line x1="28" y1="19" x2="36" y2="19" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
-            <line x1="7" y1="7" x2="13" y2="13" stroke="#8FC7DA" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
-            <line x1="25" y1="25" x2="31" y2="31" stroke="#8FC7DA" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
-          </svg>
-        </span>
+        <svg width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="19" cy="19" r="17" stroke="#1F6F8B" stroke-width="2" fill="rgba(31,111,139,0.08)"/>
+          <circle cx="19" cy="19" r="7" fill="#1F6F8B"/>
+          <circle cx="19" cy="19" r="3.5" fill="#8FC7DA"/>
+          <line x1="19" y1="2" x2="19" y2="10" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
+          <line x1="19" y1="28" x2="19" y2="36" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
+          <line x1="2" y1="19" x2="10" y2="19" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
+          <line x1="28" y1="19" x2="36" y2="19" stroke="#D86F3C" stroke-width="2" stroke-linecap="round"/>
+        </svg>
         <span class="brand-text">
           <span class="brand-name">Porto Flow</span>
           <span class="brand-tagline">Système nerveux numérique territorial</span>
         </span>
       </a>
-
       <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
         <ul class="nav-list" role="list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">
-              <span class="nav-link-text">Accueil</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="territoire.html" class="nav-link">
-              <span class="nav-link-text">Territoire</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="application.html" class="nav-link">
-              <span class="nav-link-text">Application</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="ecosysteme.html" class="nav-link">
-              <span class="nav-link-text">Écosystème</span>
-            </a>
-          </li>
-          <li class="nav-item nav-item--active">
-            <a href="ingenierie.html" class="nav-link nav-link--active" aria-current="page">
-              <span class="nav-link-text">Ingénierie</span>
-            </a>
-          </li>
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="territoire.html" class="nav-link">Territoire</a></li>
+          <li><a href="experience.html" class="nav-link">Expérience</a></li>
+          <li><a href="ecosysteme.html" class="nav-link">Écosystème</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="ingenierie.html" class="nav-link nav-link--active" aria-current="page">Ingénierie</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-
       <div class="header-actions">
-        <a href="application.html" class="btn btn--header" aria-label="Découvrir l'application Porto Flow">
-          <span>Découvrir l'app</span>
-        </a>
-        <button
-          class="burger-btn"
-          id="burger-btn"
-          aria-label="Ouvrir le menu de navigation"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-          type="button"
-        >
-          <span class="burger-line burger-line--top"></span>
-          <span class="burger-line burger-line--mid"></span>
-          <span class="burger-line burger-line--bot"></span>
+        <a href="contact.html" class="btn--header">Contact</a>
+        <button class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav" type="button">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
         </button>
       </div>
-
     </div>
-
-    <!-- MENU MOBILE -->
-    <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Menu mobile">
-      <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
-      <nav class="mobile-nav-panel" aria-label="Navigation mobile">
-        <div class="mobile-nav-header">
-          <span class="mobile-nav-brand">Porto Flow</span>
-          <button
-            class="mobile-nav-close"
-            id="mobile-nav-close"
-            aria-label="Fermer le menu"
-            type="button"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="18" y1="6" x2="6" y2="18"/>
-              <line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-          </button>
-        </div>
-        <ul class="mobile-nav-list" role="list">
-          <li class="mobile-nav-item">
-            <a href="index.html" class="mobile-nav-link">
-              <span class="mobile-nav-icon" aria-hidden="true">◎</span>
-              <span>Accueil</span>
-            </a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="territoire.html" class="mobile-nav-link">
-              <span class="mobile-nav-icon" aria-hidden="true">◈</span>
-              <span>Territoire</span>
-            </a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="application.html" class="mobile-nav-link">
-              <span class="mobile-nav-icon" aria-hidden="true">◱</span>
-              <span>Application</span>
-            </a>
-          </li>
-          <li class="mobile-nav-item">
-            <a href="ecosysteme.html" class="mobile-nav-link">
-              <span class="mobile-nav-icon" aria-hidden="true">◉</span>
-              <span>Écosystème</span>
-            </a>
-          </li>
-          <li class="mobile-nav-item mobile-nav-item--active">
-            <a href="ingenierie.html" class="mobile-nav-link mobile-nav-link--active" aria-current="page">
-              <span class="mobile-nav-icon" aria-hidden="true">⬡</span>
-              <span>Ingénierie</span>
-            </a>
-          </li>
-        </ul>
-        <div class="mobile-nav-footer">
-          <a href="application.html" class="btn btn--primary btn--full">Découvrir l'application</a>
-          <p class="mobile-nav-caption">Porto-Vecchio · Territoire intelligent</p>
-        </div>
-      </nav>
-    </div>
-
   </header>
 
-  <main id="main-content">
-
-    <!-- ═══════════════════════════════════════════════
-         HERO INGÉNIERIE — avec ancrage territorial
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-hero">
-      <div class="ing-hero__bg" aria-hidden="true">
-        <!-- Photo de fond : dashboard technologique avec ambiance territoriale -->
-        <div class="ing-hero__photo-layer" style="
-          background-image:
-            linear-gradient(135deg, rgba(11,31,51,0.88) 0%, rgba(31,111,139,0.72) 50%, rgba(11,31,51,0.92) 100%),
-            url('assets/images/dashboard-local.jpg'),
-            url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80&auto=format&fit=crop');
-          background-size: cover;
-          background-position: center;
-          position: absolute; inset: 0; z-index: 0;
-        "></div>
-        <div class="ing-hero__grid"></div>
-        <div class="ing-hero__glow ing-hero__glow--1"></div>
-        <div class="ing-hero__glow ing-hero__glow--2"></div>
-        <div class="ing-hero__glow ing-hero__glow--3"></div>
-        <svg class="ing-hero__circuit" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="450" cy="250" r="160" stroke="#1F6F8B" stroke-width="1" stroke-dasharray="5 10" opacity="0.35"/>
-          <circle cx="450" cy="250" r="220" stroke="#8FC7DA" stroke-width="0.5" stroke-dasharray="2 14" opacity="0.2"/>
-          <circle cx="450" cy="250" r="290" stroke="#1F6F8B" stroke-width="0.5" stroke-dasharray="1 18" opacity="0.12"/>
-          <line x1="450" y1="90" x2="450" y2="410" stroke="#8FC7DA" stroke-width="0.5" opacity="0.25"/>
-          <line x1="290" y1="250" x2="610" y2="250" stroke="#8FC7DA" stroke-width="0.5" opacity="0.25"/>
-          <line x1="337" y1="137" x2="563" y2="363" stroke="#8FC7DA" stroke-width="0.3" opacity="0.15"/>
-          <line x1="563" y1="137" x2="337" y2="363" stroke="#8FC7DA" stroke-width="0.3" opacity="0.15"/>
-          <circle cx="450" cy="250" r="12" fill="#D86F3C" opacity="0.9"/>
-          <circle cx="450" cy="250" r="24" fill="#D86F3C" opacity="0.15"/>
-          <circle cx="450" cy="250" r="40" fill="#D86F3C" opacity="0.06"/>
-          <circle cx="450" cy="90" r="5" fill="#8FC7DA" opacity="0.7"/>
-          <circle cx="610" cy="250" r="5" fill="#8FC7DA" opacity="0.7"/>
-          <circle cx="450" cy="410" r="5" fill="#8FC7DA" opacity="0.7"/>
-          <circle cx="290" cy="250" r="5" fill="#8FC7DA" opacity="0.7"/>
-          <circle cx="563" cy="137" r="4" fill="#D86F3C" opacity="0.5"/>
-          <circle cx="337" cy="363" r="4" fill="#D86F3C" opacity="0.5"/>
-          <path d="M 450 90 Q 560 170 610 250 Q 560 330 450 410 Q 340 330 290 250 Q 340 170 450 90" stroke="#1F6F8B" stroke-width="1.2" fill="none" opacity="0.3"/>
-        </svg>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <nav class="mobile-nav-panel" aria-label="Navigation mobile">
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-brand">Porto Flow</span>
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Fermer le menu" type="button">✕</button>
       </div>
+      <ul class="mobile-nav-list" role="list" style="list-style:none;display:flex;flex-direction:column;gap:4px;">
+        <li><a href="index.html" class="mobile-nav-link">◎ Accueil</a></li>
+        <li><a href="territoire.html" class="mobile-nav-link">◎ Territoire</a></li>
+        <li><a href="experience.html" class="mobile-nav-link">◎ Expérience</a></li>
+        <li><a href="ecosysteme.html" class="mobile-nav-link">◎ Écosystème</a></li>
+        <li><a href="dashboard.html" class="mobile-nav-link">◎ Dashboard</a></li>
+        <li><a href="ingenierie.html" class="mobile-nav-link" style="color:#8FC7DA;">◎ Ingénierie</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">◎ Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-      <div class="container" style="position:relative;z-index:2;">
-        <div class="ing-hero__content">
-          <div class="ing-hero__badge reveal-up">
-            <span class="badge-pulse"></span>
-            <span>Ingénierie &amp; Vision · Porto-Vecchio</span>
-          </div>
-          <h1 class="ing-hero__title reveal-up">
-            La boucle qui<br>
-            <span class="text-gradient">pense et construit</span>
-          </h1>
-          <p class="ing-hero__subtitle reveal-up">
-            Porto Flow n'est pas seulement un produit territorial. C'est la démonstration vivante d'une nouvelle façon de concevoir, d'itérer et de déployer des systèmes intelligents — ancrés dans un territoire réel, au service d'une ville balnéaire méditerranéenne unique.
-          </p>
+  <main>
 
-          <!-- Ancrage territorial technologique -->
-          <div class="ing-hero__territory-strip reveal-up">
-            <div class="territory-strip-item">
-              <span class="territory-strip-icon" aria-hidden="true">🏝️</span>
-              <span>Porto-Vecchio</span>
-            </div>
-            <div class="territory-strip-sep" aria-hidden="true">·</div>
-            <div class="territory-strip-item">
-              <span class="territory-strip-icon" aria-hidden="true">⚡</span>
-              <span>IA territoriale</span>
-            </div>
-            <div class="territory-strip-sep" aria-hidden="true">·</div>
-            <div class="territory-strip-item">
-              <span class="territory-strip-icon" aria-hidden="true">🔄</span>
-              <span>Boucle récursive</span>
-            </div>
-            <div class="territory-strip-sep" aria-hidden="true">·</div>
-            <div class="territory-strip-item">
-              <span class="territory-strip-icon" aria-hidden="true">📡</span>
-              <span>Données locales</span>
-            </div>
-          </div>
-
-          <div class="ing-hero__stats reveal-up">
-            <div class="ing-stat">
-              <span class="ing-stat__number">∞</span>
-              <span class="ing-stat__label">Boucle récursive</span>
-            </div>
-            <div class="ing-stat__sep" aria-hidden="true"></div>
-            <div class="ing-stat">
-              <span class="ing-stat__number">3</span>
-              <span class="ing-stat__label">Outils intelligents</span>
-            </div>
-            <div class="ing-stat__sep" aria-hidden="true"></div>
-            <div class="ing-stat">
-              <span class="ing-stat__number">1</span>
-              <span class="ing-stat__label">Vision humaine</span>
-            </div>
-          </div>
-
-          <div class="ing-hero__ctas reveal-up">
-            <a href="#boucle" class="btn btn--primary">
-              <span>Voir la boucle</span>
-              <svg viewBox="0 0 20 20" fill="none" class="btn__icon"><path d="M10 4v12M4 10l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a href="#outils" class="btn btn--ghost">
-              <span>Les outils</span>
-            </a>
-            <a href="application.html" class="btn btn--ghost">
-              <span>Voir l'application</span>
-            </a>
+    <!-- HERO SPLIT 60/40 -->
+    <section class="container" style="padding-top:48px;">
+      <div class="hero-split">
+        <div class="hero-split__text">
+          <span class="hero-tag">⚙ Ingénierie & Vision</span>
+          <h1 class="hero-split__title">La boucle récursive<br><span>au cœur du système</span></h1>
+          <p class="hero-split__sub">n8n, CloudCode et IA forment une architecture vivante. Chaque itération enrichit la mémoire territoriale de Porto-Vecchio.</p>
+          <div class="hero-ctas">
+            <a href="#architecture" class="btn-primary">Voir l'architecture</a>
+            <a href="contact.html" class="btn-secondary">Collaborer</a>
           </div>
         </div>
-      </div>
-
-      <div class="ing-hero__scroll-hint" aria-hidden="true">
-        <span class="scroll-hint-line"></span>
-        <span class="scroll-hint-dot"></span>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════
-         ANCRAGE TERRITORIAL — technologie au service du lieu
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-territory-anchor section-padding bg-subtle">
-      <div class="container">
-        <div class="section-header reveal-up">
-          <div class="section-tag">Technologie &amp; Territoire</div>
-          <h2 class="section-title">Une ingénierie au service<br><span class="text-gradient">d'un lieu réel</span></h2>
-          <p class="section-desc">Chaque ligne de code, chaque workflow, chaque agent IA de Porto Flow sert un objectif concret : rendre Porto-Vecchio plus fluide, plus lisible, plus intelligent pour ceux qui y vivent et y séjournent.</p>
-        </div>
-
-        <div class="territory-anchor-grid">
-
-          <div class="territory-anchor-card reveal-up">
-            <div class="territory-anchor-card__visual">
-              <div class="territory-anchor-card__img-wrap">
-                <img
-                  src="assets/images/port-marina.jpg"
-                  alt="Port de plaisance de Porto-Vecchio vu depuis la mer"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
-                />
-                <div class="territory-anchor-card__img-fallback" style="
-                  background: linear-gradient(135deg, #0B1F33 0%, #1F6F8B 60%, #8FC7DA 100%);
-                  border-radius: 12px;
-                  display: flex; align-items: center; justify-content: center;
-                  font-size: 3rem;
-                " aria-hidden="true">⚓</div>
-              </div>
-              <div class="territory-anchor-card__overlay">
-                <span class="territory-anchor-card__badge">Port · Marina</span>
-              </div>
-            </div>
-            <div class="territory-anchor-card__body">
-              <h3 class="territory-anchor-card__title">Données portuaires en temps réel</h3>
-              <p class="territory-anchor-card__desc">Les flux du port de plaisance — arrivées, départs, capacité, météo marine — alimentent directement les workflows n8n et enrichissent l'assistant IA territorial.</p>
-              <div class="territory-anchor-card__tags">
-                <span class="loop-tag">n8n</span>
-                <span class="loop-tag">Port</span>
-                <span class="loop-tag">Temps réel</span>
-              </div>
-            </div>
+        <div class="hero-split__visual">
+          <img src="assets/images/cote-corse.jpg" alt="Côte de Porto-Vecchio vue du ciel" loading="eager" onerror="this.style.display='none'">
+          <div class="hero-visual-overlay" aria-hidden="true"></div>
+          <div class="hero-badge">
+            <span class="hero-badge__val">×10</span>
+            <span class="hero-badge__lbl">Scalabilité haute saison</span>
           </div>
-
-          <div class="territory-anchor-card reveal-up">
-            <div class="territory-anchor-card__visual">
-              <div class="territory-anchor-card__img-wrap">
-                <img
-                  src="assets/images/route-littorale.jpg"
-                  alt="Route littorale de Porto-Vecchio en haute saison"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
-                />
-                <div class="territory-anchor-card__img-fallback" style="
-                  background: linear-gradient(135deg, #1F6F8B 0%, #D86F3C 60%, #0B1F33 100%);
-                  border-radius: 12px;
-                  display: flex; align-items: center; justify-content: center;
-                  font-size: 3rem;
-                " aria-hidden="true">🛣️</div>
-              </div>
-              <div class="territory-anchor-card__overlay">
-                <span class="territory-anchor-card__badge">Mobilité · Flux</span>
-              </div>
-            </div>
-            <div class="territory-anchor-card__body">
-              <h3 class="territory-anchor-card__title">Orchestration des flux saisonniers</h3>
-              <p class="territory-anchor-card__desc">En haute saison, Porto-Vecchio accueille 10× sa population. L'ingénierie Porto Flow anticipe, modélise et guide ces flux grâce à des algorithmes prédictifs entraînés sur les données locales.</p>
-              <div class="territory-anchor-card__tags">
-                <span class="loop-tag loop-tag--orange">IA prédictive</span>
-                <span class="loop-tag loop-tag--orange">Mobilité</span>
-                <span class="loop-tag loop-tag--orange">Saisonnalité</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="territory-anchor-card reveal-up">
-            <div class="territory-anchor-card__visual">
-              <div class="territory-anchor-card__img-wrap">
-                <img
-                  src="assets/images/dashboard-local.jpg"
-                  alt="Dashboard de données territoriales Porto Flow"
-                  loading="lazy"
-                  onerror="this.style.display='none'"
-                  style="width:100%;height:100%;object-fit:cover;border-radius:12px;"
-                />
-                <div class="territory-anchor-card__img-fallback" style="
-                  background: linear-gradient(135deg, #263238 0%, #1F6F8B 50%, #8FC7DA 100%);
-                  border-radius: 12px;
-                  display: flex; align-items: center; justify-content: center;
-                  font-size: 3rem;
-                " aria-hidden="true">📊</div>
-              </div>
-              <div class="territory-anchor-card__overlay">
-                <span class="territory-anchor-card__badge">Dashboard · IA</span>
-              </div>
-            </div>
-            <div class="territory-anchor-card__body">
-              <h3 class="territory-anchor-card__title">Intelligence de données locales</h3>
-              <p class="territory-anchor-card__desc">CloudCode génère les interfaces de visualisation à partir des données territoriales brutes. Le dashboard Porto Flow devient le tableau de bord vivant de la micro-région portovecchienne.</p>
-              <div class="territory-anchor-card__tags">
-                <span class="loop-tag">CloudCode</span>
-                <span class="loop-tag">Dashboard</span>
-                <span class="loop-tag">Micro-région</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         BOUCLE RÉCURSIVE
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-loop section-padding" id="boucle">
+    <!-- METRICS RAIL -->
+    <section class="metrics-rail">
       <div class="container">
-        <div class="section-header reveal-up">
-          <div class="section-tag">Processus</div>
-          <h2 class="section-title">La boucle récursive<br>de développement</h2>
-          <p class="section-desc">Un cycle continu où chaque itération enrichit la suivante. L'intelligence artificielle et l'expertise humaine se renforcent mutuellement pour produire un système toujours plus précis et pertinent — ancré dans la réalité de Porto-Vecchio.</p>
-        </div>
-
-        <div class="loop-diagram reveal-up">
-
-          <!-- Étape 1 -->
-          <div class="loop-step" data-step="1">
-            <div class="loop-step__number-wrap">
-              <div class="loop-step__number">01</div>
-              <div class="loop-step__line" aria-hidden="true"></div>
-            </div>
-            <div class="loop-step__card">
-              <div class="loop-step__icon-wrap">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="6" y="10" width="28" height="20" rx="3" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <path d="M12 17h16M12 22h10" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-                  <circle cx="30" cy="12" r="4" fill="#D86F3C" opacity="0.8"/>
-                </svg>
-              </div>
-              <div class="loop-step__body">
-                <h3 class="loop-step__title">Intention &amp; Spécification</h3>
-                <p class="loop-step__desc">L'humain formule la vision, les contraintes et les objectifs. La pensée stratégique reste irremplaçable — c'est le point de départ de chaque cycle. Pour Porto-Vecchio, cela signifie comprendre les besoins réels du territoire.</p>
-                <div class="loop-step__tags">
-                  <span class="loop-tag">Vision humaine</span>
-                  <span class="loop-tag">Contexte territorial</span>
-                  <span class="loop-tag">Stratégie</span>
-                </div>
-              </div>
-            </div>
+        <div class="metrics-rail__grid">
+          <div class="metric-card">
+            <div class="metric-card__val">n8n</div>
+            <div class="metric-card__lbl">Orchestration des flux</div>
           </div>
-
-          <!-- Flèche -->
-          <div class="loop-arrow" aria-hidden="true">
-            <svg viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4v24M6 22l6 8 6-8" stroke="#1F6F8B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
-            </svg>
+          <div class="metric-card">
+            <div class="metric-card__val">100%</div>
+            <div class="metric-card__lbl">Open source & souverain</div>
           </div>
-
-          <!-- Étape 2 -->
-          <div class="loop-step" data-step="2">
-            <div class="loop-step__number-wrap">
-              <div class="loop-step__number loop-step__number--accent">02</div>
-              <div class="loop-step__line" aria-hidden="true"></div>
-            </div>
-            <div class="loop-step__card loop-step__card--accent">
-              <div class="loop-step__icon-wrap loop-step__icon-wrap--accent">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="20" r="5" stroke="#D86F3C" stroke-width="1.5"/>
-                  <circle cx="28" cy="12" r="5" stroke="#D86F3C" stroke-width="1.5"/>
-                  <circle cx="28" cy="28" r="5" stroke="#D86F3C" stroke-width="1.5"/>
-                  <path d="M17 18l6-4M17 22l6 4" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="loop-step__body">
-                <h3 class="loop-step__title">Orchestration n8n</h3>
-                <p class="loop-step__desc">n8n orchestre les flux de travail automatisés. Chaque nœud connecte les outils, les données et les agents IA dans une chorégraphie précise et reproductible — depuis les données du port jusqu'aux flux touristiques.</p>
-                <div class="loop-step__tags">
-                  <span class="loop-tag loop-tag--orange">n8n</span>
-                  <span class="loop-tag loop-tag--orange">Workflows</span>
-                  <span class="loop-tag loop-tag--orange">Automatisation</span>
-                </div>
-              </div>
-            </div>
+          <div class="metric-card">
+            <div class="metric-card__val">∞</div>
+            <div class="metric-card__lbl">Boucles d'apprentissage</div>
           </div>
-
-          <!-- Flèche -->
-          <div class="loop-arrow" aria-hidden="true">
-            <svg viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4v24M6 22l6 8 6-8" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
-            </svg>
+          <div class="metric-card">
+            <div class="metric-card__val">4</div>
+            <div class="metric-card__lbl">Piliers architecturaux</div>
           </div>
-
-          <!-- Étape 3 -->
-          <div class="loop-step" data-step="3">
-            <div class="loop-step__number-wrap">
-              <div class="loop-step__number loop-step__number--accent">03</div>
-              <div class="loop-step__line" aria-hidden="true"></div>
-            </div>
-            <div class="loop-step__card loop-step__card--accent">
-              <div class="loop-step__icon-wrap loop-step__icon-wrap--accent">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="6" y="6" width="28" height="28" rx="4" stroke="#D86F3C" stroke-width="1.5"/>
-                  <path d="M12 26l5-10 4 6 3-4 4 8" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 12h6" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="loop-step__body">
-                <h3 class="loop-step__title">Génération CloudCode</h3>
-                <p class="loop-step__desc">CloudCode traduit les spécifications en code fonctionnel. L'IA génère, refactorise et optimise — l'humain valide, oriente et affine la direction technique pour chaque composant territorial.</p>
-                <div class="loop-step__tags">
-                  <span class="loop-tag loop-tag--orange">CloudCode</span>
-                  <span class="loop-tag loop-tag--orange">Génération IA</span>
-                  <span class="loop-tag loop-tag--orange">Code propre</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Flèche retour -->
-          <div class="loop-arrow loop-arrow--return" aria-hidden="true">
-            <svg viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4v24M6 22l6 8 6-8" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
-            </svg>
-          </div>
-
-          <!-- Étape 4 -->
-          <div class="loop-step" data-step="4">
-            <div class="loop-step__number-wrap">
-              <div class="loop-step__number">04</div>
-            </div>
-            <div class="loop-step__card">
-              <div class="loop-step__icon-wrap">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="20" cy="20" r="12" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <path d="M14 20l4 4 8-8" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20 8v4M20 28v4M8 20h4M28 20h4" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
-                </svg>
-              </div>
-              <div class="loop-step__body">
-                <h3 class="loop-step__title">Validation &amp; Apprentissage</h3>
-                <p class="loop-step__desc">Chaque résultat est évalué, testé et intégré comme connaissance. Le système apprend de ses itérations et enrichit le cycle suivant avec une précision accrue — validée par les usagers réels du territoire.</p>
-                <div class="loop-step__tags">
-                  <span class="loop-tag">Tests</span>
-                  <span class="loop-tag">Feedback</span>
-                  <span class="loop-tag">Mémoire système</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Boucle retour visuelle -->
-          <div class="loop-return-indicator reveal-up" aria-hidden="true">
-            <div class="loop-return-line"></div>
-            <div class="loop-return-label">
-              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 10a6 6 0 0 1 6-6 6 6 0 0 1 6 6" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                <path d="M16 10l-2-3-2 3" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Nouvelle itération</span>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         OUTILS & RÔLES
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-tools section-padding bg-dark" id="outils">
+    <!-- BENTO GRID — ARCHITECTURE -->
+    <section class="bento-section" id="architecture">
       <div class="container">
-        <div class="section-header section-header--light reveal-up">
-          <div class="section-tag section-tag--light">Outils &amp; Rôles</div>
-          <h2 class="section-title section-title--light">Chaque outil a<br>sa fonction précise</h2>
-          <p class="section-desc section-desc--light">L'écosystème technique de Porto Flow repose sur une complémentarité rigoureuse entre automatisation, intelligence artificielle et jugement humain — au service du territoire portovecchien.</p>
-        </div>
-
-        <div class="tools-grid">
-
-          <!-- n8n -->
-          <div class="tool-card reveal-up">
-            <div class="tool-card__top">
-              <div class="tool-card__logo tool-card__logo--blue">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="14" cy="24" r="6" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <circle cx="34" cy="14" r="6" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <circle cx="34" cy="34" r="6" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <path d="M20 22l8-6M20 26l8 6" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="tool-card__identity">
-                <h3 class="tool-card__name">n8n</h3>
-                <span class="tool-card__role">Orchestrateur de flux</span>
-              </div>
-              <div class="tool-card__badge tool-card__badge--blue">Cœur opérationnel</div>
-            </div>
-            <p class="tool-card__desc">n8n est le chef d'orchestre. Il connecte les services, déclenche les agents IA, gère les données territoriales en temps réel et automatise les processus complexes — des flux du port aux alertes de saturation des plages.</p>
-            <ul class="tool-card__features">
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Workflows visuels et reproductibles
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Connexion API territoire &amp; partenaires
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Déclencheurs événementiels intelligents
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Gestion des erreurs et reprises automatiques
-              </li>
-            </ul>
+        <div class="section-label">Architecture</div>
+        <h2 class="section-title">Quatre piliers, un système vivant</h2>
+        <p class="section-sub">Chaque couche est indépendante, évolutive et interopérable. Porto Flow grandit sans se fragiliser.</p>
+        <div class="bento-grid">
+          <div class="bento-card bento-card--wide">
+            <div class="bento-card__icon">🔄</div>
+            <div class="bento-card__num">Pilier I</div>
+            <div class="bento-card__title">Boucle récursive humain-IA</div>
+            <div class="bento-card__desc">L'humain définit l'intention, l'IA propose et exécute, le territoire valide. Chaque cycle produit une version plus précise et plus utile du système.</div>
+            <span class="bento-card__tag">Core Loop</span>
           </div>
-
-          <!-- CloudCode -->
-          <div class="tool-card reveal-up">
-            <div class="tool-card__top">
-              <div class="tool-card__logo tool-card__logo--orange">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="8" y="8" width="32" height="32" rx="6" stroke="#D86F3C" stroke-width="1.5"/>
-                  <path d="M16 30l6-12 4 6 3-4 5 10" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M16 16h8" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div class="tool-card__identity">
-                <h3 class="tool-card__name">CloudCode</h3>
-                <span class="tool-card__role">Moteur de génération</span>
-              </div>
-              <div class="tool-card__badge tool-card__badge--orange">Moteur de code</div>
-            </div>
-            <p class="tool-card__desc">CloudCode transforme les intentions en code. Il génère des composants, des modules et des architectures entières à partir de spécifications précises — accélérant radicalement le cycle de développement territorial.</p>
-            <ul class="tool-card__features">
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Génération de code contextuelle
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Refactorisation intelligente
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Respect des conventions du projet
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Itération rapide sur les composants
-              </li>
-            </ul>
+          <div class="bento-card">
+            <div class="bento-card__icon">🧩</div>
+            <div class="bento-card__num">Pilier II</div>
+            <div class="bento-card__title">Complexité maîtrisée</div>
+            <div class="bento-card__desc">n8n visualise les flux, CloudCode génère les composants. L'humain voit l'essentiel, pas la mécanique.</div>
+            <span class="bento-card__tag">n8n · CloudCode</span>
           </div>
-
-          <!-- IA Centrale -->
-          <div class="tool-card reveal-up">
-            <div class="tool-card__top">
-              <div class="tool-card__logo tool-card__logo--teal">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="24" r="10" stroke="#8FC7DA" stroke-width="1.5"/>
-                  <circle cx="24" cy="24" r="3" fill="#8FC7DA"/>
-                  <path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M16.3 16.3l2.8 2.8M28.9 28.9l2.8 2.8M31.7 16.3l-2.8 2.8M19.1 28.9l-2.8 2.8" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
-                </svg>
-              </div>
-              <div class="tool-card__identity">
-                <h3 class="tool-card__name">IA Centrale</h3>
-                <span class="tool-card__role">Intelligence augmentée</span>
-              </div>
-              <div class="tool-card__badge tool-card__badge--teal">Intelligence active</div>
-            </div>
-            <p class="tool-card__desc">Les modèles d'IA traitent les données territoriales de Porto-Vecchio, génèrent des recommandations contextuelles, analysent les flux saisonniers et apprennent des comportements locaux pour affiner continuellement la pertinence du système.</p>
-            <ul class="tool-card__features">
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Traitement du langage naturel
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Analyse prédictive des flux saisonniers
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Recommandations personnalisées locales
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#8FC7DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Apprentissage continu
-              </li>
-            </ul>
+          <div class="bento-card">
+            <div class="bento-card__icon">🧠</div>
+            <div class="bento-card__num">Pilier III</div>
+            <div class="bento-card__title">Connaissance capitalisée</div>
+            <div class="bento-card__desc">Chaque itération enrichit la mémoire du système. Les patterns s'accumulent en avantage compétitif durable.</div>
+            <span class="bento-card__tag">Mémoire territoriale</span>
           </div>
-
-          <!-- L'Humain -->
-          <div class="tool-card tool-card--human reveal-up">
-            <div class="tool-card__top">
-              <div class="tool-card__logo tool-card__logo--sand">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="18" r="7" stroke="#E8D5B0" stroke-width="1.5"/>
-                  <path d="M12 40c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M32 10l2 2 4-4" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="tool-card__identity">
-                <h3 class="tool-card__name">L'Humain</h3>
-                <span class="tool-card__role">Architecte de sens</span>
-              </div>
-              <div class="tool-card__badge tool-card__badge--sand">Irremplaçable</div>
-            </div>
-            <p class="tool-card__desc">L'humain n'est pas remplacé — il est amplifié. Il apporte le jugement, la vision stratégique, la connaissance intime du territoire portovecchien et la capacité à évaluer ce que les machines ne peuvent pas ressentir.</p>
-            <ul class="tool-card__features">
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Vision stratégique et territoriale
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Validation des choix critiques
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Orientation éthique et qualitative
-              </li>
-              <li>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3 3 7-7" stroke="#E8D5B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Connexion avec les usagers réels
-              </li>
-            </ul>
+          <div class="bento-card">
+            <div class="bento-card__icon">🏝️</div>
+            <div class="bento-card__num">Pilier IV</div>
+            <div class="bento-card__title">Réplicabilité territoriale</div>
+            <div class="bento-card__desc">Ce qui fonctionne pour Porto-Vecchio s'adapte à d'autres territoires insulaires. La méthode est le produit.</div>
+            <span class="bento-card__tag">Scalable</span>
           </div>
-
+          <div class="bento-card">
+            <div class="bento-card__icon">⚡</div>
+            <div class="bento-card__num">Pilier V</div>
+            <div class="bento-card__title">Résilience saisonnière</div>
+            <div class="bento-card__desc">Scalable ×10 en haute saison, sobre hors-saison. L'architecture s'adapte au rythme insulaire.</div>
+            <span class="bento-card__tag">Haute disponibilité</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         DOUBLE SYSTÈME
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-dual section-padding">
+    <!-- CALLOUT PANEL -->
+    <section class="callout-section">
       <div class="container">
-        <div class="section-header reveal-up">
-          <div class="section-tag">Double Système</div>
-          <h2 class="section-title">Porto Flow :<br><span class="text-gradient">deux intelligences, une vision</span></h2>
-          <p class="section-desc">Porto Flow est simultanément un produit territorial et une démonstration d'ingénierie. Ces deux dimensions se nourrissent mutuellement et constituent l'identité profonde du projet.</p>
-        </div>
-
-        <div class="dual-grid">
-
-          <div class="dual-card dual-card--territory reveal-up">
-            <div class="dual-card__visual" aria-hidden="true">
-              <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="70" r="55" stroke="#1F6F8B" stroke-width="1" stroke-dasharray="4 8" opacity="0.5"/>
-                <circle cx="100" cy="70" r="38" stroke="#8FC7DA" stroke-width="0.8" opacity="0.35"/>
-                <path d="M60 85 Q75 60 100 68 Q125 76 145 55" stroke="#D86F3C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                <circle cx="100" cy="68" r="5" fill="#D86F3C" opacity="0.9"/>
-                <circle cx="75" cy="76" r="3.5" fill="#8FC7DA" opacity="0.7"/>
-                <circle cx="130" cy="62" r="3.5" fill="#8FC7DA" opacity="0.7"/>
-                <circle cx="60" cy="85" r="3" fill="#8FC7DA" opacity="0.5"/>
-                <circle cx="145" cy="55" r="3" fill="#8FC7DA" opacity="0.5"/>
-                <path d="M50 105 Q100 92 150 100" stroke="#8FC7DA" stroke-width="1" stroke-dasharray="3 5" opacity="0.4"/>
-                <path d="M55 95 Q100 82 145 90" stroke="#1F6F8B" stroke-width="0.5" stroke-dasharray="2 6" opacity="0.3"/>
-              </svg>
-            </div>
-            <div class="dual-card__content">
-              <div class="dual-card__tag">Système Territorial</div>
-              <h3 class="dual-card__title">Porto Flow Territoire</h3>
-              <p class="dual-card__subtitle">Le copilote de Porto-Vecchio</p>
-              <p class="dual-card__desc">Un système vivant qui rend le territoire lisible, fluide et accessible. Il collecte les données locales, les enrichit par l'IA et les restitue aux habitants, visiteurs et acteurs économiques sous forme d'informations actionnables.</p>
-              <ul class="dual-card__points">
-                <li><span class="point-dot point-dot--blue"></span>Carte territoriale temps réel</li>
-                <li><span class="point-dot point-dot--blue"></span>Assistant IA contextuel</li>
-                <li><span class="point-dot point-dot--blue"></span>Flux saisonniers gérés intelligemment</li>
-                <li><span class="point-dot point-dot--blue"></span>Connexion avec l'écosystème local</li>
-              </ul>
-              <a href="territoire.html" class="btn btn--outline btn--sm">Voir le territoire</a>
-            </div>
+        <div class="callout-panel">
+          <div>
+            <div class="callout-panel__title">🎯 L'IA augmente, l'humain décide.</div>
+            <div class="callout-panel__text">Porto Flow ne remplace pas l'intelligence territoriale — il l'amplifie. Chaque décision reste ancrée dans la réalité locale et la vision des acteurs du territoire.</div>
           </div>
-
-          <div class="dual-card dual-card--engineering reveal-up">
-            <div class="dual-card__visual" aria-hidden="true">
-              <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="30" y="30" width="140" height="90" rx="6" stroke="#1F6F8B" stroke-width="1" opacity="0.4"/>
-                <line x1="30" y1="50" x2="170" y2="50" stroke="#1F6F8B" stroke-width="0.5" opacity="0.3"/>
-                <circle cx="42" cy="40" r="3" fill="#D86F3C" opacity="0.7"/>
-                <circle cx="54" cy="40" r="3" fill="#8FC7DA" opacity="0.5"/>
-                <circle cx="66" cy="40" r="3" fill="#8FC7DA" opacity="0.3"/>
-                <path d="M50 75l8 8-8 8" stroke="#8FC7DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M72 91h40" stroke="#8FC7DA" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="148" cy="60" r="12" fill="#D86F3C" opacity="0.2" stroke="#D86F3C" stroke-width="1.5"/>
-                <path d="M144 60l3 3 5-5" stroke="#D86F3C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M50 65h30M50 72h20" stroke="#8FC7DA" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
-              </svg>
-            </div>
-            <div class="dual-card__content">
-              <div class="dual-card__tag dual-card__tag--orange">Système Ingénierie</div>
-              <h3 class="dual-card__title">Porto Flow Ingénierie</h3>
-              <p class="dual-card__subtitle">La méthode qui se construit elle-même</p>
-              <p class="dual-card__desc">Un modèle de développement augmenté où n8n, CloudCode et l'IA forment une chaîne de production intelligente. Chaque composant du site, chaque workflow, chaque fonctionnalité est le résultat de cette boucle récursive.</p>
-              <ul class="dual-card__points">
-                <li><span class="point-dot point-dot--orange"></span>Usine à code pilotée par IA</li>
-                <li><span class="point-dot point-dot--orange"></span>Workflows n8n auto-documentés</li>
-                <li><span class="point-dot point-dot--orange"></span>Génération CloudCode contextuelle</li>
-                <li><span class="point-dot point-dot--orange"></span>Humain architecte, IA exécutante</li>
-              </ul>
-              <a href="#boucle" class="btn btn--outline-orange btn--sm">Voir la boucle</a>
-            </div>
-          </div>
-
+          <a href="ecosysteme.html" class="btn-primary" style="white-space:nowrap;">Voir l'écosystème</a>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         PHILOSOPHIE D'AUGMENTATION
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-philosophy section-padding bg-subtle">
+    <!-- EXPERTISE SPLIT -->
+    <section class="expertise-section">
       <div class="container">
-        <div class="philosophy-layout">
-
-          <div class="philosophy-left reveal-up">
-            <div class="section-tag">Philosophie</div>
-            <h2 class="section-title">L'augmentation<br>humaine comme<br><span class="text-gradient">principe fondateur</span></h2>
-            <p class="philosophy-desc">Porto Flow ne cherche pas à remplacer l'intelligence humaine. Il cherche à la multiplier. Chaque outil, chaque workflow, chaque agent IA est conçu pour amplifier la capacité de décision, de création et d'impact de ceux qui les utilisent — au service d'un territoire méditerranéen vivant.</p>
-            <p class="philosophy-desc">C'est une philosophie de développement autant qu'une architecture technique : l'humain reste l'architecte du sens, et la machine devient son meilleur collaborateur pour comprendre et servir Porto-Vecchio.</p>
-            <div class="philosophy-quote">
-              <div class="philosophy-quote__bar"></div>
-              <blockquote>
-                "La vraie innovation n'est pas de remplacer l'humain par la machine, mais de donner à l'humain des outils qui lui permettent de penser et d'agir à une échelle qu'il n'aurait jamais pu atteindre seul."
-              </blockquote>
-              <cite>— Vision Porto Flow</cite>
-            </div>
-          </div>
-
-          <div class="philosophy-right">
-            <div class="pillar-card reveal-up">
-              <div class="pillar-card__num">I</div>
-              <div class="pillar-card__body">
-                <h3 class="pillar-card__title">Vitesse sans perte de qualité</h3>
-                <p class="pillar-card__desc">La boucle récursive permet d'itérer en heures ce qui prenait des semaines. La qualité est maintenue par la validation humaine à chaque étape critique.</p>
+        <div class="section-label">Expertise technique</div>
+        <h2 class="section-title" style="margin-bottom:32px;">Stack & savoir-faire</h2>
+        <div class="expertise-split">
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <div class="expertise-item__icon">🔗</div>
+              <div>
+                <div class="expertise-item__title">Orchestration n8n</div>
+                <div class="expertise-item__desc">Automatisation des flux de données entre sources territoriales, APIs et interfaces utilisateurs.</div>
               </div>
             </div>
-            <div class="pillar-card reveal-up">
-              <div class="pillar-card__num">II</div>
-              <div class="pillar-card__body">
-                <h3 class="pillar-card__title">Complexité maîtrisée</h3>
-                <p class="pillar-card__desc">Les systèmes complexes deviennent accessibles. n8n visualise les flux, CloudCode génère les composants, l'IA analyse les patterns — l'humain voit l'essentiel du territoire.</p>
+            <div class="expertise-item">
+              <div class="expertise-item__icon">☁️</div>
+              <div>
+                <div class="expertise-item__title">CloudCode & déploiement</div>
+                <div class="expertise-item__desc">Génération et déploiement continu des composants applicatifs via IA assistée.</div>
               </div>
             </div>
-            <div class="pillar-card reveal-up">
-              <div class="pillar-card__num">III</div>
-              <div class="pillar-card__body">
-                <h3 class="pillar-card__title">Connaissance capitalisée</h3>
-                <p class="pillar-card__desc">Chaque itération enrichit la mémoire du système. Les décisions, les patterns et les apprentissages s'accumulent et deviennent un avantage compétitif durable pour le territoire.</p>
+            <div class="expertise-item">
+              <div class="expertise-item__icon">📊</div>
+              <div>
+                <div class="expertise-item__title">Dashboard & visualisation</div>
+                <div class="expertise-item__desc">Tableaux de bord temps réel pour les décideurs territoriaux et les opérateurs locaux.</div>
               </div>
             </div>
-            <div class="pillar-card reveal-up">
-              <div class="pillar-card__num">IV</div>
-              <div class="pillar-card__body">
-                <h3 class="pillar-card__title">Réplicabilité territoriale</h3>
-                <p class="pillar-card__desc">Ce qui fonctionne pour Porto-Vecchio peut être adapté à d'autres territoires insulaires ou balnéaires. La méthode est le produit autant que l'application elle-même.</p>
+            <div class="expertise-item">
+              <div class="expertise-item__icon">🔒</div>
+              <div>
+                <div class="expertise-item__title">Souveraineté des données</div>
+                <div class="expertise-item__desc">Architecture hébergée localement, sans dépendance à des tiers non maîtrisés.</div>
               </div>
             </div>
           </div>
-
+          <div class="expertise-callout">
+            <div class="expertise-callout__label">Vision fondatrice</div>
+            <div class="expertise-callout__quote">"Un territoire qui se comprend lui-même est un territoire qui se gouverne mieux."</div>
+            <div class="expertise-callout__sub">Porto Flow transforme les données dispersées en intelligence collective, accessible à tous les acteurs du territoire.</div>
+            <a href="dashboard.html" class="btn-primary" style="margin-top:8px;text-align:center;">Accéder au Dashboard</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════════
-         ARCHITECTURE TECHNIQUE
-    ═══════════════════════════════════════════════ -->
-    <section class="ing-architecture section-padding">
-      <div class="container">
-        <div class="section-header reveal-up">
-          <div class="section-tag">Architecture</div>
-          <h2 class="section-title">Une architecture<br>pensée pour durer</h2>
-          <p class="section-desc">Chaque couche du système est conçue pour être indépendante, évolutive et interopérable. Porto Flow grandit sans se fragiliser — comme le territoire qu'il sert.</p>
-        </div>
+  </main>
 
-        <!-- Visuel territorial superposé à l'architecture -->
-        <div class="arch-territory-banner reveal-up">
-          <div class="arch-territory-banner__inner">
-            <img
-              src="assets/images/cote-corse.jpg"
-              alt="Côte corse vue du ciel, littoral de Porto-Vecchio"
-              loading="lazy"
-              onerror="this.style.display='none'"
-              style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;border-radius:16px;"
-            />
-            <div style="
-              position:absolute;inset:0;
-              background: linear-gradient(90deg, rgba(11,31,51,0.95) 0%, rgba(31,111,139,0.75) 50%, rgba(11,31,51,0.9) 100%);
-              border-radius:16px;
-            " aria-hidden="true"></div>
-            <div class="arch-territory-banner__content">
-              <div class="arch-territory-banner__label">
-                <span class="arch-territory-banner__icon" aria-hidden="true">🏝️</span>
-                <span>Porto-Vecchio · Micro-région portovecchienne</span>
-              </div>
-              <p class="arch-territory-banner__text">
-                L'architecture Porto Flow est conçue pour un territoire insulaire à forte saisonnalité : scalable en haute saison, sobre en hors-saison, toujours résiliente.
-              </p>
-              <div class="arch-territory-banner__stats">
-                <div class="arch-territory-banner__stat">
-                  <strong>×10</strong>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Porto Flow</div>
+          <div class="footer-brand-desc">Système nerveux numérique territorial de Porto-Vecchio. Intelligence collective, souveraineté des données, résilience insulaire.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="territoire.html">Territoire</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="ecosysteme.html">Écosystème</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="ingenierie.html">Ingénierie</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="contact.html">Nous contacter</a></li>
+            <li><a href="contact.html">Collaborer</a></li>
+            <li><a href="contact.html">Partenariats</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Porto Flow — Tous droits réservés</span>
+        <span class="footer-copy">Porto-Vecchio · Corse du Sud</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var burger=document.getElementById('burger-btn');
+      var mobileNav=document.getElementById('mobile-nav');
+      var closeBtn=document.getElementById('mobile-nav-close');
+      var backdrop=document.getElementById('mobile-nav-backdrop');
+      function openNav(){mobileNav.classList.add('open');mobileNav.setAttribute('aria-hidden','false');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+      function closeNav(){mobileNav.classList.remove('open');mobileNav.setAttribute('aria-hidden','true');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+      if(burger)burger.addEventListener('click',openNav);
+      if(closeBtn)closeBtn.addEventListener('click',closeNav);
+      if(backdrop)backdrop.addEventListener('click',closeNav);
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')closeNav();});
+    })();
+  </script>
+
+</body>
+</html>
