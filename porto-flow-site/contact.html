@@ -6,105 +6,9 @@
   <title>Contact – PortoFlow, copilote intelligent du territoire</title>
   <meta name="description" content="Contactez PortoFlow : collectivités, partenaires économiques, professionnels locaux et acteurs institutionnels de Porto-Vecchio et Corse-du-Sud.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* ── CONTACT PAGE OVERRIDES ── */
-    .contact-hero-split{display:grid;grid-template-columns:60% 40%;min-height:520px;background:#0a1628;}
-    .contact-hero-left{display:flex;flex-direction:column;justify-content:center;padding:64px 48px 64px 0;margin-left:auto;max-width:640px;}
-    .contact-hero-right{background:linear-gradient(135deg,#0d2244 0%,#1a3a6b 100%);display:flex;align-items:center;justify-content:center;padding:40px 32px;}
-    .hero-kicker{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4fa3e0;margin-bottom:16px;}
-    .hero-h1{font-size:2.6rem;font-weight:800;color:#fff;line-height:1.15;margin:0 0 16px;}
-    .hero-sub{font-size:1rem;color:#a8bdd4;line-height:1.6;margin:0 0 28px;max-width:420px;}
-    .hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;}
-    .badge-pill{background:rgba(79,163,224,.15);border:1px solid rgba(79,163,224,.3);color:#4fa3e0;font-size:.72rem;font-weight:600;padding:5px 12px;border-radius:20px;letter-spacing:.04em;}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
-    .btn-pf{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;}
-    .btn-pf-primary{background:#4fa3e0;color:#fff;}
-    .btn-pf-primary:hover{background:#3b8ec9;}
-    .btn-pf-outline{border:1.5px solid rgba(255,255,255,.3);color:#fff;}
-    .btn-pf-outline:hover{border-color:#4fa3e0;color:#4fa3e0;}
-    /* Hero card */
-    .hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px 24px;width:100%;max-width:300px;}
-    .hero-card-header{display:flex;align-items:center;gap:8px;margin-bottom:20px;}
-    .dot-green{width:9px;height:9px;border-radius:50%;background:#22c55e;flex-shrink:0;}
-    .hero-card-label{font-size:.72rem;font-weight:700;color:#a8bdd4;letter-spacing:.06em;text-transform:uppercase;}
-    .hero-card-list{list-style:none;margin:0 0 20px;padding:0;display:flex;flex-direction:column;gap:10px;}
-    .hero-card-list li{display:flex;align-items:center;gap:10px;font-size:.85rem;color:#d0e4f5;}
-    .hero-card-list li span:first-child{font-size:1rem;}
-    .hero-card-footer{border-top:1px solid rgba(255,255,255,.1);padding-top:14px;font-size:.75rem;color:#4fa3e0;font-weight:600;}
-    /* Callout */
-    .callout-panel{background:linear-gradient(90deg,#0d2244,#1a3a6b);border-left:4px solid #4fa3e0;border-radius:12px;padding:28px 32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
-    .callout-icon{font-size:2rem;flex-shrink:0;}
-    .callout-text h3{margin:0 0 6px;font-size:1.1rem;font-weight:700;color:#fff;}
-    .callout-text p{margin:0;font-size:.88rem;color:#a8bdd4;max-width:520px;}
-    /* Bento coords */
-    .bento-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .bento-card{background:#0d1f3c;border:1px solid rgba(79,163,224,.18);border-radius:14px;padding:28px 24px;}
-    .bento-card-icon{font-size:1.6rem;margin-bottom:14px;}
-    .bento-card h4{margin:0 0 8px;font-size:.95rem;font-weight:700;color:#fff;}
-    .bento-card p{margin:0;font-size:.83rem;color:#a8bdd4;line-height:1.55;}
-    .bento-card .bento-tag{display:inline-block;margin-top:12px;font-size:.7rem;font-weight:700;color:#4fa3e0;background:rgba(79,163,224,.12);padding:3px 10px;border-radius:20px;}
-    /* Form section */
-    .form-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-    .form-intro h2{font-size:1.8rem;font-weight:800;color:#fff;margin:0 0 12px;}
-    .form-intro p{font-size:.9rem;color:#a8bdd4;line-height:1.6;margin:0 0 24px;}
-    .form-steps{display:flex;flex-direction:column;gap:12px;}
-    .form-step{display:flex;align-items:flex-start;gap:12px;}
-    .step-num{width:28px;height:28px;border-radius:50%;background:#4fa3e0;color:#fff;font-size:.75rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-    .step-text{font-size:.85rem;color:#a8bdd4;padding-top:4px;}
-    .contact-form{background:#0d1f3c;border:1px solid rgba(79,163,224,.18);border-radius:16px;padding:32px 28px;}
-    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-    .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
-    .form-group label{font-size:.78rem;font-weight:700;color:#a8bdd4;letter-spacing:.04em;text-transform:uppercase;}
-    .form-group input,.form-group select,.form-group textarea{background:#0a1628;border:1px solid rgba(79,163,224,.25);border-radius:8px;padding:10px 14px;color:#fff;font-size:.88rem;outline:none;transition:border-color .2s;}
-    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#4fa3e0;}
-    .form-group select option{background:#0a1628;}
-    .form-group textarea{resize:vertical;min-height:90px;}
-    .form-consent{flex-direction:row;align-items:flex-start;gap:10px;}
-    .form-consent input{margin-top:3px;accent-color:#4fa3e0;flex-shrink:0;}
-    .form-consent label{font-size:.78rem;color:#a8bdd4;text-transform:none;letter-spacing:0;font-weight:400;}
-    .form-submit{width:100%;padding:13px;background:#4fa3e0;color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:700;cursor:pointer;transition:background .2s;}
-    .form-submit:hover{background:#3b8ec9;}
-    .form-feedback{margin-top:14px;padding:12px 16px;border-radius:8px;font-size:.85rem;font-weight:600;display:none;}
-    .form-feedback.success{background:rgba(34,197,94,.15);color:#22c55e;border:1px solid rgba(34,197,94,.3);display:block;}
-    /* CTA Rail */
-    .cta-rail{background:linear-gradient(90deg,#0d2244,#1a3a6b);border-radius:16px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:36px 40px;flex-wrap:wrap;}
-    .cta-rail-text h3{margin:0 0 6px;font-size:1.3rem;font-weight:800;color:#fff;}
-    .cta-rail-text p{margin:0;font-size:.88rem;color:#a8bdd4;}
-    .cta-rail-actions{display:flex;gap:12px;flex-wrap:wrap;}
-    /* Section wrapper */
-    .section-wrap{max-width:1180px;margin:0 auto;padding:60px 24px;}
-    .section-kicker-sm{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4fa3e0;margin-bottom:10px;}
-    .section-title-lg{font-size:1.6rem;font-weight:800;color:#fff;margin:0 0 32px;}
-    /* Footer */
-    .pf-footer{background:#060e1c;border-top:1px solid rgba(79,163,224,.12);padding:40px 24px;}
-    .pf-footer-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
-    .pf-footer-brand{display:flex;align-items:center;gap:12px;}
-    .pf-footer-mark{width:36px;height:36px;background:#4fa3e0;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff;font-size:.9rem;}
-    .pf-footer-name{font-weight:700;color:#fff;font-size:.95rem;}
-    .pf-footer-tag{font-size:.72rem;color:#4fa3e0;}
-    .pf-footer-nav{display:flex;gap:20px;flex-wrap:wrap;}
-    .pf-footer-nav a{font-size:.8rem;color:#a8bdd4;text-decoration:none;transition:color .2s;}
-    .pf-footer-nav a:hover{color:#4fa3e0;}
-    .pf-footer-copy{font-size:.75rem;color:#4a6080;}
-    /* Responsive */
-    @media(max-width:900px){
-      .contact-hero-split{grid-template-columns:1fr;}
-      .contact-hero-right{display:none;}
-      .contact-hero-left{padding:48px 24px;max-width:100%;}
-      .bento-grid{grid-template-columns:1fr 1fr;}
-      .form-split{grid-template-columns:1fr;}
-      .form-row{grid-template-columns:1fr;}
-      .cta-rail{flex-direction:column;text-align:center;}
-    }
-    @media(max-width:600px){
-      .bento-grid{grid-template-columns:1fr;}
-      .hero-h1{font-size:1.9rem;}
-    }
-  </style>
 </head>
-<body class="page-contact" style="background:#060e1c;margin:0;font-family:'Inter',system-ui,sans-serif;">
+<body class="page-contact">
 
-  <!-- HEADER -->
   <header class="site-header" role="banner">
     <div class="header-inner container">
       <a href="index.html" class="logo" aria-label="PortoFlow – Accueil">
@@ -146,154 +50,135 @@
   <main id="main-content">
 
     <!-- §1 HERO SPLIT 60/40 -->
-    <section aria-labelledby="contact-hero-title">
-      <div class="contact-hero-split">
-        <div class="contact-hero-left" style="padding-left:max(24px,calc((100vw - 1180px)/2 + 24px));">
-          <p class="hero-kicker">Porto-Vecchio · Corse-du-Sud</p>
-          <h1 id="contact-hero-title" class="hero-h1">Entrons<br>en contact</h1>
-          <p class="hero-sub">Collectivités, partenaires, professionnels : PortoFlow est à votre écoute pour construire ensemble le territoire de demain.</p>
-          <div class="hero-actions">
-            <a href="#contact-form" class="btn-pf btn-pf-primary">✉ Écrire un message</a>
-            <a href="#contact-coords" class="btn-pf btn-pf-outline">Nos coordonnées</a>
-          </div>
-          <div class="hero-badges">
-            <span class="badge-pill">Réponse sous 48 h</span>
-            <span class="badge-pill">Échanges confidentiels</span>
-            <span class="badge-pill">Approche locale</span>
-          </div>
+    <section class="hero-split" aria-labelledby="contact-hero-title">
+      <div class="hero-split-left">
+        <p class="hero-kicker">Porto-Vecchio · Corse-du-Sud</p>
+        <h1 id="contact-hero-title" class="hero-h1">Entrons<br>en contact</h1>
+        <p class="hero-sub">Collectivités, partenaires, professionnels : PortoFlow est à votre écoute. Construisons ensemble le territoire de demain.</p>
+        <div class="hero-actions">
+          <a href="#contact-form" class="btn btn-primary">✉ Écrire un message</a>
+          <a href="#contact-coords" class="btn btn-outline">Nos coordonnées</a>
         </div>
-        <div class="contact-hero-right" aria-hidden="true">
-          <div class="hero-card">
-            <div class="hero-card-header">
-              <span class="dot-green"></span>
-              <span class="hero-card-label">Prise de contact</span>
-            </div>
-            <ul class="hero-card-list">
-              <li><span>🏛️</span><span>Collectivités territoriales</span></li>
-              <li><span>🏪</span><span>Professionnels locaux</span></li>
-              <li><span>🤝</span><span>Partenaires économiques</span></li>
-              <li><span>📡</span><span>Acteurs institutionnels</span></li>
-              <li><span>🏡</span><span>Habitants et résidents</span></li>
-              <li><span>📰</span><span>Presse et médias</span></li>
-            </ul>
-            <div class="hero-card-footer">Disponible · Porto-Vecchio</div>
+        <div class="hero-badges">
+          <span class="badge-pill">Réponse sous 48 h</span>
+          <span class="badge-pill">Échanges confidentiels</span>
+          <span class="badge-pill">Approche locale</span>
+        </div>
+      </div>
+      <div class="hero-split-right" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="dot-green"></span>
+            <span class="hero-card-label">Prise de contact</span>
           </div>
+          <ul class="hero-card-list">
+            <li><span>🏛️</span><span>Collectivités territoriales</span></li>
+            <li><span>🏪</span><span>Professionnels locaux</span></li>
+            <li><span>🤝</span><span>Partenaires économiques</span></li>
+            <li><span>📡</span><span>Acteurs institutionnels</span></li>
+            <li><span>🏡</span><span>Habitants et résidents</span></li>
+            <li><span>📰</span><span>Presse et médias</span></li>
+          </ul>
+          <div class="hero-card-footer">Disponible · Porto-Vecchio</div>
         </div>
       </div>
     </section>
 
-    <!-- §2 CALLOUT INVITATION -->
-    <div class="section-wrap" style="padding-bottom:0;">
-      <div class="callout-panel" role="note">
-        <span class="callout-icon" aria-hidden="true">💬</span>
-        <div class="callout-text">
-          <h3>Un projet, une question, une idée ?</h3>
-          <p>Chaque demande est traitée personnellement. Nous vous répondons sous 48 heures ouvrées avec une approche adaptée à votre contexte territorial.</p>
+    <!-- §2 BENTO COORDONNÉES -->
+    <section class="section-wrap" id="contact-coords" aria-labelledby="coords-title">
+      <p class="section-kicker-sm">Coordonnées</p>
+      <h2 id="coords-title" class="section-title-lg">Nous trouver &amp; nous joindre</h2>
+      <div class="bento-grid bento-grid--3">
+        <div class="bento-card">
+          <div class="bento-card-icon" aria-hidden="true">📞</div>
+          <h3 class="bento-card-title">Téléphone</h3>
+          <p class="bento-card-body">Disponible en semaine, 9 h – 18 h.</p>
+          <a href="tel:+33495000000" class="bento-card-link">+33 (0)4 95 00 00 00</a>
         </div>
-        <a href="#contact-form" class="btn-pf btn-pf-primary" style="flex-shrink:0;">Démarrer →</a>
+        <div class="bento-card">
+          <div class="bento-card-icon" aria-hidden="true">✉️</div>
+          <h3 class="bento-card-title">E-mail</h3>
+          <p class="bento-card-body">Réponse garantie sous 48 heures ouvrées.</p>
+          <a href="mailto:contact@portoflow.fr" class="bento-card-link">contact@portoflow.fr</a>
+        </div>
+        <div class="bento-card">
+          <div class="bento-card-icon" aria-hidden="true">📍</div>
+          <h3 class="bento-card-title">Adresse</h3>
+          <p class="bento-card-body">Basés au cœur de Porto-Vecchio, Corse-du-Sud.</p>
+          <span class="bento-card-link">Porto-Vecchio, 20137 — Corse-du-Sud</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- §3 CALLOUT PARTENARIAT -->
+    <div class="section-wrap">
+      <div class="callout-panel" role="note">
+        <span class="callout-icon" aria-hidden="true">🤝</span>
+        <div class="callout-text">
+          <h3>Vous représentez une collectivité ou une institution ?</h3>
+          <p>PortoFlow propose des partenariats territoriaux sur mesure. Prenez contact pour explorer les modalités d'intégration à l'écosystème local.</p>
+        </div>
+        <a href="#contact-form" class="btn btn-primary">Proposer un partenariat →</a>
       </div>
     </div>
 
-    <!-- §3 BENTO COORDONNÉES -->
-    <section class="section-wrap" id="contact-coords" aria-labelledby="coords-title">
-      <p class="section-kicker-sm">Coordonnées</p>
-      <h2 id="coords-title" class="section-title-lg">Nous trouver & nous joindre</h2>
-      <div class="bento-grid">
-        <div class="bento-card">
-          <div class="bento-card-icon">📍</div>
-          <h4>Adresse</h4>
-          <p>Porto-Vecchio, Corse-du-Sud<br>20137 — France</p>
-          <span class="bento-tag">Territoire</span>
-        </div>
-        <div class="bento-card">
-          <div class="bento-card-icon">✉️</div>
-          <h4>Email</h4>
-          <p>contact@portoflow.fr<br>Réponse sous 48 h ouvrées</p>
-          <span class="bento-tag">Prioritaire</span>
-        </div>
-        <div class="bento-card">
-          <div class="bento-card-icon">🕐</div>
-          <h4>Disponibilité</h4>
-          <p>Lun – Ven · 9 h – 18 h<br>Hors jours fériés</p>
-          <span class="bento-tag">Horaires</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- §4 FORMULAIRE SPLIT -->
+    <!-- §4 FORMULAIRE -->
     <section class="section-wrap" id="contact-form" aria-labelledby="form-title">
-      <div class="form-split">
-        <div class="form-intro">
-          <p class="section-kicker-sm">Formulaire</p>
-          <h2 id="form-title" class="section-title-lg" style="margin-bottom:16px;">Envoyez-nous<br>votre message</h2>
-          <p>Décrivez votre projet ou votre besoin. Notre équipe vous répond avec une proposition adaptée.</p>
-          <div class="form-steps" style="margin-top:28px;">
-            <div class="form-step"><span class="step-num">1</span><span class="step-text">Remplissez le formulaire ci-contre</span></div>
-            <div class="form-step"><span class="step-num">2</span><span class="step-text">Nous analysons votre demande</span></div>
-            <div class="form-step"><span class="step-num">3</span><span class="step-text">Réponse personnalisée sous 48 h</span></div>
+      <p class="section-kicker-sm">Formulaire</p>
+      <h2 id="form-title" class="section-title-lg">Envoyez-nous un message</h2>
+      <div class="form-layout">
+        <form class="contact-form" id="pf-contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-nom">Nom complet *</label>
+              <input type="text" id="cf-nom" name="nom" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Adresse e-mail *</label>
+              <input type="email" id="cf-email" name="email" required placeholder="votre@email.fr">
+            </div>
           </div>
-        </div>
-        <div>
-          <form class="contact-form" id="pf-contact-form" novalidate aria-label="Formulaire de contact PortoFlow">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="cf-nom">Nom *</label>
-                <input type="text" id="cf-nom" name="nom" required autocomplete="family-name" placeholder="Dupont">
-              </div>
-              <div class="form-group">
-                <label for="cf-prenom">Prénom</label>
-                <input type="text" id="cf-prenom" name="prenom" autocomplete="given-name" placeholder="Marie">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="cf-email">Email *</label>
-              <input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="marie@exemple.fr">
-            </div>
-            <div class="form-group">
-              <label for="cf-profil">Votre profil</label>
-              <select id="cf-profil" name="profil">
-                <option value="">— Sélectionner —</option>
-                <option>Collectivité territoriale</option>
-                <option>Professionnel local</option>
-                <option>Partenaire économique</option>
-                <option>Acteur institutionnel</option>
-                <option>Habitant / Résident</option>
-                <option>Presse / Média</option>
-                <option>Autre</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cf-message">Message *</label>
-              <textarea id="cf-message" name="message" required placeholder="Décrivez votre projet ou votre question…"></textarea>
-            </div>
-            <div class="form-group form-consent">
-              <input type="checkbox" id="cf-consent" name="consent" required>
-              <label for="cf-consent" style="text-transform:none;letter-spacing:0;font-weight:400;">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité de PortoFlow.</label>
-            </div>
-            <button type="submit" class="form-submit">Envoyer ma demande →</button>
-            <div class="form-feedback" id="pf-feedback" role="status" aria-live="polite"></div>
-          </form>
-        </div>
+          <div class="form-group">
+            <label for="cf-sujet">Sujet</label>
+            <select id="cf-sujet" name="sujet">
+              <option value="">Choisir un sujet…</option>
+              <option value="collectivite">Collectivité territoriale</option>
+              <option value="partenariat">Partenariat économique</option>
+              <option value="professionnel">Professionnel local</option>
+              <option value="presse">Presse / Médias</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message *</label>
+            <textarea id="cf-message" name="message" required placeholder="Décrivez votre projet ou votre question…" rows="5"></textarea>
+          </div>
+          <div class="form-group form-consent">
+            <input type="checkbox" id="cf-consent" name="consent" required>
+            <label for="cf-consent" class="label-consent">J'accepte que mes données soient utilisées pour traiter ma demande, conformément à la politique de confidentialité de PortoFlow.</label>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Envoyer ma demande →</button>
+          <div class="form-feedback" id="pf-feedback" role="status" aria-live="polite"></div>
+        </form>
       </div>
     </section>
 
     <!-- §5 CTA RAIL -->
-    <div class="section-wrap" style="padding-top:0;">
+    <div class="section-wrap">
       <div class="cta-rail">
         <div class="cta-rail-text">
           <h3>Prêt à rejoindre l'écosystème ?</h3>
           <p>PortoFlow construit avec vous le territoire numérique de Porto-Vecchio et Corse-du-Sud.</p>
         </div>
         <div class="cta-rail-actions">
-          <a href="ecosysteme.html" class="btn-pf btn-pf-primary">Découvrir l'écosystème</a>
-          <a href="dashboard.html" class="btn-pf btn-pf-outline">Voir le dashboard</a>
+          <a href="ecosysteme.html" class="btn btn-primary">Découvrir l'écosystème</a>
+          <a href="dashboard.html" class="btn btn-outline">Voir le dashboard</a>
         </div>
       </div>
     </div>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="pf-footer" role="contentinfo">
     <div class="pf-footer-inner">
       <div class="pf-footer-brand">
@@ -321,7 +206,7 @@
     (function(){
       var form=document.getElementById('pf-contact-form');
       var fb=document.getElementById('pf-feedback');
-      if(!form)return;
+      if(!form||!fb)return;
       form.addEventListener('submit',function(e){
         e.preventDefault();
         var nom=document.getElementById('cf-nom').value.trim();
@@ -329,15 +214,11 @@
         var msg=document.getElementById('cf-message').value.trim();
         var consent=document.getElementById('cf-consent').checked;
         if(!nom||!email||!msg||!consent){
-          fb.className='form-feedback';
-          fb.style.background='rgba(239,68,68,.15)';
-          fb.style.color='#ef4444';
-          fb.style.border='1px solid rgba(239,68,68,.3)';
-          fb.style.display='block';
+          fb.className='form-feedback form-feedback--error';
           fb.textContent='Veuillez remplir tous les champs obligatoires et accepter la politique de confidentialité.';
           return;
         }
-        fb.className='form-feedback success';
+        fb.className='form-feedback form-feedback--success';
         fb.textContent='✓ Message envoyé ! Nous vous répondrons sous 48 heures ouvrées.';
         form.reset();
       });
