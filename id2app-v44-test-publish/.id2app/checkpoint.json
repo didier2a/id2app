@@ -10,7 +10,7 @@
   "status": "running",
   "compiler": "deterministic_template_compiler",
   "started_at": "2026-05-14T15:47:57.192Z",
-  "last_updated_at": "2026-05-14T16:20:43.405Z",
+  "last_updated_at": "2026-05-14T16:20:47.344Z",
   "expected_files": [
     "id2app-v44-test-publish/index.html",
     "id2app-v44-test-publish/about.html",
@@ -45,6 +45,21 @@
       "commit_sha": "246ee2c3cab5fe92832a08cd5d5695bd09e3999a",
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v44-test-publish/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/246ee2c3cab5fe92832a08cd5d5695bd09e3999a",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": null,
+      "anthropic_usage": null
+    },
+    {
+      "file_path": "id2app-v44-test-publish/about.html",
+      "action": "update",
+      "file_sha": "be15ea31c3c8b842cb0ca090a1330d7c0eef5a7a",
+      "commit_sha": "7d25e4d8d65b534dc44713f2f86d278f3115764a",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v44-test-publish/about.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/7d25e4d8d65b534dc44713f2f86d278f3115764a",
       "validation_status": "passed",
       "warnings": [],
       "gemini_execution_job_audit": null,
@@ -121,15 +136,15 @@
       "global_score": 100,
       "warnings": [],
       "mode": "deterministic_template_gate",
-      "checked_at": "2026-05-14T16:20:41.879Z"
+      "checked_at": "2026-05-14T16:20:45.694Z"
     },
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "id2app-v44-test-publish/index.html",
+  "last_successful_file": "id2app-v44-test-publish/about.html",
   "last_failed_file": null,
   "completed_count": 9,
-  "updated_count": 1,
+  "updated_count": 2,
   "failed_count": 0,
   "skipped_count": 0
 }
