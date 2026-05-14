@@ -1,0 +1,55 @@
+{
+  "schema_version": "4.4",
+  "compiler": "deterministic_template_compiler",
+  "project_id": "id2app-v442-golden-smoke-test",
+  "generated_at": "2026-05-14T21:21:09.895Z",
+  "pages": [
+    {
+      "page_id": "index",
+      "file_path": "id2app-v442-golden-smoke-test/index.html",
+      "template_id": "home_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "about",
+      "file_path": "id2app-v442-golden-smoke-test/about.html",
+      "template_id": "about_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "services",
+      "file_path": "id2app-v442-golden-smoke-test/services.html",
+      "template_id": "services_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file_path": "id2app-v442-golden-smoke-test/contact.html",
+      "template_id": "contact_page",
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "cta_band"
+      ]
+    }
+  ],
+  "warnings": []
+}
