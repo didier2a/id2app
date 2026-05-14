@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Territoire — PortoFlow</title>
-<meta name="description" content="Découvrez la double dynamique de Porto-Vecchio : haute saison à forte pression et hors saison stable, orchestrées par PortoFlow.">
+<meta name="description" content="Découvrez la gestion dynamique des flux et services à Porto-Vecchio selon les deux vitesses : haute saison et hors saison.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Aller au contenu</a>
 
 <header class="header">
   <div class="container header__inner">
@@ -32,26 +34,26 @@
   </div>
 </header>
 
-<main>
+<main id="main-content">
 
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">Dynamique territoriale</p>
-        <h1 class="hero__title">Territoire à<br>Deux Vitesses</h1>
-        <p class="hero__sub">Haute saison intense, hors saison apaisée. PortoFlow orchestre les deux.</p>
+        <p class="hero__eyebrow">PortoFlow</p>
+        <h1 class="hero__title">Deux vitesses<br>du territoire</h1>
+        <p class="hero__sub">Haute saison : flux intensifs. Hors saison : besoins locaux constants. PortoFlow orchestre les deux.</p>
         <div class="hero__actions">
-          <a href="#saison" class="btn-primary">Voir les flux saisonniers</a>
-          <a href="ecosysteme.html" class="btn-secondary">Lire sur l'écosystème</a>
+          <a href="ecosysteme.html" class="btn-primary">Explorer l'écosystème</a>
+          <a href="#saisons" class="btn-secondary">Voir les dynamiques</a>
         </div>
       </div>
       <div class="hero__visual" aria-hidden="true">
-        <img src="assets/territoire-topo.jpg" alt="Vue topographique du territoire de Porto-Vecchio" width="640" height="480">
+        <img src="assets/territoire-topo.jpg" alt="Vue aérienne du territoire de Porto-Vecchio" width="640" height="480" loading="lazy">
       </div>
     </div>
   </section>
 
-  <section class="section" id="saison" aria-labelledby="bento-title">
+  <section class="section" id="saisons" aria-labelledby="bento-title">
     <div class="container">
       <p class="section__eyebrow">Dynamiques territoriales</p>
       <h2 class="section__title" id="bento-title">Deux vitesses, une seule plateforme</h2>
@@ -110,18 +112,24 @@
     <div class="container">
       <p class="section__eyebrow">Chiffres clés</p>
       <h2 class="section__title" id="metrics-title">Le territoire en chiffres</h2>
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <p class="metric-card__value">×4</p>
-          <p class="metric-card__label">Variation annuelle de population en haute saison</p>
-        </div>
-        <div class="metric-card">
-          <p class="metric-card__value">Pic été</p>
-          <p class="metric-card__label">Routes congestionnées aux heures critiques</p>
-        </div>
-        <div class="metric-card">
-          <p class="metric-card__value">3 secteurs</p>
-          <p class="metric-card__label">Hôtels, commerces et culture connectés</p>
+      <div class="metrics-panel">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <p class="metric-card__value">×4</p>
+            <p class="metric-card__label">Variation de population en haute saison</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-card__value">Pic été</p>
+            <p class="metric-card__label">Routes congestionnées aux heures critiques</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-card__value">Temps réel</p>
+            <p class="metric-card__label">Saisonnalité gérée en continu</p>
+          </div>
+          <div class="metric-card">
+            <p class="metric-card__value">3 secteurs</p>
+            <p class="metric-card__label">Hôtels, commerces et culture connectés</p>
+          </div>
         </div>
       </div>
     </div>
