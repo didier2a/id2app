@@ -1,5 +1,7 @@
 # Images — PortoFlow Site V5
 
+## Inventaire des fichiers
+
 | Fichier | Dimensions | Alt recommandé | Usage |
 |---|---|---|---|
 | hero-bg.webp | 1440×800 | Vue aérienne de Porto-Vecchio | Hero section, toutes pages |
@@ -13,7 +15,24 @@
 ## Règles éditeurs
 
 - Format **WebP** obligatoire ; fallback JPG toléré si WebP indisponible.
-- Poids max : **200 Ko** par image (hero : 400 Ko max).
+- Poids max : **200 Ko** par image (hero : **400 Ko** max).
 - Attribut `alt` obligatoire, descriptif, en français.
-- Pas d'image décorative sans `alt=""` et `aria-hidden="true"`.
-- Lazy-loading activé via `loading="lazy"` sauf hero (eager).
+- Image décorative : `alt=""` + `aria-hidden="true"`.
+- Lazy-loading : `loading="lazy"` sur toutes les images sauf hero (`loading="eager"`).
+
+## Nommage
+
+- Kebab-case strict : `nom-page-sujet.webp`
+- Pas d'espaces, pas de majuscules, pas de caractères spéciaux.
+- Suffixe `@2x` pour les variantes haute densité si nécessaire.
+
+## Optimisation
+
+- Compression cible : qualité **80–85** (WebP).
+- Dimensions exactes respectées ; pas d'upscaling.
+- Fournir `width` et `height` dans le HTML pour éviter le layout shift (CLS).
+
+## Open Graph
+
+- `og-portoflow.webp` : 1200×630 px, < 300 Ko.
+- Utilisé dans `<meta property="og:image">` sur toutes les pages.
