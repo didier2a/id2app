@@ -56,7 +56,6 @@ function initNav() {
     ) { closeMenu(); }
   });
 
-  /* Lien actif selon page courante */
   var current = location.pathname.split('/').pop().replace('.html', '') || 'index';
   $$('a[data-slug]', menu).forEach(function (a) {
     if (a.dataset.slug === current) {
@@ -71,87 +70,59 @@ function initNav() {
    --------------------------------------------------------- */
 function initRails() {
   $$('.rail').forEach(function (rail) {
-    var dragging  = false;
-    var startX    = 0;
-    var scrollLeft = 0;
+    var dragging = false;
+    var startX   = 0;
+    var scrollL  = 0;
 
     rail.addEventListener('mousedown', function (e) {
-      dragging   = true;
-      startX     = e.pageX - rail.offsetLeft;
-      scrollLeft = rail.scrollLeft;
+      dragging = true;
+      startX   = e.pageX - rail.offsetLeft;
+      scrollL  = rail.scrollLeft;
       rail.style.cursor = 'grabbing';
-      rail.style.userSelect = 'none';
     });
 
     document.addEventListener('mouseup', function () {
-      if (!dragging) return;
       dragging = false;
       rail.style.cursor = '';
-      rail.style.userSelect = '';
     });
 
-    document.addEventListener('mousemove', function (e) {
+    rail.addEventListener('mousemove', function (e) {
       if (!dragging) return;
       e.preventDefault();
       var x = e.pageX - rail.offsetLeft;
-      rail.scrollLeft = scrollLeft - (x - startX);
+      rail.scrollLeft = scrollL - (x - startX);
     });
 
-    /* Touch swipe */
-    var touchStartX = 0;
-    var touchScrollLeft = 0;
-    rail.addEventListener('touchstart', function (e) {
-      touchStartX     = e.touches[0].pageX;
-      touchScrollLeft = rail.scrollLeft;
-    }, { passive: true });
-
-    rail.addEventListener('touchmove', function (e) {
-      var dx = touchStartX - e.touches[0].pageX;
-      rail.scrollLeft = touchScrollLeft + dx;
-    }, { passive: true });
-
-    /* Accessibilité clavier */
-    rail.setAttribute('tabindex', '0');
-    rail.setAttribute('role', 'region');
-    if (!rail.getAttribute('aria-label')) {
-      rail.setAttribute('aria-label', 'Contenu défilant');
-    }
-
     rail.addEventListener('keydown', function (e) {
-      var step = 240;
-      if (e.key === 'ArrowRight') { rail.scrollLeft += step; e.preventDefault(); }
-      else if (e.key === 'ArrowLeft') { rail.scrollLeft -= step; e.preventDefault(); }
+      if (e.key === 'ArrowRight') { rail.scrollLeft += 240; }
+      if (e.key === 'ArrowLeft')  { rail.scrollLeft -= 240; }
     });
   });
 }
 
 /* ---------------------------------------------------------
-   4. LAZY LOADING IMAGES
+   4. LAZY IMAGES
    --------------------------------------------------------- */
 function initLazyImages() {
   if ('IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(function (entries) {
+    var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
         var img = entry.target;
-        if (img.dataset.src) { img.src = img.dataset.src; delete img.dataset.src; }
-        if (img.dataset.srcset) { img.srcset = img.dataset.srcset; delete img.dataset.srcset; }
-        img.classList.add('lazy--loaded');
-        observer.unobserve(img);
+        if (img.dataset.src)    { img.src    = img.dataset.src; }
+        if (img.dataset.srcset) { img.srcset = img.dataset.srcset; }
+        img.removeAttribute('data-src');
+        img.removeAttribute('data-srcset');
+        io.unobserve(img);
       });
-    }, { rootMargin: '200px 0px' });
+    }, { rootMargin: '200px' });
 
     $$('img[data-src], img[data-srcset]').forEach(function (img) {
-      observer.observe(img);
+      io.observe(img);
     });
   } else {
-    /* Fallback : chargement immédiat */
-    $$('img[data-src]').forEach(function (img) {
-      img.src = img.dataset.src;
-    });
-    $$('img[data-srcset]').forEach(function (img) {
-      img.srcset = img.dataset.srcset;
-    });
+    $$('img[data-src]').forEach(function (img) { img.src = img.dataset.src; });
+    $$('img[data-srcset]').forEach(function (img) { img.srcset = img.dataset.srcset; });
   }
 }
 
@@ -180,7 +151,24 @@ function initHeaderScroll() {
 }
 
 /* ---------------------------------------------------------
-   7. INIT
+   7. CTA LIGHTWEIGHT — ripple + tracking hook
+   --------------------------------------------------------- */
+function initCTA() {
+  $$('.btn-primary, .btn-secondary').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var r = document.createElement('span');
+      r.className = 'btn-ripple';
+      var rect = btn.getBoundingClientRect();
+      r.style.left   = (e.clientX - rect.left) + 'px';
+      r.style.top    = (e.clientY - rect.top)  + 'px';
+      btn.appendChild(r);
+      setTimeout(function () { r.remove(); }, 600);
+    });
+  });
+}
+
+/* ---------------------------------------------------------
+   8. INIT
    --------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
   initNav();
@@ -188,4 +176,5 @@ document.addEventListener('DOMContentLoaded', function () {
   initLazyImages();
   initFocusVisible();
   initHeaderScroll();
+  initCTA();
 });
