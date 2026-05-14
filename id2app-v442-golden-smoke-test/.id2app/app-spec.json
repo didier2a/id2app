@@ -1,0 +1,125 @@
+{
+  "error": "invalid syntax",
+  "schema_version": "4.4",
+  "project": {
+    "id": "id2app-v442-golden-smoke-test",
+    "name": "ID2App V4.4.2 Golden Payload Smoke Test",
+    "type": "website",
+    "language": "fr",
+    "sector": "test",
+    "subsector": "web_generation",
+    "audience": [
+      "utilisateurs",
+      "administrateurs",
+      "testeurs"
+    ],
+    "objective": "Créer un site vitrine de test publié dans GitHub pour valider le workflow ID2App V4.4.",
+    "tone": "professionnel, clair, moderne",
+    "business_model": "prototype"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "id2app-v442-golden-smoke-test",
+    "checkpoint_path": "id2app-v442-golden-smoke-test/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "design_contract": {
+    "source": "auto",
+    "extraction_enabled": true,
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "fonts": {
+      "body": "",
+      "headings": ""
+    },
+    "colors": {},
+    "spacing_scale": {},
+    "radius_scale": {},
+    "shadow_scale": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "canonical_components": [],
+    "forbidden_components": [],
+    "fragments": {}
+  },
+  "template_system": {
+    "family": "auto",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": []
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "id2app-v442-golden-smoke-test/index.html",
+      "template_id": "home_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "about",
+      "title": "À propos",
+      "file_path": "id2app-v442-golden-smoke-test/about.html",
+      "template_id": "about_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "services",
+      "title": "Services",
+      "file_path": "id2app-v442-golden-smoke-test/services.html",
+      "template_id": "services_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "id2app-v442-golden-smoke-test/contact.html",
+      "template_id": "contact_page",
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    }
+  ]
+}
