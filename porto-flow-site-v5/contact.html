@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — PortoFlow</title>
-<meta name="description" content="Contactez PortoFlow pour une démonstration ou un projet pilote territorial et technique.">
+<meta name="description" content="Contactez PortoFlow pour une démonstration personnalisée ou un projet pilote adapté à vos besoins territoriaux.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,6 +25,9 @@
         <li><a href="ingenierie.html" class="nav__link">Ingénierie</a></li>
         <li><a href="contact.html" class="nav__link nav__link--active" aria-current="page">Contact</a></li>
       </ul>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -34,11 +37,12 @@
   <section class="hero">
     <div class="container hero__content">
       <div class="hero__left">
-        <p class="hero__eyebrow">Engagez-vous dans l'avenir numérique territorial</p>
-        <h1 class="hero__title">Contactez PortoFlow</h1>
-        <p class="hero__sub">Demandez une démonstration ou lancez votre projet pilote.</p>
+        <p class="hero__eyebrow">Engagez-vous avec PortoFlow</p>
+        <h1 class="hero__title">Contactez-nous</h1>
+        <p class="hero__sub">Demandez une démonstration personnalisée ou lancez votre projet pilote territorial.</p>
         <div class="hero__actions">
           <a href="#contact-form" class="btn-primary">Formulaire de contact</a>
+          <a href="#contact-methods" class="btn-secondary">Nos coordonnées</a>
         </div>
       </div>
       <div class="hero__right">
@@ -46,81 +50,118 @@
           <span class="bento-card__icon" aria-hidden="true">📍</span>
           <p class="bento-card__title">Porto-Vecchio, Corse-du-Sud</p>
           <p class="bento-card__desc">Territoire pilote, ambition nationale.</p>
+          <span class="bento-card__tag">Projet actif</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact-form">
+  <section class="section" id="contact-methods" aria-label="Méthodes de contact">
     <div class="container">
-      <p class="section__eyebrow">Nous contacter</p>
-      <h2 class="section__title">Votre demande</h2>
-      <p class="section__lead">Collectivité, partenaire technique ou acteur local — parlons de votre projet.</p>
+      <p class="section__eyebrow">Nous rejoindre</p>
+      <h2 class="section__title">Trois façons d'engager</h2>
+      <div class="bento">
+        <div class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">🎯</span>
+          <p class="bento-card__title">Démonstration</p>
+          <p class="bento-card__desc">Découvrez PortoFlow en action sur un cas concret.</p>
+          <span class="bento-card__tag">Sur rendez-vous</span>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">🤝</span>
+          <p class="bento-card__title">Projet pilote</p>
+          <p class="bento-card__desc">Lancez une expérimentation sur votre territoire.</p>
+          <span class="bento-card__tag">Collectivités</span>
+        </div>
+        <div class="bento-card">
+          <span class="bento-card__icon" aria-hidden="true">🔗</span>
+          <p class="bento-card__title">Partenariat</p>
+          <p class="bento-card__desc">Intégrez votre offre dans l'écosystème PortoFlow.</p>
+          <span class="bento-card__tag">Partenaires tech</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rail" aria-label="Engagements PortoFlow">
+    <div class="container">
+      <div class="rail__track">
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">⚡</span>
+          <p class="callout__text">Réponse sous 48h</p>
+        </div>
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">🗺️</span>
+          <p class="callout__text">Approche sur mesure</p>
+        </div>
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">🔒</span>
+          <p class="callout__text">Données sécurisées</p>
+        </div>
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">🌐</span>
+          <p class="callout__text">Déploiement territorial</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="contact-form" aria-label="Formulaire de contact">
+    <div class="container">
+      <p class="section__eyebrow">Votre demande</p>
+      <h2 class="section__title">Écrivez-nous</h2>
+      <p class="section__lead">Collectivité, partenaire ou acteur local — parlons de votre projet.</p>
       <form class="contact-form" action="#" method="post" novalidate>
-        <div class="contact-form__row">
-          <label for="cf-name" class="contact-form__label">Nom complet</label>
-          <input id="cf-name" class="contact-form__input" type="text" name="name" placeholder="Votre nom" required autocomplete="name">
-        </div>
-        <div class="contact-form__row">
-          <label for="cf-email" class="contact-form__label">Adresse e-mail</label>
-          <input id="cf-email" class="contact-form__input" type="email" name="email" placeholder="vous@organisation.fr" required autocomplete="email">
-        </div>
-        <div class="contact-form__row">
-          <label for="cf-org" class="contact-form__label">Organisation</label>
-          <input id="cf-org" class="contact-form__input" type="text" name="organisation" placeholder="Collectivité, entreprise, institution" autocomplete="organization">
-        </div>
-        <div class="contact-form__row">
-          <label for="cf-subject" class="contact-form__label">Objet</label>
-          <select id="cf-subject" class="contact-form__input" name="subject" required>
-            <option value="" disabled selected>Choisir un objet</option>
-            <option value="demo">Demande de démonstration</option>
-            <option value="pilot">Projet pilote territorial</option>
-            <option value="partner">Partenariat technique</option>
-            <option value="info">Renseignement général</option>
-          </select>
-        </div>
-        <div class="contact-form__row">
-          <label for="cf-message" class="contact-form__label">Message</label>
-          <textarea id="cf-message" class="contact-form__input contact-form__textarea" name="message" rows="4" placeholder="Décrivez votre besoin en quelques lignes." required></textarea>
+        <div class="contact-form__grid">
+          <div class="contact-form__row">
+            <label for="cf-nom" class="contact-form__label">Nom</label>
+            <input id="cf-nom" class="contact-form__input" type="text" name="nom" placeholder="Votre nom" required autocomplete="family-name">
+          </div>
+          <div class="contact-form__row">
+            <label for="cf-prenom" class="contact-form__label">Prénom</label>
+            <input id="cf-prenom" class="contact-form__input" type="text" name="prenom" placeholder="Votre prénom" required autocomplete="given-name">
+          </div>
+          <div class="contact-form__row">
+            <label for="cf-email" class="contact-form__label">Adresse e-mail</label>
+            <input id="cf-email" class="contact-form__input" type="email" name="email" placeholder="vous@organisation.fr" required autocomplete="email">
+          </div>
+          <div class="contact-form__row">
+            <label for="cf-org" class="contact-form__label">Organisation</label>
+            <input id="cf-org" class="contact-form__input" type="text" name="organisation" placeholder="Collectivité, entreprise, institution" autocomplete="organization">
+          </div>
+          <div class="contact-form__row contact-form__row--full">
+            <label for="cf-subject" class="contact-form__label">Objet</label>
+            <select id="cf-subject" class="contact-form__input" name="subject" required>
+              <option value="" disabled selected>Choisir un objet</option>
+              <option value="demo">Demande de démonstration</option>
+              <option value="pilot">Projet pilote territorial</option>
+              <option value="partner">Partenariat technique</option>
+              <option value="info">Renseignement général</option>
+            </select>
+          </div>
+          <div class="contact-form__row contact-form__row--full">
+            <label for="cf-message" class="contact-form__label">Message</label>
+            <textarea id="cf-message" class="contact-form__input contact-form__textarea" name="message" rows="5" placeholder="Décrivez votre projet ou votre besoin en quelques lignes." required></textarea>
+          </div>
         </div>
         <div class="contact-form__actions">
-          <button type="submit" class="btn-primary">Envoyer ma demande</button>
+          <button type="submit" class="btn-primary">Envoyer la demande</button>
         </div>
       </form>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section callout-panel" aria-label="Appel à l'action pilote">
     <div class="container">
-      <div class="bento">
-        <div class="bento-card">
-          <span class="bento-card__icon" aria-hidden="true">🏛️</span>
-          <p class="bento-card__title">Collectivités</p>
-          <p class="bento-card__desc">Pilotez votre territoire avec intelligence.</p>
-          <span class="bento-card__tag">Institutionnel</span>
+      <div class="callout callout--coral">
+        <div class="callout__body">
+          <p class="callout__eyebrow">Projet pilote</p>
+          <p class="callout__title">Prêt à orchestrer votre territoire ?</p>
+          <p class="callout__desc">PortoFlow s'adapte à votre contexte local. Lancez l'expérimentation dès maintenant.</p>
         </div>
-        <div class="bento-card">
-          <span class="bento-card__icon" aria-hidden="true">🤝</span>
-          <p class="bento-card__title">Partenaires</p>
-          <p class="bento-card__desc">Intégrez l'écosystème PortoFlow.</p>
-          <span class="bento-card__tag">Technique</span>
+        <div class="callout__action">
+          <a href="#contact-form" class="btn-primary">Démarrer le pilote</a>
         </div>
-        <div class="bento-card">
-          <span class="bento-card__icon" aria-hidden="true">🚀</span>
-          <p class="bento-card__title">Démonstration</p>
-          <p class="bento-card__desc">Visualisez le copilote en action.</p>
-          <span class="bento-card__tag">Demo</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="callout">
-        <span class="callout__icon" aria-hidden="true">⚡</span>
-        <p class="callout__text">Prêt à transformer votre territoire ? Demandez votre démonstration personnalisée ou proposez un projet pilote.</p>
-        <a href="#contact-form" class="btn-primary">Contactez-nous</a>
       </div>
     </div>
   </section>
@@ -129,14 +170,28 @@
 
 <footer class="site-footer">
   <div class="container footer__inner">
-    <p class="footer__brand">PortoFlow &copy; 2025</p>
+    <div class="footer__brand">
+      <a href="index.html" class="logo" aria-label="PortoFlow accueil">
+        <span class="logo__mark" aria-hidden="true">PF</span>
+        <span class="logo__name">PortoFlow</span>
+      </a>
+      <p class="footer__tagline">Le copilote intelligent du territoire insulaire.</p>
+    </div>
     <nav class="footer__nav" aria-label="Navigation secondaire">
-      <a href="index.html" class="footer__link">Accueil</a>
-      <a href="territoire.html" class="footer__link">Territoire</a>
-      <a href="ingenierie.html" class="footer__link">Ingénierie</a>
-      <a href="contact.html" class="footer__link">Contact</a>
+      <ul class="footer__list">
+        <li><a href="index.html" class="footer__link">Accueil</a></li>
+        <li><a href="territoire.html" class="footer__link">Territoire</a></li>
+        <li><a href="experience.html" class="footer__link">Expérience</a></li>
+        <li><a href="ecosysteme.html" class="footer__link">Écosystème</a></li>
+        <li><a href="dashboard.html" class="footer__link">Dashboard</a></li>
+        <li><a href="ingenierie.html" class="footer__link">Ingénierie</a></li>
+        <li><a href="contact.html" class="footer__link footer__link--active">Contact</a></li>
+      </ul>
     </nav>
-    <p class="footer__legal">Démonstrateur territorial — Porto-Vecchio, Corse-du-Sud</p>
+    <div class="footer__legal">
+      <p class="footer__copy">&copy; 2025 PortoFlow — Porto-Vecchio, Corse-du-Sud</p>
+      <p class="footer__mention">Démonstrateur territorial et ingénierie logicielle augmentée par IA.</p>
+    </div>
   </div>
 </footer>
 
