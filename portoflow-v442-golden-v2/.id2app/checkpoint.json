@@ -1,0 +1,130 @@
+{
+  "schema_version": "4.4",
+  "project_id": "portoflow-v442-golden-v2",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "portoflow-v442-golden-v2",
+  "checkpoint_path": "portoflow-v442-golden-v2/.id2app/checkpoint.json",
+  "mode": "compile_new_project",
+  "status": "running",
+  "compiler": "deterministic_template_compiler",
+  "started_at": "2026-05-14T23:49:59.597Z",
+  "last_updated_at": "2026-05-14T23:49:59.597Z",
+  "expected_files": [
+    "portoflow-v442-golden-v2/index.html",
+    "portoflow-v442-golden-v2/about.html",
+    "portoflow-v442-golden-v2/services.html",
+    "portoflow-v442-golden-v2/contact.html",
+    "portoflow-v442-golden-v2/styles.css",
+    "portoflow-v442-golden-v2/script.js",
+    "portoflow-v442-golden-v2/.id2app/app-spec.json",
+    "portoflow-v442-golden-v2/.id2app/template-report.json",
+    "portoflow-v442-golden-v2/README.md"
+  ],
+  "completed_files": [
+    "portoflow-v442-golden-v2/index.html"
+  ],
+  "failed_files": [],
+  "skipped_files": [],
+  "protected_files": [],
+  "created_files": [
+    "portoflow-v442-golden-v2/index.html"
+  ],
+  "updated_files": [
+    {
+      "file_path": "portoflow-v442-golden-v2/index.html",
+      "action": "update",
+      "file_sha": "74fc99a2292b967db3112a1ff5ad4dc18cd37b9d",
+      "commit_sha": "119163114c3e70cdc6d804a5625bfd4433618b20",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v442-golden-v2/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/119163114c3e70cdc6d804a5625bfd4433618b20",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": null,
+      "anthropic_usage": null
+    }
+  ],
+  "repaired_files": [],
+  "warnings": [],
+  "execution_plan": {
+    "expected_files": [
+      "portoflow-v442-golden-v2/index.html",
+      "portoflow-v442-golden-v2/about.html",
+      "portoflow-v442-golden-v2/services.html",
+      "portoflow-v442-golden-v2/contact.html",
+      "portoflow-v442-golden-v2/styles.css",
+      "portoflow-v442-golden-v2/script.js",
+      "portoflow-v442-golden-v2/.id2app/app-spec.json",
+      "portoflow-v442-golden-v2/.id2app/template-report.json",
+      "portoflow-v442-golden-v2/README.md"
+    ],
+    "existing_files": [
+      "portoflow-v442-golden-v2/index.html"
+    ],
+    "missing_files": [
+      "portoflow-v442-golden-v2/about.html",
+      "portoflow-v442-golden-v2/services.html",
+      "portoflow-v442-golden-v2/contact.html",
+      "portoflow-v442-golden-v2/styles.css",
+      "portoflow-v442-golden-v2/script.js",
+      "portoflow-v442-golden-v2/.id2app/app-spec.json",
+      "portoflow-v442-golden-v2/.id2app/template-report.json",
+      "portoflow-v442-golden-v2/README.md"
+    ],
+    "protected_files": [],
+    "files_to_create": [
+      "portoflow-v442-golden-v2/about.html",
+      "portoflow-v442-golden-v2/services.html",
+      "portoflow-v442-golden-v2/contact.html",
+      "portoflow-v442-golden-v2/styles.css",
+      "portoflow-v442-golden-v2/script.js",
+      "portoflow-v442-golden-v2/.id2app/app-spec.json",
+      "portoflow-v442-golden-v2/.id2app/template-report.json",
+      "portoflow-v442-golden-v2/README.md"
+    ],
+    "files_to_update": [
+      "portoflow-v442-golden-v2/index.html"
+    ],
+    "files_to_skip": [],
+    "jobs_count": 9
+  },
+  "runtime": {
+    "schema_version": "4.4",
+    "cloudsafe": true,
+    "dry_run": false,
+    "provider_strategy": {
+      "openai": "http_request_runtime_header",
+      "gemini": "http_request_runtime_header",
+      "anthropic": "http_request_runtime_header",
+      "github": "http_request_runtime_header",
+      "gateway_enabled": false
+    },
+    "preflight": null
+  },
+  "quality_audits": {
+    "layout_quality_gate": {
+      "version": "4.4",
+      "passed": true,
+      "brand_score": 100,
+      "layout_score": 100,
+      "density_score": 100,
+      "template_score": 100,
+      "global_score": 100,
+      "warnings": [],
+      "mode": "deterministic_template_gate",
+      "checked_at": "2026-05-14T23:49:56.977Z"
+    },
+    "gemini_state_audit": {},
+    "gemini_manifest_audit": {}
+  },
+  "last_successful_file": "portoflow-v442-golden-v2/index.html",
+  "last_failed_file": null,
+  "completed_count": 1,
+  "updated_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0
+}
