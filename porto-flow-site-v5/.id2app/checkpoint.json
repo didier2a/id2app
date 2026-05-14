@@ -1,0 +1,136 @@
+{
+  "schema_version": "4.3.3",
+  "project_id": "porto-flow-site-v5",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "porto-flow-site-v5",
+  "checkpoint_path": "porto-flow-site-v5/.id2app/checkpoint.json",
+  "mode": "new_project",
+  "status": "running",
+  "started_at": "2026-05-14T08:46:53.152Z",
+  "last_updated_at": "2026-05-14T08:56:53.214Z",
+  "expected_files": [
+    "porto-flow-site-v5/index.html",
+    "porto-flow-site-v5/territoire.html",
+    "porto-flow-site-v5/experience.html",
+    "porto-flow-site-v5/ecosysteme.html",
+    "porto-flow-site-v5/dashboard.html",
+    "porto-flow-site-v5/ingenierie.html",
+    "porto-flow-site-v5/contact.html",
+    "porto-flow-site-v5/styles.css",
+    "porto-flow-site-v5/script.js",
+    "porto-flow-site-v5/media-manifest.json",
+    "porto-flow-site-v5/assets/images/README.md"
+  ],
+  "completed_files": [
+    "porto-flow-site-v5/index.html"
+  ],
+  "failed_files": [],
+  "skipped_files": [],
+  "protected_files": [],
+  "created_files": [
+    "porto-flow-site-v5/index.html"
+  ],
+  "updated_files": [
+    {
+      "file_path": "porto-flow-site-v5/index.html",
+      "action": "create",
+      "file_sha": "96277c9243fabc48165174c201c75f60d1ddd1c8",
+      "commit_sha": "28847758d7ca472b7bee4d32e159e47b4dec045f",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/porto-flow-site-v5/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/28847758d7ca472b7bee4d32e159e47b4dec045f",
+      "validation_status": "passed",
+      "warnings": [
+        "design_director_modern_layout_classes_missing"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": "end_turn",
+      "anthropic_usage": {
+        "input_tokens": 7838,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 2503,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      }
+    }
+  ],
+  "repaired_files": [],
+  "warnings": [],
+  "execution_plan": {
+    "expected_files": [
+      "porto-flow-site-v5/index.html",
+      "porto-flow-site-v5/territoire.html",
+      "porto-flow-site-v5/experience.html",
+      "porto-flow-site-v5/ecosysteme.html",
+      "porto-flow-site-v5/dashboard.html",
+      "porto-flow-site-v5/ingenierie.html",
+      "porto-flow-site-v5/contact.html",
+      "porto-flow-site-v5/styles.css",
+      "porto-flow-site-v5/script.js",
+      "porto-flow-site-v5/media-manifest.json",
+      "porto-flow-site-v5/assets/images/README.md"
+    ],
+    "existing_files": [],
+    "missing_files": [
+      "porto-flow-site-v5/index.html",
+      "porto-flow-site-v5/territoire.html",
+      "porto-flow-site-v5/experience.html",
+      "porto-flow-site-v5/ecosysteme.html",
+      "porto-flow-site-v5/dashboard.html",
+      "porto-flow-site-v5/ingenierie.html",
+      "porto-flow-site-v5/contact.html",
+      "porto-flow-site-v5/styles.css",
+      "porto-flow-site-v5/script.js",
+      "porto-flow-site-v5/media-manifest.json",
+      "porto-flow-site-v5/assets/images/README.md"
+    ],
+    "protected_files": [],
+    "files_to_create": [
+      "porto-flow-site-v5/index.html",
+      "porto-flow-site-v5/territoire.html",
+      "porto-flow-site-v5/experience.html",
+      "porto-flow-site-v5/ecosysteme.html",
+      "porto-flow-site-v5/dashboard.html",
+      "porto-flow-site-v5/ingenierie.html",
+      "porto-flow-site-v5/contact.html",
+      "porto-flow-site-v5/styles.css",
+      "porto-flow-site-v5/script.js",
+      "porto-flow-site-v5/media-manifest.json",
+      "porto-flow-site-v5/assets/images/README.md"
+    ],
+    "files_to_update": [],
+    "files_to_skip": [],
+    "jobs_count": 11
+  },
+  "runtime": {
+    "schema_version": "4.3.3",
+    "cloudsafe": true,
+    "dry_run": false,
+    "provider_strategy": {
+      "openai": "http_request_runtime_header",
+      "gemini": "http_request_runtime_header",
+      "anthropic": "http_request_runtime_header",
+      "github": "http_request_runtime_header",
+      "gateway_enabled": false
+    },
+    "preflight": null
+  },
+  "quality_audits": {
+    "gemini_state_audit": {},
+    "gemini_manifest_audit": {}
+  },
+  "last_successful_file": "porto-flow-site-v5/index.html",
+  "last_failed_file": null,
+  "completed_count": 1,
+  "updated_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0
+}
