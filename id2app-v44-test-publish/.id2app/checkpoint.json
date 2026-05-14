@@ -10,7 +10,7 @@
   "status": "running",
   "compiler": "deterministic_template_compiler",
   "started_at": "2026-05-14T15:47:57.192Z",
-  "last_updated_at": "2026-05-14T17:13:16.083Z",
+  "last_updated_at": "2026-05-14T17:13:21.408Z",
   "expected_files": [
     "id2app-v44-test-publish/index.html",
     "id2app-v44-test-publish/about.html",
@@ -157,6 +157,21 @@
       "dry_run": false,
       "anthropic_stop_reason": null,
       "anthropic_usage": null
+    },
+    {
+      "file_path": "id2app-v44-test-publish/README.md",
+      "action": "update",
+      "file_sha": "4a1497a3aab7d75c8c0e319d6b3d549e76e6cbe8",
+      "commit_sha": "18e1626e190c95e3f7509302b4320d2a49730d99",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v44-test-publish/README.md",
+      "commit_url": "https://github.com/didier2a/id2app/commit/18e1626e190c95e3f7509302b4320d2a49730d99",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": null,
+      "anthropic_usage": null
     }
   ],
   "repaired_files": [],
@@ -226,15 +241,15 @@
       "global_score": 100,
       "warnings": [],
       "mode": "deterministic_template_gate",
-      "checked_at": "2026-05-14T17:13:13.658Z"
+      "checked_at": "2026-05-14T17:13:19.072Z"
     },
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "id2app-v44-test-publish/.id2app/template-report.json",
+  "last_successful_file": "id2app-v44-test-publish/README.md",
   "last_failed_file": null,
   "completed_count": 9,
-  "updated_count": 8,
+  "updated_count": 9,
   "failed_count": 0,
   "skipped_count": 0
 }
