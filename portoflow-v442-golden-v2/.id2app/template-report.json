@@ -1,0 +1,55 @@
+{
+  "schema_version": "4.4",
+  "compiler": "deterministic_template_compiler",
+  "project_id": "portoflow-v442-golden-v2",
+  "generated_at": "2026-05-14T23:58:21.572Z",
+  "pages": [
+    {
+      "page_id": "index",
+      "file_path": "portoflow-v442-golden-v2/index.html",
+      "template_id": "home_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "about",
+      "file_path": "portoflow-v442-golden-v2/about.html",
+      "template_id": "about_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "services",
+      "file_path": "portoflow-v442-golden-v2/services.html",
+      "template_id": "services_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file_path": "portoflow-v442-golden-v2/contact.html",
+      "template_id": "contact_page",
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "cta_band"
+      ]
+    }
+  ],
+  "warnings": []
+}
