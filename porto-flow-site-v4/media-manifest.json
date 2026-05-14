@@ -1,0 +1,151 @@
+{
+  "manifest_version": "1.0.0",
+  "project": "PortoFlow Site V4",
+  "generated": "2025-01-01",
+  "slots": [
+    {
+      "id": "hero-index",
+      "page": "index.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-index.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Vue aérienne du territoire PortoFlow, infrastructure logistique et fluviale",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-territoire",
+      "page": "territoire.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-territoire.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Carte et paysage du territoire PortoFlow, zones d'activité et axes de transport",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0d2137 0%, #1e4d6b 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-experience",
+      "page": "experience.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-experience.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Équipe PortoFlow en situation opérationnelle, interface digitale et terrain",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #2a5080 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-ecosysteme",
+      "page": "ecosysteme.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-ecosysteme.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Réseau de partenaires et acteurs de l'écosystème PortoFlow interconnectés",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #163d5c 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-dashboard",
+      "page": "dashboard.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-dashboard.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Interface tableau de bord PortoFlow, données temps réel et indicateurs clés",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #060f1e 0%, #0f2d47 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-ingenierie",
+      "page": "ingenierie.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-ingenierie.jpg",
+      "width": 1440,
+      "height": 720,
+      "alt": "Infrastructure technique PortoFlow, équipements d'ingénierie et systèmes intégrés",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #1c3f60 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "hero-contact",
+      "page": "contact.html",
+      "role": "hero_background",
+      "path": "assets/images/hero-contact.jpg",
+      "width": 1440,
+      "height": 480,
+      "alt": "Siège PortoFlow, bâtiment institutionnel et accueil professionnel",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)",
+      "status": "placeholder"
+    },
+    {
+      "id": "bento-territoire-map",
+      "page": "territoire.html",
+      "role": "bento_card_visual",
+      "path": "assets/images/bento-territoire-map.jpg",
+      "width": 600,
+      "height": 400,
+      "alt": "Carte détaillée du périmètre territorial PortoFlow avec zones identifiées",
+      "fallback_type": "color-block",
+      "fallback_value": "#e8f0f7",
+      "status": "placeholder"
+    },
+    {
+      "id": "bento-ecosysteme-partners",
+      "page": "ecosysteme.html",
+      "role": "bento_card_visual",
+      "path": "assets/images/bento-ecosysteme-partners.jpg",
+      "width": 600,
+      "height": 400,
+      "alt": "Logos et représentation visuelle des partenaires clés de l'écosystème PortoFlow",
+      "fallback_type": "color-block",
+      "fallback_value": "#eef4fb",
+      "status": "placeholder"
+    },
+    {
+      "id": "bento-ingenierie-schema",
+      "page": "ingenierie.html",
+      "role": "bento_card_visual",
+      "path": "assets/images/bento-ingenierie-schema.jpg",
+      "width": 600,
+      "height": 400,
+      "alt": "Schéma technique de l'architecture d'ingénierie PortoFlow, flux et composants",
+      "fallback_type": "color-block",
+      "fallback_value": "#e8f0f7",
+      "status": "placeholder"
+    },
+    {
+      "id": "logo-main",
+      "page": "global",
+      "role": "brand_logo",
+      "path": "assets/images/logo-portoflow.svg",
+      "width": 160,
+      "height": 40,
+      "alt": "Logo PortoFlow",
+      "fallback_type": "text-fallback",
+      "fallback_value": "PortoFlow",
+      "status": "placeholder"
+    },
+    {
+      "id": "og-default",
+      "page": "global",
+      "role": "open_graph_image",
+      "path": "assets/images/og-portoflow.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": "PortoFlow – Plateforme logistique et territoriale",
+      "fallback_type": "gradient-css",
+      "fallback_value": "linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)",
+      "status": "placeholder"
+    }
+  ]
+}
