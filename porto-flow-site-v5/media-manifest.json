@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "project": "PortoFlow Site V5",
+  "version": "1.1.0",
+  "project": "PortoFlow Site V5 Harmonisé",
   "base_path": "assets/images/",
   "fallback_css_class": "img-placeholder",
   "slots": [
@@ -8,61 +8,128 @@
       "id": "hero-index",
       "file": "assets/images/hero-index.jpg",
       "alt": "Vue aérienne de Porto-Vecchio, territoire orchestré par PortoFlow",
-      "fallback": "bg-hero-index"
+      "fallback": "bg-hero-index",
+      "page": "index.html",
+      "role": "hero"
     },
     {
       "id": "hero-territoire",
       "file": "assets/images/hero-territoire.jpg",
       "alt": "Paysage côtier de Porto-Vecchio illustrant les deux vitesses du territoire",
-      "fallback": "bg-hero-territoire"
+      "fallback": "bg-hero-territoire",
+      "page": "territoire.html",
+      "role": "hero"
     },
     {
       "id": "hero-experience",
       "file": "assets/images/hero-experience.jpg",
       "alt": "Utilisateur consultant PortoFlow sur mobile en haute saison",
-      "fallback": "bg-hero-experience"
+      "fallback": "bg-hero-experience",
+      "page": "experience.html",
+      "role": "hero"
     },
     {
       "id": "hero-ecosysteme",
       "file": "assets/images/hero-ecosysteme.jpg",
       "alt": "Réseau d'acteurs locaux connectés via l'écosystème PortoFlow",
-      "fallback": "bg-hero-ecosysteme"
+      "fallback": "bg-hero-ecosysteme",
+      "page": "ecosysteme.html",
+      "role": "hero"
     },
     {
       "id": "hero-dashboard",
       "file": "assets/images/hero-dashboard.jpg",
       "alt": "Tableau de bord territorial PortoFlow affichant les flux en temps réel",
-      "fallback": "bg-hero-dashboard"
+      "fallback": "bg-hero-dashboard",
+      "page": "dashboard.html",
+      "role": "hero"
     },
     {
       "id": "hero-ingenierie",
       "file": "assets/images/hero-ingenierie.jpg",
       "alt": "Ingénierie logicielle augmentée par IA, n8n et Cloud Code",
-      "fallback": "bg-hero-ingenierie"
+      "fallback": "bg-hero-ingenierie",
+      "page": "ingenierie.html",
+      "role": "hero"
     },
     {
       "id": "hero-contact",
       "file": "assets/images/hero-contact.jpg",
       "alt": "Équipe PortoFlow prête à accompagner votre projet pilote",
-      "fallback": "bg-hero-contact"
+      "fallback": "bg-hero-contact",
+      "page": "contact.html",
+      "role": "hero"
     },
     {
       "id": "bento-double-front",
       "file": "assets/images/bento-double-front.jpg",
       "alt": "Démonstrateur à double front : territoire et production logicielle",
-      "fallback": "bg-bento-double-front"
+      "fallback": "bg-bento-double-front",
+      "page": "index.html",
+      "role": "bento-card"
     },
     {
       "id": "bento-boucle-creation",
       "file": "assets/images/bento-boucle-creation.jpg",
       "alt": "Boucle de création continue : idée, génération, test, déploiement",
-      "fallback": "bg-bento-boucle"
+      "fallback": "bg-bento-boucle",
+      "page": "index.html",
+      "role": "bento-card"
+    },
+    {
+      "id": "bento-territoire-flux",
+      "file": "assets/images/bento-territoire-flux.jpg",
+      "alt": "Flux de mobilité et données territoriales en temps réel",
+      "fallback": "bg-bento-territoire-flux",
+      "page": "territoire.html",
+      "role": "bento-card"
+    },
+    {
+      "id": "bento-ecosysteme-acteurs",
+      "file": "assets/images/bento-ecosysteme-acteurs.jpg",
+      "alt": "Acteurs locaux interconnectés dans l'écosystème PortoFlow",
+      "fallback": "bg-bento-ecosysteme-acteurs",
+      "page": "ecosysteme.html",
+      "role": "bento-card"
+    },
+    {
+      "id": "callout-dashboard-preview",
+      "file": "assets/images/callout-dashboard-preview.jpg",
+      "alt": "Aperçu du tableau de bord PortoFlow avec métriques clés",
+      "fallback": "bg-callout-dashboard",
+      "page": "dashboard.html",
+      "role": "callout"
+    },
+    {
+      "id": "callout-ingenierie-stack",
+      "file": "assets/images/callout-ingenierie-stack.jpg",
+      "alt": "Stack technique PortoFlow : IA, n8n, Cloud Code, API REST",
+      "fallback": "bg-callout-ingenierie-stack",
+      "page": "ingenierie.html",
+      "role": "callout"
     },
     {
       "id": "logo-portoflow",
       "file": "assets/images/logo-portoflow.svg",
       "alt": "Logo PortoFlow",
-      "fallback": "bg-logo"
+      "fallback": "bg-logo",
+      "page": "global",
+      "role": "brand"
+    },
+    {
+      "id": "og-default",
+      "file": "assets/images/og-default.jpg",
+      "alt": "PortoFlow — Orchestration territoriale et ingénierie augmentée",
+      "fallback": "bg-og-default",
+      "page": "global",
+      "role": "og-image"
     }
-  ]
+  ],
+  "dimensions": {
+    "hero": { "width": 1440, "height": 720, "format": "jpg" },
+    "bento-card": { "width": 800, "height": 600, "format": "jpg" },
+    "callout": { "width": 960, "height": 540, "format": "jpg" },
+    "brand": { "width": 200, "height": 60, "format": "svg" },
+    "og-image": { "width": 1200, "height": 630, "format": "jpg" }
+  }
 }
