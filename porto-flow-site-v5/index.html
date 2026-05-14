@@ -78,6 +78,12 @@
           <p class="bento-card__desc">Idée, génération, test, correction, déploiement. L'humain garde la vision et le contrôle qualité.</p>
           <span class="bento-card__tag">Ingénierie</span>
         </article>
+        <article class="bento-card">
+          <div class="bento-card__icon" aria-hidden="true">🌐</div>
+          <h3 class="bento-card__title">Écosystème connecté</h3>
+          <p class="bento-card__desc">Acteurs locaux, offre et demande synchronisées. Une plateforme unifiée pour tout l'écosystème.</p>
+          <span class="bento-card__tag">Écosystème</span>
+        </article>
       </div>
     </div>
   </section>
@@ -91,17 +97,13 @@
           <p class="callout__label">Saisonnalité</p>
           <p class="callout__text">Haute saison / Hors saison en équilibre dynamique</p>
         </div>
-        <div class="callout">
-          <p class="callout__label">Assistance</p>
-          <p class="callout__text">Assistant territorial actif, réactif, en continu</p>
-        </div>
         <div class="callout callout--accent">
           <p class="callout__label">Intelligence</p>
           <p class="callout__text">Filtrer le chaos pour agir avec précision</p>
         </div>
         <div class="callout">
-          <p class="callout__label">Écosystème</p>
-          <p class="callout__text">Acteurs locaux connectés, offre et demande synchronisées</p>
+          <p class="callout__label">Assistance</p>
+          <p class="callout__text">Assistant territorial actif, réactif, en continu</p>
         </div>
       </div>
     </div>
@@ -163,6 +165,17 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  const toggle = document.querySelector('.nav__toggle');
+  const nav = document.querySelector('.nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav--open');
+    });
+  }
+</script>
+
 </body>
 </html>
