@@ -10,7 +10,7 @@
   "status": "running",
   "compiler": "deterministic_template_compiler",
   "started_at": "2026-05-14T15:47:57.192Z",
-  "last_updated_at": "2026-05-14T15:50:27.687Z",
+  "last_updated_at": "2026-05-14T15:50:32.510Z",
   "expected_files": [
     "id2app-v44-test-publish/index.html",
     "id2app-v44-test-publish/about.html",
@@ -29,7 +29,8 @@
     "id2app-v44-test-publish/contact.html",
     "id2app-v44-test-publish/styles.css",
     "id2app-v44-test-publish/script.js",
-    "id2app-v44-test-publish/.id2app/app-spec.json"
+    "id2app-v44-test-publish/.id2app/app-spec.json",
+    "id2app-v44-test-publish/.id2app/template-report.json"
   ],
   "failed_files": [],
   "skipped_files": [],
@@ -41,7 +42,8 @@
     "id2app-v44-test-publish/contact.html",
     "id2app-v44-test-publish/styles.css",
     "id2app-v44-test-publish/script.js",
-    "id2app-v44-test-publish/.id2app/app-spec.json"
+    "id2app-v44-test-publish/.id2app/app-spec.json",
+    "id2app-v44-test-publish/.id2app/template-report.json"
   ],
   "updated_files": [
     {
@@ -148,6 +150,21 @@
       "dry_run": false,
       "anthropic_stop_reason": null,
       "anthropic_usage": null
+    },
+    {
+      "file_path": "id2app-v44-test-publish/.id2app/template-report.json",
+      "action": "create",
+      "file_sha": "69781193ca12251e9c8e789ae1cfb486811b766a",
+      "commit_sha": "80df61d0dcc92b1bc0b27f1bc391bff3a49be564",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v44-test-publish/.id2app/template-report.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/80df61d0dcc92b1bc0b27f1bc391bff3a49be564",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": null,
+      "anthropic_usage": null
     }
   ],
   "repaired_files": [],
@@ -216,15 +233,15 @@
       "global_score": 100,
       "warnings": [],
       "mode": "deterministic_template_gate",
-      "checked_at": "2026-05-14T15:50:25.509Z"
+      "checked_at": "2026-05-14T15:50:30.255Z"
     },
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "id2app-v44-test-publish/.id2app/app-spec.json",
+  "last_successful_file": "id2app-v44-test-publish/.id2app/template-report.json",
   "last_failed_file": null,
-  "completed_count": 7,
-  "updated_count": 7,
+  "completed_count": 8,
+  "updated_count": 8,
   "failed_count": 0,
   "skipped_count": 0
 }
