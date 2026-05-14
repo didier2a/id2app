@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const y=document.querySelector('[data-current-year]');if(y)y.textContent=new Date().getFullYear();document.querySelectorAll('.contact-form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();f.classList.add('is-submitted');const b=f.querySelector('button[type="submit"]');if(b)b.textContent='Message prêt';}));});
