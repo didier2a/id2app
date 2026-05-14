@@ -10,7 +10,7 @@
   "status": "running",
   "compiler": "deterministic_template_compiler",
   "started_at": "2026-05-14T21:20:20.355Z",
-  "last_updated_at": "2026-05-14T21:21:07.521Z",
+  "last_updated_at": "2026-05-14T21:21:11.905Z",
   "expected_files": [
     "id2app-v442-golden-smoke-test/index.html",
     "id2app-v442-golden-smoke-test/about.html",
@@ -29,7 +29,8 @@
     "id2app-v442-golden-smoke-test/contact.html",
     "id2app-v442-golden-smoke-test/styles.css",
     "id2app-v442-golden-smoke-test/script.js",
-    "id2app-v442-golden-smoke-test/.id2app/app-spec.json"
+    "id2app-v442-golden-smoke-test/.id2app/app-spec.json",
+    "id2app-v442-golden-smoke-test/.id2app/template-report.json"
   ],
   "failed_files": [],
   "skipped_files": [],
@@ -41,7 +42,8 @@
     "id2app-v442-golden-smoke-test/contact.html",
     "id2app-v442-golden-smoke-test/styles.css",
     "id2app-v442-golden-smoke-test/script.js",
-    "id2app-v442-golden-smoke-test/.id2app/app-spec.json"
+    "id2app-v442-golden-smoke-test/.id2app/app-spec.json",
+    "id2app-v442-golden-smoke-test/.id2app/template-report.json"
   ],
   "updated_files": [
     {
@@ -148,6 +150,21 @@
       "dry_run": false,
       "anthropic_stop_reason": null,
       "anthropic_usage": null
+    },
+    {
+      "file_path": "id2app-v442-golden-smoke-test/.id2app/template-report.json",
+      "action": "create",
+      "file_sha": "db5bdf8d6b46ab1e95902a375e6ec6eb5261e979",
+      "commit_sha": "64f1aa8584cdaae78d2f27267d28559f02bf446b",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v442-golden-smoke-test/.id2app/template-report.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/64f1aa8584cdaae78d2f27267d28559f02bf446b",
+      "validation_status": "passed",
+      "warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": null,
+      "dry_run": false,
+      "anthropic_stop_reason": null,
+      "anthropic_usage": null
     }
   ],
   "repaired_files": [],
@@ -216,15 +233,15 @@
       "global_score": 100,
       "warnings": [],
       "mode": "deterministic_template_gate",
-      "checked_at": "2026-05-14T21:21:05.372Z"
+      "checked_at": "2026-05-14T21:21:10.040Z"
     },
     "gemini_state_audit": {},
     "gemini_manifest_audit": {}
   },
-  "last_successful_file": "id2app-v442-golden-smoke-test/.id2app/app-spec.json",
+  "last_successful_file": "id2app-v442-golden-smoke-test/.id2app/template-report.json",
   "last_failed_file": null,
-  "completed_count": 7,
-  "updated_count": 7,
+  "completed_count": 8,
+  "updated_count": 8,
   "failed_count": 0,
   "skipped_count": 0
 }
