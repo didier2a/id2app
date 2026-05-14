@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Territoire — PortoFlow</title>
-<meta name="description" content="Comprendre la double vitesse du territoire de Porto-Vecchio entre haute saison intense et hors saison stable.">
+<meta name="description" content="Découvrez la double dynamique de Porto-Vecchio : haute saison à forte pression et hors saison stable, orchestrées par PortoFlow.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="header">
   <div class="container header__inner">
     <a href="index.html" class="logo" aria-label="PortoFlow accueil">
@@ -24,6 +25,9 @@
         <li><a href="ingenierie.html" class="nav__link">Ingénierie</a></li>
         <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -33,11 +37,12 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">Une gestion adaptée à chaque temps</p>
-        <h1 class="hero__title">Haute saison<br>/ Hors saison</h1>
-        <p class="hero__sub">Comprendre la double dynamique qui rythme Porto-Vecchio.</p>
+        <p class="hero__eyebrow">Dynamique territoriale</p>
+        <h1 class="hero__title">Territoire à<br>Deux Vitesses</h1>
+        <p class="hero__sub">Haute saison intense, hors saison apaisée. PortoFlow orchestre les deux.</p>
         <div class="hero__actions">
-          <a href="#metrics" class="btn-primary">Voir les chiffres clés</a>
+          <a href="#saison" class="btn-primary">Voir les flux saisonniers</a>
+          <a href="ecosysteme.html" class="btn-secondary">Lire sur l'écosystème</a>
         </div>
       </div>
       <div class="hero__visual" aria-hidden="true">
@@ -46,7 +51,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="bento-title">
+  <section class="section" id="saison" aria-labelledby="bento-title">
     <div class="container">
       <p class="section__eyebrow">Dynamiques territoriales</p>
       <h2 class="section__title" id="bento-title">Deux vitesses, une seule plateforme</h2>
@@ -72,53 +77,65 @@
         </div>
         <div class="bento-card">
           <span class="bento-card__icon" aria-hidden="true">🅿️</span>
-          <h3 class="bento-card__title">Stationnement intelligent</h3>
-          <p class="bento-card__desc">Guidage en temps réel vers les zones disponibles.</p>
-          <span class="bento-card__tag">Parking</span>
-        </div>
-        <div class="bento-card">
-          <span class="bento-card__icon" aria-hidden="true">🏖️</span>
           <h3 class="bento-card__title">Plages & accès</h3>
-          <p class="bento-card__desc">Gestion des accès côtiers aux heures de pointe.</p>
+          <p class="bento-card__desc">Gestion des accès côtiers et parkings en temps réel.</p>
           <span class="bento-card__tag">Littoral</span>
         </div>
-        <div class="bento-card">
-          <span class="bento-card__icon" aria-hidden="true">📡</span>
-          <h3 class="bento-card__title">Données en continu</h3>
-          <p class="bento-card__desc">Capteurs et flux aspirés pour une réponse immédiate.</p>
-          <span class="bento-card__tag">Temps réel</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="rail-title">
+    <div class="container">
+      <p class="section__eyebrow">Saisonnalité</p>
+      <h2 class="section__title" id="rail-title">Le territoire en mouvement</h2>
+      <div class="rail">
+        <div class="callout">
+          <p class="callout__label">Système nerveux</p>
+          <p class="callout__text">PortoFlow connecte tous les acteurs dans un réseau cohérent.</p>
+        </div>
+        <div class="callout">
+          <p class="callout__label">Flux orchestrés</p>
+          <p class="callout__text">Routes, plages, parkings : chaque flux est suivi et anticipé.</p>
+        </div>
+        <div class="callout">
+          <p class="callout__label">Acteurs locaux</p>
+          <p class="callout__text">Hôtels, commerces et services reliés à la demande réelle.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section metrics-panel" id="metrics" aria-labelledby="metrics-title">
+  <section class="section" id="metrics" aria-labelledby="metrics-title">
     <div class="container">
       <p class="section__eyebrow">Chiffres clés</p>
-      <h2 class="section__title" id="metrics-title">L'intensité du territoire en données</h2>
+      <h2 class="section__title" id="metrics-title">Le territoire en chiffres</h2>
       <div class="metrics-grid">
         <div class="metric-card">
-          <span class="metric-card__value">×5</span>
-          <span class="metric-card__label">Pic saisonnier</span>
+          <p class="metric-card__value">×4</p>
+          <p class="metric-card__label">Variation annuelle de population en haute saison</p>
         </div>
         <div class="metric-card">
-          <span class="metric-card__value">80%</span>
-          <span class="metric-card__label">Routes saturées</span>
+          <p class="metric-card__value">Pic été</p>
+          <p class="metric-card__label">Routes congestionnées aux heures critiques</p>
         </div>
         <div class="metric-card">
-          <span class="metric-card__value">12 mois</span>
-          <span class="metric-card__label">Services actifs</span>
+          <p class="metric-card__value">3 secteurs</p>
+          <p class="metric-card__label">Hôtels, commerces et culture connectés</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="callout-title">
+  <section class="section" aria-labelledby="cta-title">
     <div class="container">
-      <div class="callout">
-        <h2 class="callout__title" id="callout-title">Adaptez votre pilotage au rythme du territoire</h2>
-        <p class="callout__body">PortoFlow accompagne la gestion fine entre les temps forts et calmes.</p>
-        <a href="experience.html" class="btn-primary">En savoir plus</a>
+      <div class="callout callout--accent">
+        <div class="callout__body">
+          <p class="section__eyebrow">Prochaine étape</p>
+          <h2 class="section__title" id="cta-title">Explorez la gestion territoriale</h2>
+          <p class="section__lead">Comprenez comment PortoFlow équilibre haute et hors saison pour tous les acteurs.</p>
+          <a href="ecosysteme.html" class="btn-primary">Voir l'écosystème</a>
+        </div>
       </div>
     </div>
   </section>
@@ -127,12 +144,23 @@
 
 <footer class="footer">
   <div class="container footer__inner">
-    <p class="footer__brand">PortoFlow</p>
+    <div class="footer__brand">
+      <a href="index.html" class="logo" aria-label="PortoFlow accueil">
+        <span class="logo__mark">PF</span>
+        <span class="logo__text">PortoFlow</span>
+      </a>
+      <p class="footer__tagline">Le copilote intelligent du territoire.</p>
+    </div>
     <nav class="footer__nav" aria-label="Navigation secondaire">
-      <a href="territoire.html">Territoire</a>
-      <a href="experience.html">Expérience</a>
-      <a href="ecosysteme.html">Écosystème</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="territoire.html">Territoire</a></li>
+        <li><a href="experience.html">Expérience</a></li>
+        <li><a href="ecosysteme.html">Écosystème</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ingenierie.html">Ingénierie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
     <p class="footer__legal">&copy; 2025 PortoFlow. Tous droits réservés.</p>
   </div>
