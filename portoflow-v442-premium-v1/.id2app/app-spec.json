@@ -1,0 +1,199 @@
+{
+  "error": "invalid syntax",
+  "schema_version": "4.4",
+  "project": {
+    "id": "portoflow-v442-premium-v1",
+    "name": "PortoFlow",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "territorial_technology",
+    "subsector": "smart_city_local_ai",
+    "audience": [],
+    "objective": "Présenter PortoFlow comme plateforme territoriale intelligente, future application mobile, outil de pilotage local et démonstrateur d'ingénierie IA.",
+    "tone": "institutionnel premium, territorial, local, stratégique, moderne",
+    "business_model": "publicité contextuelle, mises en avant premium, partenariats locaux, offres dynamiques"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "portoflow-v442-premium-v1",
+    "checkpoint_path": "portoflow-v442-premium-v1/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "design_contract": {
+    "source": "auto",
+    "extraction_enabled": true,
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "fonts": {
+      "body": "",
+      "headings": ""
+    },
+    "colors": {
+      "preferred_mood": "ivoire cartographique, bleu marine profond, ardoise, orange cuivre, cyan discret"
+    },
+    "spacing_scale": {},
+    "radius_scale": {},
+    "shadow_scale": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "canonical_components": [],
+    "forbidden_components": [
+      "tourism_generic_layout",
+      "generic_saas_layout",
+      "linear_text_stack",
+      "duplicate_header",
+      "duplicate_footer"
+    ],
+    "fragments": {}
+  },
+  "template_system": {
+    "family": "institutional",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": []
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v442-premium-v1/index.html",
+      "template_id": "home_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "territoire",
+      "title": "Territoire",
+      "file_path": "portoflow-v442-premium-v1/territoire.html",
+      "template_id": "generic_content_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "assistant",
+      "title": "Assistant territorial",
+      "file_path": "portoflow-v442-premium-v1/assistant.html",
+      "template_id": "generic_content_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "application",
+      "title": "Application",
+      "file_path": "portoflow-v442-premium-v1/application.html",
+      "template_id": "product_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "ecosysteme",
+      "title": "Économie locale",
+      "file_path": "portoflow-v442-premium-v1/ecosysteme.html",
+      "template_id": "services_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "dashboard",
+      "title": "Tableau de bord",
+      "file_path": "portoflow-v442-premium-v1/dashboard.html",
+      "template_id": "dashboard_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "ingenierie",
+      "title": "Ingénierie IA",
+      "file_path": "portoflow-v442-premium-v1/ingenierie.html",
+      "template_id": "documentation_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "production",
+      "title": "Production continue",
+      "file_path": "portoflow-v442-premium-v1/production.html",
+      "template_id": "documentation_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "portoflow-v442-premium-v1/contact.html",
+      "template_id": "contact_page",
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "cta_band"
+      ],
+      "slots": {}
+    }
+  ]
+}
