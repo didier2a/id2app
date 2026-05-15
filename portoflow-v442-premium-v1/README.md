@@ -1,12 +1,13 @@
-# PortoFlow — v442 Premium
-
-**Plateforme territoriale intelligente · Smart City · IA locale**
+# PortoFlow — Plateforme territoriale intelligente
+> Projet `portoflow-v442-premium-v1` · ID2App v4.4.4 Creative Controlled Workflow
 
 ---
 
 ## Présentation
 
-PortoFlow est une plateforme numérique territoriale conçue pour piloter, visualiser et valoriser les dynamiques d'un territoire urbain ou périurbain. Elle articule cartographie intelligente, assistant IA contextuel, tableau de bord décisionnel et économie locale en un écosystème cohérent.
+**PortoFlow** est une plateforme territoriale intelligente conçue pour les collectivités, les opérateurs locaux et les citoyens. Elle agrège données de mobilité, flux urbains, recommandations IA et pilotage local dans une interface unifiée — web et mobile.
+
+Ce dépôt contient le site vitrine multi-pages de PortoFlow, généré et maintenu via le workflow **ID2App v4.4.4**.
 
 ---
 
@@ -26,26 +27,42 @@ PortoFlow est une plateforme numérique territoriale conçue pour piloter, visua
 
 ---
 
-## Stack technique
+## Structure du dépôt
 
-- **HTML5** sémantique, sans dépendance externe obligatoire
-- **CSS3** custom properties, responsive, design system intégré dans `assets/css/portoflow.css`
-- **JS** minimal, progressif, sans framework
-- **Assets** : `assets/images/`, `assets/css/`, `assets/js/`
+```
+portoflow-v442-premium-v1/
+├── index.html
+├── territoire.html
+├── assistant.html
+├── application.html
+├── ecosysteme.html
+├── dashboard.html
+├── ingenierie.html
+├── production.html
+├── contact.html
+├── assets/
+│   ├── css/
+│   │   └── portoflow.css
+│   ├── js/
+│   │   └── portoflow.js
+│   └── images/
+│       └── (placeholders prêts pour assets visuels)
+├── .id2app/
+│   └── checkpoint.json
+└── README.md
+```
 
 ---
 
-## Design system
+## Design & Identité
 
 | Token | Valeur |
 |---|---|
-| Couleur primaire | Bleu marine profond `#0d1b2a` |
-| Couleur secondaire | Orange cuivre `#c8622a` |
-| Accent | Cyan discret `#4ecdc4` |
-| Fond | Ivoire cartographique `#f5f0e8` |
-| Neutre | Ardoise `#4a5568` |
-| Police titres | Inter / system-ui, sans-serif |
-| Police corps | Inter / system-ui, sans-serif |
+| Mood | Ivoire cartographique · Bleu marine profond · Ardoise · Orange cuivre · Cyan discret |
+| Typographie corps | Système natif (stack sans-serif) |
+| Typographie titres | Système natif (stack serif institutionnel) |
+| Composants interdits | `tourism_generic_layout` · `generic_saas_layout` · `linear_text_stack` · `duplicate_header` · `duplicate_footer` |
+| Ton éditorial | Institutionnel premium · Territorial · Stratégique · Moderne |
 
 ---
 
@@ -59,43 +76,48 @@ PortoFlow est une plateforme numérique territoriale conçue pour piloter, visua
 
 ---
 
-## Contenu éditorial
+## Workflow de production
 
-- Ton : institutionnel premium, territorial, stratégique, moderne
-- Densité : cartes > paragraphes, rails > sections longues
-- Limite : 5 sections max par page, 1 paragraphe consécutif max
-- Cible : décideurs territoriaux, collectivités, partenaires locaux
+```
+OpenAI       →  Architecte site · Directeur UX/UI · Rédacteur éditorial
+Gemini       →  Validateur plan · QA qualité fichier
+Claude       →  Constructeur fichier · Réparateur
+```
+
+Version workflow : **ID2App Creative Controlled Workflow v4.4.4**
 
 ---
 
 ## Modèle économique
 
-- Publicité contextuelle locale
-- Mises en avant premium pour acteurs du territoire
-- Partenariats institutionnels et privés
-- Offres dynamiques selon flux et saisonnalité
+- Publicité contextuelle intégrée
+- Mises en avant premium pour acteurs locaux
+- Partenariats territoriaux
+- Offres dynamiques selon contexte utilisateur
 
 ---
 
-## Déploiement
+## Dépôt GitHub
 
-```
-Repository : github.com/didier2a/id2app
-Branch     : main
-Dossier    : portoflow-v442-premium-v1/
-Checkpoint : portoflow-v442-premium-v1/.id2app/checkpoint.json
-```
-
----
-
-## Workflow de production
-
-| Rôle | Agent | Responsabilité |
-|---|---|---|
-| Architecte & Design Director | OpenAI | Plan, UX/UI, éditorial |
-| Validateur QA | Gemini | Revue plan, qualité fichiers |
-| Constructeur | Claude | Génération et réparation fichiers |
+| Paramètre | Valeur |
+|---|---|
+| Owner | `didier2a` |
+| Repository | `id2app` |
+| Branch | `main` |
+| Dossier site | `portoflow-v442-premium-v1` |
+| Checkpoint | `portoflow-v442-premium-v1/.id2app/checkpoint.json` |
 
 ---
 
-*PortoFlow · ID2App v4.4.4 Creative Controlled Workflow · Projet territorial intelligent*
+## Contraintes techniques
+
+- Aucune dépendance externe obligatoire
+- CSS externalisé — pas de CSS inline massif dans le HTML
+- JavaScript minimal et progressif, sans framework
+- Images : placeholders `assets/images/` prêts pour remplacement par assets réels
+- Responsive mobile-first
+- Sections premium, textes riches, composants spécialisés
+
+---
+
+*PortoFlow · Plateforme territoriale intelligente · ID2App v4.4.4*
