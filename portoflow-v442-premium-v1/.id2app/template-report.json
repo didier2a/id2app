@@ -1,0 +1,115 @@
+{
+  "schema_version": "4.4",
+  "compiler": "deterministic_template_compiler",
+  "project_id": "portoflow-v442-premium-v1",
+  "generated_at": "2026-05-15T02:21:14.750Z",
+  "pages": [
+    {
+      "page_id": "index",
+      "file_path": "portoflow-v442-premium-v1/index.html",
+      "template_id": "home_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "territoire",
+      "file_path": "portoflow-v442-premium-v1/territoire.html",
+      "template_id": "generic_content_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "assistant",
+      "file_path": "portoflow-v442-premium-v1/assistant.html",
+      "template_id": "generic_content_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "application",
+      "file_path": "portoflow-v442-premium-v1/application.html",
+      "template_id": "product_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "ecosysteme",
+      "file_path": "portoflow-v442-premium-v1/ecosysteme.html",
+      "template_id": "services_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "dashboard",
+      "file_path": "portoflow-v442-premium-v1/dashboard.html",
+      "template_id": "dashboard_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "ingenierie",
+      "file_path": "portoflow-v442-premium-v1/ingenierie.html",
+      "template_id": "documentation_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "production",
+      "file_path": "portoflow-v442-premium-v1/production.html",
+      "template_id": "documentation_page",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file_path": "portoflow-v442-premium-v1/contact.html",
+      "template_id": "contact_page",
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "cta_band"
+      ]
+    }
+  ],
+  "warnings": []
+}
