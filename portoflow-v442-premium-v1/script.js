@@ -11,12 +11,12 @@
    * 1. UTILITAIRES
    * ───────────────────────────────────────── */
 
-  function qs(selector, ctx) {
-    return (ctx || document).querySelector(selector);
+  function $(sel, ctx) {
+    return (ctx || document).querySelector(sel);
   }
 
-  function qsa(selector, ctx) {
-    return Array.from((ctx || document).querySelectorAll(selector));
+  function $$(sel, ctx) {
+    return Array.from((ctx || document).querySelectorAll(sel));
   }
 
   function ready(fn) {
@@ -36,97 +36,109 @@
   }
 
   /* ─────────────────────────────────────────
-   * 2. NAVIGATION ACTIVE
-   * Détecte la page courante et pose la classe
-   * "active" sur le lien correspondant.
+   * 2. NAVIGATION — ACTIVE PAGE CLASS
+   * Détecte la page courante et pose .nav-active
+   * sur le lien correspondant dans tous les navs.
    * ───────────────────────────────────────── */
 
   function setActiveNav() {
     var current = window.location.pathname.split('/').pop() || 'index.html';
     if (current === '' || current === '/') current = 'index.html';
 
-    qsa('.nav-link, .nav__link').forEach(function (link) {
+    $$('.nav-link, .nav__link').forEach(function (link) {
       var href = (link.getAttribute('href') || '').split('/').pop();
-      link.classList.remove('active');
-      link.removeAttribute('aria-current');
+      link.classList.remove('nav-active', 'active');
       if (href === current) {
-        link.classList.add('active');
+        link.classList.add('nav-active', 'active');
         link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
       }
     });
   }
 
   /* ─────────────────────────────────────────
-   * 3. MENU MOBILE (hamburger toggle)
+   * 3. NAVIGATION MOBILE — BURGER TOGGLE
    * ───────────────────────────────────────── */
 
-  function initMobileMenu() {
-    var toggle = qs('.nav-toggle, .burger, [data-nav-toggle]');
-    var nav    = qs('.nav-menu, .nav__menu, [data-nav-menu]');
-    if (!toggle || !nav) return;
+  function initMobileNav() {
+    var burger = $('.nav__burger, .burger-btn, [data-burger]');
+    var navMenu = $('.nav__menu, .nav-menu, [data-nav-menu]');
+    var overlay = $('.nav__overlay, [data-nav-overlay]');
 
-    toggle.setAttribute('aria-expanded', 'false');
-    toggle.setAttribute('aria-controls', nav.id || 'nav-menu');
+    if (!burger || !navMenu) return;
 
-    toggle.addEventListener('click', function () {
-      var open = nav.classList.toggle('is-open');
-      toggle.classList.toggle('is-active', open);
-      toggle.setAttribute('aria-expanded', String(open));
-      document.body.classList.toggle('nav-open', open);
+    function openMenu() {
+      navMenu.classList.add('is-open');
+      burger.classList.add('is-active');
+      burger.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('nav-open');
+      if (overlay) overlay.classList.add('is-visible');
+    }
+
+    function closeMenu() {
+      navMenu.classList.remove('is-open');
+      burger.classList.remove('is-active');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+      if (overlay) overlay.classList.remove('is-visible');
+    }
+
+    burger.addEventListener('click', function () {
+      var isOpen = navMenu.classList.contains('is-open');
+      isOpen ? closeMenu() : openMenu();
     });
 
-    /* Fermer sur clic extérieur */
-    document.addEventListener('click', function (e) {
-      if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-        nav.classList.remove('is-open');
-        toggle.classList.remove('is-active');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
+    if (overlay) {
+      overlay.addEventListener('click', closeMenu);
+    }
+
+    /* Fermeture sur lien cliqué */
+    $$('.nav__link, .nav-link', navMenu).forEach(function (link) {
+      link.addEventListener('click', closeMenu);
     });
 
-    /* Fermer sur Escape */
+    /* Fermeture sur Escape */
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        nav.classList.remove('is-open');
-        toggle.classList.remove('is-active');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-        toggle.focus();
-      }
+      if (e.key === 'Escape') closeMenu();
     });
+
+    /* Fermeture si resize vers desktop */
+    window.addEventListener('resize', debounce(function () {
+      if (window.innerWidth >= 1024) closeMenu();
+    }, 150));
   }
 
   /* ─────────────────────────────────────────
-   * 4. HEADER SCROLL (sticky + shadow)
+   * 4. HEADER — SCROLL SHADOW
+   * Ajoute .header--scrolled quand on défile
    * ───────────────────────────────────────── */
 
   function initHeaderScroll() {
-    var header = qs('.site-header, header[role="banner"], .header');
+    var header = $('header, .site-header, [data-header]');
     if (!header) return;
 
     function onScroll() {
-      if (window.scrollY > 48) {
+      if (window.scrollY > 40) {
         header.classList.add('header--scrolled');
       } else {
         header.classList.remove('header--scrolled');
       }
     }
 
-    window.addEventListener('scroll', debounce(onScroll, 10), { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }
 
   /* ─────────────────────────────────────────
    * 5. INTERSECTION OBSERVER — REVEAL
-   * Anime les éléments [data-reveal] à l'entrée
-   * dans le viewport.
+   * Anime les sections et cartes à l'entrée
+   * dans le viewport (.reveal → .is-visible)
    * ───────────────────────────────────────── */
 
   function initReveal() {
     if (!('IntersectionObserver' in window)) {
-      /* Fallback : tout afficher immédiatement */
-      qsa('[data-reveal]').forEach(function (el) {
+      $$('.reveal').forEach(function (el) {
         el.classList.add('is-visible');
       });
       return;
@@ -139,217 +151,226 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
 
-    qsa('[data-reveal]').forEach(function (el) {
+    $$('.reveal').forEach(function (el) {
       observer.observe(el);
     });
   }
 
   /* ─────────────────────────────────────────
-   * 6. COMPTEURS ANIMÉS (metrics panel)
-   * [data-counter="valeur"] déclenche un
-   * comptage progressif à l'entrée dans le
-   * viewport.
+   * 6. COMPTEURS ANIMÉS — METRICS PANEL
+   * Anime les chiffres clés au scroll
+   * Cible : [data-counter] avec data-target="N"
    * ───────────────────────────────────────── */
 
   function animateCounter(el) {
-    var target   = parseFloat(el.dataset.counter) || 0;
-    var suffix   = el.dataset.counterSuffix || '';
-    var prefix   = el.dataset.counterPrefix || '';
-    var decimals = (String(target).split('.')[1] || '').length;
+    var target = parseFloat(el.getAttribute('data-target')) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var prefix = el.getAttribute('data-prefix') || '';
     var duration = 1400;
-    var start    = null;
+    var start = null;
+    var isFloat = target % 1 !== 0;
 
     function step(ts) {
       if (!start) start = ts;
       var progress = Math.min((ts - start) / duration, 1);
-      var ease     = 1 - Math.pow(1 - progress, 3);
-      var value    = (target * ease).toFixed(decimals);
-      el.textContent = prefix + value + suffix;
+      var ease = 1 - Math.pow(1 - progress, 3);
+      var value = target * ease;
+      el.textContent = prefix + (isFloat ? value.toFixed(1) : Math.floor(value)) + suffix;
       if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + (isFloat ? target.toFixed(1) : target) + suffix;
     }
 
     requestAnimationFrame(step);
   }
 
   function initCounters() {
-    if (!('IntersectionObserver' in window)) return;
+    var counters = $$('[data-counter]');
+    if (!counters.length) return;
 
-    var observer = new IntersectionObserver(function (entries) {
+    if (!('IntersectionObserver' in window)) {
+      counters.forEach(animateCounter);
+      return;
+    }
+
+    var obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           animateCounter(entry.target);
-          observer.unobserve(entry.target);
+          obs.unobserve(entry.target);
         }
       });
     }, { threshold: 0.5 });
 
-    qsa('[data-counter]').forEach(function (el) {
-      observer.observe(el);
-    });
+    counters.forEach(function (el) { obs.observe(el); });
   }
 
   /* ─────────────────────────────────────────
-   * 7. TABS (onglets génériques)
-   * Structure attendue :
-   *   [data-tabs]
-   *     [data-tab-trigger="id"]  (bouton)
-   *     [data-tab-panel="id"]    (panneau)
+   * 7. TABS — COMPOSANT ONGLETS
+   * Cible : [data-tabs] > [data-tab-trigger]
+   *         [data-tab-panel]
    * ───────────────────────────────────────── */
 
   function initTabs() {
-    qsa('[data-tabs]').forEach(function (container) {
-      var triggers = qsa('[data-tab-trigger]', container);
-      var panels   = qsa('[data-tab-panel]', container);
+    $$('[data-tabs]').forEach(function (tabsRoot) {
+      var triggers = $$('[data-tab-trigger]', tabsRoot);
+      var panels = $$('[data-tab-panel]', tabsRoot);
 
-      function activate(id) {
-        triggers.forEach(function (t) {
-          var active = t.dataset.tabTrigger === id;
-          t.classList.toggle('is-active', active);
-          t.setAttribute('aria-selected', String(active));
-          t.setAttribute('tabindex', active ? '0' : '-1');
+      function activate(index) {
+        triggers.forEach(function (t, i) {
+          t.classList.toggle('is-active', i === index);
+          t.setAttribute('aria-selected', i === index ? 'true' : 'false');
+          t.setAttribute('tabindex', i === index ? '0' : '-1');
         });
-        panels.forEach(function (p) {
-          var active = p.dataset.tabPanel === id;
-          p.classList.toggle('is-active', active);
-          p.hidden = !active;
+        panels.forEach(function (p, i) {
+          p.classList.toggle('is-active', i === index);
+          p.hidden = i !== index;
         });
       }
 
-      triggers.forEach(function (trigger) {
-        trigger.setAttribute('role', 'tab');
-        trigger.addEventListener('click', function () {
-          activate(trigger.dataset.tabTrigger);
-        });
+      triggers.forEach(function (trigger, i) {
+        trigger.addEventListener('click', function () { activate(i); });
         trigger.addEventListener('keydown', function (e) {
-          var idx = triggers.indexOf(trigger);
-          if (e.key === 'ArrowRight') {
-            triggers[(idx + 1) % triggers.length].click();
-          } else if (e.key === 'ArrowLeft') {
-            triggers[(idx - 1 + triggers.length) % triggers.length].click();
-          }
+          if (e.key === 'ArrowRight') activate((i + 1) % triggers.length);
+          if (e.key === 'ArrowLeft') activate((i - 1 + triggers.length) % triggers.length);
         });
       });
 
-      /* Activer le premier par défaut */
-      if (triggers.length) activate(triggers[0].dataset.tabTrigger);
+      activate(0);
     });
   }
 
   /* ─────────────────────────────────────────
-   * 8. ACCORDION
-   * Structure attendue :
-   *   [data-accordion]
-   *     [data-accordion-trigger]  (bouton)
-   *     [data-accordion-panel]    (contenu)
+   * 8. ACCORDION — FAQ / CONTENU PLIANT
+   * Cible : [data-accordion] > [data-accordion-item]
+   *         [data-accordion-trigger] / [data-accordion-panel]
    * ───────────────────────────────────────── */
 
   function initAccordion() {
-    qsa('[data-accordion]').forEach(function (accordion) {
-      var items = qsa('[data-accordion-item]', accordion);
+    $$('[data-accordion]').forEach(function (root) {
+      var items = $$('[data-accordion-item]', root);
+      var allowMultiple = root.hasAttribute('data-accordion-multiple');
 
       items.forEach(function (item) {
-        var trigger = qs('[data-accordion-trigger]', item);
-        var panel   = qs('[data-accordion-panel]', item);
+        var trigger = $('[data-accordion-trigger]', item);
+        var panel = $('[data-accordion-panel]', item);
         if (!trigger || !panel) return;
 
-        trigger.setAttribute('aria-expanded', 'false');
-        panel.hidden = true;
-
         trigger.addEventListener('click', function () {
-          var open = trigger.getAttribute('aria-expanded') === 'true';
+          var isOpen = item.classList.contains('is-open');
 
-          /* Fermer tous les autres si mode exclusif */
-          if (accordion.dataset.accordion === 'exclusive') {
+          if (!allowMultiple) {
             items.forEach(function (other) {
-              var ot = qs('[data-accordion-trigger]', other);
-              var op = qs('[data-accordion-panel]', other);
-              if (ot && op && ot !== trigger) {
-                ot.setAttribute('aria-expanded', 'false');
-                op.hidden = true;
-                other.classList.remove('is-open');
-              }
+              other.classList.remove('is-open');
+              var otherTrigger = $('[data-accordion-trigger]', other);
+              var otherPanel = $('[data-accordion-panel]', other);
+              if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+              if (otherPanel) otherPanel.hidden = true;
             });
           }
 
-          trigger.setAttribute('aria-expanded', String(!open));
-          panel.hidden = open;
-          item.classList.toggle('is-open', !open);
+          item.classList.toggle('is-open', !isOpen);
+          trigger.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+          panel.hidden = isOpen;
         });
+
+        panel.hidden = true;
+        trigger.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
   /* ─────────────────────────────────────────
    * 9. MOCKUP SMARTPHONE — CAROUSEL D'ÉCRANS
-   * Structure attendue :
-   *   [data-mockup-carousel]
-   *     [data-mockup-slide]  (N slides)
-   *   [data-mockup-prev]
-   *   [data-mockup-next]
-   *   [data-mockup-dots]
+   * Cible : [data-mockup-carousel]
+   *         [data-mockup-slide]
+   *         [data-mockup-prev] / [data-mockup-next]
+   *         [data-mockup-dots]
    * ───────────────────────────────────────── */
 
   function initMockupCarousel() {
-    qsa('[data-mockup-carousel]').forEach(function (carousel) {
-      var slides  = qsa('[data-mockup-slide]', carousel);
-      var wrapper = carousel.closest('[data-mockup-wrapper]') || carousel.parentElement;
-      var prevBtn = qs('[data-mockup-prev]', wrapper);
-      var nextBtn = qs('[data-mockup-next]', wrapper);
-      var dotsEl  = qs('[data-mockup-dots]', wrapper);
+    $$('[data-mockup-carousel]').forEach(function (carousel) {
+      var slides = $$('[data-mockup-slide]', carousel);
+      var prevBtn = $('[data-mockup-prev]', carousel);
+      var nextBtn = $('[data-mockup-next]', carousel);
+      var dotsContainer = $('[data-mockup-dots]', carousel);
       var current = 0;
-      var total   = slides.length;
-      var autoId  = null;
+      var autoTimer = null;
 
-      if (!total) return;
+      if (!slides.length) return;
 
-      /* Créer les dots */
+      /* Création des dots */
       var dots = [];
-      if (dotsEl) {
+      if (dotsContainer) {
         slides.forEach(function (_, i) {
           var dot = document.createElement('button');
           dot.className = 'mockup-dot';
           dot.setAttribute('aria-label', 'Écran ' + (i + 1));
           dot.addEventListener('click', function () { goTo(i); });
-          dotsEl.appendChild(dot);
+          dotsContainer.appendChild(dot);
           dots.push(dot);
         });
       }
 
-      function goTo(idx) {
+      function goTo(index) {
         slides[current].classList.remove('is-active');
         if (dots[current]) dots[current].classList.remove('is-active');
-        current = (idx + total) % total;
+
+        current = (index + slides.length) % slides.length;
+
         slides[current].classList.add('is-active');
         if (dots[current]) dots[current].classList.add('is-active');
+
+        /* Mise à jour label info si présent */
+        var infoTitle = $('[data-mockup-title]', carousel);
+        var infoText = $('[data-mockup-text]', carousel);
+        var activeSlide = slides[current];
+        if (infoTitle) infoTitle.textContent = activeSlide.getAttribute('data-slide-title') || '';
+        if (infoText) infoText.textContent = activeSlide.getAttribute('data-slide-text') || '';
       }
 
-      function next() { goTo(current + 1); }
-      function prev() { goTo(current - 1); }
-
-      if (prevBtn) prevBtn.addEventListener('click', function () { prev(); resetAuto(); });
-      if (nextBtn) nextBtn.addEventListener('click', function () { next(); resetAuto(); });
-
-      /* Auto-play */
       function startAuto() {
-        autoId = setInterval(next, 3200);
-      }
-      function resetAuto() {
-        clearInterval(autoId);
-        startAuto();
+        autoTimer = setInterval(function () {
+          goTo(current + 1);
+        }, 3800);
       }
 
-      /* Touch swipe */
+      function stopAuto() {
+        clearInterval(autoTimer);
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function () {
+          stopAuto();
+          goTo(current - 1);
+          startAuto();
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          stopAuto();
+          goTo(current + 1);
+          startAuto();
+        });
+      }
+
+      /* Swipe tactile */
       var touchStartX = 0;
       carousel.addEventListener('touchstart', function (e) {
         touchStartX = e.changedTouches[0].clientX;
       }, { passive: true });
+
       carousel.addEventListener('touchend', function (e) {
         var dx = e.changedTouches[0].clientX - touchStartX;
         if (Math.abs(dx) > 40) {
-          dx < 0 ? next() : prev();
-          resetAuto();
+          stopAuto();
+          goTo(dx < 0 ? current + 1 : current - 1);
+          startAuto();
         }
       }, { passive: true });
 
@@ -359,312 +380,274 @@
   }
 
   /* ─────────────────────────────────────────
-   * 10. SMOOTH SCROLL (ancres internes)
+   * 10. DASHBOARD — MINI SPARKLINES SVG
+   * Génère des sparklines SVG légères
+   * Cible : [data-sparkline] avec data-values="1,2,3…"
    * ───────────────────────────────────────── */
 
-  function initSmoothScroll() {
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest('a[href^="#"]');
-      if (!link) return;
-      var id     = link.getAttribute('href').slice(1);
-      var target = document.getElementById(id);
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      /* Focus pour accessibilité */
-      target.setAttribute('tabindex', '-1');
-      target.focus({ preventScroll: true });
+  function initSparklines() {
+    $$('[data-sparkline]').forEach(function (el) {
+      var raw = el.getAttribute('data-values') || '';
+      var values = raw.split(',').map(Number).filter(function (n) { return !isNaN(n); });
+      if (values.length < 2) return;
+
+      var w = el.clientWidth || 120;
+      var h = el.clientHeight || 40;
+      var min = Math.min.apply(null, values);
+      var max = Math.max.apply(null, values);
+      var range = max - min || 1;
+      var step = w / (values.length - 1);
+      var pad = 4;
+
+      var points = values.map(function (v, i) {
+        var x = i * step;
+        var y = h - pad - ((v - min) / range) * (h - pad * 2);
+        return x + ',' + y;
+      }).join(' ');
+
+      var color = el.getAttribute('data-color') || 'var(--color-accent, #E07B39)';
+
+      var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+      svg.setAttribute('width', w);
+      svg.setAttribute('height', h);
+      svg.setAttribute('aria-hidden', 'true');
+
+      var polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+      polyline.setAttribute('points', points);
+      polyline.setAttribute('fill', 'none');
+      polyline.setAttribute('stroke', color);
+      polyline.setAttribute('stroke-width', '2');
+      polyline.setAttribute('stroke-linejoin', 'round');
+      polyline.setAttribute('stroke-linecap', 'round');
+
+      svg.appendChild(polyline);
+      el.appendChild(svg);
     });
   }
 
   /* ─────────────────────────────────────────
-   * 11. BACK TO TOP
-   * Bouton [data-back-top] visible après scroll.
+   * 11. FORMULAIRE CONTACT — VALIDATION LÉGÈRE
+   * Cible : [data-contact-form]
    * ───────────────────────────────────────── */
 
-  function initBackToTop() {
-    var btn = qs('[data-back-top]');
-    if (!btn) return;
+  function initContactForm() {
+    var form = $('[data-contact-form]');
+    if (!form) return;
 
-    function toggle() {
-      btn.classList.toggle('is-visible', window.scrollY > 400);
+    var feedback = $('[data-form-feedback]', form);
+
+    function showFeedback(msg, type) {
+      if (!feedback) return;
+      feedback.textContent = msg;
+      feedback.className = 'form-feedback form-feedback--' + type;
+      feedback.hidden = false;
+      setTimeout(function () { feedback.hidden = true; }, 6000);
     }
 
-    window.addEventListener('scroll', debounce(toggle, 80), { passive: true });
+    function validateField(field) {
+      var val = field.value.trim();
+      var type = field.type;
+      var required = field.hasAttribute('required');
+      if (required && !val) return false;
+      if (type === 'email' && val && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val)) return false;
+      return true;
+    }
+
+    $$('input, textarea, select', form).forEach(function (field) {
+      field.addEventListener('blur', function () {
+        var ok = validateField(field);
+        field.classList.toggle('field--error', !ok);
+        field.classList.toggle('field--ok', ok && field.value.trim() !== '');
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var fields = $$('input, textarea, select', form);
+      var allValid = true;
+
+      fields.forEach(function (field) {
+        var ok = validateField(field);
+        field.classList.toggle('field--error', !ok);
+        if (!ok) allValid = false;
+      });
+
+      if (!allValid) {
+        showFeedback('Veuillez corriger les champs indiqués.', 'error');
+        return;
+      }
+
+      /* Simulation d'envoi (pas de backend requis) */
+      var submitBtn = $('[type="submit"]', form);
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours…';
+      }
+
+      setTimeout(function () {
+        showFeedback('Message envoyé. Nous vous répondrons rapidement.', 'success');
+        form.reset();
+        fields.forEach(function (f) { f.classList.remove('field--ok', 'field--error'); });
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Envoyer';
+        }
+      }, 1200);
+    });
+  }
+
+  /* ─────────────────────────────────────────
+   * 12. SMOOTH SCROLL — ANCRES INTERNES
+   * ───────────────────────────────────────── */
+
+  function initSmoothScroll() {
+    $$('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var id = link.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if (!target) return;
+        e.preventDefault();
+        var headerH = ($('header, .site-header') || { offsetHeight: 0 }).offsetHeight;
+        var top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      });
+    });
+  }
+
+  /* ─────────────────────────────────────────
+   * 13. BACK TO TOP
+   * Cible : [data-back-top] ou #back-top
+   * ───────────────────────────────────────── */
+
+  function initBackTop() {
+    var btn = $('[data-back-top], #back-top');
+    if (!btn) return;
+
+    window.addEventListener('scroll', debounce(function () {
+      btn.classList.toggle('is-visible', window.scrollY > 400);
+    }, 100), { passive: true });
 
     btn.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-
-    toggle();
   }
 
   /* ─────────────────────────────────────────
-   * 12. FORMULAIRE CONTACT — VALIDATION LÉGÈRE
-   * ───────────────────────────────────────── */
-
-  function initContactForm() {
-    var form = qs('[data-contact-form]');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var valid = true;
-
-      qsa('[data-required]', form).forEach(function (field) {
-        var val = field.value.trim();
-        var err = qs('[data-error-for="' + field.name + '"]', form);
-        var ok  = val.length > 0;
-
-        if (field.type === 'email') {
-          ok = ok && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
-        }
-
-        field.classList.toggle('is-invalid', !ok);
-        if (err) err.hidden = ok;
-        if (!ok) valid = false;
-      });
-
-      if (valid) {
-        var feedback = qs('[data-form-success]', form);
-        form.classList.add('is-submitted');
-        if (feedback) {
-          feedback.hidden = false;
-          feedback.focus();
-        }
-      }
-    });
-
-    /* Reset état invalide à la saisie */
-    qsa('[data-required]', form).forEach(function (field) {
-      field.addEventListener('input', function () {
-        field.classList.remove('is-invalid');
-        var err = qs('[data-error-for="' + field.name + '"]', form);
-        if (err) err.hidden = true;
-      });
-    });
-  }
-
-  /* ─────────────────────────────────────────
-   * 13. DASHBOARD — MINI SPARKLINES SVG
-   * [data-sparkline="v1,v2,v3,..."]
-   * Génère un SVG inline léger.
-   * ───────────────────────────────────────── */
-
-  function initSparklines() {
-    qsa('[data-sparkline]').forEach(function (el) {
-      var values = el.dataset.sparkline.split(',').map(Number);
-      if (!values.length) return;
-
-      var W    = 120;
-      var H    = 36;
-      var min  = Math.min.apply(null, values);
-      var max  = Math.max.apply(null, values);
-      var range = max - min || 1;
-      var step = W / (values.length - 1 || 1);
-
-      var points = values.map(function (v, i) {
-        var x = i * step;
-        var y = H - ((v - min) / range) * (H - 4) - 2;
-        return x + ',' + y;
-      }).join(' ');
-
-      var color   = el.dataset.sparklineColor || '#E8834A';
-      var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" xmlns="http://www.w3.org/2000/svg" '
-              + 'aria-hidden="true" focusable="false" style="width:100%;height:' + H + 'px">'
-              + '<polyline points="' + points + '" fill="none" stroke="' + color + '" '
-              + 'stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
-              + '</svg>';
-
-      el.innerHTML = svg;
-    });
-  }
-
-  /* ─────────────────────────────────────────
-   * 14. TOOLTIP LÉGER
-   * [data-tooltip="texte"]
-   * ───────────────────────────────────────── */
-
-  function initTooltips() {
-    var tip = document.createElement('div');
-    tip.className = 'pf-tooltip';
-    tip.setAttribute('role', 'tooltip');
-    tip.hidden = true;
-    document.body.appendChild(tip);
-
-    function show(el) {
-      tip.textContent = el.dataset.tooltip;
-      tip.hidden = false;
-      var rect = el.getBoundingClientRect();
-      var scrollY = window.scrollY;
-      tip.style.left = (rect.left + rect.width / 2) + 'px';
-      tip.style.top  = (rect.top + scrollY - tip.offsetHeight - 8) + 'px';
-      tip.classList.add('is-visible');
-    }
-
-    function hide() {
-      tip.classList.remove('is-visible');
-      tip.hidden = true;
-    }
-
-    document.addEventListener('mouseover', function (e) {
-      var el = e.target.closest('[data-tooltip]');
-      if (el) show(el);
-    });
-    document.addEventListener('mouseout', function (e) {
-      if (e.target.closest('[data-tooltip]')) hide();
-    });
-    document.addEventListener('focusin', function (e) {
-      if (e.target.dataset && e.target.dataset.tooltip) show(e.target);
-    });
-    document.addEventListener('focusout', function (e) {
-      if (e.target.dataset && e.target.dataset.tooltip) hide();
-    });
-  }
-
-  /* ─────────────────────────────────────────
-   * 15. LAZY LOAD IMAGES
-   * Remplace data-src par src quand visible.
+   * 14. IMAGE PLACEHOLDERS — LAZY LOAD NATIF
+   * Ajoute loading="lazy" si absent
    * ───────────────────────────────────────── */
 
   function initLazyImages() {
-    if (!('IntersectionObserver' in window)) {
-      qsa('img[data-src]').forEach(function (img) {
-        img.src = img.dataset.src;
-      });
-      return;
-    }
+    $$('img:not([loading])').forEach(function (img) {
+      img.setAttribute('loading', 'lazy');
+    });
 
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var img = entry.target;
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          img.classList.add('is-loaded');
-          observer.unobserve(img);
-        }
+    /* Placeholder fallback si src manquant */
+    $$('img[data-placeholder]').forEach(function (img) {
+      if (!img.src || img.src === window.location.href) {
+        var w = img.getAttribute('width') || 400;
+        var h = img.getAttribute('height') || 300;
+        var label = encodeURIComponent(img.getAttribute('alt') || 'Image');
+        img.src = 'https://placehold.co/' + w + 'x' + h + '/1a2b4a/f5f0e8?text=' + label;
+      }
+      img.addEventListener('error', function () {
+        var w = img.getAttribute('width') || 400;
+        var h = img.getAttribute('height') || 300;
+        img.src = 'https://placehold.co/' + w + 'x' + h + '/1a2b4a/f5f0e8?text=PortoFlow';
       });
-    }, { rootMargin: '200px' });
-
-    qsa('img[data-src]').forEach(function (img) {
-      observer.observe(img);
     });
   }
 
   /* ─────────────────────────────────────────
-   * 16. THEME / PREFERENCE SYSTÈME
-   * Applique data-theme="dark" si préférence
-   * système détectée (optionnel, non forcé).
+   * 15. TOOLTIP LÉGER
+   * Cible : [data-tooltip="texte"]
    * ───────────────────────────────────────── */
 
-  function initThemePreference() {
+  function initTooltips() {
+    var tip = null;
+
+    $$('[data-tooltip]').forEach(function (el) {
+      el.addEventListener('mouseenter', function () {
+        tip = document.createElement('div');
+        tip.className = 'pf-tooltip';
+        tip.textContent = el.getAttribute('data-tooltip');
+        document.body.appendChild(tip);
+
+        var rect = el.getBoundingClientRect();
+        tip.style.left = (rect.left + rect.width / 2 - tip.offsetWidth / 2 + window.scrollX) + 'px';
+        tip.style.top = (rect.top - tip.offsetHeight - 8 + window.scrollY) + 'px';
+        tip.classList.add('is-visible');
+      });
+
+      el.addEventListener('mouseleave', function () {
+        if (tip) { tip.remove(); tip = null; }
+      });
+    });
+  }
+
+  /* ─────────────────────────────────────────
+   * 16. THEME / PRÉFÉRENCE SYSTÈME
+   * Détecte prefers-color-scheme et pose
+   * data-theme sur <html> (extensible)
+   * ───────────────────────────────────────── */
+
+  function initTheme() {
     var stored = localStorage.getItem('pf-theme');
-    if (stored) {
-      document.documentElement.setAttribute('data-theme', stored);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+
+    var toggleBtn = $('[data-theme-toggle]');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('pf-theme', next);
+      });
     }
+  }
 
-    var toggleBtn = qs('[data-theme-toggle]');
-    if (!toggleBtn) return;
+  /* ─────────────────────────────────────────
+   * 17. STAGGER REVEAL — GRILLES DE CARTES
+   * Ajoute un délai progressif aux enfants
+   * d'un conteneur .feature-grid, .card-grid
+   * ───────────────────────────────────────── */
 
-    toggleBtn.addEventListener('click', function () {
-      var current = document.documentElement.getAttribute('data-theme');
-      var next    = current === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('pf-theme', next);
+  function initStaggerReveal() {
+    $$('.feature-grid, .card-grid, [data-stagger]').forEach(function (grid) {
+      var children = Array.from(grid.children);
+      children.forEach(function (child, i) {
+        child.classList.add('reveal');
+        child.style.transitionDelay = (i * 80) + 'ms';
+      });
     });
   }
 
   /* ─────────────────────────────────────────
-   * 17. NOTIFICATION / TOAST
-   * API publique : PortoFlow.notify(msg, type)
-   * type : 'info' | 'success' | 'warning' | 'error'
-   * ───────────────────────────────────────── */
-
-  var toastQueue = [];
-  var toastActive = false;
-
-  function showToast(message, type) {
-    toastQueue.push({ message: message, type: type || 'info' });
-    if (!toastActive) processToastQueue();
-  }
-
-  function processToastQueue() {
-    if (!toastQueue.length) { toastActive = false; return; }
-    toastActive = true;
-    var item    = toastQueue.shift();
-    var toast   = document.createElement('div');
-    toast.className = 'pf-toast pf-toast--' + item.type;
-    toast.setAttribute('role', 'status');
-    toast.setAttribute('aria-live', 'polite');
-    toast.textContent = item.message;
-    document.body.appendChild(toast);
-
-    requestAnimationFrame(function () {
-      toast.classList.add('is-visible');
-    });
-
-    setTimeout(function () {
-      toast.classList.remove('is-visible');
-      toast.addEventListener('transitionend', function () {
-        if (toast.parentNode) toast.parentNode.removeChild(toast);
-        processToastQueue();
-      }, { once: true });
-    }, 3500);
-  }
-
-  /* ─────────────────────────────────────────
-   * 18. PROGRESS BAR DE LECTURE
-   * Barre fine en haut de page indiquant la
-   * progression de lecture (pages éditoriales).
-   * ───────────────────────────────────────── */
-
-  function initReadingProgress() {
-    var bar = qs('[data-reading-progress]');
-    if (!bar) return;
-
-    function update() {
-      var docH    = document.documentElement.scrollHeight - window.innerHeight;
-      var percent = docH > 0 ? (window.scrollY / docH) * 100 : 0;
-      bar.style.width = percent.toFixed(1) + '%';
-      bar.setAttribute('aria-valuenow', Math.round(percent));
-    }
-
-    window.addEventListener('scroll', debounce(update, 8), { passive: true });
-    update();
-  }
-
-  /* ─────────────────────────────────────────
-   * 19. INITIALISATION GLOBALE
+   * 18. INIT GLOBAL
    * ───────────────────────────────────────── */
 
   ready(function () {
+    initTheme();
     setActiveNav();
-    initMobileMenu();
+    initMobileNav();
     initHeaderScroll();
+    initStaggerReveal();
     initReveal();
     initCounters();
     initTabs();
     initAccordion();
     initMockupCarousel();
-    initSmoothScroll();
-    initBackToTop();
-    initContactForm();
     initSparklines();
-    initTooltips();
+    initContactForm();
+    initSmoothScroll();
+    initBackTop();
     initLazyImages();
-    initThemePreference();
-    initReadingProgress();
+    initTooltips();
   });
 
-  /* ─────────────────────────────────────────
-   * 20. API PUBLIQUE
-   * ───────────────────────────────────────── */
-
-  window.PortoFlow = window.PortoFlow || {};
-  window.PortoFlow.notify  = showToast;
-  window.PortoFlow.version = '4.4.4';
-
-}());
+})();
