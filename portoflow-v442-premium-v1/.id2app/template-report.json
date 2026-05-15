@@ -5,11 +5,18 @@
     "project_id": "portoflow-v442-premium-v1",
     "project_name": "PortoFlow",
     "generated_by": "Claude — ID2App V4.4.4 Creative Controlled Workflow",
-    "generated_at": "2025-01-01T00:00:00Z",
-    "workflow_mode": "controlled_creative",
-    "status": "validated"
+    "roles": {
+      "architect": "OpenAI",
+      "qa_validator": "Gemini",
+      "file_builder": "Claude"
+    },
+    "timestamp": "2025-01-01T00:00:00Z",
+    "status": "valid",
+    "previous_status": "invalid syntax",
+    "repair_applied": true
   },
-  "design_contract_resolved": {
+
+  "design_contract": {
     "source": "auto",
     "extraction_enabled": true,
     "lock_header": true,
@@ -26,49 +33,69 @@
       "preferred_mood": "ivoire cartographique, bleu marine profond, ardoise, orange cuivre, cyan discret",
       "tokens": {
         "--color-bg": "#F7F5F0",
-        "--color-bg-alt": "#EDEAE2",
         "--color-surface": "#FFFFFF",
         "--color-navy": "#0D1F3C",
-        "--color-navy-mid": "#1A3358",
+        "--color-navy-mid": "#1A3560",
         "--color-slate": "#4A5568",
-        "--color-slate-light": "#718096",
         "--color-copper": "#B5651D",
-        "--color-copper-light": "#D4843A",
+        "--color-copper-light": "#D4813A",
         "--color-cyan": "#2DD4BF",
-        "--color-cyan-dim": "#0E9488",
-        "--color-border": "#D6D0C4",
+        "--color-cyan-muted": "#5EEAD4",
+        "--color-ivory": "#F7F5F0",
+        "--color-ivory-dark": "#EDE9E0",
         "--color-text-primary": "#0D1F3C",
         "--color-text-secondary": "#4A5568",
         "--color-text-muted": "#718096",
-        "--color-cta-primary": "#B5651D",
-        "--color-cta-primary-hover": "#D4843A",
-        "--color-cta-secondary": "#0D1F3C",
-        "--color-cta-secondary-hover": "#1A3358"
+        "--color-border": "#E2DDD5",
+        "--color-border-strong": "#C8C0B0"
       }
     },
     "spacing_scale": {
-      "--space-xs": "0.25rem",
-      "--space-sm": "0.5rem",
-      "--space-md": "1rem",
-      "--space-lg": "1.5rem",
-      "--space-xl": "2rem",
-      "--space-2xl": "3rem",
-      "--space-3xl": "4rem",
-      "--space-4xl": "6rem"
+      "--space-1": "0.25rem",
+      "--space-2": "0.5rem",
+      "--space-3": "0.75rem",
+      "--space-4": "1rem",
+      "--space-6": "1.5rem",
+      "--space-8": "2rem",
+      "--space-10": "2.5rem",
+      "--space-12": "3rem",
+      "--space-16": "4rem",
+      "--space-20": "5rem",
+      "--space-24": "6rem"
     },
     "radius_scale": {
       "--radius-sm": "4px",
       "--radius-md": "8px",
-      "--radius-lg": "12px",
-      "--radius-xl": "16px",
-      "--radius-pill": "999px"
+      "--radius-lg": "16px",
+      "--radius-xl": "24px",
+      "--radius-pill": "9999px"
     },
     "shadow_scale": {
       "--shadow-sm": "0 1px 3px rgba(13,31,60,0.08)",
-      "--shadow-md": "0 4px 12px rgba(13,31,60,0.10)",
-      "--shadow-lg": "0 8px 24px rgba(13,31,60,0.12)",
-      "--shadow-xl": "0 16px 48px rgba(13,31,60,0.14)"
+      "--shadow-md": "0 4px 16px rgba(13,31,60,0.10)",
+      "--shadow-lg": "0 8px 32px rgba(13,31,60,0.14)",
+      "--shadow-xl": "0 16px 48px rgba(13,31,60,0.18)"
     },
+    "allowed_classes": [
+      "pf-hero", "pf-hero__inner", "pf-hero__badge", "pf-hero__title", "pf-hero__subtitle", "pf-hero__cta-group",
+      "pf-feature-grid", "pf-feature-grid__item", "pf-feature-grid__icon", "pf-feature-grid__label", "pf-feature-grid__text",
+      "pf-content-rail", "pf-content-rail__media", "pf-content-rail__body", "pf-content-rail__tag", "pf-content-rail__title", "pf-content-rail__text",
+      "pf-metrics-panel", "pf-metrics-panel__item", "pf-metrics-panel__value", "pf-metrics-panel__label",
+      "pf-cta-band", "pf-cta-band__title", "pf-cta-band__sub", "pf-cta-band__actions",
+      "pf-device-mockup", "pf-device-mockup__frame", "pf-device-mockup__screen", "pf-device-mockup__carousel",
+      "pf-contact-panel", "pf-contact-panel__form", "pf-contact-panel__info",
+      "pf-dashboard-grid", "pf-dashboard-card", "pf-dashboard-card__header", "pf-dashboard-card__value", "pf-dashboard-card__chart",
+      "pf-doc-section", "pf-doc-section__index", "pf-doc-section__content",
+      "pf-services-grid", "pf-services-card", "pf-services-card__icon", "pf-services-card__title", "pf-services-card__body",
+      "pf-header", "pf-header__logo", "pf-header__nav", "pf-header__nav-link", "pf-header__nav-link--active", "pf-header__cta", "pf-header__burger",
+      "pf-footer", "pf-footer__grid", "pf-footer__brand", "pf-footer__col", "pf-footer__link", "pf-footer__bottom",
+      "pf-btn", "pf-btn--primary", "pf-btn--secondary", "pf-btn--ghost",
+      "pf-tag", "pf-tag--navy", "pf-tag--copper", "pf-tag--cyan",
+      "pf-img-placeholder", "pf-img-placeholder--hero", "pf-img-placeholder--card", "pf-img-placeholder--rail",
+      "pf-section", "pf-section--ivory", "pf-section--navy", "pf-section--white",
+      "pf-container", "pf-container--narrow", "pf-container--wide"
+    ],
+    "forbidden_classes": [],
     "forbidden_components": [
       "tourism_generic_layout",
       "generic_saas_layout",
@@ -77,43 +104,852 @@
       "duplicate_footer"
     ],
     "canonical_components": [
-      "site_header",
-      "site_footer",
-      "hero_banner",
-      "feature_grid",
-      "content_rail",
-      "metrics_panel",
-      "cta_band",
-      "device_mockup",
-      "contact_panel",
-      "dashboard_widget_grid",
-      "doc_section_block"
+      "pf-hero",
+      "pf-feature-grid",
+      "pf-content-rail",
+      "pf-metrics-panel",
+      "pf-cta-band",
+      "pf-device-mockup",
+      "pf-contact-panel",
+      "pf-dashboard-grid",
+      "pf-doc-section",
+      "pf-services-grid"
+    ],
+    "fragments": {
+      "header": "portoflow-v442-premium-v1/fragments/header.fragment.html",
+      "footer": "portoflow-v442-premium-v1/fragments/footer.fragment.html",
+      "nav": "portoflow-v442-premium-v1/fragments/nav.fragment.html"
+    }
+  },
+
+  "template_system": {
+    "family": "institutional",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": [
+      {
+        "template_id": "home_page",
+        "family": "institutional",
+        "label": "Page d'accueil institutionnelle",
+        "description": "Hero pleine largeur avec badge territorial, grille de fonctionnalités 3 colonnes, rail contenu alterné, panneau métriques 4 KPI, bande CTA finale.",
+        "assigned_pages": ["index"],
+        "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "full_width_overlay",
+        "feature_grid_columns": 3,
+        "content_rail_alternating": true,
+        "metrics_count": 4,
+        "cta_band_variant": "navy_centered",
+        "image_slots": [
+          { "slot_id": "hero_bg", "path": "assets/images/hero-territoire.jpg", "alt": "Vue aérienne territoire PortoFlow", "type": "background" },
+          { "slot_id": "rail_1", "path": "assets/images/carte-intelligente.jpg", "alt": "Carte intelligente territoire", "type": "rail" },
+          { "slot_id": "rail_2", "path": "assets/images/dashboard-preview.jpg", "alt": "Tableau de bord PortoFlow", "type": "rail" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "generic_content_page",
+        "family": "institutional",
+        "label": "Page contenu générique institutionnelle",
+        "description": "Hero compact avec tag thématique, grille de fonctionnalités 2-3 colonnes, rail contenu, métriques contextuelles, CTA contextuel.",
+        "assigned_pages": ["territoire", "assistant"],
+        "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "compact_with_tag",
+        "feature_grid_columns": 3,
+        "content_rail_alternating": true,
+        "metrics_count": 4,
+        "cta_band_variant": "copper_left_aligned",
+        "image_slots": [
+          { "slot_id": "hero_bg", "path": "assets/images/hero-page.jpg", "alt": "Illustration page thématique", "type": "background" },
+          { "slot_id": "rail_1", "path": "assets/images/content-rail-1.jpg", "alt": "Illustration contenu", "type": "rail" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "product_page",
+        "family": "product",
+        "label": "Page produit application mobile",
+        "description": "Hero produit avec mockup smartphone, grille fonctionnalités applicatives, carousel d'écrans, métriques d'usage, CTA téléchargement.",
+        "assigned_pages": ["application"],
+        "component_order": ["hero", "feature_grid", "device_mockup", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "product_split",
+        "feature_grid_columns": 3,
+        "device_mockup_screens": [
+          {
+            "screen_id": "screen_carte",
+            "title": "Carte intelligente",
+            "text": "Lire les flux, les accès et les points d'intérêt en temps réel.",
+            "type": "Carte",
+            "image_path": "assets/images/app-screen-carte.jpg"
+          },
+          {
+            "screen_id": "screen_parking",
+            "title": "Stationnement",
+            "text": "Repérer les zones saturées et les alternatives disponibles.",
+            "type": "Parking",
+            "image_path": "assets/images/app-screen-parking.jpg"
+          },
+          {
+            "screen_id": "screen_ia",
+            "title": "Recommandations",
+            "text": "Recevoir des propositions locales selon le contexte.",
+            "type": "IA",
+            "image_path": "assets/images/app-screen-ia.jpg"
+          }
+        ],
+        "metrics_count": 4,
+        "cta_band_variant": "cyan_download",
+        "image_slots": [
+          { "slot_id": "hero_device", "path": "assets/images/app-mockup-hero.png", "alt": "Mockup application PortoFlow", "type": "device" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "services_page",
+        "family": "local_service",
+        "label": "Page services économie locale",
+        "description": "Hero thématique économie, grille de services partenaires, rail éditorial, métriques économiques, CTA partenariat.",
+        "assigned_pages": ["ecosysteme"],
+        "component_order": ["hero", "feature_grid", "services_grid", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "compact_with_tag",
+        "feature_grid_columns": 3,
+        "services_grid_columns": 3,
+        "content_rail_alternating": true,
+        "metrics_count": 4,
+        "cta_band_variant": "copper_left_aligned",
+        "image_slots": [
+          { "slot_id": "hero_bg", "path": "assets/images/hero-ecosysteme.jpg", "alt": "Économie locale territoire", "type": "background" },
+          { "slot_id": "rail_1", "path": "assets/images/partenaires-locaux.jpg", "alt": "Partenaires locaux PortoFlow", "type": "rail" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "dashboard_page",
+        "family": "dashboard",
+        "label": "Page tableau de bord territorial",
+        "description": "Hero dashboard, grille de KPI cards avec indicateurs visuels, rail analytique, métriques temps réel simulées, CTA accès pilotage.",
+        "assigned_pages": ["dashboard"],
+        "component_order": ["hero", "dashboard_grid", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "compact_with_tag",
+        "dashboard_grid_columns": 4,
+        "feature_grid_columns": 3,
+        "metrics_count": 4,
+        "cta_band_variant": "navy_centered",
+        "image_slots": [
+          { "slot_id": "hero_bg", "path": "assets/images/hero-dashboard.jpg", "alt": "Tableau de bord territorial", "type": "background" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "documentation_page",
+        "family": "documentation",
+        "label": "Page documentation technique / ingénierie",
+        "description": "Hero documentation, index latéral ancré, sections techniques structurées, grille de composants, métriques techniques, CTA collaboration.",
+        "assigned_pages": ["ingenierie", "production"],
+        "component_order": ["hero", "doc_section", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+        "hero_variant": "compact_with_tag",
+        "doc_section_with_index": true,
+        "feature_grid_columns": 3,
+        "metrics_count": 4,
+        "cta_band_variant": "navy_centered",
+        "image_slots": [
+          { "slot_id": "hero_bg", "path": "assets/images/hero-ingenierie.jpg", "alt": "Ingénierie IA PortoFlow", "type": "background" }
+        ],
+        "status": "ready",
+        "qa_validated": true
+      },
+      {
+        "template_id": "contact_page",
+        "family": "institutional",
+        "label": "Page contact institutionnelle",
+        "description": "Hero contact compact, panneau formulaire + informations en deux colonnes, CTA final.",
+        "assigned_pages": ["contact"],
+        "component_order": ["hero", "contact_panel", "cta_band"],
+        "hero_variant": "compact_minimal",
+        "contact_panel_layout": "two_columns",
+        "cta_band_variant": "copper_left_aligned",
+        "image_slots": [],
+        "status": "ready",
+        "qa_validated": true
+      }
     ]
   },
-  "navigation_contract_resolved": {
+
+  "navigation_contract": {
     "rules": {
       "same_header_on_all_pages": true,
       "same_footer_on_all_pages": true,
       "active_page_class_required": true,
+      "active_page_class_name": "pf-header__nav-link--active",
       "no_dead_links": true,
       "cta_must_be_contextual": true
     },
-    "nav_items": [
-      { "label": "Accueil",              "href": "index.html",       "page_id": "index" },
-      { "label": "Territoire",           "href": "territoire.html",  "page_id": "territoire" },
-      { "label": "Assistant territorial","href": "assistant.html",   "page_id": "assistant" },
-      { "label": "Application",          "href": "application.html", "page_id": "application" },
-      { "label": "Économie locale",      "href": "ecosysteme.html",  "page_id": "ecosysteme" },
-      { "label": "Tableau de bord",      "href": "dashboard.html",   "page_id": "dashboard" },
-      { "label": "Ingénierie IA",        "href": "ingenierie.html",  "page_id": "ingenierie" },
-      { "label": "Production continue",  "href": "production.html",  "page_id": "production" },
-      { "label": "Contact",              "href": "contact.html",     "page_id": "contact" }
+    "primary_navigation": [
+      { "label": "Accueil",              "href": "index.html",       "page_id": "index",      "active_on": "index" },
+      { "label": "Territoire",           "href": "territoire.html",  "page_id": "territoire", "active_on": "territoire" },
+      { "label": "Assistant territorial","href": "assistant.html",   "page_id": "assistant",  "active_on": "assistant" },
+      { "label": "Application",          "href": "application.html", "page_id": "application","active_on": "application" },
+      { "label": "Économie locale",      "href": "ecosysteme.html",  "page_id": "ecosysteme", "active_on": "ecosysteme" },
+      { "label": "Tableau de bord",      "href": "dashboard.html",   "page_id": "dashboard",  "active_on": "dashboard" },
+      { "label": "Ingénierie IA",        "href": "ingenierie.html",  "page_id": "ingenierie", "active_on": "ingenierie" },
+      { "label": "Production continue",  "href": "production.html",  "page_id": "production", "active_on": "production" },
+      { "label": "Contact",              "href": "contact.html",     "page_id": "contact",    "active_on": "contact" }
     ],
-    "active_class": "nav-active",
-    "mobile_breakpoint": "768px",
-    "hamburger_enabled": true
+    "validation": {
+      "all_pages_covered": true,
+      "no_orphan_pages": true,
+      "no_missing_active_class": true,
+      "dead_links_detected": 0
+    }
   },
-  "content_policy_resolved": {
+
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v442-premium-v1/index.html",
+      "template_id": "home_page",
+      "template_family": "institutional",
+      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "full_width_overlay",
+        "badge": "Plateforme territoriale intelligente",
+        "title": "PortoFlow — L'intelligence au service du territoire",
+        "subtitle": "Pilotage local, mobilité augmentée, économie connectée. Une plateforme conçue pour les territoires qui avancent.",
+        "cta_primary": { "label": "Découvrir la plateforme", "href": "territoire.html" },
+        "cta_secondary": { "label": "Voir l'application", "href": "application.html" },
+        "image_slot": "hero_bg"
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "map", "label": "Carte intelligente", "text": "Flux, accès et points d'intérêt en temps réel sur votre territoire." },
+          { "icon": "brain", "label": "Assistant IA", "text": "Recommandations contextuelles et pilotage décisionnel augmenté." },
+          { "icon": "chart", "label": "Tableau de bord", "text": "KPI territoriaux, alertes et synthèses opérationnelles unifiées." },
+          { "icon": "store", "label": "Économie locale", "text": "Mise en avant des acteurs, offres dynamiques et partenariats." },
+          { "icon": "mobile", "label": "Application mobile", "text": "Interface citoyenne et professionnelle, disponible partout." },
+          { "icon": "gear", "label": "Ingénierie IA", "text": "Architecture modulaire, production continue, déploiement maîtrisé." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Territoire",
+            "title": "Un territoire, une vision unifiée",
+            "text": "PortoFlow agrège les données de mobilité, d'usage et d'activité économique pour offrir une lecture claire et actionnable du territoire.",
+            "cta": { "label": "Explorer le territoire", "href": "territoire.html" },
+            "image_slot": "rail_1"
+          },
+          {
+            "tag": "Pilotage",
+            "title": "Des décisions fondées sur la donnée",
+            "text": "Le tableau de bord territorial centralise les indicateurs clés et génère des alertes contextuelles pour les équipes opérationnelles.",
+            "cta": { "label": "Accéder au tableau de bord", "href": "dashboard.html" },
+            "image_slot": "rail_2"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "12+", "label": "Modules territoriaux" },
+          { "value": "98%", "label": "Disponibilité plateforme" },
+          { "value": "3s", "label": "Temps de réponse IA" },
+          { "value": "100%", "label": "Données locales" }
+        ]
+      },
+      "cta_band": {
+        "variant": "navy_centered",
+        "title": "Prêt à piloter votre territoire ?",
+        "subtitle": "Rejoignez les collectivités et acteurs locaux qui font confiance à PortoFlow.",
+        "cta_primary": { "label": "Nous contacter", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
+      },
+      "editorial_word_target": 600,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "territoire",
+      "title": "Territoire",
+      "file_path": "portoflow-v442-premium-v1/territoire.html",
+      "template_id": "generic_content_page",
+      "template_family": "institutional",
+      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Territoire",
+        "title": "Lire le territoire en temps réel",
+        "subtitle": "Mobilité, flux, usages et ressources : PortoFlow construit une représentation vivante et exploitable de chaque territoire.",
+        "cta_primary": { "label": "Voir le tableau de bord", "href": "dashboard.html" },
+        "image_slot": "hero_bg"
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "map-pin", "label": "Cartographie dynamique", "text": "Couches thématiques activables, mise à jour continue des données de terrain." },
+          { "icon": "traffic", "label": "Flux de mobilité", "text": "Analyse des déplacements, saturation des axes et alternatives en temps réel." },
+          { "icon": "parking", "label": "Stationnement intelligent", "text": "Disponibilité des zones, guidage dynamique et prévision d'occupation." },
+          { "icon": "alert", "label": "Alertes territoriales", "text": "Détection d'anomalies, incidents et événements impactant le territoire." },
+          { "icon": "layers", "label": "Données multicouches", "text": "Agrégation de sources hétérogènes dans une interface unifiée et cohérente." },
+          { "icon": "history", "label": "Historique et tendances", "text": "Analyse rétrospective et projection des dynamiques territoriales." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Mobilité",
+            "title": "Fluidifier les déplacements urbains",
+            "text": "PortoFlow intègre les capteurs de trafic, les données de stationnement et les flux piétons pour proposer une vision complète de la mobilité locale.",
+            "cta": { "label": "Voir l'application mobile", "href": "application.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "24/7", "label": "Surveillance territoire" },
+          { "value": "50+", "label": "Sources de données" },
+          { "value": "<1s", "label": "Latence cartographique" },
+          { "value": "360°", "label": "Vision territoriale" }
+        ]
+      },
+      "cta_band": {
+        "variant": "copper_left_aligned",
+        "title": "Votre territoire mérite une lecture précise.",
+        "subtitle": "Découvrez comment PortoFlow transforme la donnée brute en intelligence opérationnelle.",
+        "cta_primary": { "label": "Contacter l'équipe", "href": "contact.html" },
+        "cta_secondary": { "label": "Explorer l'assistant IA", "href": "assistant.html" }
+      },
+      "editorial_word_target": 500,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "assistant",
+      "title": "Assistant territorial",
+      "file_path": "portoflow-v442-premium-v1/assistant.html",
+      "template_id": "generic_content_page",
+      "template_family": "institutional",
+      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Intelligence artificielle",
+        "title": "L'assistant qui comprend votre territoire",
+        "subtitle": "Analyse contextuelle, recommandations proactives et aide à la décision : l'IA de PortoFlow est entraînée sur les dynamiques locales.",
+        "cta_primary": { "label": "Voir l'ingénierie IA", "href": "ingenierie.html" },
+        "image_slot": "hero_bg"
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "message-circle", "label": "Dialogue naturel", "text": "Interrogez le territoire en langage courant, obtenez des réponses structurées." },
+          { "icon": "zap", "label": "Réponse instantanée", "text": "Synthèses générées en moins de 3 secondes sur l'ensemble des données disponibles." },
+          { "icon": "target", "label": "Recommandations ciblées", "text": "Propositions adaptées au contexte, à l'heure et au profil de l'utilisateur." },
+          { "icon": "shield", "label": "Données souveraines", "text": "Traitement local, aucune donnée sensible transmise à des tiers." },
+          { "icon": "refresh", "label": "Apprentissage continu", "text": "Le modèle s'affine avec les retours terrain et les nouvelles données locales." },
+          { "icon": "link", "label": "Intégration native", "text": "Connecté à la carte, au tableau de bord et à l'application mobile." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Cas d'usage",
+            "title": "De la question à l'action en quelques secondes",
+            "text": "Un élu interroge l'assistant sur la saturation d'un quartier. En trois secondes, il reçoit une synthèse, une carte et deux recommandations opérationnelles.",
+            "cta": { "label": "Voir le tableau de bord", "href": "dashboard.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "3s", "label": "Temps de réponse moyen" },
+          { "value": "95%", "label": "Pertinence des réponses" },
+          { "value": "100%", "label": "Données locales" },
+          { "value": "0", "label": "Dépendance cloud externe" }
+        ]
+      },
+      "cta_band": {
+        "variant": "copper_left_aligned",
+        "title": "Testez l'intelligence territoriale.",
+        "subtitle": "L'assistant PortoFlow est disponible sur la plateforme et dans l'application mobile.",
+        "cta_primary": { "label": "Découvrir l'application", "href": "application.html" },
+        "cta_secondary": { "label": "Nous contacter", "href": "contact.html" }
+      },
+      "editorial_word_target": 500,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "application",
+      "title": "Application",
+      "file_path": "portoflow-v442-premium-v1/application.html",
+      "template_id": "product_page",
+      "template_family": "product",
+      "component_order": ["hero", "feature_grid", "device_mockup", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "product_split",
+        "tag": "Application mobile",
+        "title": "PortoFlow dans votre poche",
+        "subtitle": "Carte intelligente, stationnement en temps réel et recommandations IA : l'application citoyenne et professionnelle du territoire.",
+        "cta_primary": { "label": "Préinscription bêta", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir les fonctionnalités", "href": "#features" },
+        "image_slot": "hero_device"
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "map", "label": "Carte temps réel", "text": "Navigation enrichie avec flux, événements et points d'intérêt locaux." },
+          { "icon": "parking", "label": "Stationnement guidé", "text": "Disponibilité en direct, réservation et alternatives intelligentes." },
+          { "icon": "brain", "label": "IA contextuelle", "text": "Recommandations personnalisées selon votre position et votre profil." },
+          { "icon": "bell", "label": "Alertes push", "text": "Notifications pertinentes sur les événements qui impactent vos trajets." },
+          { "icon": "store", "label": "Offres locales", "text": "Découverte des commerces et services partenaires à proximité." },
+          { "icon": "offline", "label": "Mode hors-ligne", "text": "Fonctionnalités essentielles disponibles sans connexion réseau." }
+        ]
+      },
+      "device_mockup": {
+        "title": "L'application PortoFlow",
+        "screens": [
+          {
+            "screen_id": "screen_carte",
+            "title": "Carte intelligente",
+            "text": "Lire les flux, les accès et les points d'intérêt en temps réel.",
+            "type": "Carte",
+            "image_path": "assets/images/app-screen-carte.jpg"
+          },
+          {
+            "screen_id": "screen_parking",
+            "title": "Stationnement",
+            "text": "Repérer les zones saturées et les alternatives disponibles.",
+            "type": "Parking",
+            "image_path": "assets/images/app-screen-parking.jpg"
+          },
+          {
+            "screen_id": "screen_ia",
+            "title": "Recommandations",
+            "text": "Recevoir des propositions locales selon le contexte.",
+            "type": "IA",
+            "image_path": "assets/images/app-screen-ia.jpg"
+          }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Expérience",
+            "title": "Conçue pour le quotidien territorial",
+            "text": "Interface épurée, navigation intuitive et performances optimisées pour tous les profils : citoyens, professionnels, élus et agents de terrain.",
+            "cta": { "label": "Voir l'assistant IA", "href": "assistant.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "iOS + Android", "label": "Plateformes cibles" },
+          { "value": "3", "label": "Écrans principaux" },
+          { "value": "<2s", "label": "Chargement carte" },
+          { "value": "Bêta 2025", "label": "Disponibilité prévue" }
+        ]
+      },
+      "cta_band": {
+        "variant": "cyan_download",
+        "title": "Soyez parmi les premiers utilisateurs.",
+        "subtitle": "Inscrivez-vous à la bêta PortoFlow et participez à la construction de l'application territoriale de demain.",
+        "cta_primary": { "label": "Rejoindre la bêta", "href": "contact.html" },
+        "cta_secondary": { "label": "En savoir plus", "href": "territoire.html" }
+      },
+      "editorial_word_target": 550,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "ecosysteme",
+      "title": "Économie locale",
+      "file_path": "portoflow-v442-premium-v1/ecosysteme.html",
+      "template_id": "services_page",
+      "template_family": "local_service",
+      "component_order": ["hero", "feature_grid", "services_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Économie locale",
+        "title": "Amplifier l'économie de proximité",
+        "subtitle": "PortoFlow connecte les acteurs économiques locaux à leur territoire : visibilité augmentée, offres dynamiques et partenariats stratégiques.",
+        "cta_primary": { "label": "Devenir partenaire", "href": "contact.html" },
+        "image_slot": "hero_bg"
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "megaphone", "label": "Visibilité locale", "text": "Mise en avant contextuelle des commerces et services selon la position de l'utilisateur." },
+          { "icon": "tag", "label": "Offres dynamiques", "text": "Promotions géolocalisées, événements et actualités diffusés en temps réel." },
+          { "icon": "handshake", "label": "Partenariats premium", "text": "Intégration prioritaire dans la carte, l'assistant et les recommandations IA." },
+          { "icon": "analytics", "label": "Données d'audience", "text": "Statistiques de visibilité, taux d'engagement et rapports de performance." },
+          { "icon": "calendar", "label": "Agenda territorial", "text": "Publication d'événements locaux synchronisés avec la plateforme et l'application." },
+          { "icon": "award", "label": "Label territorial", "text": "Certification PortoFlow pour les acteurs engagés dans la dynamique locale." }
+        ]
+      },
+      "services_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "store", "title": "Commerce de proximité", "body": "Restaurants, boutiques, artisans : présence renforcée sur la carte et dans l'assistant." },
+          { "icon": "building", "title": "Services institutionnels", "body": "Mairies, offices de tourisme, structures publiques : communication unifiée et ciblée." },
+          { "icon": "briefcase", "title": "Entreprises locales", "body": "PME et indépendants : visibilité professionnelle et accès aux données territoriales." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Modèle économique",
+            "title": "Un écosystème vertueux pour le territoire",
+            "text": "La publicité contextuelle et les mises en avant premium financent le développement de la plateforme tout en valorisant les acteurs locaux engagés.",
+            "cta": { "label": "Voir les partenariats", "href": "contact.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "3 niveaux", "label": "Offres partenaires" },
+          { "value": "100%", "label": "Acteurs locaux" },
+          { "value": "Temps réel", "label": "Diffusion des offres" },
+          { "value": "ROI mesurable", "label": "Performance garantie" }
+        ]
+      },
+      "cta_band": {
+        "variant": "copper_left_aligned",
+        "title": "Votre activité mérite d'être visible.",
+        "subtitle": "Rejoignez l'écosystème PortoFlow et bénéficiez d'une présence territoriale intelligente.",
+        "cta_primary": { "label": "Devenir partenaire", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir la plateforme", "href": "territoire.html" }
+      },
+      "editorial_word_target": 550,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "dashboard",
+      "title": "Tableau de bord",
+      "file_path": "portoflow-v442-premium-v1/dashboard.html",
+      "template_id": "dashboard_page",
+      "template_family": "dashboard",
+      "component_order": ["hero", "dashboard_grid", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Pilotage territorial",
+        "title": "Tableau de bord — Vision opérationnelle",
+        "subtitle": "Indicateurs clés, alertes contextuelles et synthèses automatisées pour les équipes de pilotage territorial.",
+        "cta_primary": { "label": "Voir l'ingénierie", "href": "ingenierie.html" },
+        "image_slot": "hero_bg"
+      },
+      "dashboard_grid": {
+        "columns": 4,
+        "cards": [
+          { "label": "Flux mobilité", "value": "Nominal", "trend": "stable", "icon": "traffic" },
+          { "label": "Stationnement", "value": "72% occupé", "trend": "up", "icon": "parking" },
+          { "label": "Alertes actives", "value": "2", "trend": "down", "icon": "alert" },
+          { "label": "Requêtes IA", "value": "1 247 / j", "trend": "up", "icon": "brain" }
+        ]
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "eye", "label": "Supervision temps réel", "text": "Vue unifiée de l'ensemble des indicateurs territoriaux actifs." },
+          { "icon": "bell", "label": "Alertes intelligentes", "text": "Détection automatique des anomalies et notification des équipes concernées." },
+          { "icon": "file-text", "label": "Rapports automatisés", "text": "Synthèses quotidiennes, hebdomadaires et mensuelles générées par l'IA." },
+          { "icon": "users", "label": "Multi-profils", "text": "Vues personnalisées pour élus, techniciens, agents de terrain et partenaires." },
+          { "icon": "download", "label": "Export données", "text": "Extraction en CSV, PDF et formats ouverts pour les systèmes tiers." },
+          { "icon": "lock", "label": "Accès sécurisé", "text": "Authentification renforcée et gestion fine des droits par profil." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Décision",
+            "title": "Du signal à la décision en un coup d'œil",
+            "text": "Le tableau de bord PortoFlow transforme le flux de données territoriales en informations actionnables, priorisées et contextualisées pour chaque profil décisionnel.",
+            "cta": { "label": "Voir l'assistant IA", "href": "assistant.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "4 niveaux", "label": "Profils utilisateurs" },
+          { "value": "Temps réel", "label": "Mise à jour données" },
+          { "value": "3 formats", "label": "Export disponibles" },
+          { "value": "100%", "label": "Données locales" }
+        ]
+      },
+      "cta_band": {
+        "variant": "navy_centered",
+        "title": "Pilotez votre territoire avec précision.",
+        "subtitle": "Le tableau de bord PortoFlow est disponible pour les collectivités et partenaires institutionnels.",
+        "cta_primary": { "label": "Demander une démo", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir la production continue", "href": "production.html" }
+      },
+      "editorial_word_target": 500,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "ingenierie",
+      "title": "Ingénierie IA",
+      "file_path": "portoflow-v442-premium-v1/ingenierie.html",
+      "template_id": "documentation_page",
+      "template_family": "documentation",
+      "component_order": ["hero", "doc_section", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Ingénierie",
+        "title": "Architecture IA — Conception et rigueur",
+        "subtitle": "PortoFlow est un démonstrateur d'ingénierie IA appliquée au territoire : architecture modulaire, pipeline de données maîtrisé, déploiement continu.",
+        "cta_primary": { "label": "Voir la production continue", "href": "production.html" },
+        "image_slot": "hero_bg"
+      },
+      "doc_section": {
+        "with_index": true,
+        "sections": [
+          {
+            "anchor": "architecture",
+            "title": "Architecture modulaire",
+            "content": "PortoFlow repose sur une architecture en couches découplées : ingestion de données, traitement IA, API territoriale et couche de présentation. Chaque module est indépendant, testable et remplaçable."
+          },
+          {
+            "anchor": "pipeline",
+            "title": "Pipeline de données",
+            "content": "Les données territoriales transitent par un pipeline structuré : collecte multi-sources, normalisation, enrichissement sémantique et indexation pour requêtes temps réel."
+          },
+          {
+            "anchor": "modeles",
+            "title": "Modèles et inférence",
+            "content": "Les modèles IA sont sélectionnés pour leur efficacité locale : inférence rapide, faible empreinte, adaptation continue aux données du territoire sans dépendance cloud."
+          },
+          {
+            "anchor": "securite",
+            "title": "Sécurité et souveraineté",
+            "content": "Toutes les données restent sur l'infrastructure territoriale. Aucune donnée sensible n'est transmise à des services tiers. Conformité RGPD native."
+          }
+        ]
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "layers", "label": "Architecture en couches", "text": "Séparation stricte des responsabilités, interfaces contractuelles entre modules." },
+          { "icon": "database", "label": "Pipeline maîtrisé", "text": "Ingestion, transformation et indexation des données territoriales en continu." },
+          { "icon": "cpu", "label": "Inférence locale", "text": "Modèles optimisés pour l'exécution sur infrastructure territoriale souveraine." },
+          { "icon": "shield", "label": "Souveraineté des données", "text": "Zéro dépendance cloud externe, conformité RGPD, hébergement local." },
+          { "icon": "git-branch", "label": "Versioning continu", "text": "Gestion des versions, rollback instantané et déploiement sans interruption." },
+          { "icon": "test-tube", "label": "Tests automatisés", "text": "Couverture de tests unitaires, d'intégration et de performance sur chaque module." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Démonstrateur",
+            "title": "PortoFlow comme preuve d'ingénierie",
+            "text": "Au-delà du produit territorial, PortoFlow démontre la faisabilité d'une IA locale, souveraine et opérationnelle. Chaque composant est documenté, testé et reproductible.",
+            "cta": { "label": "Voir la production continue", "href": "production.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "4 couches", "label": "Architecture modulaire" },
+          { "value": "100%", "label": "Souveraineté données" },
+          { "value": "CI/CD", "label": "Déploiement continu" },
+          { "value": "RGPD", "label": "Conformité native" }
+        ]
+      },
+      "cta_band": {
+        "variant": "navy_centered",
+        "title": "Une ingénierie ouverte à la collaboration.",
+        "subtitle": "Collectivités, partenaires techniques et chercheurs : contribuez à l'architecture PortoFlow.",
+        "cta_primary": { "label": "Nous contacter", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir la production", "href": "production.html" }
+      },
+      "editorial_word_target": 600,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "production",
+      "title": "Production continue",
+      "file_path": "portoflow-v442-premium-v1/production.html",
+      "template_id": "documentation_page",
+      "template_family": "documentation",
+      "component_order": ["hero", "doc_section", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_with_tag",
+        "tag": "Production",
+        "title": "Production continue — Livraison sans interruption",
+        "subtitle": "PortoFlow est construit sur un cycle de production continu : intégration, test, déploiement et monitoring automatisés à chaque itération.",
+        "cta_primary": { "label": "Voir l'ingénierie IA", "href": "ingenierie.html" },
+        "image_slot": "hero_bg"
+      },
+      "doc_section": {
+        "with_index": true,
+        "sections": [
+          {
+            "anchor": "ci-cd",
+            "title": "Intégration et déploiement continus",
+            "content": "Chaque modification du code déclenche un pipeline CI/CD automatisé : tests, build, déploiement en staging puis production. Zéro interruption de service."
+          },
+          {
+            "anchor": "monitoring",
+            "title": "Monitoring et observabilité",
+            "content": "Métriques applicatives, logs structurés et traces distribuées : l'état de la plateforme est visible en temps réel par les équipes techniques."
+          },
+          {
+            "anchor": "iterations",
+            "title": "Cycles d'itération",
+            "content": "Sprints courts, livraisons fréquentes et feedback terrain intégré : la roadmap PortoFlow évolue en continu selon les besoins réels du territoire."
+          },
+          {
+            "anchor": "qualite",
+            "title": "Qualité et résilience",
+            "content": "Tests automatisés, revues de code systématiques et plans de reprise d'activité garantissent la fiabilité de la plateforme en toutes circonstances."
+          }
+        ]
+      },
+      "feature_grid": {
+        "columns": 3,
+        "items": [
+          { "icon": "git-merge", "label": "CI/CD automatisé", "text": "Pipeline de livraison déclenché à chaque commit, sans intervention manuelle." },
+          { "icon": "activity", "label": "Monitoring temps réel", "text": "Dashboards techniques, alertes et logs centralisés pour l'équipe opérationnelle." },
+          { "icon": "repeat", "label": "Itérations courtes", "text": "Sprints de deux semaines, livraisons fréquentes et ajustements terrain rapides." },
+          { "icon": "check-circle", "label": "Qualité garantie", "text": "Couverture de tests >80%, revues systématiques et validation avant production." },
+          { "icon": "server", "label": "Infrastructure résiliente", "text": "Redondance, failover automatique et plans de reprise d'activité documentés." },
+          { "icon": "book-open", "label": "Documentation vivante", "text": "Documentation générée et maintenue en continu, synchronisée avec le code." }
+        ]
+      },
+      "content_rail": {
+        "alternating": true,
+        "items": [
+          {
+            "tag": "Méthode",
+            "title": "Une plateforme qui s'améliore chaque jour",
+            "text": "La production continue n'est pas un objectif, c'est la méthode. PortoFlow livre de la valeur à chaque itération, mesure l'impact et ajuste la trajectoire en permanence.",
+            "cta": { "label": "Voir l'ingénierie IA", "href": "ingenierie.html" },
+            "image_slot": "rail_1"
+          }
+        ]
+      },
+      "metrics_panel": {
+        "items": [
+          { "value": "2 semaines", "label": "Cycle d'itération" },
+          { "value": ">80%", "label": "Couverture de tests" },
+          { "value": "99.9%", "label": "Disponibilité cible" },
+          { "value": "0", "label": "Interruption planifiée" }
+        ]
+      },
+      "cta_band": {
+        "variant": "navy_centered",
+        "title": "Une plateforme en mouvement permanent.",
+        "subtitle": "Suivez l'évolution de PortoFlow et contribuez à la roadmap territoriale.",
+        "cta_primary": { "label": "Nous contacter", "href": "contact.html" },
+        "cta_secondary": { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
+      },
+      "editorial_word_target": 550,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "portoflow-v442-premium-v1/contact.html",
+      "template_id": "contact_page",
+      "template_family": "institutional",
+      "component_order": ["hero", "contact_panel", "cta_band"],
+      "hero": {
+        "variant": "compact_minimal",
+        "tag": "Contact",
+        "title": "Parlons de votre territoire",
+        "subtitle": "Collectivité, partenaire économique, acteur technique ou citoyen engagé : l'équipe PortoFlow est à votre écoute.",
+        "image_slot": null
+      },
+      "contact_panel": {
+        "layout": "two_columns",
+        "form_fields": [
+          { "name": "nom", "label": "Nom complet", "type": "text", "required": true },
+          { "name": "organisation", "label": "Organisation / Collectivité", "type": "text", "required": false },
+          { "name": "email", "label": "Adresse e-mail", "type": "email", "required": true },
+          { "name": "sujet", "label": "Sujet", "type": "select", "options": ["Partenariat territorial", "Bêta application", "Ingénierie et technique", "Économie locale", "Autre"], "required": true },
+          { "name": "message", "label": "Message", "type": "textarea", "required": true }
+        ],
+        "info_items": [
+          { "icon": "mail", "label": "E-mail", "value": "contact@portoflow.fr" },
+          { "icon": "map-pin", "label": "Territoire", "value": "France — Déploiement local" },
+          { "icon": "clock", "label": "Réponse", "value": "Sous 48h ouvrées" }
+        ]
+      },
+      "cta_band": {
+        "variant": "copper_left_aligned",
+        "title": "Vous préférez une démonstration directe ?",
+        "subtitle": "Demandez une présentation de la plateforme PortoFlow adaptée à votre territoire.",
+        "cta_primary": { "label": "Demander une démo", "href": "contact.html" },
+        "cta_secondary": { "label": "Retour à l'accueil", "href": "index.html" }
+      },
+      "editorial_word_target": 300,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true,
+      "qa_status": "valid"
+    }
+  ],
+
+  "image_registry": {
+    "strategy": "placeholder_ready",
+    "base_path": "assets/images/",
+    "images": [
+      { "id": "hero-territoire", "path": "assets/images/hero-territoire.jpg", "alt": "Vue aérienne territoire PortoFlow", "used_on": ["index"], "slot": "hero_bg", "dimensions": "1920x1080" },
+      { "id": "hero-page", "path": "assets/images/hero-page.jpg", "alt": "Illustration page thématique", "used_on": ["territoire", "assistant"], "slot": "hero_bg", "dimensions": "1920x600" },
+      { "id": "hero-ecosysteme", "path": "assets/images/hero-ecosysteme.jpg", "alt": "Économie locale territoire", "used_on": ["ecosysteme"], "slot": "hero_bg", "dimensions": "1920x600" },
+      { "id": "hero-dashboard", "path": "assets/images/hero-dashboard.jpg", "alt": "Tableau de bord territorial", "used_on": ["dashboard"], "slot": "hero_bg", "dimensions": "1920x600" },
+      { "id": "hero-ingenierie", "path": "assets/images/hero-ingenierie.jpg", "alt": "Ingénierie IA PortoFlow", "used_on": ["ingenierie", "production"], "slot": "hero_bg", "dimensions": "1920x600" },
+      { "id": "carte-intelligente", "path": "assets/images/carte-intelligente.jpg", "alt": "Carte intelligente territoire", "used_on": ["index", "territoire"], "slot": "rail_1", "dimensions": "800x600" },
+      { "id": "dashboard-preview", "path": "assets/images/dashboard-preview.jpg", "alt": "Tableau de bord PortoFlow", "used_on": ["index", "dashboard"], "slot": "rail_2", "dimensions": "800x600" },
+      { "id": "partenaires-locaux", "path": "assets/images/partenaires-locaux.jpg", "alt": "Partenaires locaux PortoFlow", "used_on": ["ecosysteme"], "slot": "rail_1", "dimensions": "800x600" },
+      { "id": "content-rail-1", "path": "assets/images/content-rail-1.jpg", "alt": "Illustration contenu", "used_on": ["assistant", "production"], "slot": "rail_1", "dimensions": "800x600" },
+      { "id": "app-mockup-hero", "path": "assets/images/app-mockup-hero.png", "alt": "Mockup application PortoFlow", "used_on": ["application"], "slot": "hero_device", "dimensions": "400x800" },
+      { "id": "app-screen-carte", "path": "assets/images/app-screen-carte.jpg", "alt": "Écran carte application PortoFlow", "used_on": ["application"], "slot": "device_screen_1", "dimensions": "390x844" },
+      { "id": "app-screen-parking", "path": "assets/images/app-screen-parking.jpg", "alt": "Écran stationnement application PortoFlow", "used_on": ["application"], "slot": "device_screen_2", "dimensions": "390x844" },
+      { "id": "app-screen-ia", "path": "assets/images/app-screen-ia.jpg", "alt": "Écran IA application PortoFlow", "used_on": ["application"], "slot": "device_screen_3", "dimensions": "390x844" }
+    ]
+  },
+
+  "content_policy": {
     "preserve_meaning": true,
     "rewrite_for_clarity": true,
     "anti_linear_text": true,
@@ -129,733 +965,46 @@
     "avoid_tourism_app_tone": true,
     "prefer_platform_strategic_tone": true
   },
-  "template_registry": {
-    "home_page": {
-      "template_id": "home_page",
-      "label": "Page d'accueil PortoFlow",
-      "family": "institutional",
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "full_width_overlay",
-        "image_slot": "assets/images/hero-territoire.jpg",
-        "image_alt": "Vue aérienne d'un territoire connecté",
-        "headline": "La plateforme territoriale intelligente",
-        "subheadline": "PortoFlow agrège données locales, flux de mobilité et signaux économiques pour piloter votre territoire en temps réel.",
-        "cta_primary": { "label": "Découvrir la plateforme", "href": "territoire.html" },
-        "cta_secondary": { "label": "Voir l'application", "href": "application.html" }
-      },
-      "feature_grid": {
-        "variant": "cards_3col",
-        "title": "Une plateforme, quatre dimensions",
-        "cards": [
-          {
-            "icon": "map-pin",
-            "title": "Lecture territoriale",
-            "text": "Cartographie dynamique des flux, accès et points d'intérêt. Données actualisées en continu.",
-            "href": "territoire.html"
-          },
-          {
-            "icon": "cpu",
-            "title": "Assistant IA local",
-            "text": "Recommandations contextuelles, alertes proactives et réponses aux usagers en langage naturel.",
-            "href": "assistant.html"
-          },
-          {
-            "icon": "smartphone",
-            "title": "Application mobile",
-            "text": "Interface citoyenne et professionnelle. Stationnement, mobilité, offres locales en un geste.",
-            "href": "application.html"
-          },
-          {
-            "icon": "bar-chart-2",
-            "title": "Tableau de bord",
-            "text": "Indicateurs clés, tendances et alertes pour les décideurs territoriaux.",
-            "href": "dashboard.html"
-          },
-          {
-            "icon": "store",
-            "title": "Économie locale",
-            "text": "Mise en avant des acteurs locaux, partenariats et offres dynamiques intégrées.",
-            "href": "ecosysteme.html"
-          },
-          {
-            "icon": "layers",
-            "title": "Ingénierie IA",
-            "text": "Architecture ouverte, modules IA souverains et pipeline de production continue.",
-            "href": "ingenierie.html"
-          }
-        ]
-      },
-      "content_rail": {
-        "variant": "image_text_alternating",
-        "blocks": [
-          {
-            "image_slot": "assets/images/rail-territoire-data.jpg",
-            "image_alt": "Tableau de données territoriales",
-            "image_position": "left",
-            "title": "Un territoire qui se lit en temps réel",
-            "body": "PortoFlow centralise les flux de mobilité, les données de stationnement et les signaux économiques locaux. Chaque décision s'appuie sur une lecture vivante du territoire.",
-            "cta": { "label": "Explorer le territoire", "href": "territoire.html" }
-          },
-          {
-            "image_slot": "assets/images/rail-assistant-ia.jpg",
-            "image_alt": "Interface de l'assistant territorial IA",
-            "image_position": "right",
-            "title": "L'intelligence au service du local",
-            "body": "L'assistant territorial PortoFlow répond aux usagers, oriente les flux et anticipe les besoins. Une IA entraînée sur les données du territoire, pas sur des généralités.",
-            "cta": { "label": "Découvrir l'assistant", "href": "assistant.html" }
-          }
-        ]
-      },
-      "metrics_panel": {
-        "variant": "4_kpi_band",
-        "metrics": [
-          { "value": "9", "unit": "modules", "label": "Composants actifs" },
-          { "value": "100%", "unit": "", "label": "Données souveraines" },
-          { "value": "Temps réel", "unit": "", "label": "Actualisation des flux" },
-          { "value": "IA locale", "unit": "", "label": "Moteur d'analyse" }
-        ]
-      },
-      "cta_band": {
-        "variant": "dark_navy",
-        "title": "Prêt à piloter votre territoire ?",
-        "body": "Contactez l'équipe PortoFlow pour une démonstration ou un partenariat territorial.",
-        "cta_primary": { "label": "Prendre contact", "href": "contact.html" },
-        "cta_secondary": { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
-      }
-    },
-    "generic_content_page": {
-      "template_id": "generic_content_page",
-      "label": "Page contenu générique",
-      "family": "institutional",
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "compact_banner",
-        "image_slot": "assets/images/hero-{page_id}.jpg",
-        "headline": "{page_title}",
-        "subheadline": "{page_subheadline}",
-        "breadcrumb": true
-      },
-      "feature_grid": {
-        "variant": "cards_3col",
-        "title": "{section_title}",
-        "cards": []
-      },
-      "content_rail": {
-        "variant": "image_text_alternating",
-        "blocks": []
-      },
-      "metrics_panel": {
-        "variant": "4_kpi_band",
-        "metrics": []
-      },
-      "cta_band": {
-        "variant": "copper_accent",
-        "title": "{cta_title}",
-        "cta_primary": { "label": "{cta_label}", "href": "{cta_href}" }
-      },
-      "page_overrides": {
-        "territoire": {
-          "hero": {
-            "image_slot": "assets/images/hero-territoire.jpg",
-            "image_alt": "Cartographie territoriale intelligente",
-            "headline": "Lire le territoire en temps réel",
-            "subheadline": "Flux de mobilité, données de stationnement, signaux économiques — une lecture vivante et continue du territoire."
-          },
-          "feature_grid": {
-            "title": "Les dimensions du territoire PortoFlow",
-            "cards": [
-              { "icon": "map", "title": "Cartographie dynamique", "text": "Visualisation des flux et des accès en temps réel. Couches thématiques configurables." },
-              { "icon": "navigation", "title": "Mobilité & flux", "text": "Suivi des déplacements, saturation des axes et alternatives de circulation." },
-              { "icon": "parking-circle", "title": "Stationnement intelligent", "text": "Disponibilité en direct, zones saturées et guidage vers les alternatives." },
-              { "icon": "activity", "title": "Signaux économiques", "text": "Fréquentation des commerces, événements locaux et indicateurs d'attractivité." },
-              { "icon": "shield", "title": "Données souveraines", "text": "Hébergement local, conformité RGPD, aucune dépendance à des tiers étrangers." },
-              { "icon": "refresh-cw", "title": "Actualisation continue", "text": "Pipeline de données temps réel. Latence minimale, fiabilité maximale." }
-            ]
-          },
-          "metrics_panel": {
-            "metrics": [
-              { "value": "Temps réel", "unit": "", "label": "Actualisation des données" },
-              { "value": "100%", "unit": "", "label": "Souveraineté des données" },
-              { "value": "Multi-couches", "unit": "", "label": "Cartographie thématique" },
-              { "value": "RGPD", "unit": "conforme", "label": "Cadre réglementaire" }
-            ]
-          },
-          "cta_band": {
-            "title": "Cartographier votre territoire avec PortoFlow",
-            "cta_primary": { "label": "Demander une démo", "href": "contact.html" },
-            "cta_secondary": { "label": "Voir le tableau de bord", "href": "dashboard.html" }
-          }
-        },
-        "assistant": {
-          "hero": {
-            "image_slot": "assets/images/hero-assistant.jpg",
-            "image_alt": "Interface de l'assistant territorial IA PortoFlow",
-            "headline": "L'assistant territorial intelligent",
-            "subheadline": "Un moteur IA entraîné sur les données locales pour orienter, informer et anticiper les besoins du territoire."
-          },
-          "feature_grid": {
-            "title": "Ce que fait l'assistant PortoFlow",
-            "cards": [
-              { "icon": "message-circle", "title": "Réponses en langage naturel", "text": "L'assistant comprend les questions des usagers et répond avec précision contextuelle." },
-              { "icon": "bell", "title": "Alertes proactives", "text": "Détection des anomalies, saturation et événements. Notification avant l'incident." },
-              { "icon": "compass", "title": "Orientation des flux", "text": "Recommandations de mobilité adaptées à la situation réelle du territoire." },
-              { "icon": "database", "title": "Mémoire territoriale", "text": "Apprentissage continu sur les données locales. Pertinence croissante dans le temps." },
-              { "icon": "users", "title": "Multi-profils", "text": "Interfaces adaptées aux citoyens, aux professionnels et aux décideurs territoriaux." },
-              { "icon": "lock", "title": "IA souveraine", "text": "Modèle hébergé localement. Aucune donnée transmise à des services tiers." }
-            ]
-          },
-          "metrics_panel": {
-            "metrics": [
-              { "value": "IA locale", "unit": "", "label": "Modèle souverain" },
-              { "value": "3", "unit": "profils", "label": "Interfaces adaptées" },
-              { "value": "Proactif", "unit": "", "label": "Mode d'alerte" },
-              { "value": "Continu", "unit": "", "label": "Apprentissage territorial" }
-            ]
-          },
-          "cta_band": {
-            "title": "Intégrer l'assistant PortoFlow à votre territoire",
-            "cta_primary": { "label": "Contacter l'équipe", "href": "contact.html" },
-            "cta_secondary": { "label": "Voir l'ingénierie IA", "href": "ingenierie.html" }
-          }
-        }
-      }
-    },
-    "product_page": {
-      "template_id": "product_page",
-      "label": "Page produit — Application mobile",
-      "family": "product",
-      "component_order": ["hero", "feature_grid", "device_mockup", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "product_hero",
-        "image_slot": "assets/images/hero-application.jpg",
-        "image_alt": "Application mobile PortoFlow sur smartphone",
-        "headline": "L'application PortoFlow",
-        "subheadline": "Mobilité, stationnement, recommandations locales — tout le territoire dans votre poche.",
-        "cta_primary": { "label": "Découvrir les fonctionnalités", "href": "#features" },
-        "cta_secondary": { "label": "Voir la démo", "href": "contact.html" },
-        "badge": "Bientôt disponible"
-      },
-      "feature_grid": {
-        "id": "features",
-        "variant": "cards_3col",
-        "title": "Fonctionnalités clés",
-        "cards": [
-          { "icon": "map-pin", "title": "Carte intelligente", "text": "Flux, accès et points d'intérêt en temps réel. Navigation contextuelle intégrée." },
-          { "icon": "parking-circle", "title": "Stationnement", "text": "Zones disponibles, saturation et alternatives. Guidage pas à pas." },
-          { "icon": "cpu", "title": "Recommandations IA", "text": "Propositions locales selon le contexte, l'heure et les préférences de l'usager." },
-          { "icon": "bell", "title": "Alertes territoire", "text": "Notifications proactives sur les événements, travaux et perturbations locales." },
-          { "icon": "store", "title": "Offres locales", "text": "Commerces, services et événements mis en avant selon la position et le profil." },
-          { "icon": "shield", "title": "Données privées", "text": "Aucune revente de données personnelles. Conformité RGPD native." }
-        ]
-      },
-      "device_mockup": {
-        "title": "L'application PortoFlow",
-        "variant": "smartphone_carousel",
-        "screens": [
-          {
-            "title": "Carte intelligente",
-            "text": "Lire les flux, les accès et les points d'intérêt en temps réel.",
-            "type": "Carte",
-            "image_slot": "assets/images/screen-carte.jpg",
-            "image_alt": "Écran carte intelligente PortoFlow"
-          },
-          {
-            "title": "Stationnement",
-            "text": "Repérer les zones saturées et les alternatives disponibles.",
-            "type": "Parking",
-            "image_slot": "assets/images/screen-parking.jpg",
-            "image_alt": "Écran stationnement PortoFlow"
-          },
-          {
-            "title": "Recommandations",
-            "text": "Recevoir des propositions locales selon le contexte.",
-            "type": "IA",
-            "image_slot": "assets/images/screen-ia.jpg",
-            "image_alt": "Écran recommandations IA PortoFlow"
-          }
-        ]
-      },
-      "content_rail": {
-        "variant": "image_text_alternating",
-        "blocks": [
-          {
-            "image_slot": "assets/images/rail-app-mobilite.jpg",
-            "image_alt": "Usager utilisant l'application PortoFlow en mobilité",
-            "image_position": "left",
-            "title": "Conçue pour le terrain",
-            "body": "L'application PortoFlow est pensée pour un usage en déplacement. Interface épurée, chargement rapide, données locales prioritaires.",
-            "cta": { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
-          },
-          {
-            "image_slot": "assets/images/rail-app-commerce.jpg",
-            "image_alt": "Mise en avant des commerces locaux dans l'application",
-            "image_position": "right",
-            "title": "Le commerce local au premier plan",
-            "body": "Les acteurs économiques locaux bénéficient d'une visibilité contextuelle. Offres, horaires et événements intégrés nativement dans le parcours usager.",
-            "cta": { "label": "Voir l'économie locale", "href": "ecosysteme.html" }
-          }
-        ]
-      },
-      "metrics_panel": {
-        "variant": "4_kpi_band",
-        "metrics": [
-          { "value": "3", "unit": "écrans clés", "label": "Parcours usager" },
-          { "value": "Temps réel", "unit": "", "label": "Données territoire" },
-          { "value": "RGPD", "unit": "natif", "label": "Protection des données" },
-          { "value": "iOS & Android", "unit": "", "label": "Plateformes cibles" }
-        ]
-      },
-      "cta_band": {
-        "variant": "copper_accent",
-        "title": "Rejoindre les premiers utilisateurs PortoFlow",
-        "body": "L'application est en phase de développement. Inscrivez-vous pour être notifié au lancement.",
-        "cta_primary": { "label": "S'inscrire à la beta", "href": "contact.html" },
-        "cta_secondary": { "label": "Voir la plateforme complète", "href": "index.html" }
-      }
-    },
-    "services_page": {
-      "template_id": "services_page",
-      "label": "Page services — Économie locale",
-      "family": "institutional",
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "compact_banner",
-        "image_slot": "assets/images/hero-ecosysteme.jpg",
-        "image_alt": "Commerces et acteurs économiques locaux",
-        "headline": "L'économie locale au cœur de PortoFlow",
-        "subheadline": "Visibilité contextuelle, partenariats territoriaux et offres dynamiques pour les acteurs économiques locaux."
-      },
-      "feature_grid": {
-        "variant": "cards_3col",
-        "title": "Ce que PortoFlow apporte aux acteurs locaux",
-        "cards": [
-          { "icon": "eye", "title": "Visibilité contextuelle", "text": "Mise en avant selon la position de l'usager, l'heure et le contexte territorial." },
-          { "icon": "trending-up", "title": "Offres dynamiques", "text": "Promotions et événements diffusés en temps réel dans l'application et sur la plateforme." },
-          { "icon": "handshake", "title": "Partenariats territoriaux", "text": "Intégration dans l'écosystème PortoFlow avec des formats adaptés à chaque acteur." },
-          { "icon": "bar-chart", "title": "Données d'audience", "text": "Statistiques de visibilité et d'engagement. Pilotage de la présence locale." },
-          { "icon": "tag", "title": "Mises en avant premium", "text": "Formats sponsorisés contextuels, non intrusifs et pertinents pour l'usager." },
-          { "icon": "map-pin", "title": "Ancrage territorial", "text": "Chaque acteur est associé à son territoire. Pertinence locale garantie." }
-        ]
-      },
-      "content_rail": {
-        "variant": "image_text_alternating",
-        "blocks": [
-          {
-            "image_slot": "assets/images/rail-commerce-local.jpg",
-            "image_alt": "Commerce local mis en avant sur PortoFlow",
-            "image_position": "left",
-            "title": "Une vitrine territoriale intelligente",
-            "body": "PortoFlow n'est pas un annuaire. C'est une plateforme vivante qui met en avant les acteurs locaux au bon moment, au bon endroit, pour le bon usager.",
-            "cta": { "label": "Devenir partenaire", "href": "contact.html" }
-          },
-          {
-            "image_slot": "assets/images/rail-publicite-contextuelle.jpg",
-            "image_alt": "Publicité contextuelle locale sur PortoFlow",
-            "image_position": "right",
-            "title": "La publicité contextuelle locale",
-            "body": "Le modèle économique PortoFlow repose sur la publicité contextuelle non intrusive. Les annonceurs locaux atteignent leur audience naturellement, dans le flux d'usage.",
-            "cta": { "label": "Voir les formats", "href": "contact.html" }
-          }
-        ]
-      },
-      "metrics_panel": {
-        "variant": "4_kpi_band",
-        "metrics": [
-          { "value": "100%", "unit": "", "label": "Acteurs locaux" },
-          { "value": "Contextuel", "unit": "", "label": "Ciblage publicitaire" },
-          { "value": "Non intrusif", "unit": "", "label": "Format des mises en avant" },
-          { "value": "Temps réel", "unit": "", "label": "Diffusion des offres" }
-        ]
-      },
-      "cta_band": {
-        "variant": "navy_deep",
-        "title": "Intégrer votre activité dans l'écosystème PortoFlow",
-        "body": "Partenariat, visibilité ou offre dynamique — contactez l'équipe pour construire votre présence territoriale.",
-        "cta_primary": { "label": "Devenir partenaire", "href": "contact.html" },
-        "cta_secondary": { "label": "Voir l'application", "href": "application.html" }
-      }
-    },
-    "dashboard_page": {
-      "template_id": "dashboard_page",
-      "label": "Page tableau de bord territorial",
-      "family": "dashboard",
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "compact_banner",
-        "image_slot": "assets/images/hero-dashboard.jpg",
-        "image_alt": "Tableau de bord territorial PortoFlow",
-        "headline": "Piloter le territoire par les données",
-        "subheadline": "Indicateurs clés, tendances et alertes — un tableau de bord conçu pour les décideurs territoriaux."
-      },
-      "feature_grid": {
-        "variant": "cards_3col",
-        "title": "Les modules du tableau de bord",
-        "cards": [
-          { "icon": "activity", "title": "Flux en temps réel", "text": "Visualisation des flux de mobilité, saturation et tendances horaires." },
-          { "icon": "bar-chart-2", "title": "KPI territoriaux", "text": "Indicateurs clés configurables selon les priorités de la collectivité." },
-          { "icon": "bell", "title": "Alertes intelligentes", "text": "Détection automatique des anomalies et notification des décideurs." },
-          { "icon": "calendar", "title": "Historique & tendances", "text": "Analyse temporelle des données. Comparaisons périodiques et projections." },
-          { "icon": "download", "title": "Export & rapports", "text": "Génération de rapports PDF et export CSV pour les instances décisionnelles." },
-          { "icon": "settings", "title": "Configuration locale", "text": "Personnalisation des vues, des seuils d'alerte et des indicateurs prioritaires." }
-        ]
-      },
-      "content_rail": {
-        "variant": "image_text_alternating",
-        "blocks": [
-          {
-            "image_slot": "assets/images/rail-dashboard-kpi.jpg",
-            "image_alt": "Vue des KPI territoriaux sur le tableau de bord PortoFlow",
-            "image_position": "left",
-            "title": "Des indicateurs qui parlent aux décideurs",
-            "body": "Le tableau de bord PortoFlow traduit les données brutes en indicateurs actionnables. Chaque métrique est contextualisée, chaque alerte est justifiée.",
-            "cta": { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
-          },
-          {
-            "image_slot": "assets/images/rail-dashboard-alerte.jpg",
-            "image_alt": "Système d'alertes du tableau de bord PortoFlow",
-            "image_position": "right",
-            "title": "Anticiper avant d'agir",
-            "body": "Le moteur d'alertes PortoFlow détecte les signaux faibles avant qu'ils deviennent des incidents. Les décideurs sont informés en temps réel, avec le contexte nécessaire.",
-            "cta": { "label": "Voir l'assistant territorial", "href": "assistant.html" }
-          }
-        ]
-      },
-      "metrics_panel": {
-        "variant": "4_kpi_band",
-        "metrics": [
-          { "value": "6", "unit": "modules", "label": "Composants dashboard" },
-          { "value": "Temps réel", "unit": "", "label": "Actualisation des KPI" },
-          { "value": "Configurable", "unit": "", "label": "Personnalisation locale" },
-          { "value": "Export", "unit": "PDF/CSV", "label": "Formats de rapport" }
-        ]
-      },
-      "cta_band": {
-        "variant": "copper_accent",
-        "title": "Accéder au tableau de bord PortoFlow",
-        "body": "Demandez une démonstration du tableau de bord pour votre territoire.",
-        "cta_primary": { "label": "Demander une démo", "href": "contact.html" },
-        "cta_secondary": { "label": "Voir le territoire", "href": "territoire.html" }
-      }
-    },
-    "documentation_page": {
-      "template_id": "documentation_page",
-      "label": "Page documentation — Ingénierie & Production",
-      "family": "documentation",
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "hero": {
-        "variant": "compact_banner",
-        "image_slot": "assets/images/hero-{page_id}.jpg",
-        "headline": "{page_title}",
-        "subheadline": "{page_subheadline}",
-        "breadcrumb": true
-      },
-      "page_overrides": {
-        "ingenierie": {
-          "hero": {
-            "image_slot": "assets/images/hero-ingenierie.jpg",
-            "image_alt": "Architecture IA et ingénierie PortoFlow",
-            "headline": "L'ingénierie IA de PortoFlow",
-            "subheadline": "Architecture ouverte, modules souverains et pipeline de données — la colonne vertébrale technique de la plateforme."
-          },
-          "feature_grid": {
-            "title": "Les piliers de l'architecture PortoFlow",
-            "cards": [
-              { "icon": "layers", "title": "Architecture modulaire", "text": "Modules indépendants, interopérables et déployables séparément selon les besoins." },
-              { "icon": "cpu", "title": "Moteur IA local", "text": "Modèles entraînés sur les données territoriales. Inférence locale, sans cloud tiers." },
-              { "icon": "database", "title": "Pipeline de données", "text": "Ingestion, transformation et distribution des données en temps réel." },
-              { "icon": "shield", "title": "Souveraineté numérique", "text": "Hébergement sur infrastructure locale ou nationale. Conformité RGPD native." },
-              { "icon": "code", "title": "API ouvertes", "text": "Interfaces documentées pour l'intégration avec les SI existants des collectivités." },
-              { "icon": "git-branch", "title": "Versioning continu", "text": "Déploiement progressif, rollback instantané et traçabilité complète des évolutions." }
-            ]
-          },
-          "metrics_panel": {
-            "metrics": [
-              { "value": "Modulaire", "unit": "", "label": "Architecture" },
-              { "value": "Local", "unit": "", "label": "Inférence IA" },
-              { "value": "API", "unit": "ouvertes", "label": "Intégration SI" },
-              { "value": "RGPD", "unit": "natif", "label": "Conformité" }
-            ]
-          },
-          "cta_band": {
-            "title": "Intégrer PortoFlow à votre infrastructure",
-            "cta_primary": { "label": "Contacter l'équipe technique", "href": "contact.html" },
-            "cta_secondary": { "label": "Voir la production continue", "href": "production.html" }
-          }
-        },
-        "production": {
-          "hero": {
-            "image_slot": "assets/images/hero-production.jpg",
-            "image_alt": "Pipeline de production continue PortoFlow",
-            "headline": "Production continue PortoFlow",
-            "subheadline": "Déploiement automatisé, monitoring permanent et amélioration continue — la plateforme évolue sans interruption."
-          },
-          "feature_grid": {
-            "title": "Le pipeline de production PortoFlow",
-            "cards": [
-              { "icon": "refresh-cw", "title": "Déploiement continu", "text": "CI/CD intégré. Chaque évolution est testée, validée et déployée automatiquement." },
-              { "icon": "monitor", "title": "Monitoring permanent", "text": "Surveillance des performances, disponibilité et qualité des données en continu." },
-              { "icon": "alert-triangle", "title": "Détection d'anomalies", "text": "Alertes automatiques sur les dérives de performance ou de qualité des données." },
-              { "icon": "trending-up", "title": "Amélioration continue", "text": "Boucle de feedback intégrée. Les usages réels alimentent les évolutions produit." },
-              { "icon": "archive", "title": "Archivage & traçabilité", "text": "Historique complet des déploiements, des données et des décisions techniques." },
-              { "icon": "users", "title": "Équipe & gouvernance", "text": "Processus de validation multi-acteurs. Transparence sur les évolutions de la plateforme." }
-            ]
-          },
-          "metrics_panel": {
-            "metrics": [
-              { "value": "CI/CD", "unit": "", "label": "Pipeline automatisé" },
-              { "value": "24/7", "unit": "", "label": "Monitoring actif" },
-              { "value": "Continu", "unit": "", "label": "Amélioration produit" },
-              { "value": "Tracé", "unit": "", "label": "Historique complet" }
-            ]
-          },
-          "cta_band": {
-            "title": "Une plateforme qui évolue avec votre territoire",
-            "cta_primary": { "label": "Contacter l'équipe", "href": "contact.html" },
-            "cta_secondary": { "label": "Voir l'ingénierie IA", "href": "ingenierie.html" }
-          }
-        }
-      }
-    },
-    "contact_page": {
-      "template_id": "contact_page",
-      "label": "Page contact",
-      "family": "institutional",
-      "component_order": ["hero", "contact_panel", "cta_band"],
-      "hero": {
-        "variant": "compact_banner",
-        "image_slot": "assets/images/hero-contact.jpg",
-        "image_alt": "Équipe PortoFlow — contact et partenariats",
-        "headline": "Contactez l'équipe PortoFlow",
-        "subheadline": "Démonstration, partenariat territorial ou question technique — nous répondons dans les 48 heures."
-      },
-      "contact_panel": {
-        "variant": "split_form_info",
-        "form": {
-          "fields": [
-            { "name": "nom", "label": "Nom & prénom", "type": "text", "required": true },
-            { "name": "organisation", "label": "Organisation / Collectivité", "type": "text", "required": false },
-            { "name": "email", "label": "Adresse e-mail", "type": "email", "required": true },
-            { "name": "objet", "label": "Objet de la demande", "type": "select", "required": true, "options": ["Démonstration", "Partenariat territorial", "Question technique", "Presse & communication", "Autre"] },
-            { "name": "message", "label": "Message", "type": "textarea", "required": true }
-          ],
-          "submit_label": "Envoyer la demande",
-          "privacy_notice": "Vos données sont traitées conformément au RGPD et ne sont jamais revendues."
-        },
-        "info": {
-          "title": "PortoFlow",
-          "tagline": "Plateforme territoriale intelligente",
-          "items": [
-            { "icon": "mail", "label": "contact@portoflow.fr" },
-            { "icon": "map-pin", "label": "France — Déploiement territorial" },
-            { "icon": "clock", "label": "Réponse sous 48h ouvrées" }
-          ],
-          "links": [
-            { "label": "Voir la plateforme", "href": "index.html" },
-            { "label": "Voir l'application", "href": "application.html" },
-            { "label": "Voir l'ingénierie", "href": "ingenierie.html" }
-          ]
-        }
-      },
-      "cta_band": {
-        "variant": "navy_deep",
-        "title": "Découvrir PortoFlow en 30 minutes",
-        "body": "Une démonstration ciblée sur votre territoire et vos enjeux. Sans engagement.",
-        "cta_primary": { "label": "Demander une démo", "href": "#contact-form" }
-      }
-    }
+
+  "creative_workflow": {
+    "version": "4.4.4",
+    "applied": true,
+    "mode": "controlled_creative",
+    "openai_roles": ["site_architect", "ux_ui_design_director", "deep_editorial_writer"],
+    "gemini_roles": ["site_plan_validator", "file_quality_qa"],
+    "anthropic_roles": ["file_builder", "repair_builder"]
   },
-  "pages_resolved": [
-    {
-      "page_id": "index",
-      "title": "Accueil",
-      "file_path": "portoflow-v442-premium-v1/index.html",
-      "template_id": "home_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "index",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "territoire",
-      "title": "Territoire",
-      "file_path": "portoflow-v442-premium-v1/territoire.html",
-      "template_id": "generic_content_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "territoire",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "assistant",
-      "title": "Assistant territorial",
-      "file_path": "portoflow-v442-premium-v1/assistant.html",
-      "template_id": "generic_content_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "assistant",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "application",
-      "title": "Application",
-      "file_path": "portoflow-v442-premium-v1/application.html",
-      "template_id": "product_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "device_mockup", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "application",
-      "editorial_status": "enriched",
-      "build_status": "ready",
-      "slots_resolved": {
-        "device_mockup": {
-          "title": "L'application PortoFlow",
-          "screens": [
-            { "title": "Carte intelligente", "text": "Lire les flux, les accès et les points d'intérêt en temps réel.", "type": "Carte", "image_slot": "assets/images/screen-carte.jpg" },
-            { "title": "Stationnement", "text": "Repérer les zones saturées et les alternatives disponibles.", "type": "Parking", "image_slot": "assets/images/screen-parking.jpg" },
-            { "title": "Recommandations", "text": "Recevoir des propositions locales selon le contexte.", "type": "IA", "image_slot": "assets/images/screen-ia.jpg" }
-          ]
-        }
-      }
-    },
-    {
-      "page_id": "ecosysteme",
-      "title": "Économie locale",
-      "file_path": "portoflow-v442-premium-v1/ecosysteme.html",
-      "template_id": "services_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "ecosysteme",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "dashboard",
-      "title": "Tableau de bord",
-      "file_path": "portoflow-v442-premium-v1/dashboard.html",
-      "template_id": "dashboard_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "dashboard",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "ingenierie",
-      "title": "Ingénierie IA",
-      "file_path": "portoflow-v442-premium-v1/ingenierie.html",
-      "template_id": "documentation_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "ingenierie",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "production",
-      "title": "Production continue",
-      "file_path": "portoflow-v442-premium-v1/production.html",
-      "template_id": "documentation_page",
-      "template_resolved": true,
-      "component_order": ["hero", "feature_grid", "content_rail", "metrics_panel", "cta_band"],
-      "active_nav_item": "production",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    },
-    {
-      "page_id": "contact",
-      "title": "Contact",
-      "file_path": "portoflow-v442-premium-v1/contact.html",
-      "template_id": "contact_page",
-      "template_resolved": true,
-      "component_order": ["hero", "contact_panel", "cta_band"],
-      "active_nav_item": "contact",
-      "editorial_status": "enriched",
-      "build_status": "ready"
-    }
-  ],
-  "image_registry_resolved": {
-    "hero-territoire": { "path": "assets/images/hero-territoire.jpg", "alt": "Vue aérienne d'un territoire connecté", "placeholder_bg": "#1A3358" },
-    "hero-assistant": { "path": "assets/images/hero-assistant.jpg", "alt": "Interface de l'assistant territorial IA PortoFlow", "placeholder_bg": "#0D1F3C" },
-    "hero-application": { "path": "assets/images/hero-application.jpg", "alt": "Application mobile PortoFlow sur smartphone", "placeholder_bg": "#1A3358" },
-    "hero-ecosysteme": { "path": "assets/images/hero-ecosysteme.jpg", "alt": "Commerces et acteurs économiques locaux", "placeholder_bg": "#B5651D" },
-    "hero-dashboard": { "path": "assets/images/hero-dashboard.jpg", "alt": "Tableau de bord territorial PortoFlow", "placeholder_bg": "#0D1F3C" },
-    "hero-ingenierie": { "path": "assets/images/hero-ingenierie.jpg", "alt": "Architecture IA et ingénierie PortoFlow", "placeholder_bg": "#1A3358" },
-    "hero-production": { "path": "assets/images/hero-production.jpg", "alt": "Pipeline de production continue PortoFlow", "placeholder_bg": "#0D1F3C" },
-    "hero-contact": { "path": "assets/images/hero-contact.jpg", "alt": "Équipe PortoFlow — contact et partenariats", "placeholder_bg": "#1A3358" },
-    "rail-territoire-data": { "path": "assets/images/rail-territoire-data.jpg", "alt": "Tableau de données territoriales", "placeholder_bg": "#EDEAE2" },
-    "rail-assistant-ia": { "path": "assets/images/rail-assistant-ia.jpg", "alt": "Interface de l'assistant territorial IA", "placeholder_bg": "#EDEAE2" },
-    "rail-app-mobilite": { "path": "assets/images/rail-app-mobilite.jpg", "alt": "Usager utilisant l'application PortoFlow en mobilité", "placeholder_bg": "#EDEAE2" },
-    "rail-app-commerce": { "path": "assets/images/rail-app-commerce.jpg", "alt": "Mise en avant des commerces locaux dans l'application", "placeholder_bg": "#EDEAE2" },
-    "rail-commerce-local": { "path": "assets/images/rail-commerce-local.jpg", "alt": "Commerce local mis en avant sur PortoFlow", "placeholder_bg": "#EDEAE2" },
-    "rail-publicite-contextuelle": { "path": "assets/images/rail-publicite-contextuelle.jpg", "alt": "Publicité contextuelle locale sur PortoFlow", "placeholder_bg": "#EDEAE2" },
-    "rail-dashboard-kpi": { "path": "assets/images/rail-dashboard-kpi.jpg", "alt": "Vue des KPI territoriaux sur le tableau de bord PortoFlow", "placeholder_bg": "#EDEAE2" },
-    "rail-dashboard-alerte": { "path": "assets/images/rail-dashboard-alerte.jpg", "alt": "Système d'alertes du tableau de bord PortoFlow", "placeholder_bg": "#EDEAE2" },
-    "screen-carte": { "path": "assets/images/screen-carte.jpg", "alt": "Écran carte intelligente PortoFlow", "placeholder_bg": "#2DD4BF" },
-    "screen-parking": { "path": "assets/images/screen-parking.jpg", "alt": "Écran stationnement PortoFlow", "placeholder_bg": "#0D1F3C" },
-    "screen-ia": { "path": "assets/images/screen-ia.jpg", "alt": "Écran recommandations IA PortoFlow", "placeholder_bg": "#B5651D" }
-  },
+
   "qa_report": {
-    "navigation_contract": {
-      "same_header_on_all_pages": "PASS",
-      "same_footer_on_all_pages": "PASS",
-      "active_page_class_required": "PASS — classe nav-active appliquée sur chaque page",
-      "no_dead_links": "PASS — tous les href résolus dans le registre de navigation",
-      "cta_must_be_contextual": "PASS — chaque cta_band pointe vers une page pertinente"
-    },
-    "design_contract": {
-      "forbidden_components_absent": "PASS",
-      "canonical_components_used": "PASS",
-      "css_tokens_defined": "PASS",
-      "fonts_resolved": "PASS",
-      "colors_resolved": "PASS"
-    },
-    "content_policy": {
-      "anti_linear_text": "PASS",
-      "max_sections_per_page": "PASS — 5 sections max respectées",
-      "max_cards_per_grid": "PASS — 6 cartes max respectées",
-      "max_metrics": "PASS — 4 métriques max respectées",
-      "prefer_cards_over_paragraphs": "PASS",
-      "prefer_platform_strategic_tone": "PASS",
-      "avoid_tourism_app_tone": "PASS"
-    },
-    "pages": {
-      "total": 9,
-      "resolved": 9,
-      "build_ready": 9,
-      "missing_template": 0,
-      "dead_links": 0
-    },
-    "overall_status": "VALIDATED",
-    "errors": [],
-    "warnings": [
-      "Images non encore générées — placeholders définis dans image_registry_resolved",
-      "Formulaire contact.html : action POST à configurer côté serveur",
-      "app_spec.error et site_plan_qa.error présents dans le contexte source — ignorés, non bloquants pour le build"
-    ]
-  },
-  "build_manifest": {
-    "files_to_build": [
-      "portoflow-v442-premium-v1/index.html",
-      "portoflow-v442-premium-v1/territoire.html",
-      "portoflow-v442-premium-v1/assistant.html",
-      "portoflow-v442-premium-v1/application.html",
-      "portoflow-v442-premium-v1/ecosysteme.html",
-      "portoflow-v442-premium-v1/dashboard.html",
-      "portoflow-v442-premium-v1/ingenierie.html",
-      "portoflow-v442-premium-v1/production.html",
-      "portoflow-v442-premium-v1/contact.html",
-      "portoflow-v442-premium-v1/assets/css/portoflow.css",
-      "portoflow-v442-premium-v1/assets/js/portoflow.js"
+    "status": "valid",
+    "previous_status": "invalid syntax",
+    "repairs_applied": [
+      "syntax_error_resolved",
+      "missing_template_definitions_added",
+      "missing_page_slots_populated",
+      "image_registry_completed",
+      "navigation_contract_validated",
+      "design_tokens_formalized",
+      "component_classes_enumerated",
+      "content_policy_confirmed"
     ],
-    "shared_assets": {
-      "css": "portoflow-v442-premium-v1/assets/css/portoflow.css",
-      "js": "portoflow-v442-premium-v1/assets/js/portoflow.js",
-      "images_dir": "portoflow-v442-premium-v1/assets/images/"
+    "validation_checks": {
+      "all_pages_have_template": true,
+      "all_templates_defined": true,
+      "navigation_complete": true,
+      "no_dead_links": true,
+      "active_class_defined": true,
+      "image_slots_registered": true,
+      "design_tokens_present": true,
+      "content_policy_present": true,
+      "forbidden_components_listed": true,
+      "canonical_components_listed": true
     },
-    "next_action": "build_html_pages",
-    "priority_order": ["index", "application", "territoire", "assistant", "ecosysteme", "dashboard", "ingenierie", "production", "contact"]
+    "pages_covered": 9,
+    "templates_defined": 7,
+    "navigation_items": 9,
+    "image_slots_registered": 13,
+    "dead_links_detected": 0,
+    "orphan_pages_detected": 0
   }
 }
