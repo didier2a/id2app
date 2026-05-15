@@ -48,11 +48,11 @@
     "portoflow-v442-premium-v1/.id2app/template-report.json"
   ],
   "completed_files": [
-    "portoflow-v442-premium-v1/territoire.html"
+    "portoflow-v442-premium-v1/assistant.html"
   ],
   "updated_files": [
     {
-      "file_path": "portoflow-v442-premium-v1/territoire.html",
+      "file_path": "portoflow-v442-premium-v1/assistant.html",
       "action": "",
       "file_sha": "",
       "commit_sha": "",
@@ -79,5 +79,5 @@
     "last_layout_quality_gate": null
   },
   "preflight": null,
-  "updated_at": "2026-05-15T02:01:59.488Z"
+  "updated_at": "2026-05-15T02:02:05.890Z"
 }
