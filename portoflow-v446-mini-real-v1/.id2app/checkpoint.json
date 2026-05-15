@@ -1,0 +1,124 @@
+{
+  "schema_version": "4.4",
+  "orchestrator_version": "4.4.6-contract-first-premium-renderer",
+  "compiler": "contract_first_premium_renderer_v4_4_6",
+  "run_id": "520",
+  "project_id": "portoflow-v446-mini-real-v1",
+  "project_name": "PortoFlow",
+  "project_type": "website",
+  "repo": "didier2a/id2app",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "portoflow-v446-mini-real-v1",
+  "checkpoint_path": "portoflow-v446-mini-real-v1/.id2app/checkpoint.json",
+  "mode": "compile_new_project",
+  "raw_mode": "compile_new_project",
+  "dry_run": false,
+  "expected_files": [
+    "portoflow-v446-mini-real-v1/index.html",
+    "portoflow-v446-mini-real-v1/styles.css",
+    "portoflow-v446-mini-real-v1/script.js",
+    "portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+    "portoflow-v446-mini-real-v1/.id2app/template-report.json",
+    "portoflow-v446-mini-real-v1/README.md"
+  ],
+  "target_files": [
+    "portoflow-v446-mini-real-v1/index.html",
+    "portoflow-v446-mini-real-v1/styles.css",
+    "portoflow-v446-mini-real-v1/script.js",
+    "portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+    "portoflow-v446-mini-real-v1/.id2app/template-report.json",
+    "portoflow-v446-mini-real-v1/README.md"
+  ],
+  "completed_files": [
+    "portoflow-v446-mini-real-v1/index.html",
+    "portoflow-v446-mini-real-v1/styles.css",
+    "portoflow-v446-mini-real-v1/script.js",
+    "portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+    "portoflow-v446-mini-real-v1/.id2app/template-report.json",
+    "portoflow-v446-mini-real-v1/README.md"
+  ],
+  "updated_files": [
+    {
+      "file_path": "portoflow-v446-mini-real-v1/index.html",
+      "action": "create",
+      "file_sha": "6f97c139e61ce211737657a2dcfbb1250ecb7bcc",
+      "commit_sha": "e6546cad159f462494d8feed77e92659657ad058",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e6546cad159f462494d8feed77e92659657ad058",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v446-mini-real-v1/styles.css",
+      "action": "create",
+      "file_sha": "e26b9ba9354f4c0a88957841e4edda99d51c4e26",
+      "commit_sha": "3a156b65de92e1d7a3e95ff53241bd67bbb98830",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/styles.css",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3a156b65de92e1d7a3e95ff53241bd67bbb98830",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v446-mini-real-v1/script.js",
+      "action": "create",
+      "file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
+      "commit_sha": "1e47fe93f33dfceb2d559c4f2d24565146c4583e",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/script.js",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1e47fe93f33dfceb2d559c4f2d24565146c4583e",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+      "action": "create",
+      "file_sha": "d9468318368072ce272d83cfe644b15a7fa36dc7",
+      "commit_sha": "25a7340fdf00386bcff774641785f7d46a85ed38",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/25a7340fdf00386bcff774641785f7d46a85ed38",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v446-mini-real-v1/.id2app/template-report.json",
+      "action": "create",
+      "file_sha": "d74f39d6fd30585f8adfd51daf58695281c4f527",
+      "commit_sha": "86ed50bf3217b79f9fada47f7ac830d857b506e7",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/.id2app/template-report.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/86ed50bf3217b79f9fada47f7ac830d857b506e7",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v446-mini-real-v1/README.md",
+      "action": "create",
+      "file_sha": "aae6573ea597b61d14f78be48c775671c66de2c1",
+      "commit_sha": "0012b61fb1e9a8210c289570cb5313a044676fb4",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v446-mini-real-v1/README.md",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0012b61fb1e9a8210c289570cb5313a044676fb4",
+      "validation_status": "passed"
+    }
+  ],
+  "created_files": [
+    "portoflow-v446-mini-real-v1/index.html",
+    "portoflow-v446-mini-real-v1/styles.css",
+    "portoflow-v446-mini-real-v1/script.js",
+    "portoflow-v446-mini-real-v1/.id2app/app-spec.json",
+    "portoflow-v446-mini-real-v1/.id2app/template-report.json",
+    "portoflow-v446-mini-real-v1/README.md"
+  ],
+  "repaired_files": [],
+  "skipped_files": [],
+  "protected_files": [],
+  "failed_files": [],
+  "expected_count": 6,
+  "completed_count": 6,
+  "updated_count": 6,
+  "created_count": 6,
+  "repaired_count": 0,
+  "skipped_count": 0,
+  "protected_count": 0,
+  "failed_count": 0,
+  "quality_gate": {
+    "deterministic": true,
+    "last_layout_quality_gate": null
+  },
+  "preflight": null,
+  "updated_at": "2026-05-15T15:47:46.844Z"
+}
