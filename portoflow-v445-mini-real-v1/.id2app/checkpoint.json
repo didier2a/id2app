@@ -2,7 +2,7 @@
   "schema_version": "4.4",
   "orchestrator_version": "4.4.5-brand-system-premium-ux-shell",
   "compiler": "deterministic_template_compiler_from_v4_3_4_base",
-  "run_id": "518",
+  "run_id": "519",
   "project_id": "portoflow-v445-mini-real-v1",
   "project_name": "PortoFlow Mini Réel V4.4.5",
   "project_type": "website",
@@ -24,28 +24,31 @@
     "portoflow-v445-mini-real-v1/README.md"
   ],
   "target_files": [
-    "portoflow-v445-mini-real-v1/index.html",
-    "portoflow-v445-mini-real-v1/styles.css"
+    "portoflow-v445-mini-real-v1/index.html"
   ],
   "completed_files": [
-    "portoflow-v445-mini-real-v1/styles.css"
+    "portoflow-v445-mini-real-v1/index.html"
   ],
   "updated_files": [
     {
-      "file_path": "portoflow-v445-mini-real-v1/styles.css",
+      "file_path": "portoflow-v445-mini-real-v1/index.html",
       "action": "repair",
-      "file_sha": "44d4c568a725067b2909336cc30573063f810e83",
-      "commit_sha": "6e9ffb50a2b4d2935c97279e3568e01d1b617e0e",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v445-mini-real-v1/styles.css",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6e9ffb50a2b4d2935c97279e3568e01d1b617e0e",
+      "file_sha": "14387db1c0d82055fb5195710bd336f092f45aaf",
+      "commit_sha": "2250f70cb70515ebb5d15b966eef65fbc2d52a91",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v445-mini-real-v1/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/2250f70cb70515ebb5d15b966eef65fbc2d52a91",
       "validation_status": "passed"
     }
   ],
   "created_files": [],
   "repaired_files": [
-    "portoflow-v445-mini-real-v1/styles.css"
+    "portoflow-v445-mini-real-v1/index.html"
   ],
   "skipped_files": [
+    {
+      "file_path": "portoflow-v445-mini-real-v1/styles.css",
+      "reason": "not_failed_or_targeted"
+    },
     {
       "file_path": "portoflow-v445-mini-real-v1/script.js",
       "reason": "not_failed_or_targeted"
@@ -64,60 +67,19 @@
     }
   ],
   "protected_files": [],
-  "failed_files": [
-    {
-      "file_path": "portoflow-v445-mini-real-v1/index.html",
-      "action": "repair",
-      "reason": "validation_failed",
-      "parse_warnings": [],
-      "validation_errors": [
-        "too_many_consecutive_paragraphs"
-      ],
-      "validation_warnings": [],
-      "gemini_execution_job_audit": null,
-      "gemini_repair_diagnosis": {
-        "repair_required": true,
-        "failure_type": "parse",
-        "root_cause": "The model's output was truncated due to token limits during the initial compilation attempt, leading to an unusable output and triggering a fallback mechanism. The 'empty_or_too_short_content' warning confirms the incompleteness of the original generation.",
-        "repair_strategy": "Retry the compilation of the HTML page, ensuring the full document is generated without truncation. The repairer must produce a complete and valid HTML5 file based on the App Spec, slots, and Template Registry V4.4.",
-        "constraints": [
-          "The output must be a complete and valid HTML5 document.",
-          "Adhere strictly to App Spec, slots, and Template Registry V4.4 for compilation."
-        ],
-        "must_not_change": [
-          "The overall structure and content derived from App Spec, slots, and Template Registry V4.4 should be preserved.",
-          "The file path and type remain 'index.html' and 'html'."
-        ],
-        "recommended_prompt_addendum": "Assurez-vous que la page HTML compilée est complète et non tronquée. Le fichier doit être un document HTML5 valide et entier, sans aucune coupure."
-      },
-      "anthropic_stop_reason": "end_turn",
-      "anthropic_usage": {
-        "input_tokens": 7240,
-        "cache_creation_input_tokens": 0,
-        "cache_read_input_tokens": 0,
-        "cache_creation": {
-          "ephemeral_5m_input_tokens": 0,
-          "ephemeral_1h_input_tokens": 0
-        },
-        "output_tokens": 6807,
-        "service_tier": "standard",
-        "inference_geo": "global"
-      },
-      "at": "2026-05-15T14:07:32.019Z"
-    }
-  ],
+  "failed_files": [],
   "expected_count": 6,
   "completed_count": 1,
   "updated_count": 1,
   "created_count": 0,
   "repaired_count": 1,
-  "skipped_count": 4,
+  "skipped_count": 5,
   "protected_count": 0,
-  "failed_count": 1,
+  "failed_count": 0,
   "quality_gate": {
     "deterministic": true,
     "last_layout_quality_gate": null
   },
   "preflight": null,
-  "updated_at": "2026-05-15T14:11:39.405Z"
+  "updated_at": "2026-05-15T14:22:51.117Z"
 }
