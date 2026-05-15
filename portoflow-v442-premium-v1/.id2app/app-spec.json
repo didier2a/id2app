@@ -195,5 +195,11 @@
       ],
       "slots": {}
     }
-  ]
+  ],
+  "image_registry": {},
+  "writer_agent": {
+    "version": "4.4.3",
+    "applied": true,
+    "report": {}
+  }
 }
