@@ -1,8 +1,14 @@
 {
-  "schema_version": "4.4",
+  "schema_version": "4.4.3",
   "compiler": "deterministic_template_compiler",
+  "writer_agent": {
+    "version": "4.4.3",
+    "applied": true,
+    "report": {}
+  },
+  "image_registry": {},
   "project_id": "portoflow-v442-premium-v1",
-  "generated_at": "2026-05-15T02:21:14.750Z",
+  "generated_at": "2026-05-15T03:01:36.718Z",
   "pages": [
     {
       "page_id": "index",
@@ -14,7 +20,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "territoire",
@@ -26,7 +33,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "assistant",
@@ -38,7 +46,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "application",
@@ -50,7 +59,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "ecosysteme",
@@ -62,7 +72,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "dashboard",
@@ -74,7 +85,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "ingenierie",
@@ -86,7 +98,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "production",
@@ -98,7 +111,8 @@
         "content_rail",
         "metrics_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     },
     {
       "page_id": "contact",
@@ -108,7 +122,8 @@
         "hero",
         "contact_panel",
         "cta_band"
-      ]
+      ],
+      "writer_agent_enriched": false
     }
   ],
   "warnings": []
