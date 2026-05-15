@@ -2,7 +2,7 @@
   "schema_version": "4.4",
   "orchestrator_version": "4.4.2-golden-payload-runtime",
   "compiler": "deterministic_template_compiler_from_v4_3_4_base",
-  "run_id": "500",
+  "run_id": "502",
   "project_id": "portoflow-v442-premium-v1",
   "project_name": "PortoFlow",
   "project_type": "multi_page_website",
@@ -47,22 +47,37 @@
     "portoflow-v442-premium-v1/.id2app/app-spec.json",
     "portoflow-v442-premium-v1/.id2app/template-report.json"
   ],
-  "completed_files": [],
-  "updated_files": [],
+  "completed_files": [
+    "portoflow-v442-premium-v1/index.html"
+  ],
+  "updated_files": [
+    {
+      "file_path": "portoflow-v442-premium-v1/index.html",
+      "action": "",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    }
+  ],
   "created_files": [],
   "repaired_files": [],
   "skipped_files": [],
   "protected_files": [],
   "failed_files": [],
   "expected_count": 14,
-  "completed_count": 0,
-  "updated_count": 0,
+  "completed_count": 1,
+  "updated_count": 1,
   "created_count": 0,
   "repaired_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "failed_count": 0,
-  "quality_gate": null,
+  "quality_gate": {
+    "deterministic": true,
+    "last_layout_quality_gate": null
+  },
   "preflight": null,
-  "updated_at": "2026-05-15T01:58:26.614Z"
+  "updated_at": "2026-05-15T02:01:53.580Z"
 }
