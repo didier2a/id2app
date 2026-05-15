@@ -1,123 +1,121 @@
-# PortoFlow — Plateforme territoriale intelligente
-> Projet `portoflow-v442-premium-v1` · ID2App v4.4.4 Creative Controlled Workflow
+# PortoFlow — v442 Premium
+
+**Plateforme territoriale intelligente · Smart City · IA locale**
 
 ---
 
 ## Présentation
 
-**PortoFlow** est une plateforme territoriale intelligente conçue pour les collectivités, les opérateurs locaux et les citoyens. Elle agrège données de mobilité, flux urbains, recommandations IA et pilotage local dans une interface unifiée — web et mobile.
-
-Ce dépôt contient le site vitrine multi-pages de PortoFlow, généré et maintenu via le workflow **ID2App v4.4.4**.
+PortoFlow est une plateforme web multi-pages à destination des territoires, collectivités et acteurs économiques locaux. Elle articule cartographie intelligente, assistant IA territorial, pilotage de flux et valorisation de l'économie locale dans une interface institutionnelle premium.
 
 ---
 
-## Architecture du site
-
-| Page | Fichier | Template |
-|---|---|---|
-| Accueil | `index.html` | `home_page` |
-| Territoire | `territoire.html` | `generic_content_page` |
-| Assistant territorial | `assistant.html` | `generic_content_page` |
-| Application | `application.html` | `product_page` |
-| Économie locale | `ecosysteme.html` | `services_page` |
-| Tableau de bord | `dashboard.html` | `dashboard_page` |
-| Ingénierie IA | `ingenierie.html` | `documentation_page` |
-| Production continue | `production.html` | `documentation_page` |
-| Contact | `contact.html` | `contact_page` |
-
----
-
-## Structure du dépôt
+## Architecture du projet
 
 ```
 portoflow-v442-premium-v1/
-├── index.html
-├── territoire.html
-├── assistant.html
-├── application.html
-├── ecosysteme.html
-├── dashboard.html
-├── ingenierie.html
-├── production.html
-├── contact.html
+├── index.html          → Accueil
+├── territoire.html     → Territoire
+├── assistant.html      → Assistant territorial
+├── application.html    → Application mobile
+├── ecosysteme.html     → Économie locale
+├── dashboard.html      → Tableau de bord
+├── ingenierie.html     → Ingénierie IA
+├── production.html     → Production continue
+├── contact.html        → Contact
 ├── assets/
 │   ├── css/
-│   │   └── portoflow.css
+│   │   └── style.css   → Feuille de styles principale
 │   ├── js/
-│   │   └── portoflow.js
-│   └── images/
-│       └── (placeholders prêts pour assets visuels)
-├── .id2app/
-│   └── checkpoint.json
-└── README.md
+│   │   └── main.js     → Scripts progressifs
+│   └── images/         → Placeholders visuels
+└── .id2app/
+    └── checkpoint.json → État de build ID2App
 ```
 
 ---
 
-## Design & Identité
+## Stack technique
+
+| Composant | Choix |
+|---|---|
+| Langage | HTML5 · CSS3 · JS vanilla |
+| Dépendances externes | Aucune obligatoire |
+| Polices | Google Fonts (Inter + Sora) via CDN optionnel |
+| Icônes | SVG inline natifs |
+| Responsive | Mobile-first, breakpoints 768px / 1200px |
+
+---
+
+## Design system
+
+**Palette** — ivoire cartographique · bleu marine profond · ardoise · orange cuivre · cyan discret
 
 | Token | Valeur |
 |---|---|
-| Mood | Ivoire cartographique · Bleu marine profond · Ardoise · Orange cuivre · Cyan discret |
-| Typographie corps | Système natif (stack sans-serif) |
-| Typographie titres | Système natif (stack serif institutionnel) |
-| Composants interdits | `tourism_generic_layout` · `generic_saas_layout` · `linear_text_stack` · `duplicate_header` · `duplicate_footer` |
-| Ton éditorial | Institutionnel premium · Territorial · Stratégique · Moderne |
+| `--color-ivory` | `#F5F0E8` |
+| `--color-navy` | `#0D1B2A` |
+| `--color-slate` | `#4A5568` |
+| `--color-copper` | `#C47A3A` |
+| `--color-cyan` | `#4ECDC4` |
+| `--font-body` | Inter, system-ui |
+| `--font-heading` | Sora, Inter |
+
+**Composants canoniques** : hero · feature_grid · content_rail · metrics_panel · cta_band · device_mockup · contact_panel · dashboard_widget
+
+---
+
+## Pages et templates
+
+| Page | Fichier | Template |
+|---|---|---|
+| Accueil | index.html | home_page |
+| Territoire | territoire.html | generic_content_page |
+| Assistant territorial | assistant.html | generic_content_page |
+| Application | application.html | product_page |
+| Économie locale | ecosysteme.html | services_page |
+| Tableau de bord | dashboard.html | dashboard_page |
+| Ingénierie IA | ingenierie.html | documentation_page |
+| Production continue | production.html | documentation_page |
+| Contact | contact.html | contact_page |
 
 ---
 
 ## Navigation contract
 
-- Header identique sur toutes les pages
-- Footer identique sur toutes les pages
+- Header et footer identiques sur toutes les pages
 - Classe `active` obligatoire sur le lien courant
 - Aucun lien mort toléré
 - CTA contextualisés par page
-
----
-
-## Workflow de production
-
-```
-OpenAI       →  Architecte site · Directeur UX/UI · Rédacteur éditorial
-Gemini       →  Validateur plan · QA qualité fichier
-Claude       →  Constructeur fichier · Réparateur
-```
-
-Version workflow : **ID2App Creative Controlled Workflow v4.4.4**
+- Navigation complète sur mobile (menu hamburger)
 
 ---
 
 ## Modèle économique
 
-- Publicité contextuelle intégrée
-- Mises en avant premium pour acteurs locaux
-- Partenariats territoriaux
-- Offres dynamiques selon contexte utilisateur
+Publicité contextuelle · Mises en avant premium · Partenariats locaux · Offres dynamiques
 
 ---
 
-## Dépôt GitHub
+## Workflow de production
 
-| Paramètre | Valeur |
+| Rôle | Agent |
 |---|---|
-| Owner | `didier2a` |
-| Repository | `id2app` |
-| Branch | `main` |
-| Dossier site | `portoflow-v442-premium-v1` |
-| Checkpoint | `portoflow-v442-premium-v1/.id2app/checkpoint.json` |
+| Architecte site · Direction UX/UI · Éditorial | OpenAI |
+| Validation plan · QA fichiers | Gemini |
+| Construction fichiers · Réparation | Claude (ID2App v4.4.4) |
 
 ---
 
-## Contraintes techniques
+## Déploiement
 
-- Aucune dépendance externe obligatoire
-- CSS externalisé — pas de CSS inline massif dans le HTML
-- JavaScript minimal et progressif, sans framework
-- Images : placeholders `assets/images/` prêts pour remplacement par assets réels
-- Responsive mobile-first
-- Sections premium, textes riches, composants spécialisés
+Dépôt GitHub : `didier2a/id2app` · Branche : `main` · Dossier : `portoflow-v442-premium-v1`
+
+```bash
+# Prévisualisation locale
+open portoflow-v442-premium-v1/index.html
+```
 
 ---
 
-*PortoFlow · Plateforme territoriale intelligente · ID2App v4.4.4*
+*PortoFlow · ID2App Creative Controlled Workflow v4.4.4 · Territoire & Intelligence locale*
