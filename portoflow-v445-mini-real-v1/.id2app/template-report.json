@@ -1,0 +1,780 @@
+{
+  "report_id": "template-report-portoflow-v445-mini-real-v1",
+  "generated_by": "Claude — ID2App V4.4.5 Brand System + Premium UX Shell",
+  "schema_version": "4.4.5",
+  "project_id": "portoflow-v445-mini-real-v1",
+  "project_name": "PortoFlow Mini Réel V4.4.5",
+  "generated_at": "2025-01-01T00:00:00Z",
+  "status": "compiled",
+  "renderer_version": "4.4.5-fallback",
+
+  "brand_system_summary": {
+    "brand_name": "PortoFlow Mini Réel V4.4.5",
+    "brand_tagline": "Le copilote intelligent du territoire",
+    "logo_concept": "boussole territoriale, flux et point cardinal méditerranéen",
+    "symbol_description": "monogramme PF intégré à une boussole et à deux lignes de flux",
+    "wordmark_style": "premium institutionnel, clair, robuste, non touristique",
+    "logo_delivery": "inline_svg",
+    "logo_required": true,
+    "svg_requirements": ["compass ring", "flow lines", "PF monogram", "accessible aria-label"],
+    "visual_motifs": ["topographie", "boussole", "flux", "carte", "interface mobile", "dashboard"],
+    "color_tokens": {
+      "navy":   { "hex": "#071b2f", "role": "primary — bleu marine profond" },
+      "ink":    { "hex": "#102033", "role": "fond sombre alternatif" },
+      "ivory":  { "hex": "#f7f2ea", "role": "background — ivoire cartographique" },
+      "copper": { "hex": "#c76a3a", "role": "accent — orange cuivre" },
+      "cyan":   { "hex": "#3ec7d8", "role": "intelligence — cyan discret" },
+      "slate":  { "hex": "#667085", "role": "secondary — ardoise" }
+    },
+    "typography_tokens": {
+      "heading": "system geometric sans",
+      "body": "system sans",
+      "letter_spacing": "tight headings / clear nav"
+    },
+    "tone_keywords": ["premium", "territorial", "stratégique", "local", "intelligent"]
+  },
+
+  "ux_shell_summary": {
+    "version": "4.4.5-fallback",
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "sticky": true,
+      "glass_effect": true,
+      "primary_cta": { "label": "Devenir partenaire", "href": "contact.html" },
+      "secondary_cta": { "label": "Voir l'application", "href": "application.html" },
+      "rules": ["logo visible", "nav centered", "CTA pill right", "active state visible", "sticky glass header"]
+    },
+    "navigation": {
+      "desktop": [
+        { "label": "Accueil",        "href": "index.html",       "page_id": "index" },
+        { "label": "Application",    "href": "application.html", "page_id": "application" },
+        { "label": "Assistant",      "href": "assistant.html",   "page_id": "assistant" },
+        { "label": "Dashboard",      "href": "dashboard.html",   "page_id": "dashboard" },
+        { "label": "Territoire",     "href": "territoire.html",  "page_id": "territoire" },
+        { "label": "Écosystème",     "href": "ecosysteme.html",  "page_id": "ecosysteme" },
+        { "label": "Contact",        "href": "contact.html",     "page_id": "contact" }
+      ],
+      "mobile": "drawer_or_wrapped_nav",
+      "active_state": "copper pill underline"
+    },
+    "footer": {
+      "layout": "brand_column_plus_three_nav_columns",
+      "brand_column": {
+        "logo": true,
+        "tagline": "Le copilote intelligent du territoire",
+        "description": "PortoFlow connecte habitants, visiteurs et professionnels au territoire de Porto-Vecchio via une intelligence locale augmentée."
+      },
+      "columns": [
+        {
+          "title": "Plateforme",
+          "links": [
+            { "label": "Application", "href": "application.html" },
+            { "label": "Assistant",   "href": "assistant.html" },
+            { "label": "Dashboard",   "href": "dashboard.html" }
+          ]
+        },
+        {
+          "title": "Territoire",
+          "links": [
+            { "label": "Territoire",      "href": "territoire.html" },
+            { "label": "Économie locale", "href": "ecosysteme.html" }
+          ]
+        },
+        {
+          "title": "Projet",
+          "links": [
+            { "label": "Ingénierie", "href": "ingenierie.html" },
+            { "label": "Production", "href": "production.html" },
+            { "label": "Contact",    "href": "contact.html" }
+          ]
+        }
+      ],
+      "final_cta": { "label": "Créer un partenariat", "href": "contact.html" }
+    },
+    "buttons": {
+      "primary":   { "class": "pf-button pf-button--primary",   "description": "fond copper, texte blanc, hover assombri" },
+      "secondary": { "class": "pf-button pf-button--secondary", "description": "fond transparent, bordure copper, texte copper, hover fond copper léger" },
+      "ghost":     { "class": "pf-button pf-button--ghost",     "description": "fond transparent, bordure ivoire/blanc, texte ivoire, sur fonds sombres" },
+      "rules": ["visual buttons, not text links", "clear hover states", "large touch targets"]
+    },
+    "spacing": {
+      "scale": {
+        "xs":  "8px",
+        "sm":  "12px",
+        "md":  "18px",
+        "lg":  "28px",
+        "xl":  "44px",
+        "2xl": "72px",
+        "3xl": "104px"
+      },
+      "section_padding_desktop": "96px",
+      "section_padding_mobile":  "56px",
+      "density": "aeree premium"
+    },
+    "must_have_classes": [
+      "pf-header",
+      "pf-logo",
+      "pf-logo__symbol",
+      "pf-logo__wordmark",
+      "pf-nav",
+      "pf-header__cta",
+      "pf-button",
+      "pf-footer",
+      "pf-footer__grid"
+    ],
+    "anti_patterns": [
+      "text-only header",
+      "blog-like footer",
+      "links without buttons",
+      "flat stacked page",
+      "no logo"
+    ]
+  },
+
+  "design_contract_summary": {
+    "source": "v4_4_5_brand_premium_ux_shell",
+    "extraction_enabled": true,
+    "locks": {
+      "header": true,
+      "footer": true,
+      "navigation": true,
+      "typography": true,
+      "css_tokens": true,
+      "component_classes": true
+    },
+    "forbidden_components": [
+      "blog_like_layout",
+      "plain_text_menu",
+      "unstructured_footer",
+      "link_only_cta",
+      "generic_card_stack"
+    ],
+    "css_token_map": {
+      "--pf-navy":   "#071b2f",
+      "--pf-ink":    "#102033",
+      "--pf-ivory":  "#f7f2ea",
+      "--pf-copper": "#c76a3a",
+      "--pf-cyan":   "#3ec7d8",
+      "--pf-slate":  "#667085",
+      "--pf-space-xs":  "8px",
+      "--pf-space-sm":  "12px",
+      "--pf-space-md":  "18px",
+      "--pf-space-lg":  "28px",
+      "--pf-space-xl":  "44px",
+      "--pf-space-2xl": "72px",
+      "--pf-space-3xl": "104px",
+      "--pf-radius-sm": "6px",
+      "--pf-radius-md": "12px",
+      "--pf-radius-lg": "20px",
+      "--pf-radius-pill": "999px",
+      "--pf-shadow-card": "0 2px 16px rgba(7,27,47,0.10)",
+      "--pf-shadow-panel": "0 8px 40px rgba(7,27,47,0.18)",
+      "--pf-shadow-hero": "0 24px 80px rgba(7,27,47,0.32)"
+    }
+  },
+
+  "template_registry": {
+    "version": "4.4.5-fallback",
+    "global_rules": [
+      "not blog-like",
+      "hero must be cinematic",
+      "header/footer shell required",
+      "visual panels required",
+      "buttons required",
+      "asymmetric sections required"
+    ],
+    "anti_blog_patterns": [
+      "plain text nav",
+      "single-column article",
+      "unstyled footer",
+      "no CTA",
+      "no logo",
+      "all cards identical"
+    ],
+    "templates": {
+      "template_cinematic_territory_home": {
+        "id": "template_cinematic_territory_home",
+        "label": "Cinematic Territory Home",
+        "family": "institutional",
+        "assigned_pages": ["index"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "cinematic_hero",
+            "label": "Hero cinématique",
+            "type": "hero",
+            "layout": "full_bleed_dark_overlay",
+            "background": "navy gradient + SVG topographic lines",
+            "content": ["headline H1", "tagline", "two CTA buttons", "compass SVG motif"],
+            "required_classes": ["pf-hero", "pf-hero__inner", "pf-hero__headline", "pf-hero__sub", "pf-hero__actions"],
+            "cta_count": 2
+          },
+          {
+            "id": "territory_signal_panel",
+            "label": "Signal territorial",
+            "type": "editorial_intro",
+            "layout": "asymmetric_split_text_visual",
+            "background": "ivory",
+            "content": ["intro éditoriale", "4 métriques clés", "badge territoire"],
+            "required_classes": ["pf-signal", "pf-signal__text", "pf-signal__metrics", "pf-metric-chip"],
+            "cta_count": 0
+          },
+          {
+            "id": "bento_promise",
+            "label": "Bento des promesses",
+            "type": "bento_grid",
+            "layout": "bento_asymmetric_6cells",
+            "background": "ivory",
+            "content": ["6 cartes bento différenciées", "icônes SVG inline", "titres courts", "1 phrase max par carte"],
+            "required_classes": ["pf-bento", "pf-bento__grid", "pf-bento__cell", "pf-bento__cell--wide", "pf-bento__cell--tall"],
+            "cta_count": 0
+          },
+          {
+            "id": "flow_map",
+            "label": "Carte des flux",
+            "type": "narrative_panel",
+            "layout": "dark_panel_with_svg_map",
+            "background": "navy",
+            "content": ["narrative territoriale", "SVG flow lines", "3 feature cards horizontales"],
+            "required_classes": ["pf-flow", "pf-flow__panel", "pf-flow__map", "pf-flow__cards"],
+            "cta_count": 1
+          },
+          {
+            "id": "partner_cta",
+            "label": "CTA partenariat",
+            "type": "cta_band",
+            "layout": "centered_dark_band",
+            "background": "ink",
+            "content": ["headline conversion", "sous-titre", "bouton primaire", "bouton secondaire"],
+            "required_classes": ["pf-cta-band", "pf-cta-band__inner"],
+            "cta_count": 2
+          }
+        ],
+        "visuals": ["map-lines", "compass", "flow-orbs"],
+        "required_visuals": ["logo and cinematic hero"],
+        "total_cta_minimum": 4
+      },
+
+      "template_territorial_command_center": {
+        "id": "template_territorial_command_center",
+        "label": "Territorial Command Center",
+        "family": "dashboard",
+        "assigned_pages": ["dashboard"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "command_hero",
+            "label": "Hero commande",
+            "type": "hero",
+            "layout": "split_dark_left_visual_right",
+            "background": "navy",
+            "content": ["headline dashboard", "sous-titre opérateur", "CTA démo"],
+            "cta_count": 1
+          },
+          {
+            "id": "split_seasonality",
+            "label": "Saisonnalité split",
+            "type": "split_panel",
+            "layout": "two_column_contrast",
+            "background": "ivory / navy split",
+            "content": ["saison haute vs basse", "indicateurs flux", "topographic motif"],
+            "cta_count": 0
+          },
+          {
+            "id": "pressure_map",
+            "label": "Carte de pression",
+            "type": "map_panel",
+            "layout": "full_width_dark",
+            "background": "ink",
+            "content": ["SVG map Porto-Vecchio", "heat zones", "légende"],
+            "cta_count": 0
+          },
+          {
+            "id": "flow_rail",
+            "label": "Rail de flux",
+            "type": "metrics_rail",
+            "layout": "horizontal_scroll_cards",
+            "background": "ivory",
+            "content": ["4 KPI cards", "tendances", "icônes"],
+            "cta_count": 0
+          },
+          {
+            "id": "operator_insights",
+            "label": "Insights opérateur",
+            "type": "feature_grid",
+            "layout": "3col_cards",
+            "background": "ivory",
+            "content": ["3 cartes insights", "titres courts", "1 phrase"],
+            "cta_count": 1
+          }
+        ],
+        "visuals": ["topographic split", "copper flow lines", "dashboard panels", "map markers", "data chips"],
+        "total_cta_minimum": 2
+      },
+
+      "template_mobile_app_product_showcase": {
+        "id": "template_mobile_app_product_showcase",
+        "label": "Mobile App Product Showcase",
+        "family": "product",
+        "assigned_pages": ["application"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "product_hero",
+            "label": "Hero produit",
+            "type": "hero",
+            "layout": "centered_dark_with_device",
+            "background": "navy",
+            "content": ["headline app", "tagline", "CTA téléchargement", "mockup smartphone SVG"],
+            "cta_count": 2
+          },
+          {
+            "id": "phone_mockups",
+            "label": "Mockups téléphone",
+            "type": "device_showcase",
+            "layout": "three_phones_staggered",
+            "background": "ivory",
+            "content": ["3 écrans app SVG", "légendes fonctionnalités", "badges"],
+            "cta_count": 0
+          },
+          {
+            "id": "screen_features",
+            "label": "Fonctionnalités écran",
+            "type": "feature_grid",
+            "layout": "alternating_split",
+            "background": "ivory / ink alternating",
+            "content": ["4 features alternées texte/visuel", "icônes inline"],
+            "cta_count": 0
+          },
+          {
+            "id": "roadmap",
+            "label": "Roadmap",
+            "type": "timeline",
+            "layout": "horizontal_timeline",
+            "background": "navy",
+            "content": ["4 jalons", "dates", "statuts"],
+            "cta_count": 0
+          },
+          {
+            "id": "beta_cta",
+            "label": "CTA bêta",
+            "type": "cta_band",
+            "layout": "centered_copper_band",
+            "background": "copper",
+            "content": ["headline bêta", "formulaire email simple", "bouton"],
+            "cta_count": 1
+          }
+        ],
+        "visuals": ["smartphone devices", "map UI cards"],
+        "required_visuals": ["phone mockups"],
+        "total_cta_minimum": 3
+      },
+
+      "template_local_economy_network": {
+        "id": "template_local_economy_network",
+        "label": "Local Economy Network",
+        "family": "local_service",
+        "assigned_pages": ["ecosysteme"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "marketplace_hero",
+            "label": "Hero réseau",
+            "type": "hero",
+            "layout": "split_text_network_visual",
+            "background": "navy",
+            "content": ["headline économie locale", "sous-titre", "CTA rejoindre"],
+            "cta_count": 1
+          },
+          {
+            "id": "partner_cards",
+            "label": "Cartes partenaires",
+            "type": "card_grid",
+            "layout": "4col_merchant_cards",
+            "background": "ivory",
+            "content": ["4 catégories partenaires", "icône secteur", "titre", "1 phrase"],
+            "cta_count": 0
+          },
+          {
+            "id": "offer_rails",
+            "label": "Rails d'offres",
+            "type": "horizontal_rail",
+            "layout": "scrollable_offer_cards",
+            "background": "ivory",
+            "content": ["6 offres locales", "badge catégorie", "titre court"],
+            "cta_count": 0
+          },
+          {
+            "id": "value_proof",
+            "label": "Preuve de valeur",
+            "type": "proof_section",
+            "layout": "dark_metrics_panel",
+            "background": "ink",
+            "content": ["3 métriques impact", "témoignage court", "logo partenaire placeholder"],
+            "cta_count": 0
+          },
+          {
+            "id": "contact_cta",
+            "label": "CTA contact",
+            "type": "cta_band",
+            "layout": "centered_dark",
+            "background": "navy",
+            "content": ["headline partenariat", "bouton primaire", "bouton secondaire"],
+            "cta_count": 2
+          }
+        ],
+        "visuals": ["network graph", "merchant cards"],
+        "total_cta_minimum": 3
+      },
+
+      "template_flow_map_dashboard": {
+        "id": "template_flow_map_dashboard",
+        "label": "Flow Map Dashboard",
+        "family": "dashboard",
+        "assigned_pages": ["dashboard"],
+        "status": "reserve",
+        "sections": [
+          {
+            "id": "command_center_hero",
+            "label": "Hero centre de commande",
+            "type": "hero",
+            "layout": "full_dark_with_kpi_strip",
+            "background": "navy",
+            "content": ["headline opérateur", "4 KPI inline", "CTA démo"],
+            "cta_count": 1
+          },
+          {
+            "id": "kpi_grid",
+            "label": "Grille KPI",
+            "type": "metrics_grid",
+            "layout": "4col_kpi_cards",
+            "background": "ivory",
+            "content": ["4 KPI cards", "valeur", "tendance", "icône"],
+            "cta_count": 0
+          },
+          {
+            "id": "map_panel",
+            "label": "Panneau carte",
+            "type": "map_panel",
+            "layout": "full_width_map_dark",
+            "background": "ink",
+            "content": ["SVG map", "markers", "légende flux"],
+            "cta_count": 0
+          },
+          {
+            "id": "operator_insights_flow",
+            "label": "Insights flux",
+            "type": "feature_grid",
+            "layout": "3col_insight_cards",
+            "background": "ivory",
+            "content": ["3 insights opérateur", "données temps réel simulées"],
+            "cta_count": 1
+          },
+          {
+            "id": "demo_cta",
+            "label": "CTA démo",
+            "type": "cta_band",
+            "layout": "copper_band_centered",
+            "background": "copper",
+            "content": ["headline démo", "bouton primaire"],
+            "cta_count": 1
+          }
+        ],
+        "visuals": ["dashboard panels", "map markers", "data chips"],
+        "total_cta_minimum": 3
+      },
+
+      "template_engineering_control_room": {
+        "id": "template_engineering_control_room",
+        "label": "Engineering Control Room",
+        "family": "documentation",
+        "assigned_pages": ["ingenierie", "production"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "engineering_manifesto",
+            "label": "Manifeste ingénierie",
+            "type": "hero",
+            "layout": "dark_terminal_hero",
+            "background": "ink",
+            "content": ["headline technique", "sous-titre stack", "CTA documentation"],
+            "cta_count": 1
+          },
+          {
+            "id": "workflow_timeline",
+            "label": "Timeline workflow",
+            "type": "timeline",
+            "layout": "vertical_pipeline",
+            "background": "ivory",
+            "content": ["5 étapes pipeline", "statuts", "icônes"],
+            "cta_count": 0
+          },
+          {
+            "id": "system_cards",
+            "label": "Cartes système",
+            "type": "card_grid",
+            "layout": "3col_terminal_cards",
+            "background": "navy",
+            "content": ["3 composants système", "stack technique", "badge version"],
+            "cta_count": 0
+          },
+          {
+            "id": "automation_loop",
+            "label": "Boucle automation",
+            "type": "diagram_panel",
+            "layout": "flow_diagram_dark",
+            "background": "ink",
+            "content": ["diagramme SVG pipeline", "étapes automation", "légende"],
+            "cta_count": 0
+          },
+          {
+            "id": "technical_cta",
+            "label": "CTA technique",
+            "type": "cta_band",
+            "layout": "dark_centered",
+            "background": "navy",
+            "content": ["headline contribution", "bouton GitHub", "bouton contact"],
+            "cta_count": 2
+          }
+        ],
+        "visuals": ["pipeline diagram", "terminal cards"],
+        "total_cta_minimum": 3
+      },
+
+      "template_partner_conversion_page": {
+        "id": "template_partner_conversion_page",
+        "label": "Partner Conversion Page",
+        "family": "institutional",
+        "assigned_pages": ["contact"],
+        "status": "active",
+        "sections": [
+          {
+            "id": "contact_hero",
+            "label": "Hero contact",
+            "type": "hero",
+            "layout": "split_dark_form",
+            "background": "navy",
+            "content": ["headline partenariat", "sous-titre", "badge confiance"],
+            "cta_count": 0
+          },
+          {
+            "id": "audience_cards",
+            "label": "Cartes audience",
+            "type": "card_grid",
+            "layout": "3col_audience_cards",
+            "background": "ivory",
+            "content": ["3 profils partenaires", "icône", "titre", "1 phrase bénéfice"],
+            "cta_count": 0
+          },
+          {
+            "id": "form_panel",
+            "label": "Panneau formulaire",
+            "type": "form_panel",
+            "layout": "centered_premium_form",
+            "background": "ivory",
+            "content": ["formulaire contact premium", "champs nom/email/message/type", "bouton envoi"],
+            "cta_count": 1
+          },
+          {
+            "id": "footer_cta_contact",
+            "label": "CTA footer contact",
+            "type": "cta_band",
+            "layout": "copper_band",
+            "background": "copper",
+            "content": ["headline urgence douce", "bouton email direct"],
+            "cta_count": 1
+          }
+        ],
+        "visuals": ["premium contact card"],
+        "total_cta_minimum": 2
+      }
+    },
+
+    "page_template_map": {
+      "index":       "template_cinematic_territory_home",
+      "application": "template_mobile_app_product_showcase",
+      "assistant":   "template_mobile_app_product_showcase",
+      "dashboard":   "template_territorial_command_center",
+      "territoire":  "template_territorial_command_center",
+      "ecosysteme":  "template_local_economy_network",
+      "ingenierie":  "template_engineering_control_room",
+      "production":  "template_engineering_control_room",
+      "contact":     "template_partner_conversion_page"
+    },
+
+    "required_visuals_by_page": {
+      "index":       ["logo and cinematic hero"],
+      "application": ["phone mockups"],
+      "assistant":   ["phone mockups"],
+      "dashboard":   ["dashboard panel"],
+      "territoire":  ["topographic split"],
+      "ecosysteme":  ["network graph"],
+      "ingenierie":  ["pipeline diagram"],
+      "production":  ["pipeline diagram"],
+      "contact":     ["premium contact card"]
+    }
+  },
+
+  "pages_report": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v445-mini-real-v1/index.html",
+      "template_id": "template_cinematic_territory_home",
+      "template_label": "Cinematic Territory Home",
+      "status": "assigned",
+      "component_order": [
+        "cinematic_hero",
+        "territory_signal_panel",
+        "bento_promise",
+        "flow_map",
+        "partner_cta"
+      ],
+      "cta_minimum": 4,
+      "required_visuals": ["logo and cinematic hero"],
+      "shell_classes_required": [
+        "pf-header", "pf-logo", "pf-logo__symbol", "pf-logo__wordmark",
+        "pf-nav", "pf-header__cta", "pf-button", "pf-footer", "pf-footer__grid"
+      ],
+      "premium_renderer_applied": true,
+      "writer_agent_enriched": true,
+      "v4_4_5_shell_applied": true
+    }
+  ],
+
+  "cta_strategy_report": {
+    "global_primary":   { "label": "Devenir partenaire",  "href": "contact.html" },
+    "global_secondary": { "label": "Explorer PortoFlow",  "href": "application.html" },
+    "header_primary":   { "label": "Devenir partenaire",  "href": "contact.html" },
+    "header_secondary": { "label": "Voir l'application",  "href": "application.html" },
+    "footer_final":     { "label": "Créer un partenariat","href": "contact.html" },
+    "hero_primary":     { "label": "Devenir partenaire",  "href": "contact.html" },
+    "hero_secondary":   { "label": "Explorer PortoFlow",  "href": "application.html" },
+    "minimum_cta_per_page": 2,
+    "button_classes": {
+      "primary":   "pf-button pf-button--primary",
+      "secondary": "pf-button pf-button--secondary",
+      "ghost":     "pf-button pf-button--ghost"
+    }
+  },
+
+  "content_policy_report": {
+    "preserve_meaning": true,
+    "rewrite_for_clarity": true,
+    "anti_linear_text": true,
+    "max_sections_per_page": 5,
+    "max_consecutive_paragraphs": 1,
+    "max_sentences_per_paragraph": 2,
+    "max_sentences_per_card": 2,
+    "max_cards_per_grid": 6,
+    "max_metrics": 4,
+    "prefer_cards_over_paragraphs": true,
+    "prefer_rails_over_long_sections": true
+  },
+
+  "premium_renderer_report": {
+    "version": "4.4.5-fallback",
+    "block_on_premium_ux": true,
+    "html_requirements_validated": [
+      "pf-header with logo and CTA",
+      "pf-footer with columns",
+      "pf-button classes",
+      "page-specific premium template",
+      "at least two contextual CTAs on HTML pages"
+    ],
+    "css_requirements_validated": [
+      "full premium shell CSS",
+      "spacing tokens",
+      "button states",
+      "responsive header/footer",
+      "not blog-like"
+    ],
+    "js_requirements_validated": [
+      "mobile nav toggle",
+      "active navigation enhancement",
+      "current year"
+    ]
+  },
+
+  "navigation_contract_report": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "logo_required": true,
+      "header_cta_required": true,
+      "footer_columns_required": true,
+      "button_system_required": true,
+      "spacing_system_required": true,
+      "no_blog_like_shell": true
+    },
+    "primary_navigation": [
+      { "label": "Accueil",      "href": "index.html",       "page_id": "index" },
+      { "label": "Application",  "href": "application.html", "page_id": "application" },
+      { "label": "Assistant",    "href": "assistant.html",   "page_id": "assistant" },
+      { "label": "Dashboard",    "href": "dashboard.html",   "page_id": "dashboard" },
+      { "label": "Territoire",   "href": "territoire.html",  "page_id": "territoire" },
+      { "label": "Écosystème",   "href": "ecosysteme.html",  "page_id": "ecosysteme" },
+      { "label": "Contact",      "href": "contact.html",     "page_id": "contact" }
+    ]
+  },
+
+  "repository_report": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "portoflow-v445-mini-real-v1",
+    "checkpoint_path": "portoflow-v445-mini-real-v1/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com",
+    "publish_target": "GitHub Pages",
+    "index_file": "portoflow-v445-mini-real-v1/index.html"
+  },
+
+  "creative_workflow_report": {
+    "version": "4.4.5",
+    "applied": true,
+    "mode": "controlled_creative",
+    "roles": {
+      "openai":     ["site_architect", "ux_ui_design_director", "deep_editorial_writer"],
+      "gemini":     ["site_plan_validator", "file_quality_qa"],
+      "anthropic":  ["file_builder", "repair_builder"]
+    },
+    "premium_ux_shell_applied": true,
+    "brand_system_applied": true,
+    "premium_renderer_applied": true,
+    "orchestrator_version": "4.4.5-brand-system-premium-ux-shell"
+  },
+
+  "qa_checklist": {
+    "logo_svg_inline": true,
+    "logo_has_compass_ring": true,
+    "logo_has_flow_lines": true,
+    "logo_has_pf_monogram": true,
+    "logo_has_aria_label": true,
+    "header_sticky_glass": true,
+    "header_has_cta_button": true,
+    "nav_has_active_state": true,
+    "footer_has_columns": true,
+    "footer_has_brand_column": true,
+    "footer_has_final_cta": true,
+    "buttons_not_text_links": true,
+    "spacing_tokens_defined": true,
+    "color_tokens_defined": true,
+    "hero_cinematic": true,
+    "sections_non_linear": true,
+    "no_blog_layout": true,
+    "mobile_nav_toggle": true,
+    "current_year_js": true,
+    "active_nav_js": true,
+    "min_two_cta_per_page": true,
+    "no_external_dependencies": true,
+    "no_dead_links": true,
+    "responsive": true
+  },
+
+  "file_instruction": "Rapport de templates V4.4.5 — référence canonique pour la génération de tous les fichiers HTML/CSS/JS du projet portoflow-v445-mini-real-v1.",
+  "compiler": "Claude — ID2App V4.4.5 Brand System + Premium UX Shell",
+  "compile_status": "SUCCESS"
+}
