@@ -1,0 +1,901 @@
+{
+  "error": "invalid syntax",
+  "schema_version": "4.4",
+  "project": {
+    "id": "portoflow-v446-premium-v1",
+    "name": "PortoFlow",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "territorial_technology",
+    "subsector": "smart_city_local_ai",
+    "audience": [
+      "habitants de Porto-Vecchio",
+      "visiteurs",
+      "professionnels locaux",
+      "restaurants",
+      "hôtels",
+      "paillotes",
+      "commerces",
+      "activités",
+      "services",
+      "collectivités",
+      "partenaires institutionnels",
+      "acteurs économiques territoriaux",
+      "investisseurs",
+      "équipes produit et technique"
+    ],
+    "objective": "Présenter PortoFlow comme plateforme territoriale intelligente, future application mobile, outil de pilotage local et démonstrateur d'ingénierie logicielle augmentée par IA.",
+    "tone": "premium, institutionnel, territorial, local, stratégique, clair, moderne",
+    "business_model": "publicité contextuelle, mises en avant premium, partenariats locaux, offres promotionnelles dynamiques, services territoriaux à valeur ajoutée"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "portoflow-v446-premium-v1",
+    "checkpoint_path": "portoflow-v446-premium-v1/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "design_contract": {
+    "source": "v4_4_6_contract_first_premium_renderer_portoflow_9_pages",
+    "extraction_enabled": true,
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "fonts": {
+      "body": "",
+      "headings": ""
+    },
+    "colors": {
+      "intelligence": "cyan discret",
+      "primary": "bleu marine profond",
+      "accent": "orange cuivre",
+      "background": "ivoire cartographique",
+      "secondary": "ardoise"
+    },
+    "spacing_scale": {
+      "density": "aeree premium",
+      "section_padding_desktop": "96px",
+      "section_padding_mobile": "56px",
+      "container_max_width": "1180px"
+    },
+    "radius_scale": {},
+    "shadow_scale": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "canonical_components": [],
+    "forbidden_components": [
+      "blog_like_layout",
+      "plain_text_menu",
+      "unstructured_footer",
+      "link_only_cta",
+      "generic_card_stack",
+      "left_column_only",
+      "unstyled_classes",
+      "html_css_class_mismatch",
+      "footer_right_drift"
+    ],
+    "fragments": {}
+  },
+  "template_system": {
+    "family": "auto",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": []
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v446-premium-v1/index.html",
+      "template_id": "template_territorial_home_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "territoire",
+      "title": "Territoire",
+      "file_path": "portoflow-v446-premium-v1/territoire.html",
+      "template_id": "template_seasonality_split_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "assistant",
+      "title": "Assistant",
+      "file_path": "portoflow-v446-premium-v1/assistant.html",
+      "template_id": "template_ai_assistant_showcase_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "application",
+      "title": "Application",
+      "file_path": "portoflow-v446-premium-v1/application.html",
+      "template_id": "template_mobile_app_showcase_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {
+        "device_mockup": {
+          "title": "L’application PortoFlow",
+          "screens": [
+            {
+              "title": "Carte intelligente",
+              "text": "Lire les flux, les accès et les points d’intérêt en temps réel.",
+              "type": "Carte"
+            },
+            {
+              "title": "Stationnement",
+              "text": "Repérer les zones saturées et les alternatives disponibles.",
+              "type": "Parking"
+            },
+            {
+              "title": "Recommandations",
+              "text": "Recevoir des propositions locales selon le contexte.",
+              "type": "IA"
+            }
+          ]
+        }
+      },
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "ecosysteme",
+      "title": "Économie locale",
+      "file_path": "portoflow-v446-premium-v1/ecosysteme.html",
+      "template_id": "template_local_economy_marketplace_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "dashboard",
+      "title": "Dashboard",
+      "file_path": "portoflow-v446-premium-v1/dashboard.html",
+      "template_id": "template_territorial_dashboard_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "ingenierie",
+      "title": "Ingénierie IA",
+      "file_path": "portoflow-v446-premium-v1/ingenierie.html",
+      "template_id": "template_engineering_manifesto_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "production",
+      "title": "Production continue",
+      "file_path": "portoflow-v446-premium-v1/production.html",
+      "template_id": "template_continuous_production_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {
+        "device_mockup": {
+          "title": "L’application PortoFlow",
+          "screens": [
+            {
+              "title": "Carte intelligente",
+              "text": "Lire les flux, les accès et les points d’intérêt en temps réel.",
+              "type": "Carte"
+            },
+            {
+              "title": "Stationnement",
+              "text": "Repérer les zones saturées et les alternatives disponibles.",
+              "type": "Parking"
+            },
+            {
+              "title": "Recommandations",
+              "text": "Recevoir des propositions locales selon le contexte.",
+              "type": "IA"
+            }
+          ]
+        }
+      },
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "portoflow-v446-premium-v1/contact.html",
+      "template_id": "template_partner_contact_contract_first",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {},
+      "editorial_word_target": null,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": "index"
+    },
+    {
+      "label": "Territoire",
+      "href": "territoire.html",
+      "page_id": "territoire"
+    },
+    {
+      "label": "Assistant",
+      "href": "assistant.html",
+      "page_id": "assistant"
+    },
+    {
+      "label": "Application",
+      "href": "application.html",
+      "page_id": "application"
+    },
+    {
+      "label": "Économie locale",
+      "href": "ecosysteme.html",
+      "page_id": "ecosysteme"
+    },
+    {
+      "label": "Dashboard",
+      "href": "dashboard.html",
+      "page_id": "dashboard"
+    },
+    {
+      "label": "Ingénierie IA",
+      "href": "ingenierie.html",
+      "page_id": "ingenierie"
+    },
+    {
+      "label": "Production continue",
+      "href": "production.html",
+      "page_id": "production"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "page_id": "contact"
+    }
+  ],
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "primary": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Territoire",
+        "href": "territoire.html",
+        "page_id": "territoire"
+      },
+      {
+        "label": "Assistant",
+        "href": "assistant.html",
+        "page_id": "assistant"
+      },
+      {
+        "label": "Application",
+        "href": "application.html",
+        "page_id": "application"
+      },
+      {
+        "label": "Économie locale",
+        "href": "ecosysteme.html",
+        "page_id": "ecosysteme"
+      },
+      {
+        "label": "Dashboard",
+        "href": "dashboard.html",
+        "page_id": "dashboard"
+      },
+      {
+        "label": "Ingénierie IA",
+        "href": "ingenierie.html",
+        "page_id": "ingenierie"
+      },
+      {
+        "label": "Production continue",
+        "href": "production.html",
+        "page_id": "production"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ]
+  },
+  "site_architecture": {
+    "primary_navigation": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Territoire",
+        "href": "territoire.html",
+        "page_id": "territoire"
+      },
+      {
+        "label": "Assistant",
+        "href": "assistant.html",
+        "page_id": "assistant"
+      },
+      {
+        "label": "Application",
+        "href": "application.html",
+        "page_id": "application"
+      },
+      {
+        "label": "Économie locale",
+        "href": "ecosysteme.html",
+        "page_id": "ecosysteme"
+      },
+      {
+        "label": "Dashboard",
+        "href": "dashboard.html",
+        "page_id": "dashboard"
+      },
+      {
+        "label": "Ingénierie IA",
+        "href": "ingenierie.html",
+        "page_id": "ingenierie"
+      },
+      {
+        "label": "Production continue",
+        "href": "production.html",
+        "page_id": "production"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ],
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "design_direction": {},
+  "image_registry": {},
+  "template_registry_v4_4_4": {},
+  "creative_workflow": {
+    "version": "4.4.4",
+    "applied": true,
+    "mode": "controlled_creative",
+    "openai_roles": [
+      "site_architect",
+      "ux_ui_design_director",
+      "deep_editorial_writer"
+    ],
+    "gemini_roles": [
+      "site_plan_validator",
+      "file_quality_qa"
+    ],
+    "anthropic_roles": [
+      "file_builder",
+      "repair_builder"
+    ]
+  },
+  "site_plan_qa": {
+    "error": "invalid syntax"
+  },
+  "class_contract": {
+    "version": "4.4.6",
+    "namespace": "pf",
+    "mode": "contract_first_premium_renderer",
+    "groups": {
+      "shell": [
+        "pf-page",
+        "pf-container",
+        "pf-main"
+      ],
+      "logo": [
+        "pf-logo",
+        "pf-logo__symbol",
+        "pf-logo__mark",
+        "pf-logo__wordmark",
+        "pf-logo__tagline"
+      ],
+      "header": [
+        "pf-header",
+        "pf-header__inner",
+        "pf-nav",
+        "pf-nav__link",
+        "pf-nav__link--active",
+        "pf-header__cta",
+        "pf-nav-toggle",
+        "pf-nav-toggle__bar",
+        "pf-mobile-open"
+      ],
+      "buttons": [
+        "pf-btn",
+        "pf-btn--primary",
+        "pf-btn--secondary",
+        "pf-btn--ghost"
+      ],
+      "hero": [
+        "pf-section",
+        "pf-section--hero",
+        "pf-section--alt",
+        "pf-section--dark",
+        "pf-section--compact",
+        "pf-hero",
+        "pf-hero__grid",
+        "pf-hero__content",
+        "pf-hero__title",
+        "pf-hero__lead",
+        "pf-hero__actions",
+        "pf-hero__visual",
+        "pf-hero__metrics"
+      ],
+      "visual": [
+        "pf-visual-card",
+        "pf-visual-card__top",
+        "pf-visual-card__map",
+        "pf-visual-card__pulse",
+        "pf-device",
+        "pf-device__notch",
+        "pf-device__screen",
+        "pf-device__map"
+      ],
+      "editorial": [
+        "pf-eyebrow",
+        "pf-section__heading",
+        "pf-section__title",
+        "pf-section__lead",
+        "pf-tag-row",
+        "pf-tag",
+        "pf-list",
+        "pf-list__item"
+      ],
+      "cards": [
+        "pf-card-grid",
+        "pf-card",
+        "pf-card--accent",
+        "pf-card__index",
+        "pf-card__title",
+        "pf-card__text",
+        "pf-bento-grid",
+        "pf-bento",
+        "pf-bento--wide",
+        "pf-panel",
+        "pf-panel__content",
+        "pf-panel__visual"
+      ],
+      "metrics": [
+        "pf-metrics",
+        "pf-metric",
+        "pf-metric__value",
+        "pf-metric__label",
+        "pf-dashboard",
+        "pf-dashboard__grid",
+        "pf-dashboard__card",
+        "pf-dashboard__value"
+      ],
+      "cta": [
+        "pf-cta-band",
+        "pf-cta-band__content",
+        "pf-cta-band__actions"
+      ],
+      "footer": [
+        "pf-footer",
+        "pf-footer__grid",
+        "pf-footer__brand",
+        "pf-footer__col",
+        "pf-footer__bottom"
+      ]
+    },
+    "required_classes": [
+      "pf-page",
+      "pf-container",
+      "pf-main",
+      "pf-logo",
+      "pf-logo__symbol",
+      "pf-logo__mark",
+      "pf-logo__wordmark",
+      "pf-logo__tagline",
+      "pf-header",
+      "pf-header__inner",
+      "pf-nav",
+      "pf-nav__link",
+      "pf-nav__link--active",
+      "pf-header__cta",
+      "pf-nav-toggle",
+      "pf-nav-toggle__bar",
+      "pf-mobile-open",
+      "pf-btn",
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost",
+      "pf-section",
+      "pf-section--hero",
+      "pf-section--alt",
+      "pf-section--dark",
+      "pf-section--compact",
+      "pf-hero",
+      "pf-hero__grid",
+      "pf-hero__content",
+      "pf-hero__title",
+      "pf-hero__lead",
+      "pf-hero__actions",
+      "pf-hero__visual",
+      "pf-hero__metrics",
+      "pf-visual-card",
+      "pf-visual-card__top",
+      "pf-visual-card__map",
+      "pf-visual-card__pulse",
+      "pf-device",
+      "pf-device__notch",
+      "pf-device__screen",
+      "pf-device__map",
+      "pf-eyebrow",
+      "pf-section__heading",
+      "pf-section__title",
+      "pf-section__lead",
+      "pf-tag-row",
+      "pf-tag",
+      "pf-list",
+      "pf-list__item",
+      "pf-card-grid",
+      "pf-card",
+      "pf-card--accent",
+      "pf-card__index",
+      "pf-card__title",
+      "pf-card__text",
+      "pf-bento-grid",
+      "pf-bento",
+      "pf-bento--wide",
+      "pf-panel",
+      "pf-panel__content",
+      "pf-panel__visual",
+      "pf-metrics",
+      "pf-metric",
+      "pf-metric__value",
+      "pf-metric__label",
+      "pf-dashboard",
+      "pf-dashboard__grid",
+      "pf-dashboard__card",
+      "pf-dashboard__value",
+      "pf-cta-band",
+      "pf-cta-band__content",
+      "pf-cta-band__actions",
+      "pf-footer",
+      "pf-footer__grid",
+      "pf-footer__brand",
+      "pf-footer__col",
+      "pf-footer__bottom"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-pf-nav-toggle",
+      "data-pf-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_blog_like_layout": true,
+      "max_consecutive_paragraphs": 1,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.6",
+    "brand_name": "PortoFlow",
+    "logo": {
+      "type": "inline_svg_symbol_plus_wordmark",
+      "concept": "territorial compass with intelligent flows",
+      "tagline": "Territoire intelligent"
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Territoire",
+          "href": "territoire.html",
+          "page_id": "territoire"
+        },
+        {
+          "label": "Assistant",
+          "href": "assistant.html",
+          "page_id": "assistant"
+        },
+        {
+          "label": "Application",
+          "href": "application.html",
+          "page_id": "application"
+        },
+        {
+          "label": "Économie locale",
+          "href": "ecosysteme.html",
+          "page_id": "ecosysteme"
+        },
+        {
+          "label": "Dashboard",
+          "href": "dashboard.html",
+          "page_id": "dashboard"
+        },
+        {
+          "label": "Ingénierie IA",
+          "href": "ingenierie.html",
+          "page_id": "ingenierie"
+        },
+        {
+          "label": "Production continue",
+          "href": "production.html",
+          "page_id": "production"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ],
+      "cta": {
+        "label": "Devenir partenaire",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-pf-nav-toggle",
+        "panel_hook": "data-pf-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Plateforme",
+          "links": [
+            {
+              "label": "Accueil",
+              "href": "index.html",
+              "page_id": "index"
+            },
+            {
+              "label": "Territoire",
+              "href": "territoire.html",
+              "page_id": "territoire"
+            },
+            {
+              "label": "Assistant",
+              "href": "assistant.html",
+              "page_id": "assistant"
+            },
+            {
+              "label": "Application",
+              "href": "application.html",
+              "page_id": "application"
+            }
+          ]
+        },
+        {
+          "title": "Territoire",
+          "links": [
+            {
+              "label": "Territoire",
+              "href": "territoire.html",
+              "page_id": "territoire"
+            },
+            {
+              "label": "Assistant",
+              "href": "assistant.html",
+              "page_id": "assistant"
+            },
+            {
+              "label": "Application",
+              "href": "application.html",
+              "page_id": "application"
+            },
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html",
+              "page_id": "ecosysteme"
+            }
+          ]
+        },
+        {
+          "title": "Partenaires",
+          "links": [
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html"
+            },
+            {
+              "label": "Dashboard",
+              "href": "dashboard.html"
+            },
+            {
+              "label": "Contact",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "title": "Projet",
+          "links": [
+            {
+              "label": "Ingénierie IA",
+              "href": "ingenierie.html"
+            },
+            {
+              "label": "Production",
+              "href": "production.html"
+            },
+            {
+              "label": "Documentation",
+              "href": "README.md"
+            }
+          ]
+        }
+      ],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "96px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost"
+    ]
+  },
+  "contract_first_renderer": {
+    "version": "4.4.6",
+    "enabled": true,
+    "deterministic_shell": true,
+    "deterministic_css": true,
+    "deterministic_js": true,
+    "class_contract_required": true
+  },
+  "template_registry_v4_4_6": {
+    "mode": "premium_contract_templates",
+    "templates": {
+      "template_territorial_home": [
+        "hero",
+        "metrics",
+        "bento",
+        "device",
+        "cta"
+      ],
+      "template_seasonality_split": [
+        "hero",
+        "cards",
+        "panel",
+        "metrics",
+        "cta"
+      ],
+      "template_mobile_app_showcase": [
+        "hero",
+        "device",
+        "cards",
+        "dashboard",
+        "cta"
+      ],
+      "template_territorial_dashboard": [
+        "hero",
+        "dashboard",
+        "metrics",
+        "cards",
+        "cta"
+      ],
+      "template_partner_contact": [
+        "hero",
+        "cards",
+        "contact",
+        "cta"
+      ]
+    }
+  },
+  "compiler": "contract_first_premium_renderer_v4_4_6"
+}
