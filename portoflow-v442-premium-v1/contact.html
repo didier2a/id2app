@@ -4,134 +4,287 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — PortoFlow</title>
-  <meta name="description" content="Contactez l'équipe PortoFlow pour un partenariat territorial, une démonstration ou une intégration locale.">
+  <meta name="description" content="Contactez PortoFlow pour devenir partenaire territorial, intégrer la plateforme intelligente ou explorer les opportunités de collaboration locale et institutionnelle.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">PO</span><span class="brand-name">PortoFlow</span></a>
-    <nav class="site-nav">
-      <a class="nav-link" href="index.html">Accueil</a>
-      <a class="nav-link" href="territoire.html">Territoire</a>
-      <a class="nav-link" href="assistant.html">Assistant territorial</a>
-      <a class="nav-link" href="application.html">Application</a>
-      <a class="nav-link" href="ecosysteme.html">Économie locale</a>
-      <a class="nav-link" href="dashboard.html">Tableau de bord</a>
-      <a class="nav-link" href="ingenierie.html">Ingénierie IA</a>
-      <a class="nav-link" href="production.html">Production continue</a>
-      <a class="nav-link active" href="contact.html">Contact</a>
+
+<header class="pf-header">
+  <div class="pf-shell pf-header__inner">
+    <a class="pf-logo" href="index.html" aria-label="PortoFlow — accueil">
+      <span class="pf-logo__symbol">
+        <svg class="pf-logo__svg" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 7l5 17-5 17-5-17 5-17Z" fill="currentColor" opacity=".9"/>
+          <path d="M10 30c8-9 19-10 28-3" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+        </svg>
+      </span>
+      <span class="pf-logo__wordmark">PortoFlow</span>
+    </a>
+    <button class="pf-nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">Menu</button>
+    <nav class="pf-nav" aria-label="Navigation principale">
+      <a class="pf-nav__link" href="index.html">Accueil</a>
+      <a class="pf-nav__link" href="territoire.html">Territoire</a>
+      <a class="pf-nav__link" href="assistant.html">Assistant territorial</a>
+      <a class="pf-nav__link" href="application.html">Application</a>
+      <a class="pf-nav__link" href="ecosysteme.html">Économie locale</a>
+      <a class="pf-nav__link" href="dashboard.html">Tableau de bord</a>
+      <a class="pf-nav__link" href="ingenierie.html">Ingénierie IA</a>
+      <a class="pf-nav__link" href="production.html">Production continue</a>
+      <a class="pf-nav__link is-active" href="contact.html" aria-current="page">Contact</a>
     </nav>
+    <a class="pf-button pf-button--primary pf-header__cta" href="contact.html">Devenir partenaire</a>
   </div>
 </header>
+
 <main id="main-content">
 
-<section class="section hero">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <p class="eyebrow">Contact</p>
-      <h1>Engager le dialogue territorial</h1>
-      <p class="hero-lead">Partenariat institutionnel, démonstration technique ou intégration locale — l'équipe PortoFlow répond à chaque demande avec précision.</p>
-    </div>
-    <div class="hero-panel">
-      <div class="hero-card">
-        <span class="card-index">01</span>
-        <strong>Réponse sous 48 h</strong>
-        <p>Toute demande qualifiée reçoit une réponse personnalisée dans les deux jours ouvrés.</p>
+  <!-- HERO CONTACT -->
+  <section class="pf-hero pf-section">
+    <div class="pf-shell pf-hero__grid">
+      <div class="pf-hero__content">
+        <p class="pf-eyebrow">Contact &amp; Partenariats</p>
+        <h1>Construisons ensemble le territoire intelligent</h1>
+        <p class="pf-hero__lead">PortoFlow est une plateforme territoriale ouverte aux collectivités, acteurs économiques locaux, institutions et partenaires technologiques. Chaque collaboration renforce l'intelligence collective du territoire.</p>
+        <div class="pf-actions">
+          <a class="pf-button pf-button--primary" href="#contact-form">Envoyer un message</a>
+          <a class="pf-button pf-button--ghost" href="application.html">Voir l'application</a>
+        </div>
+      </div>
+      <div class="pf-visual-panel">
+        <div class="pf-map-orbit"></div>
+        <strong>Partenariat · Territoire · IA</strong>
+        <p>Une plateforme conçue pour fédérer les acteurs d'un territoire vivant, saisonnier et stratégique.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section contact-panel">
-  <div class="container contact-grid">
-    <div class="contact-info">
-      <p class="eyebrow">Nous joindre</p>
-      <h2>Canaux de contact</h2>
-      <div class="card-grid">
-        <div class="card">
-          <span class="card-icon">✉</span>
-          <strong>Email général</strong>
-          <p>contact@portoflow.fr</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">🏛</span>
-          <strong>Partenariats institutionnels</strong>
-          <p>partenaires@portoflow.fr</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">⚙</span>
-          <strong>Intégration technique</strong>
-          <p>tech@portoflow.fr</p>
-        </div>
-        <div class="card">
-          <span class="card-icon">📍</span>
-          <strong>Siège opérationnel</strong>
-          <p>Territoire pilote — France métropolitaine</p>
-        </div>
+  <!-- SECTION POURQUOI NOUS CONTACTER -->
+  <section class="pf-section">
+    <div class="pf-shell pf-editorial-grid">
+      <div>
+        <p class="pf-eyebrow">Pourquoi nous contacter</p>
+        <h2>Quatre raisons d'engager une conversation avec PortoFlow</h2>
+      </div>
+      <div class="pf-copy-stack">
+        <p>Que vous soyez une collectivité territoriale cherchant à moderniser ses outils de pilotage, un commerçant local souhaitant gagner en visibilité, un partenaire technologique ou un investisseur institutionnel, PortoFlow dispose d'un cadre de collaboration adapté à votre profil.</p>
+        <p>Notre équipe répond à toute demande de démonstration, de partenariat éditorial, d'intégration de données territoriales ou de co-développement de fonctionnalités spécifiques à votre territoire.</p>
       </div>
     </div>
-    <div class="contact-form-wrap">
-      <p class="eyebrow">Formulaire</p>
-      <h2>Envoyer un message</h2>
-      <form class="contact-form" action="#" method="post" novalidate>
-        <div class="form-row">
-          <label for="cf-nom">Nom</label>
-          <input id="cf-nom" type="text" name="nom" placeholder="Votre nom" required>
+  </section>
+
+  <!-- SECTION TYPES DE PARTENARIATS -->
+  <section class="pf-section pf-section--muted">
+    <div class="pf-shell">
+      <div class="pf-section-header">
+        <p class="pf-eyebrow">Modes de collaboration</p>
+        <h2>Des partenariats structurés pour chaque profil</h2>
+      </div>
+      <div class="pf-card-grid">
+        <article class="pf-card">
+          <span class="pf-card__index">01</span>
+          <h3>Collectivités &amp; institutions</h3>
+          <p>Intégrez PortoFlow comme outil de pilotage territorial, de communication citoyenne et de valorisation des données locales. Accès prioritaire aux modules dashboard et assistant IA.</p>
+        </article>
+        <article class="pf-card">
+          <span class="pf-card__index">02</span>
+          <h3>Acteurs économiques locaux</h3>
+          <p>Bénéficiez d'une mise en avant premium dans l'application, d'une intégration dans les flux de recommandation et d'une visibilité accrue auprès des habitants et visiteurs.</p>
+        </article>
+        <article class="pf-card">
+          <span class="pf-card__index">03</span>
+          <h3>Partenaires technologiques</h3>
+          <p>Co-développez des modules spécialisés, intégrez vos API dans l'écosystème PortoFlow et participez à la construction d'une infrastructure territoriale intelligente et ouverte.</p>
+        </article>
+        <article class="pf-card">
+          <span class="pf-card__index">04</span>
+          <h3>Médias &amp; éditeurs locaux</h3>
+          <p>Distribuez vos contenus dans le fil éditorial territorial de PortoFlow, touchez une audience qualifiée et bénéficiez d'une intégration native dans l'expérience utilisateur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FORMULAIRE DE CONTACT -->
+  <section class="pf-section" id="contact-form">
+    <div class="pf-shell pf-contact-layout">
+      <div class="pf-contact-intro">
+        <p class="pf-eyebrow">Formulaire de contact</p>
+        <h2>Démarrez une conversation</h2>
+        <p>Décrivez votre projet, votre territoire et vos attentes. Notre équipe vous répond sous 48 heures ouvrées avec une proposition adaptée à votre contexte.</p>
+        <ul class="pf-contact-signals">
+          <li><span class="pf-signal-dot pf-signal-dot--green"></span>Réponse sous 48h ouvrées</li>
+          <li><span class="pf-signal-dot pf-signal-dot--copper"></span>Démonstration disponible sur demande</li>
+          <li><span class="pf-signal-dot pf-signal-dot--cyan"></span>Accompagnement personnalisé</li>
+        </ul>
+      </div>
+      <form class="pf-form" action="#" method="post" novalidate>
+        <div class="pf-form__row pf-form__row--split">
+          <div class="pf-form__field">
+            <label class="pf-form__label" for="contact-prenom">Prénom</label>
+            <input class="pf-form__input" type="text" id="contact-prenom" name="prenom" placeholder="Votre prénom" autocomplete="given-name" required>
+          </div>
+          <div class="pf-form__field">
+            <label class="pf-form__label" for="contact-nom">Nom</label>
+            <input class="pf-form__input" type="text" id="contact-nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+          </div>
         </div>
-        <div class="form-row">
-          <label for="cf-email">Email</label>
-          <input id="cf-email" type="email" name="email" placeholder="votre@email.fr" required>
+        <div class="pf-form__field">
+          <label class="pf-form__label" for="contact-email">Adresse e-mail</label>
+          <input class="pf-form__input" type="email" id="contact-email" name="email" placeholder="votre@email.fr" autocomplete="email" required>
         </div>
-        <div class="form-row">
-          <label for="cf-objet">Objet</label>
-          <select id="cf-objet" name="objet">
-            <option value="">Sélectionner un objet</option>
-            <option value="partenariat">Partenariat territorial</option>
-            <option value="demo">Demande de démonstration</option>
-            <option value="integration">Intégration technique</option>
-            <option value="presse">Presse &amp; communication</option>
+        <div class="pf-form__field">
+          <label class="pf-form__label" for="contact-organisation">Organisation ou territoire</label>
+          <input class="pf-form__input" type="text" id="contact-organisation" name="organisation" placeholder="Mairie, entreprise, association…" autocomplete="organization">
+        </div>
+        <div class="pf-form__field">
+          <label class="pf-form__label" for="contact-profil">Votre profil</label>
+          <select class="pf-form__select" id="contact-profil" name="profil">
+            <option value="">Sélectionnez votre profil</option>
+            <option value="collectivite">Collectivité / Institution</option>
+            <option value="economique">Acteur économique local</option>
+            <option value="technologique">Partenaire technologique</option>
+            <option value="media">Média / Éditeur local</option>
             <option value="autre">Autre</option>
           </select>
         </div>
-        <div class="form-row">
-          <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
+        <div class="pf-form__field">
+          <label class="pf-form__label" for="contact-message">Votre message</label>
+          <textarea class="pf-form__textarea" id="contact-message" name="message" rows="5" placeholder="Décrivez votre projet, vos besoins ou vos questions…" required></textarea>
         </div>
-        <button class="btn-primary" type="submit">Envoyer le message</button>
+        <div class="pf-form__actions">
+          <button class="pf-button pf-button--primary" type="submit">Envoyer le message</button>
+          <p class="pf-form__mention">Vos données sont traitées de manière confidentielle et ne sont jamais revendues.</p>
+        </div>
       </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section cta-band-section">
-  <div class="container cta-band">
-    <div>
-      <p class="eyebrow">Plateforme territoriale</p>
-      <h2>Découvrir PortoFlow en action</h2>
-      <p>Explorez les modules de pilotage, l'assistant IA et les données de flux en temps réel.</p>
+  <!-- SECTION PLACEHOLDER IMAGE TERRITOIRE -->
+  <section class="pf-section pf-section--muted">
+    <div class="pf-shell pf-image-editorial">
+      <div class="pf-image-placeholder pf-image-placeholder--wide" aria-label="Carte territoriale PortoFlow — visuel illustratif">
+        <span class="pf-image-placeholder__label">Carte du territoire · Flux &amp; Connexions</span>
+      </div>
+      <div class="pf-image-caption">
+        <p class="pf-eyebrow">Territoire connecté</p>
+        <h2>Une plateforme ancrée dans la réalité locale</h2>
+        <p>PortoFlow cartographie les flux, les acteurs et les services d'un territoire pour en faire un outil de pilotage vivant, accessible à tous les décideurs locaux.</p>
+        <a class="pf-button pf-button--secondary" href="territoire.html">Explorer le territoire</a>
+      </div>
     </div>
-    <div class="cta-actions">
-      <a class="btn-primary" href="dashboard.html">Tableau de bord</a>
-      <a class="btn-secondary" href="assistant.html">Assistant territorial</a>
+  </section>
+
+  <!-- SECTION SIGNAUX DE CONFIANCE -->
+  <section class="pf-section">
+    <div class="pf-shell">
+      <div class="pf-section-header">
+        <p class="pf-eyebrow">Engagements</p>
+        <h2>Ce que vous pouvez attendre de PortoFlow</h2>
+      </div>
+      <div class="pf-metrics-rail">
+        <div class="pf-metric">
+          <span class="pf-metric__value">48h</span>
+          <span class="pf-metric__label">Délai de réponse garanti</span>
+        </div>
+        <div class="pf-metric">
+          <span class="pf-metric__value">100%</span>
+          <span class="pf-metric__label">Données traitées en confidentialité</span>
+        </div>
+        <div class="pf-metric">
+          <span class="pf-metric__value">Local</span>
+          <span class="pf-metric__label">Ancrage territorial prioritaire</span>
+        </div>
+        <div class="pf-metric">
+          <span class="pf-metric__value">Sur mesure</span>
+          <span class="pf-metric__label">Proposition adaptée à chaque profil</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- SECTION FAQ CONTACT -->
+  <section class="pf-section pf-section--muted">
+    <div class="pf-shell pf-faq-layout">
+      <div>
+        <p class="pf-eyebrow">Questions fréquentes</p>
+        <h2>Tout ce que vous devez savoir avant de nous écrire</h2>
+      </div>
+      <div class="pf-faq-list">
+        <div class="pf-faq-item">
+          <h3>PortoFlow est-il disponible sur mon territoire ?</h3>
+          <p>PortoFlow est conçu pour s'adapter à tout territoire, qu'il soit urbain, périurbain ou rural. Contactez-nous pour évaluer la faisabilité d'un déploiement dans votre zone géographique.</p>
+        </div>
+        <div class="pf-faq-item">
+          <h3>Quel est le coût d'un partenariat ?</h3>
+          <p>Les modalités varient selon le profil du partenaire et le niveau d'intégration souhaité. Nous proposons des formules adaptées aux collectivités, aux PME locales et aux partenaires technologiques.</p>
+        </div>
+        <div class="pf-faq-item">
+          <h3>Puis-je demander une démonstration ?</h3>
+          <p>Oui. Mentionnez-le dans votre message et notre équipe organisera une session de démonstration personnalisée, en présentiel ou à distance, selon votre disponibilité.</p>
+        </div>
+        <div class="pf-faq-item">
+          <h3>Comment mes données sont-elles protégées ?</h3>
+          <p>PortoFlow applique une politique stricte de confidentialité. Aucune donnée transmise via ce formulaire n'est partagée avec des tiers sans votre consentement explicite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="pf-section">
+    <div class="pf-shell pf-cta-band">
+      <div>
+        <p class="pf-eyebrow">Prochaine étape</p>
+        <h2>Du territoire observé au territoire orchestré</h2>
+        <p>PortoFlow relie les lieux, les services et les décisions dans une expérience claire, intelligente et locale. Rejoignez les premiers partenaires du réseau.</p>
+      </div>
+      <a class="pf-button pf-button--primary" href="#contact-form">Créer un partenariat</a>
+    </div>
+  </section>
 
 </main>
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p class="footer-brand">PortoFlow</p>
-    <nav class="footer-nav">
-      <a href="index.html">Accueil</a>
-      <a href="territoire.html">Territoire</a>
+
+<footer class="pf-footer">
+  <div class="pf-shell pf-footer__grid">
+    <div class="pf-footer__brand">
+      <a class="pf-logo pf-logo--footer" href="index.html" aria-label="PortoFlow — accueil">
+        <span class="pf-logo__symbol">
+          <svg class="pf-logo__svg" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M24 7l5 17-5 17-5-17 5-17Z" fill="currentColor" opacity=".9"/>
+            <path d="M10 30c8-9 19-10 28-3" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="pf-logo__wordmark">PortoFlow</span>
+      </a>
+      <p>Le copilote intelligent du territoire</p>
+      <a class="pf-button pf-button--secondary" href="application.html">Voir l'application</a>
+    </div>
+    <div class="pf-footer__col">
+      <h3>Plateforme</h3>
       <a href="application.html">Application</a>
-      <a href="ingenierie.html">Ingénierie IA</a>
+      <a href="assistant.html">Assistant</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+    <div class="pf-footer__col">
+      <h3>Territoire</h3>
+      <a href="territoire.html">Territoire</a>
+      <a href="ecosysteme.html">Économie locale</a>
+    </div>
+    <div class="pf-footer__col">
+      <h3>Projet</h3>
+      <a href="ingenierie.html">Ingénierie</a>
+      <a href="production.html">Production</a>
       <a href="contact.html">Contact</a>
-    </nav>
-    <p class="footer-note">Plateforme territoriale intelligente — ID2App V4.4.4</p>
+    </div>
+  </div>
+  <div class="pf-shell pf-footer__bottom">
+    <span>© <span data-current-year></span> PortoFlow</span>
+    <span>Interface territoriale intelligente</span>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
