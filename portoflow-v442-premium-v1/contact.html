@@ -32,79 +32,77 @@
       <p class="eyebrow">Contact</p>
       <h1>Engagez le dialogue territorial</h1>
       <p class="hero-lead">Partenariat institutionnel, démonstration technique ou intégration locale — l'équipe PortoFlow répond à chaque demande avec précision.</p>
+      <a class="btn-primary" href="#contact-panel">Envoyer un message</a>
     </div>
-    <div class="hero-panel">
-      <div class="hero-card"><span class="card-index">01</span><strong>Partenariats</strong><p>Collectivités, opérateurs, acteurs économiques locaux.</p></div>
-      <div class="hero-card"><span class="card-index">02</span><strong>Démonstrations</strong><p>Présentation live de la plateforme sur votre territoire.</p></div>
-      <div class="hero-card"><span class="card-index">03</span><strong>Intégrations</strong><p>API, flux de données, connecteurs métier sur mesure.</p></div>
+    <div class="hero-visual">
+      <div class="img-placeholder img-placeholder--hero" aria-label="Visuel contact PortoFlow"></div>
     </div>
   </div>
 </section>
 
-<section class="section contact-panel">
+<section class="section contact-panel" id="contact-panel">
   <div class="container contact-grid">
     <div class="contact-info">
       <p class="eyebrow">Nous joindre</p>
-      <h2>Coordonnées &amp; canaux</h2>
-      <div class="info-cards">
-        <div class="info-card">
-          <span class="info-icon">✉</span>
-          <strong>Email</strong>
-          <p>contact@portoflow.fr</p>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">📍</span>
-          <strong>Territoire</strong>
-          <p>Déploiement national, ancrage local.</p>
-        </div>
-        <div class="info-card">
-          <span class="info-icon">🕐</span>
-          <strong>Délai de réponse</strong>
-          <p>Sous 48 h ouvrées pour toute demande qualifiée.</p>
-        </div>
-      </div>
+      <h2>Trois canaux, une réponse rapide</h2>
+      <ul class="card-list">
+        <li class="card">
+          <span class="card-icon">📍</span>
+          <strong>Siège territorial</strong>
+          <span>Bordeaux Métropole — France</span>
+        </li>
+        <li class="card">
+          <span class="card-icon">✉️</span>
+          <strong>Email institutionnel</strong>
+          <span>contact@portoflow.fr</span>
+        </li>
+        <li class="card">
+          <span class="card-icon">🤝</span>
+          <strong>Partenariats &amp; presse</strong>
+          <span>partenaires@portoflow.fr</span>
+        </li>
+      </ul>
     </div>
     <div class="contact-form-wrap">
       <p class="eyebrow">Formulaire</p>
-      <h2>Votre demande</h2>
       <form class="contact-form" action="#" method="post" novalidate>
         <div class="form-row">
-          <label for="cf-name">Nom / Organisation</label>
-          <input id="cf-name" type="text" name="name" placeholder="Mairie de…, Agence…" required>
+          <label for="cf-nom">Nom</label>
+          <input id="cf-nom" type="text" name="nom" placeholder="Votre nom" required>
         </div>
         <div class="form-row">
-          <label for="cf-email">Adresse email</label>
-          <input id="cf-email" type="email" name="email" placeholder="vous@domaine.fr" required>
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="email" placeholder="votre@email.fr" required>
         </div>
         <div class="form-row">
-          <label for="cf-subject">Objet</label>
-          <select id="cf-subject" name="subject">
-            <option value="">Sélectionner…</option>
+          <label for="cf-objet">Objet</label>
+          <select id="cf-objet" name="objet">
+            <option value="">Sélectionner un objet</option>
             <option value="partenariat">Partenariat territorial</option>
             <option value="demo">Demande de démonstration</option>
-            <option value="integration">Intégration technique</option>
-            <option value="presse">Presse / Communication</option>
+            <option value="integration">Intégration locale</option>
+            <option value="presse">Presse &amp; communication</option>
             <option value="autre">Autre</option>
           </select>
         </div>
         <div class="form-row">
           <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" rows="5" placeholder="Décrivez votre projet ou votre besoin…" required></textarea>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Décrivez votre projet ou votre demande…" required></textarea>
         </div>
-        <button class="btn-primary" type="submit">Envoyer la demande</button>
+        <button class="btn-primary" type="submit">Envoyer le message</button>
       </form>
     </div>
   </div>
 </section>
 
-<section class="section cta-band-section">
-  <div class="container cta-band">
-    <div>
-      <p class="eyebrow">Plateforme</p>
-      <h2>Découvrir PortoFlow en action</h2>
-      <p>Explorez le tableau de bord territorial ou demandez une démonstration guidée.</p>
+<section class="section cta-band">
+  <div class="container cta-band-inner">
+    <div class="cta-band-copy">
+      <p class="eyebrow">Prochaine étape</p>
+      <h2>Découvrez la plateforme en action</h2>
+      <p class="cta-lead">Explorez le tableau de bord territorial ou demandez une démonstration guidée.</p>
     </div>
-    <div class="cta-actions">
+    <div class="cta-band-actions">
       <a class="btn-primary" href="dashboard.html">Tableau de bord</a>
       <a class="btn-secondary" href="ingenierie.html">Ingénierie IA</a>
     </div>
@@ -119,7 +117,6 @@
       <a href="territoire.html">Territoire</a>
       <a href="assistant.html">Assistant</a>
       <a href="application.html">Application</a>
-      <a href="ecosysteme.html">Économie locale</a>
       <a href="contact.html">Contact</a>
     </nav>
     <p class="footer-note">Plateforme territoriale intelligente — ID2App V4.4.4</p>
