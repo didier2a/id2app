@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Production continue</title>
-  <meta name="description" content="Présenter PortoFlow comme plateforme territoriale intelligente, future application mobile, outil de pilotage local et démonstrateur d'ingénierie IA.">
+  <title>Production continue — PortoFlow</title>
+  <meta name="description" content="PortoFlow : pipeline de production continue, déploiement automatisé et ingénierie IA au service du territoire.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,89 +29,77 @@
   <section class="section hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <p class="eyebrow">Production continue</p>
-        <h1>Un site vivant, mis à jour en continu</h1>
-        <p class="hero-lead">PortoFlow est produit selon un cycle de génération déterministe : chaque page est compilée, validée et publiée sans intervention manuelle. La plateforme évolue au rythme du territoire.</p>
-        <a class="btn-primary" href="ingenierie.html">Voir l'ingénierie IA</a>
+        <p class="eyebrow">Pipeline territorial</p>
+        <h1>Production continue</h1>
+        <p class="hero-lead">De la donnée brute au déploiement : PortoFlow orchestre un pipeline automatisé, versionné et auditable pour chaque composant de la plateforme territoriale.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="ingenierie.html">Voir l'ingénierie IA</a>
+          <a class="btn-secondary" href="dashboard.html">Tableau de bord</a>
+        </div>
       </div>
-      <div class="hero-panel">
-        <div class="hero-card">
-          <span class="card-index">01</span>
-          <strong>Cycle automatisé</strong>
-          <p>Génération, validation et déploiement enchaînés sans rupture éditoriale.</p>
-        </div>
-        <div class="hero-card">
-          <span class="card-index">02</span>
-          <strong>Conformité garantie</strong>
-          <p>Chaque fichier respecte le contrat de design et les règles de contenu V4.4.</p>
-        </div>
+      <div class="hero-visual">
+        <div class="img-placeholder img-placeholder--hero" aria-label="Schéma pipeline production PortoFlow"></div>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <p class="eyebrow">Principes</p>
-      <h2 class="section-title">Comment fonctionne la production</h2>
-      <div class="feature-grid">
+      <div class="section-header">
+        <p class="eyebrow">Piliers du pipeline</p>
+        <h2>Quatre étapes, zéro interruption</h2>
+      </div>
+      <div class="feature-grid feature-grid--4">
         <div class="feature-card">
           <span class="feature-icon">⚙️</span>
           <strong>Compilation déterministe</strong>
-          <p>Le moteur ID2App V4.4 transforme les spécifications en HTML conforme sans génération libre.</p>
+          <p>Chaque page est générée depuis un spec versionné. Aucune dérive éditoriale entre les cycles.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">🔍</span>
-          <strong>Validation automatique</strong>
-          <p>Chaque fichier est soumis à un QA structurel avant publication : densité, navigation, cohérence.</p>
+          <span class="feature-icon">🔁</span>
+          <strong>Déploiement automatisé</strong>
+          <p>Push GitHub déclenche validation, build et publication sans intervention manuelle.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">🔄</span>
-          <strong>Réparation intégrée</strong>
-          <p>En cas d'erreur de génération, un réparateur dédié régénère le fichier selon les règles du template.</p>
+          <span class="feature-icon">🛡️</span>
+          <strong>Validation structurelle</strong>
+          <p>Chaque fichier passe un contrôle qualité ID2App V4.4 avant mise en ligne.</p>
         </div>
         <div class="feature-card">
-          <span class="feature-icon">📦</span>
-          <strong>Versionnement continu</strong>
-          <p>Chaque mise à jour est commitée sur GitHub avec traçabilité complète des changements.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">🗺️</span>
-          <strong>Plan de navigation stable</strong>
-          <p>La structure du site est verrouillée : aucun lien mort, aucune page orpheline.</p>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon">✍️</span>
-          <strong>Contenu enrichi</strong>
-          <p>Les agents éditoriaux alimentent chaque page avec un contenu stratégique et territorial.</p>
+          <span class="feature-icon">📋</span>
+          <strong>Audit & traçabilité</strong>
+          <p>Checkpoint JSON horodaté à chaque cycle. Historique complet des versions publiées.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt">
+  <section class="section section--alt">
     <div class="container rail-grid">
-      <div class="rail-media">
-        <div class="img-placeholder img-placeholder--landscape" aria-label="Schéma du pipeline de production PortoFlow"></div>
+      <div class="rail-visual">
+        <div class="img-placeholder img-placeholder--rail" aria-label="Diagramme cycle de production PortoFlow"></div>
       </div>
       <div class="rail-content">
-        <p class="eyebrow">Pipeline</p>
-        <h2>De la spécification à la publication</h2>
+        <p class="eyebrow">Cycle de vie</p>
+        <h2>Du spec au site publié</h2>
         <ul class="check-list">
-          <li><span class="check-icon">✓</span> Spécification structurée par l'architecte IA</li>
-          <li><span class="check-icon">✓</span> Compilation HTML par le moteur déterministe</li>
-          <li><span class="check-icon">✓</span> Validation QA multi-règles automatisée</li>
-          <li><span class="check-icon">✓</span> Réparation ciblée si violation détectée</li>
-          <li><span class="check-icon">✓</span> Commit et déploiement sur GitHub Pages</li>
+          <li><span class="check-icon">✓</span> Spec YAML versionné en source de vérité unique</li>
+          <li><span class="check-icon">✓</span> Agents IA spécialisés par rôle (architecte, éditeur, builder)</li>
+          <li><span class="check-icon">✓</span> Repair automatique en cas d'échec de validation</li>
+          <li><span class="check-icon">✓</span> Rollback instantané sur checkpoint précédent</li>
         </ul>
+        <a class="btn-secondary" href="ingenierie.html">Architecture technique →</a>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container metrics-panel">
-      <p class="eyebrow">Indicateurs</p>
-      <h2 class="section-title">Production en chiffres</h2>
-      <div class="metrics-grid">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Indicateurs clés</p>
+        <h2>Performance du pipeline</h2>
+      </div>
+      <div class="metrics-panel metrics-panel--4">
         <div class="metric-card">
           <span class="metric-value">9</span>
           <span class="metric-label">Pages produites</span>
@@ -122,26 +110,26 @@
         </div>
         <div class="metric-card">
           <span class="metric-value">100%</span>
-          <span class="metric-label">Navigation validée</span>
+          <span class="metric-label">Validation structurelle</span>
         </div>
         <div class="metric-card">
           <span class="metric-value">0</span>
-          <span class="metric-label">Lien mort détecté</span>
+          <span class="metric-label">Intervention manuelle</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section cta-section">
+  <section class="section section--cta">
     <div class="container cta-band">
-      <div>
+      <div class="cta-content">
         <p class="eyebrow">Prochaine étape</p>
-        <h2>Découvrir l'ingénierie IA</h2>
-        <p>Explorez les choix techniques et architecturaux qui alimentent la production continue de PortoFlow.</p>
+        <h2>Intégrer PortoFlow à votre territoire</h2>
+        <p>Découvrez comment déployer la plateforme dans votre collectivité ou partenariat local.</p>
       </div>
       <div class="cta-actions">
-        <a class="btn-primary" href="ingenierie.html">Ingénierie IA</a>
-        <a class="btn-secondary" href="contact.html">Nous contacter</a>
+        <a class="btn-primary" href="contact.html">Nous contacter</a>
+        <a class="btn-secondary" href="ecosysteme.html">Économie locale</a>
       </div>
     </div>
   </section>
@@ -149,14 +137,18 @@
 </main>
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p class="footer-brand">PortoFlow</p>
+    <div class="footer-brand">
+      <span class="brand-mark">PO</span>
+      <span class="brand-name">PortoFlow</span>
+    </div>
     <nav class="footer-nav">
       <a href="territoire.html">Territoire</a>
       <a href="assistant.html">Assistant</a>
       <a href="application.html">Application</a>
+      <a href="ecosysteme.html">Économie locale</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <p class="footer-note">ID2App V4.4.4 — Plateforme territoriale intelligente</p>
+    <p class="footer-note">PortoFlow — Plateforme territoriale intelligente · ID2App V4.4.4</p>
   </div>
 </footer>
 <script src="script.js"></script>
