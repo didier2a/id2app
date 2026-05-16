@@ -44,7 +44,12 @@
         "page_id": ""
       },
       {
-        "label": "Documentation",
+        "label": "GitHub PUT",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "FAQ",
         "href": "index.html",
         "page_id": ""
       },
@@ -72,8 +77,8 @@
       "slots": {
         "logo": {
           "type": "image",
-          "src": "logo.png",
-          "alt": "Logo Debug Node 24"
+          "alt": "Logo Debug Node 24",
+          "src": "logo_debug_node24.png"
         },
         "header": {
           "type": "header",
@@ -82,41 +87,38 @@
         "hero": {
           "type": "hero_premium",
           "title": "Test de publication GitHub V4.4.6",
-          "subtitle": "Validation technique du nœud 24 avec PortoFlow minimal",
-          "eyebrow": "Debug Node 24",
-          "primary_cta": "Lancer le test",
-          "secondary_cta": ""
+          "subtitle": "Validation technique du nœud 24 avec checkpoint et SHA",
+          "eyebrow": "Debug avancé",
+          "primary_cta": "Voir le log complet",
+          "secondary_cta": "Explorer le workflow"
         },
-        "cards": {
-          "type": "card_list",
-          "items": [
-            {
-              "id": "card1",
-              "title": "Statut GitHub",
-              "text": "Vérification du body et du SHA en temps réel."
-            },
-            {
-              "id": "card2",
-              "title": "Checkpoint",
-              "text": "Mise à jour automatique et boucle Split In Batches."
-            }
-          ]
-        },
+        "cards": [
+          {
+            "id": "card1",
+            "title": "Statut du workflow",
+            "text": "Le workflow a passé le nœud 24 avec succès."
+          },
+          {
+            "id": "card2",
+            "title": "Checkpoint mis à jour",
+            "text": "Le checkpoint JSON est à jour et valide."
+          }
+        ],
         "cta": {
           "type": "cta",
-          "label": "Lancer le test",
-          "action": "runTest"
+          "label": "Voir le log complet",
+          "action": "/logs/debug-node24"
         },
         "footer": {
           "type": "footer",
-          "text": "© 2024 Debug Node 24 - Test technique uniquement"
+          "content": "© 2024 Debug Node 24 - Test technique uniquement"
         },
         "editorial_intro": {
           "title": "Une lecture stratégique",
           "paragraphs": [
             {
-              "title": "Présentation rapide",
-              "text": "Ce projet vise à tester le nœud 24 GitHub PUT dans le workflow V4.4.6, garantissant une intégration fluide et fiable dans vos processus de développement."
+              "title": "Contexte du test",
+              "text": "Ce projet vise à valider la robustesse du nœud 24 GitHub PUT dans le workflow V4.4.6, garantissant une intégration fiable et un checkpoint JSON à jour."
             }
           ]
         },
@@ -124,14 +126,14 @@
           "title": "Ce qu’il faut comprendre",
           "items": [
             {
-              "title": "Surveillance en temps réel",
-              "text": "Le système vérifie dynamiquement le contenu du body et le SHA des commits pour assurer la cohérence des mises à jour GitHub.",
-              "proof": "Logs d'exécution et retours d'API validés en continu."
+              "title": "Statut du workflow",
+              "text": "Le workflow a franchi avec succès le nœud 24, confirmant la bonne exécution des opérations PUT sur GitHub.",
+              "proof": "Logs d'exécution validés et checkpoint JSON synchronisé."
             },
             {
-              "title": "Gestion avancée des checkpoints",
-              "text": "Le nœud 24 intègre une boucle Split In Batches pour optimiser la mise à jour automatique des checkpoints, réduisant les erreurs et améliorant la robustesse.",
-              "proof": "Tests unitaires et scénarios de charge réalisés avec succès."
+              "title": "Checkpoint JSON",
+              "text": "Le checkpoint est mis à jour automatiquement, assurant la continuité et la traçabilité des modifications dans le workflow.",
+              "proof": "Fichier checkpoint.json conforme et accessible via API GitHub."
             }
           ]
         },
@@ -139,12 +141,12 @@
           "title": "Cas d’usage",
           "items": [
             {
-              "title": "Développeurs intégrant GitHub PUT",
-              "text": "Validez rapidement la publication de vos modifications dans un environnement contrôlé avant déploiement."
+              "title": "Développeur en phase de test",
+              "text": "Valider la fiabilité du nœud 24 avant déploiement en production pour éviter les erreurs de publication."
             },
             {
-              "title": "Automatisation de workflows CI/CD",
-              "text": "Intégrez ce test dans vos pipelines pour garantir la fiabilité des mises à jour GitHub."
+              "title": "Audit de workflow",
+              "text": "Contrôler la mise à jour des checkpoints et la bonne gestion des SHA dans les pipelines CI/CD."
             }
           ]
         },
@@ -152,12 +154,10 @@
           "title": "Preuves de valeur",
           "items": [
             {
-              "title": "moins de 5 secondes par commit",
-              "text": "Réactivité optimale pour les workflows rapides."
+              "text": "Taux de réussite du nœud 24 sur les tests réalisés"
             },
             {
-              "title": "inférieur à 0,1%",
-              "text": "Fiabilité éprouvée en conditions réelles."
+              "text": "Aucune anomalie détectée dans le checkpoint JSON"
             }
           ]
         },
@@ -165,31 +165,28 @@
           "title": "Questions clés",
           "items": [
             {
-              "question": "Quel est l'objectif principal du nœud 24 GitHub PUT ?",
-              "answer": "Assurer une mise à jour fiable et vérifiée des données dans GitHub via une API PUT, avec contrôle du contenu et gestion des batches."
+              "question": "Que vérifie précisément le nœud 24 GitHub PUT ?",
+              "answer": "Il valide l'exécution correcte des requêtes PUT sur les ressources GitHub, en assurant la mise à jour des checkpoints et la cohérence des SHA."
             },
             {
-              "question": "Comment lancer un test ?",
-              "answer": "Utilisez le bouton 'Lancer le test' pour démarrer la validation sur un dossier jetable, sans impact sur vos données de production."
+              "question": "Comment accéder au log complet ?",
+              "answer": "Le log est accessible via le lien dédié dans la section CTA, fournissant un rapport détaillé de chaque étape du workflow."
             }
           ]
         },
         "cta_band": {
-          "text": "Démarrez la validation technique du nœud 24 GitHub PUT dès maintenant.",
-          "label": "Lancer le test",
-          "href": "#"
+          "text": "Consultez le journal détaillé pour analyser chaque étape du nœud 24.",
+          "label": "Voir le log complet",
+          "href": "/logs/debug-node24"
         },
         "photo_placeholder": {
           "title": "Images à intégrer",
           "items": [
-            {
-              "src": "logo.png",
-              "caption": "Logo Debug Node 24, symbole de fiabilité et précision."
-            }
+            "Logo officiel Debug Node 24, garant de la qualité technique."
           ]
         }
       },
-      "editorial_word_target": 180,
+      "editorial_word_target": 150,
       "writer_agent_enriched": true,
       "creative_workflow_enriched": true
     }
@@ -456,7 +453,12 @@
           "page_id": ""
         },
         {
-          "label": "Documentation",
+          "label": "GitHub PUT",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "FAQ",
           "href": "index.html",
           "page_id": ""
         },
@@ -497,7 +499,7 @@
               "page_id": ""
             },
             {
-              "label": "Documentation",
+              "label": "GitHub PUT",
               "href": "index.html",
               "page_id": ""
             }
@@ -517,12 +519,12 @@
               "page_id": ""
             },
             {
-              "label": "Documentation",
+              "label": "GitHub PUT",
               "href": "index.html",
               "page_id": ""
             },
             {
-              "label": "Contact",
+              "label": "FAQ",
               "href": "index.html",
               "page_id": ""
             }
@@ -577,9 +579,9 @@
     ]
   },
   "image_registry": {
-    "logo.png": {
+    "logo_debug_node24.png": {
       "alt": "Logo Debug Node 24",
-      "description": "Logo principal pour la page de debug"
+      "description": "Logo principal pour la page de debug node 24"
     }
   },
   "warnings": [],
@@ -626,7 +628,12 @@
       "page_id": ""
     },
     {
-      "label": "Documentation",
+      "label": "GitHub PUT",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "FAQ",
       "href": "index.html",
       "page_id": ""
     },
@@ -641,55 +648,65 @@
     "primary_navigation": [
       {
         "id": "home",
-        "label": "Accueil",
+        "title": "Accueil",
         "url": "/",
         "role": "landing"
       },
       {
         "id": "debug-node24",
-        "label": "Debug Node 24",
+        "title": "Debug Node 24",
         "url": "/debug-node24",
-        "role": "feature_detail"
+        "role": "feature-detail"
       },
       {
         "id": "workflow-v446",
-        "label": "Workflow V4.4.6",
+        "title": "Workflow V4.4.6",
         "url": "/workflow-v446",
-        "role": "workflow_overview"
+        "role": "workflow-overview"
       },
       {
-        "id": "docs",
-        "label": "Documentation",
-        "url": "/documentation",
-        "role": "documentation"
+        "id": "github-put",
+        "title": "GitHub PUT",
+        "url": "/github-put",
+        "role": "integration-detail"
+      },
+      {
+        "id": "faq",
+        "title": "FAQ",
+        "url": "/faq",
+        "role": "support"
       },
       {
         "id": "contact",
-        "label": "Contact",
+        "title": "Contact",
         "url": "/contact",
-        "role": "contact_form"
+        "role": "contact"
       }
     ],
     "footer_navigation": [
       {
         "id": "privacy",
-        "label": "Politique de confidentialité",
-        "url": "/privacy"
+        "title": "Politique de confidentialité",
+        "url": "/privacy",
+        "role": "legal"
       },
       {
         "id": "terms",
-        "label": "Conditions d'utilisation",
-        "url": "/terms"
+        "title": "Conditions d'utilisation",
+        "url": "/terms",
+        "role": "legal"
       },
       {
-        "id": "faq",
-        "label": "FAQ",
-        "url": "/faq"
+        "id": "sitemap",
+        "title": "Plan du site",
+        "url": "/sitemap",
+        "role": "utility"
       },
       {
-        "id": "support",
-        "label": "Support",
-        "url": "/support"
+        "id": "contact",
+        "title": "Contact",
+        "url": "/contact",
+        "role": "contact"
       }
     ],
     "cross_links": [
@@ -701,123 +718,126 @@
       {
         "from": "debug-node24",
         "to": "workflow-v446",
-        "label": "Voir le Workflow complet V4.4.6"
+        "label": "Voir le Workflow V4.4.6 complet"
       },
       {
         "from": "workflow-v446",
-        "to": "documentation",
-        "label": "Consulter la documentation détaillée"
+        "to": "github-put",
+        "label": "Intégration GitHub PUT"
       },
       {
-        "from": "documentation",
-        "to": "debug-node24",
-        "label": "Retour au Debug Node 24"
-      },
-      {
-        "from": "contact",
-        "to": "support",
-        "label": "Besoin d'aide ? Support"
+        "from": "github-put",
+        "to": "faq",
+        "label": "Questions fréquentes sur GitHub PUT"
       },
       {
         "from": "faq",
-        "to": "documentation",
-        "label": "Plus d'infos dans la documentation"
+        "to": "contact",
+        "label": "Besoin d'aide ? Contactez-nous"
+      },
+      {
+        "from": "contact",
+        "to": "home",
+        "label": "Retour à l'accueil"
       }
     ],
     "user_journeys": [
       {
-        "id": "debug_workflow_validation",
-        "description": "Un développeur découvre et teste le nœud 24 GitHub PUT dans le workflow V4.4.6",
+        "id": "debugger-developpeur",
+        "description": "Un développeur souhaite tester et valider le nœud 24 GitHub PUT dans un workflow.",
         "steps": [
           "home",
           "debug-node24",
           "workflow-v446",
-          "documentation",
+          "github-put",
+          "faq",
           "contact"
-        ],
-        "ctas": [
-          {
-            "page": "home",
-            "cta_label": "Tester le Debug Node 24",
-            "target": "debug-node24"
-          },
-          {
-            "page": "debug-node24",
-            "cta_label": "Voir le Workflow V4.4.6",
-            "target": "workflow-v446"
-          },
-          {
-            "page": "workflow-v446",
-            "cta_label": "Lire la Documentation",
-            "target": "documentation"
-          },
-          {
-            "page": "documentation",
-            "cta_label": "Contactez-nous pour support",
-            "target": "contact"
-          }
+        ]
+      },
+      {
+        "id": "validation-workflow",
+        "description": "Validation complète du workflow V4.4.6 avec focus sur GitHub PUT.",
+        "steps": [
+          "home",
+          "workflow-v446",
+          "github-put",
+          "faq"
+        ]
+      },
+      {
+        "id": "support-utilisateur",
+        "description": "Un utilisateur cherche des réponses et contacte le support.",
+        "steps": [
+          "faq",
+          "contact"
         ]
       }
     ],
     "page_roles": {
-      "home": "page d'atterrissage principale, introduction au projet",
-      "debug-node24": "page de présentation détaillée du nœud 24 GitHub PUT",
-      "workflow-v446": "page de présentation du workflow complet V4.4.6",
-      "documentation": "page technique avec guides et références",
-      "contact": "formulaire de contact et support utilisateur",
-      "privacy": "page légale politique de confidentialité",
-      "terms": "page légale conditions d'utilisation",
-      "faq": "page questions fréquentes",
-      "support": "page support technique et assistance"
+      "landing": "Page d'accueil présentant le projet et les accès principaux",
+      "feature-detail": "Page détaillant la fonctionnalité Debug Node 24",
+      "workflow-overview": "Présentation complète du workflow V4.4.6",
+      "integration-detail": "Détail de l'intégration GitHub PUT dans le workflow",
+      "support": "Page FAQ pour répondre aux questions techniques",
+      "contact": "Page de contact pour support et demandes",
+      "legal": "Pages légales et conditions d'utilisation",
+      "utility": "Pages utilitaires comme le plan du site"
     },
     "cta_map": {
       "home": [
         {
           "label": "Tester le Debug Node 24",
-          "target": "debug-node24",
-          "context": "inviter à découvrir la fonctionnalité principale"
+          "target": "/debug-node24"
+        },
+        {
+          "label": "Voir le Workflow V4.4.6",
+          "target": "/workflow-v446"
         }
       ],
       "debug-node24": [
         {
-          "label": "Voir le Workflow V4.4.6",
-          "target": "workflow-v446",
-          "context": "poursuivre la découverte du workflow complet"
+          "label": "Explorer le Workflow complet",
+          "target": "/workflow-v446"
+        },
+        {
+          "label": "Poser une question",
+          "target": "/faq"
         }
       ],
       "workflow-v446": [
         {
-          "label": "Lire la Documentation",
-          "target": "documentation",
-          "context": "accéder aux détails techniques"
+          "label": "Découvrir GitHub PUT",
+          "target": "/github-put"
+        },
+        {
+          "label": "Consulter la FAQ",
+          "target": "/faq"
         }
       ],
-      "documentation": [
+      "github-put": [
         {
-          "label": "Contactez-nous pour support",
-          "target": "contact",
-          "context": "offrir une assistance personnalisée"
+          "label": "Voir la FAQ GitHub PUT",
+          "target": "/faq"
+        },
+        {
+          "label": "Contactez le support",
+          "target": "/contact"
+        }
+      ],
+      "faq": [
+        {
+          "label": "Contactez-nous",
+          "target": "/contact"
+        },
+        {
+          "label": "Retour à l'accueil",
+          "target": "/"
         }
       ],
       "contact": [
         {
           "label": "Retour à l'accueil",
-          "target": "home",
-          "context": "faciliter la navigation retour"
-        }
-      ],
-      "faq": [
-        {
-          "label": "Consulter la documentation",
-          "target": "documentation",
-          "context": "complément d'information"
-        }
-      ],
-      "support": [
-        {
-          "label": "Contactez-nous",
-          "target": "contact",
-          "context": "accès direct au formulaire de contact"
+          "target": "/"
         }
       ]
     },
@@ -837,36 +857,30 @@
       "style": "premium minimal institutionnel, clair et technique",
       "motifs": [
         "interface structurée",
-        "composants visuels verrouillés",
-        "navigation et header/footer fixes",
-        "typographie maîtrisée sans invention de classes",
-        "usage strict des couleurs de marque"
+        "composants visuels distincts",
+        "usage strict des classes contractuelles",
+        "verrouillage des zones logo, header, footer et navigation"
       ],
       "colors": [
         {
-          "name": "intelligence",
-          "value": "cyan discret",
-          "usage": "éléments interactifs et indicateurs d'état"
+          "role": "intelligence",
+          "value": "cyan discret"
         },
         {
-          "name": "background",
-          "value": "ivoire cartographique",
-          "usage": "fond principal des pages"
+          "role": "background",
+          "value": "ivoire cartographique"
         },
         {
-          "name": "accent",
-          "value": "orange cuivre",
-          "usage": "call to action, surlignage, accents visuels"
+          "role": "accent",
+          "value": "orange cuivre"
         },
         {
-          "name": "primary",
-          "value": "bleu marine profond",
-          "usage": "texte principal, titres, éléments importants"
+          "role": "primary",
+          "value": "bleu marine profond"
         },
         {
-          "name": "secondary",
-          "value": "ardoise",
-          "usage": "texte secondaire, sous-titres, éléments moins saillants"
+          "role": "secondary",
+          "value": "ardoise"
         }
       ]
     },
@@ -875,6 +889,9 @@
     },
     "page_layouts": {
       "index": {
+        "locked_header": true,
+        "locked_footer": true,
+        "locked_navigation": true,
         "structure": [
           "logo",
           "header",
@@ -886,44 +903,52 @@
         "slots": {
           "logo": {
             "type": "image",
-            "locked": true,
-            "source": "logo.png",
-            "alt": "Logo Debug Node 24"
+            "class_contract": true,
+            "alt": "Logo Debug Node 24",
+            "src": "logo_debug_node24.png",
+            "locked": true
           },
           "header": {
             "type": "header",
+            "content": "Debug Node 24 Real PUT",
             "locked": true,
-            "content": "Debug Node 24 Real PUT"
+            "class_contract": true
           },
           "hero": {
             "type": "hero_premium",
             "title": "Test de publication GitHub V4.4.6",
-            "subtitle": "Validation technique du nœud 24 avec PortoFlow minimal"
+            "subtitle": "Validation technique du nœud 24 avec checkpoint et SHA",
+            "class_contract": true
           },
           "cards": {
             "type": "card_list",
             "items": [
               {
                 "id": "card1",
-                "title": "Statut GitHub",
-                "text": "Vérification du body et du SHA en temps réel."
+                "title": "Statut du workflow",
+                "text": "Le workflow a passé le nœud 24 avec succès.",
+                "class_contract": true
               },
               {
                 "id": "card2",
-                "title": "Checkpoint",
-                "text": "Mise à jour automatique et boucle Split In Batches."
+                "title": "Checkpoint mis à jour",
+                "text": "Le checkpoint JSON est à jour et valide.",
+                "class_contract": true
               }
             ]
           },
           "cta": {
             "type": "cta",
-            "label": "Lancer le test",
-            "action": "runTest"
+            "label": "Voir le log complet",
+            "action": "/logs/debug-node24",
+            "contextual": true,
+            "class_contract": true
           },
           "footer": {
             "type": "footer",
+            "content": "© 2024 Debug Node 24 - Test technique uniquement",
             "locked": true,
-            "text": "© 2024 Debug Node 24 - Test technique uniquement"
+            "class_contract": true
           }
         }
       }
@@ -931,7 +956,8 @@
     "component_rules": {
       "logo": {
         "locked": true,
-        "class_contract": true
+        "class_contract": true,
+        "no_alteration": true
       },
       "header": {
         "locked": true,
@@ -947,69 +973,63 @@
         "locked": true,
         "active_page_class_required": true,
         "no_dead_links": true,
-        "cta_must_be_contextual": true
+        "class_contract": true
       },
       "hero_premium": {
-        "style": "premium minimal",
         "typography_locked": true,
-        "color_usage": {
-          "title": "primary",
-          "subtitle": "secondary"
-        }
+        "color_accent": "accent",
+        "background_color": "background",
+        "class_contract": true
       },
-      "cards": {
-        "component_type": "card_list",
-        "style": "institutional minimal",
-        "color_usage": {
-          "title": "primary",
-          "text": "secondary"
-        },
-        "spacing": "consistent",
+      "card_list": {
+        "cards_style": "premium minimal",
+        "background_color": "background",
+        "text_color": "primary",
+        "accent_color": "accent",
         "class_contract": true
       },
       "cta": {
-        "style": "accented",
-        "color": "accent",
+        "contextual_cta_required": true,
+        "style": "bouton premium accentué orange cuivre",
         "typography_locked": true,
-        "class_contract": true,
-        "contextual": true
+        "class_contract": true
       }
     },
     "responsive_rules": {
       "breakpoints": {
-        "mobile": 0,
-        "tablet": 768,
-        "desktop": 1024
+        "mobile": "max-width: 767px",
+        "tablet": "min-width: 768px and max-width: 1023px",
+        "desktop": "min-width: 1024px"
       },
       "layout_adaptations": {
         "mobile": {
           "navigation": "hamburger menu locked",
           "cards": "stacked vertical",
-          "hero": "center aligned text",
+          "hero": "centered text",
           "cta": "full width"
         },
         "tablet": {
-          "navigation": "horizontal menu locked",
+          "navigation": "horizontal locked",
           "cards": "2 columns",
-          "hero": "left aligned text",
-          "cta": "inline with cards"
+          "hero": "left aligned",
+          "cta": "inline"
         },
         "desktop": {
-          "navigation": "horizontal menu locked",
+          "navigation": "horizontal locked",
           "cards": "2 columns with spacing",
-          "hero": "left aligned text",
-          "cta": "inline with cards"
+          "hero": "left aligned with accent color highlight",
+          "cta": "inline with margin"
         }
       }
     },
     "anti_blog_rules": [
-      "interdire tout layout blog_like_layout",
-      "interdire plain_text_menu",
-      "interdire classes non stylisées (unstyled_classes)",
-      "interdire mismatch entre html et css classes (html_css_class_mismatch)",
-      "interdire invention de classes hors class_contract",
-      "interdire styles non institutionnels ou trop décoratifs",
-      "interdire contenus non structurés ou non encapsulés en composants visuels"
+      "interdire layout blog_like_layout",
+      "interdire menu plain_text_menu",
+      "interdire classes non stylisées unstyled_classes",
+      "interdire mismatch html_css_class_mismatch",
+      "interdire contenu non structuré en composants visuels",
+      "interdire usage libre de classes hors class contract",
+      "interdire modification des zones verrouillées (logo, header, footer, navigation)"
     ]
   },
   "template_registry_v4_4_4": {},
@@ -1087,5 +1107,5 @@
       ]
     }
   },
-  "compiler": "contract_first_premium_renderer_v4_4_6"
+  "compiler": "contract_first_premium_renderer_v4_4_7"
 }
