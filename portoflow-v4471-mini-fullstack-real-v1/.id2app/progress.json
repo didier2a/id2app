@@ -1,5 +1,5 @@
 {
-  "status": "initializing",
+  "status": "running",
   "schema_version": "4.4",
   "orchestrator_version": "4.4.7.1-async-progress-runtime-monotonic",
   "compiler": "contract_first_premium_renderer_v4_4_7_1",
@@ -18,25 +18,43 @@
   "checkpoint_path": "portoflow-v4471-mini-fullstack-real-v1/.id2app/checkpoint.json",
   "progress_path": "portoflow-v4471-mini-fullstack-real-v1/.id2app/progress.json",
   "final_report_path": "portoflow-v4471-mini-fullstack-real-v1/.id2app/final-report.json",
-  "current_phase": "accepted",
-  "current_file": null,
-  "current_file_status": null,
+  "current_phase": "publishing_files",
   "expected_count": 6,
-  "completed_count": 0,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 0,
-  "percent": 0,
-  "progress_sequence": 0,
+  "updated_count": 1,
+  "percent": 17,
+  "progress_sequence": 1,
   "monotonic_guard": true,
-  "completed_files": [],
+  "monotonic_regression_prevented": false,
+  "current_file": "portoflow-v4471-mini-fullstack-real-v1/index.html",
+  "current_file_status": "success",
+  "last_successful_file": "portoflow-v4471-mini-fullstack-real-v1/index.html",
+  "last_failed_file": null,
+  "last_commit_sha": "714652e33b3dfb8596fe1a538859b69cb2d83ba2",
+  "last_file_sha": "56b7fc6b26ffa8060490b66e7648db2107225daf",
+  "github_metadata_missing_count": 0,
+  "github_metadata_missing_files": [],
+  "completed_files": [
+    "portoflow-v4471-mini-fullstack-real-v1/index.html"
+  ],
   "failed_files": [],
-  "updated_files": [],
+  "updated_files": [
+    {
+      "file_path": "portoflow-v4471-mini-fullstack-real-v1/index.html",
+      "action": "update",
+      "file_sha": "56b7fc6b26ffa8060490b66e7648db2107225daf",
+      "commit_sha": "714652e33b3dfb8596fe1a538859b69cb2d83ba2",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-mini-fullstack-real-v1/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/714652e33b3dfb8596fe1a538859b69cb2d83ba2",
+      "validation_status": "passed"
+    }
+  ],
   "warnings": [],
-  "next_poll_seconds": 15,
-  "created_at": "2026-05-16T13:04:34.233Z",
-  "updated_at": "2026-05-16T13:04:34.233Z"
+  "updated_at": "2026-05-16T13:13:51.247Z",
+  "next_poll_seconds": 15
 }
