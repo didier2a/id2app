@@ -19,24 +19,25 @@
   "progress_path": "debug-v446-node24-real-v1/.id2app/progress.json",
   "final_report_path": "debug-v446-node24-real-v1/.id2app/final-report.json",
   "expected_count": 6,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 1,
-  "percent": 17,
-  "current_file": "debug-v446-node24-real-v1/index.html",
+  "updated_count": 2,
+  "percent": 33,
+  "current_file": "debug-v446-node24-real-v1/styles.css",
   "current_file_status": "success",
-  "last_successful_file": "debug-v446-node24-real-v1/index.html",
+  "last_successful_file": "debug-v446-node24-real-v1/styles.css",
   "last_failed_file": null,
-  "last_commit_sha": "ad311a6aa78f9ef56f9744cd641396dc7bfd5696",
-  "last_file_sha": "bdeadebbc617a4693d966652deeb6b052ec5b096",
+  "last_commit_sha": "a6cd7804cdc1190b0923f4a4492d3661e2502249",
+  "last_file_sha": "e26b9ba9354f4c0a88957841e4edda99d51c4e26",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "debug-v446-node24-real-v1/index.html"
+    "debug-v446-node24-real-v1/index.html",
+    "debug-v446-node24-real-v1/styles.css"
   ],
   "failed_files": [],
   "updated_files": [
@@ -48,9 +49,18 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/ad311a6aa78f9ef56f9744cd641396dc7bfd5696",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/styles.css",
+      "action": "update",
+      "file_sha": "e26b9ba9354f4c0a88957841e4edda99d51c4e26",
+      "commit_sha": "a6cd7804cdc1190b0923f4a4492d3661e2502249",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/styles.css",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a6cd7804cdc1190b0923f4a4492d3661e2502249",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-16T11:48:59.438Z",
+  "updated_at": "2026-05-16T11:49:14.731Z",
   "next_poll_seconds": 15
 }
