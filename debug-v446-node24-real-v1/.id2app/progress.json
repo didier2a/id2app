@@ -1,5 +1,5 @@
 {
-  "status": "initializing",
+  "status": "running",
   "schema_version": "4.4",
   "orchestrator_version": "4.4.7.1-async-progress-runtime-monotonic",
   "compiler": "contract_first_premium_renderer_v4_4_7_1",
@@ -18,25 +18,43 @@
   "checkpoint_path": "debug-v446-node24-real-v1/.id2app/checkpoint.json",
   "progress_path": "debug-v446-node24-real-v1/.id2app/progress.json",
   "final_report_path": "debug-v446-node24-real-v1/.id2app/final-report.json",
-  "current_phase": "accepted",
-  "current_file": null,
-  "current_file_status": null,
+  "current_phase": "publishing_files",
   "expected_count": 6,
-  "completed_count": 0,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 0,
-  "percent": 0,
-  "progress_sequence": 0,
+  "updated_count": 1,
+  "percent": 17,
+  "progress_sequence": 1,
   "monotonic_guard": true,
-  "completed_files": [],
+  "monotonic_regression_prevented": false,
+  "current_file": "debug-v446-node24-real-v1/index.html",
+  "current_file_status": "success",
+  "last_successful_file": "debug-v446-node24-real-v1/index.html",
+  "last_failed_file": null,
+  "last_commit_sha": "e9faaad085b2077c6b6a84acf82c66548a67ab54",
+  "last_file_sha": "65e3d10c70f7e6e3b0a63ccc326d6482b5994614",
+  "github_metadata_missing_count": 0,
+  "github_metadata_missing_files": [],
+  "completed_files": [
+    "debug-v446-node24-real-v1/index.html"
+  ],
   "failed_files": [],
-  "updated_files": [],
+  "updated_files": [
+    {
+      "file_path": "debug-v446-node24-real-v1/index.html",
+      "action": "update",
+      "file_sha": "65e3d10c70f7e6e3b0a63ccc326d6482b5994614",
+      "commit_sha": "e9faaad085b2077c6b6a84acf82c66548a67ab54",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/index.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e9faaad085b2077c6b6a84acf82c66548a67ab54",
+      "validation_status": "passed"
+    }
+  ],
   "warnings": [],
-  "next_poll_seconds": 15,
-  "created_at": "2026-05-16T12:35:12.828Z",
-  "updated_at": "2026-05-16T12:35:12.828Z"
+  "updated_at": "2026-05-16T12:42:07.731Z",
+  "next_poll_seconds": 15
 }
