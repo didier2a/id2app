@@ -19,26 +19,27 @@
   "progress_path": "debug-v446-node24-real-v1/.id2app/progress.json",
   "final_report_path": "debug-v446-node24-real-v1/.id2app/final-report.json",
   "expected_count": 6,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 3,
-  "percent": 50,
-  "current_file": "debug-v446-node24-real-v1/script.js",
+  "updated_count": 4,
+  "percent": 67,
+  "current_file": "debug-v446-node24-real-v1/.id2app/app-spec.json",
   "current_file_status": "success",
-  "last_successful_file": "debug-v446-node24-real-v1/script.js",
+  "last_successful_file": "debug-v446-node24-real-v1/.id2app/app-spec.json",
   "last_failed_file": null,
-  "last_commit_sha": "28a787e65d15c30f33c9ff1dc8e6318e98c474be",
-  "last_file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
+  "last_commit_sha": "6dc725d61119efe799e33b937efcd06451fedc27",
+  "last_file_sha": "5f60c951c0cecc5996999cc72aaa532938921ba6",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "debug-v446-node24-real-v1/index.html",
     "debug-v446-node24-real-v1/styles.css",
-    "debug-v446-node24-real-v1/script.js"
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -68,9 +69,18 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/script.js",
       "commit_url": "https://github.com/didier2a/id2app/commit/28a787e65d15c30f33c9ff1dc8e6318e98c474be",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/.id2app/app-spec.json",
+      "action": "update",
+      "file_sha": "5f60c951c0cecc5996999cc72aaa532938921ba6",
+      "commit_sha": "6dc725d61119efe799e33b937efcd06451fedc27",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/.id2app/app-spec.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6dc725d61119efe799e33b937efcd06451fedc27",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-16T11:49:29.965Z",
+  "updated_at": "2026-05-16T11:49:46.177Z",
   "next_poll_seconds": 15
 }
