@@ -1,0 +1,124 @@
+{
+  "schema_version": "4.4",
+  "orchestrator_version": "4.4.6-contract-first-premium-renderer",
+  "compiler": "contract_first_premium_renderer_v4_4_6",
+  "run_id": "545",
+  "project_id": "debug-v446-node24-real-v1",
+  "project_name": "Debug Node 24 Real PUT",
+  "project_type": "website",
+  "repo": "didier2a/id2app",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "debug-v446-node24-real-v1",
+  "checkpoint_path": "debug-v446-node24-real-v1/.id2app/checkpoint.json",
+  "mode": "compile_new_project",
+  "raw_mode": "compile_new_project",
+  "dry_run": false,
+  "expected_files": [
+    "debug-v446-node24-real-v1/index.html",
+    "debug-v446-node24-real-v1/styles.css",
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json",
+    "debug-v446-node24-real-v1/.id2app/template-report.json",
+    "debug-v446-node24-real-v1/README.md"
+  ],
+  "target_files": [
+    "debug-v446-node24-real-v1/index.html",
+    "debug-v446-node24-real-v1/styles.css",
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json",
+    "debug-v446-node24-real-v1/.id2app/template-report.json",
+    "debug-v446-node24-real-v1/README.md"
+  ],
+  "completed_files": [
+    "debug-v446-node24-real-v1/index.html",
+    "debug-v446-node24-real-v1/styles.css",
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json",
+    "debug-v446-node24-real-v1/.id2app/template-report.json",
+    "debug-v446-node24-real-v1/README.md"
+  ],
+  "updated_files": [
+    {
+      "file_path": "debug-v446-node24-real-v1/index.html",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/styles.css",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/script.js",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/.id2app/app-spec.json",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/.id2app/template-report.json",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/README.md",
+      "action": "create",
+      "file_sha": "",
+      "commit_sha": "",
+      "file_url": "",
+      "commit_url": "",
+      "validation_status": "passed"
+    }
+  ],
+  "created_files": [
+    "debug-v446-node24-real-v1/index.html",
+    "debug-v446-node24-real-v1/styles.css",
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json",
+    "debug-v446-node24-real-v1/.id2app/template-report.json",
+    "debug-v446-node24-real-v1/README.md"
+  ],
+  "repaired_files": [],
+  "skipped_files": [],
+  "protected_files": [],
+  "failed_files": [],
+  "expected_count": 6,
+  "completed_count": 6,
+  "updated_count": 6,
+  "created_count": 6,
+  "repaired_count": 0,
+  "skipped_count": 0,
+  "protected_count": 0,
+  "failed_count": 0,
+  "quality_gate": {
+    "deterministic": true,
+    "last_layout_quality_gate": null
+  },
+  "preflight": null,
+  "updated_at": "2026-05-16T10:15:26.149Z"
+}
