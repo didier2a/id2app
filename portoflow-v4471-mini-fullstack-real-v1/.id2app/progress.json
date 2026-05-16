@@ -20,28 +20,29 @@
   "final_report_path": "portoflow-v4471-mini-fullstack-real-v1/.id2app/final-report.json",
   "current_phase": "publishing_files",
   "expected_count": 6,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 2,
-  "percent": 33,
-  "progress_sequence": 2,
+  "updated_count": 3,
+  "percent": 50,
+  "progress_sequence": 3,
   "monotonic_guard": true,
   "monotonic_regression_prevented": false,
-  "current_file": "portoflow-v4471-mini-fullstack-real-v1/styles.css",
+  "current_file": "portoflow-v4471-mini-fullstack-real-v1/script.js",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4471-mini-fullstack-real-v1/styles.css",
+  "last_successful_file": "portoflow-v4471-mini-fullstack-real-v1/script.js",
   "last_failed_file": null,
-  "last_commit_sha": "5563eea74b0e8453e21ba40328d9127333276c42",
-  "last_file_sha": "e26b9ba9354f4c0a88957841e4edda99d51c4e26",
+  "last_commit_sha": "4d1ea3c7e46a2a81cb9c1567822f45b691af68e5",
+  "last_file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4471-mini-fullstack-real-v1/index.html",
-    "portoflow-v4471-mini-fullstack-real-v1/styles.css"
+    "portoflow-v4471-mini-fullstack-real-v1/styles.css",
+    "portoflow-v4471-mini-fullstack-real-v1/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -62,9 +63,18 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-mini-fullstack-real-v1/styles.css",
       "commit_url": "https://github.com/didier2a/id2app/commit/5563eea74b0e8453e21ba40328d9127333276c42",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4471-mini-fullstack-real-v1/script.js",
+      "action": "update",
+      "file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
+      "commit_sha": "4d1ea3c7e46a2a81cb9c1567822f45b691af68e5",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-mini-fullstack-real-v1/script.js",
+      "commit_url": "https://github.com/didier2a/id2app/commit/4d1ea3c7e46a2a81cb9c1567822f45b691af68e5",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-16T13:14:16.679Z",
+  "updated_at": "2026-05-16T13:14:36.607Z",
   "next_poll_seconds": 15
 }
