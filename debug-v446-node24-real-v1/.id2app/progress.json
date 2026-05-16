@@ -20,29 +20,30 @@
   "final_report_path": "debug-v446-node24-real-v1/.id2app/final-report.json",
   "current_phase": "publishing_files",
   "expected_count": 6,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 3,
-  "percent": 50,
-  "progress_sequence": 3,
+  "updated_count": 4,
+  "percent": 67,
+  "progress_sequence": 4,
   "monotonic_guard": true,
   "monotonic_regression_prevented": false,
-  "current_file": "debug-v446-node24-real-v1/script.js",
+  "current_file": "debug-v446-node24-real-v1/.id2app/app-spec.json",
   "current_file_status": "success",
-  "last_successful_file": "debug-v446-node24-real-v1/script.js",
+  "last_successful_file": "debug-v446-node24-real-v1/.id2app/app-spec.json",
   "last_failed_file": null,
-  "last_commit_sha": "e1d9946f064284baa738b25a90910741aef8c67a",
-  "last_file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
+  "last_commit_sha": "62bf7148919391220b31da1b2c1032188366bb32",
+  "last_file_sha": "35175de25df623850f2dc37383ee3b18c5128f59",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "debug-v446-node24-real-v1/index.html",
     "debug-v446-node24-real-v1/styles.css",
-    "debug-v446-node24-real-v1/script.js"
+    "debug-v446-node24-real-v1/script.js",
+    "debug-v446-node24-real-v1/.id2app/app-spec.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -72,9 +73,18 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/script.js",
       "commit_url": "https://github.com/didier2a/id2app/commit/e1d9946f064284baa738b25a90910741aef8c67a",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "debug-v446-node24-real-v1/.id2app/app-spec.json",
+      "action": "update",
+      "file_sha": "35175de25df623850f2dc37383ee3b18c5128f59",
+      "commit_sha": "62bf7148919391220b31da1b2c1032188366bb32",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/debug-v446-node24-real-v1/.id2app/app-spec.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/62bf7148919391220b31da1b2c1032188366bb32",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-16T12:42:39.901Z",
+  "updated_at": "2026-05-16T12:42:56.706Z",
   "next_poll_seconds": 15
 }
