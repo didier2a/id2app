@@ -1,0 +1,15 @@
+{
+  "schema_version": "4.4.6",
+  "renderer": "contract_first_premium_renderer",
+  "class_contract": "4.4.6",
+  "shell_contract": "4.4.6",
+  "project_id": "debug-v446-node24-real-v1",
+  "generated_at": "2026-05-16T10:14:31.626Z",
+  "file_path": "debug-v446-node24-real-v1/.id2app/template-report.json",
+  "page_id": "index",
+  "validation_expected": [
+    "class_contract",
+    "premium_shell",
+    "html_css_js_alignment"
+  ]
+}
