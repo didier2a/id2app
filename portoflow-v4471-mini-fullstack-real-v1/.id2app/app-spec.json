@@ -1,0 +1,1500 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "4.4.6",
+  "project": {
+    "id": "portoflow-v4471-mini-fullstack-real-v1",
+    "name": "PortoFlow Mini Full Stack Réel V4.4.7.1",
+    "type": "website",
+    "language": "fr",
+    "sector": "territorial_technology",
+    "subsector": "smart_city_local_ai",
+    "audience": [
+      "habitants de Porto-Vecchio",
+      "visiteurs",
+      "professionnels locaux",
+      "restaurants",
+      "hôtels",
+      "paillotes",
+      "commerces",
+      "collectivités",
+      "partenaires institutionnels",
+      "investisseurs"
+    ],
+    "objective": "Valider une génération réelle 1 page avec OpenAI, Anthropic, Gemini, GitHub, progress.json monotone et final-report.json.",
+    "tone": "premium, territorial, institutionnel, stratégique, clair, moderne",
+    "business_model": "publicité contextuelle, mises en avant premium, partenariats locaux, offres promotionnelles dynamiques, services territoriaux à valeur ajoutée"
+  },
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "primary": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Le Territoire",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Services & Offres",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Professionnels Locaux",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Événements & Actualités",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Partenaires & Investisseurs",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Contact",
+        "href": "index.html",
+        "page_id": ""
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v4471-mini-fullstack-real-v1/index.html",
+      "template_id": "template_portoflow_fullstack_one_page",
+      "component_order": [
+        "header",
+        "hero",
+        "sections",
+        "cta_final",
+        "footer"
+      ],
+      "slots": {
+        "header": {
+          "logo": "PortoFlow",
+          "nav_primary": "nav_accueil,nav_services,nav_flux,nav_evenements,nav_plateforme"
+        },
+        "hero": {
+          "title": "PortoFlow, copilote territorial intelligent",
+          "subtitle": "Optimisez la saisonnalité, les flux et services de Porto-Vecchio avec l’IA",
+          "cta": {
+            "label": "Découvrir PortoFlow",
+            "href": "#services"
+          },
+          "eyebrow": "",
+          "primary_cta": "Découvrir PortoFlow",
+          "secondary_cta": ""
+        },
+        "sections": [
+          {
+            "id": "saison",
+            "type": "cards",
+            "title": "Saisonnalité extrême",
+            "cards": [
+              {
+                "title": "Flux saisonniers",
+                "content": "Gestion dynamique des arrivées et départs selon les pics saisonniers."
+              },
+              {
+                "title": "Parkings intelligents",
+                "content": "Optimisation en temps réel des places disponibles."
+              },
+              {
+                "title": "Plages et accès",
+                "content": "Information fluide sur la fréquentation et services associés."
+              }
+            ]
+          },
+          {
+            "id": "flux_services",
+            "type": "cards",
+            "title": "Flux, parkings, plages, événements",
+            "cards": [
+              {
+                "title": "Suivi des flux",
+                "content": "Analyse des déplacements pour fluidifier la circulation."
+              },
+              {
+                "title": "Événements locaux",
+                "content": "Calendrier intelligent et alertes personnalisées."
+              },
+              {
+                "title": "Services territoriaux",
+                "content": "Coordination des acteurs locaux pour une meilleure expérience."
+              }
+            ]
+          },
+          {
+            "id": "ia_orchestre",
+            "type": "panel",
+            "title": "L’IA, chef d’orchestre territorial",
+            "content": "Une intelligence augmentée coordonne flux, services et acteurs pour un territoire plus performant."
+          },
+          {
+            "id": "valeur_usagers",
+            "type": "metrics",
+            "title": "Valeur pour tous",
+            "metrics": [
+              {
+                "label": "Habitants satisfaits",
+                "value": "92%"
+              },
+              {
+                "label": "Professionnels engagés",
+                "value": "85%"
+              },
+              {
+                "label": "Collectivités partenaires",
+                "value": "100%"
+              },
+              {
+                "label": "Visiteurs informés",
+                "value": "78%"
+              }
+            ]
+          },
+          {
+            "id": "plateforme_economique",
+            "type": "bento",
+            "title": "Future plateforme économique territoriale",
+            "items": [
+              {
+                "title": "Partenariats locaux",
+                "content": "Renforcement des synergies économiques."
+              },
+              {
+                "title": "Offres promotionnelles",
+                "content": "Mises en avant dynamiques et ciblées."
+              },
+              {
+                "title": "Publicité contextuelle",
+                "content": "Communication adaptée au contexte territorial."
+              }
+            ]
+          },
+          {
+            "id": "ingenierie_augmentee",
+            "type": "panel",
+            "title": "Ingénierie augmentée par IA, n8n et CloudCode",
+            "content": "Automatisation et orchestration avancées pour une gestion optimale."
+          }
+        ],
+        "cta_final": {
+          "label": "Contactez PortoFlow",
+          "href": "#contact"
+        },
+        "footer": {
+          "text": "© 2024 PortoFlow - Tous droits réservés",
+          "links": "footer_mentions,footer_contact"
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Saisonnalité extrême maîtrisée",
+              "text": "PortoFlow anticipe et régule les flux saisonniers pour garantir fluidité et qualité de vie, en adaptant en temps réel la gestion des arrivées, parkings et accès aux plages.",
+              "proof": "Analyse continue des données de fréquentation et ajustements dynamiques validés par les collectivités."
+            },
+            {
+              "title": "Gestion intelligente des flux et services",
+              "text": "Grâce à un suivi précis des déplacements et événements, PortoFlow optimise la circulation, informe les usagers et coordonne les acteurs locaux pour une expérience territoriale harmonieuse.",
+              "proof": "Intégration de capteurs et algorithmes IA pour une analyse en temps réel."
+            },
+            {
+              "title": "L’IA, chef d’orchestre territorial",
+              "text": "Une intelligence augmentée pilote la coordination entre flux, services et partenaires, assurant une gestion proactive et performante du territoire.",
+              "proof": "Résultats mesurés en amélioration des indicateurs de satisfaction et d’efficacité territoriale."
+            },
+            {
+              "title": "Valeur partagée pour tous les acteurs",
+              "text": "PortoFlow crée un écosystème bénéfique aux habitants, professionnels, collectivités et visiteurs, avec des taux élevés de satisfaction et d’engagement.",
+              "proof": "92% d’habitants satisfaits, 85% de professionnels engagés, 100% de collectivités partenaires, 78% de visiteurs informés."
+            },
+            {
+              "title": "Vers une plateforme économique territoriale innovante",
+              "text": "PortoFlow favorise les partenariats locaux, les offres promotionnelles dynamiques et la publicité contextuelle pour dynamiser l’économie locale.",
+              "proof": "Multiplication des synergies économiques et visibilité accrue des acteurs locaux."
+            },
+            {
+              "title": "Ingénierie augmentée pour une gestion optimale",
+              "text": "L’automatisation avancée avec IA, n8n et CloudCode garantit une orchestration fluide et une adaptation continue aux besoins du territoire.",
+              "proof": "Processus automatisés réduisant les interventions manuelles et augmentant la réactivité."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Habitants informés et sereins",
+              "text": "Accès simplifié à l’information sur les services, événements et conditions locales pour une meilleure qualité de vie."
+            },
+            {
+              "title": "Professionnels locaux valorisés",
+              "text": "Plateforme dédiée pour promouvoir commerces, restaurants et offres spéciales, renforçant leur visibilité et attractivité."
+            },
+            {
+              "title": "Collectivités partenaires engagées",
+              "text": "Outil stratégique pour piloter les flux, coordonner les acteurs et optimiser les ressources territoriales."
+            },
+            {
+              "title": "Visiteurs guidés et connectés",
+              "text": "Informations personnalisées et alertes en temps réel pour une expérience touristique fluide et enrichie."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "92%",
+              "text": "Mesure de la satisfaction via enquêtes régulières."
+            },
+            {
+              "title": "85%",
+              "text": "Taux d’adhésion aux services et offres PortoFlow."
+            },
+            {
+              "title": "100%",
+              "text": "Participation active des collectivités locales."
+            },
+            {
+              "title": "78%",
+              "text": "Consultation des informations et alertes en temps réel."
+            }
+          ]
+        },
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment PortoFlow améliore-t-il la gestion des flux saisonniers ?",
+              "answer": "PortoFlow utilise des données en temps réel et des algorithmes IA pour anticiper les pics et adapter la gestion des parkings, accès et services."
+            },
+            {
+              "question": "Quels services sont coordonnés par PortoFlow ?",
+              "answer": "Flux de circulation, événements locaux, services territoriaux et communication entre acteurs pour une expérience optimisée."
+            },
+            {
+              "question": "Comment les professionnels locaux peuvent-ils bénéficier de PortoFlow ?",
+              "answer": "Ils peuvent promouvoir leurs offres, accéder à des mises en avant premium et participer à la plateforme économique territoriale."
+            },
+            {
+              "question": "Quels sont les avantages pour les visiteurs ?",
+              "answer": "Informations personnalisées, alertes en temps réel et accès facilité aux services et événements locaux."
+            }
+          ]
+        },
+        "cta_band": {
+          "text": "Pour en savoir plus sur nos services et partenariats, contactez notre équipe dédiée.",
+          "label": "Contactez PortoFlow",
+          "href": "#contact"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            "Carte des flux saisonniers à Porto-Vecchio",
+            "Dashboard de suivi des événements locaux",
+            "Schéma d’orchestration IA territoriale",
+            "Infographie des indicateurs de satisfaction",
+            "Illustration de la plateforme économique locale",
+            "Diagramme d’automatisation des processus"
+          ]
+        }
+      },
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    }
+  ],
+  "design_contract": {
+    "source": "mini_fullstack_real_v4471",
+    "extraction_enabled": true,
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "fonts": {
+      "body": "",
+      "headings": ""
+    },
+    "colors": {
+      "primary": "bleu marine profond",
+      "accent": "orange cuivre",
+      "intelligence": "cyan discret",
+      "secondary": "ardoise",
+      "background": "ivoire cartographique"
+    },
+    "spacing_scale": {},
+    "radius_scale": {},
+    "shadow_scale": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "canonical_components": [],
+    "forbidden_components": [
+      "blog_like_layout",
+      "plain_text_menu",
+      "unstyled_classes",
+      "html_css_class_mismatch",
+      "dead_navigation"
+    ],
+    "fragments": {}
+  },
+  "class_contract": {
+    "version": "4.4.6",
+    "namespace": "pf",
+    "mode": "contract_first_premium_renderer",
+    "groups": {
+      "shell": [
+        "pf-page",
+        "pf-container",
+        "pf-main"
+      ],
+      "logo": [
+        "pf-logo",
+        "pf-logo__symbol",
+        "pf-logo__mark",
+        "pf-logo__wordmark",
+        "pf-logo__tagline"
+      ],
+      "header": [
+        "pf-header",
+        "pf-header__inner",
+        "pf-nav",
+        "pf-nav__link",
+        "pf-nav__link--active",
+        "pf-header__cta",
+        "pf-nav-toggle",
+        "pf-nav-toggle__bar",
+        "pf-mobile-open"
+      ],
+      "buttons": [
+        "pf-btn",
+        "pf-btn--primary",
+        "pf-btn--secondary",
+        "pf-btn--ghost"
+      ],
+      "hero": [
+        "pf-section",
+        "pf-section--hero",
+        "pf-section--alt",
+        "pf-section--dark",
+        "pf-section--compact",
+        "pf-hero",
+        "pf-hero__grid",
+        "pf-hero__content",
+        "pf-hero__title",
+        "pf-hero__lead",
+        "pf-hero__actions",
+        "pf-hero__visual",
+        "pf-hero__metrics"
+      ],
+      "visual": [
+        "pf-visual-card",
+        "pf-visual-card__top",
+        "pf-visual-card__map",
+        "pf-visual-card__pulse",
+        "pf-device",
+        "pf-device__notch",
+        "pf-device__screen",
+        "pf-device__map"
+      ],
+      "editorial": [
+        "pf-eyebrow",
+        "pf-section__heading",
+        "pf-section__title",
+        "pf-section__lead",
+        "pf-tag-row",
+        "pf-tag",
+        "pf-list",
+        "pf-list__item"
+      ],
+      "cards": [
+        "pf-card-grid",
+        "pf-card",
+        "pf-card--accent",
+        "pf-card__index",
+        "pf-card__title",
+        "pf-card__text",
+        "pf-bento-grid",
+        "pf-bento",
+        "pf-bento--wide",
+        "pf-panel",
+        "pf-panel__content",
+        "pf-panel__visual"
+      ],
+      "metrics": [
+        "pf-metrics",
+        "pf-metric",
+        "pf-metric__value",
+        "pf-metric__label",
+        "pf-dashboard",
+        "pf-dashboard__grid",
+        "pf-dashboard__card",
+        "pf-dashboard__value"
+      ],
+      "cta": [
+        "pf-cta-band",
+        "pf-cta-band__content",
+        "pf-cta-band__actions"
+      ],
+      "footer": [
+        "pf-footer",
+        "pf-footer__grid",
+        "pf-footer__brand",
+        "pf-footer__col",
+        "pf-footer__bottom"
+      ]
+    },
+    "required_classes": [
+      "pf-page",
+      "pf-container",
+      "pf-main",
+      "pf-logo",
+      "pf-logo__symbol",
+      "pf-logo__mark",
+      "pf-logo__wordmark",
+      "pf-logo__tagline",
+      "pf-header",
+      "pf-header__inner",
+      "pf-nav",
+      "pf-nav__link",
+      "pf-nav__link--active",
+      "pf-header__cta",
+      "pf-nav-toggle",
+      "pf-nav-toggle__bar",
+      "pf-mobile-open",
+      "pf-btn",
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost",
+      "pf-section",
+      "pf-section--hero",
+      "pf-section--alt",
+      "pf-section--dark",
+      "pf-section--compact",
+      "pf-hero",
+      "pf-hero__grid",
+      "pf-hero__content",
+      "pf-hero__title",
+      "pf-hero__lead",
+      "pf-hero__actions",
+      "pf-hero__visual",
+      "pf-hero__metrics",
+      "pf-visual-card",
+      "pf-visual-card__top",
+      "pf-visual-card__map",
+      "pf-visual-card__pulse",
+      "pf-device",
+      "pf-device__notch",
+      "pf-device__screen",
+      "pf-device__map",
+      "pf-eyebrow",
+      "pf-section__heading",
+      "pf-section__title",
+      "pf-section__lead",
+      "pf-tag-row",
+      "pf-tag",
+      "pf-list",
+      "pf-list__item",
+      "pf-card-grid",
+      "pf-card",
+      "pf-card--accent",
+      "pf-card__index",
+      "pf-card__title",
+      "pf-card__text",
+      "pf-bento-grid",
+      "pf-bento",
+      "pf-bento--wide",
+      "pf-panel",
+      "pf-panel__content",
+      "pf-panel__visual",
+      "pf-metrics",
+      "pf-metric",
+      "pf-metric__value",
+      "pf-metric__label",
+      "pf-dashboard",
+      "pf-dashboard__grid",
+      "pf-dashboard__card",
+      "pf-dashboard__value",
+      "pf-cta-band",
+      "pf-cta-band__content",
+      "pf-cta-band__actions",
+      "pf-footer",
+      "pf-footer__grid",
+      "pf-footer__brand",
+      "pf-footer__col",
+      "pf-footer__bottom"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-pf-nav-toggle",
+      "data-pf-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_blog_like_layout": true,
+      "max_consecutive_paragraphs": 1,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.6",
+    "brand_name": "PortoFlow Mini Full Stack Réel V4.4.7.1",
+    "logo": {
+      "type": "inline_svg_symbol_plus_wordmark",
+      "concept": "territorial compass with intelligent flows",
+      "tagline": "Territoire intelligent"
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Le Territoire",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Services & Offres",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Professionnels Locaux",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Événements & Actualités",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Partenaires & Investisseurs",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Contact",
+          "href": "index.html",
+          "page_id": ""
+        }
+      ],
+      "cta": {
+        "label": "Devenir partenaire",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-pf-nav-toggle",
+        "panel_hook": "data-pf-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Plateforme",
+          "links": [
+            {
+              "label": "Accueil",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Le Territoire",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Services & Offres",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Professionnels Locaux",
+              "href": "index.html",
+              "page_id": ""
+            }
+          ]
+        },
+        {
+          "title": "Territoire",
+          "links": [
+            {
+              "label": "Le Territoire",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Services & Offres",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Professionnels Locaux",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Événements & Actualités",
+              "href": "index.html",
+              "page_id": ""
+            }
+          ]
+        },
+        {
+          "title": "Partenaires",
+          "links": [
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html"
+            },
+            {
+              "label": "Dashboard",
+              "href": "dashboard.html"
+            },
+            {
+              "label": "Contact",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "title": "Projet",
+          "links": [
+            {
+              "label": "Ingénierie IA",
+              "href": "ingenierie.html"
+            },
+            {
+              "label": "Production",
+              "href": "production.html"
+            },
+            {
+              "label": "Documentation",
+              "href": "README.md"
+            }
+          ]
+        }
+      ],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "96px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost"
+    ]
+  },
+  "image_registry": {},
+  "warnings": [],
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "portoflow-v4471-mini-fullstack-real-v1",
+    "checkpoint_path": "portoflow-v4471-mini-fullstack-real-v1/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "template_system": {
+    "family": "auto",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": []
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Le Territoire",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Services & Offres",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Professionnels Locaux",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Événements & Actualités",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Partenaires & Investisseurs",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Contact",
+      "href": "index.html",
+      "page_id": ""
+    }
+  ],
+  "site_architecture": {
+    "version": "4.4.6",
+    "primary_navigation": [
+      {
+        "id": "accueil",
+        "label": "Accueil",
+        "url": "/",
+        "role": "landing"
+      },
+      {
+        "id": "territoire",
+        "label": "Le Territoire",
+        "url": "/territoire",
+        "role": "informative"
+      },
+      {
+        "id": "services",
+        "label": "Services & Offres",
+        "url": "/services",
+        "role": "service_catalog"
+      },
+      {
+        "id": "professionnels",
+        "label": "Professionnels Locaux",
+        "url": "/professionnels",
+        "role": "community_portal"
+      },
+      {
+        "id": "evenements",
+        "label": "Événements & Actualités",
+        "url": "/evenements",
+        "role": "news_events"
+      },
+      {
+        "id": "partenaires",
+        "label": "Partenaires & Investisseurs",
+        "url": "/partenaires",
+        "role": "institutional_relations"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "url": "/contact",
+        "role": "contact_form"
+      }
+    ],
+    "footer_navigation": [
+      {
+        "id": "mentions_legales",
+        "label": "Mentions Légales",
+        "url": "/mentions-legales",
+        "role": "legal"
+      },
+      {
+        "id": "politique_confidentialite",
+        "label": "Politique de Confidentialité",
+        "url": "/politique-confidentialite",
+        "role": "legal"
+      },
+      {
+        "id": "accessibilite",
+        "label": "Accessibilité",
+        "url": "/accessibilite",
+        "role": "legal"
+      },
+      {
+        "id": "plan_du_site",
+        "label": "Plan du Site",
+        "url": "/plan-du-site",
+        "role": "informative"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "url": "/faq",
+        "role": "support"
+      }
+    ],
+    "cross_links": [
+      {
+        "from": "accueil",
+        "to": "services",
+        "label": "Découvrez nos services territoriaux"
+      },
+      {
+        "from": "accueil",
+        "to": "evenements",
+        "label": "Actualités et événements à Porto-Vecchio"
+      },
+      {
+        "from": "territoire",
+        "to": "partenaires",
+        "label": "Nos partenaires institutionnels"
+      },
+      {
+        "from": "services",
+        "to": "professionnels",
+        "label": "Répertoire des professionnels locaux"
+      },
+      {
+        "from": "professionnels",
+        "to": "services",
+        "label": "Offres spéciales pour professionnels"
+      },
+      {
+        "from": "evenements",
+        "to": "contact",
+        "label": "Inscrivez-vous aux événements"
+      },
+      {
+        "from": "partenaires",
+        "to": "investisseurs",
+        "label": "Opportunités d'investissement"
+      },
+      {
+        "from": "faq",
+        "to": "contact",
+        "label": "Besoin d'aide ? Contactez-nous"
+      },
+      {
+        "from": "plan_du_site",
+        "to": "accueil",
+        "label": "Retour à l'accueil"
+      }
+    ],
+    "user_journeys": [
+      {
+        "id": "habitant_informer",
+        "description": "Un habitant cherche des informations sur les services territoriaux et événements locaux.",
+        "steps": [
+          "accueil",
+          "services",
+          "evenements",
+          "contact"
+        ],
+        "primary_cta": "Découvrir les services"
+      },
+      {
+        "id": "visiteur_decouverte",
+        "description": "Un visiteur souhaite découvrir le territoire, les commerces et événements.",
+        "steps": [
+          "accueil",
+          "territoire",
+          "professionnels",
+          "evenements",
+          "contact"
+        ],
+        "primary_cta": "Explorer le territoire"
+      },
+      {
+        "id": "professionnel_promotion",
+        "description": "Un professionnel local veut s'inscrire et promouvoir son commerce.",
+        "steps": [
+          "professionnels",
+          "services",
+          "contact"
+        ],
+        "primary_cta": "S'inscrire comme professionnel"
+      },
+      {
+        "id": "partenaire_investisseur",
+        "description": "Un partenaire ou investisseur cherche des informations stratégiques et opportunités.",
+        "steps": [
+          "partenaires",
+          "territoire",
+          "contact"
+        ],
+        "primary_cta": "Découvrir les partenariats"
+      }
+    ],
+    "page_roles": {
+      "accueil": "landing",
+      "territoire": "informative",
+      "services": "service_catalog",
+      "professionnels": "community_portal",
+      "evenements": "news_events",
+      "partenaires": "institutional_relations",
+      "contact": "contact_form",
+      "mentions_legales": "legal",
+      "politique_confidentialite": "legal",
+      "accessibilite": "legal",
+      "plan_du_site": "informative",
+      "faq": "support"
+    },
+    "cta_map": {
+      "accueil": [
+        {
+          "label": "Découvrir les services",
+          "target": "/services"
+        },
+        {
+          "label": "Voir les événements",
+          "target": "/evenements"
+        }
+      ],
+      "territoire": [
+        {
+          "label": "Nos partenaires",
+          "target": "/partenaires"
+        }
+      ],
+      "services": [
+        {
+          "label": "Consulter les professionnels",
+          "target": "/professionnels"
+        },
+        {
+          "label": "Contactez-nous pour une offre premium",
+          "target": "/contact"
+        }
+      ],
+      "professionnels": [
+        {
+          "label": "S'inscrire comme professionnel",
+          "target": "/contact"
+        },
+        {
+          "label": "Voir les offres spéciales",
+          "target": "/services"
+        }
+      ],
+      "evenements": [
+        {
+          "label": "S'inscrire à un événement",
+          "target": "/contact"
+        }
+      ],
+      "partenaires": [
+        {
+          "label": "Devenir partenaire",
+          "target": "/contact"
+        },
+        {
+          "label": "Opportunités d'investissement",
+          "target": "/partenaires"
+        }
+      ],
+      "contact": [
+        {
+          "label": "Envoyer un message",
+          "target": "/contact"
+        }
+      ],
+      "faq": [
+        {
+          "label": "Contactez le support",
+          "target": "/contact"
+        }
+      ],
+      "plan_du_site": [
+        {
+          "label": "Retour à l'accueil",
+          "target": "/"
+        }
+      ]
+    },
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "design_direction": {
+    "version": "4.4.6",
+    "visual_language": {
+      "style": "premium institutionnel, clair, moderne, stratégique",
+      "motifs": [
+        "structure modulaire en sections distinctes",
+        "usage de cartes et panneaux pour hiérarchiser l'information",
+        "typographie verrouillée pour cohérence et lisibilité",
+        "interface épurée sans éléments blog ou non institutionnels",
+        "navigation fixe et cohérente sur toutes les pages",
+        "usage de CTA contextuels et ciblés"
+      ],
+      "colors": [
+        {
+          "name": "primary",
+          "value": "bleu marine profond",
+          "usage": "éléments principaux, titres, liens actifs"
+        },
+        {
+          "name": "accent",
+          "value": "orange cuivre",
+          "usage": "CTA, surlignages, éléments d'interaction"
+        },
+        {
+          "name": "intelligence",
+          "value": "cyan discret",
+          "usage": "éléments liés à l'IA, infobulles, icônes spécifiques"
+        },
+        {
+          "name": "secondary",
+          "value": "ardoise",
+          "usage": "textes secondaires, fonds de cartes, bordures"
+        },
+        {
+          "name": "background",
+          "value": "ivoire cartographique",
+          "usage": "fonds généraux, zones de contenu"
+        }
+      ]
+    },
+    "template_assignments": {
+      "index": "template_portoflow_fullstack_one_page"
+    },
+    "page_layouts": {
+      "index": {
+        "header": {
+          "locked": true,
+          "includes": [
+            "logo",
+            "nav_primary"
+          ],
+          "nav_primary": {
+            "items": [
+              {
+                "id": "nav_accueil",
+                "label": "Accueil",
+                "href": "#index"
+              },
+              {
+                "id": "nav_services",
+                "label": "Services",
+                "href": "#services"
+              },
+              {
+                "id": "nav_flux",
+                "label": "Flux & Parkings",
+                "href": "#flux"
+              },
+              {
+                "id": "nav_evenements",
+                "label": "Événements",
+                "href": "#evenements"
+              },
+              {
+                "id": "nav_plateforme",
+                "label": "Plateforme",
+                "href": "#plateforme"
+              }
+            ],
+            "active_page_class": true
+          }
+        },
+        "hero": {
+          "component": "hero",
+          "slots": {
+            "title": "PortoFlow, copilote territorial intelligent",
+            "subtitle": "Optimisez la saisonnalité, les flux et services de Porto-Vecchio avec l’IA",
+            "cta": {
+              "label": "Découvrir PortoFlow",
+              "href": "#services",
+              "style": "accent"
+            }
+          }
+        },
+        "sections": [
+          {
+            "component": "cards",
+            "id": "saison",
+            "title": "Saisonnalité extrême",
+            "cards": [
+              {
+                "title": "Flux saisonniers",
+                "content": "Gestion dynamique des arrivées et départs selon les pics saisonniers."
+              },
+              {
+                "title": "Parkings intelligents",
+                "content": "Optimisation en temps réel des places disponibles."
+              },
+              {
+                "title": "Plages et accès",
+                "content": "Information fluide sur la fréquentation et services associés."
+              }
+            ]
+          },
+          {
+            "component": "cards",
+            "id": "flux_services",
+            "title": "Flux, parkings, plages, événements",
+            "cards": [
+              {
+                "title": "Suivi des flux",
+                "content": "Analyse des déplacements pour fluidifier la circulation."
+              },
+              {
+                "title": "Événements locaux",
+                "content": "Calendrier intelligent et alertes personnalisées."
+              },
+              {
+                "title": "Services territoriaux",
+                "content": "Coordination des acteurs locaux pour une meilleure expérience."
+              }
+            ]
+          },
+          {
+            "component": "panel",
+            "id": "ia_orchestre",
+            "title": "L’IA, chef d’orchestre territorial",
+            "content": "Une intelligence augmentée coordonne flux, services et acteurs pour un territoire plus performant."
+          },
+          {
+            "component": "metrics",
+            "id": "valeur_usagers",
+            "title": "Valeur pour tous",
+            "metrics": [
+              {
+                "label": "Habitants satisfaits",
+                "value": "92%"
+              },
+              {
+                "label": "Professionnels engagés",
+                "value": "85%"
+              },
+              {
+                "label": "Collectivités partenaires",
+                "value": "100%"
+              },
+              {
+                "label": "Visiteurs informés",
+                "value": "78%"
+              }
+            ]
+          },
+          {
+            "component": "bento",
+            "id": "plateforme_economique",
+            "title": "Future plateforme économique territoriale",
+            "items": [
+              {
+                "title": "Partenariats locaux",
+                "content": "Renforcement des synergies économiques."
+              },
+              {
+                "title": "Offres promotionnelles",
+                "content": "Mises en avant dynamiques et ciblées."
+              },
+              {
+                "title": "Publicité contextuelle",
+                "content": "Communication adaptée au contexte territorial."
+              }
+            ]
+          },
+          {
+            "component": "panel",
+            "id": "ingenierie_augmentee",
+            "title": "Ingénierie augmentée par IA, n8n et CloudCode",
+            "content": "Automatisation et orchestration avancées pour une gestion optimale."
+          }
+        ],
+        "cta_final": {
+          "component": "cta_final",
+          "label": "Contactez PortoFlow",
+          "href": "#contact",
+          "style": "accent"
+        },
+        "footer": {
+          "locked": true,
+          "includes": [
+            "text",
+            "links"
+          ],
+          "text": "© 2024 PortoFlow - Tous droits réservés",
+          "links": [
+            {
+              "id": "footer_mentions",
+              "label": "Mentions légales",
+              "href": "#mentions"
+            },
+            {
+              "id": "footer_contact",
+              "label": "Contact",
+              "href": "#contact"
+            }
+          ]
+        }
+      }
+    },
+    "component_rules": {
+      "header": {
+        "locked": true,
+        "structure": [
+          "logo",
+          "nav_primary"
+        ],
+        "nav_primary": {
+          "lock_classes": true,
+          "active_item_highlight": true,
+          "no_dead_links": true
+        }
+      },
+      "footer": {
+        "locked": true,
+        "structure": [
+          "text",
+          "links"
+        ],
+        "links": {
+          "lock_classes": true,
+          "no_dead_links": true
+        }
+      },
+      "hero": {
+        "slots": [
+          "title",
+          "subtitle",
+          "cta"
+        ],
+        "cta": {
+          "style": "accent",
+          "contextual": true
+        }
+      },
+      "cards": {
+        "lock_classes": true,
+        "card_structure": [
+          "title",
+          "content"
+        ],
+        "max_cards_per_section": 3,
+        "layout": "grid",
+        "spacing": "consistent"
+      },
+      "panel": {
+        "lock_classes": true,
+        "slots": [
+          "title",
+          "content"
+        ],
+        "background_color": "background",
+        "border_radius": "medium",
+        "shadow": "soft"
+      },
+      "metrics": {
+        "lock_classes": true,
+        "slots": [
+          "title",
+          "metrics"
+        ],
+        "metrics_structure": [
+          "label",
+          "value"
+        ],
+        "layout": "horizontal_flex",
+        "color_accentuation": "primary"
+      },
+      "bento": {
+        "lock_classes": true,
+        "slots": [
+          "title",
+          "items"
+        ],
+        "items_structure": [
+          "title",
+          "content"
+        ],
+        "layout": "multi_column"
+      },
+      "cta_final": {
+        "lock_classes": true,
+        "style": "accent",
+        "placement": "bottom_center",
+        "contextual": true
+      }
+    },
+    "responsive_rules": {
+      "breakpoints": {
+        "mobile": "max-width: 600px",
+        "tablet": "max-width: 900px",
+        "desktop": "min-width: 901px"
+      },
+      "header": {
+        "mobile": {
+          "nav_primary": "burger_menu",
+          "logo": "centered"
+        },
+        "tablet_desktop": {
+          "nav_primary": "horizontal_menu",
+          "logo": "left_aligned"
+        }
+      },
+      "sections": {
+        "cards": {
+          "mobile": "single_column",
+          "tablet": "two_columns",
+          "desktop": "three_columns"
+        },
+        "metrics": {
+          "mobile": "vertical_stack",
+          "tablet_desktop": "horizontal_flex"
+        },
+        "bento": {
+          "mobile": "single_column",
+          "tablet": "two_columns",
+          "desktop": "multi_column"
+        }
+      },
+      "cta_final": {
+        "mobile": {
+          "width": "100%",
+          "font_size": "large"
+        },
+        "desktop": {
+          "width": "auto",
+          "font_size": "medium"
+        }
+      }
+    },
+    "anti_blog_rules": [
+      "interdire tout layout blog_like_layout",
+      "interdire menu texte brut plain_text_menu",
+      "interdire classes non stylisées unstyled_classes",
+      "interdire discordance html_css_class_mismatch",
+      "interdire navigation avec liens morts dead_navigation",
+      "éviter contenu non institutionnel ou trop informel",
+      "éviter structures narratives ou storytelling de blog",
+      "éviter usage excessif de texte libre non encapsulé en composants",
+      "éviter animations ou effets non sobres"
+    ]
+  },
+  "template_registry_v4_4_4": {},
+  "creative_workflow": {
+    "version": "4.4.4",
+    "applied": true,
+    "mode": "controlled_creative",
+    "openai_roles": [
+      "site_architect",
+      "ux_ui_design_director",
+      "deep_editorial_writer"
+    ],
+    "gemini_roles": [
+      "site_plan_validator",
+      "file_quality_qa"
+    ],
+    "anthropic_roles": [
+      "file_builder",
+      "repair_builder"
+    ]
+  },
+  "site_plan_qa": {
+    "valid": false,
+    "risk_level": "high",
+    "blocking_issues": [
+      "Incohérence fondamentale entre la 'site_architecture' (décrivant un site multi-pages avec des URLs distinctes) et la 'design_direction'/'editorial_expansion' (décrivant un site mono-page avec navigation par ancres).",
+      "La 'primary_navigation' et la 'footer_navigation' définies dans 'site_architecture' sont en contradiction directe avec les éléments de navigation définis dans 'design_direction.page_layouts.index.header.nav_primary.items' et 'design_direction.page_layouts.index.footer.links', rendant la majorité des liens de la 'site_architecture' potentiellement morts ou non implémentés."
+    ],
+    "navigation_errors": [
+      "La navigation principale ('primary_navigation' de 'site_architecture') liste 7 pages distinctes (ex: '/territoire', '/services'), tandis que la 'design_direction' pour la page 'index' ne propose que 5 liens d'ancrage (ex: '#services', '#flux').",
+      "La navigation de pied de page ('footer_navigation' de 'site_architecture') liste 5 pages légales/informatives, alors que le pied de page de la page 'index' dans 'design_direction' ne contient que 2 liens d'ancrage ('#mentions', '#contact').",
+      "Les 'cross_links' définis dans 'site_architecture' sont conçus pour une navigation inter-pages et ne sont pas compatibles avec une structure mono-page utilisant des ancres, ce qui les rend non fonctionnels ou mal interprétés.",
+      "Les 'user_journeys' décrivent des parcours entre différentes pages, ce qui est impossible avec une implémentation mono-page."
+    ],
+    "density_errors": [],
+    "repetition_warnings": [
+      "La densité éditoriale pour la page 'index' est proche de la cible (environ 610 mots pour 650 visés), ce qui est cohérent avec une interface compacte. Cependant, la nature mono-page entraîne une répétition thématique forte entre les 'narrative_blocks', 'use_cases' et 'proof_points' pour renforcer les messages clés. Cela doit être géré pour éviter une redondance perçue plutôt qu'une emphase."
+    ],
+    "recommendations": [
+      "**Clarifier l'architecture du site :** Décider si le site est une application mono-page (SPA) ou un site multi-pages traditionnel. Cette décision doit être cohérente sur l'ensemble des documents.",
+      "**Si mono-page :** Mettre à jour la 'site_architecture' pour refléter une navigation par ancres uniquement. Supprimer les définitions de pages distinctes et les liens inter-pages qui ne seraient pas des ancres. Adapter les 'user_journeys' en conséquence.",
+      "**Si multi-pages :** Développer les 'design_direction' et 'editorial_expansion' pour toutes les pages définies dans la 'site_architecture'. Assurer que chaque page a son propre contenu, sa navigation et ses CTA.",
+      "**Aligner les navigations :** Harmoniser la navigation principale et de pied de page dans 'site_architecture' avec celle définie dans 'design_direction' pour la structure choisie (ancres ou URLs).",
+      "**Vérifier les CTA et liens internes :** S'assurer que tous les CTA et liens internes sont fonctionnels et contextuels par rapport à la structure finale du site (mono-page avec ancres ou multi-pages avec URLs)."
+    ]
+  },
+  "contract_first_renderer": {
+    "version": "4.4.6",
+    "enabled": true,
+    "deterministic_shell": true,
+    "deterministic_css": true,
+    "deterministic_js": true,
+    "class_contract_required": true
+  },
+  "template_registry_v4_4_6": {
+    "mode": "premium_contract_templates",
+    "templates": {
+      "template_territorial_home": [
+        "hero",
+        "metrics",
+        "bento",
+        "device",
+        "cta"
+      ],
+      "template_seasonality_split": [
+        "hero",
+        "cards",
+        "panel",
+        "metrics",
+        "cta"
+      ],
+      "template_mobile_app_showcase": [
+        "hero",
+        "device",
+        "cards",
+        "dashboard",
+        "cta"
+      ],
+      "template_territorial_dashboard": [
+        "hero",
+        "dashboard",
+        "metrics",
+        "cards",
+        "cta"
+      ],
+      "template_partner_contact": [
+        "hero",
+        "cards",
+        "contact",
+        "cta"
+      ]
+    }
+  },
+  "compiler": "contract_first_premium_renderer_v4_4_7_1"
+}
