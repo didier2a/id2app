@@ -1,0 +1,1141 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "4.4.6",
+  "project": {
+    "id": "debug-v446-node24-real-v1",
+    "name": "Debug Node 24 Real PUT",
+    "type": "website",
+    "language": "fr",
+    "sector": "debug",
+    "subsector": "github_put",
+    "audience": [
+      "developpeur",
+      "debug workflow",
+      "validation GitHub PUT"
+    ],
+    "objective": "Tester le nœud 24 GitHub PUT du workflow V4.4.6 sur un dossier jetable.",
+    "tone": "clair, technique, premium minimal",
+    "business_model": ""
+  },
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "primary": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Debug Node 24",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Workflow V4.4.6",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "GitHub PUT",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "FAQ",
+        "href": "index.html",
+        "page_id": ""
+      },
+      {
+        "label": "Contact",
+        "href": "index.html",
+        "page_id": ""
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Debug Node 24",
+      "file_path": "debug-v446-node24-real-v1/index.html",
+      "template_id": "template_debug_contract_first",
+      "component_order": [
+        "logo",
+        "header",
+        "hero",
+        "cards",
+        "cta",
+        "footer"
+      ],
+      "slots": {
+        "logo": {
+          "type": "image",
+          "src": "logo.png",
+          "alt": "Logo Debug Node 24"
+        },
+        "header": {
+          "type": "header",
+          "content": "Debug Node 24 - Test GitHub PUT"
+        },
+        "hero": {
+          "type": "hero_premium",
+          "title": "Test de publication GitHub V4.4.6",
+          "subtitle": "Validation technique du nœud 24 en conditions réelles",
+          "eyebrow": "Debug avancé",
+          "primary_cta": "Voir le rapport complet",
+          "secondary_cta": ""
+        },
+        "cards": [
+          {
+            "id": "card1",
+            "title": "Statut du workflow",
+            "text": "Le workflow GitHub PUT s'exécute correctement."
+          },
+          {
+            "id": "card2",
+            "title": "Validation SHA",
+            "text": "Le SHA est géré et mis à jour avec succès."
+          }
+        ],
+        "cta": {
+          "type": "cta",
+          "label": "Voir le rapport complet",
+          "action": "/rapport"
+        },
+        "footer": {
+          "type": "footer_simple",
+          "text": "© 2024 Debug Node 24 - Test technique uniquement"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            {
+              "title": "Contexte du test",
+              "text": "Ce site vérifie l'exécution et la fiabilité du nœud 24 GitHub PUT dans le workflow V4.4.6, garantissant une intégration fluide et conforme aux attentes des développeurs."
+            }
+          ]
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Statut du workflow",
+              "text": "Le workflow GitHub PUT s'exécute sans erreur, assurant la mise à jour continue des dépôts via le nœud 24.",
+              "proof": "Logs d'exécution validés et absence d'erreurs détectées."
+            },
+            {
+              "title": "Gestion du SHA",
+              "text": "Le SHA des commits est correctement géré et mis à jour, garantissant l'intégrité des versions publiées.",
+              "proof": "Comparaison des SHA avant et après publication confirmée."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Développeurs",
+              "text": "Valider la bonne intégration du nœud 24 dans leurs workflows CI/CD GitHub."
+            },
+            {
+              "title": "Ingénieurs DevOps",
+              "text": "Assurer la stabilité et la conformité des processus de publication automatisée."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "text": "Taux de réussite des exécutions du nœud 24 sur le dossier test."
+            },
+            {
+              "text": "Absence totale d'erreurs critiques lors des tests en conditions réelles."
+            }
+          ]
+        },
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Qu'est-ce que le nœud 24 GitHub PUT ?",
+              "answer": "Un composant clé du workflow V4.4.6 permettant la mise à jour automatisée des dépôts via l'API GitHub."
+            },
+            {
+              "question": "Comment vérifier la réussite du workflow ?",
+              "answer": "Les logs d'exécution et la validation des SHA garantissent la bonne exécution des tâches."
+            }
+          ]
+        },
+        "cta_band": {
+          "text": "Accédez au rapport détaillé pour une analyse approfondie des tests du nœud 24.",
+          "label": "Voir le rapport complet",
+          "href": "/rapport"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "src": "logo.png",
+              "caption": "Logo officiel Debug Node 24"
+            }
+          ]
+        }
+      },
+      "editorial_word_target": 150,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    }
+  ],
+  "design_contract": {
+    "source": "debug_node24_v446",
+    "extraction_enabled": true,
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "fonts": {
+      "body": "",
+      "headings": ""
+    },
+    "colors": {
+      "intelligence": "cyan discret",
+      "background": "ivoire cartographique",
+      "accent": "orange cuivre",
+      "primary": "bleu marine profond",
+      "secondary": "ardoise"
+    },
+    "spacing_scale": {},
+    "radius_scale": {},
+    "shadow_scale": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "canonical_components": [],
+    "forbidden_components": [
+      "blog_like_layout",
+      "plain_text_menu",
+      "unstyled_classes",
+      "html_css_class_mismatch"
+    ],
+    "fragments": {}
+  },
+  "class_contract": {
+    "version": "4.4.6",
+    "namespace": "pf",
+    "mode": "contract_first_premium_renderer",
+    "groups": {
+      "shell": [
+        "pf-page",
+        "pf-container",
+        "pf-main"
+      ],
+      "logo": [
+        "pf-logo",
+        "pf-logo__symbol",
+        "pf-logo__mark",
+        "pf-logo__wordmark",
+        "pf-logo__tagline"
+      ],
+      "header": [
+        "pf-header",
+        "pf-header__inner",
+        "pf-nav",
+        "pf-nav__link",
+        "pf-nav__link--active",
+        "pf-header__cta",
+        "pf-nav-toggle",
+        "pf-nav-toggle__bar",
+        "pf-mobile-open"
+      ],
+      "buttons": [
+        "pf-btn",
+        "pf-btn--primary",
+        "pf-btn--secondary",
+        "pf-btn--ghost"
+      ],
+      "hero": [
+        "pf-section",
+        "pf-section--hero",
+        "pf-section--alt",
+        "pf-section--dark",
+        "pf-section--compact",
+        "pf-hero",
+        "pf-hero__grid",
+        "pf-hero__content",
+        "pf-hero__title",
+        "pf-hero__lead",
+        "pf-hero__actions",
+        "pf-hero__visual",
+        "pf-hero__metrics"
+      ],
+      "visual": [
+        "pf-visual-card",
+        "pf-visual-card__top",
+        "pf-visual-card__map",
+        "pf-visual-card__pulse",
+        "pf-device",
+        "pf-device__notch",
+        "pf-device__screen",
+        "pf-device__map"
+      ],
+      "editorial": [
+        "pf-eyebrow",
+        "pf-section__heading",
+        "pf-section__title",
+        "pf-section__lead",
+        "pf-tag-row",
+        "pf-tag",
+        "pf-list",
+        "pf-list__item"
+      ],
+      "cards": [
+        "pf-card-grid",
+        "pf-card",
+        "pf-card--accent",
+        "pf-card__index",
+        "pf-card__title",
+        "pf-card__text",
+        "pf-bento-grid",
+        "pf-bento",
+        "pf-bento--wide",
+        "pf-panel",
+        "pf-panel__content",
+        "pf-panel__visual"
+      ],
+      "metrics": [
+        "pf-metrics",
+        "pf-metric",
+        "pf-metric__value",
+        "pf-metric__label",
+        "pf-dashboard",
+        "pf-dashboard__grid",
+        "pf-dashboard__card",
+        "pf-dashboard__value"
+      ],
+      "cta": [
+        "pf-cta-band",
+        "pf-cta-band__content",
+        "pf-cta-band__actions"
+      ],
+      "footer": [
+        "pf-footer",
+        "pf-footer__grid",
+        "pf-footer__brand",
+        "pf-footer__col",
+        "pf-footer__bottom"
+      ]
+    },
+    "required_classes": [
+      "pf-page",
+      "pf-container",
+      "pf-main",
+      "pf-logo",
+      "pf-logo__symbol",
+      "pf-logo__mark",
+      "pf-logo__wordmark",
+      "pf-logo__tagline",
+      "pf-header",
+      "pf-header__inner",
+      "pf-nav",
+      "pf-nav__link",
+      "pf-nav__link--active",
+      "pf-header__cta",
+      "pf-nav-toggle",
+      "pf-nav-toggle__bar",
+      "pf-mobile-open",
+      "pf-btn",
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost",
+      "pf-section",
+      "pf-section--hero",
+      "pf-section--alt",
+      "pf-section--dark",
+      "pf-section--compact",
+      "pf-hero",
+      "pf-hero__grid",
+      "pf-hero__content",
+      "pf-hero__title",
+      "pf-hero__lead",
+      "pf-hero__actions",
+      "pf-hero__visual",
+      "pf-hero__metrics",
+      "pf-visual-card",
+      "pf-visual-card__top",
+      "pf-visual-card__map",
+      "pf-visual-card__pulse",
+      "pf-device",
+      "pf-device__notch",
+      "pf-device__screen",
+      "pf-device__map",
+      "pf-eyebrow",
+      "pf-section__heading",
+      "pf-section__title",
+      "pf-section__lead",
+      "pf-tag-row",
+      "pf-tag",
+      "pf-list",
+      "pf-list__item",
+      "pf-card-grid",
+      "pf-card",
+      "pf-card--accent",
+      "pf-card__index",
+      "pf-card__title",
+      "pf-card__text",
+      "pf-bento-grid",
+      "pf-bento",
+      "pf-bento--wide",
+      "pf-panel",
+      "pf-panel__content",
+      "pf-panel__visual",
+      "pf-metrics",
+      "pf-metric",
+      "pf-metric__value",
+      "pf-metric__label",
+      "pf-dashboard",
+      "pf-dashboard__grid",
+      "pf-dashboard__card",
+      "pf-dashboard__value",
+      "pf-cta-band",
+      "pf-cta-band__content",
+      "pf-cta-band__actions",
+      "pf-footer",
+      "pf-footer__grid",
+      "pf-footer__brand",
+      "pf-footer__col",
+      "pf-footer__bottom"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-pf-nav-toggle",
+      "data-pf-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_blog_like_layout": true,
+      "max_consecutive_paragraphs": 1,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.6",
+    "brand_name": "Debug Node 24 Real PUT",
+    "logo": {
+      "type": "inline_svg_symbol_plus_wordmark",
+      "concept": "territorial compass with intelligent flows",
+      "tagline": "github_put"
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Debug Node 24",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Workflow V4.4.6",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "GitHub PUT",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "FAQ",
+          "href": "index.html",
+          "page_id": ""
+        },
+        {
+          "label": "Contact",
+          "href": "index.html",
+          "page_id": ""
+        }
+      ],
+      "cta": {
+        "label": "Devenir partenaire",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-pf-nav-toggle",
+        "panel_hook": "data-pf-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Plateforme",
+          "links": [
+            {
+              "label": "Accueil",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Debug Node 24",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Workflow V4.4.6",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "GitHub PUT",
+              "href": "index.html",
+              "page_id": ""
+            }
+          ]
+        },
+        {
+          "title": "Territoire",
+          "links": [
+            {
+              "label": "Debug Node 24",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "Workflow V4.4.6",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "GitHub PUT",
+              "href": "index.html",
+              "page_id": ""
+            },
+            {
+              "label": "FAQ",
+              "href": "index.html",
+              "page_id": ""
+            }
+          ]
+        },
+        {
+          "title": "Partenaires",
+          "links": [
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html"
+            },
+            {
+              "label": "Dashboard",
+              "href": "dashboard.html"
+            },
+            {
+              "label": "Contact",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "title": "Projet",
+          "links": [
+            {
+              "label": "Ingénierie IA",
+              "href": "ingenierie.html"
+            },
+            {
+              "label": "Production",
+              "href": "production.html"
+            },
+            {
+              "label": "Documentation",
+              "href": "README.md"
+            }
+          ]
+        }
+      ],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "96px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost"
+    ]
+  },
+  "image_registry": {
+    "logo.png": {
+      "alt": "Logo Debug Node 24",
+      "description": "Logo principal pour la page de debug"
+    }
+  },
+  "warnings": [],
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "debug-v446-node24-real-v1",
+    "checkpoint_path": "debug-v446-node24-real-v1/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "template_system": {
+    "family": "auto",
+    "locked": true,
+    "selection_mode": "by_project_type_and_content",
+    "allowed_families": [
+      "institutional",
+      "association",
+      "product",
+      "portfolio",
+      "dashboard",
+      "documentation",
+      "event",
+      "local_service",
+      "editorial",
+      "minimal"
+    ],
+    "templates": []
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Debug Node 24",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Workflow V4.4.6",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "GitHub PUT",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "FAQ",
+      "href": "index.html",
+      "page_id": ""
+    },
+    {
+      "label": "Contact",
+      "href": "index.html",
+      "page_id": ""
+    }
+  ],
+  "site_architecture": {
+    "version": "4.4.6",
+    "primary_navigation": [
+      {
+        "id": "home",
+        "label": "Accueil",
+        "url": "/",
+        "role": "landing"
+      },
+      {
+        "id": "debug-node24",
+        "label": "Debug Node 24",
+        "url": "/debug-node24",
+        "role": "feature-detail"
+      },
+      {
+        "id": "workflow-v446",
+        "label": "Workflow V4.4.6",
+        "url": "/workflow-v446",
+        "role": "workflow-overview"
+      },
+      {
+        "id": "github-put",
+        "label": "GitHub PUT",
+        "url": "/github-put",
+        "role": "integration-detail"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "url": "/faq",
+        "role": "support"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "url": "/contact",
+        "role": "contact"
+      }
+    ],
+    "footer_navigation": [
+      {
+        "id": "privacy-policy",
+        "label": "Politique de confidentialité",
+        "url": "/privacy-policy",
+        "role": "legal"
+      },
+      {
+        "id": "terms-of-service",
+        "label": "Conditions d'utilisation",
+        "url": "/terms-of-service",
+        "role": "legal"
+      },
+      {
+        "id": "support",
+        "label": "Support technique",
+        "url": "/support",
+        "role": "support"
+      },
+      {
+        "id": "about",
+        "label": "À propos",
+        "url": "/about",
+        "role": "about"
+      }
+    ],
+    "cross_links": [
+      {
+        "from": "home",
+        "to": "debug-node24",
+        "label": "Découvrir Debug Node 24"
+      },
+      {
+        "from": "debug-node24",
+        "to": "workflow-v446",
+        "label": "Voir le workflow complet V4.4.6"
+      },
+      {
+        "from": "workflow-v446",
+        "to": "github-put",
+        "label": "Intégration GitHub PUT"
+      },
+      {
+        "from": "github-put",
+        "to": "faq",
+        "label": "Questions fréquentes GitHub PUT"
+      },
+      {
+        "from": "faq",
+        "to": "contact",
+        "label": "Contactez-nous pour plus d'aide"
+      },
+      {
+        "from": "support",
+        "to": "contact",
+        "label": "Besoin d'assistance ? Contactez-nous"
+      },
+      {
+        "from": "about",
+        "to": "home",
+        "label": "Retour à l'accueil"
+      }
+    ],
+    "user_journeys": [
+      {
+        "id": "discover-debug-node24",
+        "description": "L'utilisateur découvre la fonctionnalité Debug Node 24 depuis la page d'accueil, puis explore le workflow complet et l'intégration GitHub PUT avant de poser une question ou contacter le support.",
+        "steps": [
+          "home",
+          "debug-node24",
+          "workflow-v446",
+          "github-put",
+          "faq",
+          "contact"
+        ]
+      },
+      {
+        "id": "support-request",
+        "description": "L'utilisateur a un problème et accède directement au support puis contacte l'équipe si besoin.",
+        "steps": [
+          "support",
+          "contact"
+        ]
+      },
+      {
+        "id": "legal-info-access",
+        "description": "L'utilisateur consulte les informations légales depuis le footer.",
+        "steps": [
+          "privacy-policy",
+          "terms-of-service"
+        ]
+      }
+    ],
+    "page_roles": {
+      "home": "landing",
+      "debug-node24": "feature-detail",
+      "workflow-v446": "workflow-overview",
+      "github-put": "integration-detail",
+      "faq": "support",
+      "contact": "contact",
+      "privacy-policy": "legal",
+      "terms-of-service": "legal",
+      "support": "support",
+      "about": "about"
+    },
+    "cta_map": {
+      "home": [
+        {
+          "label": "Découvrir Debug Node 24",
+          "target": "debug-node24"
+        },
+        {
+          "label": "Voir le workflow V4.4.6",
+          "target": "workflow-v446"
+        }
+      ],
+      "debug-node24": [
+        {
+          "label": "Explorer le workflow complet",
+          "target": "workflow-v446"
+        },
+        {
+          "label": "Poser une question fréquente",
+          "target": "faq"
+        }
+      ],
+      "workflow-v446": [
+        {
+          "label": "Intégrer GitHub PUT",
+          "target": "github-put"
+        },
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "github-put": [
+        {
+          "label": "Consulter la FAQ GitHub PUT",
+          "target": "faq"
+        },
+        {
+          "label": "Contacter le support",
+          "target": "contact"
+        }
+      ],
+      "faq": [
+        {
+          "label": "Contacter le support",
+          "target": "contact"
+        },
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "contact": [
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "support": [
+        {
+          "label": "Contacter le support",
+          "target": "contact"
+        },
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "about": [
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "privacy-policy": [
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ],
+      "terms-of-service": [
+        {
+          "label": "Retour à l'accueil",
+          "target": "home"
+        }
+      ]
+    },
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "design_direction": {
+    "version": "4.4.6",
+    "visual_language": {
+      "style": "premium minimal institutionnel, clair et technique",
+      "motifs": [
+        "interface structurée",
+        "composants visuels verrouillés",
+        "navigation et contenu cohérents",
+        "espacement maîtrisé",
+        "typographie verrouillée"
+      ],
+      "colors": [
+        {
+          "role": "background",
+          "value": "ivoire cartographique"
+        },
+        {
+          "role": "primary",
+          "value": "bleu marine profond"
+        },
+        {
+          "role": "secondary",
+          "value": "ardoise"
+        },
+        {
+          "role": "accent",
+          "value": "orange cuivre"
+        },
+        {
+          "role": "intelligence",
+          "value": "cyan discret"
+        }
+      ]
+    },
+    "template_assignments": {
+      "index": "template_debug_contract_first"
+    },
+    "page_layouts": {
+      "default": {
+        "header": {
+          "locked": true,
+          "content_type": "header",
+          "class_contract": "locked"
+        },
+        "footer": {
+          "locked": true,
+          "content_type": "footer_simple",
+          "class_contract": "locked"
+        },
+        "navigation": {
+          "primary": {
+            "locked": true,
+            "active_page_class_required": true,
+            "no_dead_links": true
+          },
+          "footer": {
+            "locked": true
+          }
+        },
+        "content": {
+          "structure": "composants visuels ordonnés",
+          "allowed_components_order": [
+            "logo",
+            "header",
+            "hero_premium",
+            "cards",
+            "cta",
+            "footer"
+          ],
+          "logo": {
+            "type": "image",
+            "locked": true,
+            "alt": "Logo Debug Node 24"
+          },
+          "hero_premium": {
+            "typography": "locked",
+            "style": "premium minimal",
+            "color_accent": "orange cuivre"
+          },
+          "cards": {
+            "style": "institutionnel structuré",
+            "card_count": "variable",
+            "card_content": {
+              "title": {
+                "typography": "locked",
+                "color": "bleu marine profond"
+              },
+              "text": {
+                "typography": "locked",
+                "color": "ardoise"
+              }
+            }
+          },
+          "cta": {
+            "contextual": true,
+            "style": "bouton premium accentué orange cuivre",
+            "typography": "locked"
+          }
+        }
+      }
+    },
+    "component_rules": {
+      "logo": {
+        "locked": true,
+        "image_source": "logo.png",
+        "alt_text": "Logo Debug Node 24"
+      },
+      "header": {
+        "locked": true,
+        "typography": "locked",
+        "content": "Debug Node 24 - Test GitHub PUT",
+        "color": "bleu marine profond"
+      },
+      "hero_premium": {
+        "title_typography": "locked",
+        "subtitle_typography": "locked",
+        "color_title": "bleu marine profond",
+        "color_subtitle": "ardoise",
+        "background_color": "ivoire cartographique"
+      },
+      "cards": {
+        "card_title_color": "bleu marine profond",
+        "card_text_color": "ardoise",
+        "background_color": "ivoire cartographique",
+        "spacing": "modéré",
+        "border_radius": "standard institutionnel",
+        "shadow": "léger"
+      },
+      "cta": {
+        "button_color": "orange cuivre",
+        "text_color": "ivoire cartographique",
+        "hover_effect": "subtil accent",
+        "typography": "locked"
+      },
+      "footer_simple": {
+        "locked": true,
+        "typography": "locked",
+        "color_text": "ardoise",
+        "background_color": "ivoire cartographique"
+      }
+    },
+    "responsive_rules": {
+      "breakpoints": {
+        "mobile": "max-width 600px",
+        "tablet": "min-width 601px and max-width 1024px",
+        "desktop": "min-width 1025px"
+      },
+      "layout_adjustments": {
+        "mobile": {
+          "navigation": "hamburger menu verrouillé",
+          "cards": "empilement vertical",
+          "hero": "texte centré, taille réduite"
+        },
+        "tablet": {
+          "navigation": "menu horizontal verrouillé",
+          "cards": "grille 2 colonnes",
+          "hero": "texte aligné à gauche"
+        },
+        "desktop": {
+          "navigation": "menu horizontal verrouillé",
+          "cards": "grille 3 colonnes si possible",
+          "hero": "texte aligné à gauche"
+        }
+      }
+    },
+    "anti_blog_rules": [
+      "interdire blog_like_layout",
+      "interdire plain_text_menu",
+      "interdire unstyled_classes",
+      "interdire html_css_class_mismatch",
+      "interdire contenu non structuré",
+      "interdire navigation non verrouillée",
+      "interdire typographie non verrouillée"
+    ]
+  },
+  "template_registry_v4_4_4": {},
+  "creative_workflow": {
+    "version": "4.4.4",
+    "applied": true,
+    "mode": "controlled_creative",
+    "openai_roles": [
+      "site_architect",
+      "ux_ui_design_director",
+      "deep_editorial_writer"
+    ],
+    "gemini_roles": [
+      "site_plan_validator",
+      "file_quality_qa"
+    ],
+    "anthropic_roles": [
+      "file_builder",
+      "repair_builder"
+    ]
+  },
+  "site_plan_qa": {
+    "error": {
+      "message": "403 - \"{\\n  \\\"error\\\": {\\n    \\\"code\\\": 403,\\n    \\\"message\\\": \\\"Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.\\\",\\n    \\\"status\\\": \\\"PERMISSION_DENIED\\\"\\n  }\\n}\\n\"",
+      "name": "AxiosError",
+      "stack": "AxiosError: Request failed with status code 403\n    at settle (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/axios@1.16.0/node_modules/axios/lib/core/settle.js:19:12)\n    at RedirectableRequest.handleResponse (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/axios@1.16.0/node_modules/axios/lib/adapters/http.js:969:11)\n    at RedirectableRequest.emit (node:events:520:35)\n    at RedirectableRequest._processResponse (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/follow-redirects@1.16.0/node_modules/follow-redirects/index.js:424:10)\n    at ClientRequest.RedirectableRequest._onNativeResponse (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/follow-redirects@1.16.0/node_modules/follow-redirects/index.js:109:12)\n    at Object.onceWrapper (node:events:623:26)\n    at ClientRequest.emit (node:events:508:28)\n    at HTTPParser.parserOnIncomingClient [as onIncoming] (node:_http_client:780:27)\n    at HTTPParser.parserOnHeadersComplete (node:_http_common:125:17)\n    at TLSSocket.socketOnData (node:_http_client:615:22)\n    at TLSSocket.emit (node:events:508:28)\n    at addChunk (node:internal/streams/readable:563:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)\n    at TLSSocket.Readable.push (node:internal/streams/readable:394:5)\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:189:23)\n    at Axios.request (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/axios@1.16.0/node_modules/axios/lib/core/Axios.js:46:41)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at invokeAxios (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+exporter-trace-otlp_2c2e1f47b69b34bef6f634a13cbf61d9/node_modules/n8n-core/src/execution-engine/node-execution-context/utils/request-helper-functions.ts:98:10)\n    at proxyRequestToAxios (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+exporter-trace-otlp_2c2e1f47b69b34bef6f634a13cbf61d9/node_modules/n8n-core/src/execution-engine/node-execution-context/utils/request-helper-functions.ts:448:20)\n    at Object.request (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-core@file+packages+core_@opentelemetry+api@1.9.0_@opentelemetry+exporter-trace-otlp_2c2e1f47b69b34bef6f634a13cbf61d9/node_modules/n8n-core/src/execution-engine/node-execution-context/utils/request-helper-functions.ts:1701:11)",
+      "code": "ERR_BAD_REQUEST",
+      "status": 403
+    }
+  },
+  "contract_first_renderer": {
+    "version": "4.4.6",
+    "enabled": true,
+    "deterministic_shell": true,
+    "deterministic_css": true,
+    "deterministic_js": true,
+    "class_contract_required": true
+  },
+  "template_registry_v4_4_6": {
+    "mode": "premium_contract_templates",
+    "templates": {
+      "template_territorial_home": [
+        "hero",
+        "metrics",
+        "bento",
+        "device",
+        "cta"
+      ],
+      "template_seasonality_split": [
+        "hero",
+        "cards",
+        "panel",
+        "metrics",
+        "cta"
+      ],
+      "template_mobile_app_showcase": [
+        "hero",
+        "device",
+        "cards",
+        "dashboard",
+        "cta"
+      ],
+      "template_territorial_dashboard": [
+        "hero",
+        "dashboard",
+        "metrics",
+        "cards",
+        "cta"
+      ],
+      "template_partner_contact": [
+        "hero",
+        "cards",
+        "contact",
+        "cta"
+      ]
+    }
+  },
+  "compiler": "contract_first_premium_renderer_v4_4_6"
+}
