@@ -20,26 +20,27 @@
   "final_report_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/final-report-v4476b-writer-lot-a-1779035351923.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 3,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 1,
-  "percent": 33,
-  "progress_sequence": 7,
+  "updated_count": 2,
+  "percent": 67,
+  "progress_sequence": 8,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/index.html",
+  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/territoire.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/index.html",
+  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/territoire.html",
   "last_failed_file": null,
-  "last_commit_sha": "5a03560b6adbe695ccf7dabbef054870842e8049",
-  "last_file_sha": "e3f77cff753143a482a1ed0ddb8198eca0762c03",
+  "last_commit_sha": "58e66efe256acbb5fcafa3d98ceaa61e69d156ac",
+  "last_file_sha": "6247aac7292f01b3193866f38b0a8e0299a8283d",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "portoflow-v4476b-existing-writer-telemetry-test/index.html"
+    "portoflow-v4476b-existing-writer-telemetry-test/index.html",
+    "portoflow-v4476b-existing-writer-telemetry-test/territoire.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/5a03560b6adbe695ccf7dabbef054870842e8049",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4476b-existing-writer-telemetry-test/territoire.html",
+      "action": "update",
+      "file_sha": "6247aac7292f01b3193866f38b0a8e0299a8283d",
+      "commit_sha": "58e66efe256acbb5fcafa3d98ceaa61e69d156ac",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/territoire.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/58e66efe256acbb5fcafa3d98ceaa61e69d156ac",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T16:42:04.177Z",
+  "updated_at": "2026-05-17T16:45:31.674Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
