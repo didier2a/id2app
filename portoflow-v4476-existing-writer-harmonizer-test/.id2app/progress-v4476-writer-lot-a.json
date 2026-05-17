@@ -18,8 +18,8 @@
   "checkpoint_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/checkpoint-v4476-writer-lot-a.json",
   "progress_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/progress-v4476-writer-lot-a.json",
   "final_report_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/final-report-v4476-writer-lot-a.json",
-  "current_phase": "writer_page_by_page_started",
-  "current_phase_label": "Writer éditorial page par page : démarrage",
+  "current_phase": "writer_page_completed",
+  "current_phase_label": "Writer page terminée ; progression éditoriale enregistrée",
   "current_file": null,
   "current_file_status": null,
   "expected_count": 3,
@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 3,
+  "progress_sequence": 4,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,7 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-05-17T15:02:09.317Z",
-  "updated_at": "2026-05-17T15:04:48.031Z",
+  "updated_at": "2026-05-17T15:05:53.764Z",
   "phase_telemetry": true,
-  "heartbeat_at": "2026-05-17T15:04:48.031Z"
+  "heartbeat_at": "2026-05-17T15:05:53.764Z"
 }
