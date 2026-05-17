@@ -3,7 +3,7 @@
   "schema_version": "4.4",
   "orchestrator_version": "4.4.7.5-publisher-memory-safe-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
-  "run_id": "646",
+  "run_id": "653",
   "project_id": "portoflow-v4476-existing-writer-harmonizer-test",
   "project_name": "PortoFlow",
   "project_type": "multi_page_website",
@@ -38,6 +38,6 @@
   "updated_files": [],
   "warnings": [],
   "next_poll_seconds": 15,
-  "created_at": "2026-05-17T15:13:06.151Z",
-  "updated_at": "2026-05-17T15:13:06.151Z"
+  "created_at": "2026-05-17T15:23:36.099Z",
+  "updated_at": "2026-05-17T15:23:36.099Z"
 }
