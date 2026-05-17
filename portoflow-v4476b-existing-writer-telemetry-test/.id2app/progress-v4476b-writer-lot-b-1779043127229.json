@@ -20,26 +20,27 @@
   "final_report_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/final-report-v4476b-writer-lot-b-1779043127229.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 3,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 1,
-  "percent": 33,
-  "progress_sequence": 7,
+  "updated_count": 2,
+  "percent": 67,
+  "progress_sequence": 8,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/application.html",
+  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/ecosysteme.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/application.html",
+  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/ecosysteme.html",
   "last_failed_file": null,
-  "last_commit_sha": "9b816fd43d7a8c1e61307636a77d072a02200337",
-  "last_file_sha": "5e28214304bda0fe224ad8a32eec6d0337d59492",
+  "last_commit_sha": "17471b6ae4d025987d9e18f43ca1d8cc48f911ae",
+  "last_file_sha": "a98d160b6b996aa514a79555b75ce7d3554be7f5",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "portoflow-v4476b-existing-writer-telemetry-test/application.html"
+    "portoflow-v4476b-existing-writer-telemetry-test/application.html",
+    "portoflow-v4476b-existing-writer-telemetry-test/ecosysteme.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/application.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/9b816fd43d7a8c1e61307636a77d072a02200337",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4476b-existing-writer-telemetry-test/ecosysteme.html",
+      "action": "update",
+      "file_sha": "a98d160b6b996aa514a79555b75ce7d3554be7f5",
+      "commit_sha": "17471b6ae4d025987d9e18f43ca1d8cc48f911ae",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/ecosysteme.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/17471b6ae4d025987d9e18f43ca1d8cc48f911ae",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T18:51:19.067Z",
+  "updated_at": "2026-05-17T18:54:01.687Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
