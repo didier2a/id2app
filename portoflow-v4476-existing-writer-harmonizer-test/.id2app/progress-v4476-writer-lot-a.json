@@ -18,8 +18,8 @@
   "checkpoint_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/checkpoint-v4476-writer-lot-a.json",
   "progress_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/progress-v4476-writer-lot-a.json",
   "final_report_path": "portoflow-v4476-existing-writer-harmonizer-test/.id2app/final-report-v4476-writer-lot-a.json",
-  "current_phase": "app_spec_structure_only",
-  "current_phase_label": "App Spec structure-only : contexte compact avant 07S",
+  "current_phase": "site_architecture",
+  "current_phase_label": "App Spec compacte prête ; architecture de site et navigation",
   "current_file": null,
   "current_file_status": null,
   "expected_count": 3,
@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 1,
+  "progress_sequence": 2,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,7 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-05-17T15:23:36.099Z",
-  "updated_at": "2026-05-17T15:24:41.026Z",
+  "updated_at": "2026-05-17T15:24:43.010Z",
   "phase_telemetry": true,
-  "heartbeat_at": "2026-05-17T15:24:41.026Z"
+  "heartbeat_at": "2026-05-17T15:24:43.010Z"
 }
