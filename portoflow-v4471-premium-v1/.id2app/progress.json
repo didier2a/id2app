@@ -20,26 +20,27 @@
   "final_report_path": "portoflow-v4471-premium-v1/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 7,
-  "progress_sequence": 13,
+  "updated_count": 2,
+  "percent": 14,
+  "progress_sequence": 14,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4471-premium-v1/application.html",
+  "current_file": "portoflow-v4471-premium-v1/ecosysteme.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4471-premium-v1/application.html",
+  "last_successful_file": "portoflow-v4471-premium-v1/ecosysteme.html",
   "last_failed_file": null,
-  "last_commit_sha": "4d24c2184d54487ce9575a3cd96c4a8881f6853d",
-  "last_file_sha": "aab9237cd2ce43482c4250735b5d3eb6c2ff4b12",
+  "last_commit_sha": "e834972be8483bdb3473a21c6e8062d32e07be22",
+  "last_file_sha": "e2365dbe7ee6283f23dfdca9eca7eebb20cefc8e",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "portoflow-v4471-premium-v1/application.html"
+    "portoflow-v4471-premium-v1/application.html",
+    "portoflow-v4471-premium-v1/ecosysteme.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-premium-v1/application.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/4d24c2184d54487ce9575a3cd96c4a8881f6853d",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4471-premium-v1/ecosysteme.html",
+      "action": "create",
+      "file_sha": "e2365dbe7ee6283f23dfdca9eca7eebb20cefc8e",
+      "commit_sha": "e834972be8483bdb3473a21c6e8062d32e07be22",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-premium-v1/ecosysteme.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e834972be8483bdb3473a21c6e8062d32e07be22",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T01:22:49.165Z",
+  "updated_at": "2026-05-17T01:23:12.733Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.4"
 }
