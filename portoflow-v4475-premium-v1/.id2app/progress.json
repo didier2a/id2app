@@ -20,22 +20,22 @@
   "final_report_path": "portoflow-v4475-premium-v1/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 11,
-  "percent": 79,
-  "progress_sequence": 23,
+  "updated_count": 12,
+  "percent": 86,
+  "progress_sequence": 24,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v1/script.js",
+  "current_file": "portoflow-v4475-premium-v1/.id2app/app-spec.json",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v1/script.js",
+  "last_successful_file": "portoflow-v4475-premium-v1/.id2app/app-spec.json",
   "last_failed_file": null,
-  "last_commit_sha": "a68198b6e19ee3f385c1ca6413b754de445d2af6",
-  "last_file_sha": "4134c02a6cda31b75cce091692e28526e5c8141c",
+  "last_commit_sha": "3e20688e8134d66ee4eb46f5ee5c588f34ba77ff",
+  "last_file_sha": "e9e5eb60591056262eaa32e2e6d31b1f0b9c1d7b",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -49,7 +49,8 @@
     "portoflow-v4475-premium-v1/production.html",
     "portoflow-v4475-premium-v1/contact.html",
     "portoflow-v4475-premium-v1/styles.css",
-    "portoflow-v4475-premium-v1/script.js"
+    "portoflow-v4475-premium-v1/script.js",
+    "portoflow-v4475-premium-v1/.id2app/app-spec.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -151,10 +152,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v1/script.js",
       "commit_url": "https://github.com/didier2a/id2app/commit/a68198b6e19ee3f385c1ca6413b754de445d2af6",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v1/.id2app/app-spec.json",
+      "action": "create",
+      "file_sha": "e9e5eb60591056262eaa32e2e6d31b1f0b9c1d7b",
+      "commit_sha": "3e20688e8134d66ee4eb46f5ee5c588f34ba77ff",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v1/.id2app/app-spec.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3e20688e8134d66ee4eb46f5ee5c588f34ba77ff",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T03:08:58.999Z",
+  "updated_at": "2026-05-17T03:09:15.410Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
