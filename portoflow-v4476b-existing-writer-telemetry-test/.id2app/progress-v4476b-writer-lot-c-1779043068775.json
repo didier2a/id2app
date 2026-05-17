@@ -18,8 +18,8 @@
   "checkpoint_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/checkpoint-v4476b-writer-lot-c-1779043068775.json",
   "progress_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/progress-v4476b-writer-lot-c-1779043068775.json",
   "final_report_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/final-report-v4476b-writer-lot-c-1779043068775.json",
-  "current_phase": "accepted",
-  "current_phase_label": "Payload accepté ; écriture du progress initial",
+  "current_phase": "app_spec_structure_only",
+  "current_phase_label": "App Spec structure-only : contexte compact avant 07S",
   "current_file": null,
   "current_file_status": null,
   "expected_count": 3,
@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 0,
+  "progress_sequence": 1,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,5 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-05-17T18:39:51.156Z",
-  "updated_at": "2026-05-17T18:39:51.156Z"
+  "updated_at": "2026-05-17T18:40:50.997Z",
+  "phase_telemetry": true,
+  "heartbeat_at": "2026-05-17T18:40:50.997Z"
 }
