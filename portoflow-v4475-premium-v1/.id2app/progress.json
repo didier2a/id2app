@@ -20,26 +20,27 @@
   "final_report_path": "portoflow-v4475-premium-v1/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 7,
-  "progress_sequence": 13,
+  "updated_count": 2,
+  "percent": 14,
+  "progress_sequence": 14,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v1/index.html",
+  "current_file": "portoflow-v4475-premium-v1/territoire.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v1/index.html",
+  "last_successful_file": "portoflow-v4475-premium-v1/territoire.html",
   "last_failed_file": null,
-  "last_commit_sha": "f96409ab7f865d7b829dd690951aa07108a96242",
-  "last_file_sha": "b47478b77dacda6425ebd908b82f62706db11b56",
+  "last_commit_sha": "9a165cba6c61530161b0677094ea44a0476f6816",
+  "last_file_sha": "49d8b73e1caeecf5d62e559d67ea92cc75711364",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "portoflow-v4475-premium-v1/index.html"
+    "portoflow-v4475-premium-v1/index.html",
+    "portoflow-v4475-premium-v1/territoire.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v1/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/f96409ab7f865d7b829dd690951aa07108a96242",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v1/territoire.html",
+      "action": "create",
+      "file_sha": "49d8b73e1caeecf5d62e559d67ea92cc75711364",
+      "commit_sha": "9a165cba6c61530161b0677094ea44a0476f6816",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v1/territoire.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9a165cba6c61530161b0677094ea44a0476f6816",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T03:06:16.433Z",
+  "updated_at": "2026-05-17T03:06:32.351Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
