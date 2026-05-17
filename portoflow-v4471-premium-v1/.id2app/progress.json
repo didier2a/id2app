@@ -20,28 +20,29 @@
   "final_report_path": "portoflow-v4471-premium-v1/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 21,
-  "progress_sequence": 15,
+  "updated_count": 4,
+  "percent": 29,
+  "progress_sequence": 16,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4471-premium-v1/dashboard.html",
+  "current_file": "portoflow-v4471-premium-v1/ingenierie.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4471-premium-v1/dashboard.html",
+  "last_successful_file": "portoflow-v4471-premium-v1/ingenierie.html",
   "last_failed_file": null,
-  "last_commit_sha": "ce2e1eb6abe7cdcc1411c55ceba681d8c008c028",
-  "last_file_sha": "4969640d49b191759e0e84494479e6db3a880107",
+  "last_commit_sha": "0f5c6ff08e816bb8c8828ccba73c4528b28132dd",
+  "last_file_sha": "7f1f0d7a5752258552739966a25b2fb0ce8429a6",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4471-premium-v1/application.html",
     "portoflow-v4471-premium-v1/ecosysteme.html",
-    "portoflow-v4471-premium-v1/dashboard.html"
+    "portoflow-v4471-premium-v1/dashboard.html",
+    "portoflow-v4471-premium-v1/ingenierie.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-premium-v1/dashboard.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/ce2e1eb6abe7cdcc1411c55ceba681d8c008c028",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4471-premium-v1/ingenierie.html",
+      "action": "create",
+      "file_sha": "7f1f0d7a5752258552739966a25b2fb0ce8429a6",
+      "commit_sha": "0f5c6ff08e816bb8c8828ccba73c4528b28132dd",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4471-premium-v1/ingenierie.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0f5c6ff08e816bb8c8828ccba73c4528b28132dd",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T01:23:37.948Z",
+  "updated_at": "2026-05-17T01:24:07.609Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.4"
 }
