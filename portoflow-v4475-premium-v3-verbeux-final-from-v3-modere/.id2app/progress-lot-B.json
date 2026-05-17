@@ -20,27 +20,28 @@
   "final_report_path": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/.id2app/final-report-lot-B.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 8,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 2,
-  "percent": 25,
-  "progress_sequence": 8,
+  "updated_count": 3,
+  "percent": 38,
+  "progress_sequence": 9,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/ecosysteme.html",
+  "current_file": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/dashboard.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/ecosysteme.html",
+  "last_successful_file": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/dashboard.html",
   "last_failed_file": null,
-  "last_commit_sha": "00030e7276af0b03d3a559fbac80bd11b19ebec1",
-  "last_file_sha": "75d93554f9f2c770923d90aa40b5cbc0f9630d29",
+  "last_commit_sha": "16baa2a4671fe6c67f4f1ad36b13a3f75b3515ad",
+  "last_file_sha": "aed5012e013b991b3745a6909b7be0df99a59082",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/application.html",
-    "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/ecosysteme.html"
+    "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/ecosysteme.html",
+    "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/dashboard.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -61,10 +62,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/ecosysteme.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/00030e7276af0b03d3a559fbac80bd11b19ebec1",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/dashboard.html",
+      "action": "create",
+      "file_sha": "aed5012e013b991b3745a6909b7be0df99a59082",
+      "commit_sha": "16baa2a4671fe6c67f4f1ad36b13a3f75b3515ad",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v3-verbeux-final-from-v3-modere/dashboard.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/16baa2a4671fe6c67f4f1ad36b13a3f75b3515ad",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T12:57:49.778Z",
+  "updated_at": "2026-05-17T12:58:02.840Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
