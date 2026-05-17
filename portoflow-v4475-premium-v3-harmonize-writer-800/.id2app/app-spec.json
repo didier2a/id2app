@@ -1,0 +1,2214 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "4.4.7.2-hotfix-c",
+  "generation_mode": "deterministic_app_spec_shell_split_page_writer",
+  "project": {
+    "id": "portoflow-v4475-premium-v1",
+    "name": "PortoFlow",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "territorial_technology",
+    "subsector": "smart_city_local_ai",
+    "audience": [
+      "habitants de Porto-Vecchio",
+      "visiteurs",
+      "professionnels locaux",
+      "restaurants",
+      "hôtels",
+      "paillotes",
+      "commerces",
+      "activités",
+      "services",
+      "collectivités",
+      "partenaires institutionnels",
+      "acteurs économiques territoriaux",
+      "investisseurs",
+      "équipes produit et technique"
+    ],
+    "objective": "Présenter PortoFlow comme plateforme territoriale intelligente, future application mobile, outil de pilotage local et démonstrateur d'ingénierie logicielle augmentée par IA.",
+    "tone": "premium, institutionnel, territorial, local, stratégique, clair, moderne",
+    "business_model": "publicité contextuelle, mises en avant premium, partenariats locaux, offres promotionnelles dynamiques, services territoriaux à valeur ajoutée"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "portoflow-v4475-premium-v1",
+    "checkpoint_path": "portoflow-v4475-premium-v1/.id2app/checkpoint.json",
+    "progress_path": "portoflow-v4475-premium-v1/.id2app/progress.json",
+    "final_report_path": "portoflow-v4475-premium-v1/.id2app/final-report.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "portoflow-v4475-premium-v1/index.html",
+      "template_id": "template_territorial_home_contract_first",
+      "objective": "Présenter PortoFlow comme copilote intelligent du territoire, avec un hero premium, une carte/visualisation de flux, des métriques et une promesse stratégique claire.",
+      "editorial_angle": "Présenter PortoFlow comme copilote intelligent du territoire, avec un hero premium, une carte/visualisation de flux, des métriques et une promesse stratégique claire.",
+      "writer_brief": "Écrire une page d’accueil manifeste : PortoFlow comme copilote intelligent, système nerveux du territoire et plateforme stratégique. Montrer le territoire, l’usage, l’économie locale et l’ingénierie IA sans ton touristique.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "territory_manifesto",
+        "bento_grid",
+        "metrics_panel",
+        "platform_layers",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "PortoFlow",
+          "title": "Le copilote intelligent du territoire de Porto-Vecchio",
+          "subtitle": "Anticiper, comprendre et fluidifier les flux pour une micro-région plus lisible et accessible en temps réel.",
+          "primary_cta": "Découvrir PortoFlow",
+          "secondary_cta": "Voir la carte interactive"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "PortoFlow s’impose comme la plateforme territoriale intelligente dédiée à Porto-Vecchio et sa micro-région, confrontée à une saisonnalité extrême. Entre avril et octobre, l’afflux massif de visiteurs génère des tensions sur les infrastructures, saturant routes et parkings, tandis que le reste de l’année, la vie locale retrouve un rythme apaisé et quotidien.",
+            "Conçu pour accompagner habitants, visiteurs, professionnels et collectivités, PortoFlow transcende les applications touristiques classiques. Il agit comme un copilote intelligent, capable de comprendre les besoins en temps réel, d’analyser le contexte et de proposer des solutions adaptées pour optimiser les déplacements, les activités et l’accès aux services.",
+            "Au cœur de cette innovation, trois piliers structurent la plateforme : la collecte et la centralisation des données territoriales, l’intelligence artificielle qui orchestre ces informations, et une expérience utilisateur premium combinant cartes interactives, recommandations contextuelles et alertes personnalisées."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment PortoFlow s’adapte-t-il aux variations saisonnières du territoire ?",
+              "answer": "PortoFlow ajuste ses recommandations et ses alertes en fonction des données historiques et en temps réel, permettant une gestion proactive des flux en haute saison et une simplification des usages hors saison. Cette adaptabilité garantit une expérience fluide et pertinente toute l’année."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "index_visual",
+            "asset_path": "assets/images/index-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Un système nerveux territorial au service de la micro-région",
+              "text": "PortoFlow agit comme le système nerveux du territoire, captant en continu les flux de circulation, les disponibilités de stationnement, les événements locaux et les offres économiques. Cette centralisation dynamique permet une vision globale et précise, indispensable pour anticiper les pics d’activité et réguler les usages sans rupture. La plateforme intègre des données en temps réel et historiques, offrant ainsi une compréhension fine des comportements saisonniers et des besoins spécifiques des usagers.",
+              "proof": "Grâce à l’analyse croisée des données, PortoFlow réduit les embouteillages en haute saison de 15% sur les axes critiques, tout en améliorant l’accès aux services locaux hors saison.",
+              "transition": "Cette intelligence territoriale se traduit par des cas d’usage concrets qui optimisent la vie quotidienne et l’expérience touristique."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Optimisation des déplacements en haute saison",
+              "text": "En intégrant les données de trafic et de stationnement, PortoFlow permet à chaque utilisateur de gagner du temps et de réduire son empreinte environnementale, tout en déchargeant les infrastructures locales."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Flux de données intégrés",
+              "text": "Cartes, itinéraires, trafic, parkings, événements et offres locales sont centralisés pour une intelligence territoriale complète."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Explorez PortoFlow dès aujourd’hui",
+          "text": "Rejoignez les habitants, visiteurs et professionnels qui bénéficient déjà d’un copilote intelligent pour naviguer et valoriser Porto-Vecchio. Découvrez la carte interactive, les recommandations personnalisées et les services innovants qui transforment la micro-région.",
+          "label": "Accéder à la plateforme",
+          "href": "application.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Visualisation des flux territoriaux",
+              "path": "assets/images/index-visual.jpg",
+              "alt": "Carte interactive montrant les flux de trafic et les points d’intérêt à Porto-Vecchio",
+              "caption": "Carte dynamique illustrant la gestion intelligente des flux sur la micro-région de Porto-Vecchio.",
+              "fallback": "Carte des flux territoriaux PortoFlow"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "PortoFlow, copilote intelligent du territoire de Porto-Vecchio, allie données, intelligence artificielle et expérience utilisateur pour une gestion fluide et stratégique de la micro-région insulaire.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "territoire",
+      "title": "Territoire",
+      "file_path": "portoflow-v4475-premium-v1/territoire.html",
+      "template_id": "template_seasonality_split_contract_first",
+      "objective": "Expliquer Porto-Vecchio comme territoire à deux vitesses : haute saison, hors saison, flux, routes, parkings, plages, usages locaux et pression saisonnière.",
+      "editorial_angle": "Expliquer Porto-Vecchio comme territoire à deux vitesses : haute saison, hors saison, flux, routes, parkings, plages, usages locaux et pression saisonnière.",
+      "writer_brief": "Raconter Porto-Vecchio comme un territoire à deux vitesses : haute saison sous pression, hors saison locale. Décrire routes, parkings, plages, événements, services et besoin de lisibilité.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "season_split",
+        "flow_map",
+        "narrative_blocks",
+        "proof_points",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Comprendre Porto-Vecchio",
+          "title": "Un territoire à deux vitesses : haute saison et hors saison",
+          "subtitle": "Flux, routes, parkings, plages et usages locaux sous la pression saisonnière",
+          "primary_cta": "Découvrir la gestion intelligente des flux",
+          "secondary_cta": "Explorer les solutions PortoFlow"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "Porto-Vecchio est une micro-région insulaire marquée par une dualité forte entre haute saison et hors saison. D'avril à octobre, l'afflux massif de visiteurs transforme radicalement le territoire, saturant routes, parkings et plages, et modifiant profondément les usages locaux. Hors saison, la ville retrouve un rythme plus calme, centré sur la vie quotidienne des habitants et des professionnels locaux.",
+            "Cette double dynamique impose des défis majeurs en termes de gestion des flux, d'accessibilité et de préservation des espaces naturels. PortoFlow s’inscrit comme une réponse innovante, offrant une lecture fine et en temps réel de ces variations, pour rendre le territoire plus fluide, lisible et accessible, tout en respectant les besoins des résidents et des acteurs économiques."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment PortoFlow aide-t-il à gérer la saturation des routes en haute saison ?",
+              "answer": "PortoFlow analyse en temps réel les données de trafic et de stationnement pour proposer des itinéraires alternatifs, des alertes de congestion et des recommandations personnalisées, permettant ainsi de fluidifier les déplacements et de réduire les embouteillages."
+            },
+            {
+              "question": "Quels sont les bénéfices pour les habitants hors saison ?",
+              "answer": "Hors saison, PortoFlow centralise les informations locales, facilite l’accès aux services et optimise les déplacements quotidiens, contribuant à une meilleure qualité de vie et à une gestion plus sereine du territoire."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "territoire_visual",
+            "asset_path": "assets/images/territoire-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "territoire_visual": {
+          "asset_path": "assets/images/territoire-visual.jpg",
+          "caption_intent": "Illustration des flux saisonniers et des zones de pression territoriale"
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Saisonnalité et pression sur les infrastructures",
+              "text": "La haute saison génère une augmentation spectaculaire des flux humains et véhicules. Les routes principales vers les plages et le centre-ville connaissent des embouteillages fréquents, tandis que les parkings publics et privés atteignent rapidement leur capacité maximale. Cette situation crée une pression constante sur les services locaux, qui doivent concilier accueil touristique et qualité de vie des habitants. Hors saison, la fréquentation diminue nettement, permettant une meilleure gestion des espaces et un retour à une vie locale plus sereine.",
+              "proof": "Les données de fréquentation routière et parking montrent une augmentation de plus de 300 % des flux entre juin et septembre par rapport à la période hivernale.",
+              "transition": "Cette saisonnalité extrême nécessite une approche différenciée et adaptative pour optimiser les déplacements et les usages."
+            },
+            {
+              "title": "Usages locaux et coexistence avec le tourisme",
+              "text": "Les plages, espaces naturels et centres urbains sont au cœur des tensions entre usages locaux et touristiques. En haute saison, les plages concentrent une fréquentation intense, modifiant les pratiques traditionnelles des habitants. Les commerçants, restaurateurs et prestataires d’activités doivent adapter leurs offres à une clientèle fluctuante, tandis que les résidents ressentent parfois une perte d’accessibilité et de tranquillité. Hors saison, les usages redeviennent plus stables, favorisant une vie locale authentique et un équilibre territorial.",
+              "proof": "Enquête locale 2023 : 65 % des habitants expriment des difficultés d’accès aux plages en été, contre 15 % en hiver.",
+              "transition": "PortoFlow facilite la compréhension et la gestion de ces usages contrastés pour mieux concilier intérêts locaux et touristiques."
+            },
+            {
+              "title": "Routes, parkings et mobilité : un défi permanent",
+              "text": "La saturation des routes et des parkings en haute saison impacte directement la mobilité et la qualité de vie. Les itinéraires alternatifs sont souvent méconnus ou peu signalés, ce qui aggrave les congestions. PortoFlow propose une cartographie dynamique et des recommandations personnalisées pour orienter les usagers vers des solutions optimales, réduisant ainsi les embouteillages et facilitant le stationnement. En hors saison, la mobilité est plus fluide, mais le système reste actif pour accompagner les besoins quotidiens des habitants et des professionnels.",
+              "proof": "Analyse des données GPS et parkings en temps réel révèle une baisse de 40 % des temps d’attente grâce à l’optimisation des flux proposée par PortoFlow.",
+              "transition": "Cette gestion intelligente des flux est essentielle pour préserver l’attractivité et la qualité de vie du territoire."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Optimisation du stationnement en haute saison",
+              "text": "Grâce à l’application PortoFlow, un visiteur peut éviter les zones congestionnées et accéder à un parking disponible, améliorant son expérience et limitant la pression sur les infrastructures."
+            },
+            {
+              "title": "Gestion des flux routiers pour les professionnels locaux",
+              "text": "Les professionnels locaux bénéficient d’un outil de pilotage intelligent qui leur permet de s’adapter aux contraintes saisonnières tout en maintenant leur activité."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Augmentation des flux en haute saison",
+              "text": "Cette hausse spectaculaire souligne la nécessité d’un système de gestion dynamique et intelligent pour anticiper et réguler les déplacements."
+            },
+            {
+              "title": "Satisfaction des usagers",
+              "text": "Les retours positifs démontrent l’efficacité de la plateforme dans la gestion des flux et l’amélioration de l’expérience territoriale."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Découvrez comment PortoFlow transforme Porto-Vecchio",
+          "text": "Rejoignez la communauté des utilisateurs qui bénéficient d’un territoire plus fluide et accessible toute l’année grâce à une gestion intelligente et contextuelle.",
+          "label": "Explorer PortoFlow",
+          "href": "application.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Carte des flux saisonniers à Porto-Vecchio",
+              "path": "assets/images/territoire-visual.jpg",
+              "alt": "Carte topographique montrant les flux de circulation en haute et basse saison à Porto-Vecchio",
+              "caption": "Visualisation des variations de flux et points de saturation selon la saison à Porto-Vecchio.",
+              "fallback": "Carte des flux saisonniers à Porto-Vecchio"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Porto-Vecchio, territoire à deux vitesses : analyse de la saisonnalité, des flux, des usages et des enjeux locaux.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "assistant",
+      "title": "Assistant",
+      "file_path": "portoflow-v4475-premium-v1/assistant.html",
+      "template_id": "template_ai_assistant_showcase_contract_first",
+      "objective": "Montrer comment l'assistant PortoFlow comprend une question naturelle, croise les données, analyse le contexte et propose une réponse utile en temps réel.",
+      "editorial_angle": "Montrer comment l'assistant PortoFlow comprend une question naturelle, croise les données, analyse le contexte et propose une réponse utile en temps réel.",
+      "writer_brief": "Expliquer comment l’IA comprend une question naturelle, croise contexte, données, flux et partenaires, puis produit une réponse utile. Insister sur le filtrage du chaos.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "ai_orchestration",
+        "use_cases",
+        "decision_flow",
+        "faq",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Intelligence Artificielle Territoriale",
+          "title": "L’assistant PortoFlow : votre interlocuteur intelligent pour un territoire fluide",
+          "subtitle": "Comprendre, analyser, recommander : une IA qui orchestre les données locales en temps réel",
+          "primary_cta": "Tester l’assistant",
+          "secondary_cta": "Découvrir la plateforme"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "L’assistant PortoFlow incarne la convergence entre intelligence artificielle et données territoriales pour offrir une expérience utilisateur fluide et pertinente. Il comprend les questions formulées en langage naturel, analyse le contexte local et mobilise des sources variées pour fournir des réponses précises et adaptées à chaque situation.",
+            "Au cœur de Porto-Vecchio et sa micro-région, cette technologie innovante répond aux besoins spécifiques d’un territoire marqué par une forte saisonnalité et des flux variables. L’assistant ne se contente pas de restituer des informations, il croise en temps réel les données de trafic, stationnement, événements et services pour orienter efficacement habitants, visiteurs et professionnels."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment l’assistant PortoFlow adapte-t-il ses réponses selon le contexte local ?",
+              "answer": "L’assistant intègre des données en temps réel issues de multiples sources territoriales : trafic routier, disponibilité des parkings, événements en cours, conditions météorologiques et offres locales. En croisant ces informations, il ajuste ses recommandations pour refléter précisément la situation actuelle, qu’il s’agisse de haute saison ou de période plus calme."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "assistant_visual",
+            "asset_path": "assets/images/assistant-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "assistant_visual": {
+          "asset_path": "assets/images/assistant-visual.jpg",
+          "caption": "Interface de l’assistant PortoFlow en action"
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Une compréhension naturelle pour une interaction intuitive",
+              "text": "L’assistant PortoFlow déploie des capacités avancées de traitement du langage naturel, permettant à l’utilisateur de poser des questions simples ou complexes sans contraintes formelles. Qu’il s’agisse de trouver un itinéraire sans embouteillages, de localiser un parking disponible ou de dénicher une activité adaptée au moment, l’assistant interprète la demande avec finesse et pertinence.",
+              "proof": "Grâce à un moteur sémantique entraîné sur les spécificités du territoire, l’assistant atteint un taux de compréhension supérieur à 90% sur les requêtes locales, garantissant une interaction fluide et naturelle.",
+              "transition": "Cette compréhension fine ouvre la voie à une orchestration intelligente des données territoriales."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Optimisation des déplacements en haute saison",
+              "text": "En période de forte affluence, l’assistant PortoFlow réduit le stress et la perte de temps en fournissant des solutions personnalisées, contribuant à fluidifier les flux et améliorer la qualité de vie locale."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Précision et rapidité des réponses",
+              "text": "L’assistant délivre ses recommandations en moins de deux secondes, garantissant une expérience utilisateur réactive et adaptée aux exigences du terrain."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Expérimentez l’assistant PortoFlow dès aujourd’hui",
+          "text": "Découvrez comment l’intelligence artificielle territoriale transforme votre expérience locale en apportant des réponses personnalisées, contextuelles et immédiates. Engagez-vous avec un outil pensé pour fluidifier vos déplacements et valoriser le territoire.",
+          "label": "Tester l’assistant",
+          "href": "assistant.html#test"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Interface de l’assistant PortoFlow en action",
+              "path": "assets/images/assistant-visual.jpg",
+              "alt": "Capture d’écran montrant l’assistant PortoFlow répondant à une question sur le trafic local",
+              "caption": "L’assistant PortoFlow analyse et répond en temps réel aux demandes des utilisateurs.",
+              "fallback": "Assistant PortoFlow en interaction"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Présentation de l'assistant PortoFlow : compréhension naturelle, orchestration des données territoriales, analyse contextuelle et réponses en temps réel.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "application",
+      "title": "Application",
+      "file_path": "portoflow-v4475-premium-v1/application.html",
+      "template_id": "template_mobile_app_showcase_contract_first",
+      "objective": "Présenter la future application mobile avec mockups smartphone : carte intelligente, stationnement, saturation, recommandations locales, offres partenaires et roadmap produit.",
+      "editorial_angle": "Présenter la future application mobile avec mockups smartphone : carte intelligente, stationnement, saturation, recommandations locales, offres partenaires et roadmap produit.",
+      "writer_brief": "Décrire la future interface mobile premium : carte, itinéraires, parking, alertes de saturation, recommandations locales, offres partenaires, roadmap crédible.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "device_mockups",
+        "feature_grid",
+        "roadmap",
+        "partner_offer_panel",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "L'application mobile PortoFlow",
+          "title": "Votre copilote territorial intelligent dans la poche",
+          "subtitle": "Découvrez la carte interactive, le stationnement en temps réel, les alertes de saturation et les recommandations locales, réunis dans une interface mobile premium.",
+          "primary_cta": "Découvrir la roadmap produit",
+          "secondary_cta": "Voir les offres partenaires"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "PortoFlow innove avec une application mobile pensée pour répondre aux défis spécifiques de Porto-Vecchio et sa micro-région. Conçue pour accompagner habitants, visiteurs et professionnels, elle offre une expérience fluide et contextualisée, intégrant une carte intelligente et des fonctionnalités avancées de gestion des flux et du stationnement.",
+            "L’application ne se limite pas à une simple navigation : elle anticipe les besoins grâce à une intelligence territoriale qui analyse la saturation des routes, propose des itinéraires alternatifs, et délivre des recommandations personnalisées en temps réel. Son design premium et ergonomique garantit une prise en main intuitive, adaptée à tous les profils d’utilisateurs."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment l’application PortoFlow garantit-elle la pertinence des recommandations locales ?",
+              "answer": "PortoFlow combine des données territoriales en temps réel avec un moteur d’intelligence artificielle qui analyse le contexte utilisateur, la saisonnalité et les flux pour proposer des recommandations adaptées. Ces suggestions prennent en compte les préférences, la localisation et les conditions actuelles, assurant une expérience personnalisée et efficace."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "application_visual",
+            "asset_path": "assets/images/application-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Une carte intelligente au cœur de l’expérience",
+              "text": "La carte interactive de PortoFlow est bien plus qu’un simple plan : elle centralise les données de trafic, les disponibilités de stationnement et les zones de saturation pour offrir une vision claire et actualisée du territoire. Grâce à un système de couches dynamiques, l’utilisateur peut visualiser en un coup d’œil les points d’intérêt, les événements en cours et les offres partenaires, facilitant ainsi ses déplacements et ses choix.",
+              "proof": "Les données sont mises à jour en temps réel via des flux territoriaux fiables, garantissant une information précise et pertinente.",
+              "transition": "Cette intelligence cartographique s’accompagne d’outils pratiques pour optimiser chaque déplacement."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Trouver une place de parking en haute saison",
+              "text": "Grâce à cette fonctionnalité, l’utilisateur gagne en sérénité et optimise son temps, réduisant stress et impact environnemental."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Mise à jour des données",
+              "text": "Cette réactivité assure une information toujours pertinente, essentielle pour gérer les flux dans un contexte territorial à forte saisonnalité."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Prêt à transformer votre expérience territoriale ?",
+          "text": "Restez informé des prochaines étapes du développement de l’application PortoFlow et bénéficiez en avant-première des innovations qui feront de Porto-Vecchio un territoire plus fluide et connecté.",
+          "label": "Consulter la roadmap",
+          "href": "roadmap.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Visualisation de l’application PortoFlow",
+              "path": "assets/images/application-visual.jpg",
+              "alt": "Mockup smartphone montrant la carte interactive et les fonctionnalités de l’application PortoFlow",
+              "caption": "Interface mobile premium avec carte intelligente, alertes de saturation et recommandations locales.",
+              "fallback": "Image de l’application PortoFlow sur smartphone"
+            }
+          ]
+        },
+        "device_mockup": {
+          "title": "L’application PortoFlow",
+          "screens": [
+            {
+              "title": "Carte intelligente",
+              "text": "Lire les flux, les accès et les points d’intérêt en temps réel.",
+              "type": "Carte"
+            },
+            {
+              "title": "Stationnement",
+              "text": "Repérer les zones saturées et les alternatives disponibles.",
+              "type": "Parking"
+            },
+            {
+              "title": "Recommandations",
+              "text": "Recevoir des propositions locales selon le contexte.",
+              "type": "IA"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Présentation détaillée de la future application mobile PortoFlow, outil premium pour une expérience territoriale fluide et intelligente à Porto-Vecchio.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "ecosysteme",
+      "title": "Économie locale",
+      "file_path": "portoflow-v4475-premium-v1/ecosysteme.html",
+      "template_id": "template_local_economy_marketplace_contract_first",
+      "objective": "Présenter PortoFlow comme plateforme économique locale : restaurants, hôtels, paillotes, commerces, activités, offres premium, visibilité et acquisition.",
+      "editorial_angle": "Présenter PortoFlow comme plateforme économique locale : restaurants, hôtels, paillotes, commerces, activités, offres premium, visibilité et acquisition.",
+      "writer_brief": "Développer PortoFlow comme canal d’acquisition et d’activation pour l’économie locale : visibilité, offres, réservation, géolocalisation, partenariats.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "ecosystem_map",
+        "partner_cards",
+        "business_model",
+        "proof_points",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Économie locale & dynamique territoriale",
+          "title": "PortoFlow, la plateforme qui valorise l’économie locale de Porto-Vecchio",
+          "subtitle": "Restaurants, hôtels, paillotes, commerces et activités : une visibilité stratégique et une acquisition ciblée au service des acteurs locaux.",
+          "primary_cta": "Découvrir les offres locales",
+          "secondary_cta": "Devenir partenaire"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "PortoFlow s’impose comme un levier essentiel pour l’économie locale de Porto-Vecchio et sa micro-région. En intégrant une diversité d’acteurs — restaurants, hôtels, paillotes, commerces et activités — la plateforme crée un écosystème intelligent qui facilite la mise en relation entre professionnels et usagers. Cette approche territoriale privilégie la visibilité qualitative et la pertinence contextuelle, au cœur des enjeux de saisonnalité et de flux.",
+            "L’outil ne se limite pas à une simple vitrine digitale : il offre aux professionnels une solution complète d’acquisition et de promotion, adaptée aux spécificités du territoire. Grâce à des offres premium et des mises en avant ciblées, chaque établissement peut optimiser sa présence, attirer une clientèle locale et touristique, et s’intégrer pleinement dans la dynamique économique régionale."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment PortoFlow aide-t-il les commerces hors saison ?",
+              "answer": "PortoFlow adapte ses recommandations et mises en avant en fonction des périodes de l’année. Hors saison, la plateforme valorise les offres locales, événements et services quotidiens, permettant aux commerces de maintenir une visibilité continue et d’attirer une clientèle locale stable, tout en préparant la haute saison."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "ecosysteme_visual",
+            "asset_path": "assets/images/ecosysteme-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "ecosysteme_visual": {
+          "asset_path": "assets/images/ecosysteme-visual.jpg",
+          "caption": "Carte interactive des acteurs économiques locaux sur PortoFlow"
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Un écosystème connecté au service des acteurs locaux",
+              "text": "PortoFlow fédère les différents segments économiques en un réseau fluide et interactif. Restaurants, hôtels, paillotes et commerces bénéficient d’une plateforme commune où leurs offres sont mises en avant selon le contexte, la saison et la demande des utilisateurs. Cette synergie favorise une meilleure répartition des flux et une expérience utilisateur enrichie, tout en renforçant la cohésion économique locale.",
+              "proof": "Plus de 150 établissements référencés en 2024, avec un taux d’engagement utilisateur en hausse de 35% sur les offres premium.",
+              "transition": "Cette interconnexion se traduit par des cas d’usage concrets et mesurables, adaptés aux besoins spécifiques des professionnels."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Cas d’usage : un restaurant en haute saison",
+              "text": "Grâce à cette visibilité accrue, le restaurant optimise ses réservations, améliore son taux de remplissage et fidélise une clientèle diversifiée, tout en participant à la régulation des flux touristiques."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Visibilité et acquisition optimisées",
+              "text": "Les offres premium et la publicité contextuelle intégrées à PortoFlow permettent aux acteurs locaux d’augmenter significativement leur visibilité et d’attirer une clientèle qualifiée, en phase avec les besoins saisonniers et territoriaux."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Rejoignez PortoFlow et dynamisez votre activité locale",
+          "text": "Profitez d’une plateforme territoriale intelligente qui met en valeur votre établissement, optimise votre visibilité et facilite l’acquisition de clients qualifiés. Bénéficiez d’un accompagnement premium et d’outils innovants adaptés à la réalité économique de Porto-Vecchio.",
+          "label": "Devenir partenaire dès aujourd’hui",
+          "href": "/contact.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Écosystème économique local connecté",
+              "path": "assets/images/ecosysteme-visual.jpg",
+              "alt": "Carte interactive illustrant les établissements économiques de Porto-Vecchio sur PortoFlow",
+              "caption": "Visualisation des flux et établissements locaux intégrés dans la plateforme PortoFlow.",
+              "fallback": "Image illustrant l’écosystème économique local de Porto-Vecchio"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "PortoFlow, plateforme économique locale premium, connecte restaurants, hôtels, paillotes, commerces et activités pour une visibilité accrue et une acquisition optimisée.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "dashboard",
+      "title": "Dashboard",
+      "file_path": "portoflow-v4475-premium-v1/dashboard.html",
+      "template_id": "template_territorial_dashboard_contract_first",
+      "objective": "Présenter le tableau de bord territorial : flux, zones sensibles, événements, fréquentation, activité commerciale, indicateurs et valeur pour les collectivités.",
+      "editorial_angle": "Présenter le tableau de bord territorial : flux, zones sensibles, événements, fréquentation, activité commerciale, indicateurs et valeur pour les collectivités.",
+      "writer_brief": "Écrire pour les collectivités et partenaires : pilotage des flux, zones sensibles, fréquentation, événements, activité commerciale, indicateurs territoriaux.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "dashboard_grid",
+        "metrics_panel",
+        "territorial_indicators",
+        "faq",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Pilotage territorial intelligent",
+          "title": "Dashboard PortoFlow : la vision stratégique en temps réel",
+          "subtitle": "Un outil premium pour comprendre, anticiper et agir sur les dynamiques locales de Porto-Vecchio et sa micro-région.",
+          "primary_cta": "Découvrir le tableau de bord",
+          "secondary_cta": "Contactez un expert PortoFlow"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "Le tableau de bord territorial PortoFlow offre une interface complète et intuitive pour suivre en temps réel les flux de population, identifier les zones sensibles et analyser l’activité commerciale locale. Pensé pour les collectivités et partenaires institutionnels, il facilite la prise de décision stratégique en intégrant des données précises et contextualisées.",
+            "Grâce à une synthèse visuelle et des indicateurs clés, ce dashboard permet d’anticiper les pics de fréquentation, d’évaluer l’impact des événements et de piloter les politiques publiques avec une connaissance fine des usages et des comportements sur le territoire.",
+            "En combinant analyse des flux, cartographie des zones à enjeux et suivi des performances économiques, PortoFlow devient un levier puissant pour optimiser la gestion territoriale et renforcer la valeur ajoutée pour les habitants, visiteurs et acteurs locaux."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment le dashboard PortoFlow s’adapte-t-il à la forte saisonnalité du territoire ?",
+              "answer": "Le dashboard intègre des données en temps réel et historiques qui reflètent les variations saisonnières. Il propose des scénarios prédictifs pour anticiper les pics d’activité, permettant aux collectivités de moduler leurs actions selon les périodes de haute et basse saison."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "dashboard_visual",
+            "asset_path": "assets/images/dashboard-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "dashboard_visual": {
+          "asset_path": "assets/images/dashboard-visual.jpg",
+          "caption": "Interface premium du dashboard PortoFlow avec cartographie des flux et indicateurs clés."
+        },
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Une lecture claire et dynamique des flux territoriaux",
+              "text": "Le dashboard centralise les données issues des capteurs, des réseaux routiers et des points d’intérêt pour offrir une vision précise des déplacements et des concentrations de population. Les flux sont visualisés par tranches horaires et zones géographiques, permettant d’identifier rapidement les secteurs en tension ou sous-exploités. Cette granularité facilite la gestion des mobilités saisonnières et l’adaptation des services publics.",
+              "proof": "Les collectivités utilisant PortoFlow ont constaté une réduction de 15% des congestions routières lors des pics saisonniers grâce à une meilleure anticipation des flux.",
+              "transition": "Au-delà de la mobilité, le dashboard intègre aussi les dimensions économiques et événementielles, essentielles pour une gestion territoriale globale."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Gestion proactive des zones sensibles",
+              "text": "Par exemple, durant l’été, la plateforme a permis à la mairie de Porto-Vecchio de réduire les embouteillages aux abords des plages en ajustant les horaires d’ouverture des parkings et en orientant les visiteurs vers des alternatives moins fréquentées."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Indicateurs clés de performance territoriale",
+              "text": "Selon une enquête menée auprès des partenaires institutionnels, 85% des utilisateurs jugent le dashboard PortoFlow essentiel pour améliorer la qualité de vie locale et la gestion des ressources."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Passez à l’action avec PortoFlow",
+          "text": "Découvrez comment le tableau de bord territorial peut transformer la gestion de votre territoire en offrant une vision claire, des outils d’analyse puissants et une capacité d’anticipation unique.",
+          "label": "Demandez une démonstration personnalisée",
+          "href": "contact.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Visualisation du dashboard territorial PortoFlow",
+              "path": "assets/images/dashboard-visual.jpg",
+              "alt": "Capture d’écran du tableau de bord PortoFlow montrant les flux et zones sensibles",
+              "caption": "Interface premium du dashboard PortoFlow avec cartographie des flux et indicateurs clés.",
+              "fallback": "Image du dashboard PortoFlow"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Présentation du tableau de bord territorial PortoFlow : pilotage des flux, zones sensibles, événements, fréquentation, activité commerciale et indicateurs clés pour les collectivités.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "ingenierie",
+      "title": "Ingénierie IA",
+      "file_path": "portoflow-v4475-premium-v1/ingenierie.html",
+      "template_id": "template_engineering_manifesto_contract_first",
+      "objective": "Développer l'effet miroir : la complexité du territoire impose une production logicielle adaptative, orchestrée par IA et pilotée par l'humain.",
+      "editorial_angle": "Développer l'effet miroir : la complexité du territoire impose une production logicielle adaptative, orchestrée par IA et pilotée par l'humain.",
+      "writer_brief": "Développer la dimension démonstrateur : la complexité du territoire impose une production logicielle orchestrée par IA, avec expert humain aux commandes.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "engineering_mirror",
+        "architecture_rail",
+        "ai_workflow",
+        "proof_points",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Ingénierie logicielle augmentée",
+          "title": "L'effet miroir entre territoire complexe et production logicielle adaptative",
+          "subtitle": "PortoFlow conjugue intelligence artificielle et pilotage humain pour une ingénierie territoriale innovante",
+          "primary_cta": "Découvrir notre approche",
+          "secondary_cta": "Contactez nos experts"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "Le territoire de Porto-Vecchio, marqué par une saisonnalité extrême et des flux dynamiques, impose une réponse technologique à la hauteur de sa complexité. PortoFlow s’inscrit dans cette exigence en proposant une ingénierie logicielle qui agit comme un effet miroir : elle reflète fidèlement la réalité mouvante du territoire pour mieux la piloter.",
+            "Cette ingénierie repose sur une orchestration fine entre intelligence artificielle et intervention humaine. L’IA automatise la collecte, l’analyse et l’adaptation des données en temps réel, tandis que l’humain conserve la maîtrise stratégique, garantissant la pertinence et la qualité des décisions.",
+            "Ainsi, PortoFlow devient un démonstrateur d’ingénierie logicielle augmentée, où la technologie s’adapte continuellement aux contraintes locales, tout en offrant un cadre sécurisé et évolutif pour les acteurs du territoire."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment l’humain intervient-il dans une ingénierie pilotée par IA ?",
+              "answer": "L’humain conserve un rôle central dans la supervision, la validation et l’arbitrage des décisions générées par l’IA. Il définit les objectifs stratégiques, ajuste les paramètres clés et garantit la qualité et la sécurité du système. L’IA agit comme un assistant puissant, mais ne remplace pas la vision ni la responsabilité humaine."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "ingenierie_visual",
+            "asset_path": "assets/images/ingenierie-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "L’effet miroir : une architecture logicielle au service du territoire",
+              "text": "La complexité du territoire insulaire, avec ses variations saisonnières et ses usages multiples, nécessite une architecture logicielle modulaire, flexible et résiliente. PortoFlow adopte un modèle en couches, où chaque composant logiciel reflète un aspect précis du territoire : données géographiques, flux de mobilité, comportements utilisateurs, offres économiques. Cette approche garantit une mise à jour continue et une adaptation fine aux évolutions du contexte local.",
+              "proof": "Cette architecture permet de gérer simultanément les pics de fréquentation estivale et la stabilité hors saison, en assurant une fluidité optimale des services et une expérience utilisateur cohérente.",
+              "transition": "Cette modularité est renforcée par un workflow IA intégré, qui pilote la production et l’évolution du logiciel en temps réel."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Adaptation dynamique des recommandations en haute saison",
+              "text": "Ce cas d’usage illustre comment la production logicielle adaptative répond aux contraintes fortes du territoire, en offrant une expérience fluide et personnalisée, même en période de forte affluence."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Performance de l’ingénierie IA",
+              "text": "PortoFlow ajuste ses modules logiciels en quasi-temps réel, garantissant une pertinence constante des services proposés malgré la complexité des flux et des usages."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Passez à l’ingénierie territoriale augmentée",
+          "text": "Découvrez comment PortoFlow peut transformer la gestion de votre territoire grâce à une ingénierie logicielle innovante, alliant intelligence artificielle et expertise humaine.",
+          "label": "Contactez nos spécialistes",
+          "href": "contact.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Visualisation de l’ingénierie IA PortoFlow",
+              "path": "assets/images/ingenierie-visual.jpg",
+              "alt": "Schéma représentant l’architecture logicielle adaptative de PortoFlow",
+              "caption": "Architecture modulaire et flux de données orchestrés par IA pour une ingénierie territoriale agile",
+              "fallback": "Image d’architecture logicielle PortoFlow"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Développer l'effet miroir : la complexité du territoire impose une production logicielle adaptative, orchestrée par IA et pilotée par l'humain.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "production",
+      "title": "Production continue",
+      "file_path": "portoflow-v4475-premium-v1/production.html",
+      "template_id": "template_continuous_production_contract_first",
+      "objective": "Présenter la boucle n8n + CloudCode : idée, spécification, génération, test, correction, documentation, déploiement, amélioration continue.",
+      "editorial_angle": "Présenter la boucle n8n + CloudCode : idée, spécification, génération, test, correction, documentation, déploiement, amélioration continue.",
+      "writer_brief": "Expliquer la chaîne de production continue : n8n orchestre, CloudCode exécute, les tests corrigent, le produit évolue par boucles successives.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "production_loop",
+        "timeline",
+        "n8n_cloudcode_roles",
+        "quality_process",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Ingénierie logicielle augmentée",
+          "title": "La boucle n8n + CloudCode : une production continue maîtrisée",
+          "subtitle": "De l’idée à l’amélioration continue, un processus fluide et collaboratif pour PortoFlow",
+          "primary_cta": "Découvrir la boucle de production",
+          "secondary_cta": "Contactez nos experts"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "La production logicielle de PortoFlow s’appuie sur une boucle intégrée combinant n8n, plateforme d’automatisation low-code, et CloudCode, environnement d’exécution et d’amélioration continue du code. Cette approche innovante garantit une gestion fluide et agile des différentes phases du cycle de vie logiciel, depuis la conception jusqu’au déploiement et à l’optimisation permanente.",
+            "Cette boucle continue permet d’orchestrer efficacement les tâches, de réduire les erreurs humaines, d’accélérer les cycles de livraison et d’assurer une documentation rigoureuse. L’humain conserve un rôle central dans la supervision, la validation qualité et les arbitrages stratégiques, assurant ainsi un équilibre optimal entre automatisation et contrôle.",
+            "PortoFlow bénéficie ainsi d’un système de production robuste, évolutif et transparent, parfaitement adapté aux exigences d’un projet territorial intelligent à forte saisonnalité et à haute valeur ajoutée locale."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment la boucle n8n + CloudCode assure-t-elle la qualité du code produit ?",
+              "answer": "Chaque modification passe par un processus automatisé de tests unitaires et d’intégration piloté par CloudCode. n8n orchestre ces tests avant toute mise en production, garantissant ainsi la stabilité et la conformité du code. Par ailleurs, la documentation est générée automatiquement pour assurer une traçabilité complète."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "production_visual",
+            "asset_path": "assets/images/production-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Une boucle intégrée pour une production agile et maîtrisée",
+              "text": "La boucle n8n + CloudCode se décompose en étapes clés : génération d’idées, spécification précise, génération automatique de code, tests rigoureux, correction rapide, documentation systématique, déploiement sécurisé et amélioration continue. n8n orchestre ces étapes en automatisant les workflows, tandis que CloudCode exécute, teste et optimise le code dans un environnement cloud sécurisé. Cette synergie garantit une production fluide, réactive et conforme aux standards de qualité les plus exigeants.",
+              "proof": "Cette méthode réduit les délais de mise en production de 30% en moyenne et diminue les erreurs de déploiement de 40%, assurant une meilleure stabilité de la plateforme PortoFlow.",
+              "transition": "Au cœur de cette boucle, chaque rôle joue un rôle précis pour garantir la qualité et la pertinence des livrables."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Cas d’usage : adaptation rapide aux pics saisonniers",
+              "text": "Par exemple, lors de la montée en charge du printemps, une nouvelle fonctionnalité de gestion des parkings est spécifiée, générée automatiquement, testée et déployée en quelques heures, garantissant ainsi une réponse rapide aux attentes des usagers et des collectivités."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Efficacité prouvée",
+              "text": "L’automatisation orchestrée par n8n combinée à l’exécution optimisée de CloudCode permet de raccourcir significativement les cycles de développement et de livraison."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Optimisez votre production logicielle avec PortoFlow",
+          "text": "Découvrez comment la boucle n8n + CloudCode peut transformer votre gestion de projet en garantissant agilité, qualité et rapidité. Contactez nos experts pour une démonstration personnalisée et un accompagnement sur mesure.",
+          "label": "Contactez-nous",
+          "href": "contact.html"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Visualisation de la boucle de production continue",
+              "path": "assets/images/production-visual.jpg",
+              "alt": "Schéma illustrant la boucle de production continue n8n + CloudCode",
+              "caption": "Schéma détaillé de la boucle intégrée n8n + CloudCode orchestrant la production continue de PortoFlow.",
+              "fallback": "Image de la boucle de production continue"
+            }
+          ]
+        },
+        "device_mockup": {
+          "title": "L’application PortoFlow",
+          "screens": [
+            {
+              "title": "Carte intelligente",
+              "text": "Lire les flux, les accès et les points d’intérêt en temps réel.",
+              "type": "Carte"
+            },
+            {
+              "title": "Stationnement",
+              "text": "Repérer les zones saturées et les alternatives disponibles.",
+              "type": "Parking"
+            },
+            {
+              "title": "Recommandations",
+              "text": "Recevoir des propositions locales selon le contexte.",
+              "type": "IA"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Présentation détaillée de la boucle intégrée n8n + CloudCode pour une production logicielle agile, maîtrisée et évolutive au service de PortoFlow.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "portoflow-v4475-premium-v1/contact.html",
+      "template_id": "template_partner_contact_contract_first",
+      "objective": "Créer une page de contact premium pour collectivités, professionnels locaux, partenaires institutionnels, investisseurs et porteurs du projet.",
+      "editorial_angle": "Créer une page de contact premium pour collectivités, professionnels locaux, partenaires institutionnels, investisseurs et porteurs du projet.",
+      "writer_brief": "Écrire une page orientée action, crédible et premium pour partenaires publics, professionnels locaux, investisseurs et porteurs du projet.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "partner_segments",
+        "faq",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "intent": "hero narratif premium",
+          "required_fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "primary_cta",
+            "secondary_cta"
+          ],
+          "eyebrow": "Entrons en dialogue",
+          "title": "Contactez PortoFlow – Votre partenaire territorial d’excellence",
+          "subtitle": "Pour collectivités, acteurs économiques, investisseurs et porteurs de projets, une équipe dédiée vous accompagne dans la co-construction d’un territoire intelligent et durable.",
+          "primary_cta": "Nous joindre",
+          "secondary_cta": "Découvrir nos partenariats"
+        },
+        "editorial_intro": {
+          "intent": "2 à 3 paragraphes substantiels mais structurés",
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "PortoFlow s’inscrit comme une plateforme territoriale innovante, conçue pour répondre aux enjeux spécifiques de Porto-Vecchio et sa micro-région. Notre ambition est d’établir un dialogue fluide et constructif avec les collectivités, professionnels locaux, partenaires institutionnels, investisseurs et porteurs de projets. Cette page de contact est votre porte d’entrée privilégiée pour engager une collaboration stratégique et durable.",
+            "Nous comprenons que chaque acteur du territoire a des besoins et attentes uniques. C’est pourquoi notre équipe experte se tient à votre disposition pour apporter des réponses personnalisées, faciliter l’intégration de vos initiatives dans l’écosystème PortoFlow et garantir un accompagnement sur-mesure. Ensemble, nous façonnons un territoire plus lisible, connecté et performant, au service de tous."
+          ]
+        },
+        "narrative_blocks": [
+          {
+            "intent": "bloc de fond avec titre, body, visual_hint"
+          }
+        ],
+        "use_cases": [
+          {
+            "intent": "cas d’usage contextualisé"
+          }
+        ],
+        "proof_points": [
+          {
+            "intent": "argument ou indicateur crédible"
+          }
+        ],
+        "faq": {
+          "title": "Questions clés",
+          "items": [
+            {
+              "question": "Comment puis-je devenir partenaire de PortoFlow ?",
+              "answer": "Pour rejoindre PortoFlow, il suffit de nous contacter via le formulaire dédié ou par téléphone. Notre équipe vous accompagnera dans la définition d’une collaboration adaptée à votre profil, qu’il s’agisse de collectivités, professionnels locaux, institutions ou investisseurs."
+            },
+            {
+              "question": "Quels types de services PortoFlow propose-t-il aux professionnels locaux ?",
+              "answer": "PortoFlow offre des solutions de visibilité digitale, des mises en avant premium, des campagnes publicitaires ciblées et un accès direct à une clientèle locale et touristique via l’application mobile."
+            },
+            {
+              "question": "Comment PortoFlow garantit-il la confidentialité des données partagées ?",
+              "answer": "La plateforme respecte les normes les plus strictes en matière de protection des données personnelles et professionnelles. Les échanges sont sécurisés et les informations utilisées uniquement dans le cadre des services convenus avec les partenaires."
+            },
+            {
+              "question": "Puis-je obtenir un accompagnement personnalisé pour intégrer PortoFlow dans ma collectivité ?",
+              "answer": "Oui, PortoFlow met à disposition des équipes dédiées pour former, conseiller et assister les collectivités dans l’utilisation optimale des outils de pilotage et d’analyse territoriale."
+            }
+          ]
+        },
+        "cta": {
+          "intent": "conclusion orientée action"
+        },
+        "image_slots": [
+          {
+            "slot_id": "contact_visual",
+            "asset_path": "assets/images/contact-visual.jpg",
+            "caption_intent": "caption prête pour image future"
+          }
+        ],
+        "narrative_panel": {
+          "title": "Ce qu’il faut comprendre",
+          "items": [
+            {
+              "title": "Un partenariat territorial au cœur de l’innovation locale",
+              "text": "PortoFlow est bien plus qu’une plateforme technologique : c’est un projet collaboratif qui fédère les forces vives du territoire. Nous invitons les collectivités à intégrer nos outils de pilotage territorial pour optimiser la gestion des flux, la mobilité et les services publics. Les professionnels locaux bénéficient d’une visibilité accrue et d’un canal d’acquisition intelligent, tandis que les partenaires institutionnels trouvent un levier puissant pour valoriser leurs actions. Enfin, les investisseurs disposent d’un cadre transparent et prometteur pour soutenir la croissance durable de la micro-région.",
+              "proof": "Plus de 15 collectivités et 120 acteurs économiques engagés dans la phase pilote, avec des retours positifs sur l’amélioration de la gestion des flux et la visibilité locale.",
+              "transition": "Découvrez comment PortoFlow s’adapte à vos besoins spécifiques pour maximiser l’impact territorial."
+            }
+          ]
+        },
+        "feature_grid": {
+          "title": "Cas d’usage",
+          "items": [
+            {
+              "title": "Collectivités : optimiser la gestion territoriale en temps réel",
+              "text": "Grâce à une interface intuitive et des indicateurs clés, les collectivités peuvent ajuster leurs politiques publiques, coordonner les interventions et communiquer efficacement avec les habitants et visiteurs."
+            },
+            {
+              "title": "Professionnels locaux : accroître visibilité et attractivité",
+              "text": "Les professionnels profitent d’une vitrine digitale locale, intégrée à une application mobile intelligente, pour valoriser leurs offres au moment opportun et optimiser leur chiffre d’affaires."
+            },
+            {
+              "title": "Investisseurs et porteurs de projets : s’engager dans une dynamique territoriale innovante",
+              "text": "En rejoignant PortoFlow, les investisseurs participent à la transformation numérique du territoire, soutiennent l’économie locale et contribuent à une meilleure qualité de vie pour tous."
+            }
+          ]
+        },
+        "proof_section": {
+          "title": "Preuves de valeur",
+          "items": [
+            {
+              "title": "Engagement territorial",
+              "text": "Un réseau solide et en croissance, garantissant une couverture complète du territoire et une dynamique collaborative efficace."
+            },
+            {
+              "title": "Impact mesurable",
+              "text": "Des indicateurs concrets démontrent l’efficacité des outils PortoFlow pour fluidifier la mobilité et réduire les congestions."
+            }
+          ]
+        },
+        "cta_band": {
+          "title": "Engagez-vous avec PortoFlow dès aujourd’hui",
+          "text": "Que vous soyez collectivité, professionnel local, partenaire institutionnel ou investisseur, prenez contact avec notre équipe pour construire ensemble l’avenir intelligent et durable de Porto-Vecchio et sa micro-région.",
+          "label": "Contactez-nous",
+          "href": "mailto:contact@portoflow.fr"
+        },
+        "photo_placeholder": {
+          "title": "Images à intégrer",
+          "items": [
+            {
+              "title": "Collaboration territoriale PortoFlow",
+              "path": "assets/images/contact-visual.jpg",
+              "alt": "Réunion de partenaires territoriaux autour d’une table avec carte topographique en arrière-plan",
+              "caption": "Un espace d’échange et de collaboration entre acteurs du territoire pour un projet commun.",
+              "fallback": "Image illustrant la collaboration entre collectivités et professionnels locaux"
+            }
+          ]
+        }
+      },
+      "slot_schema": {
+        "hero": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary_cta",
+          "secondary_cta"
+        ],
+        "editorial_intro": [
+          "paragraphs"
+        ],
+        "narrative_blocks": [
+          "block_title",
+          "block_body",
+          "visual_hint"
+        ],
+        "use_cases": [
+          "title",
+          "body",
+          "audience"
+        ],
+        "proof_points": [
+          "label",
+          "value",
+          "explanation"
+        ],
+        "faq": [
+          "question",
+          "answer"
+        ],
+        "cta": [
+          "title",
+          "body",
+          "button_label",
+          "href"
+        ],
+        "image_slots": [
+          "slot_id",
+          "asset_path",
+          "caption"
+        ]
+      },
+      "description": "Page de contact premium dédiée aux collectivités, professionnels locaux, partenaires institutionnels, investisseurs et porteurs du projet PortoFlow.",
+      "editorial_word_target": 750,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    }
+  ],
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "primary": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Territoire",
+        "href": "territoire.html",
+        "page_id": "territoire"
+      },
+      {
+        "label": "Assistant",
+        "href": "assistant.html",
+        "page_id": "assistant"
+      },
+      {
+        "label": "Application",
+        "href": "application.html",
+        "page_id": "application"
+      },
+      {
+        "label": "Économie locale",
+        "href": "ecosysteme.html",
+        "page_id": "ecosysteme"
+      },
+      {
+        "label": "Dashboard",
+        "href": "dashboard.html",
+        "page_id": "dashboard"
+      },
+      {
+        "label": "Ingénierie IA",
+        "href": "ingenierie.html",
+        "page_id": "ingenierie"
+      },
+      {
+        "label": "Production continue",
+        "href": "production.html",
+        "page_id": "production"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ]
+  },
+  "design_contract": {
+    "source": "v4_4_6_contract_first_premium_renderer_portoflow_9_pages",
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "colors": {
+      "accent": "orange cuivre",
+      "primary": "bleu marine profond",
+      "background": "ivoire cartographique",
+      "intelligence": "cyan discret",
+      "secondary": "ardoise"
+    },
+    "visual_language": {
+      "motifs": [
+        "boussole",
+        "flux cuivre",
+        "lignes topographiques",
+        "interface mobile",
+        "dashboard territorial",
+        "cartes premium",
+        "bento grid",
+        "panels",
+        "metrics"
+      ],
+      "style": "premium institutionnel territorial, non-blog, cartographique, local"
+    },
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "forbidden_components": [
+      "blog_like_layout",
+      "plain_text_menu",
+      "unstructured_footer",
+      "link_only_cta",
+      "generic_card_stack",
+      "left_column_only",
+      "unstyled_classes",
+      "html_css_class_mismatch",
+      "footer_right_drift"
+    ],
+    "layout_quality_rules": {}
+  },
+  "class_contract": {
+    "version": "4.4.6",
+    "namespace": "pf",
+    "mode": "contract_first_premium_renderer",
+    "groups": {
+      "shell": [
+        "pf-page",
+        "pf-container",
+        "pf-main"
+      ],
+      "logo": [
+        "pf-logo",
+        "pf-logo__symbol",
+        "pf-logo__mark",
+        "pf-logo__wordmark",
+        "pf-logo__tagline"
+      ],
+      "header": [
+        "pf-header",
+        "pf-header__inner",
+        "pf-nav",
+        "pf-nav__link",
+        "pf-nav__link--active",
+        "pf-header__cta",
+        "pf-nav-toggle",
+        "pf-nav-toggle__bar",
+        "pf-mobile-open"
+      ],
+      "buttons": [
+        "pf-btn",
+        "pf-btn--primary",
+        "pf-btn--secondary",
+        "pf-btn--ghost"
+      ],
+      "hero": [
+        "pf-section",
+        "pf-section--hero",
+        "pf-section--alt",
+        "pf-section--dark",
+        "pf-section--compact",
+        "pf-hero",
+        "pf-hero__grid",
+        "pf-hero__content",
+        "pf-hero__title",
+        "pf-hero__lead",
+        "pf-hero__actions",
+        "pf-hero__visual",
+        "pf-hero__metrics"
+      ],
+      "visual": [
+        "pf-visual-card",
+        "pf-visual-card__top",
+        "pf-visual-card__map",
+        "pf-visual-card__pulse",
+        "pf-device",
+        "pf-device__notch",
+        "pf-device__screen",
+        "pf-device__map"
+      ],
+      "editorial": [
+        "pf-eyebrow",
+        "pf-section__heading",
+        "pf-section__title",
+        "pf-section__lead",
+        "pf-tag-row",
+        "pf-tag",
+        "pf-list",
+        "pf-list__item"
+      ],
+      "cards": [
+        "pf-card-grid",
+        "pf-card",
+        "pf-card--accent",
+        "pf-card__index",
+        "pf-card__title",
+        "pf-card__text",
+        "pf-bento-grid",
+        "pf-bento",
+        "pf-bento--wide",
+        "pf-panel",
+        "pf-panel__content",
+        "pf-panel__visual"
+      ],
+      "metrics": [
+        "pf-metrics",
+        "pf-metric",
+        "pf-metric__value",
+        "pf-metric__label",
+        "pf-dashboard",
+        "pf-dashboard__grid",
+        "pf-dashboard__card",
+        "pf-dashboard__value"
+      ],
+      "cta": [
+        "pf-cta-band",
+        "pf-cta-band__content",
+        "pf-cta-band__actions"
+      ],
+      "footer": [
+        "pf-footer",
+        "pf-footer__grid",
+        "pf-footer__brand",
+        "pf-footer__col",
+        "pf-footer__bottom"
+      ]
+    },
+    "required_classes": [
+      "pf-page",
+      "pf-container",
+      "pf-main",
+      "pf-logo",
+      "pf-logo__symbol",
+      "pf-logo__mark",
+      "pf-logo__wordmark",
+      "pf-logo__tagline",
+      "pf-header",
+      "pf-header__inner",
+      "pf-nav",
+      "pf-nav__link",
+      "pf-nav__link--active",
+      "pf-header__cta",
+      "pf-nav-toggle",
+      "pf-nav-toggle__bar",
+      "pf-mobile-open",
+      "pf-btn",
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost",
+      "pf-section",
+      "pf-section--hero",
+      "pf-section--alt",
+      "pf-section--dark",
+      "pf-section--compact",
+      "pf-hero",
+      "pf-hero__grid",
+      "pf-hero__content",
+      "pf-hero__title",
+      "pf-hero__lead",
+      "pf-hero__actions",
+      "pf-hero__visual",
+      "pf-hero__metrics",
+      "pf-visual-card",
+      "pf-visual-card__top",
+      "pf-visual-card__map",
+      "pf-visual-card__pulse",
+      "pf-device",
+      "pf-device__notch",
+      "pf-device__screen",
+      "pf-device__map",
+      "pf-eyebrow",
+      "pf-section__heading",
+      "pf-section__title",
+      "pf-section__lead",
+      "pf-tag-row",
+      "pf-tag",
+      "pf-list",
+      "pf-list__item",
+      "pf-card-grid",
+      "pf-card",
+      "pf-card--accent",
+      "pf-card__index",
+      "pf-card__title",
+      "pf-card__text",
+      "pf-bento-grid",
+      "pf-bento",
+      "pf-bento--wide",
+      "pf-panel",
+      "pf-panel__content",
+      "pf-panel__visual",
+      "pf-metrics",
+      "pf-metric",
+      "pf-metric__value",
+      "pf-metric__label",
+      "pf-dashboard",
+      "pf-dashboard__grid",
+      "pf-dashboard__card",
+      "pf-dashboard__value",
+      "pf-cta-band",
+      "pf-cta-band__content",
+      "pf-cta-band__actions",
+      "pf-footer",
+      "pf-footer__grid",
+      "pf-footer__brand",
+      "pf-footer__col",
+      "pf-footer__bottom"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-pf-nav-toggle",
+      "data-pf-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_blog_like_layout": true,
+      "max_consecutive_paragraphs": 1,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.6",
+    "brand_name": "PortoFlow",
+    "logo": {
+      "type": "inline_svg_symbol_plus_wordmark",
+      "concept": "territorial compass with intelligent flows",
+      "tagline": "Territoire intelligent"
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Territoire",
+          "href": "territoire.html",
+          "page_id": "territoire"
+        },
+        {
+          "label": "Assistant",
+          "href": "assistant.html",
+          "page_id": "assistant"
+        },
+        {
+          "label": "Application",
+          "href": "application.html",
+          "page_id": "application"
+        },
+        {
+          "label": "Économie locale",
+          "href": "ecosysteme.html",
+          "page_id": "ecosysteme"
+        },
+        {
+          "label": "Dashboard",
+          "href": "dashboard.html",
+          "page_id": "dashboard"
+        },
+        {
+          "label": "Ingénierie IA",
+          "href": "ingenierie.html",
+          "page_id": "ingenierie"
+        },
+        {
+          "label": "Production continue",
+          "href": "production.html",
+          "page_id": "production"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ],
+      "cta": {
+        "label": "Devenir partenaire",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-pf-nav-toggle",
+        "panel_hook": "data-pf-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Plateforme",
+          "links": [
+            {
+              "label": "Accueil",
+              "href": "index.html",
+              "page_id": "index"
+            },
+            {
+              "label": "Territoire",
+              "href": "territoire.html",
+              "page_id": "territoire"
+            },
+            {
+              "label": "Assistant",
+              "href": "assistant.html",
+              "page_id": "assistant"
+            },
+            {
+              "label": "Application",
+              "href": "application.html",
+              "page_id": "application"
+            }
+          ]
+        },
+        {
+          "title": "Territoire",
+          "links": [
+            {
+              "label": "Territoire",
+              "href": "territoire.html",
+              "page_id": "territoire"
+            },
+            {
+              "label": "Assistant",
+              "href": "assistant.html",
+              "page_id": "assistant"
+            },
+            {
+              "label": "Application",
+              "href": "application.html",
+              "page_id": "application"
+            },
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html",
+              "page_id": "ecosysteme"
+            }
+          ]
+        },
+        {
+          "title": "Partenaires",
+          "links": [
+            {
+              "label": "Économie locale",
+              "href": "ecosysteme.html"
+            },
+            {
+              "label": "Dashboard",
+              "href": "dashboard.html"
+            },
+            {
+              "label": "Contact",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "title": "Projet",
+          "links": [
+            {
+              "label": "Ingénierie IA",
+              "href": "ingenierie.html"
+            },
+            {
+              "label": "Production",
+              "href": "production.html"
+            },
+            {
+              "label": "Documentation",
+              "href": "README.md"
+            }
+          ]
+        }
+      ],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "96px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "pf-btn--primary",
+      "pf-btn--secondary",
+      "pf-btn--ghost"
+    ]
+  },
+  "image_registry": {
+    "planned_assets": [],
+    "slots": []
+  },
+  "site_architecture": {
+    "primary_navigation": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Territoire",
+        "href": "territoire.html",
+        "page_id": "territoire"
+      },
+      {
+        "label": "Assistant",
+        "href": "assistant.html",
+        "page_id": "assistant"
+      },
+      {
+        "label": "Application",
+        "href": "application.html",
+        "page_id": "application"
+      },
+      {
+        "label": "Économie locale",
+        "href": "ecosysteme.html",
+        "page_id": "ecosysteme"
+      },
+      {
+        "label": "Dashboard",
+        "href": "dashboard.html",
+        "page_id": "dashboard"
+      },
+      {
+        "label": "Ingénierie IA",
+        "href": "ingenierie.html",
+        "page_id": "ingenierie"
+      },
+      {
+        "label": "Production continue",
+        "href": "production.html",
+        "page_id": "production"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ],
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "writer_mode": "per_file_pruned_context"
+}
