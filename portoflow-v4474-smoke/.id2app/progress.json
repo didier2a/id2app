@@ -28,13 +28,13 @@
   "created_count": 0,
   "updated_count": 1,
   "percent": 100,
-  "progress_sequence": 3,
+  "progress_sequence": 4,
   "monotonic_guard": true,
   "current_file": "portoflow-v4474-smoke/publisher-smoke-test.html",
   "current_file_status": "success",
   "last_successful_file": "portoflow-v4474-smoke/publisher-smoke-test.html",
   "last_failed_file": null,
-  "last_commit_sha": "2ba7180314bc48e9ae36348de3b0f5781c73422f",
+  "last_commit_sha": "f3f996564f385f518fc91a8f613dd3d828832009",
   "last_file_sha": "b0ae86c94b1bd27fb3ce6f1248a5032b2681e0a2",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
@@ -47,14 +47,14 @@
       "file_path": "portoflow-v4474-smoke/publisher-smoke-test.html",
       "action": "update",
       "file_sha": "b0ae86c94b1bd27fb3ce6f1248a5032b2681e0a2",
-      "commit_sha": "2ba7180314bc48e9ae36348de3b0f5781c73422f",
+      "commit_sha": "f3f996564f385f518fc91a8f613dd3d828832009",
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4474-smoke/publisher-smoke-test.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/2ba7180314bc48e9ae36348de3b0f5781c73422f",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f3f996564f385f518fc91a8f613dd3d828832009",
       "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T00:03:29.511Z",
+  "updated_at": "2026-05-17T00:56:10.716Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.4"
 }
