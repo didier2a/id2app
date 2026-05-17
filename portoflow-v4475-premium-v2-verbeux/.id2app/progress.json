@@ -20,26 +20,27 @@
   "final_report_path": "portoflow-v4475-premium-v2-verbeux/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 7,
-  "progress_sequence": 13,
+  "updated_count": 2,
+  "percent": 14,
+  "progress_sequence": 14,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v2-verbeux/index.html",
+  "current_file": "portoflow-v4475-premium-v2-verbeux/territoire.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/index.html",
+  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/territoire.html",
   "last_failed_file": null,
-  "last_commit_sha": "cbc387c9f03123aca800f39868219ce2548ec6a4",
-  "last_file_sha": "edb67e1cbf4071f5397c74c9126d29068065c3d8",
+  "last_commit_sha": "5f65236a5035c36f8a9ee493452661fe2eafae00",
+  "last_file_sha": "66c9eec866da4462caf022e3c738fffa81d71c64",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "portoflow-v4475-premium-v2-verbeux/index.html"
+    "portoflow-v4475-premium-v2-verbeux/index.html",
+    "portoflow-v4475-premium-v2-verbeux/territoire.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/cbc387c9f03123aca800f39868219ce2548ec6a4",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v2-verbeux/territoire.html",
+      "action": "create",
+      "file_sha": "66c9eec866da4462caf022e3c738fffa81d71c64",
+      "commit_sha": "5f65236a5035c36f8a9ee493452661fe2eafae00",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/territoire.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/5f65236a5035c36f8a9ee493452661fe2eafae00",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T07:57:50.888Z",
+  "updated_at": "2026-05-17T07:58:08.157Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
