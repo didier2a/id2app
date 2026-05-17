@@ -20,27 +20,28 @@
   "final_report_path": "portoflow-v4475-premium-v2-verbeux/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 2,
-  "percent": 14,
-  "progress_sequence": 14,
+  "updated_count": 3,
+  "percent": 21,
+  "progress_sequence": 15,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v2-verbeux/territoire.html",
+  "current_file": "portoflow-v4475-premium-v2-verbeux/assistant.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/territoire.html",
+  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/assistant.html",
   "last_failed_file": null,
-  "last_commit_sha": "5f65236a5035c36f8a9ee493452661fe2eafae00",
-  "last_file_sha": "66c9eec866da4462caf022e3c738fffa81d71c64",
+  "last_commit_sha": "3b75e21d4c9f017652f26065c3aaa0db221a02b7",
+  "last_file_sha": "9bcfdd4b6d7c90073a9eb78a4a5e17d016b44d4d",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4475-premium-v2-verbeux/index.html",
-    "portoflow-v4475-premium-v2-verbeux/territoire.html"
+    "portoflow-v4475-premium-v2-verbeux/territoire.html",
+    "portoflow-v4475-premium-v2-verbeux/assistant.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -61,10 +62,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/territoire.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/5f65236a5035c36f8a9ee493452661fe2eafae00",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v2-verbeux/assistant.html",
+      "action": "create",
+      "file_sha": "9bcfdd4b6d7c90073a9eb78a4a5e17d016b44d4d",
+      "commit_sha": "3b75e21d4c9f017652f26065c3aaa0db221a02b7",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/assistant.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3b75e21d4c9f017652f26065c3aaa0db221a02b7",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T07:58:08.157Z",
+  "updated_at": "2026-05-17T07:58:24.002Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
