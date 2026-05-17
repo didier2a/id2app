@@ -20,29 +20,30 @@
   "final_report_path": "portoflow-v4475-premium-v2-verbeux/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 14,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 4,
-  "percent": 29,
-  "progress_sequence": 16,
+  "updated_count": 5,
+  "percent": 36,
+  "progress_sequence": 17,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4475-premium-v2-verbeux/application.html",
+  "current_file": "portoflow-v4475-premium-v2-verbeux/ecosysteme.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/application.html",
+  "last_successful_file": "portoflow-v4475-premium-v2-verbeux/ecosysteme.html",
   "last_failed_file": null,
-  "last_commit_sha": "b95af23cebb7b9903a16ec862818de7434cf1066",
-  "last_file_sha": "7d5c624c57ecc92d88fa13d79bb9e311d51fa118",
+  "last_commit_sha": "f0b2dc7f39eeae2edddf90f197f2063590b4d1b7",
+  "last_file_sha": "a44d9724a653c65d50649a5a3d28af6c32fa54be",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4475-premium-v2-verbeux/index.html",
     "portoflow-v4475-premium-v2-verbeux/territoire.html",
     "portoflow-v4475-premium-v2-verbeux/assistant.html",
-    "portoflow-v4475-premium-v2-verbeux/application.html"
+    "portoflow-v4475-premium-v2-verbeux/application.html",
+    "portoflow-v4475-premium-v2-verbeux/ecosysteme.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -81,10 +82,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/application.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/b95af23cebb7b9903a16ec862818de7434cf1066",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4475-premium-v2-verbeux/ecosysteme.html",
+      "action": "create",
+      "file_sha": "a44d9724a653c65d50649a5a3d28af6c32fa54be",
+      "commit_sha": "f0b2dc7f39eeae2edddf90f197f2063590b4d1b7",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4475-premium-v2-verbeux/ecosysteme.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f0b2dc7f39eeae2edddf90f197f2063590b4d1b7",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-17T07:58:42.409Z",
+  "updated_at": "2026-05-17T07:59:00.231Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
