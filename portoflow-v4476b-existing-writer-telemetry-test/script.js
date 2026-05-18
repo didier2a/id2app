@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelector('[data-current-year]');if(year)year.textContent=String(new Date().getFullYear());const toggle=document.querySelector('[data-pf-nav-toggle]');const panel=document.querySelector('[data-pf-nav-panel]');if(toggle&&panel){toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('pf-mobile-open');toggle.setAttribute('aria-expanded',String(open));});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('pf-mobile-open');toggle.setAttribute('aria-expanded','false');}));}document.querySelectorAll('.pf-card,.pf-bento,.pf-dashboard__card').forEach(el=>{el.addEventListener('mouseenter',()=>el.style.transform='translateY(-3px)');el.addEventListener('mouseleave',()=>el.style.transform='');});});
-/* ID2App Generic UX Pattern Engine V4.4.7.6E.2 */
+/* ID2App Generic UX Pattern Engine V4.4.7.6E.3 */
 (() => {
-  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true,"enableExplainers":true,"explainerCardClass":"ux-explainer-card","explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open"};
+  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true,"enableExplainers":true,"explainerCardClass":"ux-explainer-card","explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open","mediaFrameClass":"ux-media-frame","mediaPlaceholderClass":"ux-media-placeholder","mediaCaptionClass":"ux-media-caption","mediaTranscriptClass":"ux-media-transcript"};
   const navLinks = Array.from(document.querySelectorAll(cfg.navLinkSelector));
   const normalizeHref = (value) => {
     let path = String(value || '');
@@ -113,9 +113,76 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
     });
   }
 
+  const makeText = (tag, className, text) => {
+    if (!text) return null;
+    const el = document.createElement(tag);
+    if (className) el.className = className;
+    el.textContent = text;
+    return el;
+  };
+
+  const mediaPlaceholder = (label) => {
+    const el = document.createElement('div');
+    el.className = cfg.mediaPlaceholderClass;
+    el.textContent = label || 'Média à connecter';
+    return el;
+  };
+
+  const buildMedia = (card) => {
+    const type = card.getAttribute('data-ux-media-type') || '';
+    const imageSrc = card.getAttribute('data-ux-media-image-src') || '';
+    const imageAlt = card.getAttribute('data-ux-media-image-alt') || '';
+    const videoSrc = card.getAttribute('data-ux-media-video-src') || '';
+    const posterSrc = card.getAttribute('data-ux-media-poster-src') || '';
+    const iframeSrc = card.getAttribute('data-ux-media-iframe-src') || '';
+    const frame = document.createElement('div');
+    frame.className = cfg.mediaFrameClass;
+
+    if (type === 'image') {
+      if (imageSrc) {
+        const img = document.createElement('img');
+        img.src = imageSrc;
+        img.alt = imageAlt || card.getAttribute('data-ux-explainer-title') || '';
+        img.loading = 'lazy';
+        frame.appendChild(img);
+      } else {
+        frame.appendChild(mediaPlaceholder('Image à connecter'));
+      }
+    } else if (type === 'video') {
+      if (videoSrc) {
+        const video = document.createElement('video');
+        video.controls = true;
+        video.preload = 'metadata';
+        video.playsInline = true;
+        if (posterSrc) video.poster = posterSrc;
+        const source = document.createElement('source');
+        source.src = videoSrc;
+        source.type = videoSrc.endsWith('.webm') ? 'video/webm' : 'video/mp4';
+        video.appendChild(source);
+        frame.appendChild(video);
+      } else {
+        frame.appendChild(mediaPlaceholder('Vidéo à connecter'));
+      }
+    } else if (type === 'iframe') {
+      if (iframeSrc) {
+        const iframe = document.createElement('iframe');
+        iframe.src = iframeSrc;
+        iframe.loading = 'lazy';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowFullscreen = true;
+        iframe.title = card.getAttribute('data-ux-explainer-title') || 'Vidéo intégrée';
+        frame.appendChild(iframe);
+      } else {
+        frame.appendChild(mediaPlaceholder('Iframe vidéo à connecter'));
+      }
+    } else {
+      return null;
+    }
+    return frame;
+  };
+
   if (cfg.enableExplainers) {
     const cards = Array.from(document.querySelectorAll('[data-ux-explainer-card="true"]'));
-
     const closeOtherExplainers = (except) => {
       cards.forEach((card) => {
         if (card !== except) {
@@ -130,12 +197,22 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
     const buildPanel = (card) => {
       const panel = document.createElement('div');
       panel.className = cfg.explainerPanelClass;
-      const title = document.createElement('strong');
-      title.textContent = card.getAttribute('data-ux-explainer-title') || 'En savoir plus';
-      const body = document.createElement('p');
-      body.textContent = card.getAttribute('data-ux-explainer-body') || '';
-      panel.appendChild(title);
-      panel.appendChild(body);
+
+      const media = buildMedia(card);
+      if (media) panel.appendChild(media);
+
+      const title = makeText('strong', '', card.getAttribute('data-ux-explainer-title') || 'En savoir plus');
+      if (title) panel.appendChild(title);
+
+      const body = makeText('p', '', card.getAttribute('data-ux-explainer-body') || '');
+      if (body) panel.appendChild(body);
+
+      const caption = makeText('div', cfg.mediaCaptionClass, card.getAttribute('data-ux-media-caption') || '');
+      if (caption) panel.appendChild(caption);
+
+      const transcript = makeText('div', cfg.mediaTranscriptClass, card.getAttribute('data-ux-media-transcript') || '');
+      if (transcript) panel.appendChild(transcript);
+
       const ctaLabel = card.getAttribute('data-ux-explainer-cta-label');
       const ctaHref = card.getAttribute('data-ux-explainer-cta-href');
       if (ctaLabel && ctaHref) {
@@ -167,7 +244,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
 
     cards.forEach((card) => {
       card.addEventListener('click', (event) => {
-        if (event.target.closest && event.target.closest('a')) return;
+        if (event.target.closest && event.target.closest('a, video, iframe, button, input, textarea')) return;
         toggleCard(card);
       });
       card.addEventListener('keydown', (event) => {
