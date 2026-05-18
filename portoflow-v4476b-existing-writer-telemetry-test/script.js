@@ -1,14 +1,24 @@
 document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelector('[data-current-year]');if(year)year.textContent=String(new Date().getFullYear());const toggle=document.querySelector('[data-pf-nav-toggle]');const panel=document.querySelector('[data-pf-nav-panel]');if(toggle&&panel){toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('pf-mobile-open');toggle.setAttribute('aria-expanded',String(open));});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('pf-mobile-open');toggle.setAttribute('aria-expanded','false');}));}document.querySelectorAll('.pf-card,.pf-bento,.pf-dashboard__card').forEach(el=>{el.addEventListener('mouseenter',()=>el.style.transform='translateY(-3px)');el.addEventListener('mouseleave',()=>el.style.transform='');});});
-/* ID2App Deterministic UX MicroPatch V4.4.7.6D.1 */
+/* ID2App Deterministic UX MicroPatch V4.4.7.6D.1.2 */
 (() => {
   const links = Array.from(document.querySelectorAll('.pf-nav__link[href]'));
   if (!links.length) return;
 
-  const currentPath = window.location.pathname.replace(//(?:index\.html)?$/, '/');
+  const normalizePath = (value) => {
+    let path = String(value || '');
+    const hashIndex = path.indexOf('#');
+    if (hashIndex !== -1) path = path.slice(0, hashIndex);
+    const queryIndex = path.indexOf('?');
+    if (queryIndex !== -1) path = path.slice(0, queryIndex);
+    if (path.endsWith('/index.html')) return path.slice(0, -10) + '/';
+    return path;
+  };
+
+  const currentPath = normalizePath(window.location.pathname);
 
   const hrefPath = (link) => {
     try {
-      return new URL(link.getAttribute('href'), window.location.href).pathname.replace(//(?:index\.html)?$/, '/');
+      return normalizePath(new URL(link.getAttribute('href'), window.location.href).pathname);
     } catch (_) {
       return '';
     }
