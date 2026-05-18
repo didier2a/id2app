@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelector('[data-current-year]');if(year)year.textContent=String(new Date().getFullYear());const toggle=document.querySelector('[data-pf-nav-toggle]');const panel=document.querySelector('[data-pf-nav-panel]');if(toggle&&panel){toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('pf-mobile-open');toggle.setAttribute('aria-expanded',String(open));});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('pf-mobile-open');toggle.setAttribute('aria-expanded','false');}));}document.querySelectorAll('.pf-card,.pf-bento,.pf-dashboard__card').forEach(el=>{el.addEventListener('mouseenter',()=>el.style.transform='translateY(-3px)');el.addEventListener('mouseleave',()=>el.style.transform='');});});
-/* ID2App Generic UX Pattern Engine V4.4.7.6E.1 */
+/* ID2App Generic UX Pattern Engine V4.4.7.6E.2 */
 (() => {
-  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true};
+  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true,"enableExplainers":true,"explainerCardClass":"ux-explainer-card","explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open"};
   const navLinks = Array.from(document.querySelectorAll(cfg.navLinkSelector));
   const normalizeHref = (value) => {
     let path = String(value || '');
@@ -49,16 +49,13 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
   if (cfg.enableScrollspy) {
     const sections = Array.from(document.querySelectorAll('[' + cfg.sectionNavAttr + ']'));
     let ticking = false;
-
     const readActiveSection = () => {
       if (!sections.length) return;
       const header = document.querySelector(cfg.headerSelector);
       const headerBottom = header ? Math.max(0, header.getBoundingClientRect().bottom) : 0;
       const anchorY = headerBottom + (window.innerHeight - headerBottom) * (Number(cfg.viewportAnchorRatio) || 0.35);
-
       let selected = null;
       let selectedDistance = Infinity;
-
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         const containsAnchor = rect.top <= anchorY && rect.bottom > anchorY;
@@ -71,10 +68,8 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
           selectedDistance = distance;
         }
       });
-
       if (selected) setActive(normalizeHref(selected.getAttribute(cfg.sectionNavAttr)), 'location');
     };
-
     const scheduleRead = () => {
       if (ticking) return;
       ticking = true;
@@ -83,7 +78,6 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         readActiveSection();
       });
     };
-
     window.addEventListener('scroll', scheduleRead, { passive: true });
     window.addEventListener('resize', scheduleRead, { passive: true });
     readActiveSection();
@@ -99,26 +93,11 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         }
       });
     };
-
     revealLinks.forEach((link) => {
-      link.addEventListener('mouseenter', () => {
-        clearReveals(link);
-        link.classList.add('ux-reveal-active');
-        link.setAttribute('aria-expanded', 'true');
-      });
-      link.addEventListener('mouseleave', () => {
-        link.classList.remove('ux-reveal-active');
-        link.setAttribute('aria-expanded', 'false');
-      });
-      link.addEventListener('focus', () => {
-        clearReveals(link);
-        link.classList.add('ux-reveal-active');
-        link.setAttribute('aria-expanded', 'true');
-      });
-      link.addEventListener('blur', () => {
-        link.classList.remove('ux-reveal-active');
-        link.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('mouseenter', () => { clearReveals(link); link.classList.add('ux-reveal-active'); link.setAttribute('aria-expanded', 'true'); });
+      link.addEventListener('mouseleave', () => { link.classList.remove('ux-reveal-active'); link.setAttribute('aria-expanded', 'false'); });
+      link.addEventListener('focus', () => { clearReveals(link); link.classList.add('ux-reveal-active'); link.setAttribute('aria-expanded', 'true'); });
+      link.addEventListener('blur', () => { link.classList.remove('ux-reveal-active'); link.setAttribute('aria-expanded', 'false'); });
       link.addEventListener('click', (event) => {
         if (!window.matchMedia || !window.matchMedia('(pointer: coarse)').matches) return;
         if (!link.classList.contains('ux-reveal-active')) {
@@ -129,9 +108,78 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         }
       });
     });
-
     document.addEventListener('click', (event) => {
       if (!event.target.closest || !event.target.closest('[data-ux-reveal="true"]')) clearReveals(null);
+    });
+  }
+
+  if (cfg.enableExplainers) {
+    const cards = Array.from(document.querySelectorAll('[data-ux-explainer-card="true"]'));
+
+    const closeOtherExplainers = (except) => {
+      cards.forEach((card) => {
+        if (card !== except) {
+          card.classList.remove(cfg.explainerOpenClass);
+          card.setAttribute('aria-expanded', 'false');
+          const next = card.nextElementSibling;
+          if (next && next.classList && next.classList.contains(cfg.explainerPanelClass)) next.remove();
+        }
+      });
+    };
+
+    const buildPanel = (card) => {
+      const panel = document.createElement('div');
+      panel.className = cfg.explainerPanelClass;
+      const title = document.createElement('strong');
+      title.textContent = card.getAttribute('data-ux-explainer-title') || 'En savoir plus';
+      const body = document.createElement('p');
+      body.textContent = card.getAttribute('data-ux-explainer-body') || '';
+      panel.appendChild(title);
+      panel.appendChild(body);
+      const ctaLabel = card.getAttribute('data-ux-explainer-cta-label');
+      const ctaHref = card.getAttribute('data-ux-explainer-cta-href');
+      if (ctaLabel && ctaHref) {
+        const cta = document.createElement('a');
+        cta.href = ctaHref;
+        cta.textContent = ctaLabel;
+        panel.appendChild(cta);
+      }
+      return panel;
+    };
+
+    const toggleCard = (card) => {
+      const isOpen = card.classList.contains(cfg.explainerOpenClass);
+      closeOtherExplainers(card);
+      if (isOpen) {
+        card.classList.remove(cfg.explainerOpenClass);
+        card.setAttribute('aria-expanded', 'false');
+        const next = card.nextElementSibling;
+        if (next && next.classList && next.classList.contains(cfg.explainerPanelClass)) next.remove();
+        return;
+      }
+      card.classList.add(cfg.explainerOpenClass);
+      card.setAttribute('aria-expanded', 'true');
+      const next = card.nextElementSibling;
+      if (!next || !next.classList || !next.classList.contains(cfg.explainerPanelClass)) {
+        card.insertAdjacentElement('afterend', buildPanel(card));
+      }
+    };
+
+    cards.forEach((card) => {
+      card.addEventListener('click', (event) => {
+        if (event.target.closest && event.target.closest('a')) return;
+        toggleCard(card);
+      });
+      card.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleCard(card);
+        }
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest || !event.target.closest('[data-ux-explainer-card="true"], .' + cfg.explainerPanelClass)) closeOtherExplainers(null);
     });
   }
 })();
