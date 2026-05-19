@@ -40,3 +40,44 @@
 .ux-media-caption{margin:.35rem 0 0;color:var(--pf-muted,#68778c);font-size:.82rem;font-weight:700}
 .ux-media-transcript{margin-top:12px;padding:12px 14px;border-left:3px solid var(--pf-cyan,#1aa3db);background:rgba(26,163,219,.08);border-radius:14px;color:var(--pf-text,#102033);font-size:.88rem}
 @media(max-width:760px){.ux-explainer-card::after,.ux-media-card::after{position:static;display:inline-flex;margin-top:12px}.ux-explainer-panel{padding:16px}.ux-media-frame img,.ux-media-frame video,.ux-media-frame iframe{aspect-ratio:4/3}}
+/* ID2App Generic UX Pattern Engine V4.4.7.6E.3.4A.2.1 */
+.pf-footer{overflow-x:hidden}
+.pf-footer__grid{align-items:start;justify-content:center}
+.pf-footer__brand{min-width:0;max-width:420px}
+.pf-footer .pf-logo{min-width:0;max-width:100%}
+.pf-footer .pf-logo__tagline{white-space:normal;overflow-wrap:anywhere;max-width:34rem}
+.pf-footer__bottom{flex-wrap:wrap}
+.pf-nav__link.pf-nav__link--active,.pf-nav__link[aria-current="page"],.pf-nav__link[aria-current="location"]{background:rgba(26,163,219,.13);box-shadow:inset 0 -2px 0 var(--pf-cyan, currentColor)}
+.pf-nav__link{transition:background .18s ease,color .18s ease,box-shadow .18s ease}
+.pf-nav__link:focus-visible{outline:2px solid var(--pf-cyan, currentColor);outline-offset:4px}
+#territoire,#application{background:linear-gradient(180deg,#f7fbff 0%,#eef7ff 100%)}
+#territoire,#application{border-top:1px solid rgba(8,29,50,.10)}
+#partenaires,#assistant{background:linear-gradient(180deg,#fff 0%,#f8fbfd 100%)}
+#partenaires,#assistant{border-top:1px solid rgba(8,29,50,.08)}
+.pf-section{scroll-margin-top:112px}
+.pf-tag.pf-tag--link{cursor:pointer;text-decoration:none;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.pf-tag.pf-tag--link:hover,.pf-tag.pf-tag--link:focus-visible{transform:translateY(-2px);background:rgba(26,163,219,.12);border-color:rgba(26,163,219,.34);outline:none}
+.pf-tag.pf-tag--reveal{position:relative;overflow:visible}
+.pf-tag .pf-tag__label{position:relative;z-index:2}
+.pf-tag .pf-tag__reveal{position:absolute;left:50%;top:calc(100% + 10px);z-index:30;width:min(260px,80vw);transform:translate(-50%,-4px);opacity:0;pointer-events:none;border:1px solid rgba(8,29,50,.12);border-radius:16px;background:var(--pf-card,#fff);box-shadow:0 18px 50px rgba(8,29,50,.16);padding:12px 14px;color:var(--pf-text,#102033);font-size:.82rem;line-height:1.35;font-weight:650;text-align:left;transition:opacity .18s ease,transform .18s ease}
+.pf-tag.pf-tag--reveal:hover .pf-tag__reveal,.pf-tag.pf-tag--reveal:focus-visible .pf-tag__reveal,.pf-tag.pf-tag--reveal.ux-reveal-active .pf-tag__reveal{opacity:1;transform:translate(-50%,0)}
+[data-ux-explainer-card="true"],.ux-click-ready{cursor:pointer;position:relative}
+[data-ux-explainer-card="true"]:focus-visible,.ux-click-ready:focus-visible{outline:2px solid var(--pf-cyan,#1aa3db);outline-offset:4px}
+.ux-click-ready::after,[data-ux-click-ready="true"]::after{content:attr(data-ux-click-label);position:absolute;right:16px;bottom:14px;border:1px solid rgba(26,163,219,.28);background:rgba(255,255,255,.84);backdrop-filter:blur(10px);border-radius:999px;padding:6px 10px;color:var(--pf-navy,#081d32);font-size:.72rem;font-weight:850;letter-spacing:.02em;z-index:3}
+.ux-click-ready.ux-explainer-open::after,[data-ux-click-ready="true"].ux-explainer-open::after{content:"Masquer l’explication"}
+@media(max-width:760px){.ux-click-ready::after,[data-ux-click-ready="true"]::after{position:static;display:inline-flex;margin-top:12px}}
+.ux-explainer-card,.ux-media-card{cursor:pointer;position:relative;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.ux-explainer-card:hover,.ux-explainer-card:focus-visible,.ux-media-card:hover,.ux-media-card:focus-visible{transform:translateY(-2px);outline:none;border-color:rgba(26,163,219,.35)}
+.ux-explainer-card::after,.ux-media-card::after{content:"Cliquer pour comprendre";position:absolute;right:16px;bottom:14px;border:1px solid rgba(26,163,219,.28);background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-radius:999px;padding:6px 10px;color:var(--pf-navy,#081d32);font-size:.72rem;font-weight:850;letter-spacing:.02em}
+.ux-media-card::after{content:"Voir le média"}
+.ux-explainer-panel{display:none;margin-top:14px;border:1px solid rgba(8,29,50,.12);border-radius:22px;background:var(--pf-card,#fff);box-shadow:0 18px 50px rgba(8,29,50,.12);padding:18px;color:var(--pf-text,#102033);line-height:1.55}
+.ux-explainer-panel strong{display:block;margin-bottom:8px;color:var(--pf-navy,#081d32);font-size:1rem;letter-spacing:-.02em}
+.ux-explainer-panel p{margin:0;color:var(--pf-muted,#68778c)}
+.ux-explainer-panel a{display:inline-flex;margin-top:12px;text-decoration:none;font-weight:850;color:var(--pf-navy,#081d32)}
+.ux-explainer-open+ .ux-explainer-panel{display:block}
+.ux-media-frame{overflow:hidden;border-radius:18px;border:1px solid rgba(8,29,50,.10);background:linear-gradient(135deg,rgba(26,163,219,.10),rgba(8,29,50,.06));margin-bottom:14px}
+.ux-media-frame img,.ux-media-frame video,.ux-media-frame iframe{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:0}
+.ux-media-placeholder{display:grid;place-items:center;min-height:190px;padding:22px;text-align:center;color:var(--pf-muted,#68778c);font-weight:850;background:linear-gradient(135deg,rgba(26,163,219,.12),rgba(8,29,50,.06))}
+.ux-media-caption{margin:.35rem 0 0;color:var(--pf-muted,#68778c);font-size:.82rem;font-weight:700}
+.ux-media-transcript{margin-top:12px;padding:12px 14px;border-left:3px solid var(--pf-cyan,#1aa3db);background:rgba(26,163,219,.08);border-radius:14px;color:var(--pf-text,#102033);font-size:.88rem}
+@media(max-width:760px){.ux-explainer-card::after,.ux-media-card::after{position:static;display:inline-flex;margin-top:12px}.ux-explainer-panel{padding:16px}.ux-media-frame img,.ux-media-frame video,.ux-media-frame iframe{aspect-ratio:4/3}}
