@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelector('[data-current-year]');if(year)year.textContent=String(new Date().getFullYear());const toggle=document.querySelector('[data-pf-nav-toggle]');const panel=document.querySelector('[data-pf-nav-panel]');if(toggle&&panel){toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('pf-mobile-open');toggle.setAttribute('aria-expanded',String(open));});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('pf-mobile-open');toggle.setAttribute('aria-expanded','false');}));}document.querySelectorAll('.pf-card,.pf-bento,.pf-dashboard__card').forEach(el=>{el.addEventListener('mouseenter',()=>el.style.transform='translateY(-3px)');el.addEventListener('mouseleave',()=>el.style.transform='');});});
-/* ID2App Generic UX Pattern Engine V4.4.7.6E.3 */
+/* ID2App Generic UX Pattern Engine V4.4.7.6E.3.4A */
 (() => {
-  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true,"enableExplainers":true,"explainerCardClass":"ux-explainer-card","explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open","mediaFrameClass":"ux-media-frame","mediaPlaceholderClass":"ux-media-placeholder","mediaCaptionClass":"ux-media-caption","mediaTranscriptClass":"ux-media-transcript"};
+  const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"enablePageActive":true,"enableScrollspy":true,"enableReveal":true,"enableExplainers":true,"enableClickReliability":true,"clickReadyClass":"ux-click-ready","clickBadgeLabel":"Cliquer pour comprendre","clickFallbackTitle":"En savoir plus","clickFallbackBody":"Cet encadré peut être ouvert pour obtenir une explication contextualisée.","explainerCardClass":"ux-explainer-card","explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open","mediaFrameClass":"ux-media-frame","mediaPlaceholderClass":"ux-media-placeholder","mediaCaptionClass":"ux-media-caption","mediaTranscriptClass":"ux-media-transcript"};
   const navLinks = Array.from(document.querySelectorAll(cfg.navLinkSelector));
   const normalizeHref = (value) => {
     let path = String(value || '');
@@ -182,9 +182,50 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
   };
 
   if (cfg.enableExplainers) {
-    const cards = Array.from(document.querySelectorAll('[data-ux-explainer-card="true"]'));
+    const cardSelector = '[data-ux-explainer-card="true"], .' + cfg.clickReadyClass + ', .ux-explainer-card, .ux-media-card';
+
+    const normalizeText = (value) => String(value || '').replace(/s+/g, ' ').trim();
+
+    const titleFromCard = (card) => {
+      const explicit = normalizeText(card.getAttribute('data-ux-explainer-title'));
+      if (explicit) return explicit;
+      const heading = card.querySelector('h1,h2,h3,h4,strong,.pf-eyebrow,.card-title,.title');
+      const text = normalizeText(heading ? heading.textContent : card.textContent);
+      return text ? text.slice(0, 96) : (cfg.clickFallbackTitle || 'En savoir plus');
+    };
+
+    const bodyFromCard = (card) => {
+      const explicit = normalizeText(card.getAttribute('data-ux-explainer-body'));
+      if (explicit) return explicit;
+      const full = normalizeText(card.textContent);
+      const title = titleFromCard(card);
+      let body = full;
+      if (title && body.toLowerCase().startsWith(title.toLowerCase())) body = body.slice(title.length).trim();
+      if (!body) body = full;
+      if (!body) body = cfg.clickFallbackBody || 'Cet encadré peut être ouvert pour obtenir une explication contextualisée.';
+      return body.slice(0, 520);
+    };
+
+    const getCards = () => Array.from(document.querySelectorAll(cardSelector))
+      .filter((card) => !card.closest('.' + cfg.explainerPanelClass));
+
+    const ensureCardReady = (card) => {
+      if (!card || card.dataset.uxRuntimeReady === 'true') return;
+      if (!card.getAttribute('data-ux-explainer-card')) card.setAttribute('data-ux-explainer-card', 'true');
+      if (!card.getAttribute('data-ux-click-ready')) card.setAttribute('data-ux-click-ready', 'true');
+      if (!card.getAttribute('data-ux-click-label')) card.setAttribute('data-ux-click-label', cfg.clickBadgeLabel || 'Cliquer pour comprendre');
+      if (!card.getAttribute('data-ux-explainer-title')) card.setAttribute('data-ux-explainer-title', titleFromCard(card));
+      if (!card.getAttribute('data-ux-explainer-body')) card.setAttribute('data-ux-explainer-body', bodyFromCard(card));
+      if (!card.getAttribute('role')) card.setAttribute('role', 'button');
+      if (!card.getAttribute('tabindex')) card.setAttribute('tabindex', '0');
+      if (!card.getAttribute('aria-expanded')) card.setAttribute('aria-expanded', 'false');
+      card.classList.add(cfg.clickReadyClass);
+      card.dataset.uxRuntimeReady = 'true';
+    };
+
     const closeOtherExplainers = (except) => {
-      cards.forEach((card) => {
+      getCards().forEach((card) => {
+        ensureCardReady(card);
         if (card !== except) {
           card.classList.remove(cfg.explainerOpenClass);
           card.setAttribute('aria-expanded', 'false');
@@ -195,16 +236,18 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
     };
 
     const buildPanel = (card) => {
+      ensureCardReady(card);
       const panel = document.createElement('div');
       panel.className = cfg.explainerPanelClass;
+      panel.setAttribute('data-ux-generated-panel', 'true');
 
       const media = buildMedia(card);
       if (media) panel.appendChild(media);
 
-      const title = makeText('strong', '', card.getAttribute('data-ux-explainer-title') || 'En savoir plus');
+      const title = makeText('strong', '', titleFromCard(card));
       if (title) panel.appendChild(title);
 
-      const body = makeText('p', '', card.getAttribute('data-ux-explainer-body') || '');
+      const body = makeText('p', '', bodyFromCard(card));
       if (body) panel.appendChild(body);
 
       const caption = makeText('div', cfg.mediaCaptionClass, card.getAttribute('data-ux-media-caption') || '');
@@ -225,6 +268,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
     };
 
     const toggleCard = (card) => {
+      ensureCardReady(card);
       const isOpen = card.classList.contains(cfg.explainerOpenClass);
       closeOtherExplainers(card);
       if (isOpen) {
@@ -242,21 +286,33 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
       }
     };
 
-    cards.forEach((card) => {
-      card.addEventListener('click', (event) => {
-        if (event.target.closest && event.target.closest('a, video, iframe, button, input, textarea')) return;
-        toggleCard(card);
-      });
-      card.addEventListener('keydown', (event) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          toggleCard(card);
-        }
-      });
-    });
+    getCards().forEach(ensureCardReady);
 
     document.addEventListener('click', (event) => {
-      if (!event.target.closest || !event.target.closest('[data-ux-explainer-card="true"], .' + cfg.explainerPanelClass)) closeOtherExplainers(null);
+      const insideGeneratedPanel = event.target.closest && event.target.closest('.' + cfg.explainerPanelClass);
+      if (insideGeneratedPanel) return;
+
+      const card = event.target.closest ? event.target.closest(cardSelector) : null;
+      if (!card) {
+        closeOtherExplainers(null);
+        return;
+      }
+
+      const nestedInteractive = event.target.closest('a, video, iframe, button, input, textarea, select');
+      if (nestedInteractive && nestedInteractive !== card && !nestedInteractive.hasAttribute('data-ux-explainer-card')) return;
+
+      if (card.tagName === 'A') event.preventDefault();
+      event.stopPropagation();
+      toggleCard(card);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      const card = event.target.closest ? event.target.closest(cardSelector) : null;
+      if (!card) return;
+      event.preventDefault();
+      toggleCard(card);
     });
   }
+
 })();
