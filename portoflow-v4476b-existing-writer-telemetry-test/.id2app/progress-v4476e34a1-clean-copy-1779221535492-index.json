@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "4.4",
   "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
@@ -20,27 +20,28 @@
   "final_report_path": "portoflow-v4476b-existing-writer-telemetry-test/.id2app/final-report-v4476e34a1-clean-copy-1779221535492-index.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 3,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
-  "updated_count": 2,
-  "percent": 67,
-  "progress_sequence": 2,
+  "updated_count": 3,
+  "percent": 100,
+  "progress_sequence": 3,
   "monotonic_guard": true,
-  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/styles.css",
+  "current_file": "portoflow-v4476b-existing-writer-telemetry-test/script.js",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/styles.css",
+  "last_successful_file": "portoflow-v4476b-existing-writer-telemetry-test/script.js",
   "last_failed_file": null,
-  "last_commit_sha": "734232bc627d856484e3b670cc5e08645c98f5d4",
-  "last_file_sha": "9572cb6d6fa69ef748109c07ee66357cd9814b1d",
+  "last_commit_sha": "ca45fe33936b0a5758985bb82ddecc7e6f4ef432",
+  "last_file_sha": "ffe4a614592ff5dd1c32d4cccb0aa33d5e8063be",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v4476b-existing-writer-telemetry-test/index.html",
-    "portoflow-v4476b-existing-writer-telemetry-test/styles.css"
+    "portoflow-v4476b-existing-writer-telemetry-test/styles.css",
+    "portoflow-v4476b-existing-writer-telemetry-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -61,10 +62,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/styles.css",
       "commit_url": "https://github.com/didier2a/id2app/commit/734232bc627d856484e3b670cc5e08645c98f5d4",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v4476b-existing-writer-telemetry-test/script.js",
+      "action": "update",
+      "file_sha": "ffe4a614592ff5dd1c32d4cccb0aa33d5e8063be",
+      "commit_sha": "ca45fe33936b0a5758985bb82ddecc7e6f4ef432",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v4476b-existing-writer-telemetry-test/script.js",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ca45fe33936b0a5758985bb82ddecc7e6f4ef432",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-19T20:14:06.769Z",
+  "updated_at": "2026-05-19T20:14:22.966Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
