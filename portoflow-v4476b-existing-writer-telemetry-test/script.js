@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelector('[data-current-year]');if(year)year.textContent=String(new Date().getFullYear());const toggle=document.querySelector('[data-pf-nav-toggle]');const panel=document.querySelector('[data-pf-nav-panel]');if(toggle&&panel){toggle.addEventListener('click',()=>{const open=document.body.classList.toggle('pf-mobile-open');toggle.setAttribute('aria-expanded',String(open));});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{document.body.classList.remove('pf-mobile-open');toggle.setAttribute('aria-expanded','false');}));}document.querySelectorAll('.pf-card,.pf-bento,.pf-dashboard__card').forEach(el=>{el.addEventListener('mouseenter',()=>el.style.transform='translateY(-3px)');el.addEventListener('mouseleave',()=>el.style.transform='');});});
-/* ID2App Generic UX Pattern Engine V4.4.7.6E.3.4A.3 */
+/* ID2App Generic UX Pattern Engine V4.4.7.6E.3.4B */
 (() => {
   const cfg = {"navLinkSelector":".pf-nav__link[href]","activeClass":"pf-nav__link--active","headerSelector":".pf-header","sectionNavAttr":"data-ux-section-nav","viewportAnchorRatio":0.35,"explainerPanelClass":"ux-explainer-panel","explainerOpenClass":"ux-explainer-open","mediaFrameClass":"ux-media-frame","mediaPlaceholderClass":"ux-media-placeholder","mediaCaptionClass":"ux-media-caption","mediaTranscriptClass":"ux-media-transcript","clickReadyClass":"ux-click-ready","clickBadgeLabel":"Cliquer pour comprendre","clickFallbackTitle":"En savoir plus","clickFallbackBody":"Ce bloc précise le rôle de cette information dans le parcours utilisateur."};
   const normalizeHref = (value) => {
@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
     const type = card.getAttribute('data-ux-media-type') || '';
     const imageSrc = card.getAttribute('data-ux-media-image-src') || '';
     const imageAlt = card.getAttribute('data-ux-media-image-alt') || '';
+    const placeholderLabel = card.getAttribute('data-ux-media-placeholder-label') || '';
     const videoSrc = card.getAttribute('data-ux-media-video-src') || '';
     const posterSrc = card.getAttribute('data-ux-media-poster-src') || '';
     const iframeSrc = card.getAttribute('data-ux-media-iframe-src') || '';
@@ -135,7 +136,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         img.loading = 'lazy';
         frame.appendChild(img);
       } else {
-        frame.appendChild(mediaPlaceholder('Image ou schéma à connecter'));
+        frame.appendChild(mediaPlaceholder(placeholderLabel || 'Image ou schéma à connecter'));
       }
     } else if (type === 'video') {
       if (videoSrc) {
@@ -150,7 +151,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         video.appendChild(source);
         frame.appendChild(video);
       } else {
-        frame.appendChild(mediaPlaceholder('Vidéo à connecter'));
+        frame.appendChild(mediaPlaceholder(placeholderLabel || 'Vidéo à connecter'));
       }
     } else if (type === 'iframe') {
       if (iframeSrc) {
@@ -162,7 +163,7 @@ document.addEventListener('DOMContentLoaded',()=>{const year=document.querySelec
         iframe.title = card.getAttribute('data-ux-explainer-title') || 'Vidéo intégrée';
         frame.appendChild(iframe);
       } else {
-        frame.appendChild(mediaPlaceholder('Iframe vidéo à connecter'));
+        frame.appendChild(mediaPlaceholder(placeholderLabel || 'Iframe vidéo à connecter'));
       }
     } else {
       return null;
