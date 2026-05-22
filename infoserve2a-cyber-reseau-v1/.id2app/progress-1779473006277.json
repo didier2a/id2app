@@ -20,29 +20,30 @@
   "final_report_path": "infoserve2a-cyber-reseau-v1/.id2app/final-report-1779473006277.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 4,
-  "percent": 24,
-  "progress_sequence": 19,
+  "updated_count": 5,
+  "percent": 29,
+  "progress_sequence": 20,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v1/surveillance-cyber-locale.html",
+  "current_file": "infoserve2a-cyber-reseau-v1/reseau.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v1/surveillance-cyber-locale.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v1/reseau.html",
   "last_failed_file": null,
-  "last_commit_sha": "908a8c01472dd09d06a7efe0f7b39f2e82705a6d",
-  "last_file_sha": "d711b0eeeef8545d7961e7913f18719fbbc4baa6",
+  "last_commit_sha": "f6ba1067ee1ed7cbef8011cd5830ea3aeea29218",
+  "last_file_sha": "79aeecd77bfc33a75cb8bd4d33f9e6bc71b62278",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "infoserve2a-cyber-reseau-v1/index.html",
     "infoserve2a-cyber-reseau-v1/cyber.html",
     "infoserve2a-cyber-reseau-v1/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v1/surveillance-cyber-locale.html"
+    "infoserve2a-cyber-reseau-v1/surveillance-cyber-locale.html",
+    "infoserve2a-cyber-reseau-v1/reseau.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -81,10 +82,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v1/surveillance-cyber-locale.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/908a8c01472dd09d06a7efe0f7b39f2e82705a6d",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v1/reseau.html",
+      "action": "create",
+      "file_sha": "79aeecd77bfc33a75cb8bd4d33f9e6bc71b62278",
+      "commit_sha": "f6ba1067ee1ed7cbef8011cd5830ea3aeea29218",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v1/reseau.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f6ba1067ee1ed7cbef8011cd5830ea3aeea29218",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-22T18:34:55.374Z",
+  "updated_at": "2026-05-22T18:35:17.632Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
