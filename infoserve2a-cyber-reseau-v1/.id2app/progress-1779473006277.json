@@ -18,8 +18,8 @@
   "checkpoint_path": "infoserve2a-cyber-reseau-v1/.id2app/checkpoint-1779473006277.json",
   "progress_path": "infoserve2a-cyber-reseau-v1/.id2app/progress-1779473006277.json",
   "final_report_path": "infoserve2a-cyber-reseau-v1/.id2app/final-report-1779473006277.json",
-  "current_phase": "accepted",
-  "current_phase_label": "Payload accepté ; écriture du progress initial",
+  "current_phase": "app_spec_structure_only",
+  "current_phase_label": "App Spec structure-only : contexte compact avant 07S",
   "current_file": null,
   "current_file_status": null,
   "expected_count": 17,
@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 0,
+  "progress_sequence": 1,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,5 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-05-22T18:04:44.983Z",
-  "updated_at": "2026-05-22T18:04:44.983Z"
+  "updated_at": "2026-05-22T18:15:14.230Z",
+  "phase_telemetry": true,
+  "heartbeat_at": "2026-05-22T18:15:14.230Z"
 }
