@@ -20,26 +20,27 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 4,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 25,
-  "progress_sequence": 6,
+  "updated_count": 2,
+  "percent": 50,
+  "progress_sequence": 7,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-abc/mentions-legales.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-abc/confidentialite.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/mentions-legales.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/confidentialite.html",
   "last_failed_file": null,
-  "last_commit_sha": "bfefaff0d132f6ca9dc408fc0f5573598fc0a314",
-  "last_file_sha": "d5e80cbbdd070a7f9e0eda84c903117184b3778d",
+  "last_commit_sha": "3593da7c8f29caff109c53662c6bcce0e2e6dcb0",
+  "last_file_sha": "a993ebc242a47da1a2fd900739c68f8808a1b49e",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "infoserve2a-cyber-reseau-v21-abc/mentions-legales.html"
+    "infoserve2a-cyber-reseau-v21-abc/mentions-legales.html",
+    "infoserve2a-cyber-reseau-v21-abc/confidentialite.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/mentions-legales.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/bfefaff0d132f6ca9dc408fc0f5573598fc0a314",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/confidentialite.html",
+      "action": "create",
+      "file_sha": "a993ebc242a47da1a2fd900739c68f8808a1b49e",
+      "commit_sha": "3593da7c8f29caff109c53662c6bcce0e2e6dcb0",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/confidentialite.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3593da7c8f29caff109c53662c6bcce0e2e6dcb0",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T13:35:22.989Z",
+  "updated_at": "2026-05-23T13:35:38.600Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
