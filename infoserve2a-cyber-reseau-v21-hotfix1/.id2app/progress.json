@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 9,
+  "progress_sequence": 10,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,7 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-05-23T10:47:32.567Z",
-  "updated_at": "2026-05-23T10:56:11.604Z",
+  "updated_at": "2026-05-23T10:57:07.183Z",
   "phase_telemetry": true,
-  "heartbeat_at": "2026-05-23T10:56:11.604Z"
+  "heartbeat_at": "2026-05-23T10:57:07.183Z"
 }
