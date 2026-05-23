@@ -20,28 +20,29 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 43,
-  "progress_sequence": 11,
+  "updated_count": 4,
+  "percent": 57,
+  "progress_sequence": 12,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/audit-cyber-local.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/surveillance-cyber-locale.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/audit-cyber-local.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/surveillance-cyber-locale.html",
   "last_failed_file": null,
-  "last_commit_sha": "a7f6389a26b6db0ebbadcc362ccb3a5685127c07",
-  "last_file_sha": "a94a36b57178ef3dc9e368a3315de0ad370f2b53",
+  "last_commit_sha": "2ae39c49db3cc1144b310b6804837aaff8d9aa5f",
+  "last_file_sha": "2336b3ca109af6804545d24b47600533610f0e32",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "infoserve2a-cyber-reseau-v21-6f-clean/index.html",
     "infoserve2a-cyber-reseau-v21-6f-clean/cyber.html",
-    "infoserve2a-cyber-reseau-v21-6f-clean/audit-cyber-local.html"
+    "infoserve2a-cyber-reseau-v21-6f-clean/audit-cyber-local.html",
+    "infoserve2a-cyber-reseau-v21-6f-clean/surveillance-cyber-locale.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/audit-cyber-local.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/a7f6389a26b6db0ebbadcc362ccb3a5685127c07",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-6f-clean/surveillance-cyber-locale.html",
+      "action": "create",
+      "file_sha": "2336b3ca109af6804545d24b47600533610f0e32",
+      "commit_sha": "2ae39c49db3cc1144b310b6804837aaff8d9aa5f",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/surveillance-cyber-locale.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/2ae39c49db3cc1144b310b6804837aaff8d9aa5f",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T18:30:03.200Z",
+  "updated_at": "2026-05-23T18:30:18.442Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
