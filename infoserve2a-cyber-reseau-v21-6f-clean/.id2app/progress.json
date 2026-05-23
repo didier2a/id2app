@@ -20,26 +20,27 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 14,
-  "progress_sequence": 9,
+  "updated_count": 2,
+  "percent": 29,
+  "progress_sequence": 10,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/wifi-starlink-reseaux-critiques.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/secteurs-sensibles.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/wifi-starlink-reseaux-critiques.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/secteurs-sensibles.html",
   "last_failed_file": null,
-  "last_commit_sha": "0bc713cd603f0950bb111fab81d5b59d623d596b",
-  "last_file_sha": "33c87eee42ba64073be31fab1c83994ca0933946",
+  "last_commit_sha": "1315cc957452815ba460f9ee8af8992a50477971",
+  "last_file_sha": "fe825974878509cd514e0c4d5622a1095043bf43",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "infoserve2a-cyber-reseau-v21-6f-clean/wifi-starlink-reseaux-critiques.html"
+    "infoserve2a-cyber-reseau-v21-6f-clean/wifi-starlink-reseaux-critiques.html",
+    "infoserve2a-cyber-reseau-v21-6f-clean/secteurs-sensibles.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/wifi-starlink-reseaux-critiques.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/0bc713cd603f0950bb111fab81d5b59d623d596b",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-6f-clean/secteurs-sensibles.html",
+      "action": "create",
+      "file_sha": "fe825974878509cd514e0c4d5622a1095043bf43",
+      "commit_sha": "1315cc957452815ba460f9ee8af8992a50477971",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/secteurs-sensibles.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1315cc957452815ba460f9ee8af8992a50477971",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T18:41:10.997Z",
+  "updated_at": "2026-05-23T18:41:26.261Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
