@@ -20,26 +20,27 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 14,
-  "progress_sequence": 9,
+  "updated_count": 2,
+  "percent": 29,
+  "progress_sequence": 10,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-abc/index.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-abc/cyber.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/index.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/cyber.html",
   "last_failed_file": null,
-  "last_commit_sha": "bc659a5a9f9a6d7b00e61b0d72f1ac03b62dff5b",
-  "last_file_sha": "de58a25b9e1563ec9c85fec8cb43235b99cec749",
+  "last_commit_sha": "8aeba35680cd40efebddbe72d659600b64a683be",
+  "last_file_sha": "8ce435750249b1dcb7193ed624844546cbee1b68",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "infoserve2a-cyber-reseau-v21-abc/index.html"
+    "infoserve2a-cyber-reseau-v21-abc/index.html",
+    "infoserve2a-cyber-reseau-v21-abc/cyber.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/bc659a5a9f9a6d7b00e61b0d72f1ac03b62dff5b",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/cyber.html",
+      "action": "create",
+      "file_sha": "8ce435750249b1dcb7193ed624844546cbee1b68",
+      "commit_sha": "8aeba35680cd40efebddbe72d659600b64a683be",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/cyber.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8aeba35680cd40efebddbe72d659600b64a683be",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T12:43:51.506Z",
+  "updated_at": "2026-05-23T12:44:09.340Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
