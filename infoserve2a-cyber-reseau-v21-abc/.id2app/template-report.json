@@ -1,0 +1,29 @@
+{
+  "schema_version": "4.4",
+  "lots": [
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"4.4\",\r\n  \"orchestrator_version\": \"4.4.7.5-publisher-memory-safe-runtime\",\r\n  \"compiler\": \"contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher\",\r\n  \"run_id\": \"1779542926540-C\",\r\n  \"project_id\": \"infoserve2a-cyber-reseau-v21-abc\",\r\n  \"project_name\": \"INFOSERV2A Cyber & Réseau\",\r\n  \"project_type\": \"multi_page_website\",\r\n  \"repo\": \"didier2a/id2app\",\r\n  \"repo_owner\": \"didier2a\",\r\n  \"repo_name\": \"id2app\",\r\n  \"branch\": \"main\",\r\n  \"mode\": \"compile_from_json_spec\",\r\n  \"raw_mode\": \"compile_from_json_spec\",\r\n  \"dry_run\": false,\r\n  \"site_folder\": \"infoserve2a-cyber-reseau-v21-abc\",\r\n  \"expected_count\": 2,\r\n  \"checkpoint_path\": \"infoserve2a-cyber-reseau-v21-abc/.id2app/checkpoint-1779542926540-C.json\",\r\n  \"progress_path\": \"infoserve2a-cyber-reseau-v21-abc/.id2app/progress.json\",\r\n  \"final_report_path\": \"infoserve2a-cyber-reseau-v21-abc/.id2app/final-report.json\",\r\n  \"poll_interval_seconds\": 15,\r\n  \"terminal_progress_statuses\": [\r\n    \"completed\",\r\n    \"completed_dry_run\",\r\n    \"partial\",\r\n    \"failed\"\r\n  ],\r\n  \"message\": \"Accepted. Initial progress.json is written first, then updated monotonically. Poll progress.json and final-report.json from GitHub.\"\r\n}",
+    {
+      "status": "completed_soft_target_count",
+      "skipped_count": 0,
+      "expected_count": 2,
+      "run_id": "1779542926540-C",
+      "progress_local": "C:\\Users\\didie\\Downloads\\CINEFLOW\\id2app\\progress_lot_C_1779542926540-C.json",
+      "lot": "C",
+      "completed_count": 2,
+      "failed_count": 0
+    }
+  ],
+  "publisher": "id2app-file-publisher-v4-4-7-5",
+  "workflow": "id2app-core-v4-4-7-5-file-folder-publisher-memory-safe-runtime",
+  "report_type": "abc_true_sequential_template_report",
+  "generated_at": "2026-05-23T13:36:19.4263751Z",
+  "site_folder": "infoserve2a-cyber-reseau-v21-abc",
+  "project_id": "infoserve2a-cyber-reseau-v21-abc",
+  "homogeneity_contract": {
+    "shared_navigation": true,
+    "shared_site_folder": true,
+    "lots_b_c_continue_identity": true,
+    "shared_design_contract": true,
+    "lot_a_owns_css_js": true
+  }
+}
