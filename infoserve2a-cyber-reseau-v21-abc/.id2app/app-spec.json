@@ -1,0 +1,322 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "infoserve2a-v21-v4475-abc-true-sequential",
+  "generation_mode": "compile_from_json_spec_abc_true_sequential",
+  "project": {
+    "id": "infoserve2a-cyber-reseau-v21-abc",
+    "name": "INFOSERV2A Cyber & Réseau",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "cybersecurity_network_services",
+    "subsector": "local_cybersecurity_critical_networks",
+    "audience": [
+      "TPE et PME du Sud Corse",
+      "hôtels et établissements touristiques",
+      "commerces",
+      "professions libérales",
+      "sites isolés",
+      "structures sensibles"
+    ],
+    "objective": "Créer le site professionnel complet INFOSERV2A Cyber & Réseau, centré sur la cybersécurité locale, l’audit, la surveillance, le WiFi professionnel, Starlink et les réseaux critiques.",
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+    "tone": "professionnel, sobre, local, rassurant, expert, orienté dirigeant"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "infoserve2a-cyber-reseau-v21-abc",
+    "checkpoint_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/checkpoint.json",
+    "progress_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/progress.json",
+    "final_report_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/final-report.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/index.html",
+      "template_id": "template_home_professional_premium",
+      "objective": "Présenter INFOSERV2A Cyber & Réseau, son positionnement cybersécurité locale et réseaux critiques, la promesse commerciale et les appels à l’action principaux.",
+      "writer_brief": "Créer une page d’accueil premium, sobre et professionnelle. Mettre en avant la cybersécurité locale, les réseaux critiques, l’ancrage Sud Corse, l’intervention terrain, l’audit, la surveillance, le WiFi professionnel, Starlink et les liaisons difficiles. Le ton doit être clair, crédible, rassurant et orienté dirigeant de TPE/PME.",
+      "word_target": 850,
+      "component_order": [
+        "hero",
+        "proof_bar",
+        "feature_grid",
+        "bento_grid",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "slots": {
+        "hero": {
+          "eyebrow": "Cybersécurité locale & réseaux critiques",
+          "title": "INFOSERV2A Cyber & Réseau",
+          "subtitle": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+          "primary_cta": "Demander un diagnostic",
+          "secondary_cta": "Découvrir les services"
+        }
+      }
+    },
+    {
+      "page_id": "cyber",
+      "title": "Cybersécurité",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/cyber.html",
+      "template_id": "template_service_pillar",
+      "objective": "Expliquer le pôle cybersécurité : audit, contrôle terrain, durcissement, surveillance et accompagnement local.",
+      "writer_brief": "Présenter la cybersécurité comme une démarche concrète, locale et accessible aux entreprises. Insister sur la protection des postes, réseaux, accès, sauvegardes, mots de passe, MFA, routeurs, NAS, WiFi et usages métiers.",
+      "word_target": 800,
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "risk_panel",
+        "method_steps",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "audit-cyber-local",
+      "title": "Audit cyber local",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/audit-cyber-local.html",
+      "template_id": "template_audit_service",
+      "objective": "Détailler l’offre d’audit cyber local : diagnostic sur site, cartographie, points faibles, restitution et priorisation.",
+      "writer_brief": "Écrire une page orientée décision pour dirigeants. Expliquer ce qui est vérifié : réseau, routeur, WiFi, accès, sauvegardes, postes, mots de passe, messagerie, risques d’exposition. Montrer que l’audit produit un plan d’action clair.",
+      "word_target": 850,
+      "component_order": [
+        "hero",
+        "checklist",
+        "deliverables",
+        "timeline",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "surveillance-cyber-locale",
+      "title": "Surveillance cyber locale",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/surveillance-cyber-locale.html",
+      "template_id": "template_monitoring_service",
+      "objective": "Présenter la surveillance cyber locale et le suivi des signaux faibles pour petites entreprises et réseaux sensibles.",
+      "writer_brief": "Expliquer la surveillance de manière simple : visibilité, alertes, suivi, contrôle régulier, journalisation, points d’attention, vérifications planifiées. Ne pas promettre un SOC global, mais une vigilance locale, pragmatique et adaptée.",
+      "word_target": 750,
+      "component_order": [
+        "hero",
+        "monitoring_cards",
+        "process",
+        "limits_and_scope",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "reseau",
+      "title": "Réseau professionnel",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/reseau.html",
+      "template_id": "template_network_service",
+      "objective": "Présenter l’expertise réseau : architecture, WiFi, liaisons, routeurs, segmentation, continuité et performance.",
+      "writer_brief": "Créer une page de référence sur les réseaux professionnels. Expliquer l’importance d’un réseau stable, sécurisé et documenté. Mettre en avant l’intervention terrain, le diagnostic de couverture, les liaisons difficiles et les configurations critiques.",
+      "word_target": 800,
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "network_schema_placeholder",
+        "use_cases",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "wifi-starlink-reseaux-critiques",
+      "title": "WiFi, Starlink & liaisons difficiles",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/wifi-starlink-reseaux-critiques.html",
+      "template_id": "template_connectivity_service",
+      "objective": "Expliquer l’offre WiFi professionnel, Starlink, continuité internet et liaisons difficiles pour zones complexes.",
+      "writer_brief": "Insister sur les contraintes du Sud Corse : relief, zones isolées, hôtels, commerces, sites touristiques, entreprises dépendantes de leur connexion. Présenter WiFi pro, Starlink, bascule de secours, liaisons hybrides et supervision simple.",
+      "word_target": 850,
+      "component_order": [
+        "hero",
+        "connectivity_cards",
+        "scenario_grid",
+        "technical_scope",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/secteurs-sensibles.html",
+      "template_id": "template_sector_grid",
+      "objective": "Présenter les secteurs prioritaires : hôtellerie, commerce, santé, professions libérales, collectivités, sites isolés, entreprises touristiques.",
+      "writer_brief": "Créer une page orientée cas d’usage. Chaque secteur doit comprendre ses risques typiques, ses besoins réseau/cyber et la réponse INFOSERV2A. Ton professionnel, concret et local.",
+      "word_target": 850,
+      "component_order": [
+        "hero",
+        "sector_cards",
+        "risk_matrix",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "methode",
+      "title": "Méthode",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/methode.html",
+      "template_id": "template_method_timeline",
+      "objective": "Présenter la méthode d’intervention : cadrage, diagnostic, plan d’action, intervention, documentation, suivi.",
+      "writer_brief": "Rassurer le client. Montrer une méthode structurée, lisible, sans jargon excessif. Expliquer comment on passe d’un problème flou à une action concrète et priorisée.",
+      "word_target": 700,
+      "component_order": [
+        "hero",
+        "timeline",
+        "deliverables",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "a-propos",
+      "title": "À propos",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/a-propos.html",
+      "template_id": "template_about_professional",
+      "objective": "Présenter l’identité de l’entreprise, son ancrage local, son positionnement professionnel et sa différence avec l’infogérance généraliste.",
+      "writer_brief": "Expliquer que INFOSERV2A se repositionne sur deux pôles : cybersécurité locale et réseaux critiques. Éviter le dépannage informatique généraliste comme promesse publique. Mettre l’accent sur la proximité, l’exigence, la discrétion et la fiabilité.",
+      "word_target": 650,
+      "component_order": [
+        "hero",
+        "values",
+        "positioning",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/contact.html",
+      "template_id": "template_contact_conversion",
+      "objective": "Créer une page de contact efficace pour demandes de diagnostic, audit, réseau, WiFi, Starlink et cybersécurité.",
+      "writer_brief": "Créer une page claire avec appels à l’action : diagnostic cyber local, audit réseau, problème WiFi, liaison Starlink, besoin de sécurisation. Prévoir coordonnées, zone d’intervention Sud Corse et message de qualification.",
+      "word_target": 500,
+      "component_order": [
+        "hero",
+        "contact_panel",
+        "qualification_questions",
+        "cta_band"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/mentions-legales.html",
+      "template_id": "template_legal_page",
+      "objective": "Créer une page mentions légales propre, à compléter avec les informations juridiques exactes.",
+      "writer_brief": "Rédiger une page mentions légales structurée avec placeholders explicites à compléter : raison sociale, forme juridique, SIRET, adresse, directeur de publication, hébergeur, contact.",
+      "word_target": 450,
+      "component_order": [
+        "legal_content"
+      ],
+      "slots": {}
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/confidentialite.html",
+      "template_id": "template_privacy_page",
+      "objective": "Créer une page confidentialité simple, rassurante et conforme dans l’esprit, à valider juridiquement.",
+      "writer_brief": "Rédiger une politique de confidentialité simple : données de contact, finalité, durée de conservation, droits, sécurité, contact. Ajouter une mention indiquant que la page doit être adaptée et validée selon la situation juridique réelle.",
+      "word_target": 500,
+      "component_order": [
+        "privacy_content"
+      ],
+      "slots": {}
+    }
+  ],
+  "navigation_contract": {
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Cyber",
+        "href": "cyber.html",
+        "page_id": "cyber"
+      },
+      {
+        "label": "Audit",
+        "href": "audit-cyber-local.html",
+        "page_id": "audit-cyber-local"
+      },
+      {
+        "label": "Surveillance",
+        "href": "surveillance-cyber-locale.html",
+        "page_id": "surveillance-cyber-locale"
+      },
+      {
+        "label": "Réseau",
+        "href": "reseau.html",
+        "page_id": "reseau"
+      },
+      {
+        "label": "WiFi / Starlink",
+        "href": "wifi-starlink-reseaux-critiques.html",
+        "page_id": "wifi-starlink-reseaux-critiques"
+      },
+      {
+        "label": "Secteurs",
+        "href": "secteurs-sensibles.html",
+        "page_id": "secteurs-sensibles"
+      },
+      {
+        "label": "Méthode",
+        "href": "methode.html",
+        "page_id": "methode"
+      },
+      {
+        "label": "À propos",
+        "href": "a-propos.html",
+        "page_id": "a-propos"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ]
+  },
+  "design_contract": {
+    "style": "premium cybersecurity local business",
+    "color_direction": "dark navy, graphite, cyan/blue accent, light technical surfaces",
+    "visual_language": "sobriété technique, cartes premium, schémas réseau simples, placeholders médias propres",
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "homogeneity_contract": {
+      "shared_identity": true,
+      "shared_css_from_lot_a": true,
+      "shared_navigation": true,
+      "shared_footer": true,
+      "no_reinvention_by_lot": true
+    },
+    "avoid": [
+      "ambiance hacker caricaturale",
+      "promesses SOC irréalistes",
+      "dépannage informatique généraliste comme message principal",
+      "références PortoFlow",
+      "références portoflow",
+      "références à un territoire touristique hors sujet"
+    ]
+  },
+  "quality_gates": {
+    "html_validation_required": true,
+    "css_validation_required": true,
+    "responsive_check": true,
+    "accessibility_basic_check": true,
+    "publisher_memory_safe_required": true,
+    "no_portoflow_reference": true
+  }
+}
