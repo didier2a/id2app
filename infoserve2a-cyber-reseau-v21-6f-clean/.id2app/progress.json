@@ -1,5 +1,5 @@
 {
-  "status": "initializing",
+  "status": "running_with_failures",
   "schema_version": "4.4",
   "orchestrator_version": "4.4.7.5-publisher-memory-safe-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
@@ -18,28 +18,77 @@
   "checkpoint_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/checkpoint-1779561774100-C.json",
   "progress_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/progress.json",
   "final_report_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/final-report.json",
-  "current_phase": "writer_page_completed",
-  "current_phase_label": "Writer page terminée ; progression éditoriale enregistrée",
-  "current_file": null,
-  "current_file_status": null,
-  "expected_count": 2,
+  "current_phase": "publishing_files",
+  "expected_count": 4,
   "completed_count": 0,
-  "failed_count": 0,
+  "failed_count": 1,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 0,
   "updated_count": 0,
-  "percent": 0,
-  "progress_sequence": 5,
+  "percent": 25,
+  "progress_sequence": 1,
   "monotonic_guard": true,
+  "monotonic_regression_prevented": false,
+  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/mentions-legales.html",
+  "current_file_status": "failed",
+  "last_successful_file": null,
+  "last_failed_file": "infoserve2a-cyber-reseau-v21-6f-clean/mentions-legales.html",
+  "last_commit_sha": null,
+  "last_file_sha": null,
+  "github_metadata_missing_count": 0,
+  "github_metadata_missing_files": [],
   "completed_files": [],
-  "failed_files": [],
+  "failed_files": [
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-6f-clean/mentions-legales.html",
+      "action": "repair",
+      "reason": "validation_failed",
+      "parse_warnings": [],
+      "validation_errors": [
+        "too_many_consecutive_paragraphs"
+      ],
+      "validation_warnings": [
+        "long_paragraphs:2"
+      ],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "validation",
+        "root_cause": "The page is missing a required 'hero' section (hero_missing) and contains placeholder text ('Informations à compléter') in critical legal content, making it incomplete and unpublishable. Navigation links are also limited.",
+        "repair_strategy": "Add a compliant hero section to the page. Replace all placeholder text with complete and accurate legal information. Expand the main and footer navigation to include a more comprehensive set of relevant links.",
+        "constraints": [
+          "Maintain the page's purpose as 'Mentions Légales'.",
+          "Ensure full compliance with ID2App V4.4 template requirements.",
+          "The content must be in French.",
+          "The page must be publishable (publish_allowed: true)."
+        ],
+        "must_not_change": [
+          "The brand identity (name, tagline, logo SVG).",
+          "The existing valid HTML structure (header, footer, main, section id2-legal).",
+          "The current title and description meta tags."
+        ],
+        "recommended_prompt_addendum": "Ajoute une section 'hero' conforme au template ID2App V4.4. Remplace le texte 'Informations à compléter' par des mentions légales complètes et exactes pour une entreprise fictive de cybersécurité en Corse (ex: nom de l'entreprise, forme juridique, adresse, SIRET, contact, directeur de publication, hébergeur). Étends la navigation principale et celle du pied de page pour inclure des liens pertinents (ex: Accueil, Services, À propos, Contact, Politique de confidentialité)."
+      },
+      "anthropic_stop_reason": "end_turn",
+      "anthropic_usage": {
+        "input_tokens": 6827,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 3423,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "at": "2026-05-23T18:48:58.412Z"
+    }
+  ],
   "updated_files": [],
   "warnings": [],
-  "next_poll_seconds": 15,
-  "created_at": "2026-05-23T18:43:21.510Z",
-  "updated_at": "2026-05-23T18:47:40.435Z",
-  "phase_telemetry": true,
-  "heartbeat_at": "2026-05-23T18:47:40.435Z"
+  "updated_at": "2026-05-23T18:48:58.511Z",
+  "next_poll_seconds": 15
 }
