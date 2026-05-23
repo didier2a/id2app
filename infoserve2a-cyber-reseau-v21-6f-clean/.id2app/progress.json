@@ -20,26 +20,27 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-6f-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 14,
-  "progress_sequence": 9,
+  "updated_count": 2,
+  "percent": 29,
+  "progress_sequence": 10,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/index.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-6f-clean/cyber.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/index.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-6f-clean/cyber.html",
   "last_failed_file": null,
-  "last_commit_sha": "9162227a1deef23b3d56cdd71d964bba749204ed",
-  "last_file_sha": "4780d7ca3a19ce9554f74a0d4238f62a1806f7d3",
+  "last_commit_sha": "4039400553e048c82620d5283c0974f02fbe6fd1",
+  "last_file_sha": "c8c8266294c68c4c4b4c9b04865ac9a7a5e6c974",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "infoserve2a-cyber-reseau-v21-6f-clean/index.html"
+    "infoserve2a-cyber-reseau-v21-6f-clean/index.html",
+    "infoserve2a-cyber-reseau-v21-6f-clean/cyber.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/9162227a1deef23b3d56cdd71d964bba749204ed",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-6f-clean/cyber.html",
+      "action": "create",
+      "file_sha": "c8c8266294c68c4c4b4c9b04865ac9a7a5e6c974",
+      "commit_sha": "4039400553e048c82620d5283c0974f02fbe6fd1",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-6f-clean/cyber.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/4039400553e048c82620d5283c0974f02fbe6fd1",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T18:29:26.678Z",
+  "updated_at": "2026-05-23T18:29:44.326Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
