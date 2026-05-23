@@ -20,28 +20,29 @@
   "final_report_path": "infoserve2a-cyber-reseau-v21-abc/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 43,
-  "progress_sequence": 11,
+  "updated_count": 4,
+  "percent": 57,
+  "progress_sequence": 12,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v21-abc/methode.html",
+  "current_file": "infoserve2a-cyber-reseau-v21-abc/a-propos.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/methode.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v21-abc/a-propos.html",
   "last_failed_file": null,
-  "last_commit_sha": "5b49f067d90c1d71af690ac2988077b30b77cdd3",
-  "last_file_sha": "c7a7e0eb5e6276d07ea6387fac0cb42ef953fbd2",
+  "last_commit_sha": "9308e5808be67d62a2b225369ea455d46da83d8b",
+  "last_file_sha": "3ebc6e719a1242d4c699f02758fcd22da0be7d86",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "infoserve2a-cyber-reseau-v21-abc/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v21-abc/secteurs-sensibles.html",
-    "infoserve2a-cyber-reseau-v21-abc/methode.html"
+    "infoserve2a-cyber-reseau-v21-abc/methode.html",
+    "infoserve2a-cyber-reseau-v21-abc/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/methode.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/5b49f067d90c1d71af690ac2988077b30b77cdd3",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v21-abc/a-propos.html",
+      "action": "create",
+      "file_sha": "3ebc6e719a1242d4c699f02758fcd22da0be7d86",
+      "commit_sha": "9308e5808be67d62a2b225369ea455d46da83d8b",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v21-abc/a-propos.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9308e5808be67d62a2b225369ea455d46da83d8b",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-23T12:56:50.360Z",
+  "updated_at": "2026-05-23T12:57:07.347Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
