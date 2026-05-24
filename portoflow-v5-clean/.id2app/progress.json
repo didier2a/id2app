@@ -20,22 +20,22 @@
   "final_report_path": "portoflow-v5-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 5,
-  "completed_count": 7,
+  "completed_count": 8,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 7,
-  "percent": 140,
-  "progress_sequence": 7,
+  "updated_count": 8,
+  "percent": 160,
+  "progress_sequence": 8,
   "monotonic_guard": true,
-  "current_file": "portoflow-v5-clean/boucle-creation.html",
+  "current_file": "portoflow-v5-clean/n8n-cloud-code.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v5-clean/boucle-creation.html",
+  "last_successful_file": "portoflow-v5-clean/n8n-cloud-code.html",
   "last_failed_file": null,
-  "last_commit_sha": "6cc5a193f62fb78b3a681952ca162c740c9d5293",
-  "last_file_sha": "30cf7b9f74583d6d219ca0ab6b58dad3b341f67b",
+  "last_commit_sha": "580f20f4cd472a630352f1ed5da61698cbce58e9",
+  "last_file_sha": "f61c42c0f6d37d70be58e90ff2cf4dee2a6bd512",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -45,7 +45,8 @@
     "portoflow-v5-clean/styles.css",
     "portoflow-v5-clean/ingenierie.html",
     "portoflow-v5-clean/demonstrateur.html",
-    "portoflow-v5-clean/boucle-creation.html"
+    "portoflow-v5-clean/boucle-creation.html",
+    "portoflow-v5-clean/n8n-cloud-code.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -111,10 +112,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/boucle-creation.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/6cc5a193f62fb78b3a681952ca162c740c9d5293",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v5-clean/n8n-cloud-code.html",
+      "action": "create",
+      "file_sha": "f61c42c0f6d37d70be58e90ff2cf4dee2a6bd512",
+      "commit_sha": "580f20f4cd472a630352f1ed5da61698cbce58e9",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/n8n-cloud-code.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/580f20f4cd472a630352f1ed5da61698cbce58e9",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-24T06:39:59.248Z",
+  "updated_at": "2026-05-24T06:40:03.104Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
