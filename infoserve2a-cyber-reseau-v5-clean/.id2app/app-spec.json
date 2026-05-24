@@ -1,0 +1,1057 @@
+{
+  "schema_version": "5.0",
+  "app_spec_version": "infoserve2a-v5-clean-factory",
+  "generation_mode": "v5_clean_factory_slot_driven",
+  "project": {
+    "id": "infoserve2a-cyber-reseau-v5-clean",
+    "name": "INFOSERV2A Cyber & Réseau",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "cybersecurity_network_services",
+    "objective": "Créer un site métier premium, très éditorial, pour INFOSERV2A Cyber & Réseau.",
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse."
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "infoserve2a-cyber-reseau-v5-clean",
+    "progress_path": "infoserve2a-cyber-reseau-v5-clean/.id2app/progress.json",
+    "final_report_path": "infoserve2a-cyber-reseau-v5-clean/.id2app/final-report.json"
+  },
+  "brand_kit": {
+    "schema_version": "5.0",
+    "brand_name": "INFOSERV2A Cyber & Réseau",
+    "public_name": "INFOSERV2A Cyber & Réseau",
+    "signature": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+    "foundational_phrase": "Votre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.",
+    "differentiating_phrase": "Votre prestataire gère votre informatique. INFOSERV2A vérifie localement qu’elle ne vous met pas en danger.",
+    "local_anchor": "Porto-Vecchio et Sud Corse",
+    "positioning": "Prestataire local spécialisé dans la cybersécurité de proximité, le contrôle terrain des réseaux professionnels et les réseaux critiques pour les TPE/PME du Sud Corse.",
+    "tone": [
+      "professionnel",
+      "local",
+      "moderne",
+      "précis",
+      "rassurant",
+      "orienté dirigeant",
+      "sobrement premium"
+    ],
+    "visual_direction": {
+      "mood": "cyber sobre, réseau maillé, cartographie locale, supervision premium, signal et contrôle",
+      "palette": {
+        "navy": "#061426",
+        "deep_blue": "#0B1F3A",
+        "cyan": "#19D3FF",
+        "turquoise": "#3EE7C2",
+        "off_white": "#F4F8FB",
+        "slate": "#5E7084",
+        "anthracite": "#101820"
+      },
+      "typography": "sans-serif moderne, titres nets, corps de texte confortable",
+      "avoid": [
+        "hacker caricatural",
+        "gaming",
+        "rouge anxiogène dominant",
+        "template territorial",
+        "logo hérité",
+        "ID2App visible"
+      ]
+    },
+    "logo_policy": {
+      "type": "text_logo_with_project_mark",
+      "no_external_logo": true,
+      "no_legacy_logo": true,
+      "mark_prompt": "signal local, réseau sécurisé, contrôle terrain, Sud Corse"
+    }
+  },
+  "navigation_contract": {
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Cyber",
+        "href": "cyber.html",
+        "page_id": "cyber"
+      },
+      {
+        "label": "Réseau",
+        "href": "reseau.html",
+        "page_id": "reseau"
+      },
+      {
+        "label": "Secteurs",
+        "href": "secteurs-sensibles.html",
+        "page_id": "secteurs-sensibles"
+      },
+      {
+        "label": "Méthode",
+        "href": "methode.html",
+        "page_id": "methode"
+      },
+      {
+        "label": "À propos",
+        "href": "a-propos.html",
+        "page_id": "a-propos"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/index.html",
+      "seo_title": "INFOSERV2A Cyber & Réseau — Cybersécurité locale et réseaux critiques en Sud Corse",
+      "meta_description": "INFOSERV2A Cyber & Réseau accompagne les entreprises de Porto-Vecchio et du Sud Corse dans l’audit cyber local, la surveillance cyber, le WiFi professionnel, Starlink et les réseaux critiques.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "INFOSERV2A Cyber & Réseau",
+          "title": "Cybersécurité locale et réseaux critiques à Porto-Vecchio",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les entreprises du Sud Corse dans la vérification de leur sécurité numérique et la fiabilisation de leurs réseaux professionnels sensibles.",
+          "paragraphs": [
+            "Votre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.",
+            "Dans une région où les entreprises s’appuient souvent sur des prestataires distants, INFOSERV2A apporte une lecture terrain : équipements réels, WiFi, accès, sauvegardes, caméras, routeurs, postes et usages locaux."
+          ],
+          "cta": {
+            "primary": "Demander un audit cyber",
+            "secondary": "Faire vérifier mon réseau"
+          }
+        },
+        {
+          "kind": "problem",
+          "eyebrow": "Contrôle terrain",
+          "title": "L’angle mort des entreprises infogérées à distance",
+          "lead": "L’administration à distance peut être efficace pour les systèmes connus. Elle voit moins bien la réalité physique d’un site professionnel.",
+          "paragraphs": [
+            "Postes ajoutés, routeurs secondaires, WiFi invité, imprimantes, NAS, caméras IP, accès distants et équipements inconnus forment souvent la surface réelle du risque.",
+            "INFOSERV2A intervient localement pour documenter cette réalité, clarifier les priorités et permettre au dirigeant d’agir sans jargon inutile."
+          ],
+          "cards": [
+            {
+              "title": "Ce qui est administré",
+              "body": "Les postes, comptes, logiciels, sauvegardes et services déclarés par votre organisation ou votre prestataire."
+            },
+            {
+              "title": "Ce qui est exposé",
+              "body": "Les usages réels, les équipements présents sur site, les réseaux invités, les accès distants et les points d’entrée invisibles dans les tableaux de bord."
+            },
+            {
+              "title": "Ce qui est prouvé",
+              "body": "Un constat local, priorisé, exploitable par le dirigeant, l’infogérant, l’assureur ou l’équipe interne."
+            }
+          ]
+        },
+        {
+          "kind": "pillars",
+          "eyebrow": "Cyber + Réseau",
+          "title": "Deux expertises pour les entreprises sensibles du Sud Corse",
+          "lead": "INFOSERV2A se concentre sur deux pôles lisibles : le contrôle cyber local et les réseaux critiques.",
+          "cards": [
+            {
+              "title": "INFOSERV2A Cyber",
+              "body": "Audit, contrôle, surveillance locale, preuve de sécurité et coordination avec les prestataires informatiques existants.",
+              "bullets": [
+                "cartographie réseau",
+                "équipements inconnus",
+                "surface d’exposition",
+                "WiFi interne / invité",
+                "sauvegardes et accès distants",
+                "rapport dirigeant"
+              ]
+            },
+            {
+              "title": "INFOSERV2A Réseau",
+              "body": "WiFi professionnel critique, Starlink, ponts radio, liaisons difficiles, sites isolés et interconnexions complexes.",
+              "bullets": [
+                "WiFi longue portée",
+                "réseaux invités isolés",
+                "sites isolés",
+                "caméras IP",
+                "liaisons inter-bâtiments",
+                "préparation avant saison"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "comparison",
+          "eyebrow": "Complémentarité",
+          "title": "Nous ne remplaçons pas votre prestataire informatique",
+          "lead": "INFOSERV2A intervient en complément. Votre prestataire administre ; INFOSERV2A vérifie localement.",
+          "compare": [
+            {
+              "left": "Infogérance distante",
+              "right": "INFOSERV2A local"
+            },
+            {
+              "left": "Administre les systèmes connus",
+              "right": "Vérifie le terrain réel"
+            },
+            {
+              "left": "Suit les postes et services déclarés",
+              "right": "Détecte les angles morts locaux"
+            },
+            {
+              "left": "Intervient souvent à distance",
+              "right": "Observe sur site"
+            },
+            {
+              "left": "Déclare un niveau de sécurité",
+              "right": "Documente une preuve vérifiable"
+            }
+          ],
+          "note": "Votre prestataire administre. INFOSERV2A vérifie."
+        },
+        {
+          "kind": "sectors",
+          "eyebrow": "Secteurs",
+          "title": "Des environnements où la donnée et le réseau sont critiques",
+          "lead": "Le site s’adresse aux dirigeants qui doivent protéger une activité réelle, des clients, des réservations, des dossiers ou des accès métier.",
+          "cards": [
+            {
+              "title": "Hôtels, campings, résidences",
+              "body": "WiFi client, réservations, caméras, caisses, saisonnalité et réputation."
+            },
+            {
+              "title": "Immobilier et conciergeries",
+              "body": "Pièces d’identité, RIB, mandats, documents propriétaires et fraude au virement."
+            },
+            {
+              "title": "Santé et professions réglementées",
+              "body": "Données patients, confidentialité, sauvegardes, scanners, messagerie et postes locaux."
+            },
+            {
+              "title": "Sites isolés et bâtiments distants",
+              "body": "Starlink, pont radio, WiFi longue portée, caméras et continuité de service."
+            }
+          ]
+        },
+        {
+          "kind": "offers",
+          "eyebrow": "Offres d’entrée",
+          "title": "Commencer par un diagnostic clair",
+          "lead": "Une première évaluation permet de transformer un risque flou en priorités concrètes.",
+          "cards": [
+            {
+              "title": "Audit Cyber Local",
+              "body": "Cartographie, risques prioritaires, équipements inconnus et rapport dirigeant."
+            },
+            {
+              "title": "Surveillance Cyber Locale",
+              "body": "Contrôle périodique, suivi des changements, alertes de dérive et revue synthétique."
+            },
+            {
+              "title": "Réseau Critique",
+              "body": "WiFi professionnel, Starlink, pont radio, réseau invité, sites complexes et préparation saison."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Action",
+          "title": "Faites vérifier votre sécurité locale avant qu’un incident ne la révèle",
+          "lead": "Un échange court suffit pour qualifier votre situation : activité, commune, prestataire existant, urgence et priorité.",
+          "cta": {
+            "primary": "Demander un audit cyber",
+            "secondary": "Parler d’un projet réseau critique"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "cyber",
+      "title": "Cyber",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/cyber.html",
+      "seo_title": "Cybersécurité locale à Porto-Vecchio — Audit et surveillance cyber | INFOSERV2A",
+      "meta_description": "Audit cyber local, surveillance, contrôle terrain, cartographie réseau et preuve de sécurité pour les entreprises du Sud Corse.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale",
+          "title": "INFOSERV2A Cyber — Le contrôle cyber local des entreprises du Sud Corse",
+          "lead": "Audit, surveillance, preuve de sécurité et accompagnement cyber pour les TPE/PME infogérées ou sensibles.",
+          "paragraphs": [
+            "Le risque ne se limite pas au cloud ou aux serveurs. Il existe aussi dans les locaux : box, routeurs, WiFi, imprimantes, caméras, NAS, postes oubliés, mots de passe et accès distants.",
+            "INFOSERV2A Cyber vérifie localement ce que les tableaux de bord distants ne montrent pas toujours."
+          ],
+          "cta": {
+            "primary": "Demander un audit cyber local",
+            "secondary": "Comprendre la méthode"
+          }
+        },
+        {
+          "kind": "checklist",
+          "eyebrow": "Contrôles",
+          "title": "Ce que nous vérifions",
+          "lead": "L’objectif est de rendre visible le réseau réel, les usages et les points faibles exploitables.",
+          "bullets": [
+            "inventaire réseau et équipements inconnus",
+            "ports et services ouverts",
+            "WiFi invité et WiFi interne",
+            "accès distants et comptes sensibles",
+            "MFA, mots de passe et messagerie",
+            "imprimantes, caméras, NAS et objets connectés",
+            "sauvegardes, dépendances prestataires et documentation minimale"
+          ]
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Prestations",
+          "title": "Nos prestations Cyber",
+          "lead": "Chaque mission produit une lecture compréhensible pour le dirigeant et exploitable par le prestataire informatique.",
+          "cards": [
+            {
+              "title": "Audit Cyber Local",
+              "body": "Contrôle ponctuel avec observation terrain, cartographie et rapport priorisé."
+            },
+            {
+              "title": "Surveillance Cyber Locale",
+              "body": "Suivi périodique pour détecter les changements, dérives et équipements inattendus."
+            },
+            {
+              "title": "Contrôle indépendant prestataire",
+              "body": "Vérification complémentaire pour les entreprises déjà infogérées, sans conflit de rôle."
+            },
+            {
+              "title": "Préparation assurance / conformité",
+              "body": "Aide à documenter les contrôles et les priorités, sans promesse de conformité automatique."
+            }
+          ]
+        },
+        {
+          "kind": "deliverables",
+          "eyebrow": "Preuve",
+          "title": "Livrables clairs et actionnables",
+          "lead": "Un bon audit ne doit pas produire un document illisible. Il doit aider à décider.",
+          "bullets": [
+            "rapport synthétique dirigeant",
+            "cartographie réseau lisible",
+            "niveau de risque priorisé",
+            "recommandations à transmettre au prestataire",
+            "plan de suivi possible",
+            "points critiques à revoir avant saison ou échéance assurance"
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Audit",
+          "title": "Votre sécurité doit aussi être vérifiée sur site",
+          "lead": "INFOSERV2A intervient en complément de votre organisation actuelle pour apporter une preuve locale.",
+          "cta": {
+            "primary": "Planifier un audit cyber local",
+            "secondary": "Voir les secteurs accompagnés"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "audit-cyber-local",
+      "title": "Audit cyber local",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/audit-cyber-local.html",
+      "seo_title": "Audit cyber local pour TPE/PME à Porto-Vecchio | INFOSERV2A Cyber",
+      "meta_description": "Audit terrain pour identifier les risques visibles depuis votre propre réseau : équipements, WiFi, accès distants, sauvegardes et exposition locale.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Audit terrain",
+          "title": "Audit Cyber Local — Voir enfin ce qui est réellement exposé sur votre site",
+          "lead": "Un audit terrain pour identifier les risques visibles depuis votre propre réseau.",
+          "paragraphs": [
+            "L’audit cyber local transforme une intuition de risque en constat documenté. Il ne remplace pas un pentest réglementaire complet ; il apporte une lecture pragmatique, adaptée aux TPE/PME et aux sites professionnels du Sud Corse."
+          ],
+          "cta": {
+            "primary": "Planifier un audit",
+            "secondary": "Recevoir une première évaluation"
+          }
+        },
+        {
+          "kind": "findings",
+          "eyebrow": "Constats",
+          "title": "Ce que l’audit révèle",
+          "lead": "L’intervention observe la réalité du site : ce qui est branché, exposé, utilisé ou oublié.",
+          "bullets": [
+            "appareils connectés et équipements inconnus",
+            "ports ouverts et services visibles",
+            "WiFi mal séparé ou trop large",
+            "imprimantes, caméras, NAS ou routeurs exposés",
+            "sauvegardes incertaines",
+            "accès distants et usages locaux",
+            "dérives de configuration et documentation manquante"
+          ]
+        },
+        {
+          "kind": "process",
+          "eyebrow": "Méthode",
+          "title": "Déroulement de l’intervention",
+          "lead": "La méthode reste simple : comprendre, observer, analyser, restituer.",
+          "steps": [
+            "Prise de contact et qualification du contexte",
+            "Compréhension du site, de l’activité et du prestataire existant",
+            "Intervention sur site et observation réseau",
+            "Scan, inventaire et analyse",
+            "Rapport priorisé",
+            "Restitution claire avec plan d’action"
+          ]
+        },
+        {
+          "kind": "deliverables",
+          "eyebrow": "Rapport",
+          "title": "Un livrable exploitable par tous les acteurs",
+          "lead": "Le rapport est conçu pour être compris par le dirigeant et transmis aux personnes qui corrigent.",
+          "cards": [
+            {
+              "title": "Pour le dirigeant",
+              "body": "Une lecture synthétique du niveau de risque et des priorités."
+            },
+            {
+              "title": "Pour l’infogérant",
+              "body": "Des constats concrets, localisés et exploitables."
+            },
+            {
+              "title": "Pour l’assureur ou partenaire",
+              "body": "Une preuve de démarche et de contrôle, sans promesse de conformité garantie."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Conversion",
+          "title": "Je veux savoir ce qui est exposé sur mon réseau",
+          "lead": "Le premier audit peut commencer par une demi-journée à une journée selon la taille et la complexité du site.",
+          "cta": {
+            "primary": "Demander un audit",
+            "secondary": "Parler à INFOSERV2A"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "surveillance-cyber-locale",
+      "title": "Surveillance cyber locale",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/surveillance-cyber-locale.html",
+      "seo_title": "Surveillance cyber locale — Détecter les dérives avant l’incident | INFOSERV2A",
+      "meta_description": "Contrôle périodique du réseau, détection des changements, suivi des équipements inconnus et rapports de surveillance cyber locale.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Suivi périodique",
+          "title": "Surveillance Cyber Locale — Détecter les dérives avant l’incident",
+          "lead": "Un réseau professionnel évolue constamment. Sans contrôle périodique, les dérives passent souvent inaperçues.",
+          "paragraphs": [
+            "Nouveaux appareils, prestataires, caméras, imprimantes, téléphones, équipements saisonniers, routeurs secondaires et extensions WiFi modifient progressivement le risque réel.",
+            "La surveillance locale permet de détecter ces changements et de conserver une vision claire dans le temps."
+          ],
+          "cta": {
+            "primary": "Mettre en place une surveillance",
+            "secondary": "Comprendre les formules"
+          }
+        },
+        {
+          "kind": "scope",
+          "eyebrow": "Périmètre",
+          "title": "Ce que comprend la surveillance",
+          "lead": "Le suivi est adapté aux structures qui ne veulent pas attendre l’incident pour découvrir leur exposition.",
+          "bullets": [
+            "contrôle périodique du réseau",
+            "détection d’équipements inconnus",
+            "suivi des changements",
+            "surveillance des ports et services",
+            "vérification WiFi critique",
+            "alerte en cas de dérive",
+            "rapport mensuel ou trimestriel",
+            "revue sécurité avec le dirigeant",
+            "coordination possible avec l’infogérant"
+          ]
+        },
+        {
+          "kind": "plans",
+          "eyebrow": "Offres",
+          "title": "Formules possibles",
+          "lead": "Les formules doivent rester compréhensibles et proportionnées à la taille du site.",
+          "cards": [
+            {
+              "title": "Essentiel",
+              "body": "Contrôle trimestriel et rapport synthétique pour garder une visibilité minimale."
+            },
+            {
+              "title": "Suivi",
+              "body": "Contrôle mensuel, alertes de dérive et revue trimestrielle."
+            },
+            {
+              "title": "Sensible",
+              "body": "Surveillance renforcée, visite annuelle et coordination prestataire."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Surveillance",
+          "title": "Ne laissez pas votre réseau dériver sans visibilité",
+          "lead": "Un suivi local régulier aide à documenter les efforts, prioriser les corrections et préparer les périodes sensibles.",
+          "cta": {
+            "primary": "Mettre en place un suivi",
+            "secondary": "Demander un audit initial"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "reseau",
+      "title": "Réseau",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/reseau.html",
+      "seo_title": "WiFi professionnel, Starlink et réseaux critiques en Sud Corse | INFOSERV2A Réseau",
+      "meta_description": "Réseaux fiables pour hôtels, campings, commerces, villas, bureaux, sites isolés et bâtiments distants : WiFi, Starlink, pont radio et segmentation.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Réseaux critiques",
+          "title": "INFOSERV2A Réseau — WiFi critique, Starlink et liaisons difficiles",
+          "lead": "Des réseaux fiables pour les sites professionnels où la connexion est essentielle.",
+          "paragraphs": [
+            "Un réseau mal conçu n’est pas seulement une gêne. Il peut devenir une faille de sécurité, un point de panne ou un blocage d’activité.",
+            "INFOSERV2A conçoit, vérifie et fiabilise les réseaux professionnels critiques du Sud Corse."
+          ],
+          "cta": {
+            "primary": "Parler d’un projet réseau critique",
+            "secondary": "Voir WiFi et Starlink"
+          }
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Services",
+          "title": "Services réseau à afficher",
+          "lead": "Les besoins sont souvent mixtes : couverture, sécurité, continuité, isolation et documentation.",
+          "bullets": [
+            "WiFi professionnel et longue portée",
+            "Starlink professionnel",
+            "ponts radio",
+            "liaisons inter-bâtiments",
+            "sites isolés",
+            "réseaux invités",
+            "séparation client / interne",
+            "routeurs et pare-feu simples",
+            "caméras IP",
+            "optimisation avant saison touristique"
+          ]
+        },
+        {
+          "kind": "targets",
+          "eyebrow": "Cibles",
+          "title": "Pour quels sites ?",
+          "lead": "Les réseaux critiques concernent tous les lieux où une panne ou une fuite impacte directement l’activité.",
+          "cards": [
+            {
+              "title": "Hôtels et campings",
+              "body": "WiFi client, réservations, caméras, saisonnalité et image de marque."
+            },
+            {
+              "title": "Villas, domaines et sites isolés",
+              "body": "Starlink, pont radio, caméras, accès invités et bâtiments distants."
+            },
+            {
+              "title": "Commerces et cabinets",
+              "body": "Caisse, télétransmission, dossiers clients, WiFi et continuité métier."
+            },
+            {
+              "title": "Professionnels hors zone fibre stable",
+              "body": "Solution hybride, secours, documentation et supervision simple."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Réseau",
+          "title": "Un réseau fiable est la première condition d’une entreprise sécurisée",
+          "lead": "Faites vérifier votre réseau avant la saison, un changement d’équipement ou un incident.",
+          "cta": {
+            "primary": "Étudier mon réseau",
+            "secondary": "Demander un diagnostic"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "wifi-starlink-reseaux-critiques",
+      "title": "WiFi, Starlink & réseaux critiques",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/wifi-starlink-reseaux-critiques.html",
+      "seo_title": "WiFi, Starlink et liaisons difficiles pour sites professionnels en Sud Corse",
+      "meta_description": "Étude réseau, WiFi professionnel, Starlink, pont radio, séparation des réseaux et connectivité de sites complexes en Sud Corse.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Connectivité critique",
+          "title": "WiFi, Starlink et liaisons difficiles pour sites professionnels en Sud Corse",
+          "lead": "Une page opérationnelle pour les sites mal couverts, éloignés, saisonniers ou dépendants d’une connexion stable.",
+          "paragraphs": [
+            "En Sud Corse, la topographie, l’éloignement de certains bâtiments, les besoins saisonniers et l’absence de fibre stable transforment parfois la connectivité en sujet critique.",
+            "INFOSERV2A conçoit des solutions adaptées : WiFi professionnel, Starlink intégré, pont radio, réseau invité, segmentation et documentation simple."
+          ],
+          "cta": {
+            "primary": "Demander une étude réseau",
+            "secondary": "Préparer ma saison"
+          }
+        },
+        {
+          "kind": "problems",
+          "eyebrow": "Terrain",
+          "title": "Problèmes résolus",
+          "lead": "Le besoin ne se limite pas à “avoir du WiFi”. Il s’agit d’obtenir une couverture fiable, sécurisée et utilisable.",
+          "bullets": [
+            "site mal couvert",
+            "bâtiment distant",
+            "WiFi instable",
+            "box trop faible",
+            "fibre absente",
+            "Starlink à intégrer",
+            "caméras éloignées",
+            "réseau invité à isoler",
+            "besoin avant saison"
+          ]
+        },
+        {
+          "kind": "solutions",
+          "eyebrow": "Solutions",
+          "title": "Solutions possibles",
+          "lead": "Chaque projet est dimensionné selon le lieu, les usages et les contraintes.",
+          "cards": [
+            {
+              "title": "Étude de couverture",
+              "body": "Observer les zones utiles, les obstacles, les usages et le niveau de service attendu."
+            },
+            {
+              "title": "WiFi professionnel",
+              "body": "Points d’accès adaptés, réseau invité, séparation des usages et stabilité accrue."
+            },
+            {
+              "title": "Starlink intégré",
+              "body": "Connexion principale ou secours, avec réseau local propre et usages maîtrisés."
+            },
+            {
+              "title": "Pont radio et liaison distante",
+              "body": "Relier deux bâtiments, une dépendance, une caméra ou un site éloigné."
+            }
+          ]
+        },
+        {
+          "kind": "difference",
+          "eyebrow": "Professionnel",
+          "title": "Différence avec une installation grand public",
+          "lead": "Un réseau professionnel doit être stable, documenté, isolé et maintenable.",
+          "paragraphs": [
+            "Une installation grand public peut fonctionner quelques jours et devenir instable dès que les usages augmentent. Pour un hôtel, un commerce, une villa ou un cabinet, le réseau doit être pensé comme une infrastructure.",
+            "INFOSERV2A privilégie la couverture utile, la séparation des usages, la sécurité minimale et la documentation exploitable."
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Étude réseau",
+          "title": "Faites étudier votre réseau avant qu’il ne devienne un point de panne",
+          "lead": "Un diagnostic court permet d’identifier les contraintes, les priorités et les solutions réalistes.",
+          "cta": {
+            "primary": "Demander une étude réseau",
+            "secondary": "Parler d’un projet Starlink"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/secteurs-sensibles.html",
+      "seo_title": "Cybersécurité et réseaux critiques pour secteurs sensibles en Sud Corse | INFOSERV2A",
+      "meta_description": "Solutions cyber et réseau pour hôtels, campings, agences, santé, professions réglementées, architectes et sites isolés en Sud Corse.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Secteurs",
+          "title": "Des solutions cyber et réseau adaptées aux secteurs sensibles du Sud Corse",
+          "lead": "Chaque secteur a ses risques : données, réseau, WiFi, messagerie, documents, saisonnalité ou isolement.",
+          "paragraphs": [
+            "Le site doit permettre à chaque dirigeant de se reconnaître immédiatement. INFOSERV2A relie le risque technique à la réalité métier : chiffre d’affaires, confidentialité, réputation, continuité et preuve de contrôle."
+          ],
+          "cta": {
+            "primary": "Identifier les risques de mon activité",
+            "secondary": "Demander un audit"
+          }
+        },
+        {
+          "kind": "sector-grid",
+          "eyebrow": "Cas d’usage",
+          "title": "Secteurs accompagnés",
+          "lead": "Une approche locale, discrète et documentée pour les environnements professionnels sensibles.",
+          "cards": [
+            {
+              "title": "Hôtels, campings, résidences",
+              "body": "WiFi client, réservations, caméras, paiements, saisonnalité et réputation. En saison, une panne réseau ou une fuite de données peut avoir un impact immédiat."
+            },
+            {
+              "title": "Immobilier et conciergeries",
+              "body": "Pièces d’identité, RIB, mandats, documents propriétaires, fraude au virement et clients premium. Votre messagerie et vos documents clients sont des actifs critiques."
+            },
+            {
+              "title": "Cabinets médicaux et santé",
+              "body": "Données patients, sauvegardes, postes, confidentialité, accès logiciels métiers. Même si votre logiciel métier est sécurisé, votre cabinet local doit aussi l’être."
+            },
+            {
+              "title": "Notaires, avocats, experts-comptables",
+              "body": "Secret professionnel, dossiers sensibles, accès distants, imprimantes, scanners et sauvegardes. Le contrôle local doit être discret, documenté et complémentaire."
+            },
+            {
+              "title": "Architectes et bureaux d’études",
+              "body": "Plans, fichiers lourds, NAS, cloud et propriété intellectuelle. La perte ou la fuite de fichiers peut bloquer un projet entier."
+            },
+            {
+              "title": "Sites isolés et réseaux complexes",
+              "body": "Couverture instable, liaisons longues distances, caméras, bâtiments éloignés et Starlink. La connectivité doit être pensée comme infrastructure critique."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Qualification",
+          "title": "Votre secteur a ses risques ; votre contrôle doit être adapté",
+          "lead": "Un échange permet de qualifier le périmètre, le niveau de sensibilité et la meilleure première action.",
+          "cta": {
+            "primary": "Identifier les risques de mon activité",
+            "secondary": "Planifier un diagnostic"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "methode",
+      "title": "Méthode",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/methode.html",
+      "seo_title": "Méthode INFOSERV2A — Observer, vérifier, documenter, sécuriser",
+      "meta_description": "Une méthode claire pour auditer, documenter et améliorer la cybersécurité locale et les réseaux critiques des entreprises du Sud Corse.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Méthode",
+          "title": "Une méthode claire : observer, vérifier, documenter, sécuriser",
+          "lead": "INFOSERV2A travaille avec votre réalité terrain, pas seulement avec une vue théorique de votre informatique.",
+          "paragraphs": [
+            "La méthode doit rassurer le dirigeant : pas de jargon excessif, pas de promesse magique, pas de conflit inutile avec l’infogérant. Chaque étape vise à produire une information utile et une priorité d’action."
+          ],
+          "cta": {
+            "primary": "Commencer par un diagnostic",
+            "secondary": "Voir les offres"
+          }
+        },
+        {
+          "kind": "steps",
+          "eyebrow": "Processus",
+          "title": "Les étapes d’une mission",
+          "lead": "Une démarche simple, lisible et progressive.",
+          "steps": [
+            "Échange initial : activité, site, prestataire existant, risques, saisonnalité et contraintes.",
+            "Diagnostic terrain : équipements, WiFi, accès, box, routeurs, postes, imprimantes, caméras et sauvegardes.",
+            "Analyse cyber ou réseau : selon le besoin, audit local, surveillance, étude WiFi, Starlink ou liaison critique.",
+            "Rapport clair : constats, niveau de risque, priorités, actions recommandées et points à transmettre au prestataire.",
+            "Suivi : surveillance locale, contrôle périodique, préparation saison et amélioration continue."
+          ]
+        },
+        {
+          "kind": "principles",
+          "eyebrow": "Principes",
+          "title": "Les principes qui guident l’intervention",
+          "lead": "INFOSERV2A privilégie la preuve, la clarté et le pragmatisme.",
+          "cards": [
+            {
+              "title": "Clarté dirigeant",
+              "body": "Les constats doivent aider à décider, pas noyer le lecteur dans des sigles."
+            },
+            {
+              "title": "Complémentarité",
+              "body": "Les rapports peuvent être transmis à l’infogérant pour faciliter les corrections."
+            },
+            {
+              "title": "Confidentialité",
+              "body": "Les données, accès et observations sont traités avec discrétion."
+            },
+            {
+              "title": "Mesure concrète",
+              "body": "On documente ce qui est observé, les risques prioritaires et les actions réalistes."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Diagnostic",
+          "title": "Commencer par un diagnostic",
+          "lead": "Le meilleur point d’entrée est une première conversation sur votre site, vos usages et vos risques.",
+          "cta": {
+            "primary": "Planifier un diagnostic",
+            "secondary": "Contacter INFOSERV2A"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "a-propos",
+      "title": "À propos",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/a-propos.html",
+      "seo_title": "INFOSERV2A — Expertise cyber et réseau ancrée à Porto-Vecchio",
+      "meta_description": "INFOSERV2A est une activité locale de cybersécurité de proximité et de réseaux critiques basée en Sud Corse.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "À propos",
+          "title": "INFOSERV2A — Une expertise cyber et réseau ancrée à Porto-Vecchio",
+          "lead": "Une activité locale spécialisée dans la sécurité de proximité et les réseaux critiques.",
+          "paragraphs": [
+            "INFOSERV2A est une activité locale basée en Sud Corse, spécialisée dans la cybersécurité de proximité et les réseaux critiques.",
+            "Après plusieurs années d’interventions terrain auprès de professionnels, l’activité se concentre désormais sur deux besoins essentiels : vérifier la sécurité réelle sur site et fiabiliser les connexions dans des environnements parfois complexes."
+          ],
+          "cta": {
+            "primary": "Échanger sur votre contexte",
+            "secondary": "Découvrir la méthode"
+          }
+        },
+        {
+          "kind": "positioning",
+          "eyebrow": "Ancrage local",
+          "title": "Une présence locale dans un monde administré à distance",
+          "lead": "Beaucoup d’infrastructures sont aujourd’hui gérées à distance. Cette organisation peut être efficace, mais elle ne remplace pas toujours l’observation du terrain.",
+          "paragraphs": [
+            "INFOSERV2A apporte une lecture locale, une capacité d’intervention concrète et une documentation utile aux dirigeants, professions libérales, hôtels, agences, cabinets et sites sensibles."
+          ]
+        },
+        {
+          "kind": "values",
+          "eyebrow": "Engagements",
+          "title": "Valeurs",
+          "lead": "La marque doit rester sobre, fiable et lisible.",
+          "cards": [
+            {
+              "title": "Proximité",
+              "body": "Comprendre les contraintes d’un site, d’une commune, d’une saison et d’une activité locale."
+            },
+            {
+              "title": "Clarté",
+              "body": "Transformer un sujet technique en priorités compréhensibles."
+            },
+            {
+              "title": "Confidentialité",
+              "body": "Travailler discrètement sur des environnements sensibles."
+            },
+            {
+              "title": "Preuve",
+              "body": "Documenter ce qui a été observé, vérifié et priorisé."
+            },
+            {
+              "title": "Pragmatisme",
+              "body": "Proposer des actions réalistes, proportionnées et exploitables."
+            },
+            {
+              "title": "Indépendance",
+              "body": "Intervenir en complément, sans se substituer inutilement aux prestataires en place."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Conclusion",
+          "title": "INFOSERV2A ne promet pas une sécurité magique",
+          "lead": "Nous vérifions, documentons et réduisons les risques concrets.",
+          "cta": {
+            "primary": "Demander un échange",
+            "secondary": "Voir les secteurs"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/contact.html",
+      "seo_title": "Demander un audit cyber ou une étude réseau en Sud Corse | INFOSERV2A",
+      "meta_description": "Contactez INFOSERV2A pour un audit cyber local, une surveillance cyber, une étude WiFi, Starlink, pont radio ou réseau critique professionnel.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Contact",
+          "title": "Demander un audit cyber ou une étude réseau",
+          "lead": "Décrivez votre besoin : cybersécurité locale, surveillance, WiFi critique, Starlink, liaison difficile ou réseau professionnel sensible.",
+          "paragraphs": [
+            "INFOSERV2A ne réalise plus de dépannage informatique généraliste. Les demandes sont traitées pour les besoins professionnels liés à la cybersécurité locale, aux réseaux critiques et à la connectivité professionnelle."
+          ],
+          "cta": {
+            "primary": "Envoyer ma demande",
+            "secondary": "Préparer les informations utiles"
+          }
+        },
+        {
+          "kind": "qualification",
+          "eyebrow": "Formulaire",
+          "title": "Informations utiles à transmettre",
+          "lead": "Plus votre demande est précise, plus le premier échange sera efficace.",
+          "bullets": [
+            "Nom, entreprise et commune",
+            "Secteur d’activité",
+            "Téléphone et email",
+            "Type de demande : audit, surveillance, WiFi, Starlink, pont radio, réseau invité ou autre",
+            "Présence d’un prestataire informatique existant",
+            "Niveau d’urgence : renseignement, projet à planifier, besoin avant saison, incident ou suspicion",
+            "Message libre décrivant le contexte"
+          ]
+        },
+        {
+          "kind": "entrypoints",
+          "eyebrow": "Demandes",
+          "title": "Types de demandes adaptées",
+          "lead": "Le contact doit qualifier une demande professionnelle, pas une assistance grand public.",
+          "cards": [
+            {
+              "title": "Audit cyber local",
+              "body": "Vous voulez savoir ce qui est réellement exposé sur votre réseau."
+            },
+            {
+              "title": "Surveillance locale",
+              "body": "Vous voulez un suivi périodique et des constats réguliers."
+            },
+            {
+              "title": "WiFi professionnel",
+              "body": "Vous devez fiabiliser une couverture client, interne ou invitée."
+            },
+            {
+              "title": "Starlink / liaison difficile",
+              "body": "Vous devez connecter un site isolé, un bâtiment distant ou une zone mal desservie."
+            }
+          ]
+        },
+        {
+          "kind": "cta",
+          "eyebrow": "Contact",
+          "title": "Parlons de votre réalité terrain",
+          "lead": "Un premier échange permet de qualifier le périmètre, les risques et l’action la plus adaptée.",
+          "cta": {
+            "primary": "Envoyer ma demande",
+            "secondary": "Demander un rappel"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/mentions-legales.html",
+      "seo_title": "Mentions légales | INFOSERV2A Cyber & Réseau",
+      "meta_description": "Mentions légales du site INFOSERV2A Cyber & Réseau.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Informations légales",
+          "title": "Mentions légales",
+          "lead": "Informations relatives à l’édition, à l’hébergement et à l’utilisation du site INFOSERV2A Cyber & Réseau."
+        },
+        {
+          "kind": "legal",
+          "title": "Éditeur du site",
+          "lead": "Le présent site est édité pour présenter l’activité professionnelle INFOSERV2A Cyber & Réseau.",
+          "paragraphs": [
+            "Nom public : INFOSERV2A Cyber & Réseau.",
+            "Activité : cybersécurité locale, contrôle terrain, réseaux critiques, WiFi professionnel, Starlink et liaisons difficiles pour les entreprises du Sud Corse.",
+            "Zone d’intervention principale : Porto-Vecchio, Sud Corse et micro-régions proches selon faisabilité."
+          ]
+        },
+        {
+          "kind": "legal",
+          "title": "Responsabilité éditoriale",
+          "lead": "Le responsable de publication veille à fournir une information claire, professionnelle et régulièrement mise à jour.",
+          "paragraphs": [
+            "Les informations diffusées sur ce site sont fournies à titre de présentation commerciale et technique. Elles ne constituent pas une certification, une garantie de conformité réglementaire ou une promesse de sécurité absolue."
+          ]
+        },
+        {
+          "kind": "legal",
+          "title": "Hébergement et propriété intellectuelle",
+          "lead": "Le site est hébergé via une infrastructure web publiée depuis un dépôt de versionnement.",
+          "paragraphs": [
+            "Les textes, structures, visuels, marques, noms et éléments graphiques du site sont protégés par les droits de propriété intellectuelle applicables.",
+            "Toute reproduction ou réutilisation doit faire l’objet d’une autorisation préalable."
+          ]
+        },
+        {
+          "kind": "legal",
+          "title": "Contact",
+          "lead": "Pour toute question relative au site, à son contenu ou à une demande professionnelle, l’utilisateur peut passer par la page Contact.",
+          "paragraphs": [
+            "Les mentions légales devront être adaptées aux informations administratives exactes de l’entreprise avant mise en production définitive."
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/confidentialite.html",
+      "seo_title": "Politique de confidentialité | INFOSERV2A Cyber & Réseau",
+      "meta_description": "Politique de confidentialité du site INFOSERV2A Cyber & Réseau : données de contact, finalités, conservation et droits.",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Confidentialité",
+          "title": "Politique de confidentialité",
+          "lead": "Cette page explique comment les données transmises via le site INFOSERV2A Cyber & Réseau sont utilisées dans le cadre d’une demande professionnelle."
+        },
+        {
+          "kind": "privacy",
+          "title": "Données collectées",
+          "lead": "Le site peut collecter les informations nécessaires au traitement d’une demande de contact ou de qualification.",
+          "bullets": [
+            "nom et prénom",
+            "entreprise",
+            "secteur d’activité",
+            "commune",
+            "téléphone",
+            "email",
+            "type de demande",
+            "message libre",
+            "information relative à l’existence d’un prestataire informatique"
+          ]
+        },
+        {
+          "kind": "privacy",
+          "title": "Finalités",
+          "lead": "Les données sont utilisées pour répondre à une demande, qualifier un besoin professionnel et préparer un échange adapté.",
+          "paragraphs": [
+            "INFOSERV2A ne collecte pas ces informations pour créer un service grand public de dépannage. Les demandes concernent les besoins professionnels de cybersécurité locale, de surveillance, de réseau critique, de WiFi, Starlink ou liaison difficile."
+          ]
+        },
+        {
+          "kind": "privacy",
+          "title": "Conservation et sécurité",
+          "lead": "Les données sont conservées pendant une durée proportionnée à la relation commerciale ou à la demande formulée.",
+          "paragraphs": [
+            "Les informations transmises doivent être traitées avec confidentialité. Les échanges relatifs à la cybersécurité et aux réseaux peuvent contenir des éléments sensibles sur l’organisation d’un site professionnel."
+          ]
+        },
+        {
+          "kind": "privacy",
+          "title": "Droits des personnes",
+          "lead": "Toute personne peut demander l’accès, la rectification ou la suppression des données la concernant selon les règles applicables.",
+          "paragraphs": [
+            "Cette politique doit être adaptée et validée selon la situation juridique réelle de l’entreprise avant mise en production définitive."
+          ]
+        }
+      ]
+    }
+  ],
+  "quality_contract": {
+    "renderer": "v5_clean_slot_renderer",
+    "fail_if_page_has_no_sections": true,
+    "fail_if_writer_brief_visible": true,
+    "fail_if_forbidden_terms": true,
+    "public_class_prefix": "v5-"
+  }
+}
