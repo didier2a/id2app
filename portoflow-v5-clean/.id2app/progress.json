@@ -20,22 +20,22 @@
   "final_report_path": "portoflow-v5-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 5,
-  "completed_count": 6,
+  "completed_count": 7,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 6,
-  "percent": 120,
-  "progress_sequence": 6,
+  "updated_count": 7,
+  "percent": 140,
+  "progress_sequence": 7,
   "monotonic_guard": true,
-  "current_file": "portoflow-v5-clean/demonstrateur.html",
+  "current_file": "portoflow-v5-clean/boucle-creation.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v5-clean/demonstrateur.html",
+  "last_successful_file": "portoflow-v5-clean/boucle-creation.html",
   "last_failed_file": null,
-  "last_commit_sha": "fd981eff5e09076d38a5765bfe895e5f3ad0b15d",
-  "last_file_sha": "75ad37e2e388b6da169b31b66321101da6f5bc3c",
+  "last_commit_sha": "6cc5a193f62fb78b3a681952ca162c740c9d5293",
+  "last_file_sha": "30cf7b9f74583d6d219ca0ab6b58dad3b341f67b",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -44,7 +44,8 @@
     "portoflow-v5-clean/index.html",
     "portoflow-v5-clean/styles.css",
     "portoflow-v5-clean/ingenierie.html",
-    "portoflow-v5-clean/demonstrateur.html"
+    "portoflow-v5-clean/demonstrateur.html",
+    "portoflow-v5-clean/boucle-creation.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -101,10 +102,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/demonstrateur.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/fd981eff5e09076d38a5765bfe895e5f3ad0b15d",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v5-clean/boucle-creation.html",
+      "action": "create",
+      "file_sha": "30cf7b9f74583d6d219ca0ab6b58dad3b341f67b",
+      "commit_sha": "6cc5a193f62fb78b3a681952ca162c740c9d5293",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/boucle-creation.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6cc5a193f62fb78b3a681952ca162c740c9d5293",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-24T06:39:57.225Z",
+  "updated_at": "2026-05-24T06:39:59.248Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
