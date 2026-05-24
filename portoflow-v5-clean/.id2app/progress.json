@@ -20,28 +20,29 @@
   "final_report_path": "portoflow-v5-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 43,
-  "progress_sequence": 3,
+  "updated_count": 4,
+  "percent": 57,
+  "progress_sequence": 4,
   "monotonic_guard": true,
-  "current_file": "portoflow-v5-clean/index.html",
+  "current_file": "portoflow-v5-clean/styles.css",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v5-clean/index.html",
+  "last_successful_file": "portoflow-v5-clean/styles.css",
   "last_failed_file": null,
-  "last_commit_sha": "c4397110b3991b68273c68f4ceeb6165ed66a927",
-  "last_file_sha": "f9b0adb14ea536b807ea0526d60daf513ae8c758",
+  "last_commit_sha": "6816d2d71aa50f636c093ab0ff5dabb18740b66b",
+  "last_file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "portoflow-v5-clean/experience.html",
     "portoflow-v5-clean/ecosysteme.html",
-    "portoflow-v5-clean/index.html"
+    "portoflow-v5-clean/index.html",
+    "portoflow-v5-clean/styles.css"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/c4397110b3991b68273c68f4ceeb6165ed66a927",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v5-clean/styles.css",
+      "action": "create",
+      "file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
+      "commit_sha": "6816d2d71aa50f636c093ab0ff5dabb18740b66b",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/styles.css",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6816d2d71aa50f636c093ab0ff5dabb18740b66b",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-24T06:07:27.123Z",
+  "updated_at": "2026-05-24T06:07:28.773Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
