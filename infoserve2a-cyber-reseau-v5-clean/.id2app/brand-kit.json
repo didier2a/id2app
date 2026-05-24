@@ -1,0 +1,46 @@
+{
+  "schema_version": "5.0",
+  "brand_name": "INFOSERV2A Cyber & Réseau",
+  "public_name": "INFOSERV2A Cyber & Réseau",
+  "signature": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+  "foundational_phrase": "Votre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.",
+  "differentiating_phrase": "Votre prestataire gère votre informatique. INFOSERV2A vérifie localement qu’elle ne vous met pas en danger.",
+  "local_anchor": "Porto-Vecchio et Sud Corse",
+  "positioning": "Prestataire local spécialisé dans la cybersécurité de proximité, le contrôle terrain des réseaux professionnels et les réseaux critiques pour les TPE/PME du Sud Corse.",
+  "tone": [
+    "professionnel",
+    "local",
+    "moderne",
+    "précis",
+    "rassurant",
+    "orienté dirigeant",
+    "sobrement premium"
+  ],
+  "visual_direction": {
+    "mood": "cyber sobre, réseau maillé, cartographie locale, supervision premium, signal et contrôle",
+    "palette": {
+      "navy": "#061426",
+      "deep_blue": "#0B1F3A",
+      "cyan": "#19D3FF",
+      "turquoise": "#3EE7C2",
+      "off_white": "#F4F8FB",
+      "slate": "#5E7084",
+      "anthracite": "#101820"
+    },
+    "typography": "sans-serif moderne, titres nets, corps de texte confortable",
+    "avoid": [
+      "hacker caricatural",
+      "gaming",
+      "rouge anxiogène dominant",
+      "template territorial",
+      "logo hérité",
+      "ID2App visible"
+    ]
+  },
+  "logo_policy": {
+    "type": "text_logo_with_project_mark",
+    "no_external_logo": true,
+    "no_legacy_logo": true,
+    "mark_prompt": "signal local, réseau sécurisé, contrôle terrain, Sud Corse"
+  }
+}
