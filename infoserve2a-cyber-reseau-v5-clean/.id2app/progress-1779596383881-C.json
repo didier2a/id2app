@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
@@ -20,26 +20,27 @@
   "final_report_path": "infoserve2a-cyber-reseau-v5-clean/.id2app/final-report-1779596383881-C.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 2,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 50,
-  "progress_sequence": 1,
+  "updated_count": 2,
+  "percent": 100,
+  "progress_sequence": 2,
   "monotonic_guard": true,
-  "current_file": "infoserve2a-cyber-reseau-v5-clean/mentions-legales.html",
+  "current_file": "infoserve2a-cyber-reseau-v5-clean/confidentialite.html",
   "current_file_status": "success",
-  "last_successful_file": "infoserve2a-cyber-reseau-v5-clean/mentions-legales.html",
+  "last_successful_file": "infoserve2a-cyber-reseau-v5-clean/confidentialite.html",
   "last_failed_file": null,
-  "last_commit_sha": "2bed069b3e5c50098d88fe6abceb9e8ff5cd2085",
-  "last_file_sha": "ce8363ed8bb82e0ffba8617d23a565ed95b948bf",
+  "last_commit_sha": "2c4b8531d0ddb4e0784e605710b6b552e52491db",
+  "last_file_sha": "a5cf7cd34f4a5ec524e6d5a09e350c6cd4d50df5",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-clean/mentions-legales.html"
+    "infoserve2a-cyber-reseau-v5-clean/mentions-legales.html",
+    "infoserve2a-cyber-reseau-v5-clean/confidentialite.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v5-clean/mentions-legales.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/2bed069b3e5c50098d88fe6abceb9e8ff5cd2085",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-clean/confidentialite.html",
+      "action": "create",
+      "file_sha": "a5cf7cd34f4a5ec524e6d5a09e350c6cd4d50df5",
+      "commit_sha": "2c4b8531d0ddb4e0784e605710b6b552e52491db",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/infoserve2a-cyber-reseau-v5-clean/confidentialite.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/2c4b8531d0ddb4e0784e605710b6b552e52491db",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-24T04:19:51.991Z",
+  "updated_at": "2026-05-24T04:19:53.105Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
