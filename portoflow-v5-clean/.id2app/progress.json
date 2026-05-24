@@ -20,22 +20,22 @@
   "final_report_path": "portoflow-v5-clean/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 3,
-  "completed_count": 10,
+  "completed_count": 11,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 10,
-  "percent": 333,
-  "progress_sequence": 10,
+  "updated_count": 11,
+  "percent": 367,
+  "progress_sequence": 11,
   "monotonic_guard": true,
-  "current_file": "portoflow-v5-clean/confidentialite.html",
+  "current_file": "portoflow-v5-clean/contact.html",
   "current_file_status": "success",
-  "last_successful_file": "portoflow-v5-clean/confidentialite.html",
+  "last_successful_file": "portoflow-v5-clean/contact.html",
   "last_failed_file": null,
-  "last_commit_sha": "984f904eb370e5c7fbbb9d8c6a058d3444761681",
-  "last_file_sha": "bc4013c97deb993b66bb4b431e9e4b1287ff6aad",
+  "last_commit_sha": "ad54e13156eda6bfe64c5375c9402200c11e2fd2",
+  "last_file_sha": "fd41be6faf08fc199f7fda092cb8f191844cfda3",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -48,7 +48,8 @@
     "portoflow-v5-clean/boucle-creation.html",
     "portoflow-v5-clean/n8n-cloud-code.html",
     "portoflow-v5-clean/mentions-legales.html",
-    "portoflow-v5-clean/confidentialite.html"
+    "portoflow-v5-clean/confidentialite.html",
+    "portoflow-v5-clean/contact.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -141,10 +142,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/confidentialite.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/984f904eb370e5c7fbbb9d8c6a058d3444761681",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "portoflow-v5-clean/contact.html",
+      "action": "create",
+      "file_sha": "fd41be6faf08fc199f7fda092cb8f191844cfda3",
+      "commit_sha": "ad54e13156eda6bfe64c5375c9402200c11e2fd2",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/portoflow-v5-clean/contact.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ad54e13156eda6bfe64c5375c9402200c11e2fd2",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-05-24T06:41:01.046Z",
+  "updated_at": "2026-05-24T06:41:04.790Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
