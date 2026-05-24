@@ -1,0 +1,43 @@
+{
+  "schema_version": "5.0",
+  "public_scope": [
+    "html",
+    "css",
+    "js"
+  ],
+  "forbidden_terms": [
+    "PortoFlow",
+    "portoflow",
+    "Porto Flow",
+    "ID2App Project",
+    "ID2App V4.4.6",
+    "assistant territorial",
+    "Assistant territorial",
+    "Économie locale",
+    "economie locale",
+    "Dashboard",
+    "dashboard territorial",
+    "Ingénierie IA",
+    "Production",
+    "stationnement",
+    "plages",
+    "parkings",
+    "copilote territorial",
+    "territoire intelligent",
+    "pf-logo",
+    "pf-nav",
+    "pf-footer",
+    "pf-section",
+    "pf-visual-card"
+  ],
+  "forbidden_visible_fragments": [
+    "Présenter INFOSERV2A",
+    "writer_brief",
+    "objective",
+    "template_home_professional_premium"
+  ],
+  "allowed_private_paths": [
+    ".id2app/app-spec.json",
+    ".id2app/v5-build-report.json"
+  ]
+}
