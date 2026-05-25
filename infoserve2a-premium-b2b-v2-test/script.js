@@ -27,3 +27,20 @@
     }
   });
 })();
+
+
+// ID2APP V7 UX SAFE PATCH
+(function(){
+  function ready(fn){ if(document.readyState !== 'loading') fn(); else document.addEventListener('DOMContentLoaded', fn); }
+  ready(function(){
+    var path=(location.pathname.split('/').pop()||'index.html');
+    document.querySelectorAll('.v5-nav__link').forEach(function(a){
+      var href=(a.getAttribute('href')||'').split('#')[0];
+      if(href===path){ a.setAttribute('aria-current','page'); }
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      var id=a.getAttribute('href').slice(1);
+      if(id && !document.getElementById(id)){ a.setAttribute('data-v7-anchor-warning','missing-target'); }
+    });
+  });
+})();
