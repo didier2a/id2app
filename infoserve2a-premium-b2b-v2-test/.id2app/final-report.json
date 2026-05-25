@@ -2,15 +2,15 @@
   "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
-  "run_id": "1779740187360-V71SEO",
+  "run_id": "1779740248865-V71A",
   "project_id": "infoserve2a-premium-b2b-v2",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo_owner": "didier2a",
   "repo_name": "id2app",
   "branch": "main",
   "site_folder": "infoserve2a-premium-b2b-v2-test",
-  "expected_count": 14,
-  "completed_count": 14,
+  "expected_count": 12,
+  "completed_count": 12,
   "failed_count": 0,
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -24,35 +24,33 @@
     "infoserve2a-premium-b2b-v2-test/confidentialite.html",
     "infoserve2a-premium-b2b-v2-test/styles.css",
     "infoserve2a-premium-b2b-v2-test/script.js",
-    "infoserve2a-premium-b2b-v2-test/sitemap.xml",
-    "infoserve2a-premium-b2b-v2-test/robots.txt",
-    "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
+    "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
   "failed_files": [],
   "updated_files": [
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/index.html",
       "action": "update",
-      "file_sha": "bffdcb356a7ba91c5cf17c2c6f8d689e384f55a1",
-      "commit_sha": "b57b0cfd90271d392cbe24a8eb7089992a70b7bd",
-      "commit_url": "https://github.com/didier2a/id2app/commit/b57b0cfd90271d392cbe24a8eb7089992a70b7bd",
+      "file_sha": "9323bf28d11d1352a45863c1c47c06b2367c0de8",
+      "commit_sha": "f39e97cdd96f4f910e5011fac785f322fa4709cb",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f39e97cdd96f4f910e5011fac785f322fa4709cb",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "4588ae666337fe50d0aa2c3db689a94381e636a7",
+        "file_sha": "bffdcb356a7ba91c5cf17c2c6f8d689e384f55a1",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T20:16:34.874Z"
+      "at": "2026-05-25T20:17:35.410Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/cyber.html",
       "action": "update",
-      "file_sha": "970de617848c0e5ee2deead165009dc309f5b762",
-      "commit_sha": "c974aaf6edbfffd279aea7a69662af73ba9d8547",
-      "commit_url": "https://github.com/didier2a/id2app/commit/c974aaf6edbfffd279aea7a69662af73ba9d8547",
+      "file_sha": "55a346a5d631d75a1c67fe572242f21a4360b307",
+      "commit_sha": "9239dec3bf8ce820af0b0eb81ca7d7484b9e581c",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9239dec3bf8ce820af0b0eb81ca7d7484b9e581c",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
@@ -62,14 +60,14 @@
         "warning": null
       },
       "sequence_index": 2,
-      "at": "2026-05-25T20:16:38.016Z"
+      "at": "2026-05-25T20:17:38.285Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/reseau.html",
       "action": "update",
-      "file_sha": "82a5721aa69d82718cc48f6da604c9a87407116a",
-      "commit_sha": "a0ec916245ae22768ee7118f77757a65e70d6830",
-      "commit_url": "https://github.com/didier2a/id2app/commit/a0ec916245ae22768ee7118f77757a65e70d6830",
+      "file_sha": "eeb203f151b92c3fe38c0b1256b5ce2614f44145",
+      "commit_sha": "1905687d204a2d1581dab42d96982a2bb2bc788f",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1905687d204a2d1581dab42d96982a2bb2bc788f",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
@@ -79,31 +77,31 @@
         "warning": null
       },
       "sequence_index": 3,
-      "at": "2026-05-25T20:16:40.895Z"
+      "at": "2026-05-25T20:17:41.227Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
       "action": "update",
-      "file_sha": "50a086bee1c6fc4dcce14acc980f1a8f1e104c1b",
-      "commit_sha": "03be2f7380329cbd5d3ef4349682bd8281f06082",
-      "commit_url": "https://github.com/didier2a/id2app/commit/03be2f7380329cbd5d3ef4349682bd8281f06082",
+      "file_sha": "2a5a54a03f210585e09f6658022863ffab9034b0",
+      "commit_sha": "bbd94859588ba624c1a6e5e23bf90508b98ce514",
+      "commit_url": "https://github.com/didier2a/id2app/commit/bbd94859588ba624c1a6e5e23bf90508b98ce514",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "50a086bee1c6fc4dcce14acc980f1a8f1e104c1b",
+        "file_sha": "2a5a54a03f210585e09f6658022863ffab9034b0",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 4,
-      "at": "2026-05-25T20:16:43.873Z"
+      "at": "2026-05-25T20:17:44.439Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/methode.html",
       "action": "update",
-      "file_sha": "02e3f927d5ef4004f9a3c26611ef460978c3d40c",
-      "commit_sha": "3a65215b5a38acb69f90dd499b8d3449f4a72c0a",
-      "commit_url": "https://github.com/didier2a/id2app/commit/3a65215b5a38acb69f90dd499b8d3449f4a72c0a",
+      "file_sha": "8e1f00abd37a5d431ce13d9647d99c2ca2a1982b",
+      "commit_sha": "3d5cbd94a11122c29b8388e229f8d410098166b8",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3d5cbd94a11122c29b8388e229f8d410098166b8",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
@@ -113,163 +111,129 @@
         "warning": null
       },
       "sequence_index": 5,
-      "at": "2026-05-25T20:16:46.852Z"
+      "at": "2026-05-25T20:17:47.380Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/a-propos.html",
       "action": "update",
-      "file_sha": "d9b8b9fe7fffb859544ebc34f5cc2557a441384d",
-      "commit_sha": "69fba8ba9e8dd41449a618e8693ee088425ae414",
-      "commit_url": "https://github.com/didier2a/id2app/commit/69fba8ba9e8dd41449a618e8693ee088425ae414",
+      "file_sha": "128262d295893b737b49bf53cf0f14becd723707",
+      "commit_sha": "e9bb601e1afceabe955be4853f49ba2d543991ff",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e9bb601e1afceabe955be4853f49ba2d543991ff",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "29cc0612e26deb4b144583474fdb6041c3a7bc86",
+        "file_sha": "128262d295893b737b49bf53cf0f14becd723707",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 6,
-      "at": "2026-05-25T20:16:50.027Z"
+      "at": "2026-05-25T20:17:50.301Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/contact.html",
       "action": "update",
-      "file_sha": "ba8368e9fd1a83e7a537cd8a6eee0d6d1d6b5208",
-      "commit_sha": "6a352134cafeebf50c7c4013e2100b51795f8c3e",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6a352134cafeebf50c7c4013e2100b51795f8c3e",
+      "file_sha": "ea02b560d48774348a158b2d1c68b1379b8b0b0f",
+      "commit_sha": "0ec27c2ae72287908f311d06510bdae3ce13c078",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0ec27c2ae72287908f311d06510bdae3ce13c078",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "ba8368e9fd1a83e7a537cd8a6eee0d6d1d6b5208",
+        "file_sha": "ea02b560d48774348a158b2d1c68b1379b8b0b0f",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 7,
-      "at": "2026-05-25T20:16:53.077Z"
+      "at": "2026-05-25T20:17:53.207Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
       "action": "update",
-      "file_sha": "97fb8d1ac525e5f07e5ca954b16ddf7294534edf",
-      "commit_sha": "be0accea3b02d799d715bf0605e9e714f64c7773",
-      "commit_url": "https://github.com/didier2a/id2app/commit/be0accea3b02d799d715bf0605e9e714f64c7773",
+      "file_sha": "823687570a571802e3ac483b6214590d8b028809",
+      "commit_sha": "8e85792db0468c589c4db628e7e404ea217dfd71",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8e85792db0468c589c4db628e7e404ea217dfd71",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "97fb8d1ac525e5f07e5ca954b16ddf7294534edf",
+        "file_sha": "823687570a571802e3ac483b6214590d8b028809",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 8,
-      "at": "2026-05-25T20:16:55.910Z"
+      "at": "2026-05-25T20:17:56.251Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/confidentialite.html",
       "action": "update",
-      "file_sha": "add6e6c55762935ef1150186cc696c72a961200d",
-      "commit_sha": "cc4fe976019e44ab0fbd47b5d7e9844d9249750e",
-      "commit_url": "https://github.com/didier2a/id2app/commit/cc4fe976019e44ab0fbd47b5d7e9844d9249750e",
+      "file_sha": "c32401a5e87b7f76f30e89a8ad812f61d6428228",
+      "commit_sha": "3d44fd2c2c8443217fd0fe21fbd7a1849a74fbaa",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3d44fd2c2c8443217fd0fe21fbd7a1849a74fbaa",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "add6e6c55762935ef1150186cc696c72a961200d",
+        "file_sha": "c32401a5e87b7f76f30e89a8ad812f61d6428228",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 9,
-      "at": "2026-05-25T20:16:58.918Z"
+      "at": "2026-05-25T20:17:59.072Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/styles.css",
       "action": "update",
-      "file_sha": "1034904d4040bc863723952d20e510fd4b83d915",
-      "commit_sha": "ec38ba28841442898aa2b6a5e2f6cef22bc25127",
-      "commit_url": "https://github.com/didier2a/id2app/commit/ec38ba28841442898aa2b6a5e2f6cef22bc25127",
+      "file_sha": "122295e7880050a018132123d49b5f92330cabb7",
+      "commit_sha": "3612e28e9bbe4120d2ad09ec548351760880cf38",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3612e28e9bbe4120d2ad09ec548351760880cf38",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "1034904d4040bc863723952d20e510fd4b83d915",
+        "file_sha": "122295e7880050a018132123d49b5f92330cabb7",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 10,
-      "at": "2026-05-25T20:17:01.842Z"
+      "at": "2026-05-25T20:18:01.950Z"
     },
     {
       "file_path": "infoserve2a-premium-b2b-v2-test/script.js",
       "action": "update",
-      "file_sha": "f4670b8a032b283db4b82ffa2b1ffed15a70cd7c",
-      "commit_sha": "153a1fe6923b7f1d01a86d7abcf47b89e57ee6d8",
-      "commit_url": "https://github.com/didier2a/id2app/commit/153a1fe6923b7f1d01a86d7abcf47b89e57ee6d8",
+      "file_sha": "6ee04d83881558c0f5394a7f08edcd08cf5ed299",
+      "commit_sha": "e43bdeea6539031997dadeaae5fce5368b1a875c",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e43bdeea6539031997dadeaae5fce5368b1a875c",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "f4670b8a032b283db4b82ffa2b1ffed15a70cd7c",
+        "file_sha": "6ee04d83881558c0f5394a7f08edcd08cf5ed299",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 11,
-      "at": "2026-05-25T20:17:05.056Z"
+      "at": "2026-05-25T20:18:05.158Z"
     },
     {
-      "file_path": "infoserve2a-premium-b2b-v2-test/sitemap.xml",
+      "file_path": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json",
       "action": "update",
-      "file_sha": "39e6e41b9245bf24320768f560164981cf1da99a",
-      "commit_sha": "19a8ad8e3c11b2058d01cfc41681d616c9c2f9a1",
-      "commit_url": "https://github.com/didier2a/id2app/commit/19a8ad8e3c11b2058d01cfc41681d616c9c2f9a1",
+      "file_sha": "5e3d02f073dbb7e9b262b8a0c6515e10dde8ac89",
+      "commit_sha": "09e8a5308058efe6bfdd27bc400c629cf06156b5",
+      "commit_url": "https://github.com/didier2a/id2app/commit/09e8a5308058efe6bfdd27bc400c629cf06156b5",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "39e6e41b9245bf24320768f560164981cf1da99a",
+        "file_sha": "5e3d02f073dbb7e9b262b8a0c6515e10dde8ac89",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 12,
-      "at": "2026-05-25T20:17:07.972Z"
-    },
-    {
-      "file_path": "infoserve2a-premium-b2b-v2-test/robots.txt",
-      "action": "update",
-      "file_sha": "ce41b3abbe8c44187a597f90d53ed7ecdf5a29dc",
-      "commit_sha": "b064a4f13b4237fae8c9f7a8ac701d0747241e2a",
-      "commit_url": "https://github.com/didier2a/id2app/commit/b064a4f13b4237fae8c9f7a8ac701d0747241e2a",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "ce41b3abbe8c44187a597f90d53ed7ecdf5a29dc",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 13,
-      "at": "2026-05-25T20:17:10.862Z"
-    },
-    {
-      "file_path": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json",
-      "action": "update",
-      "file_sha": "1154b883d42d9309ee39bebd9aafbfe8b5b6331e",
-      "commit_sha": "b270aae8a3abd0b5794e1ccf8f9eec17aff94ebd",
-      "commit_url": "https://github.com/didier2a/id2app/commit/b270aae8a3abd0b5794e1ccf8f9eec17aff94ebd",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "1154b883d42d9309ee39bebd9aafbfe8b5b6331e",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 14,
-      "at": "2026-05-25T20:17:13.837Z"
+      "at": "2026-05-25T20:18:08.246Z"
     }
   ],
-  "finished_at": "2026-05-25T20:17:15.731Z",
+  "finished_at": "2026-05-25T20:18:10.402Z",
   "publisher_safe_sequential": true,
   "verification_retry_enabled": true
 }
