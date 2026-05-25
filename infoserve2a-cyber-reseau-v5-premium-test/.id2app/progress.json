@@ -1,9 +1,9 @@
 {
-  "status": "completed",
+  "status": "running",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779716892049-MF",
+  "run_id": "1779716928972-WA",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo": "didier2a/id2app",
@@ -12,59 +12,44 @@
   "branch": "main",
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
-  "expected_count": 2,
-  "completed_count": 2,
+  "expected_count": 5,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 100,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
+  "percent": 20,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/script.js"
+    "infoserve2a-cyber-reseau-v5-premium-test/index.html"
   ],
   "failed_files": [],
   "updated_files": [
     {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
       "action": "update",
-      "file_sha": "229a4975f029b27850b9b8cbc66b1fdcaeef10b0",
-      "commit_sha": "886e7f57701a3f6d7c491522414b992652c0e3d3",
-      "commit_url": "https://github.com/didier2a/id2app/commit/886e7f57701a3f6d7c491522414b992652c0e3d3",
+      "file_sha": "9878fab3f02ca87416d461c056b931bcccc319a3",
+      "commit_sha": "f4fe602dbb8b9b1eceb66fb3b3ce5b04290be381",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f4fe602dbb8b9b1eceb66fb3b3ce5b04290be381",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "229a4975f029b27850b9b8cbc66b1fdcaeef10b0",
+        "file_sha": "9878fab3f02ca87416d461c056b931bcccc319a3",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T13:48:15.270Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
-      "action": "update",
-      "file_sha": "ec7169f87a28111d3c0bf74528e2827d67ddaa4b",
-      "commit_sha": "f08ee1eb281aad6dbc620ad5613b2fe58a341a7a",
-      "commit_url": "https://github.com/didier2a/id2app/commit/f08ee1eb281aad6dbc620ad5613b2fe58a341a7a",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "ec7169f87a28111d3c0bf74528e2827d67ddaa4b",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-25T13:48:18.214Z"
+      "at": "2026-05-25T13:48:54.059Z"
     }
   ],
   "target_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/script.js"
+    "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
   ],
-  "updated_at": "2026-05-25T13:48:20.914Z",
+  "updated_at": "2026-05-25T13:48:54.059Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
