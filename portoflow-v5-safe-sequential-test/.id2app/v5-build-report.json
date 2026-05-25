@@ -1,0 +1,34 @@
+{
+  "publisher": "id2app-file-publisher-v5-safe-sequential",
+  "core": "id2app-core-v5-clean-factory-generic-safe-dispatch",
+  "generated_at": "2026-05-25T07:10:44.3169132Z",
+  "project_id": "portoflow-v5-safe-sequential-test",
+  "lots": [
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779692866798-A\",\r\n  \"project_id\": \"portoflow-v5-safe-sequential-test\",\r\n  \"project_name\": \"Porto-Flow\",\r\n  \"site_folder\": \"portoflow-v5-safe-sequential-test\",\r\n  \"expected_count\": 7,\r\n  \"progress_path\": \"portoflow-v5-safe-sequential-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"portoflow-v5-safe-sequential-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "target_count": 7,
+      "status": "completed_target_count",
+      "run_id": "1779692866798-A",
+      "lot": "A",
+      "completed_count": 7
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779692931716-B\",\r\n  \"project_id\": \"portoflow-v5-safe-sequential-test\",\r\n  \"project_name\": \"Porto-Flow\",\r\n  \"site_folder\": \"portoflow-v5-safe-sequential-test\",\r\n  \"expected_count\": 5,\r\n  \"progress_path\": \"portoflow-v5-safe-sequential-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"portoflow-v5-safe-sequential-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "target_count": 5,
+      "status": "completed_target_count",
+      "run_id": "1779692931716-B",
+      "lot": "B",
+      "completed_count": 5
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779692996158-C\",\r\n  \"project_id\": \"portoflow-v5-safe-sequential-test\",\r\n  \"project_name\": \"Porto-Flow\",\r\n  \"site_folder\": \"portoflow-v5-safe-sequential-test\",\r\n  \"expected_count\": 3,\r\n  \"progress_path\": \"portoflow-v5-safe-sequential-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"portoflow-v5-safe-sequential-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "target_count": 3,
+      "status": "completed_target_count",
+      "run_id": "1779692996158-C",
+      "lot": "C",
+      "completed_count": 3
+    }
+  ],
+  "site_folder": "portoflow-v5-safe-sequential-test",
+  "schema_version": "5.0"
+}
