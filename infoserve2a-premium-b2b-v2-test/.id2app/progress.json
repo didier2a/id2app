@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 13,
+  "completed_count": 14,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 93,
-  "current_file": "infoserve2a-premium-b2b-v2-test/robots.txt",
+  "percent": 100,
+  "current_file": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -32,7 +32,8 @@
     "infoserve2a-premium-b2b-v2-test/styles.css",
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/sitemap.xml",
-    "infoserve2a-premium-b2b-v2-test/robots.txt"
+    "infoserve2a-premium-b2b-v2-test/robots.txt",
+    "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -256,6 +257,23 @@
       },
       "sequence_index": 13,
       "at": "2026-05-25T20:17:10.862Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json",
+      "action": "update",
+      "file_sha": "1154b883d42d9309ee39bebd9aafbfe8b5b6331e",
+      "commit_sha": "b270aae8a3abd0b5794e1ccf8f9eec17aff94ebd",
+      "commit_url": "https://github.com/didier2a/id2app/commit/b270aae8a3abd0b5794e1ccf8f9eec17aff94ebd",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "1154b883d42d9309ee39bebd9aafbfe8b5b6331e",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 14,
+      "at": "2026-05-25T20:17:13.837Z"
     }
   ],
   "target_files": [
@@ -274,7 +292,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:17:10.862Z",
+  "updated_at": "2026-05-25T20:17:13.837Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
