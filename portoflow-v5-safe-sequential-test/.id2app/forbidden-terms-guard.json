@@ -1,0 +1,33 @@
+{
+  "schema_version": "5.0",
+  "guard_name": "PortoFlow V5 project purity guard",
+  "scope": "public_html_css_js",
+  "forbidden_terms": [
+    "INFOSERV2A",
+    "InfoServe",
+    "cybersécurité locale",
+    "audit cyber local",
+    "réseaux critiques",
+    "Starlink professionnel",
+    "WiFi professionnel critique",
+    "TPE/PME du Sud Corse",
+    "prestataire informatique existant",
+    "contrôle terrain des réseaux professionnels",
+    "v5-clean InfoServe"
+  ],
+  "forbidden_visible_fragments": [
+    "writer_brief",
+    "template_",
+    "REPLACE_",
+    "Informations à compléter",
+    "ID2App Project",
+    "ID2App V4.4.6"
+  ],
+  "allowed_project_terms": [
+    "Porto-Flow",
+    "PortoFlow",
+    "territoire",
+    "assistant territorial",
+    "tableau de bord territorial"
+  ]
+}
