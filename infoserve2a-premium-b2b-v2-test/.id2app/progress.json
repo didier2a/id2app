@@ -13,14 +13,15 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 4,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 25,
-  "current_file": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+  "percent": 50,
+  "current_file": "infoserve2a-premium-b2b-v2-test/methode.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html"
+    "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+    "infoserve2a-premium-b2b-v2-test/methode.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,6 +41,23 @@
       },
       "sequence_index": 1,
       "at": "2026-05-25T19:59:14.192Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/methode.html",
+      "action": "update",
+      "file_sha": "2c07e3e16baa8c9d89d804053eb6ba50588b278a",
+      "commit_sha": "55b3c171144fc642a4800baaf25b3e9414a44863",
+      "commit_url": "https://github.com/didier2a/id2app/commit/55b3c171144fc642a4800baaf25b3e9414a44863",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "2c07e3e16baa8c9d89d804053eb6ba50588b278a",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-25T19:59:17.176Z"
     }
   ],
   "target_files": [
@@ -48,7 +66,7 @@
     "infoserve2a-premium-b2b-v2-test/a-propos.html",
     "infoserve2a-premium-b2b-v2-test/contact.html"
   ],
-  "updated_at": "2026-05-25T19:59:14.192Z",
+  "updated_at": "2026-05-25T19:59:17.176Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
