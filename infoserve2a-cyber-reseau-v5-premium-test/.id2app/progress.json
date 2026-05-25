@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 15,
-  "completed_count": 10,
+  "completed_count": 11,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 67,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+  "percent": 73,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/mentions-legales.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
@@ -29,7 +29,8 @@
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
     "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
     "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/mentions-legales.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -202,6 +203,23 @@
       },
       "sequence_index": 10,
       "at": "2026-05-25T19:07:49.146Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/mentions-legales.html",
+      "action": "update",
+      "file_sha": "3f9c29665a7ca86b86b0e8b2d0a57b06f6236513",
+      "commit_sha": "a9446b826d9ca89c771fccd050329bdab4d54894",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a9446b826d9ca89c771fccd050329bdab4d54894",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "3f9c29665a7ca86b86b0e8b2d0a57b06f6236513",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 11,
+      "at": "2026-05-25T19:07:52.583Z"
     }
   ],
   "target_files": [
@@ -221,7 +239,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/script.js",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T19:07:49.147Z",
+  "updated_at": "2026-05-25T19:07:52.583Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
