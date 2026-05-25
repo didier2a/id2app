@@ -18,12 +18,8 @@
 }
 .v5-form-status[hidden] { display: none !important; }
 
+.v5-nav__link[aria-current="page"]{background:rgba(0,230,255,.12)}@media (max-width:720px){.v5-section__head p,.v5-copy{max-width:100%}.v5-card{min-height:auto}.v5-form__grid{grid-template-columns:1fr}.v5-actions{align-items:stretch}.v5-actions .v5-btn{width:100%}}
 
-/* ID2APP V7 UX SAFE PATCH */
-:where(a,button,input,select,textarea):focus-visible{outline:2px solid var(--v5-cyan,#00e6ff);outline-offset:4px;border-radius:10px}.v5-nav__link[aria-current="page"]{background:rgba(0,230,255,.12)}@media (max-width:720px){.v5-section__head p,.v5-copy{max-width:100%}.v5-card{min-height:auto}.v5-form__grid{grid-template-columns:1fr}.v5-actions{align-items:stretch}.v5-actions .v5-btn{width:100%}}
-
-
-/* ID2APP V7.1 ACCESSIBILITY PATCH */
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline: 3px solid var(--v5-cyan, #00E6FF);
   outline-offset: 4px;
