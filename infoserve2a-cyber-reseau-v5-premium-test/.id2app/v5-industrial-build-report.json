@@ -1,0 +1,39 @@
+{
+  "schema_version": "5.0",
+  "project_id": "infoserve2a-cyber-reseau-v5-premium",
+  "generated_at": "2026-05-25T09:34:14.6081992Z",
+  "lots": [
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779701459539-A\",\r\n  \"project_id\": \"infoserve2a-cyber-reseau-v5-premium\",\r\n  \"project_name\": \"INFOSERV2A Cyber & Réseau\",\r\n  \"site_folder\": \"infoserve2a-cyber-reseau-v5-premium-test\",\r\n  \"expected_count\": 9,\r\n  \"progress_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "lot": "A",
+      "target_count": 9,
+      "completed_count": 9,
+      "expected_count": 9,
+      "status": "completed_publisher_status",
+      "run_id": "1779701459539-A"
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779701522732-B\",\r\n  \"project_id\": \"infoserve2a-cyber-reseau-v5-premium\",\r\n  \"project_name\": \"INFOSERV2A Cyber & Réseau\",\r\n  \"site_folder\": \"infoserve2a-cyber-reseau-v5-premium-test\",\r\n  \"expected_count\": 7,\r\n  \"progress_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "lot": "B",
+      "target_count": 7,
+      "completed_count": 7,
+      "expected_count": 7,
+      "status": "completed_publisher_status",
+      "run_id": "1779701522732-B"
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779701590610-C\",\r\n  \"project_id\": \"infoserve2a-cyber-reseau-v5-premium\",\r\n  \"project_name\": \"INFOSERV2A Cyber & Réseau\",\r\n  \"site_folder\": \"infoserve2a-cyber-reseau-v5-premium-test\",\r\n  \"expected_count\": 4,\r\n  \"progress_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"infoserve2a-cyber-reseau-v5-premium-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "lot": "C",
+      "target_count": 4,
+      "completed_count": 4,
+      "expected_count": 4,
+      "status": "completed_publisher_status",
+      "run_id": "1779701590610-C"
+    }
+  ],
+  "core": "id2app-core-v5-generic-industrial-premium-brand-dispatch",
+  "industrial_safe_sequential": true,
+  "publisher": "id2app-file-publisher-v5-safe-sequential",
+  "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
+  "project_name": "INFOSERV2A Cyber & Réseau"
+}
