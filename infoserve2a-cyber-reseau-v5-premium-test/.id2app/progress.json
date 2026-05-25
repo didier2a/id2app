@@ -1,9 +1,9 @@
 {
-  "status": "completed",
+  "status": "running",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779699556215-A",
+  "run_id": "1779701459539-A",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo": "didier2a/id2app",
@@ -12,30 +12,24 @@
   "branch": "main",
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
-  "expected_count": 7,
-  "completed_count": 7,
+  "expected_count": 9,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 100,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
+  "percent": 11,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/index.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
-    "infoserve2a-cyber-reseau-v5-premium-test/script.js"
+    "infoserve2a-cyber-reseau-v5-premium-test/index.html"
   ],
   "failed_files": [],
   "updated_files": [
     {
       "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "58ee678921084983309fbc9bb7c52a7614a82813",
-      "commit_sha": "0162de51240599d4eec16402637bca10159be1ea",
-      "commit_url": "https://github.com/didier2a/id2app/commit/0162de51240599d4eec16402637bca10159be1ea",
+      "commit_sha": "26511f91c15a07fc169d541c23c563e0d461c1f5",
+      "commit_url": "https://github.com/didier2a/id2app/commit/26511f91c15a07fc169d541c23c563e0d461c1f5",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
@@ -45,114 +39,12 @@
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T08:59:20.895Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-      "action": "create",
-      "file_sha": "31dd8b1f8e9d3a811dc3ea49770f940ddfbaac95",
-      "commit_sha": "6cb2d7a2f5d4839c4693dc0cfc4eee6c591108cf",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6cb2d7a2f5d4839c4693dc0cfc4eee6c591108cf",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "31dd8b1f8e9d3a811dc3ea49770f940ddfbaac95",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-25T08:59:24.263Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-      "action": "create",
-      "file_sha": "43b1addc1bdec09cdb717c7b2cc751a9465e70bc",
-      "commit_sha": "8432fd5129a11c4be9a3233fc6f806fd5cb3979b",
-      "commit_url": "https://github.com/didier2a/id2app/commit/8432fd5129a11c4be9a3233fc6f806fd5cb3979b",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 2,
-        "file_sha": "43b1addc1bdec09cdb717c7b2cc751a9465e70bc",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 3,
-      "at": "2026-05-25T08:59:28.106Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
-      "action": "create",
-      "file_sha": "3702bf35f6a021c2f653b360928ab35c074d0d44",
-      "commit_sha": "abcc73b8d1ae8ade90a76e2a974edbd5c37f7b3d",
-      "commit_url": "https://github.com/didier2a/id2app/commit/abcc73b8d1ae8ade90a76e2a974edbd5c37f7b3d",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "3702bf35f6a021c2f653b360928ab35c074d0d44",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 4,
-      "at": "2026-05-25T08:59:30.849Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
-      "action": "create",
-      "file_sha": "0fa933d300996c64f1f8ccf888f564ab17e9fa9d",
-      "commit_sha": "963907058ef377ac94847b500a856c0751168b76",
-      "commit_url": "https://github.com/didier2a/id2app/commit/963907058ef377ac94847b500a856c0751168b76",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 2,
-        "file_sha": "0fa933d300996c64f1f8ccf888f564ab17e9fa9d",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 5,
-      "at": "2026-05-25T08:59:35.018Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
-      "action": "create",
-      "file_sha": "2b377093dbc1c2a805739a47428142c829384d57",
-      "commit_sha": "e7309e40cbc8e1d80ce3fe092f53d69b86a965c9",
-      "commit_url": "https://github.com/didier2a/id2app/commit/e7309e40cbc8e1d80ce3fe092f53d69b86a965c9",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "2b377093dbc1c2a805739a47428142c829384d57",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 6,
-      "at": "2026-05-25T08:59:38.453Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
-      "action": "create",
-      "file_sha": "4caed0f70cc314cb3a07b032a766235ebd9d22d0",
-      "commit_sha": "6323cb32014c8eb4abcecdc031fc543b974b557f",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6323cb32014c8eb4abcecdc031fc543b974b557f",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 2,
-        "file_sha": "4caed0f70cc314cb3a07b032a766235ebd9d22d0",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 7,
-      "at": "2026-05-25T08:59:42.400Z"
+      "at": "2026-05-25T09:31:04.427Z"
     }
   ],
   "target_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/logo-infoserve2a-principal.png",
-    "infoserve2a-cyber-reseau-v5-premium-test/logo-infoserve2a-icon.png",
+    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png",
+    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
     "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
     "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
@@ -161,7 +53,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
     "infoserve2a-cyber-reseau-v5-premium-test/script.js"
   ],
-  "updated_at": "2026-05-25T08:59:45.069Z",
+  "updated_at": "2026-05-25T09:31:04.427Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
