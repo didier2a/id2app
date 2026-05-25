@@ -13,16 +13,17 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 60,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+  "percent": 80,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/methode.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T12:29:38.448Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+      "action": "update",
+      "file_sha": "e17e6a233c56a6374ce3dc5a32936ea2f7ee00ea",
+      "commit_sha": "e5ecc7200be36e9e83e3b01b763ce9aa5eb777dc",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e5ecc7200be36e9e83e3b01b763ce9aa5eb777dc",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "e17e6a233c56a6374ce3dc5a32936ea2f7ee00ea",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T12:29:41.295Z"
     }
   ],
   "target_files": [
@@ -85,7 +103,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
     "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
   ],
-  "updated_at": "2026-05-25T12:29:38.448Z",
+  "updated_at": "2026-05-25T12:29:41.295Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
