@@ -1,5 +1,5 @@
 {
-  "status": "running_with_failures",
+  "status": "partial",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -17,7 +17,7 @@
   "failed_count": 1,
   "skipped_count": 0,
   "percent": 86,
-  "current_file": "portoflow-v5-safe-sequential-test/script.js",
+  "current_file": "portoflow-v5-safe-sequential-test/styles.css",
   "current_file_status": "failed",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
@@ -106,7 +106,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T06:45:49.249Z",
+  "updated_at": "2026-05-25T06:45:51.274Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true
