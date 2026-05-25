@@ -13,16 +13,17 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 43,
-  "current_file": "infoserve2a-premium-b2b-v2-test/reseau.html",
+  "percent": 57,
+  "current_file": "infoserve2a-premium-b2b-v2-test/styles.css",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
-    "infoserve2a-premium-b2b-v2-test/reseau.html"
+    "infoserve2a-premium-b2b-v2-test/reseau.html",
+    "infoserve2a-premium-b2b-v2-test/styles.css"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T19:55:54.403Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/styles.css",
+      "action": "create",
+      "file_sha": "2b377093dbc1c2a805739a47428142c829384d57",
+      "commit_sha": "0a4a430b15372cac0bc11e395a1afde0a54211b9",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0a4a430b15372cac0bc11e395a1afde0a54211b9",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "2b377093dbc1c2a805739a47428142c829384d57",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T19:55:57.101Z"
     }
   ],
   "target_files": [
@@ -87,7 +105,7 @@
     "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png",
     "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-icon.png"
   ],
-  "updated_at": "2026-05-25T19:55:54.403Z",
+  "updated_at": "2026-05-25T19:55:57.101Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
