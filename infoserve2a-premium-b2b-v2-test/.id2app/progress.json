@@ -13,18 +13,19 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 36,
-  "current_file": "infoserve2a-premium-b2b-v2-test/methode.html",
+  "percent": 43,
+  "current_file": "infoserve2a-premium-b2b-v2-test/a-propos.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
     "infoserve2a-premium-b2b-v2-test/reseau.html",
     "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
-    "infoserve2a-premium-b2b-v2-test/methode.html"
+    "infoserve2a-premium-b2b-v2-test/methode.html",
+    "infoserve2a-premium-b2b-v2-test/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T20:00:48.342Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/a-propos.html",
+      "action": "update",
+      "file_sha": "d9b8b9fe7fffb859544ebc34f5cc2557a441384d",
+      "commit_sha": "9d726948a82f77a0eb1283c4fea934bfca00e83b",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9d726948a82f77a0eb1283c4fea934bfca00e83b",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "d9b8b9fe7fffb859544ebc34f5cc2557a441384d",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T20:00:51.503Z"
     }
   ],
   "target_files": [
@@ -130,7 +148,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:00:48.342Z",
+  "updated_at": "2026-05-25T20:00:51.503Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
