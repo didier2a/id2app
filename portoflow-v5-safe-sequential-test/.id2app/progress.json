@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,11 +13,11 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 6,
+  "completed_count": 7,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 86,
-  "current_file": "portoflow-v5-safe-sequential-test/styles.css",
+  "percent": 100,
+  "current_file": "portoflow-v5-safe-sequential-test/script.js",
   "current_file_status": "success",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
@@ -25,7 +25,8 @@
     "portoflow-v5-safe-sequential-test/experience.html",
     "portoflow-v5-safe-sequential-test/ecosysteme.html",
     "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
-    "portoflow-v5-safe-sequential-test/styles.css"
+    "portoflow-v5-safe-sequential-test/styles.css",
+    "portoflow-v5-safe-sequential-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -130,6 +131,23 @@
       },
       "sequence_index": 6,
       "at": "2026-05-25T07:08:05.282Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/script.js",
+      "action": "update",
+      "file_sha": "af0ce289fa361906cc5ec67598beaa43d33b954a",
+      "commit_sha": "9b7be18cc606862cafeda7e5096c1ffaaf9e1a3a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9b7be18cc606862cafeda7e5096c1ffaaf9e1a3a",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "af0ce289fa361906cc5ec67598beaa43d33b954a",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 7,
+      "at": "2026-05-25T07:08:08.394Z"
     }
   ],
   "target_files": [
@@ -141,7 +159,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T07:08:05.282Z",
+  "updated_at": "2026-05-25T07:08:08.394Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
