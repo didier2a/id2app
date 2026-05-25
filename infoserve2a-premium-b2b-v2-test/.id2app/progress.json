@@ -13,17 +13,18 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 12,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 33,
-  "current_file": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+  "percent": 42,
+  "current_file": "infoserve2a-premium-b2b-v2-test/methode.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
     "infoserve2a-premium-b2b-v2-test/reseau.html",
-    "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html"
+    "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+    "infoserve2a-premium-b2b-v2-test/methode.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T20:17:44.439Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/methode.html",
+      "action": "update",
+      "file_sha": "8e1f00abd37a5d431ce13d9647d99c2ca2a1982b",
+      "commit_sha": "3d5cbd94a11122c29b8388e229f8d410098166b8",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3d5cbd94a11122c29b8388e229f8d410098166b8",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "02e3f927d5ef4004f9a3c26611ef460978c3d40c",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T20:17:47.380Z"
     }
   ],
   "target_files": [
@@ -110,7 +128,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T20:17:44.439Z",
+  "updated_at": "2026-05-25T20:17:47.380Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
