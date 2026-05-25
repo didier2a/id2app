@@ -13,14 +13,15 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 14,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+  "percent": 29,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,6 +41,23 @@
       },
       "sequence_index": 1,
       "at": "2026-05-25T09:32:08.328Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
+      "action": "create",
+      "file_sha": "e68fe211cd2362b4591e5cbde3a5f452f36d2842",
+      "commit_sha": "248971cd185696fb3c3d87b28f87a3297838e4fd",
+      "commit_url": "https://github.com/didier2a/id2app/commit/248971cd185696fb3c3d87b28f87a3297838e4fd",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "e68fe211cd2362b4591e5cbde3a5f452f36d2842",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-25T09:32:11.690Z"
     }
   ],
   "target_files": [
@@ -51,7 +69,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png"
   ],
-  "updated_at": "2026-05-25T09:32:08.329Z",
+  "updated_at": "2026-05-25T09:32:11.690Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
