@@ -1,0 +1,108 @@
+{
+  "schema_version": "5.0",
+  "brand_name": "Porto-Flow",
+  "signature": "Le copilote intelligent du territoire",
+  "positioning": "Orchestrer le territoire, de la réalité physique à l’ingénierie logicielle.",
+  "local_anchor": "Porto-Vecchio • Sud Corse • territoire augmenté",
+  "primary_cta": {
+    "label": "Présenter le projet",
+    "href": "contact.html"
+  },
+  "secondary_cta": {
+    "label": "Voir la démonstration",
+    "href": "demonstrateur.html"
+  },
+  "visual_direction": {
+    "style": "cartographie premium, boussole intelligente, topographie corse, flux territoriaux, ingénierie logicielle augmentée",
+    "palette": {
+      "navy": "#0B2036",
+      "deep_blue": "#143A57",
+      "cyan": "#C76F43",
+      "turquoise": "#6E8DA5",
+      "off_white": "#F5F0E6",
+      "slate": "#5B6D7C"
+    },
+    "motifs": [
+      "courbes topographiques",
+      "routes",
+      "boussole",
+      "flux",
+      "interfaces de pilotage",
+      "boucle continue"
+    ]
+  },
+  "logo_policy": {
+    "mark_label": "Boussole territoriale Porto-Flow",
+    "use_text_logo": true,
+    "no_external_logo": true
+  },
+  "footer_groups": [
+    {
+      "title": "Territoire",
+      "links": [
+        {
+          "label": "Accueil",
+          "href": "index.html"
+        },
+        {
+          "label": "Deux saisons",
+          "href": "territoire.html"
+        },
+        {
+          "label": "Expérience utilisateur",
+          "href": "experience.html"
+        },
+        {
+          "label": "Écosystème local",
+          "href": "ecosysteme.html"
+        }
+      ]
+    },
+    {
+      "title": "Pilotage",
+      "links": [
+        {
+          "label": "Tableau de bord",
+          "href": "tableau-de-bord.html"
+        },
+        {
+          "label": "Ingénierie IA",
+          "href": "ingenierie.html"
+        },
+        {
+          "label": "n8n & Cloud Code",
+          "href": "n8n-cloud-code.html"
+        },
+        {
+          "label": "Boucle continue",
+          "href": "boucle-creation.html"
+        }
+      ]
+    },
+    {
+      "title": "Projet",
+      "links": [
+        {
+          "label": "Démonstrateur",
+          "href": "demonstrateur.html"
+        },
+        {
+          "label": "Vision",
+          "href": "vision.html"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html"
+        },
+        {
+          "label": "Mentions légales",
+          "href": "mentions-legales.html"
+        },
+        {
+          "label": "Confidentialité",
+          "href": "confidentialite.html"
+        }
+      ]
+    }
+  ]
+}
