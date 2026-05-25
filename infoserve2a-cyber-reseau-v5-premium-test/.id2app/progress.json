@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,17 +13,18 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 80,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+  "percent": 100,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
     "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
     "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T12:29:01.112Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+      "action": "update",
+      "file_sha": "52fb29f087db1c122326ce68a0dd31e712e8ae2e",
+      "commit_sha": "1d4ae3d29d0f04367141b312a9a18fddc45ac338",
+      "commit_url": "https://github.com/didier2a/id2app/commit/1d4ae3d29d0f04367141b312a9a18fddc45ac338",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "52fb29f087db1c122326ce68a0dd31e712e8ae2e",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T12:29:04.503Z"
     }
   ],
   "target_files": [
@@ -103,7 +121,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
     "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
   ],
-  "updated_at": "2026-05-25T12:29:01.112Z",
+  "updated_at": "2026-05-25T12:29:04.503Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
