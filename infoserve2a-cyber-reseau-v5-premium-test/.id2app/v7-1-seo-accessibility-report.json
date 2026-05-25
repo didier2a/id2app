@@ -1,0 +1,173 @@
+{
+  "status": "completed",
+  "schema_version": "7.1",
+  "module": "ID2App V7.1 Generic SEO & Accessibility Harmonizer",
+  "run_id": "1779732102876-V71SEO",
+  "project_id": "infoserve2a-cyber-reseau-v5-premium",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
+  "report_only": true,
+  "created_at": "2026-05-25T18:01:51.964Z",
+  "stats": {
+    "scanned": 14,
+    "html_pages_scanned": 12,
+    "html_pages_changed": 12,
+    "titles_checked": 12,
+    "meta_descriptions_checked": 12,
+    "canonical_added_or_updated": 12,
+    "og_tags_added_or_updated": 12,
+    "twitter_tags_added_or_updated": 12,
+    "json_ld_added_or_updated": 12,
+    "image_alt_fixed": 0,
+    "nav_a11y_patched": 12,
+    "form_status_added": 1,
+    "css_patch_applied": false,
+    "js_patch_applied": false,
+    "sitemap_generated": true,
+    "robots_generated": true,
+    "warnings": [
+      "Donnée organisation absente non inventée: legal_name",
+      "Donnée organisation absente non inventée: address",
+      "Donnée organisation absente non inventée: telephone",
+      "Donnée organisation absente non inventée: email",
+      "Donnée organisation absente non inventée: siret"
+    ],
+    "files": [
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+        "rel_path": "index.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+        "rel_path": "cyber.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+        "rel_path": "audit-cyber-local.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+        "rel_path": "surveillance-cyber-locale.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+        "rel_path": "reseau.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+        "rel_path": "wifi-starlink-reseaux-critiques.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
+        "rel_path": "secteurs-sensibles.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+        "rel_path": "methode.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+        "rel_path": "a-propos.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+        "rel_path": "contact.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y",
+          "form_status"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/mentions-legales.html",
+        "rel_path": "mentions-legales.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/confidentialite.html",
+        "rel_path": "confidentialite.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "nav_a11y"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
+        "rel_path": "styles.css",
+        "changed": false,
+        "ext": "css",
+        "notes": []
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
+        "rel_path": "script.js",
+        "changed": false,
+        "ext": "js",
+        "notes": []
+      }
+    ]
+  },
+  "policies": {
+    "base_url": "https://www.infoserve2a.fr",
+    "json_ld_enabled": true,
+    "open_graph_enabled": true,
+    "sitemap_enabled": true,
+    "robots_enabled": true,
+    "accessibility_focus_visible": true,
+    "form_feedback_accessible": true,
+    "legal_data_policy": {
+      "do_not_invent_missing_legal_fields": true
+    }
+  }
+}
