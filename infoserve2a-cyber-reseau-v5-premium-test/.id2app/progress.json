@@ -13,17 +13,18 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 15,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 27,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+  "percent": 33,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
     "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
     "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T19:07:29.448Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+      "action": "update",
+      "file_sha": "d322ec33e53825d1d17e0b7109eb4d3f676e11a1",
+      "commit_sha": "457b819b9d0e2c452d549ff32d810d2535ec052f",
+      "commit_url": "https://github.com/didier2a/id2app/commit/457b819b9d0e2c452d549ff32d810d2535ec052f",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "8236515babe4e6f92a71cda8896dc291863fb305",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T19:07:32.654Z"
     }
   ],
   "target_files": [
@@ -113,7 +131,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/script.js",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T19:07:29.448Z",
+  "updated_at": "2026-05-25T19:07:32.654Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
