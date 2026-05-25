@@ -1,9 +1,9 @@
 {
-  "status": "completed",
+  "status": "running",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779719819036-WA",
+  "run_id": "1779719861451-WB",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo": "didier2a/id2app",
@@ -13,115 +13,43 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 5,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 100,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+  "percent": 20,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/index.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html"
   ],
   "failed_files": [],
   "updated_files": [
     {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
       "action": "update",
-      "file_sha": "257b36ea6a43dbc2337a6109cd8411d2a9894f9c",
-      "commit_sha": "1343da795b7ddb5ccbd5500ed3c37dc05407df61",
-      "commit_url": "https://github.com/didier2a/id2app/commit/1343da795b7ddb5ccbd5500ed3c37dc05407df61",
+      "file_sha": "7308087de32209a69fa7ccd1468a529e291241ea",
+      "commit_sha": "0a96fd5dbf46b1dd1a94decf9b3d446467dd392f",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0a96fd5dbf46b1dd1a94decf9b3d446467dd392f",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "257b36ea6a43dbc2337a6109cd8411d2a9894f9c",
+        "file_sha": "7308087de32209a69fa7ccd1468a529e291241ea",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T14:37:04.576Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-      "action": "update",
-      "file_sha": "a469165ed3b0f12d8adce24fc45ee1e31efb6b52",
-      "commit_sha": "1feb656b4747b9e0a9449399f86518e1f8107746",
-      "commit_url": "https://github.com/didier2a/id2app/commit/1feb656b4747b9e0a9449399f86518e1f8107746",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "a469165ed3b0f12d8adce24fc45ee1e31efb6b52",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-25T14:37:07.549Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-      "action": "update",
-      "file_sha": "5630176fab35d52b790cd313eb986e3b3fe03c03",
-      "commit_sha": "f7734de9e9d3c6505c8cec58637cd61ee9656160",
-      "commit_url": "https://github.com/didier2a/id2app/commit/f7734de9e9d3c6505c8cec58637cd61ee9656160",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "374441056bb9f34c2497d15d02d31bb26e47c3c6",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 3,
-      "at": "2026-05-25T14:37:10.766Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
-      "action": "update",
-      "file_sha": "97c5ff2fb229a7cae3a3c9fb64bc61bcc5394291",
-      "commit_sha": "02d46edea8464022ce15f4c328bf13455a2c76c1",
-      "commit_url": "https://github.com/didier2a/id2app/commit/02d46edea8464022ce15f4c328bf13455a2c76c1",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "97c5ff2fb229a7cae3a3c9fb64bc61bcc5394291",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 4,
-      "at": "2026-05-25T14:37:14.026Z"
-    },
-    {
-      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
-      "action": "update",
-      "file_sha": "29b7f73fda6677febc3d796374a05d01ae4c679e",
-      "commit_sha": "6938d226ba3b7b7f7158cfe19d43c6add9fbab27",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6938d226ba3b7b7f7158cfe19d43c6add9fbab27",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "706f4d369d7d589ef5c1baec0323e302d80fb0c9",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 5,
-      "at": "2026-05-25T14:37:16.910Z"
+      "at": "2026-05-25T14:37:46.127Z"
     }
   ],
   "target_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/index.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
   ],
-  "updated_at": "2026-05-25T14:37:19.951Z",
+  "updated_at": "2026-05-25T14:37:46.127Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
