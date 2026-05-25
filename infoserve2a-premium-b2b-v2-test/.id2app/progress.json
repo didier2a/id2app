@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 12,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 92,
-  "current_file": "infoserve2a-premium-b2b-v2-test/script.js",
+  "percent": 100,
+  "current_file": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -30,7 +30,8 @@
     "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
     "infoserve2a-premium-b2b-v2-test/confidentialite.html",
     "infoserve2a-premium-b2b-v2-test/styles.css",
-    "infoserve2a-premium-b2b-v2-test/script.js"
+    "infoserve2a-premium-b2b-v2-test/script.js",
+    "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -220,6 +221,23 @@
       },
       "sequence_index": 11,
       "at": "2026-05-25T20:02:10.852Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json",
+      "action": "create",
+      "file_sha": "b8a4bb76ec24405d0402241345ea294ccdc48e68",
+      "commit_sha": "df713b09becdef03666fbe44222c46a826feb44b",
+      "commit_url": "https://github.com/didier2a/id2app/commit/df713b09becdef03666fbe44222c46a826feb44b",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "b8a4bb76ec24405d0402241345ea294ccdc48e68",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 12,
+      "at": "2026-05-25T20:02:13.836Z"
     }
   ],
   "target_files": [
@@ -236,7 +254,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T20:02:10.852Z",
+  "updated_at": "2026-05-25T20:02:13.836Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
