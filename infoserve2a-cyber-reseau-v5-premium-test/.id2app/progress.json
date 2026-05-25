@@ -13,16 +13,17 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 43,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+  "percent": 57,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/methode.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T09:32:15.069Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+      "action": "create",
+      "file_sha": "befb64a4e798b68cb8cc3673d5e530850a3e5672",
+      "commit_sha": "20c3a5f968bab3a4bbfb59d75850c0e9e2dfd726",
+      "commit_url": "https://github.com/didier2a/id2app/commit/20c3a5f968bab3a4bbfb59d75850c0e9e2dfd726",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "befb64a4e798b68cb8cc3673d5e530850a3e5672",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T09:32:18.116Z"
     }
   ],
   "target_files": [
@@ -87,7 +105,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png"
   ],
-  "updated_at": "2026-05-25T09:32:15.069Z",
+  "updated_at": "2026-05-25T09:32:18.116Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
