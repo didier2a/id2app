@@ -2,7 +2,7 @@
   "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
-  "run_id": "1779736555867-V71A",
+  "run_id": "1779736597974-V71A",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo_owner": "didier2a",
@@ -20,22 +20,22 @@
     {
       "file_path": "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1a-clean-code-seo-report.json",
       "action": "update",
-      "file_sha": "3cf61526265ded85692422776581300df45236c8",
-      "commit_sha": "655abc6c92e5007a13d2e70f18fb393670728972",
-      "commit_url": "https://github.com/didier2a/id2app/commit/655abc6c92e5007a13d2e70f18fb393670728972",
+      "file_sha": "63594f899a26eb1fc91ef47fc1868b1f25ec1ee8",
+      "commit_sha": "d9c9a7fd63645cd0f8c1cea7af222a6daf297c8f",
+      "commit_url": "https://github.com/didier2a/id2app/commit/d9c9a7fd63645cd0f8c1cea7af222a6daf297c8f",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "3cf61526265ded85692422776581300df45236c8",
+        "file_sha": "63594f899a26eb1fc91ef47fc1868b1f25ec1ee8",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T19:16:04.515Z"
+      "at": "2026-05-25T19:16:46.702Z"
     }
   ],
-  "finished_at": "2026-05-25T19:16:06.234Z",
+  "finished_at": "2026-05-25T19:16:48.370Z",
   "publisher_safe_sequential": true,
   "verification_retry_enabled": true
 }
