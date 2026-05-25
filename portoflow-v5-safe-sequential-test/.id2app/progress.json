@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,17 +13,18 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 80,
-  "current_file": "portoflow-v5-safe-sequential-test/demonstrateur.html",
+  "percent": 100,
+  "current_file": "portoflow-v5-safe-sequential-test/vision.html",
   "current_file_status": "success",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/ingenierie.html",
     "portoflow-v5-safe-sequential-test/n8n-cloud-code.html",
     "portoflow-v5-safe-sequential-test/boucle-creation.html",
-    "portoflow-v5-safe-sequential-test/demonstrateur.html"
+    "portoflow-v5-safe-sequential-test/demonstrateur.html",
+    "portoflow-v5-safe-sequential-test/vision.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T07:09:05.671Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/vision.html",
+      "action": "create",
+      "file_sha": "5bccb1f2ba47dd147699adad272968fca49c3110",
+      "commit_sha": "17eb445492bf5abaa74305c54d4ace32a8e4994d",
+      "commit_url": "https://github.com/didier2a/id2app/commit/17eb445492bf5abaa74305c54d4ace32a8e4994d",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 2,
+        "file_sha": "5bccb1f2ba47dd147699adad272968fca49c3110",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T07:09:09.935Z"
     }
   ],
   "target_files": [
@@ -103,7 +121,7 @@
     "portoflow-v5-safe-sequential-test/demonstrateur.html",
     "portoflow-v5-safe-sequential-test/vision.html"
   ],
-  "updated_at": "2026-05-25T07:09:05.671Z",
+  "updated_at": "2026-05-25T07:09:09.935Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
