@@ -13,18 +13,19 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 71,
-  "current_file": "infoserve2a-premium-b2b-v2-test/script.js",
+  "percent": 86,
+  "current_file": "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
     "infoserve2a-premium-b2b-v2-test/reseau.html",
     "infoserve2a-premium-b2b-v2-test/styles.css",
-    "infoserve2a-premium-b2b-v2-test/script.js"
+    "infoserve2a-premium-b2b-v2-test/script.js",
+    "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T19:56:01.288Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png",
+      "action": "create",
+      "file_sha": "3d20d40f119199e2c23d0e409bb76b2d2ca244cf",
+      "commit_sha": "96cb04cd5987ca789b4942ca6a36652255f4628e",
+      "commit_url": "https://github.com/didier2a/id2app/commit/96cb04cd5987ca789b4942ca6a36652255f4628e",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "3d20d40f119199e2c23d0e409bb76b2d2ca244cf",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T19:56:04.950Z"
     }
   ],
   "target_files": [
@@ -123,7 +141,7 @@
     "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png",
     "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-icon.png"
   ],
-  "updated_at": "2026-05-25T19:56:01.288Z",
+  "updated_at": "2026-05-25T19:56:04.950Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
