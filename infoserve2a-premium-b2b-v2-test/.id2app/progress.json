@@ -13,16 +13,17 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 21,
-  "current_file": "infoserve2a-premium-b2b-v2-test/reseau.html",
+  "percent": 29,
+  "current_file": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
-    "infoserve2a-premium-b2b-v2-test/reseau.html"
+    "infoserve2a-premium-b2b-v2-test/reseau.html",
+    "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T20:00:42.338Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+      "action": "update",
+      "file_sha": "50a086bee1c6fc4dcce14acc980f1a8f1e104c1b",
+      "commit_sha": "f9d3b37316e05f18ee25999ab27f1f09e46c4fa3",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f9d3b37316e05f18ee25999ab27f1f09e46c4fa3",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "50a086bee1c6fc4dcce14acc980f1a8f1e104c1b",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T20:00:45.403Z"
     }
   ],
   "target_files": [
@@ -94,7 +112,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:00:42.338Z",
+  "updated_at": "2026-05-25T20:00:45.403Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
