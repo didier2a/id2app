@@ -13,17 +13,18 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 57,
-  "current_file": "portoflow-v5-safe-sequential-test/ecosysteme.html",
+  "percent": 71,
+  "current_file": "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
   "current_file_status": "success",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
     "portoflow-v5-safe-sequential-test/territoire.html",
     "portoflow-v5-safe-sequential-test/experience.html",
-    "portoflow-v5-safe-sequential-test/ecosysteme.html"
+    "portoflow-v5-safe-sequential-test/ecosysteme.html",
+    "portoflow-v5-safe-sequential-test/tableau-de-bord.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T07:07:59.100Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
+      "action": "update",
+      "file_sha": "590e89b7fb96c7d4da30ce58ab298ad8865be16c",
+      "commit_sha": "7d83878742870e2752df1f80ad9e4e783826ae19",
+      "commit_url": "https://github.com/didier2a/id2app/commit/7d83878742870e2752df1f80ad9e4e783826ae19",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "590e89b7fb96c7d4da30ce58ab298ad8865be16c",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T07:08:02.209Z"
     }
   ],
   "target_files": [
@@ -105,7 +123,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T07:07:59.100Z",
+  "updated_at": "2026-05-25T07:08:02.209Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
