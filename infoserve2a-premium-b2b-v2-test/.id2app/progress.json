@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 12,
-  "completed_count": 10,
+  "completed_count": 11,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 83,
-  "current_file": "infoserve2a-premium-b2b-v2-test/styles.css",
+  "percent": 92,
+  "current_file": "infoserve2a-premium-b2b-v2-test/script.js",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -29,7 +29,8 @@
     "infoserve2a-premium-b2b-v2-test/contact.html",
     "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
     "infoserve2a-premium-b2b-v2-test/confidentialite.html",
-    "infoserve2a-premium-b2b-v2-test/styles.css"
+    "infoserve2a-premium-b2b-v2-test/styles.css",
+    "infoserve2a-premium-b2b-v2-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -202,6 +203,23 @@
       },
       "sequence_index": 10,
       "at": "2026-05-25T20:02:07.882Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/script.js",
+      "action": "update",
+      "file_sha": "0a0e679506b32157216ab234fbb892a00ceb0336",
+      "commit_sha": "622ed2d4c2ae703817c030fa6fda29a0847cbdcc",
+      "commit_url": "https://github.com/didier2a/id2app/commit/622ed2d4c2ae703817c030fa6fda29a0847cbdcc",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "0a0e679506b32157216ab234fbb892a00ceb0336",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 11,
+      "at": "2026-05-25T20:02:10.852Z"
     }
   ],
   "target_files": [
@@ -218,7 +236,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T20:02:07.882Z",
+  "updated_at": "2026-05-25T20:02:10.852Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
