@@ -1,0 +1,61 @@
+{
+  "status": "running",
+  "schema_version": "5.0",
+  "publisher_version": "5.0-safe-sequential-verify-retry",
+  "runtime_mode": "safe_sequential_batch_publish",
+  "run_id": "1779699556215-A",
+  "project_id": "infoserve2a-cyber-reseau-v5-premium",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "repo": "didier2a/id2app",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
+  "current_phase": "publishing_files_safe_sequential",
+  "expected_count": 7,
+  "completed_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0,
+  "percent": 14,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+  "current_file_status": "success",
+  "completed_files": [
+    "infoserve2a-cyber-reseau-v5-premium-test/index.html"
+  ],
+  "failed_files": [],
+  "updated_files": [
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+      "action": "create",
+      "file_sha": "58ee678921084983309fbc9bb7c52a7614a82813",
+      "commit_sha": "0162de51240599d4eec16402637bca10159be1ea",
+      "commit_url": "https://github.com/didier2a/id2app/commit/0162de51240599d4eec16402637bca10159be1ea",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "58ee678921084983309fbc9bb7c52a7614a82813",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 1,
+      "at": "2026-05-25T08:59:20.895Z"
+    }
+  ],
+  "target_files": [
+    "infoserve2a-cyber-reseau-v5-premium-test/logo-infoserve2a-principal.png",
+    "infoserve2a-cyber-reseau-v5-premium-test/logo-infoserve2a-icon.png",
+    "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
+    "infoserve2a-cyber-reseau-v5-premium-test/script.js"
+  ],
+  "updated_at": "2026-05-25T08:59:20.895Z",
+  "next_poll_seconds": 5,
+  "monotonic_guard": true,
+  "publisher_safe_sequential": true,
+  "verification_retry_enabled": true
+}
