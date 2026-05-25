@@ -13,18 +13,19 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 71,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+  "percent": 86,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
     "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
     "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T09:32:21.051Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png",
+      "action": "update",
+      "file_sha": "3d20d40f119199e2c23d0e409bb76b2d2ca244cf",
+      "commit_sha": "8233f587b051081eecf0a9010cf6917e366634fd",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8233f587b051081eecf0a9010cf6917e366634fd",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "3d20d40f119199e2c23d0e409bb76b2d2ca244cf",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T09:32:24.600Z"
     }
   ],
   "target_files": [
@@ -123,7 +141,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
     "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png"
   ],
-  "updated_at": "2026-05-25T09:32:21.051Z",
+  "updated_at": "2026-05-25T09:32:24.600Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
