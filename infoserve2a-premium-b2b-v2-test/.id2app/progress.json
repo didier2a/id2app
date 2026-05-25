@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 79,
-  "current_file": "infoserve2a-premium-b2b-v2-test/script.js",
+  "percent": 86,
+  "current_file": "infoserve2a-premium-b2b-v2-test/sitemap.xml",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -30,7 +30,8 @@
     "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
     "infoserve2a-premium-b2b-v2-test/confidentialite.html",
     "infoserve2a-premium-b2b-v2-test/styles.css",
-    "infoserve2a-premium-b2b-v2-test/script.js"
+    "infoserve2a-premium-b2b-v2-test/script.js",
+    "infoserve2a-premium-b2b-v2-test/sitemap.xml"
   ],
   "failed_files": [],
   "updated_files": [
@@ -220,6 +221,23 @@
       },
       "sequence_index": 11,
       "at": "2026-05-25T20:17:05.056Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/sitemap.xml",
+      "action": "update",
+      "file_sha": "39e6e41b9245bf24320768f560164981cf1da99a",
+      "commit_sha": "19a8ad8e3c11b2058d01cfc41681d616c9c2f9a1",
+      "commit_url": "https://github.com/didier2a/id2app/commit/19a8ad8e3c11b2058d01cfc41681d616c9c2f9a1",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "39e6e41b9245bf24320768f560164981cf1da99a",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 12,
+      "at": "2026-05-25T20:17:07.972Z"
     }
   ],
   "target_files": [
@@ -238,7 +256,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:17:05.056Z",
+  "updated_at": "2026-05-25T20:17:07.972Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
