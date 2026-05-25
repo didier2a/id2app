@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 12,
-  "completed_count": 7,
+  "completed_count": 8,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 58,
-  "current_file": "infoserve2a-premium-b2b-v2-test/contact.html",
+  "percent": 67,
+  "current_file": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -26,7 +26,8 @@
     "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
     "infoserve2a-premium-b2b-v2-test/methode.html",
     "infoserve2a-premium-b2b-v2-test/a-propos.html",
-    "infoserve2a-premium-b2b-v2-test/contact.html"
+    "infoserve2a-premium-b2b-v2-test/contact.html",
+    "infoserve2a-premium-b2b-v2-test/mentions-legales.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -148,6 +149,23 @@
       },
       "sequence_index": 7,
       "at": "2026-05-25T20:01:58.978Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
+      "action": "update",
+      "file_sha": "71720dccbca25d11af398d484c5c25f46a9d2a3f",
+      "commit_sha": "6217c0fe4936f50fb90acefb568f82742a434e3b",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6217c0fe4936f50fb90acefb568f82742a434e3b",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "71720dccbca25d11af398d484c5c25f46a9d2a3f",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 8,
+      "at": "2026-05-25T20:02:01.903Z"
     }
   ],
   "target_files": [
@@ -164,7 +182,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T20:01:58.978Z",
+  "updated_at": "2026-05-25T20:02:01.903Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
