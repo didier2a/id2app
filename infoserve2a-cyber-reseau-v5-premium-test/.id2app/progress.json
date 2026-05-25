@@ -13,15 +13,16 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 17,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 12,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+  "percent": 18,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -58,6 +59,23 @@
       },
       "sequence_index": 2,
       "at": "2026-05-25T18:07:04.650Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+      "action": "update",
+      "file_sha": "2083b0d824809c76c75d30b59f1c33c8f06569ed",
+      "commit_sha": "2d0cfaaee7e4971a485cbcbb658829c9ae141d71",
+      "commit_url": "https://github.com/didier2a/id2app/commit/2d0cfaaee7e4971a485cbcbb658829c9ae141d71",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "2083b0d824809c76c75d30b59f1c33c8f06569ed",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 3,
+      "at": "2026-05-25T18:07:07.831Z"
     }
   ],
   "target_files": [
@@ -79,7 +97,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/robots.txt",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T18:07:04.650Z",
+  "updated_at": "2026-05-25T18:07:07.831Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
