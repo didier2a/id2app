@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "running_with_failures",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -14,11 +14,11 @@
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
   "completed_count": 6,
-  "failed_count": 0,
+  "failed_count": 1,
   "skipped_count": 0,
   "percent": 86,
-  "current_file": "portoflow-v5-safe-sequential-test/styles.css",
-  "current_file_status": "success",
+  "current_file": "portoflow-v5-safe-sequential-test/script.js",
+  "current_file_status": "failed",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
     "portoflow-v5-safe-sequential-test/territoire.html",
@@ -27,7 +27,14 @@
     "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
     "portoflow-v5-safe-sequential-test/styles.css"
   ],
-  "failed_files": [],
+  "failed_files": [
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/script.js",
+      "reason": "GitHub GET https://api.github.com/repos/didier2a/id2app/contents/portoflow-v5-safe-sequential-test/script.js?ref=main failed 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+      "at": "2026-05-25T06:45:49.249Z",
+      "sequence_index": 7
+    }
+  ],
   "updated_files": [
     {
       "file_path": "portoflow-v5-safe-sequential-test/index.html",
@@ -99,7 +106,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T06:45:46.473Z",
+  "updated_at": "2026-05-25T06:45:49.249Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true
