@@ -44,3 +44,32 @@
     });
   });
 })();
+
+
+// ID2APP V7.1 ACCESSIBILITY PATCH
+(() => {
+  const nav = document.querySelector('[data-v5-nav]');
+  const toggle = document.querySelector('[data-v5-nav-toggle]');
+  if (nav && !nav.id) nav.id = 'navigation-principale';
+  if (toggle && nav) toggle.setAttribute('aria-controls', nav.id);
+  document.querySelectorAll('[data-v5-form]').forEach((form) => {
+    let status = form.querySelector('[data-v5-form-status]');
+    if (!status) {
+      status = document.createElement('p');
+      status.className = 'v5-form-status';
+      status.setAttribute('role', 'status');
+      status.setAttribute('aria-live', 'polite');
+      status.setAttribute('data-v5-form-status', '');
+      status.hidden = true;
+      form.appendChild(status);
+    }
+    if (!form.dataset.v71StatusBound) {
+      form.dataset.v71StatusBound = 'true';
+      form.addEventListener('submit', () => {
+        const message = 'Votre demande est prête à être transmise. Le formulaire sera raccordé à l’envoi sécurisé lors de la mise en production.';
+        status.textContent = message;
+        status.hidden = false;
+      });
+    }
+  });
+})();
