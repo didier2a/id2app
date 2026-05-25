@@ -2,32 +2,23 @@
   "status": "completed",
   "schema_version": "7.0-fix1",
   "module": "ID2App V7.0 FIX1 - UX Harmonizer + Contextual Public Surface Remediation",
-  "run_id": "1779725477661-V7FIX1",
+  "run_id": "1779725710182-V7FIX1",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "report_only": false,
-  "created_at": "2026-05-25T16:11:24.862Z",
+  "created_at": "2026-05-25T16:15:18.246Z",
   "stats": {
     "scanned": 12,
-    "changed": 2,
-    "sections_removed": 1,
-    "contextual_sections_flagged": 1,
+    "changed": 1,
+    "sections_removed": 0,
+    "contextual_sections_flagged": 0,
     "terms_rewritten": 1,
     "unresolved_terms": [],
     "anchors_fixed": 0,
     "css_patch_applied": false,
     "js_patch_applied": true,
     "candidates": [
-      {
-        "file": "methode.html",
-        "action": "remove_section",
-        "reason": "high_confidence_internal_signal",
-        "signals": [
-          "V6.1"
-        ],
-        "excerpt": "Questions fréquentes Questions fréquentes avant de passer à l’action Une page méthode ou offre gagne à lever les dernières objections avant la prise de contact. Est-ce que cela remplace un prestataire existant ? Non. La démarche complète les missions existante…"
-      },
       {
         "file": "script.js",
         "action": "rewrite_term",
@@ -82,7 +73,7 @@
       {
         "file_path": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
         "rel_path": "methode.html",
-        "changed": true,
+        "changed": false,
         "ext": ".html"
       },
       {
