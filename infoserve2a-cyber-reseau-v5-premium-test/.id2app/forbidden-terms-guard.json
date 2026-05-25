@@ -1,0 +1,36 @@
+{
+  "schema_version": "5.0",
+  "guard_name": "InfoServe2A V5 anti-contamination guard",
+  "scope": "public_html_css_js",
+  "forbidden_terms": [
+    "PortoFlow",
+    "Porto-Flow",
+    "copilote intelligent du territoire",
+    "assistant territorial",
+    "économie locale contextuelle",
+    "tableau de bord territorial",
+    "n8n & Cloud Code",
+    "ID2App Project",
+    "ID2App V4.4.6",
+    "dépannage informatique grand public",
+    "réparer mon ordinateur",
+    "assistance PC"
+  ],
+  "forbidden_visible_fragments": [
+    "writer_brief",
+    "template_",
+    "REPLACE_"
+  ],
+  "allowed_project_terms": [
+    "INFOSERV2A",
+    "InfoServe 2A",
+    "Cyber & Réseau",
+    "cybersécurité locale",
+    "réseaux critiques",
+    "Sud Corse",
+    "Porto-Vecchio",
+    "audit terrain",
+    "Starlink",
+    "WiFi professionnel"
+  ]
+}
