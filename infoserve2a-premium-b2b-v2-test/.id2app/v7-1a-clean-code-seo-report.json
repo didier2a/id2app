@@ -1,0 +1,145 @@
+{
+  "status": "completed",
+  "schema_version": "7.1a",
+  "module": "ID2App V7.1a Generic Clean Code & SEO Microfix",
+  "run_id": "1779739292009-V71A",
+  "project_id": "infoserve2a-premium-b2b-v2",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "site_folder": "infoserve2a-premium-b2b-v2-test",
+  "report_only": false,
+  "created_at": "2026-05-25T20:01:38.430Z",
+  "stats": {
+    "scanned": 11,
+    "changed": 11,
+    "html_pages_scanned": 9,
+    "html_pages_changed": 9,
+    "css_files_changed": 1,
+    "js_files_changed": 1,
+    "seo_encoding_fixes": 3,
+    "internal_comments_removed": 22,
+    "duplicate_ids_found": 1,
+    "duplicate_ids_renamed": 0,
+    "duplicate_sections_removed": 1,
+    "form_status_duplicates_removed": 0,
+    "js_anchor_patch_blocks_removed": 1,
+    "js_form_status_patch_duplicates_removed": 0,
+    "alert_feedback_removed": 1,
+    "css_legacy_focus_patch_removed": 1,
+    "files": [
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/index.html",
+        "rel_path": "index.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "seo_encoding_guard",
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/cyber.html",
+        "rel_path": "cyber.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/reseau.html",
+        "rel_path": "reseau.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+        "rel_path": "secteurs-sensibles.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/methode.html",
+        "rel_path": "methode.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/a-propos.html",
+        "rel_path": "a-propos.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/contact.html",
+        "rel_path": "contact.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "public_comment_cleaner",
+          "duplicate_section_removed:ce-qui-rend-une-demande-plus-rapide-a-qualifier:Ce qui rend une demande plus rapide à qualifier"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
+        "rel_path": "mentions-legales.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "seo_encoding_guard",
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/confidentialite.html",
+        "rel_path": "confidentialite.html",
+        "changed": true,
+        "ext": "html",
+        "notes": [
+          "seo_encoding_guard",
+          "public_comment_cleaner"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/styles.css",
+        "rel_path": "styles.css",
+        "changed": true,
+        "ext": "css",
+        "notes": [
+          "css_public_comment_cleaner",
+          "css_legacy_focus_patch_removed"
+        ]
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/script.js",
+        "rel_path": "script.js",
+        "changed": true,
+        "ext": "js",
+        "notes": [
+          "js_anchor_patch_blocks_removed",
+          "js_public_comment_cleaner",
+          "alert_feedback_removed"
+        ]
+      }
+    ]
+  },
+  "policies": {
+    "seo_encoding_guard_enabled": true,
+    "patch_deduplicator_enabled": true,
+    "public_comment_cleaner_enabled": true,
+    "duplicate_id_guard_enabled": true,
+    "duplicate_section_guard_enabled": true,
+    "form_feedback_cleaner_enabled": true
+  }
+}
