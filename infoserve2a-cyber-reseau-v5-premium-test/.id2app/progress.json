@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 17,
-  "completed_count": 8,
+  "completed_count": 9,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 47,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+  "percent": 53,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
@@ -27,7 +27,8 @@
     "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
     "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/methode.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -166,6 +167,23 @@
       },
       "sequence_index": 8,
       "at": "2026-05-25T18:07:25.571Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+      "action": "update",
+      "file_sha": "82356714b7de2c3e7abc185f14af80d1eb6f19f9",
+      "commit_sha": "502b225e326966be8b39910a55a3105f35b5476d",
+      "commit_url": "https://github.com/didier2a/id2app/commit/502b225e326966be8b39910a55a3105f35b5476d",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "82356714b7de2c3e7abc185f14af80d1eb6f19f9",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 9,
+      "at": "2026-05-25T18:07:28.775Z"
     }
   ],
   "target_files": [
@@ -187,7 +205,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/robots.txt",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T18:07:25.571Z",
+  "updated_at": "2026-05-25T18:07:28.775Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
