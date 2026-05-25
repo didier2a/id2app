@@ -13,14 +13,15 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 7,
-  "current_file": "infoserve2a-premium-b2b-v2-test/index.html",
+  "percent": 14,
+  "current_file": "infoserve2a-premium-b2b-v2-test/cyber.html",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-premium-b2b-v2-test/index.html"
+    "infoserve2a-premium-b2b-v2-test/index.html",
+    "infoserve2a-premium-b2b-v2-test/cyber.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,6 +41,23 @@
       },
       "sequence_index": 1,
       "at": "2026-05-25T20:16:34.874Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/cyber.html",
+      "action": "update",
+      "file_sha": "970de617848c0e5ee2deead165009dc309f5b762",
+      "commit_sha": "c974aaf6edbfffd279aea7a69662af73ba9d8547",
+      "commit_url": "https://github.com/didier2a/id2app/commit/c974aaf6edbfffd279aea7a69662af73ba9d8547",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "970de617848c0e5ee2deead165009dc309f5b762",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-25T20:16:38.016Z"
     }
   ],
   "target_files": [
@@ -58,7 +76,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:16:34.874Z",
+  "updated_at": "2026-05-25T20:16:38.016Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
