@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 15,
-  "completed_count": 6,
+  "completed_count": 7,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 40,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+  "percent": 47,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
@@ -25,7 +25,8 @@
     "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
     "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
     "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -130,6 +131,23 @@
       },
       "sequence_index": 6,
       "at": "2026-05-25T19:07:36.214Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
+      "action": "update",
+      "file_sha": "04beeaac1a64e4ac97d78ee0e9873fe9ca1ff5d0",
+      "commit_sha": "d41dd2d2d2a3ba824a4d55b0f97e6a933ffca582",
+      "commit_url": "https://github.com/didier2a/id2app/commit/d41dd2d2d2a3ba824a4d55b0f97e6a933ffca582",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "04beeaac1a64e4ac97d78ee0e9873fe9ca1ff5d0",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 7,
+      "at": "2026-05-25T19:07:39.356Z"
     }
   ],
   "target_files": [
@@ -149,7 +167,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/script.js",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T19:07:36.214Z",
+  "updated_at": "2026-05-25T19:07:39.356Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
