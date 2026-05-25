@@ -13,14 +13,15 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 14,
-  "current_file": "portoflow-v5-safe-sequential-test/index.html",
+  "percent": 29,
+  "current_file": "portoflow-v5-safe-sequential-test/territoire.html",
   "current_file_status": "success",
   "completed_files": [
-    "portoflow-v5-safe-sequential-test/index.html"
+    "portoflow-v5-safe-sequential-test/index.html",
+    "portoflow-v5-safe-sequential-test/territoire.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -33,6 +34,16 @@
       "validation_status": "passed",
       "sequence_index": 1,
       "at": "2026-05-25T06:45:31.546Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/territoire.html",
+      "action": "create",
+      "file_sha": "e167bdd22cea18825b277d078b6130c6f8bb844f",
+      "commit_sha": "f6049359a6de06753d442a77195525d2e8bd6462",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f6049359a6de06753d442a77195525d2e8bd6462",
+      "validation_status": "passed",
+      "sequence_index": 2,
+      "at": "2026-05-25T06:45:34.812Z"
     }
   ],
   "target_files": [
@@ -44,7 +55,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T06:45:31.547Z",
+  "updated_at": "2026-05-25T06:45:34.812Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true
