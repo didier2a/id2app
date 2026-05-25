@@ -13,18 +13,19 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 71,
-  "current_file": "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
+  "percent": 86,
+  "current_file": "portoflow-v5-safe-sequential-test/styles.css",
   "current_file_status": "success",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
     "portoflow-v5-safe-sequential-test/territoire.html",
     "portoflow-v5-safe-sequential-test/experience.html",
     "portoflow-v5-safe-sequential-test/ecosysteme.html",
-    "portoflow-v5-safe-sequential-test/tableau-de-bord.html"
+    "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
+    "portoflow-v5-safe-sequential-test/styles.css"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T07:08:02.209Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/styles.css",
+      "action": "update",
+      "file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
+      "commit_sha": "3a5eeeacb38d08a764a8347ba098b805ea9fee5a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3a5eeeacb38d08a764a8347ba098b805ea9fee5a",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T07:08:05.282Z"
     }
   ],
   "target_files": [
@@ -123,7 +141,7 @@
     "portoflow-v5-safe-sequential-test/styles.css",
     "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "updated_at": "2026-05-25T07:08:02.209Z",
+  "updated_at": "2026-05-25T07:08:05.282Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
