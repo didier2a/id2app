@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,17 +13,18 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 80,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+  "percent": 100,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
     "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
     "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-25T13:49:47.226Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+      "action": "update",
+      "file_sha": "229a4975f029b27850b9b8cbc66b1fdcaeef10b0",
+      "commit_sha": "8c80978a1a3ae6747c98fa70f0658ff34ddf4d1a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8c80978a1a3ae6747c98fa70f0658ff34ddf4d1a",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "229a4975f029b27850b9b8cbc66b1fdcaeef10b0",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-25T13:49:51.501Z"
     }
   ],
   "target_files": [
@@ -103,7 +121,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
     "infoserve2a-cyber-reseau-v5-premium-test/contact.html"
   ],
-  "updated_at": "2026-05-25T13:49:47.226Z",
+  "updated_at": "2026-05-25T13:49:51.501Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
