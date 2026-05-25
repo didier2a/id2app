@@ -1,0 +1,59 @@
+{
+  "status": "running",
+  "schema_version": "5.0",
+  "publisher_version": "5.0-safe-sequential-verify-retry",
+  "runtime_mode": "safe_sequential_batch_publish",
+  "run_id": "1779738941881-A",
+  "project_id": "infoserve2a-premium-b2b-v2",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "repo": "didier2a/id2app",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "infoserve2a-premium-b2b-v2-test",
+  "current_phase": "publishing_files_safe_sequential",
+  "expected_count": 7,
+  "completed_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0,
+  "percent": 14,
+  "current_file": "infoserve2a-premium-b2b-v2-test/index.html",
+  "current_file_status": "success",
+  "completed_files": [
+    "infoserve2a-premium-b2b-v2-test/index.html"
+  ],
+  "failed_files": [],
+  "updated_files": [
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/index.html",
+      "action": "create",
+      "file_sha": "aee2688375434697a0aaeb5eefd06684610eca8e",
+      "commit_sha": "5365329e4a7865d4c3dfec08535380c0b343dfc9",
+      "commit_url": "https://github.com/didier2a/id2app/commit/5365329e4a7865d4c3dfec08535380c0b343dfc9",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "aee2688375434697a0aaeb5eefd06684610eca8e",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 1,
+      "at": "2026-05-25T19:55:47.472Z"
+    }
+  ],
+  "target_files": [
+    "infoserve2a-premium-b2b-v2-test/index.html",
+    "infoserve2a-premium-b2b-v2-test/cyber.html",
+    "infoserve2a-premium-b2b-v2-test/reseau.html",
+    "infoserve2a-premium-b2b-v2-test/styles.css",
+    "infoserve2a-premium-b2b-v2-test/script.js",
+    "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-principal.png",
+    "infoserve2a-premium-b2b-v2-test/assets/logo-infoserve2a-icon.png"
+  ],
+  "updated_at": "2026-05-25T19:55:47.472Z",
+  "next_poll_seconds": 5,
+  "monotonic_guard": true,
+  "publisher_safe_sequential": true,
+  "verification_retry_enabled": true
+}
