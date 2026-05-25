@@ -1,0 +1,100 @@
+{
+  "status": "completed",
+  "schema_version": "7.0",
+  "module": "ID2App V7.0 Generic UX Harmonizer + Public Surface Guard",
+  "run_id": "1779721954482-V7UX",
+  "project_id": "infoserve2a-cyber-reseau-v5-premium",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
+  "created_at": "2026-05-25T15:12:42.552Z",
+  "stats": {
+    "scanned": 12,
+    "changed": 0,
+    "sections_removed": 0,
+    "terms_rewritten": 0,
+    "unresolved_terms": [],
+    "anchors_fixed": 0,
+    "css_patch_applied": false,
+    "js_patch_applied": false,
+    "files": [
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/index.html",
+        "rel_path": "index.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
+        "rel_path": "cyber.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+        "rel_path": "audit-cyber-local.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+        "rel_path": "surveillance-cyber-locale.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
+        "rel_path": "reseau.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/wifi-starlink-reseaux-critiques.html",
+        "rel_path": "wifi-starlink-reseaux-critiques.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/secteurs-sensibles.html",
+        "rel_path": "secteurs-sensibles.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+        "rel_path": "methode.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/a-propos.html",
+        "rel_path": "a-propos.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/contact.html",
+        "rel_path": "contact.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
+        "rel_path": "styles.css",
+        "changed": false,
+        "ext": ".css"
+      },
+      {
+        "file_path": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
+        "rel_path": "script.js",
+        "changed": false,
+        "ext": ".js"
+      }
+    ]
+  },
+  "policies": {
+    "public_surface_guard_mode": "report_only",
+    "section_removal_enabled": false,
+    "css_patch_enabled": false,
+    "js_patch_enabled": false
+  }
+}
