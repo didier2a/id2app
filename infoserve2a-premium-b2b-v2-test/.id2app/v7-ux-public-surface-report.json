@@ -1,0 +1,125 @@
+{
+  "status": "completed",
+  "schema_version": "7.0-fix2",
+  "module": "ID2App V7.0 FIX2 - UX Harmonizer + Writer Closing Artifact Guard",
+  "run_id": "1779739189604-V7FIX2",
+  "project_id": "infoserve2a-premium-b2b-v2",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "site_folder": "infoserve2a-premium-b2b-v2-test",
+  "report_only": false,
+  "created_at": "2026-05-25T19:59:54.710Z",
+  "stats": {
+    "scanned": 9,
+    "changed": 6,
+    "sections_removed": 1,
+    "contextual_sections_flagged": 1,
+    "terms_rewritten": 0,
+    "unresolved_terms": [],
+    "anchors_fixed": 0,
+    "css_patch_applied": true,
+    "js_patch_applied": true,
+    "writer_artifacts_detected": 3,
+    "closing_blocks_removed": 3,
+    "closing_blocks_rewritten": 0,
+    "candidates": [
+      {
+        "file": "methode.html",
+        "action": "remove_section",
+        "reason": "high_confidence_internal_signal",
+        "signals": [
+          "V6.1"
+        ],
+        "excerpt": "Questions fréquentes Questions fréquentes avant de passer à l’action Une page méthode ou offre gagne à lever les dernières objections avant la prise de contact. Est-ce que cela remplace un prestataire existant ? Non. La démarche complète les missions existante…"
+      }
+    ],
+    "closing_artifact_candidates": [
+      {
+        "file": "cyber.html",
+        "action": "remove_closing_artifact",
+        "artifact_type": "auto_decision_block",
+        "archetype": "service",
+        "excerpt": "Preuve Ce que Cyber doit permettre de décider Le bon livrable doit aider à décider, pas seulement à constater. Demander un audit cyber Faire vérifier mon réseau"
+      },
+      {
+        "file": "reseau.html",
+        "action": "remove_closing_artifact",
+        "artifact_type": "auto_decision_block",
+        "archetype": "service",
+        "excerpt": "Preuve Ce que Réseau doit permettre de décider Le bon livrable doit aider à décider, pas seulement à constater. Demander un audit cyber Faire vérifier mon réseau"
+      },
+      {
+        "file": "a-propos.html",
+        "action": "remove_closing_artifact",
+        "artifact_type": "about_generic_values_closing",
+        "archetype": "about",
+        "excerpt": "Valeurs Clarté, confidentialité, preuve et pragmatisme INFOSERV2A ne promet pas une sécurité magique. Nous vérifions, documentons et réduisons les risques concrets. proximité clarté confidentialité preuve fiabilité indép…"
+      }
+    ],
+    "files": [
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/index.html",
+        "rel_path": "index.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/cyber.html",
+        "rel_path": "cyber.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/reseau.html",
+        "rel_path": "reseau.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
+        "rel_path": "secteurs-sensibles.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/methode.html",
+        "rel_path": "methode.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/a-propos.html",
+        "rel_path": "a-propos.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/contact.html",
+        "rel_path": "contact.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/styles.css",
+        "rel_path": "styles.css",
+        "changed": true,
+        "ext": ".css"
+      },
+      {
+        "file_path": "infoserve2a-premium-b2b-v2-test/script.js",
+        "rel_path": "script.js",
+        "changed": true,
+        "ext": ".js"
+      }
+    ]
+  },
+  "policies": {
+    "public_surface_guard_mode": "rewrite_and_remove_sections",
+    "contextual_remediation_enabled": true,
+    "section_removal_enabled": true,
+    "writer_closing_artifact_guard_enabled": true,
+    "writer_closing_section_removal_enabled": true,
+    "css_patch_enabled": true,
+    "js_patch_enabled": true,
+    "min_signal_hits": 2
+  }
+}
