@@ -13,18 +13,19 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 12,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 42,
-  "current_file": "infoserve2a-premium-b2b-v2-test/methode.html",
+  "percent": 50,
+  "current_file": "infoserve2a-premium-b2b-v2-test/a-propos.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
     "infoserve2a-premium-b2b-v2-test/cyber.html",
     "infoserve2a-premium-b2b-v2-test/reseau.html",
     "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
-    "infoserve2a-premium-b2b-v2-test/methode.html"
+    "infoserve2a-premium-b2b-v2-test/methode.html",
+    "infoserve2a-premium-b2b-v2-test/a-propos.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T20:01:52.676Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/a-propos.html",
+      "action": "update",
+      "file_sha": "128262d295893b737b49bf53cf0f14becd723707",
+      "commit_sha": "d8ba235dbac41abe61d3c37e303790ec255c54a6",
+      "commit_url": "https://github.com/didier2a/id2app/commit/d8ba235dbac41abe61d3c37e303790ec255c54a6",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "128262d295893b737b49bf53cf0f14becd723707",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T20:01:55.754Z"
     }
   ],
   "target_files": [
@@ -128,7 +146,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-25T20:01:52.676Z",
+  "updated_at": "2026-05-25T20:01:55.754Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
