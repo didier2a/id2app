@@ -13,18 +13,19 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 7,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 71,
-  "current_file": "infoserve2a-premium-b2b-v2-test/styles.css",
+  "percent": 86,
+  "current_file": "infoserve2a-premium-b2b-v2-test/script.js",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/cyber.html",
     "infoserve2a-premium-b2b-v2-test/reseau.html",
     "infoserve2a-premium-b2b-v2-test/methode.html",
     "infoserve2a-premium-b2b-v2-test/a-propos.html",
-    "infoserve2a-premium-b2b-v2-test/styles.css"
+    "infoserve2a-premium-b2b-v2-test/styles.css",
+    "infoserve2a-premium-b2b-v2-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -112,6 +113,23 @@
       },
       "sequence_index": 5,
       "at": "2026-05-25T20:00:09.484Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/script.js",
+      "action": "update",
+      "file_sha": "3a5c04848f2ca726ed052c78bdf9ce9492c654a5",
+      "commit_sha": "3e9e17f06c6011ba0fec4252ca7c4e80fb0c1dba",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3e9e17f06c6011ba0fec4252ca7c4e80fb0c1dba",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "3a5c04848f2ca726ed052c78bdf9ce9492c654a5",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 6,
+      "at": "2026-05-25T20:00:12.528Z"
     }
   ],
   "target_files": [
@@ -123,7 +141,7 @@
     "infoserve2a-premium-b2b-v2-test/script.js",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-ux-public-surface-report.json"
   ],
-  "updated_at": "2026-05-25T20:00:09.484Z",
+  "updated_at": "2026-05-25T20:00:12.528Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
