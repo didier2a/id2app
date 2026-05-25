@@ -13,16 +13,17 @@
   "site_folder": "portoflow-v5-safe-sequential-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 60,
-  "current_file": "portoflow-v5-safe-sequential-test/boucle-creation.html",
+  "percent": 80,
+  "current_file": "portoflow-v5-safe-sequential-test/demonstrateur.html",
   "current_file_status": "success",
   "completed_files": [
     "portoflow-v5-safe-sequential-test/ingenierie.html",
     "portoflow-v5-safe-sequential-test/n8n-cloud-code.html",
-    "portoflow-v5-safe-sequential-test/boucle-creation.html"
+    "portoflow-v5-safe-sequential-test/boucle-creation.html",
+    "portoflow-v5-safe-sequential-test/demonstrateur.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T07:09:02.680Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/demonstrateur.html",
+      "action": "create",
+      "file_sha": "75ad37e2e388b6da169b31b66321101da6f5bc3c",
+      "commit_sha": "aa1276469e503e82038b102bb5646287793c4009",
+      "commit_url": "https://github.com/didier2a/id2app/commit/aa1276469e503e82038b102bb5646287793c4009",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "75ad37e2e388b6da169b31b66321101da6f5bc3c",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T07:09:05.671Z"
     }
   ],
   "target_files": [
@@ -85,7 +103,7 @@
     "portoflow-v5-safe-sequential-test/demonstrateur.html",
     "portoflow-v5-safe-sequential-test/vision.html"
   ],
-  "updated_at": "2026-05-25T07:09:02.680Z",
+  "updated_at": "2026-05-25T07:09:05.671Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
