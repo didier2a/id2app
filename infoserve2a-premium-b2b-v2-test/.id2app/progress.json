@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-premium-b2b-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 14,
-  "completed_count": 7,
+  "completed_count": 8,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 50,
-  "current_file": "infoserve2a-premium-b2b-v2-test/contact.html",
+  "percent": 57,
+  "current_file": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-premium-b2b-v2-test/index.html",
@@ -26,7 +26,8 @@
     "infoserve2a-premium-b2b-v2-test/secteurs-sensibles.html",
     "infoserve2a-premium-b2b-v2-test/methode.html",
     "infoserve2a-premium-b2b-v2-test/a-propos.html",
-    "infoserve2a-premium-b2b-v2-test/contact.html"
+    "infoserve2a-premium-b2b-v2-test/contact.html",
+    "infoserve2a-premium-b2b-v2-test/mentions-legales.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -148,6 +149,23 @@
       },
       "sequence_index": 7,
       "at": "2026-05-25T20:16:53.077Z"
+    },
+    {
+      "file_path": "infoserve2a-premium-b2b-v2-test/mentions-legales.html",
+      "action": "update",
+      "file_sha": "97fb8d1ac525e5f07e5ca954b16ddf7294534edf",
+      "commit_sha": "be0accea3b02d799d715bf0605e9e714f64c7773",
+      "commit_url": "https://github.com/didier2a/id2app/commit/be0accea3b02d799d715bf0605e9e714f64c7773",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "97fb8d1ac525e5f07e5ca954b16ddf7294534edf",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 8,
+      "at": "2026-05-25T20:16:55.910Z"
     }
   ],
   "target_files": [
@@ -166,7 +184,7 @@
     "infoserve2a-premium-b2b-v2-test/robots.txt",
     "infoserve2a-premium-b2b-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-25T20:16:53.077Z",
+  "updated_at": "2026-05-25T20:16:55.910Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
