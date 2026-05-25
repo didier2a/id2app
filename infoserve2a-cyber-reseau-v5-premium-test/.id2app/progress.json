@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,11 +13,11 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 9,
-  "completed_count": 8,
+  "completed_count": 9,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 89,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png",
+  "percent": 100,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
@@ -27,7 +27,8 @@
     "infoserve2a-cyber-reseau-v5-premium-test/reseau.html",
     "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
     "infoserve2a-cyber-reseau-v5-premium-test/script.js",
-    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png"
+    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-principal.png",
+    "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png"
   ],
   "failed_files": [],
   "updated_files": [
@@ -166,6 +167,23 @@
       },
       "sequence_index": 8,
       "at": "2026-05-25T09:31:26.753Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/assets/logo-infoserve2a-icon.png",
+      "action": "create",
+      "file_sha": "bc9a81688451aa5f3c8cadd1af1a855833b6e7b4",
+      "commit_sha": "cddf2be0e2f1804a8fe189b550093ee75bd31f92",
+      "commit_url": "https://github.com/didier2a/id2app/commit/cddf2be0e2f1804a8fe189b550093ee75bd31f92",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "bc9a81688451aa5f3c8cadd1af1a855833b6e7b4",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 9,
+      "at": "2026-05-25T09:31:29.844Z"
     }
   ],
   "target_files": [
@@ -179,7 +197,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/styles.css",
     "infoserve2a-cyber-reseau-v5-premium-test/script.js"
   ],
-  "updated_at": "2026-05-25T09:31:26.753Z",
+  "updated_at": "2026-05-25T09:31:29.844Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
