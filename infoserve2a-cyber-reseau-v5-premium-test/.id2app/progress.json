@@ -3,7 +3,7 @@
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779722313020-V7UX",
+  "run_id": "1779725230533-V7FIX1",
   "project_id": "infoserve2a-cyber-reseau-v5-premium",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "repo": "didier2a/id2app",
@@ -27,25 +27,25 @@
     {
       "file_path": "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-ux-public-surface-report.json",
       "action": "update",
-      "file_sha": "203ab1fdc298e22281121a36e2678ca0afa96ed4",
-      "commit_sha": "3289dd09614f2b53036a11d7fc28efbc48df7c25",
-      "commit_url": "https://github.com/didier2a/id2app/commit/3289dd09614f2b53036a11d7fc28efbc48df7c25",
+      "file_sha": "d25bd536e171df4d13a82bfef160ff8cee18b7c2",
+      "commit_sha": "d80527e8a583572fd476fe40b6faa2559f63e0a0",
+      "commit_url": "https://github.com/didier2a/id2app/commit/d80527e8a583572fd476fe40b6faa2559f63e0a0",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "203ab1fdc298e22281121a36e2678ca0afa96ed4",
+        "file_sha": "d25bd536e171df4d13a82bfef160ff8cee18b7c2",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-25T15:18:41.781Z"
+      "at": "2026-05-25T16:07:19.307Z"
     }
   ],
   "target_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-ux-public-surface-report.json"
   ],
-  "updated_at": "2026-05-25T15:18:44.522Z",
+  "updated_at": "2026-05-25T16:07:19.307Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
