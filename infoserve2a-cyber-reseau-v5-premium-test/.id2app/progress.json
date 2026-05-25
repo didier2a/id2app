@@ -13,14 +13,15 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 3,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 33,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+  "percent": 67,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
   "current_file_status": "success",
   "completed_files": [
-    "infoserve2a-cyber-reseau-v5-premium-test/methode.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/methode.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,6 +41,23 @@
       },
       "sequence_index": 1,
       "at": "2026-05-25T16:11:26.458Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/script.js",
+      "action": "update",
+      "file_sha": "4b03c86dc2408769c7ca565f532aa5111f2930e4",
+      "commit_sha": "7af67ebbf2e4fb42aaff2ff0fb26ea785e56da33",
+      "commit_url": "https://github.com/didier2a/id2app/commit/7af67ebbf2e4fb42aaff2ff0fb26ea785e56da33",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "4b03c86dc2408769c7ca565f532aa5111f2930e4",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-25T16:11:29.501Z"
     }
   ],
   "target_files": [
@@ -47,7 +65,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/script.js",
     "infoserve2a-cyber-reseau-v5-premium-test/.id2app/v7-ux-public-surface-report.json"
   ],
-  "updated_at": "2026-05-25T16:11:26.458Z",
+  "updated_at": "2026-05-25T16:11:29.501Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
