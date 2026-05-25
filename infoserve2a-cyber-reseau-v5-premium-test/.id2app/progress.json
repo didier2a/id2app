@@ -13,16 +13,17 @@
   "site_folder": "infoserve2a-cyber-reseau-v5-premium-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 60,
-  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+  "percent": 80,
+  "current_file": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
   "current_file_status": "success",
   "completed_files": [
     "infoserve2a-cyber-reseau-v5-premium-test/index.html",
     "infoserve2a-cyber-reseau-v5-premium-test/cyber.html",
-    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html"
+    "infoserve2a-cyber-reseau-v5-premium-test/audit-cyber-local.html",
+    "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -76,6 +77,23 @@
       },
       "sequence_index": 3,
       "at": "2026-05-25T12:28:57.580Z"
+    },
+    {
+      "file_path": "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
+      "action": "update",
+      "file_sha": "04dfc98b80c4d1efe5cc645be998a5ba630b2ff2",
+      "commit_sha": "01128e6922651e815566936cec3003e1d00dab60",
+      "commit_url": "https://github.com/didier2a/id2app/commit/01128e6922651e815566936cec3003e1d00dab60",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "04dfc98b80c4d1efe5cc645be998a5ba630b2ff2",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 4,
+      "at": "2026-05-25T12:29:01.112Z"
     }
   ],
   "target_files": [
@@ -85,7 +103,7 @@
     "infoserve2a-cyber-reseau-v5-premium-test/surveillance-cyber-locale.html",
     "infoserve2a-cyber-reseau-v5-premium-test/reseau.html"
   ],
-  "updated_at": "2026-05-25T12:28:57.580Z",
+  "updated_at": "2026-05-25T12:29:01.112Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
