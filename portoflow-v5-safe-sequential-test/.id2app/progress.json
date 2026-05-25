@@ -121,7 +121,7 @@
     "portoflow-v5-safe-sequential-test/demonstrateur.html",
     "portoflow-v5-safe-sequential-test/vision.html"
   ],
-  "updated_at": "2026-05-25T07:09:09.935Z",
+  "updated_at": "2026-05-25T07:09:12.844Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
