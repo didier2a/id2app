@@ -1,8 +1,8 @@
 {
-  "status": "partial",
+  "status": "completed",
   "schema_version": "5.0",
-  "publisher_version": "5.0-safe-sequential",
-  "run_id": "1779691528181-A",
+  "publisher_version": "5.0-safe-sequential-verify-retry",
+  "run_id": "1779692866798-A",
   "project_id": "portoflow-v5-safe-sequential-test",
   "project_name": "Porto-Flow",
   "repo_owner": "didier2a",
@@ -10,86 +10,140 @@
   "branch": "main",
   "site_folder": "portoflow-v5-safe-sequential-test",
   "expected_count": 7,
-  "completed_count": 6,
-  "failed_count": 1,
+  "completed_count": 7,
+  "failed_count": 0,
   "completed_files": [
     "portoflow-v5-safe-sequential-test/index.html",
     "portoflow-v5-safe-sequential-test/territoire.html",
     "portoflow-v5-safe-sequential-test/experience.html",
     "portoflow-v5-safe-sequential-test/ecosysteme.html",
     "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
-    "portoflow-v5-safe-sequential-test/styles.css"
+    "portoflow-v5-safe-sequential-test/styles.css",
+    "portoflow-v5-safe-sequential-test/script.js"
   ],
-  "failed_files": [
-    {
-      "file_path": "portoflow-v5-safe-sequential-test/script.js",
-      "reason": "GitHub GET https://api.github.com/repos/didier2a/id2app/contents/portoflow-v5-safe-sequential-test/script.js?ref=main failed 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
-      "at": "2026-05-25T06:45:49.249Z",
-      "sequence_index": 7
-    }
-  ],
+  "failed_files": [],
   "updated_files": [
     {
       "file_path": "portoflow-v5-safe-sequential-test/index.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "f9b0adb14ea536b807ea0526d60daf513ae8c758",
-      "commit_sha": "c2072a728c89218bca4caa834a26ab76ad730cd9",
-      "commit_url": "https://github.com/didier2a/id2app/commit/c2072a728c89218bca4caa834a26ab76ad730cd9",
+      "commit_sha": "00b4b11d9fd096208e49570a7c7469c288d3610e",
+      "commit_url": "https://github.com/didier2a/id2app/commit/00b4b11d9fd096208e49570a7c7469c288d3610e",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "f9b0adb14ea536b807ea0526d60daf513ae8c758",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 1,
-      "at": "2026-05-25T06:45:31.546Z"
+      "at": "2026-05-25T07:07:50.154Z"
     },
     {
       "file_path": "portoflow-v5-safe-sequential-test/territoire.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "e167bdd22cea18825b277d078b6130c6f8bb844f",
-      "commit_sha": "f6049359a6de06753d442a77195525d2e8bd6462",
-      "commit_url": "https://github.com/didier2a/id2app/commit/f6049359a6de06753d442a77195525d2e8bd6462",
+      "commit_sha": "ca459f9d1373630fc6e0c1c9e132b5f0693505d4",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ca459f9d1373630fc6e0c1c9e132b5f0693505d4",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "e167bdd22cea18825b277d078b6130c6f8bb844f",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 2,
-      "at": "2026-05-25T06:45:34.812Z"
+      "at": "2026-05-25T07:07:53.070Z"
     },
     {
       "file_path": "portoflow-v5-safe-sequential-test/experience.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "e6e021143416a9469d71a51d731e943b534c1fdb",
-      "commit_sha": "5e399690fc16c94be430780928e9d78663ec4b97",
-      "commit_url": "https://github.com/didier2a/id2app/commit/5e399690fc16c94be430780928e9d78663ec4b97",
+      "commit_sha": "70a493c25eacfbe2c33598d97325e48bfeb7713c",
+      "commit_url": "https://github.com/didier2a/id2app/commit/70a493c25eacfbe2c33598d97325e48bfeb7713c",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "e6e021143416a9469d71a51d731e943b534c1fdb",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 3,
-      "at": "2026-05-25T06:45:37.676Z"
+      "at": "2026-05-25T07:07:56.087Z"
     },
     {
       "file_path": "portoflow-v5-safe-sequential-test/ecosysteme.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "a3d2c85935b64354c8031e410175f05002da64c9",
-      "commit_sha": "64ffc874cd26f3bd29499919e55a328f09cbdf20",
-      "commit_url": "https://github.com/didier2a/id2app/commit/64ffc874cd26f3bd29499919e55a328f09cbdf20",
+      "commit_sha": "ebc738b20015c4ce6b5d90c177f5a5e1a7fd877a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ebc738b20015c4ce6b5d90c177f5a5e1a7fd877a",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "a3d2c85935b64354c8031e410175f05002da64c9",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 4,
-      "at": "2026-05-25T06:45:40.648Z"
+      "at": "2026-05-25T07:07:59.100Z"
     },
     {
       "file_path": "portoflow-v5-safe-sequential-test/tableau-de-bord.html",
-      "action": "create",
+      "action": "update",
       "file_sha": "590e89b7fb96c7d4da30ce58ab298ad8865be16c",
-      "commit_sha": "7b42c1e4d5f3232aa56c8969e11438f8742ebc94",
-      "commit_url": "https://github.com/didier2a/id2app/commit/7b42c1e4d5f3232aa56c8969e11438f8742ebc94",
+      "commit_sha": "7d83878742870e2752df1f80ad9e4e783826ae19",
+      "commit_url": "https://github.com/didier2a/id2app/commit/7d83878742870e2752df1f80ad9e4e783826ae19",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "590e89b7fb96c7d4da30ce58ab298ad8865be16c",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 5,
-      "at": "2026-05-25T06:45:43.477Z"
+      "at": "2026-05-25T07:08:02.209Z"
     },
     {
       "file_path": "portoflow-v5-safe-sequential-test/styles.css",
-      "action": "create",
+      "action": "update",
       "file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
-      "commit_sha": "c28fe52da5ecf13e87e31094705cc1938a21f60c",
-      "commit_url": "https://github.com/didier2a/id2app/commit/c28fe52da5ecf13e87e31094705cc1938a21f60c",
+      "commit_sha": "3a5eeeacb38d08a764a8347ba098b805ea9fee5a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/3a5eeeacb38d08a764a8347ba098b805ea9fee5a",
       "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "340ac811dbf1e2c1c6704082e13d9bbc960fc190",
+        "content_api_status": 200,
+        "warning": null
+      },
       "sequence_index": 6,
-      "at": "2026-05-25T06:45:46.473Z"
+      "at": "2026-05-25T07:08:05.282Z"
+    },
+    {
+      "file_path": "portoflow-v5-safe-sequential-test/script.js",
+      "action": "update",
+      "file_sha": "af0ce289fa361906cc5ec67598beaa43d33b954a",
+      "commit_sha": "9b7be18cc606862cafeda7e5096c1ffaaf9e1a3a",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9b7be18cc606862cafeda7e5096c1ffaaf9e1a3a",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "af0ce289fa361906cc5ec67598beaa43d33b954a",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 7,
+      "at": "2026-05-25T07:08:08.394Z"
     }
   ],
-  "finished_at": "2026-05-25T06:45:50.337Z",
-  "publisher_safe_sequential": true
+  "finished_at": "2026-05-25T07:08:10.598Z",
+  "publisher_safe_sequential": true,
+  "verification_retry_enabled": true
 }
