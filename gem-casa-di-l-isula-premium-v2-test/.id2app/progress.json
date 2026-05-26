@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,14 +13,15 @@
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 2,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 50,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
+  "percent": 100,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
   "current_file_status": "success",
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html"
+    "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
+    "gem-casa-di-l-isula-premium-v2-test/confidentialite.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,13 +41,30 @@
       },
       "sequence_index": 1,
       "at": "2026-05-26T08:13:37.579Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
+      "action": "update",
+      "file_sha": "842de46770291a12da36ca995b840c27ef8290b6",
+      "commit_sha": "a8b087b245b83ed997d6f5aa0a42f7264172e772",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a8b087b245b83ed997d6f5aa0a42f7264172e772",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "842de46770291a12da36ca995b840c27ef8290b6",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-26T08:13:40.987Z"
     }
   ],
   "target_files": [
     "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
     "gem-casa-di-l-isula-premium-v2-test/confidentialite.html"
   ],
-  "updated_at": "2026-05-26T08:13:37.580Z",
+  "updated_at": "2026-05-26T08:13:40.987Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
