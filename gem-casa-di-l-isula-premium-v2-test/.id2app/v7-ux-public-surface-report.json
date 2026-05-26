@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "schema_version": "7.0-fix2",
+  "module": "ID2App V7.0 FIX2 - UX Harmonizer + Writer Closing Artifact Guard",
+  "run_id": "1779778900733-V7FIX2",
+  "project_id": "gem-casa-di-l-isula-premium-v2",
+  "project_name": "GEM Casa di l’Isula",
+  "site_folder": "gem-casa-di-l-isula-premium-v2-test",
+  "report_only": false,
+  "created_at": "2026-05-26T07:01:45.585Z",
+  "stats": {
+    "scanned": 8,
+    "changed": 4,
+    "sections_removed": 0,
+    "contextual_sections_flagged": 0,
+    "terms_rewritten": 0,
+    "unresolved_terms": [],
+    "anchors_fixed": 0,
+    "css_patch_applied": true,
+    "js_patch_applied": true,
+    "writer_artifacts_detected": 2,
+    "closing_blocks_removed": 2,
+    "closing_blocks_rewritten": 0,
+    "candidates": [],
+    "closing_artifact_candidates": [
+      {
+        "file": "activites.html",
+        "action": "remove_closing_artifact",
+        "artifact_type": "auto_decision_block",
+        "archetype": "service",
+        "excerpt": "Preuve Ce que Nos activités doit permettre de décider Le bon livrable doit aider à décider, pas seulement à constater. Nous contacter Découvrir nos activités"
+      },
+      {
+        "file": "nous-soutenir.html",
+        "action": "remove_closing_artifact",
+        "artifact_type": "auto_decision_block",
+        "archetype": "offer",
+        "excerpt": "Preuve Ce que Nous soutenir doit permettre de décider Le lecteur doit comprendre ce qui sera vérifié, ce qui sera documenté et comment les priorités pourront être partagées avec les bonnes personnes. Une page utile ne pr…"
+      }
+    ],
+    "files": [
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/index.html",
+        "rel_path": "index.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
+        "rel_path": "qui-sommes-nous.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/activites.html",
+        "rel_path": "activites.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/blog.html",
+        "rel_path": "blog.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
+        "rel_path": "nous-soutenir.html",
+        "changed": true,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/infos-pratiques.html",
+        "rel_path": "infos-pratiques.html",
+        "changed": false,
+        "ext": ".html"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/styles.css",
+        "rel_path": "styles.css",
+        "changed": true,
+        "ext": ".css"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/script.js",
+        "rel_path": "script.js",
+        "changed": true,
+        "ext": ".js"
+      }
+    ]
+  },
+  "policies": {
+    "public_surface_guard_mode": "rewrite_and_remove_sections",
+    "contextual_remediation_enabled": true,
+    "section_removal_enabled": true,
+    "writer_closing_artifact_guard_enabled": true,
+    "writer_closing_section_removal_enabled": true,
+    "css_patch_enabled": true,
+    "js_patch_enabled": true,
+    "min_signal_hits": 2
+  }
+}
