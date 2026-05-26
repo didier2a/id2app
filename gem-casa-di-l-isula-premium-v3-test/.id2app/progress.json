@@ -1,9 +1,9 @@
 {
-  "status": "completed",
+  "status": "running",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779788420178-B",
+  "run_id": "1779788455129-C",
   "project_id": "gem-casa-di-l-isula-premium-v3",
   "project_name": "GEM Casa di l'Isula",
   "repo": "didier2a/id2app",
@@ -12,78 +12,41 @@
   "branch": "main",
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
-  "expected_count": 3,
-  "completed_count": 3,
+  "expected_count": 2,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 100,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/contact.html",
+  "percent": 50,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html",
   "current_file_status": "success",
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v3-test/blog.html",
-    "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
-    "gem-casa-di-l-isula-premium-v3-test/contact.html"
+    "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html"
   ],
   "failed_files": [],
   "updated_files": [
     {
-      "file_path": "gem-casa-di-l-isula-premium-v3-test/blog.html",
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html",
       "action": "create",
-      "file_sha": "cfad3ca4ddc4926d2227c477dc829d13f2bbe585",
-      "commit_sha": "f90024c71599b8d8e07322371c351a170ec00527",
-      "commit_url": "https://github.com/didier2a/id2app/commit/f90024c71599b8d8e07322371c351a170ec00527",
+      "file_sha": "d0a91f485b8dcb22c5a3db7f65c15db6530ce91c",
+      "commit_sha": "8eaee9add71e5c8a6dda51a01e33bf0cd04af667",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8eaee9add71e5c8a6dda51a01e33bf0cd04af667",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "cfad3ca4ddc4926d2227c477dc829d13f2bbe585",
+        "file_sha": "d0a91f485b8dcb22c5a3db7f65c15db6530ce91c",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-26T09:40:24.052Z"
-    },
-    {
-      "file_path": "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
-      "action": "create",
-      "file_sha": "f4126e5277207217b8239ba2216e560ca9e4b914",
-      "commit_sha": "25b78888d5492d708067fc6281a76e147eb70ed2",
-      "commit_url": "https://github.com/didier2a/id2app/commit/25b78888d5492d708067fc6281a76e147eb70ed2",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "f4126e5277207217b8239ba2216e560ca9e4b914",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-26T09:40:27.411Z"
-    },
-    {
-      "file_path": "gem-casa-di-l-isula-premium-v3-test/contact.html",
-      "action": "create",
-      "file_sha": "82ee8bc3f007ad2b8374d852ff102b94f96e95d4",
-      "commit_sha": "0a2237767b2812c1dbfa52633e2aa90c5979b286",
-      "commit_url": "https://github.com/didier2a/id2app/commit/0a2237767b2812c1dbfa52633e2aa90c5979b286",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "82ee8bc3f007ad2b8374d852ff102b94f96e95d4",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 3,
-      "at": "2026-05-26T09:40:30.928Z"
+      "at": "2026-05-26T09:40:59.135Z"
     }
   ],
   "target_files": [
-    "gem-casa-di-l-isula-premium-v3-test/blog.html",
-    "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
-    "gem-casa-di-l-isula-premium-v3-test/contact.html"
+    "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html",
+    "gem-casa-di-l-isula-premium-v3-test/confidentialite.html"
   ],
-  "updated_at": "2026-05-26T09:40:34.321Z",
+  "updated_at": "2026-05-26T09:40:59.135Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
