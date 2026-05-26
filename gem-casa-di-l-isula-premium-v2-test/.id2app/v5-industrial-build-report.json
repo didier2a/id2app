@@ -1,0 +1,39 @@
+{
+  "core": "id2app-core-v5-generic-industrial-premium-brand-dispatch",
+  "schema_version": "5.0",
+  "generated_at": "2026-05-26T06:41:47.4752723Z",
+  "industrial_safe_sequential": true,
+  "publisher": "id2app-file-publisher-v5-safe-sequential",
+  "project_name": "GEM Casa di l'Isula",
+  "project_id": "gem-casa-di-l-isula-premium-v2",
+  "lots": [
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779777588946-A\",\r\n  \"project_id\": \"gem-casa-di-l-isula-premium-v2\",\r\n  \"project_name\": \"GEM Casa di l'Isula\",\r\n  \"site_folder\": \"gem-casa-di-l-isula-premium-v2-test\",\r\n  \"expected_count\": 7,\r\n  \"progress_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "completed_count": 8,
+      "expected_count": 7,
+      "target_count": 7,
+      "run_id": "1779777588946-A",
+      "lot": "A",
+      "status": "completed_publisher_status_with_asset_backfill"
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779777642199-B\",\r\n  \"project_id\": \"gem-casa-di-l-isula-premium-v2\",\r\n  \"project_name\": \"GEM Casa di l'Isula\",\r\n  \"site_folder\": \"gem-casa-di-l-isula-premium-v2-test\",\r\n  \"expected_count\": 3,\r\n  \"progress_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "completed_count": 3,
+      "expected_count": 3,
+      "target_count": 3,
+      "run_id": "1779777642199-B",
+      "lot": "B",
+      "status": "completed_publisher_status_with_asset_backfill"
+    },
+    "{\r\n  \"status\": \"accepted\",\r\n  \"schema_version\": \"5.0\",\r\n  \"orchestrator_version\": \"5.0-clean-factory-core\",\r\n  \"run_id\": \"1779777676919-C\",\r\n  \"project_id\": \"gem-casa-di-l-isula-premium-v2\",\r\n  \"project_name\": \"GEM Casa di l'Isula\",\r\n  \"site_folder\": \"gem-casa-di-l-isula-premium-v2-test\",\r\n  \"expected_count\": 2,\r\n  \"progress_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/progress.json\",\r\n  \"final_report_path\": \"gem-casa-di-l-isula-premium-v2-test/.id2app/final-report.json\",\r\n  \"message\": \"Accepted by V5 Clean Factory. File publishing progress is owned by the shared Publisher.\"\r\n}",
+    {
+      "completed_count": 2,
+      "expected_count": 2,
+      "target_count": 2,
+      "run_id": "1779777676919-C",
+      "lot": "C",
+      "status": "completed_publisher_status_with_asset_backfill"
+    }
+  ],
+  "site_folder": "gem-casa-di-l-isula-premium-v2-test"
+}
