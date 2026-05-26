@@ -13,17 +13,18 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 11,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 36,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/blog.html",
+  "percent": 45,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v3-test/index.html",
     "gem-casa-di-l-isula-premium-v3-test/qui-sommes-nous.html",
     "gem-casa-di-l-isula-premium-v3-test/activites.html",
-    "gem-casa-di-l-isula-premium-v3-test/blog.html"
+    "gem-casa-di-l-isula-premium-v3-test/blog.html",
+    "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-26T11:03:04.701Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
+      "action": "update",
+      "file_sha": "5a81c19909ca60184d03b69ba9c4e8c39f2961a0",
+      "commit_sha": "50fceab4fa3a550e6c8a58e7c877d57ddfa8ecb0",
+      "commit_url": "https://github.com/didier2a/id2app/commit/50fceab4fa3a550e6c8a58e7c877d57ddfa8ecb0",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "5a81c19909ca60184d03b69ba9c4e8c39f2961a0",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-26T11:03:07.823Z"
     }
   ],
   "target_files": [
@@ -109,7 +127,7 @@
     "gem-casa-di-l-isula-premium-v3-test/script.js",
     "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-26T11:03:04.701Z",
+  "updated_at": "2026-05-26T11:03:07.823Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
