@@ -13,11 +13,11 @@
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 13,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 1,
   "skipped_count": 0,
-  "percent": 85,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/sitemap.xml",
+  "percent": 92,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/robots.txt",
   "current_file_status": "failed",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v2-test/index.html",
@@ -30,7 +30,8 @@
     "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
     "gem-casa-di-l-isula-premium-v2-test/styles.css",
     "gem-casa-di-l-isula-premium-v2-test/script.js",
-    "gem-casa-di-l-isula-premium-v2-test/sitemap.xml"
+    "gem-casa-di-l-isula-premium-v2-test/sitemap.xml",
+    "gem-casa-di-l-isula-premium-v2-test/robots.txt"
   ],
   "failed_files": [
     {
@@ -227,6 +228,23 @@
       },
       "sequence_index": 11,
       "at": "2026-05-26T07:02:51.905Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/robots.txt",
+      "action": "create",
+      "file_sha": "ddcb557f29ff7b16bdaa53c837932408e07446c8",
+      "commit_sha": "5f17782a2a7ac0873686817b7273abd9c616d128",
+      "commit_url": "https://github.com/didier2a/id2app/commit/5f17782a2a7ac0873686817b7273abd9c616d128",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "ddcb557f29ff7b16bdaa53c837932408e07446c8",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 12,
+      "at": "2026-05-26T07:02:55.512Z"
     }
   ],
   "target_files": [
@@ -244,7 +262,7 @@
     "gem-casa-di-l-isula-premium-v2-test/robots.txt",
     "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-26T07:02:51.905Z",
+  "updated_at": "2026-05-26T07:02:55.512Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
