@@ -2,122 +2,99 @@
   "status": "completed",
   "schema_version": "7.1a",
   "module": "ID2App V7.1a Generic Clean Code & SEO Microfix",
-  "run_id": "1779779494577-V71A",
+  "run_id": "1779783030124-V71A",
   "project_id": "gem-casa-di-l-isula-premium-v2",
   "project_name": "GEM Casa di l’Isula",
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "report_only": false,
-  "created_at": "2026-05-26T07:11:40.550Z",
+  "created_at": "2026-05-26T08:10:36.568Z",
   "stats": {
     "scanned": 10,
-    "changed": 10,
+    "changed": 0,
     "html_pages_scanned": 8,
-    "html_pages_changed": 8,
-    "css_files_changed": 1,
-    "js_files_changed": 1,
+    "html_pages_changed": 0,
+    "css_files_changed": 0,
+    "js_files_changed": 0,
     "seo_encoding_fixes": 0,
-    "internal_comments_removed": 20,
+    "internal_comments_removed": 0,
     "duplicate_ids_found": 0,
     "duplicate_ids_renamed": 0,
     "duplicate_sections_removed": 0,
     "form_status_duplicates_removed": 0,
-    "js_anchor_patch_blocks_removed": 1,
+    "js_anchor_patch_blocks_removed": 0,
     "js_form_status_patch_duplicates_removed": 0,
-    "alert_feedback_removed": 1,
-    "css_legacy_focus_patch_removed": 1,
+    "alert_feedback_removed": 0,
+    "css_legacy_focus_patch_removed": 0,
     "files": [
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/index.html",
         "rel_path": "index.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
         "rel_path": "qui-sommes-nous.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/activites.html",
         "rel_path": "activites.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/blog.html",
         "rel_path": "blog.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
         "rel_path": "nous-soutenir.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/infos-pratiques.html",
         "rel_path": "infos-pratiques.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
         "rel_path": "mentions-legales.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
         "rel_path": "confidentialite.html",
-        "changed": true,
+        "changed": false,
         "ext": "html",
-        "notes": [
-          "public_comment_cleaner"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/styles.css",
         "rel_path": "styles.css",
-        "changed": true,
+        "changed": false,
         "ext": "css",
-        "notes": [
-          "css_public_comment_cleaner",
-          "css_legacy_focus_patch_removed"
-        ]
+        "notes": []
       },
       {
         "file_path": "gem-casa-di-l-isula-premium-v2-test/script.js",
         "rel_path": "script.js",
-        "changed": true,
+        "changed": false,
         "ext": "js",
-        "notes": [
-          "js_anchor_patch_blocks_removed",
-          "js_public_comment_cleaner",
-          "alert_feedback_removed"
-        ]
+        "notes": []
       }
     ]
   },
