@@ -1,0 +1,51 @@
+{
+  "schema_version": "5.0",
+  "guard_name": "GEM Casa di l’Isula anti-contamination guard",
+  "scope": "public_html_css_js",
+  "forbidden_terms": [
+    "InfoServe",
+    "cybersécurité locale",
+    "réseaux critiques",
+    "Starlink",
+    "WiFi professionnel critique",
+    "audit cyber",
+    "PortoFlow",
+    "Porto-Flow",
+    "assistant territorial",
+    "dashboard territorial",
+    "hacker à capuche",
+    "n8n visible",
+    "Cloud Code visible",
+    "payload visible",
+    "workflow visible",
+    "ID2App Project",
+    "dépannage informatique",
+    "réparateur PC"
+  ],
+  "forbidden_visible_fragments": [
+    "writer_brief",
+    "template_",
+    "REPLACE_",
+    "V6.1",
+    "V7.1"
+  ],
+  "allowed_project_terms": [
+    "GEM",
+    "Casa di l’Isula",
+    "Porto-Vecchio",
+    "lien social",
+    "entraide",
+    "reconstruction",
+    "ancrage local",
+    "blog",
+    "activités",
+    "mécénat",
+    "bénévolat",
+    "HelloAsso",
+    "WCAG 2.2",
+    "accessibilité",
+    "santé mentale",
+    "Corse-du-Sud",
+    "maison ouverte"
+  ]
+}
