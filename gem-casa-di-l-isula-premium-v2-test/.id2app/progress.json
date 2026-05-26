@@ -1,9 +1,9 @@
 {
-  "status": "completed",
+  "status": "running",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
-  "run_id": "1779783119712-A-ASSETS",
+  "run_id": "1779783178629-B",
   "project_id": "gem-casa-di-l-isula-premium-v2",
   "project_name": "GEM Casa di l'Isula",
   "repo": "didier2a/id2app",
@@ -12,59 +12,42 @@
   "branch": "main",
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
-  "expected_count": 2,
-  "completed_count": 2,
+  "expected_count": 3,
+  "completed_count": 1,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 100,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-principal.png",
+  "percent": 33,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/blog.html",
   "current_file_status": "success",
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-icon.png",
-    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-principal.png"
+    "gem-casa-di-l-isula-premium-v2-test/blog.html"
   ],
   "failed_files": [],
   "updated_files": [
     {
-      "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-icon.png",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/blog.html",
       "action": "update",
-      "file_sha": "f8df3de11cb14dfb1fc1cd082153ca44550dd23e",
-      "commit_sha": "3c909c88797d71fc843f5187be9db79c4dc0c453",
-      "commit_url": "https://github.com/didier2a/id2app/commit/3c909c88797d71fc843f5187be9db79c4dc0c453",
+      "file_sha": "335b696c3469ad0d2ca18c21b3bdd6aaaeb3c28c",
+      "commit_sha": "a6f08cfb87fcadaf1b39158a633c42f2bd06e95b",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a6f08cfb87fcadaf1b39158a633c42f2bd06e95b",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "f8df3de11cb14dfb1fc1cd082153ca44550dd23e",
+        "file_sha": "335b696c3469ad0d2ca18c21b3bdd6aaaeb3c28c",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-26T08:12:27.381Z"
-    },
-    {
-      "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-principal.png",
-      "action": "update",
-      "file_sha": "87277faeaf2c5acac9ec44932483e477eae572b4",
-      "commit_sha": "acd90e2ec79a7444c552e6b22b20f7fb8f9c346b",
-      "commit_url": "https://github.com/didier2a/id2app/commit/acd90e2ec79a7444c552e6b22b20f7fb8f9c346b",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "87277faeaf2c5acac9ec44932483e477eae572b4",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-26T08:12:31.606Z"
+      "at": "2026-05-26T08:13:02.536Z"
     }
   ],
   "target_files": [
-    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-icon.png",
-    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-principal.png"
+    "gem-casa-di-l-isula-premium-v2-test/blog.html",
+    "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
+    "gem-casa-di-l-isula-premium-v2-test/infos-pratiques.html"
   ],
-  "updated_at": "2026-05-26T08:12:34.891Z",
+  "updated_at": "2026-05-26T08:13:02.537Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
