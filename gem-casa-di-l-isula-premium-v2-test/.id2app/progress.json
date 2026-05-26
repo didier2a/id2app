@@ -1,0 +1,59 @@
+{
+  "status": "running",
+  "schema_version": "5.0",
+  "publisher_version": "5.0-safe-sequential-verify-retry",
+  "runtime_mode": "safe_sequential_batch_publish",
+  "run_id": "1779776437226-A",
+  "project_id": "gem-casa-di-l-isula-premium-v2",
+  "project_name": "GEM Casa di l'Isula",
+  "repo": "didier2a/id2app",
+  "repo_owner": "didier2a",
+  "repo_name": "id2app",
+  "branch": "main",
+  "site_folder": "gem-casa-di-l-isula-premium-v2-test",
+  "current_phase": "publishing_files_safe_sequential",
+  "expected_count": 5,
+  "completed_count": 1,
+  "failed_count": 0,
+  "skipped_count": 0,
+  "percent": 20,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/index.html",
+  "current_file_status": "success",
+  "completed_files": [
+    "gem-casa-di-l-isula-premium-v2-test/index.html"
+  ],
+  "failed_files": [],
+  "updated_files": [
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/index.html",
+      "action": "create",
+      "file_sha": "018091ef2361d10df72c9c80b355726bea044dc0",
+      "commit_sha": "a3284ff1555a2f2aaab2fe4f88779942600e7f21",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a3284ff1555a2f2aaab2fe4f88779942600e7f21",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "018091ef2361d10df72c9c80b355726bea044dc0",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 1,
+      "at": "2026-05-26T06:20:41.785Z"
+    }
+  ],
+  "target_files": [
+    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-principal.png",
+    "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-casa-di-l-isula-icon.png",
+    "gem-casa-di-l-isula-premium-v2-test/index.html",
+    "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
+    "gem-casa-di-l-isula-premium-v2-test/activites.html",
+    "gem-casa-di-l-isula-premium-v2-test/styles.css",
+    "gem-casa-di-l-isula-premium-v2-test/script.js"
+  ],
+  "updated_at": "2026-05-26T06:20:41.786Z",
+  "next_poll_seconds": 5,
+  "monotonic_guard": true,
+  "publisher_safe_sequential": true,
+  "verification_retry_enabled": true
+}
