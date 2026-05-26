@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /.id2app/
+Disallow: /README.md
+
+Sitemap: https://www.gemcasadilinsula.fr/sitemap.xml
