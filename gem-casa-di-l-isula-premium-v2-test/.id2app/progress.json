@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,11 +13,11 @@
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 11,
-  "completed_count": 10,
+  "completed_count": 11,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 91,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/script.js",
+  "percent": 100,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1a-clean-code-seo-report.json",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v2-test/index.html",
@@ -29,7 +29,8 @@
     "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
     "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
     "gem-casa-di-l-isula-premium-v2-test/styles.css",
-    "gem-casa-di-l-isula-premium-v2-test/script.js"
+    "gem-casa-di-l-isula-premium-v2-test/script.js",
+    "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -202,6 +203,23 @@
       },
       "sequence_index": 10,
       "at": "2026-05-26T07:12:12.187Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1a-clean-code-seo-report.json",
+      "action": "create",
+      "file_sha": "81e2794ec81a1e017fb6d7dfb992fbdef1dcfb98",
+      "commit_sha": "a1ef6a4204188fb0633e184d4746edee94563c94",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a1ef6a4204188fb0633e184d4746edee94563c94",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "81e2794ec81a1e017fb6d7dfb992fbdef1dcfb98",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 11,
+      "at": "2026-05-26T07:12:15.415Z"
     }
   ],
   "target_files": [
@@ -217,7 +235,7 @@
     "gem-casa-di-l-isula-premium-v2-test/script.js",
     "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-26T07:12:12.187Z",
+  "updated_at": "2026-05-26T07:12:15.415Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
