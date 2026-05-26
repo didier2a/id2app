@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,17 +13,18 @@
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 80,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/styles.css",
+  "percent": 100,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/script.js",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v2-test/index.html",
     "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
     "gem-casa-di-l-isula-premium-v2-test/activites.html",
-    "gem-casa-di-l-isula-premium-v2-test/styles.css"
+    "gem-casa-di-l-isula-premium-v2-test/styles.css",
+    "gem-casa-di-l-isula-premium-v2-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-26T06:20:51.145Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/script.js",
+      "action": "create",
+      "file_sha": "4caed0f70cc314cb3a07b032a766235ebd9d22d0",
+      "commit_sha": "ee362dd40bc811db95266a810b7b9ad1f60bb644",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ee362dd40bc811db95266a810b7b9ad1f60bb644",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 2,
+        "file_sha": "4caed0f70cc314cb3a07b032a766235ebd9d22d0",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-26T06:20:55.278Z"
     }
   ],
   "target_files": [
@@ -105,7 +123,7 @@
     "gem-casa-di-l-isula-premium-v2-test/styles.css",
     "gem-casa-di-l-isula-premium-v2-test/script.js"
   ],
-  "updated_at": "2026-05-26T06:20:51.145Z",
+  "updated_at": "2026-05-26T06:20:55.278Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
