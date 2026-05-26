@@ -2,58 +2,40 @@
   "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
-  "run_id": "1779783213428-C",
+  "run_id": "1779783256137-MF",
   "project_id": "gem-casa-di-l-isula-premium-v2",
-  "project_name": "GEM Casa di l'Isula",
+  "project_name": "GEM Casa di l’Isula",
   "repo_owner": "didier2a",
   "repo_name": "id2app",
   "branch": "main",
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
-  "expected_count": 2,
-  "completed_count": 2,
+  "expected_count": 1,
+  "completed_count": 1,
   "failed_count": 0,
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
-    "gem-casa-di-l-isula-premium-v2-test/confidentialite.html"
+    "gem-casa-di-l-isula-premium-v2-test/script.js"
   ],
   "failed_files": [],
   "updated_files": [
     {
-      "file_path": "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/script.js",
       "action": "update",
-      "file_sha": "77b69b0a44b4a91d4f384fcb45b5687504c7be36",
-      "commit_sha": "6c6a53aea55e5750e70d490b2126f0b59e20b476",
-      "commit_url": "https://github.com/didier2a/id2app/commit/6c6a53aea55e5750e70d490b2126f0b59e20b476",
+      "file_sha": "ec7169f87a28111d3c0bf74528e2827d67ddaa4b",
+      "commit_sha": "6a044d1ae4b7ef0c6daecd5503a6a3eff0c769d3",
+      "commit_url": "https://github.com/didier2a/id2app/commit/6a044d1ae4b7ef0c6daecd5503a6a3eff0c769d3",
       "validation_status": "passed",
       "physical_verification": {
         "status": "verified",
         "attempts": 1,
-        "file_sha": "77b69b0a44b4a91d4f384fcb45b5687504c7be36",
+        "file_sha": "ec7169f87a28111d3c0bf74528e2827d67ddaa4b",
         "content_api_status": 200,
         "warning": null
       },
       "sequence_index": 1,
-      "at": "2026-05-26T08:13:37.579Z"
-    },
-    {
-      "file_path": "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
-      "action": "update",
-      "file_sha": "842de46770291a12da36ca995b840c27ef8290b6",
-      "commit_sha": "a8b087b245b83ed997d6f5aa0a42f7264172e772",
-      "commit_url": "https://github.com/didier2a/id2app/commit/a8b087b245b83ed997d6f5aa0a42f7264172e772",
-      "validation_status": "passed",
-      "physical_verification": {
-        "status": "verified",
-        "attempts": 1,
-        "file_sha": "842de46770291a12da36ca995b840c27ef8290b6",
-        "content_api_status": 200,
-        "warning": null
-      },
-      "sequence_index": 2,
-      "at": "2026-05-26T08:13:40.987Z"
+      "at": "2026-05-26T08:14:19.581Z"
     }
   ],
-  "finished_at": "2026-05-26T08:13:42.964Z",
+  "finished_at": "2026-05-26T08:14:21.546Z",
   "publisher_safe_sequential": true,
   "verification_retry_enabled": true
 }
