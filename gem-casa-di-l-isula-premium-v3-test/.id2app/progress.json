@@ -13,11 +13,11 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 11,
-  "completed_count": 6,
+  "completed_count": 7,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 55,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/contact.html",
+  "percent": 64,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v3-test/index.html",
@@ -25,7 +25,8 @@
     "gem-casa-di-l-isula-premium-v3-test/activites.html",
     "gem-casa-di-l-isula-premium-v3-test/blog.html",
     "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
-    "gem-casa-di-l-isula-premium-v3-test/contact.html"
+    "gem-casa-di-l-isula-premium-v3-test/contact.html",
+    "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -130,6 +131,23 @@
       },
       "sequence_index": 6,
       "at": "2026-05-26T11:03:11.082Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/mentions-legales.html",
+      "action": "update",
+      "file_sha": "3a94e02a08ae53bafa5be87fb66d47eb48baaada",
+      "commit_sha": "498c1dab2177e1b3a7ae77a9e14c0d37dcf7262c",
+      "commit_url": "https://github.com/didier2a/id2app/commit/498c1dab2177e1b3a7ae77a9e14c0d37dcf7262c",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "3a94e02a08ae53bafa5be87fb66d47eb48baaada",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 7,
+      "at": "2026-05-26T11:03:14.180Z"
     }
   ],
   "target_files": [
@@ -145,7 +163,7 @@
     "gem-casa-di-l-isula-premium-v3-test/script.js",
     "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-1a-clean-code-seo-report.json"
   ],
-  "updated_at": "2026-05-26T11:03:11.082Z",
+  "updated_at": "2026-05-26T11:03:14.180Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
