@@ -13,14 +13,15 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 3,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 33,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/index.html",
+  "percent": 67,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/qui-sommes-nous.html",
   "current_file_status": "success",
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v3-test/index.html"
+    "gem-casa-di-l-isula-premium-v3-test/index.html",
+    "gem-casa-di-l-isula-premium-v3-test/qui-sommes-nous.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,6 +41,23 @@
       },
       "sequence_index": 1,
       "at": "2026-05-26T10:59:45.506Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/qui-sommes-nous.html",
+      "action": "update",
+      "file_sha": "36283ea9664256bc912d816c2502ee5e0c340382",
+      "commit_sha": "479a0730c8c33d99dd3aaad029f3a6c8e008ac38",
+      "commit_url": "https://github.com/didier2a/id2app/commit/479a0730c8c33d99dd3aaad029f3a6c8e008ac38",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "36283ea9664256bc912d816c2502ee5e0c340382",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-26T10:59:48.503Z"
     }
   ],
   "target_files": [
@@ -47,7 +65,7 @@
     "gem-casa-di-l-isula-premium-v3-test/qui-sommes-nous.html",
     "gem-casa-di-l-isula-premium-v3-test/activites.html"
   ],
-  "updated_at": "2026-05-26T10:59:45.506Z",
+  "updated_at": "2026-05-26T10:59:48.503Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
