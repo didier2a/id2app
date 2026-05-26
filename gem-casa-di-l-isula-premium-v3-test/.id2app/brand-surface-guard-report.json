@@ -2,22 +2,27 @@
   "status": "completed",
   "schema_version": "7.0-brand-guard",
   "module": "ID2App Generic Brand Surface Guard",
-  "run_id": "1779793130066-BG1",
+  "run_id": "1779793348236-BG2",
   "project_id": "gem-casa-di-l-isula-premium-v3",
   "project_name": "GEM Casa di l'Isula",
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "report_only": false,
-  "created_at": "2026-05-26T10:58:53.2821301Z",
+  "created_at": "2026-05-26T11:02:32.5266272Z",
   "stats": {
     "scanned": 10,
     "changed": 1,
     "html_changed": 0,
     "css_changed": 1,
-    "asset_refs_rewritten": 24,
-    "css_palette_replacements": 39,
-    "previous_brand_blocks_removed": 0,
+    "asset_refs_rewritten": 72,
+    "css_palette_replacements": 2,
+    "previous_brand_blocks_removed": 1,
     "css_override_applied": true,
-    "forbidden_palette_remaining": [],
+    "forbidden_palette_remaining": [
+      {
+        "signal": "#00E6FF",
+        "count": 1
+      }
+    ],
     "files": [
       {
         "file_path": "gem-casa-di-l-isula-premium-v3-test/index.html",
