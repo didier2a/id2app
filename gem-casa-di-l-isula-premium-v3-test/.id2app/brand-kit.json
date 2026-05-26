@@ -1,0 +1,123 @@
+{
+  "schema_version": "5.0",
+  "brand_name": "GEM",
+  "signature": "Casa di l’Isula",
+  "location": "Porto-Vecchio",
+  "tagline": "À l’abri des solitudes, un lieu pour recréer du lien.",
+  "positioning": "Une maison numérique chaleureuse et professionnelle pour présenter le GEM Casa di l’Isula, rompre l’isolement et faciliter l’accès au lien social à Porto-Vecchio.",
+  "local_anchor": "Porto-Vecchio • Corse-du-Sud • maison ouverte • lien social",
+  "values": [
+    "Entraide",
+    "Reconstruction",
+    "Ancrage local",
+    "Partage",
+    "Sérénité"
+  ],
+  "primary_cta": {
+    "label": "Nous contacter",
+    "href": "contact.html"
+  },
+  "secondary_cta": {
+    "label": "Découvrir nos activités",
+    "href": "activites.html"
+  },
+  "visual_direction": {
+    "style": "design premium méditerranéen, lumineux, apaisant, accessible, inspiré de la porte ouverte, des arches, de la mer, du beige clair, du bleu profond et du vert doux",
+    "palette": {
+      "deep_blue": "#0B3A5E",
+      "sky_blue": "#3FA9D6",
+      "sun_yellow": "#F6B64A",
+      "olive_green": "#76B943",
+      "warm_white": "#FAF7F0",
+      "terracotta": "#C9774A"
+    },
+    "typography": {
+      "headings": "Playfair Display",
+      "body": "Nunito Sans"
+    },
+    "motifs": [
+      "porte ouverte",
+      "arche méditerranéenne",
+      "feuille d’olivier",
+      "soleil",
+      "maison",
+      "main tendue",
+      "livre ouvert"
+    ],
+    "forbidden_visuals": [
+      "ambiance médicale froide",
+      "imagerie anxiogène",
+      "couloirs hospitaliers",
+      "effets clignotants",
+      "pictos stigmatisants",
+      "langage administratif dense"
+    ]
+  },
+  "logo_policy": {
+    "use_image_logo": true,
+    "primary_logo_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
+    "hero_logo_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
+    "footer_logo_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
+    "icon_logo_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png",
+    "header_logo_mode": "compact_dynamic_scroll",
+    "hero_logo_mode": "full_principal_logo",
+    "alt": "GEM Casa di l’Isula — Porto-Vecchio"
+  },
+  "footer_groups": [
+    {
+      "title": "Découvrir",
+      "links": [
+        {
+          "label": "Qui sommes-nous ?",
+          "href": "qui-sommes-nous.html"
+        },
+        {
+          "label": "Nos activités",
+          "href": "activites.html"
+        },
+        {
+          "label": "Blog",
+          "href": "blog.html"
+        }
+      ]
+    },
+    {
+      "title": "Participer",
+      "links": [
+        {
+          "label": "Nous soutenir",
+          "href": "nous-soutenir.html"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html"
+        }
+      ]
+    },
+    {
+      "title": "Légal",
+      "links": [
+        {
+          "label": "Mentions légales",
+          "href": "mentions-legales.html"
+        },
+        {
+          "label": "Confidentialité",
+          "href": "confidentialite.html"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
+      "source_path": "project/assets/logo-gem-casa-di-l-isula-principal.png",
+      "mime_type": "image/png"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png",
+      "source_path": "project/assets/logo-gem-casa-di-l-isula-icon.png",
+      "mime_type": "image/png"
+    }
+  ]
+}
