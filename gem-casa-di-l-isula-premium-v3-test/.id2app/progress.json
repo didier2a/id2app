@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,14 +13,15 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 2,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 50,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png",
+  "percent": 100,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
   "current_file_status": "success",
   "completed_files": [
-    "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png"
+    "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png",
+    "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png"
   ],
   "failed_files": [],
   "updated_files": [
@@ -40,13 +41,30 @@
       },
       "sequence_index": 1,
       "at": "2026-05-26T09:39:46.405Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png",
+      "action": "create",
+      "file_sha": "910c45736f593466340083c7b9c5b1a7c6995828",
+      "commit_sha": "de26bd6d7e9038d554abc2c2d726ceb10783b23b",
+      "commit_url": "https://github.com/didier2a/id2app/commit/de26bd6d7e9038d554abc2c2d726ceb10783b23b",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "910c45736f593466340083c7b9c5b1a7c6995828",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 2,
+      "at": "2026-05-26T09:39:50.461Z"
     }
   ],
   "target_files": [
     "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-icon.png",
     "gem-casa-di-l-isula-premium-v3-test/assets/logo-gem-casa-di-l-isula-principal.png"
   ],
-  "updated_at": "2026-05-26T09:39:46.405Z",
+  "updated_at": "2026-05-26T09:39:50.461Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
