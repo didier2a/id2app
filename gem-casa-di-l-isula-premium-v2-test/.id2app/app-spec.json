@@ -1,0 +1,669 @@
+{
+  "schema_version": "5.0",
+  "app_spec_version": "gem-casa-di-l-isula-premium-v2-x6-implementation",
+  "generation_mode": "compile_from_json_spec_abc_true_sequential",
+  "project": {
+    "id": "gem-casa-di-l-isula-premium-v2",
+    "name": "GEM Casa di l’Isula",
+    "type": "multi_page_website",
+    "language": "fr",
+    "sector": "social_inclusion_association",
+    "subsector": "gem_lien_social_porto_vecchio",
+    "objective": "Créer une maison numérique premium, chaleureuse et accessible pour le GEM Casa di l’Isula à Porto-Vecchio.",
+    "tagline": "À l’abri des solitudes, un lieu pour recréer du lien.",
+    "tone": "narratif, chaleureux, clair, institutionnel sans jargon, accessible, respectueux"
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "gem-casa-di-l-isula-premium-v2-test",
+    "checkpoint_path": "gem-casa-di-l-isula-premium-v2-test/.id2app/checkpoint.json",
+    "progress_path": "gem-casa-di-l-isula-premium-v2-test/.id2app/progress.json",
+    "final_report_path": "gem-casa-di-l-isula-premium-v2-test/.id2app/final-report.json",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "brand_kit": {
+    "schema_version": "5.0",
+    "brand_name": "GEM",
+    "signature": "Casa di l’Isula",
+    "location": "Porto-Vecchio",
+    "tagline": "À l’abri des solitudes, un lieu pour recréer du lien.",
+    "positioning": "Une maison numérique chaleureuse et professionnelle pour présenter le GEM Casa di l’Isula, rompre l’isolement et faciliter l’accès au lien social à Porto-Vecchio.",
+    "local_anchor": "Porto-Vecchio • Corse-du-Sud • maison ouverte • lien social",
+    "values": [
+      "Entraide",
+      "Reconstruction",
+      "Ancrage local",
+      "Partage",
+      "Sérénité"
+    ],
+    "primary_cta": {
+      "label": "Nous contacter",
+      "href": "infos-pratiques.html"
+    },
+    "secondary_cta": {
+      "label": "Découvrir nos activités",
+      "href": "activites.html"
+    },
+    "visual_direction": {
+      "style": "design premium méditerranéen, lumineux, apaisant, accessible, inspiré de la porte ouverte, des arches, de la mer, du beige clair, du bleu profond et du vert doux",
+      "palette": {
+        "deep_blue": "#0B3A5E",
+        "sky_blue": "#3FA9D6",
+        "sun_yellow": "#F6B64A",
+        "olive_green": "#76B943",
+        "warm_white": "#FAF7F0",
+        "terracotta": "#C9774A"
+      },
+      "typography": {
+        "headings": "Playfair Display",
+        "body": "Nunito Sans"
+      },
+      "motifs": [
+        "porte ouverte",
+        "arche méditerranéenne",
+        "feuille d’olivier",
+        "soleil",
+        "maison",
+        "main tendue",
+        "livre ouvert"
+      ],
+      "forbidden_visuals": [
+        "ambiance médicale froide",
+        "imagerie anxiogène",
+        "couloirs hospitaliers",
+        "effets clignotants",
+        "pictos stigmatisants",
+        "langage administratif dense"
+      ]
+    },
+    "logo_policy": {
+      "use_image_logo": true,
+      "primary_logo_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-principal.png",
+      "hero_logo_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-principal.png",
+      "footer_logo_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-principal.png",
+      "icon_logo_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-icon.png",
+      "header_logo_mode": "compact_dynamic_scroll",
+      "hero_logo_mode": "full_principal_logo",
+      "alt": "GEM Casa di l’Isula — Porto-Vecchio"
+    },
+    "footer_groups": [
+      {
+        "title": "Découvrir",
+        "links": [
+          {
+            "label": "Qui sommes-nous ?",
+            "href": "qui-sommes-nous.html"
+          },
+          {
+            "label": "Nos activités",
+            "href": "activites.html"
+          },
+          {
+            "label": "Blog",
+            "href": "blog.html"
+          }
+        ]
+      },
+      {
+        "title": "Participer",
+        "links": [
+          {
+            "label": "Nous soutenir",
+            "href": "nous-soutenir.html"
+          },
+          {
+            "label": "Infos pratiques",
+            "href": "infos-pratiques.html"
+          }
+        ]
+      },
+      {
+        "title": "Légal",
+        "links": [
+          {
+            "label": "Mentions légales",
+            "href": "mentions-legales.html"
+          },
+          {
+            "label": "Confidentialité",
+            "href": "confidentialite.html"
+          }
+        ]
+      }
+    ],
+    "assets": [
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-principal.png",
+        "source_path": "project/assets/logo-gem-principal.png",
+        "mime_type": "image/png"
+      },
+      {
+        "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-icon.png",
+        "source_path": "project/assets/logo-gem-icon.png",
+        "mime_type": "image/png"
+      }
+    ]
+  },
+  "navigation_contract": {
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Qui sommes-nous ?",
+        "href": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous"
+      },
+      {
+        "label": "Nos activités",
+        "href": "activites.html",
+        "page_id": "activites"
+      },
+      {
+        "label": "Blog",
+        "href": "blog.html",
+        "page_id": "blog"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "nous-soutenir.html",
+        "page_id": "nous-soutenir"
+      },
+      {
+        "label": "Infos pratiques",
+        "href": "infos-pratiques.html",
+        "page_id": "infos-pratiques"
+      }
+    ],
+    "primary_cta": {
+      "label": "Nous contacter",
+      "href": "infos-pratiques.html"
+    }
+  },
+  "assets": [
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-principal.png",
+      "source_path": "project/assets/logo-gem-principal.png",
+      "mime_type": "image/png"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/assets/logo-gem-icon.png",
+      "source_path": "project/assets/logo-gem-icon.png",
+      "mime_type": "image/png"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/index.html",
+      "seo_title": "GEM Casa di l’Isula — Maison ouverte et lien social à Porto-Vecchio",
+      "meta_description": "Accueil du GEM Casa di l’Isula à Porto-Vecchio : entraide, reconstruction, ancrage local, activités et maison numérique pour recréer du lien social.",
+      "archetype": "home",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l’Isula",
+          "title": "Une porte ouverte sur le lien social à Porto-Vecchio",
+          "lead": "À l’abri des solitudes, un espace d’accueil clair, chaleureux et accessible pour retrouver du lien, de la confiance et une place dans la cité.",
+          "paragraphs": [
+            "Le site est pensé comme le prolongement numérique de la maison : il doit accueillir avant même que la personne pousse la porte.",
+            "Il présente la mission du GEM avec des mots simples, une esthétique apaisante et un parcours sans surcharge cognitive."
+          ],
+          "metrics": [
+            {
+              "value": "Entraide",
+              "label": "se sentir accueilli"
+            },
+            {
+              "value": "Reconstruction",
+              "label": "retrouver confiance"
+            },
+            {
+              "value": "Ancrage local",
+              "label": "vivre Porto-Vecchio"
+            },
+            {
+              "value": "Accueil",
+              "label": "une porte ouverte"
+            }
+          ],
+          "cta": {
+            "primary": "Nous contacter",
+            "primary_href": "infos-pratiques.html",
+            "secondary": "Découvrir nos activités",
+            "secondary_href": "activites.html"
+          }
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Vision et missions",
+          "title": "Trois piliers pour recréer du lien",
+          "lead": "L’action du GEM s’appuie sur l’accueil inconditionnel, la reconstruction progressive et l’ancrage dans la vie locale.",
+          "cards": [
+            {
+              "title": "Entraide",
+              "body": "Un lieu où chacun peut être accueilli sans jugement et avancer à son rythme."
+            },
+            {
+              "title": "Reconstruction",
+              "body": "Des activités et temps collectifs pour retrouver confiance, expression et présence aux autres."
+            },
+            {
+              "title": "Ancrage local",
+              "body": "Un GEM vivant à Porto-Vecchio, ouvert sur la cité, les sorties, les partenariats et le quotidien."
+            }
+          ]
+        },
+        {
+          "kind": "offers",
+          "eyebrow": "Le quotidien",
+          "title": "Des activités comme supports de lien social",
+          "lead": "Peindre, cuisiner, marcher, jardiner ou écrire ne sont pas de simples occupations : ce sont des occasions de se retrouver, d’échanger et d’exister dans un collectif.",
+          "cards": [
+            {
+              "meta": "Créer",
+              "title": "Peindre et créer",
+              "body": "Des ateliers pour s’exprimer autrement, retrouver confiance et explorer sa créativité sans pression de résultat."
+            },
+            {
+              "meta": "Partager",
+              "title": "Cuisiner et partager",
+              "body": "Des moments de convivialité autour de la table, où le repas devient un prétexte à l’échange."
+            },
+            {
+              "meta": "Sortir",
+              "title": "Marcher et découvrir",
+              "body": "Des sorties douces pour retrouver le monde extérieur, un pas après l’autre."
+            }
+          ],
+          "cta": {
+            "primary": "Voir les activités",
+            "primary_href": "activites.html"
+          }
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Maison ouverte",
+          "title": "Le site accueille déjà, avant même la première rencontre",
+          "lead": "Le niveau premium n’est pas un effet décoratif. Il sert une intention : rassurer, clarifier et donner envie de revenir vers les autres.",
+          "bullets": [
+            "lecture simple",
+            "contrastes suffisants",
+            "parcours mobile-first",
+            "ton humain et non administratif",
+            "accès rapide aux informations pratiques"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
+      "seo_title": "Qui sommes-nous ? — GEM Casa di l’Isula Porto-Vecchio",
+      "meta_description": "Histoire, cadre national, gouvernance et équipe du GEM Casa di l’Isula à Porto-Vecchio.",
+      "archetype": "about",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Histoire et organisation",
+          "title": "Une association locale fondée sur l’accueil et l’autogestion accompagnée",
+          "lead": "Casa di l’Isula repose sur un équilibre entre un cadre professionnel stable et l’engagement citoyen des adhérents.",
+          "paragraphs": [
+            "Le GEM est un lieu de participation, de parole et d’entraide. Il ne se réduit pas à une structure administrative : il existe par celles et ceux qui le font vivre."
+          ],
+          "cta": {
+            "primary": "Nous rencontrer",
+            "primary_href": "infos-pratiques.html",
+            "secondary": "Comprendre nos activités",
+            "secondary_href": "activites.html"
+          }
+        },
+        {
+          "kind": "steps",
+          "eyebrow": "Chronologie",
+          "title": "Le chemin vers notre propre maison",
+          "lead": "L’histoire locale du GEM se construit par étapes, jusqu’à l’autogestion accompagnée.",
+          "steps": [
+            {
+              "number": "2008",
+              "text": "Création du GEM à Porto-Vecchio, initialement géré par ISATIS."
+            },
+            {
+              "number": "2014",
+              "text": "Passage en association loi 1901 et installation dans ses propres locaux."
+            },
+            {
+              "number": "2020",
+              "text": "Transition vers l’autogestion avec l’appui de partenaires et du parrainage local."
+            }
+          ]
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Gouvernance",
+          "title": "Un équilibre entre encadrement professionnel et implication associative",
+          "lead": "La dynamique du GEM repose sur la complémentarité : des animatrices professionnelles assurent le cadre, tandis que les adhérents prennent part à la vie associative.",
+          "cards": [
+            {
+              "title": "Animatrices professionnelles",
+              "body": "Muriel Trupheme et Nathalie Maxant assurent la coordination, la gestion quotidienne et le cadre stable."
+            },
+            {
+              "title": "Adhérents engagés",
+              "body": "Le bureau associatif donne une place réelle aux adhérents dans la gouvernance et la vie du lieu."
+            },
+            {
+              "title": "Cadre citoyen non médical",
+              "body": "Le GEM n’est pas un service de soin : c’est un espace de lien, de participation et de dignité."
+            }
+          ]
+        },
+        {
+          "kind": "deliverables",
+          "eyebrow": "Cadre national",
+          "title": "Un lieu reconnu, respectueux de la dignité et du consentement",
+          "lead": "La présentation du GEM doit rester claire, juste et respectueuse des personnes. Toute photo ou témoignage suppose accord et validation.",
+          "bullets": [
+            "respect du cadre GEM",
+            "dignité des personnes",
+            "consentement pour les témoignages",
+            "parole sensible mais non stigmatisante",
+            "validation par l’équipe et le bureau"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "activites",
+      "title": "Nos activités",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/activites.html",
+      "seo_title": "Nos activités — ateliers et lien social au GEM Casa di l’Isula",
+      "meta_description": "Ateliers créatifs, cuisine, sorties, jardinage et temps collectifs du GEM Casa di l’Isula à Porto-Vecchio.",
+      "archetype": "service",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Le quotidien au GEM",
+          "title": "Des activités pour retrouver confiance, expression et lien",
+          "lead": "Les ateliers ne sont pas une fin en soi : ils deviennent des supports concrets pour se rencontrer, reprendre une place et partager un moment."
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Ateliers",
+          "title": "Créer, cuisiner, marcher, jardiner, se retrouver",
+          "lead": "Chaque activité doit être présentée comme un espace d’accueil et non comme une performance à réussir.",
+          "cards": [
+            {
+              "title": "Peindre et créer",
+              "body": "Un espace pour exprimer autrement, explorer, tenter et se découvrir sans pression."
+            },
+            {
+              "title": "Cuisiner et partager",
+              "body": "Des moments de convivialité autour d’un repas préparé et partagé ensemble."
+            },
+            {
+              "title": "Marcher et sortir",
+              "body": "Des balades douces pour reprendre contact avec la ville, la mer et le rythme extérieur."
+            },
+            {
+              "title": "Jardiner et prendre soin",
+              "body": "Des gestes simples pour renouer avec le vivant, la patience et l’attention."
+            },
+            {
+              "title": "Bien-être et parole",
+              "body": "Des temps pour respirer, échanger et retrouver un cadre apaisant."
+            },
+            {
+              "title": "Vie commune",
+              "body": "Des temps informels qui comptent autant que les ateliers : café, discussion, accueil."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Lien social",
+          "title": "Le quotidien devient une porte de sortie de l’isolement",
+          "lead": "Ce qui compte n’est pas seulement ce qui est produit, mais ce qui se reconstruit autour : une parole, une habitude, une confiance, une présence.",
+          "bullets": [
+            "rompre la solitude",
+            "se sentir attendu",
+            "retrouver le plaisir de faire",
+            "reprendre confiance",
+            "partager sans jugement"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "blog",
+      "title": "Blog",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/blog.html",
+      "seo_title": "Blog du GEM Casa di l’Isula — récits, créations et actualités",
+      "meta_description": "Un blog vivant pour partager les récits, créations, témoignages et actualités du GEM Casa di l’Isula à Porto-Vecchio.",
+      "archetype": "editorial",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Journal vivant",
+          "title": "Un espace d’écriture, de mémoire et de création",
+          "lead": "Le blog donne une place aux récits sensibles, aux créations, aux témoignages et aux nouvelles du GEM, toujours avec consentement et respect."
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Rubriques",
+          "title": "Des nouvelles qui racontent la vie du lieu",
+          "lead": "Le blog doit rester lisible, doux et vivant. Il peut accueillir des textes courts, des photos validées, des créations et des retours d’activité.",
+          "cards": [
+            {
+              "title": "Actualités du GEM",
+              "body": "Annonces, rencontres, temps forts, projets collectifs et événements."
+            },
+            {
+              "title": "Créations d’adhérents",
+              "body": "Peintures, textes, photos ou objets réalisés dans les ateliers, publiés avec accord."
+            },
+            {
+              "title": "Récits sensibles",
+              "body": "Des fragments de vie et des témoignages relus avec attention, sans exposition inutile."
+            }
+          ]
+        },
+        {
+          "kind": "deliverables",
+          "eyebrow": "Éthique éditoriale",
+          "title": "Publier sans exposer",
+          "lead": "Le blog doit protéger les personnes autant qu’il valorise leurs expressions.",
+          "bullets": [
+            "accord écrit pour les photos",
+            "relecture des témoignages",
+            "aucun détail personnel inutile",
+            "ton digne et non sensationnaliste",
+            "modération avant publication"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
+      "seo_title": "Nous soutenir — mécénat, dons et bénévolat pour GEM Casa di l’Isula",
+      "meta_description": "Soutenir le GEM Casa di l’Isula : mécénat, dons matériels, bénévolat, partenariats et appui local à Porto-Vecchio.",
+      "archetype": "offer",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Soutien et mécénat",
+          "title": "Aider la maison à rester ouverte, vivante et accueillante",
+          "lead": "Soutenir le GEM, c’est participer à un espace où les personnes fragilisées peuvent retrouver une place, un rythme et des liens."
+        },
+        {
+          "kind": "offers",
+          "eyebrow": "Formes de soutien",
+          "title": "Donner, transmettre, accompagner",
+          "lead": "Le soutien peut prendre plusieurs formes, de la contribution financière au don de matériel, du bénévolat ponctuel au partenariat local.",
+          "cards": [
+            {
+              "meta": "Don",
+              "title": "Soutien financier",
+              "body": "Contribuer aux activités, aux sorties, au matériel et à la vie quotidienne du lieu."
+            },
+            {
+              "meta": "Matériel",
+              "title": "Dons utiles",
+              "body": "Aider avec du matériel créatif, cuisine, jardinage ou équipement validé par l’équipe."
+            },
+            {
+              "meta": "Partenariat",
+              "title": "Mécénat local",
+              "body": "Permettre à des acteurs du territoire de soutenir une maison de lien social."
+            }
+          ],
+          "cta": {
+            "primary": "Proposer un soutien",
+            "primary_href": "infos-pratiques.html"
+          }
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Transparence",
+          "title": "Un soutien doit rester simple, utile et respectueux",
+          "lead": "Le site doit expliquer clairement comment aider, sans pression ni culpabilisation.",
+          "bullets": [
+            "dons orientés vers les besoins réels",
+            "contact préalable pour le matériel",
+            "respect du cadre associatif",
+            "possibilité de bouton HelloAsso",
+            "remerciements sobres et dignes"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "infos-pratiques",
+      "title": "Infos pratiques",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/infos-pratiques.html",
+      "seo_title": "Infos pratiques — GEM Casa di l’Isula Porto-Vecchio",
+      "meta_description": "Adresse, horaires, accès, contact et formulaire du GEM Casa di l’Isula à Porto-Vecchio.",
+      "archetype": "contact",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Venir vers nous",
+          "title": "Notre porte est ouverte, vraiment",
+          "lead": "Les informations pratiques doivent rassurer : où venir, quand appeler, comment écrire et comment préparer une première rencontre."
+        },
+        {
+          "kind": "checks",
+          "eyebrow": "Accès",
+          "title": "Ce qu’il faut savoir avant de venir",
+          "lead": "La page doit être directe, lisible sur mobile et pensée pour les personnes ou familles qui cherchent une réponse simple.",
+          "bullets": [
+            "adresse à compléter",
+            "horaires à vérifier",
+            "accès et stationnement",
+            "contact téléphonique",
+            "formulaire simple",
+            "réponse humaine"
+          ]
+        },
+        {
+          "kind": "services",
+          "eyebrow": "Formulaire",
+          "title": "Écrire sans complexité",
+          "lead": "Le formulaire doit rester court, rassurant et accessible. Il ne doit jamais donner l’impression d’un dossier administratif.",
+          "cards": [
+            {
+              "title": "Première demande",
+              "body": "Demander des informations ou préparer une première rencontre."
+            },
+            {
+              "title": "Partenaire ou professionnel",
+              "body": "Entrer en relation avec l’équipe pour orienter, soutenir ou coopérer."
+            },
+            {
+              "title": "Soutien",
+              "body": "Proposer une aide, un don, un partenariat ou un temps bénévole."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/mentions-legales.html",
+      "seo_title": "Mentions légales — GEM Casa di l’Isula",
+      "meta_description": "Mentions légales du site GEM Casa di l’Isula. Informations à compléter avant publication officielle.",
+      "archetype": "legal",
+      "sections": [
+        {
+          "kind": "legal",
+          "eyebrow": "Conformité",
+          "title": "Mentions légales",
+          "lead": "Cette page doit être complétée avec les informations exactes avant mise en production.",
+          "bullets": [
+            "éditeur du site",
+            "responsable de publication",
+            "hébergeur",
+            "SIRET ou identification associative",
+            "contact officiel"
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/confidentialite.html",
+      "seo_title": "Confidentialité — GEM Casa di l’Isula",
+      "meta_description": "Politique de confidentialité du site GEM Casa di l’Isula. Données personnelles, formulaire et consentement.",
+      "archetype": "legal",
+      "sections": [
+        {
+          "kind": "legal",
+          "eyebrow": "Données personnelles",
+          "title": "Politique de confidentialité",
+          "lead": "Cette page doit rester claire, accessible et conforme au RGPD, sans inventer de données juridiques manquantes.",
+          "bullets": [
+            "finalité du formulaire",
+            "durée de conservation",
+            "droits des personnes",
+            "contact RGPD",
+            "cookies éventuels"
+          ]
+        }
+      ]
+    }
+  ],
+  "quality_contract": {
+    "must_have": [
+      "header",
+      "main",
+      "footer",
+      "skip link",
+      "responsive navigation",
+      "accessible form feedback",
+      "alt text"
+    ],
+    "must_not_have": [
+      "jargon administratif dense",
+      "imagerie anxiogène",
+      "animations clignotantes",
+      "promesses irréalistes",
+      "traces ID2App publiques"
+    ],
+    "accessibility": [
+      "contrastes suffisants",
+      "navigation clavier",
+      "WCAG 2.2 orientation",
+      "pas d’éléments agressifs"
+    ]
+  }
+}
