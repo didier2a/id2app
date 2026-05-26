@@ -13,17 +13,18 @@
   "site_folder": "gem-casa-di-l-isula-premium-v2-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 13,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 31,
-  "current_file": "gem-casa-di-l-isula-premium-v2-test/blog.html",
+  "percent": 38,
+  "current_file": "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v2-test/index.html",
     "gem-casa-di-l-isula-premium-v2-test/qui-sommes-nous.html",
     "gem-casa-di-l-isula-premium-v2-test/activites.html",
-    "gem-casa-di-l-isula-premium-v2-test/blog.html"
+    "gem-casa-di-l-isula-premium-v2-test/blog.html",
+    "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-26T08:16:59.711Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v2-test/nous-soutenir.html",
+      "action": "update",
+      "file_sha": "425a0eff249d053f0bb5855c09dd225f00be5f2f",
+      "commit_sha": "ea961fc3e5455a6304934c432318a6a783786e85",
+      "commit_url": "https://github.com/didier2a/id2app/commit/ea961fc3e5455a6304934c432318a6a783786e85",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "425a0eff249d053f0bb5855c09dd225f00be5f2f",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-26T08:17:03.379Z"
     }
   ],
   "target_files": [
@@ -111,7 +129,7 @@
     "gem-casa-di-l-isula-premium-v2-test/robots.txt",
     "gem-casa-di-l-isula-premium-v2-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-26T08:16:59.711Z",
+  "updated_at": "2026-05-26T08:17:03.379Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
