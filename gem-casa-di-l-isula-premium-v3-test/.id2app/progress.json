@@ -13,11 +13,11 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 13,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 85,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/sitemap.xml",
+  "percent": 92,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/robots.txt",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v3-test/index.html",
@@ -30,7 +30,8 @@
     "gem-casa-di-l-isula-premium-v3-test/confidentialite.html",
     "gem-casa-di-l-isula-premium-v3-test/styles.css",
     "gem-casa-di-l-isula-premium-v3-test/script.js",
-    "gem-casa-di-l-isula-premium-v3-test/sitemap.xml"
+    "gem-casa-di-l-isula-premium-v3-test/sitemap.xml",
+    "gem-casa-di-l-isula-premium-v3-test/robots.txt"
   ],
   "failed_files": [],
   "updated_files": [
@@ -220,6 +221,23 @@
       },
       "sequence_index": 11,
       "at": "2026-05-28T15:02:00.171Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/robots.txt",
+      "action": "update",
+      "file_sha": "ddcb557f29ff7b16bdaa53c837932408e07446c8",
+      "commit_sha": "8f3757be60c2f1b5eb670a343c40b09d65be08a2",
+      "commit_url": "https://github.com/didier2a/id2app/commit/8f3757be60c2f1b5eb670a343c40b09d65be08a2",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "ddcb557f29ff7b16bdaa53c837932408e07446c8",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 12,
+      "at": "2026-05-28T15:02:03.734Z"
     }
   ],
   "target_files": [
@@ -237,7 +255,7 @@
     "gem-casa-di-l-isula-premium-v3-test/robots.txt",
     "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-1-seo-accessibility-report.json"
   ],
-  "updated_at": "2026-05-28T15:02:00.171Z",
+  "updated_at": "2026-05-28T15:02:03.734Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
