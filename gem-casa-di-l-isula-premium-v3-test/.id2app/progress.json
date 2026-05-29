@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "5.0",
   "publisher_version": "5.0-safe-sequential-verify-retry",
   "runtime_mode": "safe_sequential_batch_publish",
@@ -13,17 +13,18 @@
   "site_folder": "gem-casa-di-l-isula-premium-v3-test",
   "current_phase": "publishing_files_safe_sequential",
   "expected_count": 5,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
-  "percent": 80,
-  "current_file": "gem-casa-di-l-isula-premium-v3-test/script.js",
+  "percent": 100,
+  "current_file": "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-ux-public-surface-report.json",
   "current_file_status": "success",
   "completed_files": [
     "gem-casa-di-l-isula-premium-v3-test/activites.html",
     "gem-casa-di-l-isula-premium-v3-test/nous-soutenir.html",
     "gem-casa-di-l-isula-premium-v3-test/styles.css",
-    "gem-casa-di-l-isula-premium-v3-test/script.js"
+    "gem-casa-di-l-isula-premium-v3-test/script.js",
+    "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-ux-public-surface-report.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -94,6 +95,23 @@
       },
       "sequence_index": 4,
       "at": "2026-05-29T02:38:48.433Z"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-ux-public-surface-report.json",
+      "action": "update",
+      "file_sha": "a42e8283595f705ebe646386e170bf5729070836",
+      "commit_sha": "2bfc6af0e4771d720afa0d1da76ec801ce802de7",
+      "commit_url": "https://github.com/didier2a/id2app/commit/2bfc6af0e4771d720afa0d1da76ec801ce802de7",
+      "validation_status": "passed",
+      "physical_verification": {
+        "status": "verified",
+        "attempts": 1,
+        "file_sha": "a42e8283595f705ebe646386e170bf5729070836",
+        "content_api_status": 200,
+        "warning": null
+      },
+      "sequence_index": 5,
+      "at": "2026-05-29T02:38:51.122Z"
     }
   ],
   "target_files": [
@@ -103,7 +121,7 @@
     "gem-casa-di-l-isula-premium-v3-test/script.js",
     "gem-casa-di-l-isula-premium-v3-test/.id2app/v7-ux-public-surface-report.json"
   ],
-  "updated_at": "2026-05-29T02:38:48.433Z",
+  "updated_at": "2026-05-29T02:38:51.122Z",
   "next_poll_seconds": 5,
   "monotonic_guard": true,
   "publisher_safe_sequential": true,
