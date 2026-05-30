@@ -1,0 +1,43 @@
+{
+  "schema_version": "id2app-v5-gem-source-summary-1.0",
+  "project_key": "gem-casa-di-l-isula-v5-docs",
+  "project_name": "GEM Casa di l'Isula",
+  "source_documents": {
+    "logo": "gem-casa-di-l-isula-v5-docs/assets/logo.png",
+    "charte_print": "gem-casa-di-l-isula-v5-docs/assets/charte-print.png",
+    "spec_md": "gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md"
+  },
+  "source_urls": {
+    "logo": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png",
+    "charte_print": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png",
+    "spec_md": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md"
+  },
+  "source_files": [
+    {
+      "target_name": ".id2app/source/spec_gem_casa_di_l_isula_v3.md",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+      "role": "spec_md",
+      "already_staged": true,
+      "mime_type": "text/markdown",
+      "github_path": "gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md"
+    },
+    {
+      "target_name": "assets/logo.png",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png",
+      "role": "logo",
+      "already_staged": true,
+      "mime_type": "image/png",
+      "github_path": "gem-casa-di-l-isula-v5-docs/assets/logo.png"
+    },
+    {
+      "target_name": "assets/charte-print.png",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png",
+      "role": "charte_print",
+      "already_staged": true,
+      "mime_type": "image/png",
+      "github_path": "gem-casa-di-l-isula-v5-docs/assets/charte-print.png"
+    }
+  ],
+  "note": "Sources staged in GitHub and referenced by raw URLs. No base64 payload transported through Core V5.",
+  "created_at": "2026-05-30T10:42:25.706Z"
+}
