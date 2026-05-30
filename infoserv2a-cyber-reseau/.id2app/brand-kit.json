@@ -1,0 +1,63 @@
+{
+  "schema_version": "id2app-v3-brand-kit-1.0",
+  "brand_name": "INFOSERV2A Cyber & Réseau",
+  "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+  "tone": "expert, local, rassurant",
+  "visual_style": "premium B2B",
+  "palette": [
+    {
+      "name": "custom-1",
+      "hex": "#0A1128",
+      "role": "background"
+    },
+    {
+      "name": "custom-2",
+      "hex": "#1A1A1A",
+      "role": "accent"
+    },
+    {
+      "name": "custom-3",
+      "hex": "#00E5FF",
+      "role": "surface"
+    },
+    {
+      "name": "custom-4",
+      "hex": "#40E0D0",
+      "role": "muted"
+    },
+    {
+      "name": "custom-5",
+      "hex": "#FFFFFF",
+      "role": "muted"
+    },
+    {
+      "name": "custom-6",
+      "hex": "#B7BCC6",
+      "role": "muted"
+    }
+  ],
+  "typography": {
+    "heading": "system-ui",
+    "body": "system-ui"
+  },
+  "logo_policy": {
+    "mode": "provided",
+    "allow_generated_text_logo": true,
+    "forbid_cross_project_logo": true,
+    "no_logo_image": false
+  },
+  "assets": {
+    "logo_primary": "assets/logo.png",
+    "logo_icon": "assets/logo.png",
+    "hero_image": "assets/charte-infoserv2a.png"
+  },
+  "footer": {
+    "copyright": "© 2026 INFOSERV2A Cyber & Réseau",
+    "domain": "https://www.infoserve2a.pro"
+  },
+  "forbidden_visual_memory": [
+    "PortoFlow",
+    "INFOSERV2A"
+  ],
+  "created_at": "2026-05-30T07:41:54.660Z"
+}
