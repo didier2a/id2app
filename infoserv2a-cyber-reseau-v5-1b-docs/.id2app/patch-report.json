@@ -1,29 +1,29 @@
 {
   "schema_version": "id2app-v5.2-patch-report-1.0",
-  "mode": "harmonize_existing_project",
+  "mode": "patch_existing_project",
   "project_key": "infoserv2a-cyber-reseau-v5-1b-docs",
   "affected_files": [
+    "infoserv2a-cyber-reseau-v5-1b-docs/contact.html",
+    "infoserv2a-cyber-reseau-v5-1b-docs/script.js",
+    "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/patch-report.json",
+    "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/freeze-report.json"
+  ],
+  "preserved_files": [
     "infoserv2a-cyber-reseau-v5-1b-docs/index.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/cyber.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/reseau.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/secteurs-sensibles.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/methode.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/a-propos.html",
-    "infoserv2a-cyber-reseau-v5-1b-docs/contact.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/mentions-legales.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/confidentialite.html",
     "infoserv2a-cyber-reseau-v5-1b-docs/styles.css",
-    "infoserv2a-cyber-reseau-v5-1b-docs/script.js",
-    "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/patch-report.json",
-    "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/freeze-report.json"
-  ],
-  "preserved_files": [
     "infoserv2a-cyber-reseau-v5-1b-docs/robots.txt",
     "infoserv2a-cyber-reseau-v5-1b-docs/sitemap.xml",
     "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/app-spec.json",
     "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/diff-report.json",
     "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/final-report.json"
   ],
-  "patch_request": "Harmoniser le site existant : améliorer la qualité premium, renforcer la typographie, densifier les sections clés, conserver les assets et préserver la structure globale.",
-  "created_at": "2026-05-30T19:43:43.999Z"
+  "patch_request": "Modifier uniquement la page Contact : rendre le formulaire plus qualifiant et ajouter une section de contexte avant l’envoi.",
+  "created_at": "2026-05-30T19:48:41.065Z"
 }
