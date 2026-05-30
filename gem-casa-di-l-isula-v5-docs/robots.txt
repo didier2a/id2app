@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.gem-casa-di-l-isula.fr/sitemap.xml
