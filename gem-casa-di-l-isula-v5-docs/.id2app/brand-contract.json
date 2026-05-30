@@ -1,0 +1,23 @@
+{
+  "schema_version": "id2app-v5-gem-brand-contract-1.0",
+  "project_key": "gem-casa-di-l-isula-v5-docs",
+  "brand": {
+    "tone": "humain, chaleureux, associatif, inclusif, sensible",
+    "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+    "visual_style": "associatif premium, méditerranéen, clair, vivant, doux",
+    "name": "GEM Casa di l'Isula"
+  },
+  "positioning": "Association GEM : accueil, entraide mutuelle, lien social, pair-aidance, activités et participation citoyenne à Porto-Vecchio.",
+  "forbidden_public_terms": [
+    "cyber",
+    "audit",
+    "réseau critique",
+    "Starlink",
+    "InfoServe2A",
+    "PortoFlow",
+    "commercial B2B",
+    "prospect",
+    "lead qualifié"
+  ],
+  "created_at": "2026-05-30T10:42:25.706Z"
+}
