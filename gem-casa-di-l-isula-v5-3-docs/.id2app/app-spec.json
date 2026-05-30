@@ -1,0 +1,1465 @@
+{
+  "schema_version": "id2app-v5.3-app-spec-1.0",
+  "project_key": "gem-casa-di-l-isula-v5-3-docs",
+  "project_name": "GEM Casa di l'Isula",
+  "project_type": "multi_page_website",
+  "family": "association",
+  "mode": "compile_new_project",
+  "base_url": "https://www.gem-casa-di-l-isula.fr",
+  "site_folder": "gem-casa-di-l-isula-v5-3-docs",
+  "template": {
+    "schema_version": "id2app-v5.3-template-contract-1.0",
+    "family": "association",
+    "detected_family": "association",
+    "template_profile": "warm_local_association_premium",
+    "tone": "humain, chaleureux, associatif",
+    "typography": {
+      "heading_stack": "Avenir Next, Montserrat, Inter, system-ui, sans-serif",
+      "body_stack": "Inter, system-ui, sans-serif",
+      "scale": "warm_editorial"
+    },
+    "layout": {
+      "hero": "emotional_split",
+      "cards": "soft_bento",
+      "sections": "alternating_story_blocks"
+    },
+    "density": {
+      "editorial": "high",
+      "visual": "medium"
+    },
+    "created_at": "2026-05-30T20:36:34.435Z"
+  },
+  "brand": {
+    "tone": "humain, chaleureux, associatif, inclusif, sensible",
+    "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+    "name": "GEM Casa di l'Isula"
+  },
+  "pages": [
+    {
+      "title": "Accueil",
+      "file": "index.html",
+      "page_id": "index",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+          "lead": "Cette section présente Accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "page_id": "qui-sommes-nous",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Qui sommes-nous",
+          "lead": "Cette section présente Qui sommes-nous avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Activités",
+      "file": "activites.html",
+      "page_id": "activites",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Activités",
+          "lead": "Cette section présente Activités avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Comprendre",
+              "body": "Cette section présente les besoins réels avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Agir",
+              "body": "Cette section présente les actions prioritaires avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Suivre",
+              "body": "Cette section présente la continuité dans le temps avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Comprendre",
+              "body": "Cette section présente les besoins réels avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Agir",
+              "body": "Cette section présente les actions prioritaires avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Suivre",
+              "body": "Cette section présente la continuité dans le temps avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Projet associatif",
+      "file": "projet-associatif.html",
+      "page_id": "projet-associatif",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Projet associatif",
+          "lead": "Cette section présente Projet associatif avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "page_id": "nous-soutenir",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Nous soutenir",
+          "lead": "Cette section présente Nous soutenir avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Contact",
+      "file": "contact.html",
+      "page_id": "contact",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Contact",
+          "lead": "Cette section présente Contact avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Une demande claire",
+              "body": "Le formulaire aide à comprendre le contexte avant de répondre."
+            },
+            {
+              "title": "Un échange humain",
+              "body": "Chaque message appelle une réponse adaptée, sans automatisme froid."
+            },
+            {
+              "title": "Une suite concrète",
+              "body": "La prise de contact peut ouvrir vers une rencontre, un rendez-vous ou un projet."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Une demande claire",
+              "body": "Le formulaire aide à comprendre le contexte avant de répondre."
+            },
+            {
+              "title": "Un échange humain",
+              "body": "Chaque message appelle une réponse adaptée, sans automatisme froid."
+            },
+            {
+              "title": "Une suite concrète",
+              "body": "La prise de contact peut ouvrir vers une rencontre, un rendez-vous ou un projet."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "page_id": "mentions-legales",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Mentions légales",
+          "lead": "Cette section présente Mentions légales avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    },
+    {
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "page_id": "confidentialite",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Confidentialité",
+          "lead": "Cette section présente Confidentialité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ],
+          "cta": {
+            "label": "Prendre contact"
+          }
+        },
+        {
+          "kind": "editorial",
+          "eyebrow": "Comprendre",
+          "title": "Ce que cette page apporte",
+          "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ],
+          "cards": [
+            {
+              "title": "Accueil",
+              "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Méthode",
+              "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            },
+            {
+              "title": "Impact",
+              "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            }
+          ]
+        },
+        {
+          "kind": "proof",
+          "eyebrow": "Repères",
+          "title": "Des repères simples pour avancer",
+          "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+          "paragraphs": [
+            "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Nous contacter",
+        "title": "Envie d’en parler ?",
+        "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+      }
+    }
+  ],
+  "writer_contract": {
+    "schema_version": "id2app-v5.3-writer-contract-1.0",
+    "engine": "writer-family-aware-v5.3",
+    "family": "association",
+    "tone": "humain, chaleureux, associatif",
+    "content_depth": "verbose",
+    "section_expansion": "high",
+    "pages": [
+      {
+        "title": "Accueil",
+        "file": "index.html",
+        "page_id": "index",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+            "lead": "Cette section présente Accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Qui sommes-nous",
+        "file": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Qui sommes-nous",
+            "lead": "Cette section présente Qui sommes-nous avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Activités",
+        "file": "activites.html",
+        "page_id": "activites",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Activités",
+            "lead": "Cette section présente Activités avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Comprendre",
+                "body": "Cette section présente les besoins réels avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Agir",
+                "body": "Cette section présente les actions prioritaires avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Suivre",
+                "body": "Cette section présente la continuité dans le temps avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Comprendre",
+                "body": "Cette section présente les besoins réels avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Agir",
+                "body": "Cette section présente les actions prioritaires avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Suivre",
+                "body": "Cette section présente la continuité dans le temps avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Projet associatif",
+        "file": "projet-associatif.html",
+        "page_id": "projet-associatif",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Projet associatif",
+            "lead": "Cette section présente Projet associatif avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Nous soutenir",
+        "file": "nous-soutenir.html",
+        "page_id": "nous-soutenir",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Nous soutenir",
+            "lead": "Cette section présente Nous soutenir avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Contact",
+        "file": "contact.html",
+        "page_id": "contact",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Contact",
+            "lead": "Cette section présente Contact avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Une demande claire",
+                "body": "Le formulaire aide à comprendre le contexte avant de répondre."
+              },
+              {
+                "title": "Un échange humain",
+                "body": "Chaque message appelle une réponse adaptée, sans automatisme froid."
+              },
+              {
+                "title": "Une suite concrète",
+                "body": "La prise de contact peut ouvrir vers une rencontre, un rendez-vous ou un projet."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Une demande claire",
+                "body": "Le formulaire aide à comprendre le contexte avant de répondre."
+              },
+              {
+                "title": "Un échange humain",
+                "body": "Chaque message appelle une réponse adaptée, sans automatisme froid."
+              },
+              {
+                "title": "Une suite concrète",
+                "body": "La prise de contact peut ouvrir vers une rencontre, un rendez-vous ou un projet."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Mentions légales",
+        "file": "mentions-legales.html",
+        "page_id": "mentions-legales",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Mentions légales",
+            "lead": "Cette section présente Mentions légales avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      },
+      {
+        "title": "Confidentialité",
+        "file": "confidentialite.html",
+        "page_id": "confidentialite",
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "GEM Casa di l'Isula",
+            "title": "Confidentialité",
+            "lead": "Cette section présente Confidentialité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente le positionnement général avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la promesse éditoriale avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact"
+            }
+          },
+          {
+            "kind": "editorial",
+            "eyebrow": "Comprendre",
+            "title": "Ce que cette page apporte",
+            "lead": "Cette section présente le contexte avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente les enjeux avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente les besoins concrets avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la façon d’avancer avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ],
+            "cards": [
+              {
+                "title": "Accueil",
+                "body": "Cette section présente l’accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Méthode",
+                "body": "Cette section présente la méthode avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              },
+              {
+                "title": "Impact",
+                "body": "Cette section présente l’impact concret avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+              }
+            ]
+          },
+          {
+            "kind": "proof",
+            "eyebrow": "Repères",
+            "title": "Des repères simples pour avancer",
+            "lead": "Cette section présente les repères utiles avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+            "paragraphs": [
+              "Cette section présente la mise en confiance avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la progression avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid.",
+              "Cette section présente la continuité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien humain. Le texte doit rester simple, chaleureux et digne, afin de donner confiance sans transformer l'association en structure médicale ou en discours institutionnel froid."
+            ]
+          }
+        ],
+        "cta": {
+          "label": "Nous contacter",
+          "title": "Envie d’en parler ?",
+          "body": "Un échange permet de préciser le contexte et d’identifier la bonne suite."
+        }
+      }
+    ],
+    "created_at": "2026-05-30T20:36:34.769Z"
+  },
+  "ux_contract": {
+    "schema_version": "id2app-v5.3-ux-contract-1.0",
+    "engine": "ux-harmonizer-v5.3",
+    "navigation": {
+      "items": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Qui sommes-nous",
+          "href": "qui-sommes-nous.html",
+          "page_id": "qui-sommes-nous"
+        },
+        {
+          "label": "Activités",
+          "href": "activites.html",
+          "page_id": "activites"
+        },
+        {
+          "label": "Projet associatif",
+          "href": "projet-associatif.html",
+          "page_id": "projet-associatif"
+        },
+        {
+          "label": "Nous soutenir",
+          "href": "nous-soutenir.html",
+          "page_id": "nous-soutenir"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    "patterns": {
+      "hero": "emotional_split",
+      "cards": "soft_bento",
+      "section_alternance": true,
+      "cta": "gentle"
+    },
+    "patch_scope": {
+      "mode": "compile_new_project",
+      "target_pages": [
+        "index.html",
+        "qui-sommes-nous.html",
+        "activites.html",
+        "projet-associatif.html",
+        "nous-soutenir.html",
+        "contact.html",
+        "mentions-legales.html",
+        "confidentialite.html"
+      ],
+      "target_files": [
+        "gem-casa-di-l-isula-v5-3-docs/index.html",
+        "gem-casa-di-l-isula-v5-3-docs/qui-sommes-nous.html",
+        "gem-casa-di-l-isula-v5-3-docs/activites.html",
+        "gem-casa-di-l-isula-v5-3-docs/projet-associatif.html",
+        "gem-casa-di-l-isula-v5-3-docs/nous-soutenir.html",
+        "gem-casa-di-l-isula-v5-3-docs/contact.html",
+        "gem-casa-di-l-isula-v5-3-docs/mentions-legales.html",
+        "gem-casa-di-l-isula-v5-3-docs/confidentialite.html",
+        "gem-casa-di-l-isula-v5-3-docs/styles.css",
+        "gem-casa-di-l-isula-v5-3-docs/script.js",
+        "gem-casa-di-l-isula-v5-3-docs/robots.txt",
+        "gem-casa-di-l-isula-v5-3-docs/sitemap.xml",
+        "gem-casa-di-l-isula-v5-3-docs/.id2app/app-spec.json",
+        "gem-casa-di-l-isula-v5-3-docs/.id2app/patch-report.json",
+        "gem-casa-di-l-isula-v5-3-docs/.id2app/diff-report.json",
+        "gem-casa-di-l-isula-v5-3-docs/.id2app/freeze-report.json",
+        "gem-casa-di-l-isula-v5-3-docs/.id2app/final-report.json"
+      ],
+      "preserve_other_pages": false,
+      "preserve_assets": true,
+      "created_at": "2026-05-30T20:36:34.428Z"
+    },
+    "created_at": "2026-05-30T20:36:34.925Z"
+  },
+  "seo_accessibility": {
+    "schema_version": "id2app-v5.3-seo-accessibility-1.0",
+    "engine": "seo-accessibility-harmonizer-v5.3",
+    "pages": [
+      {
+        "file": "index.html",
+        "title": "Accueil — GEM Casa di l'Isula",
+        "h1": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+        "meta_description": "Cette section présente Accueil avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien huma"
+      },
+      {
+        "file": "qui-sommes-nous.html",
+        "title": "Qui sommes-nous — GEM Casa di l'Isula",
+        "h1": "Qui sommes-nous",
+        "meta_description": "Cette section présente Qui sommes-nous avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au l"
+      },
+      {
+        "file": "activites.html",
+        "title": "Activités — GEM Casa di l'Isula",
+        "h1": "Activités",
+        "meta_description": "Cette section présente Activités avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien hu"
+      },
+      {
+        "file": "projet-associatif.html",
+        "title": "Projet associatif — GEM Casa di l'Isula",
+        "h1": "Projet associatif",
+        "meta_description": "Cette section présente Projet associatif avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au"
+      },
+      {
+        "file": "nous-soutenir.html",
+        "title": "Nous soutenir — GEM Casa di l'Isula",
+        "h1": "Nous soutenir",
+        "meta_description": "Cette section présente Nous soutenir avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lie"
+      },
+      {
+        "file": "contact.html",
+        "title": "Contact — GEM Casa di l'Isula",
+        "h1": "Contact",
+        "meta_description": "Cette section présente Contact avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au lien huma"
+      },
+      {
+        "file": "mentions-legales.html",
+        "title": "Mentions légales — GEM Casa di l'Isula",
+        "h1": "Mentions légales",
+        "meta_description": "Cette section présente Mentions légales avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au "
+      },
+      {
+        "file": "confidentialite.html",
+        "title": "Confidentialité — GEM Casa di l'Isula",
+        "h1": "Confidentialité",
+        "meta_description": "Cette section présente Confidentialité avec une attention particulière portée à l'accueil, au respect du rythme de chacun, à la participation libre et au l"
+      }
+    ],
+    "accessibility": {
+      "skip_link": true,
+      "semantic_landmarks": true,
+      "form_labels": true,
+      "alt_images": true,
+      "minimum_contrast": "AA"
+    },
+    "created_at": "2026-05-30T20:36:35.088Z"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.3-design-media-1.0",
+    "engine": "design-media-harmonizer-v5.3",
+    "family": "association",
+    "palette": {
+      "background": "#fff8ed",
+      "ink": "#2b2520",
+      "accent": "#df6b57",
+      "soft": "rgba(255,255,255,.72)"
+    },
+    "typography": {
+      "heading_stack": "Avenir Next, Montserrat, Inter, system-ui, sans-serif",
+      "body_stack": "Inter, system-ui, sans-serif"
+    },
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png"
+    },
+    "asset_manifest": {
+      "source_urls": {
+        "charte_print": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png",
+        "spec_md": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+        "logo": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png"
+      },
+      "source_files": []
+    },
+    "media_strategy": {
+      "logo": "header_badge",
+      "hero_media": "soft_documentary"
+    },
+    "created_at": "2026-05-30T20:36:35.248Z"
+  },
+  "patch_plan": {
+    "mode": "compile_new_project",
+    "target_pages": [
+      "index.html",
+      "qui-sommes-nous.html",
+      "activites.html",
+      "projet-associatif.html",
+      "nous-soutenir.html",
+      "contact.html",
+      "mentions-legales.html",
+      "confidentialite.html"
+    ],
+    "target_files": [
+      "gem-casa-di-l-isula-v5-3-docs/index.html",
+      "gem-casa-di-l-isula-v5-3-docs/qui-sommes-nous.html",
+      "gem-casa-di-l-isula-v5-3-docs/activites.html",
+      "gem-casa-di-l-isula-v5-3-docs/projet-associatif.html",
+      "gem-casa-di-l-isula-v5-3-docs/nous-soutenir.html",
+      "gem-casa-di-l-isula-v5-3-docs/contact.html",
+      "gem-casa-di-l-isula-v5-3-docs/mentions-legales.html",
+      "gem-casa-di-l-isula-v5-3-docs/confidentialite.html",
+      "gem-casa-di-l-isula-v5-3-docs/styles.css",
+      "gem-casa-di-l-isula-v5-3-docs/script.js",
+      "gem-casa-di-l-isula-v5-3-docs/robots.txt",
+      "gem-casa-di-l-isula-v5-3-docs/sitemap.xml",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/app-spec.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/patch-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/diff-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/freeze-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/final-report.json"
+    ],
+    "preserve_other_pages": false,
+    "preserve_assets": true,
+    "created_at": "2026-05-30T20:36:34.428Z"
+  },
+  "source_urls": {
+    "charte_print": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png",
+    "spec_md": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+    "logo": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png"
+  },
+  "created_at": "2026-05-30T20:36:35.268Z"
+}
