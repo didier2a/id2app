@@ -1,0 +1,41 @@
+{
+  "schema_version": "id2app-v5.3-patch-report-1.0",
+  "mode": "compile_new_project",
+  "patch_plan": {
+    "mode": "compile_new_project",
+    "target_pages": [
+      "index.html",
+      "qui-sommes-nous.html",
+      "activites.html",
+      "projet-associatif.html",
+      "nous-soutenir.html",
+      "contact.html",
+      "mentions-legales.html",
+      "confidentialite.html"
+    ],
+    "target_files": [
+      "gem-casa-di-l-isula-v5-3-docs/index.html",
+      "gem-casa-di-l-isula-v5-3-docs/qui-sommes-nous.html",
+      "gem-casa-di-l-isula-v5-3-docs/activites.html",
+      "gem-casa-di-l-isula-v5-3-docs/projet-associatif.html",
+      "gem-casa-di-l-isula-v5-3-docs/nous-soutenir.html",
+      "gem-casa-di-l-isula-v5-3-docs/contact.html",
+      "gem-casa-di-l-isula-v5-3-docs/mentions-legales.html",
+      "gem-casa-di-l-isula-v5-3-docs/confidentialite.html",
+      "gem-casa-di-l-isula-v5-3-docs/styles.css",
+      "gem-casa-di-l-isula-v5-3-docs/script.js",
+      "gem-casa-di-l-isula-v5-3-docs/robots.txt",
+      "gem-casa-di-l-isula-v5-3-docs/sitemap.xml",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/app-spec.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/patch-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/diff-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/freeze-report.json",
+      "gem-casa-di-l-isula-v5-3-docs/.id2app/final-report.json"
+    ],
+    "preserve_other_pages": false,
+    "preserve_assets": true,
+    "created_at": "2026-05-30T20:36:34.428Z"
+  },
+  "rendered_count": 12,
+  "created_at": "2026-05-30T20:36:35.306Z"
+}
