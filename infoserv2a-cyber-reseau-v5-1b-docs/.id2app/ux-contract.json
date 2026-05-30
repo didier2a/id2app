@@ -1,0 +1,162 @@
+{
+  "schema_version": "id2app-v5.1b-ux-contract-1.0",
+  "family": "commercial_b2b",
+  "navigation": {
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Cyber",
+        "href": "cyber.html",
+        "page_id": "cyber"
+      },
+      {
+        "label": "Réseau",
+        "href": "reseau.html",
+        "page_id": "reseau"
+      },
+      {
+        "label": "Secteurs sensibles",
+        "href": "secteurs-sensibles.html",
+        "page_id": "secteurs-sensibles"
+      },
+      {
+        "label": "Méthode",
+        "href": "methode.html",
+        "page_id": "methode"
+      },
+      {
+        "label": "À propos",
+        "href": "a-propos.html",
+        "page_id": "a-propos"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ],
+    "sticky": true,
+    "compact_on_scroll": true,
+    "mobile": "drawer"
+  },
+  "cta": {
+    "primary": {
+      "label": "Demander un audit cyber",
+      "href": "contact.html"
+    },
+    "secondary": {
+      "label": "Faire vérifier mon réseau",
+      "href": "reseau.html"
+    }
+  },
+  "layout": {
+    "shell": "premium_editorial_shell",
+    "hero": "asymmetric hero with media panel",
+    "rhythm": [
+      "hero",
+      "trust-strip",
+      "editorial-split",
+      "bento-grid",
+      "media-feature",
+      "cta-band"
+    ],
+    "section_spacing": "generous",
+    "cards": "elevated bento cards",
+    "footer": "multi-column editorial footer"
+  },
+  "components": {
+    "hero_media": true,
+    "reveal_on_scroll": true,
+    "bento_cards": true,
+    "process_steps": true,
+    "quote_band": true,
+    "contact_form": true,
+    "source_badges": true
+  },
+  "page_flow": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "intent": "landing",
+      "recommended_sections": [
+        "editorial_split",
+        "bento_cards",
+        "process_steps",
+        "media_feature",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "cyber",
+      "file": "cyber.html",
+      "intent": "content",
+      "recommended_sections": [
+        "bento_cards",
+        "editorial_split",
+        "cta_band"
+      ]
+    },
+    {
+      "page_id": "reseau",
+      "file": "reseau.html",
+      "intent": "content",
+      "recommended_sections": [
+        "bento_cards",
+        "process_steps"
+      ]
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "file": "secteurs-sensibles.html",
+      "intent": "content",
+      "recommended_sections": [
+        "bento_cards"
+      ]
+    },
+    {
+      "page_id": "methode",
+      "file": "methode.html",
+      "intent": "content",
+      "recommended_sections": [
+        "process_steps"
+      ]
+    },
+    {
+      "page_id": "a-propos",
+      "file": "a-propos.html",
+      "intent": "content",
+      "recommended_sections": [
+        "editorial_split"
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "intent": "conversion",
+      "recommended_sections": [
+        "contact_form"
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "intent": "legal",
+      "recommended_sections": [
+        "legal"
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "intent": "legal",
+      "recommended_sections": [
+        "legal"
+      ]
+    }
+  ],
+  "created_at": "2026-05-30T18:39:47.099Z"
+}
