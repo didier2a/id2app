@@ -1,0 +1,110 @@
+{
+  "schema_version": "id2app-v5.1b-brand-contract-1.0",
+  "brand": {
+    "tone": "humain, chaleureux, associatif, inclusif",
+    "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+    "name": "GEM Casa di l'Isula",
+    "visual_style": "associatif premium, méditerranéen, doux"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.1b-design-media-1.0",
+    "family": "association",
+    "palette": {
+      "background": "#FFF7EC",
+      "paper": "#FFFDF8",
+      "ink": "#2B2520",
+      "muted": "#6D6258",
+      "accent": "#DF6B57",
+      "warm": "#F28C28",
+      "green": "#5F8F73",
+      "blue": "#4F86A8",
+      "sand": "#E8D8C5"
+    },
+    "typography": {
+      "display": "Inter Tight / system sans",
+      "body": "Inter / system sans",
+      "scale": "premium editorial clamp scale"
+    },
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png",
+      "hero_logo_path": "assets/logo.png",
+      "alt": "GEM Casa di l'Isula"
+    },
+    "media_plan": {
+      "hero": {
+        "role": "charte_print",
+        "public_path": "assets/charte-print.png"
+      },
+      "feature": {
+        "role": "charte_print",
+        "public_path": "assets/charte-print.png"
+      },
+      "logo": {
+        "role": "logo",
+        "public_path": "assets/logo.png"
+      },
+      "placement": [
+        "hero visual panel",
+        "source badge strip",
+        "media feature section",
+        "footer identity"
+      ]
+    },
+    "asset_manifest": {
+      "site_folder": "gem-casa-di-l-isula-v5-1b-docs",
+      "source_urls": {
+        "charte_print": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png",
+        "spec_md": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-1-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+        "logo": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png"
+      },
+      "source_files": [
+        {
+          "target_name": ".id2app/source/spec_gem_casa_di_l_isula_v3.md",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-1-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+          "mime_type": "text/markdown",
+          "role": "spec_md",
+          "already_staged": true,
+          "github_path": "gem-casa-di-l-isula-v5-1-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md"
+        },
+        {
+          "target_name": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png",
+          "mime_type": "image/png",
+          "role": "logo",
+          "already_staged": true,
+          "github_path": "gem-casa-di-l-isula-v5-1-docs/assets/logo.png"
+        },
+        {
+          "target_name": "assets/charte-print.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png",
+          "mime_type": "image/png",
+          "role": "charte_print",
+          "already_staged": true,
+          "github_path": "gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png"
+        }
+      ],
+      "assets": [
+        {
+          "role": "logo",
+          "public_path": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png"
+        },
+        {
+          "role": "feature",
+          "public_path": "assets/charte-print.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png"
+        }
+      ]
+    },
+    "visual_principles": [
+      "warmth",
+      "space",
+      "soft cards",
+      "human editorial flow",
+      "Mediterranean color accents"
+    ],
+    "created_at": "2026-05-30T18:51:32.165Z"
+  },
+  "created_at": "2026-05-30T18:51:32.220Z"
+}
