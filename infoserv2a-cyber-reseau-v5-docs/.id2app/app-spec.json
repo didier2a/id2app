@@ -5,44 +5,44 @@
   "project_type": "multi_page_website",
   "family": "commercial_b2b",
   "language": "fr",
-  "base_url": "",
+  "base_url": "https://www.infoserve2a.pro",
   "site_folder": "infoserv2a-cyber-reseau-v5-docs",
   "pages": [
     {
-      "title": "Accueil",
-      "file": "index.html"
+      "file": "index.html",
+      "title": "Accueil"
     },
     {
-      "title": "Cyber",
-      "file": "cyber.html"
+      "file": "cyber.html",
+      "title": "Cyber"
     },
     {
-      "title": "Réseau",
-      "file": "reseau.html"
+      "file": "reseau.html",
+      "title": "Réseau"
     },
     {
-      "title": "Secteurs sensibles",
-      "file": "secteurs-sensibles.html"
+      "file": "secteurs-sensibles.html",
+      "title": "Secteurs sensibles"
     },
     {
-      "title": "Méthode",
-      "file": "methode.html"
+      "file": "methode.html",
+      "title": "Méthode"
     },
     {
-      "title": "À propos",
-      "file": "a-propos.html"
+      "file": "a-propos.html",
+      "title": "À propos"
     },
     {
-      "title": "Contact",
-      "file": "contact.html"
+      "file": "contact.html",
+      "title": "Contact"
     },
     {
-      "title": "Mentions légales",
-      "file": "mentions-legales.html"
+      "file": "mentions-legales.html",
+      "title": "Mentions légales"
     },
     {
-      "title": "Confidentialité",
-      "file": "confidentialite.html"
+      "file": "confidentialite.html",
+      "title": "Confidentialité"
     }
   ],
   "target_files": [
@@ -69,8 +69,18 @@
     "infoserv2a-cyber-reseau-v5-docs/.id2app/final-report.json",
     "infoserv2a-cyber-reseau-v5-docs/.id2app/freeze-report.json"
   ],
-  "brief": "",
-  "source_urls": {},
-  "writer": {},
-  "created_at": "2026-05-30T10:03:21.524Z"
+  "brief": "Test bout en bout ID2APP Core V5 depuis documents sources déjà publiés dans GitHub.\n\nCréer un site premium B2B pour INFOSERV2A Cyber & Réseau à partir :\n- du blueprint PDF publié en source ;\n- du visuel architecture premium publié en source ;\n- du logo / charte graphique publié en source.\n\nLe moteur doit convertir ces documents en cahier des charges exploitable, puis générer le site complet.\n\nPositionnement attendu :\nINFOSERV2A Cyber & Réseau est repositionné comme spécialiste B2B de cybersécurité locale, audit terrain, contrôle des risques, surveillance, réseaux critiques, WiFi professionnel, Starlink et liaisons difficiles pour les entreprises du Sud Corse.\n\nRupture obligatoire :\nNe plus présenter INFOSERV2A comme dépannage informatique, réparation PC, maintenance généraliste ou assistance grand public.\n\nSignature :\nCybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.\n\nAxiome :\nVotre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.\n\nPages attendues :\nAccueil, Cyber, Réseau, Secteurs sensibles, Méthode, À propos, Contact, Mentions légales, Confidentialité.\n\nObjectif :\nProduire un site premium, dense, B2B, cyber sobre, orienté dirigeant, publié sur GitHub.",
+  "source_urls": {
+    "charte_reference": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+    "architecture_premium": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+    "blueprint_pdf": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+    "logo_or_charte": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/logo.png"
+  },
+  "writer": {
+    "content_depth": "verbose",
+    "writer_mode": "premium_dense",
+    "section_expansion": "high",
+    "editorial_tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant"
+  },
+  "created_at": "2026-05-30T10:27:44.528Z"
 }
