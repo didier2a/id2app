@@ -1,0 +1,78 @@
+{
+  "schema_version": "id2app-v5.3-diff-report-1.0",
+  "diff": [
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/index.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8379
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/qui-sommes-nous.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8354
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/activites.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8402
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/projet-associatif.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8360
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/nous-soutenir.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8348
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/contact.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 6848
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/mentions-legales.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8357
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/confidentialite.html",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 8354
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/styles.css",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 2628
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/script.js",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 263
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/robots.txt",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 79
+    },
+    {
+      "path": "gem-casa-di-l-isula-v5-3-docs/sitemap.xml",
+      "status": "new",
+      "old_bytes": 0,
+      "new_bytes": 690
+    }
+  ],
+  "created_at": "2026-05-30T20:36:35.306Z"
+}
