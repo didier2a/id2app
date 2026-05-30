@@ -1,0 +1,105 @@
+{
+  "schema_version": "id2app-v5.1-ux-contract-1.0",
+  "family": "association",
+  "navigation": {
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Qui sommes-nous",
+        "href": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous"
+      },
+      {
+        "label": "Activités",
+        "href": "activites.html",
+        "page_id": "activites"
+      },
+      {
+        "label": "Projet associatif",
+        "href": "projet-associatif.html",
+        "page_id": "projet-associatif"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "nous-soutenir.html",
+        "page_id": "nous-soutenir"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      }
+    ]
+  },
+  "cta": {
+    "primary": {
+      "label": "Nous contacter",
+      "href": "contact.html"
+    },
+    "secondary": {
+      "label": "Découvrir les activités",
+      "href": "activites.html"
+    }
+  },
+  "patterns": {
+    "hero": "large editorial hero",
+    "cards": "responsive card grid",
+    "alternance": "soft tinted sections",
+    "contact": "qualified but non-invasive form"
+  },
+  "page_flow": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "rank": 1,
+      "role": "entry"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "rank": 2,
+      "role": "support"
+    },
+    {
+      "page_id": "activites",
+      "file": "activites.html",
+      "rank": 3,
+      "role": "support"
+    },
+    {
+      "page_id": "projet-associatif",
+      "file": "projet-associatif.html",
+      "rank": 4,
+      "role": "support"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "file": "nous-soutenir.html",
+      "rank": 5,
+      "role": "support"
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "rank": 6,
+      "role": "support"
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "rank": 7,
+      "role": "support"
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "rank": 8,
+      "role": "support"
+    }
+  ],
+  "created_at": "2026-05-30T14:46:23.171Z"
+}
