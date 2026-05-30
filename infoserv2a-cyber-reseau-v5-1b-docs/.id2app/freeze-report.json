@@ -1,0 +1,21 @@
+{
+  "schema_version": "id2app-v5.1b-freeze-report-1.0",
+  "freeze_status": "passed",
+  "required_pages": [
+    "index.html",
+    "cyber.html",
+    "reseau.html",
+    "secteurs-sensibles.html",
+    "methode.html",
+    "a-propos.html",
+    "contact.html",
+    "mentions-legales.html",
+    "confidentialite.html"
+  ],
+  "checks": {
+    "premium_app_spec": true,
+    "renderer": true,
+    "no_empty_files": true
+  },
+  "created_at": "2026-05-30T18:39:47.157Z"
+}
