@@ -1,0 +1,185 @@
+{
+  "schema_version": "id2app-v5.1-writer-contract-1.0",
+  "family": "commercial_b2b",
+  "brand_name": "INFOSERV2A Cyber & Réseau",
+  "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+  "brief": "Créer un site premium B2B pour INFOSERV2A Cyber & Réseau à partir des sources déjà publiées dans GitHub. Le site doit être dense, premium, sobre, cyber local, orienté dirigeant, sans discours grand public.",
+  "content_depth": "verbose",
+  "editorial_tone": "premium B2B cyber local",
+  "pages": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "title": "Accueil",
+      "eyebrow": "INFOSERV2A Cyber & Réseau · Sud Corse",
+      "h1": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+      "lead": "Votre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.",
+      "cards": [
+        [
+          "Cyber terrain",
+          "Audit local, contrôle des risques, durcissement et rapport dirigeant."
+        ],
+        [
+          "Réseaux critiques",
+          "WiFi professionnel, continuité, Starlink et sites isolés."
+        ],
+        [
+          "Méthode claire",
+          "Observation, qualification des priorités et plan d’action."
+        ]
+      ]
+    },
+    {
+      "page_id": "cyber",
+      "file": "cyber.html",
+      "title": "Cyber",
+      "eyebrow": "Audit cyber local",
+      "h1": "Vérifier concrètement ce qui expose votre entreprise.",
+      "lead": "La cybersécurité exige une lecture terrain : postes, accès, sauvegardes, WiFi, prestataires et dépendances critiques.",
+      "cards": [
+        [
+          "Exposition",
+          "Points d’entrée, accès distants et comptes sensibles."
+        ],
+        [
+          "Durcissement",
+          "MFA, segmentation, sauvegardes et documentation."
+        ],
+        [
+          "Rapport dirigeant",
+          "Priorités lisibles, non anxiogènes, directement exploitables."
+        ]
+      ]
+    },
+    {
+      "page_id": "reseau",
+      "file": "reseau.html",
+      "title": "Réseau",
+      "eyebrow": "Réseaux critiques",
+      "h1": "Fiabiliser les réseaux qui portent votre activité.",
+      "lead": "Hôtels, campings, villas, cabinets et sites isolés dépendent de réseaux stables.",
+      "cards": [
+        [
+          "WiFi professionnel",
+          "Couverture, stabilité, séparation des usages."
+        ],
+        [
+          "Starlink & sites isolés",
+          "Intégration propre et continuité."
+        ],
+        [
+          "Documentation",
+          "Plan réseau, équipements, accès et dépendances."
+        ]
+      ]
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "file": "secteurs-sensibles.html",
+      "title": "Secteurs sensibles",
+      "eyebrow": "Secteurs sensibles",
+      "h1": "Des environnements où l’interruption coûte immédiatement.",
+      "lead": "Des structures où réseau, accès et sécurité ont un impact direct sur l’exploitation et l’image.",
+      "cards": [
+        [
+          "Hôtels & campings",
+          "WiFi client, back-office, réservation et paiement."
+        ],
+        [
+          "Villas haut de gamme",
+          "Réseaux discrets, domotique, invités et continuité."
+        ],
+        [
+          "Médical, juridique, immobilier",
+          "Confidentialité, documents et dépendance aux outils."
+        ]
+      ]
+    },
+    {
+      "page_id": "methode",
+      "file": "methode.html",
+      "title": "Méthode",
+      "eyebrow": "Méthode",
+      "h1": "Une démarche claire : terrain, priorités, action.",
+      "lead": "Observation locale, cartographie, qualification des risques et plan d’action.",
+      "cards": [
+        [
+          "1. Audit initial",
+          "Comprendre le contexte et les dépendances."
+        ],
+        [
+          "2. Cartographie",
+          "Lire équipements, accès et points faibles."
+        ],
+        [
+          "3. Plan d’action",
+          "Prioriser et accompagner localement."
+        ]
+      ]
+    },
+    {
+      "page_id": "a-propos",
+      "file": "a-propos.html",
+      "title": "À propos",
+      "eyebrow": "À propos",
+      "h1": "Un acteur local pour les réseaux et la sécurité des entreprises du Sud Corse.",
+      "lead": "INFOSERV2A rend visibles les angles morts entre administration distante et réalité terrain.",
+      "cards": [
+        [
+          "Ancrage local",
+          "Intervention sur site et connaissance des contraintes insulaires."
+        ],
+        [
+          "Spécialisation B2B",
+          "Réseaux critiques et sécurité pour professionnels."
+        ]
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "eyebrow": "Contact qualifié",
+      "h1": "Décrivez votre situation réseau ou cyber.",
+      "lead": "Qualifiez votre demande : audit cyber, vérification réseau, WiFi professionnel, Starlink ou besoin critique.",
+      "cards": []
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "title": "Mentions légales",
+      "eyebrow": "Mentions légales",
+      "h1": "Mentions légales",
+      "lead": "Informations légales relatives au site.",
+      "cards": [
+        [
+          "Éditeur",
+          "INFOSERV2A Cyber & Réseau"
+        ],
+        [
+          "Responsabilité",
+          "Les informations ne constituent pas une garantie absolue de sécurité ou de conformité."
+        ]
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "title": "Confidentialité",
+      "eyebrow": "Confidentialité",
+      "h1": "Politique de confidentialité",
+      "lead": "Les données transmises servent uniquement à analyser et traiter les demandes professionnelles.",
+      "cards": [
+        [
+          "Données",
+          "Nom, entreprise, fonction, coordonnées et message."
+        ],
+        [
+          "Finalité",
+          "Qualification de la demande et prise de contact."
+        ]
+      ]
+    }
+  ],
+  "created_at": "2026-05-30T14:23:59.307Z"
+}
