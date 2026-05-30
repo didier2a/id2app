@@ -1,0 +1,769 @@
+{
+  "schema_version": "id2app-v3-app-spec-1.0",
+  "project": {
+    "key": "infoserv2a-cyber-reseau",
+    "name": "INFOSERV2A Cyber & Réseau",
+    "type": "commercial_b2b",
+    "language": "fr"
+  },
+  "site": {
+    "base_url": "https://www.infoserve2a.pro",
+    "site_folder": "infoserv2a-cyber-reseau",
+    "template_family": "commercial_b2b"
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": "index"
+    },
+    {
+      "label": "Cyber",
+      "href": "cyber.html",
+      "page_id": "cyber"
+    },
+    {
+      "label": "Réseau",
+      "href": "reseau.html",
+      "page_id": "reseau"
+    },
+    {
+      "label": "Secteurs sensibles",
+      "href": "secteurs-sensibles.html",
+      "page_id": "secteurs-sensibles"
+    },
+    {
+      "label": "Méthode",
+      "href": "methode.html",
+      "page_id": "methode"
+    },
+    {
+      "label": "À propos",
+      "href": "a-propos.html",
+      "page_id": "a-propos"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "page_id": "contact"
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "title": "Accueil",
+      "nav_label": "Accueil",
+      "purpose": "Présenter le projet, son identité et ses points essentiels.",
+      "archetype": "home_page",
+      "sections": [
+        {
+          "section_id": "hero-main",
+          "component": "hero",
+          "intent": "brand_promise",
+          "heading": "INFOSERV2A Cyber & Réseau",
+          "slots": {
+            "eyebrow": "INFOSERV2A ne vend pas une promesse abstraite de sécurité. INFOSERV2A vérifie localement les risques, les failles, les dépendances réseau et les points critiques qui peuvent fragil",
+            "heading": "INFOSERV2A Cyber & Réseau",
+            "lead": "INFOSERV2A ne vend pas une promesse abstraite de sécurité. INFOSERV2A vérifie localement les risques, les failles, les dépendances réseau et les points critiques qui peuvent fragiliser une entreprise\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Découvrir"
+            },
+            "secondary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            },
+            "bullets": [
+              "présenter l’expertise",
+              "faciliter la prise de contact",
+              "rassurer par la méthode"
+            ],
+            "panel_label": "Un site clair, utile et accessible",
+            "image": {
+              "src": "assets/charte-infoserv2a.png",
+              "alt": "Image principale INFOSERV2A Cyber & Réseau"
+            }
+          }
+        },
+        {
+          "section_id": "index-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "index-informations-cles",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Informations clés",
+          "slots": {
+            "heading": "Informations clés",
+            "body": "Cette section présente informations clés de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        },
+        {
+          "section_id": "index-contact",
+          "component": "cta_band",
+          "intent": "cta",
+          "heading": "Contact",
+          "slots": {
+            "heading": "Prendre contact",
+            "body": "Un message permet de poser une question, de préciser une demande ou de préparer un échange utile. La prise de contact doit rester simple, claire et rassurante.",
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        }
+      ],
+      "seo": {
+        "title": "Accueil — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter le projet, son identité et ses points essentiels."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "cyber",
+      "file": "cyber.html",
+      "title": "Cyber",
+      "nav_label": "Cyber",
+      "purpose": "Présenter cyber de façon claire et utile.",
+      "archetype": "content_page",
+      "sections": [
+        {
+          "section_id": "cyber-hero",
+          "component": "hero",
+          "intent": "page_intro",
+          "heading": "Cyber",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "Cyber",
+            "lead": "Présenter cyber de façon claire et utile\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "cyber-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "cyber-a-retenir",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "À retenir",
+          "slots": {
+            "heading": "À retenir",
+            "body": "Cette section présente à retenir de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        }
+      ],
+      "seo": {
+        "title": "Cyber — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter cyber de façon claire et utile."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "reseau",
+      "file": "reseau.html",
+      "title": "Réseau",
+      "nav_label": "Réseau",
+      "purpose": "Présenter réseau de façon claire et utile.",
+      "archetype": "content_page",
+      "sections": [
+        {
+          "section_id": "reseau-hero",
+          "component": "hero",
+          "intent": "page_intro",
+          "heading": "Réseau",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "Réseau",
+            "lead": "Présenter réseau de façon claire et utile\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "reseau-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "reseau-a-retenir",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "À retenir",
+          "slots": {
+            "heading": "À retenir",
+            "body": "Cette section présente à retenir de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        }
+      ],
+      "seo": {
+        "title": "Réseau — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter réseau de façon claire et utile."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "file": "secteurs-sensibles.html",
+      "title": "Secteurs sensibles",
+      "nav_label": "Secteurs sensibles",
+      "purpose": "Présenter secteurs sensibles de façon claire et utile.",
+      "archetype": "content_page",
+      "sections": [
+        {
+          "section_id": "secteurs-sensibles-hero",
+          "component": "hero",
+          "intent": "page_intro",
+          "heading": "Secteurs sensibles",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "Secteurs sensibles",
+            "lead": "Présenter secteurs sensibles de façon claire et utile\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "secteurs-sensibles-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "secteurs-sensibles-a-retenir",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "À retenir",
+          "slots": {
+            "heading": "À retenir",
+            "body": "Cette section présente à retenir de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        }
+      ],
+      "seo": {
+        "title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter secteurs sensibles de façon claire et utile."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "methode",
+      "file": "methode.html",
+      "title": "Méthode",
+      "nav_label": "Méthode",
+      "purpose": "Présenter méthode de façon claire et utile.",
+      "archetype": "content_page",
+      "sections": [
+        {
+          "section_id": "methode-hero",
+          "component": "hero",
+          "intent": "page_intro",
+          "heading": "Méthode",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "Méthode",
+            "lead": "Présenter méthode de façon claire et utile\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "methode-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "methode-a-retenir",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "À retenir",
+          "slots": {
+            "heading": "À retenir",
+            "body": "Cette section présente à retenir de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        }
+      ],
+      "seo": {
+        "title": "Méthode — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter méthode de façon claire et utile."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "a-propos",
+      "file": "a-propos.html",
+      "title": "À propos",
+      "nav_label": "À propos",
+      "purpose": "Présenter l’histoire, les valeurs et l’équipe.",
+      "archetype": "content_page",
+      "sections": [
+        {
+          "section_id": "a-propos-hero",
+          "component": "hero",
+          "intent": "page_intro",
+          "heading": "À propos",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "À propos",
+            "lead": "Présenter l’histoire, les valeurs et l’équipe\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "a-propos-presentation",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "Présentation",
+          "slots": {
+            "heading": "Présentation",
+            "body": "Cette section présente présentation de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": {
+              "label": "Prendre contact",
+              "href": "contact.html"
+            }
+          }
+        },
+        {
+          "section_id": "a-propos-a-retenir",
+          "component": "content_rail",
+          "intent": "content",
+          "heading": "À retenir",
+          "slots": {
+            "heading": "À retenir",
+            "body": "Cette section présente à retenir de manière développée, claire et directement compréhensible\n\nElle apporte du contexte, explique les enjeux et donne au visiteur des repères suffisants pour comprendre la page\n\nLe contenu doit éviter les phrases de remplissage et privilégier une écriture éditoriale sobre, utile et cohérente",
+            "side_cards": [
+              {
+                "title": "Public cible",
+                "body": "Public cible est développé avec des informations concrètes, des repères utiles et une explication claire. Le visiteur doit comprendre rapidement pourquoi ce point compte et comment il s’inscrit dans la proposition globale."
+              }
+            ],
+            "cta": null
+          }
+        }
+      ],
+      "seo": {
+        "title": "À propos — INFOSERV2A Cyber & Réseau",
+        "description": "Présenter l’histoire, les valeurs et l’équipe."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "nav_label": "Contact",
+      "purpose": "Permettre un contact clair et simple.",
+      "archetype": "contact_page",
+      "sections": [
+        {
+          "section_id": "contact-hero",
+          "component": "hero",
+          "intent": "contact",
+          "heading": "Contact",
+          "slots": {
+            "eyebrow": "INFOSERV2A Cyber & Réseau",
+            "heading": "Contact",
+            "lead": "Vous pouvez nous écrire simplement pour poser une question ou préparer un échange\n\nLe site développe les informations essentielles avec un niveau de détail plus éditorial, afin de rendre la proposition claire, crédible et directement exploitable",
+            "primary_cta": {
+              "label": "Accéder au formulaire",
+              "href": "#contact-panel"
+            }
+          }
+        },
+        {
+          "section_id": "contact-panel",
+          "component": "contact_panel",
+          "intent": "contact_form",
+          "heading": "Formulaire de contact",
+          "slots": {
+            "heading": "Nous écrire",
+            "intro": "Indiquez les informations utiles pour être recontacté. Vous pouvez préciser le contexte, vos questions et le meilleur moyen de vous répondre.",
+            "fields": [
+              {
+                "name": "name",
+                "label": "Nom",
+                "type": "text",
+                "required": true
+              },
+              {
+                "name": "email",
+                "label": "Email",
+                "type": "email",
+                "required": true
+              },
+              {
+                "name": "phone",
+                "label": "Téléphone",
+                "type": "phone",
+                "required": false
+              },
+              {
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "required": true
+              }
+            ],
+            "submit_label": "Envoyer le message",
+            "privacy_note": "Les informations transmises servent uniquement à répondre à votre message."
+          }
+        }
+      ],
+      "seo": {
+        "title": "Contact — INFOSERV2A Cyber & Réseau",
+        "description": "Permettre un contact clair et simple."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "title": "Mentions légales",
+      "nav_label": "Mentions légales",
+      "purpose": "Afficher les mentions légales.",
+      "archetype": "legal_page",
+      "sections": [
+        {
+          "section_id": "legal-main",
+          "component": "legal_content",
+          "intent": "legal",
+          "heading": "Mentions légales",
+          "slots": {
+            "title": "Mentions légales",
+            "blocks": [
+              {
+                "heading": "Éditeur du site",
+                "body": "Éditeur : INFOSERV2A Cyber & Réseau. Les informations légales complètes doivent être confirmées avant publication finale."
+              },
+              {
+                "heading": "Hébergement",
+                "body": "Information à compléter avant publication."
+              }
+            ],
+            "missing_fields": [
+              "SIRET ou SIREN",
+              "adresse légale",
+              "responsable de publication",
+              "hébergeur"
+            ]
+          }
+        }
+      ],
+      "seo": {
+        "title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+        "description": "Afficher les mentions légales."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "title": "Confidentialité",
+      "nav_label": "Confidentialité",
+      "purpose": "Afficher la politique de confidentialité.",
+      "archetype": "legal_page",
+      "sections": [
+        {
+          "section_id": "legal-main",
+          "component": "legal_content",
+          "intent": "legal",
+          "heading": "Confidentialité",
+          "slots": {
+            "title": "Confidentialité",
+            "blocks": [
+              {
+                "heading": "Responsable du traitement",
+                "body": "INFOSERV2A Cyber & Réseau traite les messages transmis via le formulaire de contact."
+              },
+              {
+                "heading": "Données collectées",
+                "body": "Les données collectées sont limitées aux informations nécessaires pour répondre au message."
+              }
+            ],
+            "missing_fields": [
+              "SIRET ou SIREN",
+              "adresse légale",
+              "responsable de publication",
+              "hébergeur"
+            ]
+          }
+        }
+      ],
+      "seo": {
+        "title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+        "description": "Afficher la politique de confidentialité."
+      },
+      "cta": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "status": "planned"
+    }
+  ],
+  "footer": {
+    "brand_name": "INFOSERV2A Cyber & Réseau",
+    "columns": [
+      {
+        "title": "Navigation",
+        "links": [
+          {
+            "label": "Accueil",
+            "href": "index.html"
+          },
+          {
+            "label": "Cyber",
+            "href": "cyber.html"
+          },
+          {
+            "label": "Réseau",
+            "href": "reseau.html"
+          },
+          {
+            "label": "Secteurs sensibles",
+            "href": "secteurs-sensibles.html"
+          },
+          {
+            "label": "Méthode",
+            "href": "methode.html"
+          },
+          {
+            "label": "À propos",
+            "href": "a-propos.html"
+          },
+          {
+            "label": "Contact",
+            "href": "contact.html"
+          }
+        ]
+      }
+    ],
+    "legal_links": [
+      {
+        "label": "Mentions légales",
+        "href": "mentions-legales.html"
+      },
+      {
+        "label": "Confidentialité",
+        "href": "confidentialite.html"
+      }
+    ]
+  },
+  "seo": {
+    "require_canonical": true,
+    "require_sitemap": true,
+    "require_robots": true
+  },
+  "legal": {
+    "mode": "placeholder_until_provided",
+    "missing_fields": [
+      "SIRET ou SIREN",
+      "adresse légale",
+      "responsable de publication",
+      "hébergeur"
+    ]
+  },
+  "assets": {
+    "logo_primary": "assets/logo.png",
+    "logo_icon": "assets/logo.png",
+    "hero_image": "assets/charte-infoserv2a.png"
+  },
+  "quality_contract_ref": "policies/quality-contract.json",
+  "spec_compliance": {
+    "explicit_pages": [
+      "index.html",
+      "cyber.html",
+      "reseau.html",
+      "secteurs-sensibles.html",
+      "methode.html",
+      "a-propos.html",
+      "contact.html",
+      "mentions-legales.html",
+      "confidentialite.html"
+    ],
+    "explicit_navigation": [
+      "Accueil",
+      "Cyber",
+      "Réseau",
+      "Secteurs sensibles",
+      "Méthode",
+      "À propos",
+      "Contact"
+    ]
+  },
+  "writer_contract": {
+    "schema_version": "id2app-v3-writer-contract-1.0",
+    "enabled": true,
+    "writer_mode": "dense",
+    "content_depth": "verbose",
+    "editorial_tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
+    "section_expansion": "high",
+    "paragraphs_per_content_section": 3,
+    "card_body_sentences": 3,
+    "contact_copy_depth": "expanded",
+    "source": "powershell_or_spec"
+  },
+  "created_at": "2026-05-30T07:41:54.665Z"
+}
