@@ -1,0 +1,76 @@
+{
+  "schema_version": "id2app-v5-app-spec-1.0",
+  "project_key": "infoserv2a-cyber-reseau-v5-docs",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "project_type": "multi_page_website",
+  "family": "commercial_b2b",
+  "language": "fr",
+  "base_url": "",
+  "site_folder": "infoserv2a-cyber-reseau-v5-docs",
+  "pages": [
+    {
+      "title": "Accueil",
+      "file": "index.html"
+    },
+    {
+      "title": "Cyber",
+      "file": "cyber.html"
+    },
+    {
+      "title": "Réseau",
+      "file": "reseau.html"
+    },
+    {
+      "title": "Secteurs sensibles",
+      "file": "secteurs-sensibles.html"
+    },
+    {
+      "title": "Méthode",
+      "file": "methode.html"
+    },
+    {
+      "title": "À propos",
+      "file": "a-propos.html"
+    },
+    {
+      "title": "Contact",
+      "file": "contact.html"
+    },
+    {
+      "title": "Mentions légales",
+      "file": "mentions-legales.html"
+    },
+    {
+      "title": "Confidentialité",
+      "file": "confidentialite.html"
+    }
+  ],
+  "target_files": [
+    "infoserv2a-cyber-reseau-v5-docs/index.html",
+    "infoserv2a-cyber-reseau-v5-docs/cyber.html",
+    "infoserv2a-cyber-reseau-v5-docs/reseau.html",
+    "infoserv2a-cyber-reseau-v5-docs/secteurs-sensibles.html",
+    "infoserv2a-cyber-reseau-v5-docs/methode.html",
+    "infoserv2a-cyber-reseau-v5-docs/a-propos.html",
+    "infoserv2a-cyber-reseau-v5-docs/contact.html",
+    "infoserv2a-cyber-reseau-v5-docs/mentions-legales.html",
+    "infoserv2a-cyber-reseau-v5-docs/confidentialite.html",
+    "infoserv2a-cyber-reseau-v5-docs/styles.css",
+    "infoserv2a-cyber-reseau-v5-docs/script.js",
+    "infoserv2a-cyber-reseau-v5-docs/robots.txt",
+    "infoserv2a-cyber-reseau-v5-docs/sitemap.xml",
+    "infoserv2a-cyber-reseau-v5-docs/assets/logo.png",
+    "infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+    "infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/source-summary.json",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/brand-contract.json",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/app-spec.json",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/final-report.json",
+    "infoserv2a-cyber-reseau-v5-docs/.id2app/freeze-report.json"
+  ],
+  "brief": "",
+  "source_urls": {},
+  "writer": {},
+  "created_at": "2026-05-30T10:03:21.524Z"
+}
