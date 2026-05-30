@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.documentElement.classList.add('id2app-ready');document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Votre message est prêt à être transmis au GEM Casa di l'Isula.');}));});
