@@ -1,0 +1,128 @@
+{
+  "schema_version": "id2app-v5.2-diff-report-1.0",
+  "mode": "compile_new_project",
+  "changed_count": 17,
+  "unchanged_count": 0,
+  "files": [
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/index.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 3175
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/cyber.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2683
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/reseau.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2688
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/secteurs-sensibles.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2748
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/methode.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2693
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/a-propos.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2698
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/contact.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2318
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/mentions-legales.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2738
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/confidentialite.html",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 2733
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/styles.css",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 4141
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/script.js",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 259
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/robots.txt",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 72
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/sitemap.xml",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 708
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/.id2app/app-spec.json",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 33523
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/.id2app/patch-report.json",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 1308
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/.id2app/freeze-report.json",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 219
+    },
+    {
+      "path": "infoserv2a-cyber-reseau-v5-2-docs/.id2app/final-report.json",
+      "existed": false,
+      "changed": true,
+      "old_size": 0,
+      "new_size": 233
+    }
+  ],
+  "created_at": "2026-05-30T19:38:21.402Z"
+}
