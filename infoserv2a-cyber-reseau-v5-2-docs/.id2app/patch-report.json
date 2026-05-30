@@ -1,0 +1,28 @@
+{
+  "schema_version": "id2app-v5.2-patch-report-1.0",
+  "mode": "compile_new_project",
+  "project_key": "infoserv2a-cyber-reseau-v5-2-docs",
+  "affected_files": [
+    "infoserv2a-cyber-reseau-v5-2-docs/index.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/cyber.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/reseau.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/secteurs-sensibles.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/methode.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/a-propos.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/contact.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/mentions-legales.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/confidentialite.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/styles.css",
+    "infoserv2a-cyber-reseau-v5-2-docs/script.js",
+    "infoserv2a-cyber-reseau-v5-2-docs/robots.txt",
+    "infoserv2a-cyber-reseau-v5-2-docs/sitemap.xml",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/app-spec.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/patch-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/diff-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/freeze-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/final-report.json"
+  ],
+  "preserved_files": [],
+  "patch_request": "",
+  "created_at": "2026-05-30T19:38:21.386Z"
+}
