@@ -1,0 +1,471 @@
+{
+  "schema_version": "id2app-v5.1-app-spec-1.0",
+  "project_key": "gem-casa-di-l-isula-v5-1-docs",
+  "project_name": "GEM Casa di l'Isula",
+  "family": "association",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html"
+    },
+    {
+      "page_id": "activites",
+      "title": "Activités",
+      "file": "activites.html"
+    },
+    {
+      "page_id": "projet-associatif",
+      "title": "Projet associatif",
+      "file": "projet-associatif.html"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html"
+    }
+  ],
+  "writer_contract": {
+    "schema_version": "id2app-v5.1-writer-contract-1.0",
+    "family": "association",
+    "brand_name": "GEM Casa di l'Isula",
+    "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+    "brief": "Créer un site associatif premium pour le GEM Casa di l'Isula à Porto-Vecchio. Le site doit être humain, chaleureux, clair, non médicalisé, centré sur le lien social, la pair-aidance, les activités et la participation des adhérents.",
+    "content_depth": "verbose",
+    "editorial_tone": "humain, chaleureux, associatif, inclusif",
+    "pages": [
+      {
+        "page_id": "index",
+        "file": "index.html",
+        "title": "Accueil",
+        "eyebrow": "GEM Casa di l'Isula · Porto-Vecchio",
+        "h1": "Un lieu pour se retrouver, reprendre confiance et faire vivre le lien.",
+        "lead": "Un espace d’accueil, d’entraide et de participation où chacun peut venir à son rythme, proposer, participer et retrouver une place parmi les autres.",
+        "cards": [
+          [
+            "Accueil libre",
+            "Venir boire un café, parler, se poser et rencontrer le groupe sans pression."
+          ],
+          [
+            "Activités partagées",
+            "Ateliers créatifs, cuisine, sorties, jardin, culture et projets collectifs."
+          ],
+          [
+            "Pouvoir d’agir",
+            "Les adhérents participent aux idées, aux décisions et à la vie du GEM."
+          ]
+        ]
+      },
+      {
+        "page_id": "qui-sommes-nous",
+        "file": "qui-sommes-nous.html",
+        "title": "Qui sommes-nous",
+        "eyebrow": "Qui sommes-nous",
+        "h1": "Une association portée par ses adhérents.",
+        "lead": "Le GEM rassemble des personnes qui souhaitent rompre l’isolement, partager des moments simples et retrouver une dynamique collective.",
+        "cards": [
+          [
+            "Un groupe d’entraide",
+            "Un lieu de soutien entre pairs autour de temps informels et de projets choisis."
+          ],
+          [
+            "Une maison ouverte",
+            "Un espace non médicalisé, rassurant et convivial."
+          ]
+        ]
+      },
+      {
+        "page_id": "activites",
+        "file": "activites.html",
+        "title": "Activités",
+        "eyebrow": "Activités",
+        "h1": "Des rendez-vous pour créer, bouger, partager.",
+        "lead": "Les activités sont des supports de rencontre, évolutifs selon les envies, les saisons et les propositions des adhérents.",
+        "cards": [
+          [
+            "Création",
+            "Arts plastiques, écriture, musique, photo et décoration."
+          ],
+          [
+            "Vie quotidienne",
+            "Cuisine, repas partagés, sorties et entraide pratique."
+          ],
+          [
+            "Ouverture",
+            "Balades, culture, rencontres et événements associatifs."
+          ]
+        ]
+      },
+      {
+        "page_id": "projet-associatif",
+        "file": "projet-associatif.html",
+        "title": "Projet associatif",
+        "eyebrow": "Projet associatif",
+        "h1": "Faire du lien une force concrète.",
+        "lead": "Le projet repose sur la pair-aidance, la participation, la confiance et la possibilité de contribuer à la vie commune.",
+        "cards": [
+          [
+            "Rompre l’isolement",
+            "Créer des occasions régulières de rencontre."
+          ],
+          [
+            "Renforcer l’autonomie",
+            "Encourager initiatives et responsabilités partagées."
+          ],
+          [
+            "Changer le regard",
+            "Valoriser créativité, engagement et citoyenneté."
+          ]
+        ]
+      },
+      {
+        "page_id": "nous-soutenir",
+        "file": "nous-soutenir.html",
+        "title": "Nous soutenir",
+        "eyebrow": "Nous soutenir",
+        "h1": "Soutenir le GEM, c’est soutenir le lien social.",
+        "lead": "Chaque soutien aide à proposer des activités, sorties, projets culturels et espaces d’expression.",
+        "cards": [
+          [
+            "Devenir partenaire",
+            "Associations, collectivités, acteurs culturels et bénévoles peuvent contribuer."
+          ],
+          [
+            "Faire connaître le GEM",
+            "Relayer le lieu permet à des personnes isolées de découvrir un espace où revenir vers les autres."
+          ]
+        ]
+      },
+      {
+        "page_id": "contact",
+        "file": "contact.html",
+        "title": "Contact",
+        "eyebrow": "Contact",
+        "h1": "Prendre contact avec le GEM Casa di l’Isula.",
+        "lead": "Vous souhaitez découvrir le GEM, proposer un partenariat ou obtenir des informations ? Écrivez-nous.",
+        "cards": []
+      },
+      {
+        "page_id": "mentions-legales",
+        "file": "mentions-legales.html",
+        "title": "Mentions légales",
+        "eyebrow": "Mentions légales",
+        "h1": "Mentions légales",
+        "lead": "Informations relatives au site du GEM Casa di l’Isula.",
+        "cards": [
+          [
+            "Éditeur",
+            "GEM Casa di l’Isula — Porto-Vecchio."
+          ],
+          [
+            "Responsabilité",
+            "Les informations sont indicatives et évoluent selon la vie associative."
+          ]
+        ]
+      },
+      {
+        "page_id": "confidentialite",
+        "file": "confidentialite.html",
+        "title": "Confidentialité",
+        "eyebrow": "Confidentialité",
+        "h1": "Politique de confidentialité",
+        "lead": "Les informations transmises via le formulaire servent uniquement à répondre aux demandes adressées au GEM.",
+        "cards": [
+          [
+            "Données",
+            "Nom, coordonnées et message transmis volontairement."
+          ],
+          [
+            "Finalité",
+            "Réponse à une demande d’information, de contact ou de partenariat."
+          ]
+        ]
+      }
+    ],
+    "created_at": "2026-05-30T14:46:23.164Z"
+  },
+  "ux_contract": {
+    "schema_version": "id2app-v5.1-ux-contract-1.0",
+    "family": "association",
+    "navigation": {
+      "items": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Qui sommes-nous",
+          "href": "qui-sommes-nous.html",
+          "page_id": "qui-sommes-nous"
+        },
+        {
+          "label": "Activités",
+          "href": "activites.html",
+          "page_id": "activites"
+        },
+        {
+          "label": "Projet associatif",
+          "href": "projet-associatif.html",
+          "page_id": "projet-associatif"
+        },
+        {
+          "label": "Nous soutenir",
+          "href": "nous-soutenir.html",
+          "page_id": "nous-soutenir"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    "cta": {
+      "primary": {
+        "label": "Nous contacter",
+        "href": "contact.html"
+      },
+      "secondary": {
+        "label": "Découvrir les activités",
+        "href": "activites.html"
+      }
+    },
+    "patterns": {
+      "hero": "large editorial hero",
+      "cards": "responsive card grid",
+      "alternance": "soft tinted sections",
+      "contact": "qualified but non-invasive form"
+    },
+    "page_flow": [
+      {
+        "page_id": "index",
+        "file": "index.html",
+        "rank": 1,
+        "role": "entry"
+      },
+      {
+        "page_id": "qui-sommes-nous",
+        "file": "qui-sommes-nous.html",
+        "rank": 2,
+        "role": "support"
+      },
+      {
+        "page_id": "activites",
+        "file": "activites.html",
+        "rank": 3,
+        "role": "support"
+      },
+      {
+        "page_id": "projet-associatif",
+        "file": "projet-associatif.html",
+        "rank": 4,
+        "role": "support"
+      },
+      {
+        "page_id": "nous-soutenir",
+        "file": "nous-soutenir.html",
+        "rank": 5,
+        "role": "support"
+      },
+      {
+        "page_id": "contact",
+        "file": "contact.html",
+        "rank": 6,
+        "role": "support"
+      },
+      {
+        "page_id": "mentions-legales",
+        "file": "mentions-legales.html",
+        "rank": 7,
+        "role": "support"
+      },
+      {
+        "page_id": "confidentialite",
+        "file": "confidentialite.html",
+        "rank": 8,
+        "role": "support"
+      }
+    ],
+    "created_at": "2026-05-30T14:46:23.171Z"
+  },
+  "seo_accessibility": {
+    "schema_version": "id2app-v5.1-seo-accessibility-1.0",
+    "html_lang": "fr",
+    "pages": [
+      {
+        "file": "index.html",
+        "page_id": "index",
+        "title": "Accueil — GEM Casa di l'Isula",
+        "meta_description": "Un espace d’accueil, d’entraide et de participation où chacun peut venir à son rythme, proposer, participer et retrouver une place parmi les autres.",
+        "h1": "Un lieu pour se retrouver, reprendre confiance et faire vivre le lien.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/",
+        "lang": "fr"
+      },
+      {
+        "file": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous",
+        "title": "Qui sommes-nous — GEM Casa di l'Isula",
+        "meta_description": "Le GEM rassemble des personnes qui souhaitent rompre l’isolement, partager des moments simples et retrouver une dynamique collective.",
+        "h1": "Une association portée par ses adhérents.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/qui-sommes-nous.html",
+        "lang": "fr"
+      },
+      {
+        "file": "activites.html",
+        "page_id": "activites",
+        "title": "Activités — GEM Casa di l'Isula",
+        "meta_description": "Les activités sont des supports de rencontre, évolutifs selon les envies, les saisons et les propositions des adhérents.",
+        "h1": "Des rendez-vous pour créer, bouger, partager.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/activites.html",
+        "lang": "fr"
+      },
+      {
+        "file": "projet-associatif.html",
+        "page_id": "projet-associatif",
+        "title": "Projet associatif — GEM Casa di l'Isula",
+        "meta_description": "Le projet repose sur la pair-aidance, la participation, la confiance et la possibilité de contribuer à la vie commune.",
+        "h1": "Faire du lien une force concrète.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/projet-associatif.html",
+        "lang": "fr"
+      },
+      {
+        "file": "nous-soutenir.html",
+        "page_id": "nous-soutenir",
+        "title": "Nous soutenir — GEM Casa di l'Isula",
+        "meta_description": "Chaque soutien aide à proposer des activités, sorties, projets culturels et espaces d’expression.",
+        "h1": "Soutenir le GEM, c’est soutenir le lien social.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/nous-soutenir.html",
+        "lang": "fr"
+      },
+      {
+        "file": "contact.html",
+        "page_id": "contact",
+        "title": "Contact — GEM Casa di l'Isula",
+        "meta_description": "Vous souhaitez découvrir le GEM, proposer un partenariat ou obtenir des informations ? Écrivez-nous.",
+        "h1": "Prendre contact avec le GEM Casa di l’Isula.",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/contact.html",
+        "lang": "fr"
+      },
+      {
+        "file": "mentions-legales.html",
+        "page_id": "mentions-legales",
+        "title": "Mentions légales — GEM Casa di l'Isula",
+        "meta_description": "Informations relatives au site du GEM Casa di l’Isula.",
+        "h1": "Mentions légales",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/mentions-legales.html",
+        "lang": "fr"
+      },
+      {
+        "file": "confidentialite.html",
+        "page_id": "confidentialite",
+        "title": "Confidentialité — GEM Casa di l'Isula",
+        "meta_description": "Les informations transmises via le formulaire servent uniquement à répondre aux demandes adressées au GEM.",
+        "h1": "Politique de confidentialité",
+        "canonical": "https://www.gem-casa-di-l-isula.fr/confidentialite.html",
+        "lang": "fr"
+      }
+    ],
+    "accessibility": {
+      "skip_link": true,
+      "semantic_landmarks": true,
+      "alt_policy": "decorative images empty alt, informative images explicit alt",
+      "form_labels": true
+    },
+    "sitemap": true,
+    "robots": true,
+    "created_at": "2026-05-30T14:46:23.178Z"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.1-design-media-1.0",
+    "family": "association",
+    "palette": {
+      "background": "#fff8ed",
+      "paper": "#fffdf8",
+      "ink": "#2b2520",
+      "muted": "#6d6258",
+      "accent": "#df6b57",
+      "warm": "#f28c28",
+      "green": "#5f8f73",
+      "blue": "#4f86a8"
+    },
+    "visual_style": "associatif premium, méditerranéen, doux",
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png",
+      "hero_visual_path": "assets/charte-print.png",
+      "alt": "GEM Casa di l'Isula"
+    },
+    "layout": {
+      "max_width": "1160px",
+      "card_radius": "26px",
+      "hero_style": "warm editorial"
+    },
+    "asset_manifest": {
+      "schema_version": "id2app-v5.1-asset-manifest-1.0",
+      "assets": [
+        {
+          "role": "logo",
+          "path": "gem-casa-di-l-isula-v5-1-docs/assets/logo.png",
+          "public_path": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png"
+        },
+        {
+          "role": "visual_reference",
+          "path": "gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png",
+          "public_path": "assets/charte-print.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png"
+        }
+      ],
+      "created_at": "2026-05-30T14:46:23.184Z"
+    },
+    "created_at": "2026-05-30T14:46:23.184Z"
+  },
+  "target_files": [
+    "gem-casa-di-l-isula-v5-1-docs/index.html",
+    "gem-casa-di-l-isula-v5-1-docs/qui-sommes-nous.html",
+    "gem-casa-di-l-isula-v5-1-docs/activites.html",
+    "gem-casa-di-l-isula-v5-1-docs/projet-associatif.html",
+    "gem-casa-di-l-isula-v5-1-docs/nous-soutenir.html",
+    "gem-casa-di-l-isula-v5-1-docs/contact.html",
+    "gem-casa-di-l-isula-v5-1-docs/mentions-legales.html",
+    "gem-casa-di-l-isula-v5-1-docs/confidentialite.html",
+    "gem-casa-di-l-isula-v5-1-docs/styles.css",
+    "gem-casa-di-l-isula-v5-1-docs/script.js",
+    "gem-casa-di-l-isula-v5-1-docs/robots.txt",
+    "gem-casa-di-l-isula-v5-1-docs/sitemap.xml",
+    "gem-casa-di-l-isula-v5-1-docs/assets/logo.png",
+    "gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/source/spec_gem_casa_di_l_isula_v3.md",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/source-summary.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/brand-contract.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/writer-contract.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/ux-contract.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/seo-accessibility.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/design-media.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/app-spec.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/final-report.json",
+    "gem-casa-di-l-isula-v5-1-docs/.id2app/freeze-report.json"
+  ],
+  "created_at": "2026-05-30T14:46:23.198Z"
+}
