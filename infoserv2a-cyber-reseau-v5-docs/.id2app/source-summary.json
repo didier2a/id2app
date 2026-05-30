@@ -1,0 +1,12 @@
+{
+  "schema_version": "id2app-v5-source-summary-1.0",
+  "project_key": "infoserv2a-cyber-reseau-v5-docs",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "document_ingestion_mode": "source_urls",
+  "normalizer_mode": "source_urls_to_contract",
+  "source_documents": {},
+  "source_urls": {},
+  "source_files": [],
+  "note": "Sources are staged in GitHub and referenced by raw URLs. No base64 payload is transported through Core V5.",
+  "created_at": "2026-05-30T10:03:21.524Z"
+}
