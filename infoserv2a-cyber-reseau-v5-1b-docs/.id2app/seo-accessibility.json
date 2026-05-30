@@ -1,0 +1,413 @@
+{
+  "schema_version": "id2app-v5.1b-seo-accessibility-1.0",
+  "family": "commercial_b2b",
+  "html_lang": "fr",
+  "pages": [
+    {
+      "file": "index.html",
+      "page_id": "index",
+      "title": "Accueil — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Pour les dirigeants, hôtels, campings, cabinets, commerces et sites isolés, INFOSERV2A vérifie localement les risques cyber, les dépendances réseau et…",
+      "h1": "Sécuriser le terrain numérique avant qu’il ne fragilise l’activité.",
+      "canonical": "https://www.infoserve2a.pro/",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "cyber.html",
+      "page_id": "cyber",
+      "title": "Cyber — INFOSERV2A Cyber & Réseau",
+      "meta_description": "INFOSERV2A vérifie les usages, les accès, les sauvegardes, les comptes sensibles et les dépendances qui peuvent exposer une entreprise.",
+      "h1": "Identifier les risques qui existent vraiment sur le terrain.",
+      "canonical": "https://www.infoserve2a.pro/cyber.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "reseau.html",
+      "page_id": "reseau",
+      "title": "Réseau — INFOSERV2A Cyber & Réseau",
+      "meta_description": "WiFi professionnel, Starlink, liaisons difficiles, zones isolées et équipements sensibles demandent une architecture claire et documentée.",
+      "h1": "Fiabiliser le réseau qui porte votre activité.",
+      "canonical": "https://www.infoserve2a.pro/reseau.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "secteurs-sensibles.html",
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Certaines structures ne peuvent pas se permettre un réseau flou, une sécurité approximative ou une reprise improvisée.",
+      "h1": "Des environnements où une coupure devient un problème métier.",
+      "canonical": "https://www.infoserve2a.pro/secteurs-sensibles.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "methode.html",
+      "page_id": "methode",
+      "title": "Méthode — INFOSERV2A Cyber & Réseau",
+      "meta_description": "L’objectif est de transformer une situation floue en priorités lisibles et en actions réalistes.",
+      "h1": "Une démarche courte, concrète, documentée.",
+      "canonical": "https://www.infoserve2a.pro/methode.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "a-propos.html",
+      "page_id": "a-propos",
+      "title": "À propos — INFOSERV2A Cyber & Réseau",
+      "meta_description": "INFOSERV2A se positionne sur la jonction entre sécurité, réseau et terrain, avec une approche utile aux dirigeants du Sud Corse.",
+      "h1": "Une expertise locale pour des infrastructures réelles.",
+      "canonical": "https://www.infoserve2a.pro/a-propos.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    {
+      "file": "contact.html",
+      "page_id": "contact",
+      "title": "Contact — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Le formulaire permet de comprendre rapidement le contexte, l’urgence et le périmètre.",
+      "h1": "Décrivez votre besoin cyber ou réseau.",
+      "canonical": "https://www.infoserve2a.pro/contact.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        }
+      ]
+    },
+    {
+      "file": "mentions-legales.html",
+      "page_id": "mentions-legales",
+      "title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Informations relatives au site INFOSERV2A Cyber & Réseau.",
+      "h1": "Mentions légales",
+      "canonical": "https://www.infoserve2a.pro/mentions-legales.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        }
+      ]
+    },
+    {
+      "file": "confidentialite.html",
+      "page_id": "confidentialite",
+      "title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Les informations transmises servent uniquement à répondre aux demandes professionnelles.",
+      "h1": "Politique de confidentialité",
+      "canonical": "https://www.infoserve2a.pro/confidentialite.html",
+      "lang": "fr",
+      "og_type": "website",
+      "internal_links": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        }
+      ]
+    }
+  ],
+  "sitemap": {
+    "enabled": true,
+    "files": [
+      "index.html",
+      "cyber.html",
+      "reseau.html",
+      "secteurs-sensibles.html",
+      "methode.html",
+      "a-propos.html",
+      "contact.html",
+      "mentions-legales.html",
+      "confidentialite.html"
+    ]
+  },
+  "robots": {
+    "allow_all": true,
+    "sitemap": true
+  },
+  "accessibility": {
+    "skip_link": true,
+    "semantic_landmarks": true,
+    "form_labels": true,
+    "focus_visible": true,
+    "reduced_motion": true,
+    "alt_policy": "decorative media empty alt, meaningful logo alt with brand name",
+    "heading_policy": "one h1 per page, ordered h2 sections"
+  },
+  "created_at": "2026-05-30T18:39:47.108Z"
+}
