@@ -1,0 +1,25 @@
+{
+  "schema_version": "id2app-v5-gem-freeze-report-1.0",
+  "freeze_status": "passed",
+  "project_key": "gem-casa-di-l-isula-v5-docs",
+  "site_folder": "gem-casa-di-l-isula-v5-docs",
+  "required_pages": [
+    "index.html",
+    "qui-sommes-nous.html",
+    "activites.html",
+    "projet-associatif.html",
+    "nous-soutenir.html",
+    "contact.html",
+    "mentions-legales.html",
+    "confidentialite.html"
+  ],
+  "checks": {
+    "has_index": true,
+    "has_styles": true,
+    "has_script": true,
+    "has_reports": true,
+    "no_empty_css": true,
+    "no_empty_js": true
+  },
+  "created_at": "2026-05-30T10:42:25.706Z"
+}
