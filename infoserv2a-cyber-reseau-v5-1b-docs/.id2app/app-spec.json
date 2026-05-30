@@ -1,6 +1,6 @@
 {
   "schema_version": "id2app-v5.2-premium-app-spec-1.0",
-  "mode": "harmonize_existing_project",
+  "mode": "patch_existing_project",
   "project_key": "infoserv2a-cyber-reseau-v5-1b-docs",
   "project_name": "INFOSERV2A Cyber & Réseau",
   "project_type": "multi_page_website",
@@ -36,8 +36,8 @@
       "logo_usage": "header_and_signal_panel",
       "image_style": "technical_schematic"
     },
-    "selection_reason": "Detected from family/project/brief for mode harmonize_existing_project",
-    "created_at": "2026-05-30T19:43:43.863Z"
+    "selection_reason": "Detected from family/project/brief for mode patch_existing_project",
+    "created_at": "2026-05-30T19:48:40.947Z"
   },
   "brand": {
     "tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
@@ -49,8 +49,8 @@
     "family": "commercial_b2b",
     "tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
     "content_depth": "verbose",
-    "mode": "harmonize_existing_project",
-    "patch_request": "Harmoniser le site existant : améliorer la qualité premium, renforcer la typographie, densifier les sections clés, conserver les assets et préserver la structure globale.",
+    "mode": "patch_existing_project",
+    "patch_request": "Modifier uniquement la page Contact : rendre le formulaire plus qualifiant et ajouter une section de contexte avant l’envoi.",
     "pages": [
       {
         "page_id": "index",
@@ -374,7 +374,7 @@
         ]
       }
     ],
-    "created_at": "2026-05-30T19:43:43.882Z"
+    "created_at": "2026-05-30T19:48:40.967Z"
   },
   "ux_contract": {
     "schema_version": "id2app-v5.2-ux-contract-1.0",
@@ -428,7 +428,7 @@
       "reveal_effects": true,
       "form_feedback": true
     },
-    "created_at": "2026-05-30T19:43:43.903Z"
+    "created_at": "2026-05-30T19:48:40.985Z"
   },
   "seo_accessibility": {
     "schema_version": "id2app-v5.2-seo-accessibility-1.0",
@@ -504,7 +504,7 @@
       "focus_visible": true,
       "alt_images": true
     },
-    "created_at": "2026-05-30T19:43:43.923Z"
+    "created_at": "2026-05-30T19:48:41.003Z"
   },
   "design_media": {
     "schema_version": "id2app-v5.2-design-media-1.0",
@@ -546,7 +546,7 @@
       },
       "source_files": []
     },
-    "created_at": "2026-05-30T19:43:43.945Z"
+    "created_at": "2026-05-30T19:48:41.031Z"
   },
   "pages": [
     {
@@ -929,41 +929,39 @@
   ],
   "patch_scope_resolved": {
     "schema_version": "id2app-v5.2-patch-scope-1.0",
-    "mode": "harmonize_existing_project",
+    "mode": "patch_existing_project",
     "affected_files": [
+      "infoserv2a-cyber-reseau-v5-1b-docs/contact.html",
+      "infoserv2a-cyber-reseau-v5-1b-docs/script.js",
+      "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/patch-report.json",
+      "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/freeze-report.json"
+    ],
+    "preserved_files": [
       "infoserv2a-cyber-reseau-v5-1b-docs/index.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/cyber.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/reseau.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/secteurs-sensibles.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/methode.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/a-propos.html",
-      "infoserv2a-cyber-reseau-v5-1b-docs/contact.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/mentions-legales.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/confidentialite.html",
       "infoserv2a-cyber-reseau-v5-1b-docs/styles.css",
-      "infoserv2a-cyber-reseau-v5-1b-docs/script.js",
-      "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/patch-report.json",
-      "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/freeze-report.json"
-    ],
-    "preserved_files": [
       "infoserv2a-cyber-reseau-v5-1b-docs/robots.txt",
       "infoserv2a-cyber-reseau-v5-1b-docs/sitemap.xml",
       "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/app-spec.json",
       "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/diff-report.json",
       "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/final-report.json"
     ],
-    "affected_count": 13,
-    "preserved_count": 5,
-    "reasons": [
-      "harmonize defaults to all pages plus style assets"
-    ],
+    "affected_count": 4,
+    "preserved_count": 14,
+    "reasons": [],
     "preserve_existing_pages": true,
     "preserve_existing_assets": true,
-    "created_at": "2026-05-30T19:43:43.841Z"
+    "created_at": "2026-05-30T19:48:40.931Z"
   },
   "existing_site_state_summary": {
-    "loaded_count": 16,
+    "loaded_count": 18,
     "source": "github"
   },
-  "created_at": "2026-05-30T19:43:43.970Z"
+  "created_at": "2026-05-30T19:48:41.045Z"
 }
