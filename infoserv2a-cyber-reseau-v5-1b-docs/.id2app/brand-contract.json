@@ -1,0 +1,119 @@
+{
+  "schema_version": "id2app-v5.1b-brand-contract-1.0",
+  "brand": {
+    "tone": "premium B2B cyber local, sobre, expert, rassurant",
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+    "name": "INFOSERV2A Cyber & Réseau",
+    "visual_style": "cyber sobre premium"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.1b-design-media-1.0",
+    "family": "commercial_b2b",
+    "palette": {
+      "background": "#061024",
+      "deep": "#030713",
+      "panel": "#0D1833",
+      "text": "#FFFFFF",
+      "muted": "#B7BCC6",
+      "cyan": "#00E5FF",
+      "turquoise": "#40E0D0",
+      "silver": "#DCE3EC",
+      "violet": "#5D6BFF"
+    },
+    "typography": {
+      "display": "Inter Tight / system sans",
+      "body": "Inter / system sans",
+      "scale": "premium editorial clamp scale"
+    },
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png",
+      "hero_logo_path": "",
+      "alt": "INFOSERV2A Cyber & Réseau"
+    },
+    "media_plan": {
+      "hero": {
+        "role": "architecture_premium",
+        "public_path": "assets/architecture-premium.png"
+      },
+      "feature": {
+        "role": "architecture_premium",
+        "public_path": "assets/architecture-premium.png"
+      },
+      "logo": {
+        "role": "logo",
+        "public_path": "assets/logo.png"
+      },
+      "placement": [
+        "hero visual panel",
+        "source badge strip",
+        "media feature section",
+        "footer identity"
+      ]
+    },
+    "asset_manifest": {
+      "site_folder": "infoserv2a-cyber-reseau-v5-1b-docs",
+      "source_urls": {
+        "logo_or_charte": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png",
+        "architecture_premium": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/architecture-premium.png",
+        "charte_reference": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/charte-infoserv2a.png",
+        "blueprint_pdf": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf"
+      },
+      "source_files": [
+        {
+          "target_name": ".id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+          "mime_type": "application/pdf",
+          "role": "blueprint_pdf",
+          "already_staged": true,
+          "github_path": "infoserv2a-cyber-reseau-v5-1-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf"
+        },
+        {
+          "target_name": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png",
+          "mime_type": "image/png",
+          "role": "logo_or_charte",
+          "already_staged": true,
+          "github_path": "infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png"
+        },
+        {
+          "target_name": "assets/architecture-premium.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/architecture-premium.png",
+          "mime_type": "image/png",
+          "role": "architecture_premium",
+          "already_staged": true,
+          "github_path": "infoserv2a-cyber-reseau-v5-1-docs/assets/architecture-premium.png"
+        },
+        {
+          "target_name": "assets/charte-infoserv2a.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/charte-infoserv2a.png",
+          "mime_type": "image/png",
+          "role": "charte_reference",
+          "already_staged": true,
+          "github_path": "infoserv2a-cyber-reseau-v5-1-docs/assets/charte-infoserv2a.png"
+        }
+      ],
+      "assets": [
+        {
+          "role": "logo",
+          "public_path": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/logo.png"
+        },
+        {
+          "role": "feature",
+          "public_path": "assets/architecture-premium.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-1-docs/assets/charte-infoserv2a.png"
+        }
+      ]
+    },
+    "visual_principles": [
+      "dark premium",
+      "technical clarity",
+      "cyan accents",
+      "executive proof",
+      "controlled contrast"
+    ],
+    "created_at": "2026-05-30T18:39:47.116Z"
+  },
+  "created_at": "2026-05-30T18:39:47.157Z"
+}
