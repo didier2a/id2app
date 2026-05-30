@@ -1,0 +1,26 @@
+{
+  "schema_version": "id2app-v5-freeze-report-1.0",
+  "freeze_status": "passed",
+  "project_key": "infoserv2a-cyber-reseau-v5-docs",
+  "site_folder": "infoserv2a-cyber-reseau-v5-docs",
+  "required_pages": [
+    "index.html",
+    "cyber.html",
+    "reseau.html",
+    "secteurs-sensibles.html",
+    "methode.html",
+    "a-propos.html",
+    "contact.html",
+    "mentions-legales.html",
+    "confidentialite.html"
+  ],
+  "checks": {
+    "has_index": true,
+    "has_styles": true,
+    "has_script": true,
+    "has_reports": true,
+    "no_empty_css": true,
+    "no_empty_js": true
+  },
+  "created_at": "2026-05-30T10:03:21.524Z"
+}
