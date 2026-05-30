@@ -1,0 +1,87 @@
+{
+  "schema_version": "id2app-v5.1-seo-accessibility-1.0",
+  "html_lang": "fr",
+  "pages": [
+    {
+      "file": "index.html",
+      "page_id": "index",
+      "title": "Accueil — GEM Casa di l'Isula",
+      "meta_description": "Un espace d’accueil, d’entraide et de participation où chacun peut venir à son rythme, proposer, participer et retrouver une place parmi les autres.",
+      "h1": "Un lieu pour se retrouver, reprendre confiance et faire vivre le lien.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/",
+      "lang": "fr"
+    },
+    {
+      "file": "qui-sommes-nous.html",
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous — GEM Casa di l'Isula",
+      "meta_description": "Le GEM rassemble des personnes qui souhaitent rompre l’isolement, partager des moments simples et retrouver une dynamique collective.",
+      "h1": "Une association portée par ses adhérents.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/qui-sommes-nous.html",
+      "lang": "fr"
+    },
+    {
+      "file": "activites.html",
+      "page_id": "activites",
+      "title": "Activités — GEM Casa di l'Isula",
+      "meta_description": "Les activités sont des supports de rencontre, évolutifs selon les envies, les saisons et les propositions des adhérents.",
+      "h1": "Des rendez-vous pour créer, bouger, partager.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/activites.html",
+      "lang": "fr"
+    },
+    {
+      "file": "projet-associatif.html",
+      "page_id": "projet-associatif",
+      "title": "Projet associatif — GEM Casa di l'Isula",
+      "meta_description": "Le projet repose sur la pair-aidance, la participation, la confiance et la possibilité de contribuer à la vie commune.",
+      "h1": "Faire du lien une force concrète.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/projet-associatif.html",
+      "lang": "fr"
+    },
+    {
+      "file": "nous-soutenir.html",
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir — GEM Casa di l'Isula",
+      "meta_description": "Chaque soutien aide à proposer des activités, sorties, projets culturels et espaces d’expression.",
+      "h1": "Soutenir le GEM, c’est soutenir le lien social.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/nous-soutenir.html",
+      "lang": "fr"
+    },
+    {
+      "file": "contact.html",
+      "page_id": "contact",
+      "title": "Contact — GEM Casa di l'Isula",
+      "meta_description": "Vous souhaitez découvrir le GEM, proposer un partenariat ou obtenir des informations ? Écrivez-nous.",
+      "h1": "Prendre contact avec le GEM Casa di l’Isula.",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/contact.html",
+      "lang": "fr"
+    },
+    {
+      "file": "mentions-legales.html",
+      "page_id": "mentions-legales",
+      "title": "Mentions légales — GEM Casa di l'Isula",
+      "meta_description": "Informations relatives au site du GEM Casa di l’Isula.",
+      "h1": "Mentions légales",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/mentions-legales.html",
+      "lang": "fr"
+    },
+    {
+      "file": "confidentialite.html",
+      "page_id": "confidentialite",
+      "title": "Confidentialité — GEM Casa di l'Isula",
+      "meta_description": "Les informations transmises via le formulaire servent uniquement à répondre aux demandes adressées au GEM.",
+      "h1": "Politique de confidentialité",
+      "canonical": "https://www.gem-casa-di-l-isula.fr/confidentialite.html",
+      "lang": "fr"
+    }
+  ],
+  "accessibility": {
+    "skip_link": true,
+    "semantic_landmarks": true,
+    "alt_policy": "decorative images empty alt, informative images explicit alt",
+    "form_labels": true
+  },
+  "sitemap": true,
+  "robots": true,
+  "created_at": "2026-05-30T14:46:23.178Z"
+}
