@@ -1,0 +1,99 @@
+{
+  "schema_version": "id2app-v3-quality-contract-1.0",
+  "project_key": "infoserv2a-cyber-reseau",
+  "template_family": "commercial_b2b",
+  "blocking_patterns": [
+    "[object Object]",
+    "undefined",
+    "NaN",
+    "null visible",
+    "Un point clé à présenter clairement",
+    "Cette page précise",
+    "Généré depuis une spécification structurée",
+    "Ce que le site doit rendre lisible",
+    "Domaines couverts",
+    "Voir les services",
+    "Besoin d’un échange",
+    "Besoin d'un échange",
+    "Parlons de votre besoin",
+    "Demander un échange"
+  ],
+  "forbidden_public_terms": [
+    "PortoFlow",
+    "GEM Casa",
+    "Casa di l’Isula",
+    "adhérents",
+    "bénévolat",
+    "maison ouverte",
+    "copilote territorial"
+  ],
+  "allowed_public_terms": [
+    "audit",
+    "diagnostic",
+    "expertise",
+    "preuve",
+    "méthode",
+    "risque",
+    "intervention",
+    "qualification",
+    "demande",
+    "devis",
+    "entreprise"
+  ],
+  "forbidden_cross_project_terms": [
+    "PortoFlow",
+    "portoflow"
+  ],
+  "forbidden_public_technical_terms": [
+    "ID2APP",
+    "workflow",
+    "payload",
+    "runner",
+    "publisher",
+    "n8n",
+    "SAFE PATCH",
+    "Cloud Code",
+    "Claude Code"
+  ],
+  "forbidden_page_files": [],
+  "required_page_files": [
+    "index.html",
+    "cyber.html",
+    "reseau.html",
+    "secteurs-sensibles.html",
+    "methode.html",
+    "a-propos.html",
+    "contact.html",
+    "mentions-legales.html",
+    "confidentialite.html"
+  ],
+  "footer_requirements": {
+    "required_terms": [
+      "INFOSERV2A Cyber & Réseau"
+    ],
+    "forbid_previous_project_footer": true
+  },
+  "asset_requirements": {
+    "forbid_cross_project_assets": true,
+    "require_alt_text": true
+  },
+  "seo_requirements": {
+    "require_title": true,
+    "require_meta_description": true,
+    "require_canonical": true,
+    "require_sitemap": true,
+    "require_robots": true
+  },
+  "accessibility_requirements": {
+    "require_lang": true,
+    "require_skip_link": true,
+    "require_focus_visible": true,
+    "require_form_labels": true
+  },
+  "freeze_policy": {
+    "block_on_critical_hits": true,
+    "require_all_expected_files": true,
+    "require_public_surface_clean": true
+  },
+  "created_at": "2026-05-30T07:41:54.669Z"
+}
