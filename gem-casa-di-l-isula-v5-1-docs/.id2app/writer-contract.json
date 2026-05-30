@@ -1,0 +1,159 @@
+{
+  "schema_version": "id2app-v5.1-writer-contract-1.0",
+  "family": "association",
+  "brand_name": "GEM Casa di l'Isula",
+  "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+  "brief": "Créer un site associatif premium pour le GEM Casa di l'Isula à Porto-Vecchio. Le site doit être humain, chaleureux, clair, non médicalisé, centré sur le lien social, la pair-aidance, les activités et la participation des adhérents.",
+  "content_depth": "verbose",
+  "editorial_tone": "humain, chaleureux, associatif, inclusif",
+  "pages": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "title": "Accueil",
+      "eyebrow": "GEM Casa di l'Isula · Porto-Vecchio",
+      "h1": "Un lieu pour se retrouver, reprendre confiance et faire vivre le lien.",
+      "lead": "Un espace d’accueil, d’entraide et de participation où chacun peut venir à son rythme, proposer, participer et retrouver une place parmi les autres.",
+      "cards": [
+        [
+          "Accueil libre",
+          "Venir boire un café, parler, se poser et rencontrer le groupe sans pression."
+        ],
+        [
+          "Activités partagées",
+          "Ateliers créatifs, cuisine, sorties, jardin, culture et projets collectifs."
+        ],
+        [
+          "Pouvoir d’agir",
+          "Les adhérents participent aux idées, aux décisions et à la vie du GEM."
+        ]
+      ]
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "title": "Qui sommes-nous",
+      "eyebrow": "Qui sommes-nous",
+      "h1": "Une association portée par ses adhérents.",
+      "lead": "Le GEM rassemble des personnes qui souhaitent rompre l’isolement, partager des moments simples et retrouver une dynamique collective.",
+      "cards": [
+        [
+          "Un groupe d’entraide",
+          "Un lieu de soutien entre pairs autour de temps informels et de projets choisis."
+        ],
+        [
+          "Une maison ouverte",
+          "Un espace non médicalisé, rassurant et convivial."
+        ]
+      ]
+    },
+    {
+      "page_id": "activites",
+      "file": "activites.html",
+      "title": "Activités",
+      "eyebrow": "Activités",
+      "h1": "Des rendez-vous pour créer, bouger, partager.",
+      "lead": "Les activités sont des supports de rencontre, évolutifs selon les envies, les saisons et les propositions des adhérents.",
+      "cards": [
+        [
+          "Création",
+          "Arts plastiques, écriture, musique, photo et décoration."
+        ],
+        [
+          "Vie quotidienne",
+          "Cuisine, repas partagés, sorties et entraide pratique."
+        ],
+        [
+          "Ouverture",
+          "Balades, culture, rencontres et événements associatifs."
+        ]
+      ]
+    },
+    {
+      "page_id": "projet-associatif",
+      "file": "projet-associatif.html",
+      "title": "Projet associatif",
+      "eyebrow": "Projet associatif",
+      "h1": "Faire du lien une force concrète.",
+      "lead": "Le projet repose sur la pair-aidance, la participation, la confiance et la possibilité de contribuer à la vie commune.",
+      "cards": [
+        [
+          "Rompre l’isolement",
+          "Créer des occasions régulières de rencontre."
+        ],
+        [
+          "Renforcer l’autonomie",
+          "Encourager initiatives et responsabilités partagées."
+        ],
+        [
+          "Changer le regard",
+          "Valoriser créativité, engagement et citoyenneté."
+        ]
+      ]
+    },
+    {
+      "page_id": "nous-soutenir",
+      "file": "nous-soutenir.html",
+      "title": "Nous soutenir",
+      "eyebrow": "Nous soutenir",
+      "h1": "Soutenir le GEM, c’est soutenir le lien social.",
+      "lead": "Chaque soutien aide à proposer des activités, sorties, projets culturels et espaces d’expression.",
+      "cards": [
+        [
+          "Devenir partenaire",
+          "Associations, collectivités, acteurs culturels et bénévoles peuvent contribuer."
+        ],
+        [
+          "Faire connaître le GEM",
+          "Relayer le lieu permet à des personnes isolées de découvrir un espace où revenir vers les autres."
+        ]
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "eyebrow": "Contact",
+      "h1": "Prendre contact avec le GEM Casa di l’Isula.",
+      "lead": "Vous souhaitez découvrir le GEM, proposer un partenariat ou obtenir des informations ? Écrivez-nous.",
+      "cards": []
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "title": "Mentions légales",
+      "eyebrow": "Mentions légales",
+      "h1": "Mentions légales",
+      "lead": "Informations relatives au site du GEM Casa di l’Isula.",
+      "cards": [
+        [
+          "Éditeur",
+          "GEM Casa di l’Isula — Porto-Vecchio."
+        ],
+        [
+          "Responsabilité",
+          "Les informations sont indicatives et évoluent selon la vie associative."
+        ]
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "title": "Confidentialité",
+      "eyebrow": "Confidentialité",
+      "h1": "Politique de confidentialité",
+      "lead": "Les informations transmises via le formulaire servent uniquement à répondre aux demandes adressées au GEM.",
+      "cards": [
+        [
+          "Données",
+          "Nom, coordonnées et message transmis volontairement."
+        ],
+        [
+          "Finalité",
+          "Réponse à une demande d’information, de contact ou de partenariat."
+        ]
+      ]
+    }
+  ],
+  "created_at": "2026-05-30T14:46:23.164Z"
+}
