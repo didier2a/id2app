@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.documentElement.classList.add('id2app-v53-ready');document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();alert('Votre demande est prête à être transmise.');}));});
