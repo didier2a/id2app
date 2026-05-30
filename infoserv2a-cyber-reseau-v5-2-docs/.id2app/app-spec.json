@@ -1,0 +1,968 @@
+{
+  "schema_version": "id2app-v5.2-premium-app-spec-1.0",
+  "mode": "compile_new_project",
+  "project_key": "infoserv2a-cyber-reseau-v5-2-docs",
+  "project_name": "INFOSERV2A Cyber & Réseau",
+  "project_type": "multi_page_website",
+  "family": "commercial_b2b",
+  "language": "fr",
+  "site_folder": "infoserv2a-cyber-reseau-v5-2-docs",
+  "base_url": "https://www.infoserve2a.pro",
+  "template_contract": {
+    "schema_version": "id2app-v5.2-template-contract-1.0",
+    "detected_family": "commercial_b2b",
+    "template_family": "commercial_b2b",
+    "template_profile": "industrial_b2b_premium",
+    "profile": "industrial_b2b_premium",
+    "typography": {
+      "heading": "Sora, Inter, system-ui, sans-serif",
+      "body": "Inter, system-ui, sans-serif",
+      "scale": "executive_precision"
+    },
+    "palette": {
+      "bg": "#071126",
+      "surface": "#101a33",
+      "ink": "#ffffff",
+      "muted": "#b7bcc6",
+      "accent": "#00e5ff",
+      "accent2": "#40e0d0"
+    },
+    "layout": {
+      "hero": "asymmetric_authority",
+      "cards": "technical_bento",
+      "section_alternance": true
+    },
+    "media": {
+      "logo_usage": "header_and_signal_panel",
+      "image_style": "technical_schematic"
+    },
+    "selection_reason": "Detected from family/project/brief for mode compile_new_project",
+    "created_at": "2026-05-30T19:38:21.334Z"
+  },
+  "brand": {
+    "tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+    "name": "INFOSERV2A Cyber & Réseau"
+  },
+  "writer_contract": {
+    "schema_version": "id2app-v5.2-writer-contract-1.0",
+    "family": "commercial_b2b",
+    "tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
+    "content_depth": "verbose",
+    "mode": "compile_new_project",
+    "patch_request": "",
+    "pages": [
+      {
+        "page_id": "index",
+        "title": "Accueil",
+        "file": "index.html",
+        "priority": 0,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "INFOSERV2A Cyber & Réseau · Sud Corse",
+            "title": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+            "lead": "Une présence terrain pour vérifier ce qui ne se voit pas toujours à distance : accès, réseau, WiFi, sauvegardes, dépendances et continuité."
+          },
+          {
+            "kind": "bento",
+            "title": "Deux pôles critiques",
+            "cards": [
+              [
+                "Cyber terrain",
+                "Audit local, exposition, durcissement, restitution dirigeant."
+              ],
+              [
+                "Réseaux critiques",
+                "WiFi professionnel, Starlink, sites isolés, documentation."
+              ],
+              [
+                "Méthode claire",
+                "Observation, cartographie, priorités, plan d’action."
+              ]
+            ]
+          },
+          {
+            "kind": "process",
+            "title": "Une démarche vérifiable",
+            "steps": [
+              "Comprendre le contexte réel",
+              "Cartographier les dépendances",
+              "Qualifier les risques",
+              "Prioriser les actions",
+              "Suivre localement"
+            ]
+          }
+        ]
+      },
+      {
+        "page_id": "cyber",
+        "title": "Cyber",
+        "file": "cyber.html",
+        "priority": 1,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Cyber",
+            "title": "Cyber",
+            "lead": "Une approche B2B concrète pour cyber, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "reseau",
+        "title": "Réseau",
+        "file": "reseau.html",
+        "priority": 2,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Réseau",
+            "title": "Réseau",
+            "lead": "Une approche B2B concrète pour réseau, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "secteurs-sensibles",
+        "title": "Secteurs sensibles",
+        "file": "secteurs-sensibles.html",
+        "priority": 3,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Secteurs sensibles",
+            "title": "Secteurs sensibles",
+            "lead": "Une approche B2B concrète pour secteurs sensibles, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "methode",
+        "title": "Méthode",
+        "file": "methode.html",
+        "priority": 4,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Méthode",
+            "title": "Méthode",
+            "lead": "Une approche B2B concrète pour méthode, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "a-propos",
+        "title": "À propos",
+        "file": "a-propos.html",
+        "priority": 5,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "À propos",
+            "title": "À propos",
+            "lead": "Une approche B2B concrète pour à propos, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "contact",
+        "title": "Contact",
+        "file": "contact.html",
+        "priority": 6,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Contact qualifié",
+            "title": "Décrivez votre situation cyber ou réseau.",
+            "lead": "Une demande bien qualifiée permet de répondre avec précision."
+          },
+          {
+            "kind": "form",
+            "title": "Demande professionnelle",
+            "lead": "Entreprise, secteur, contexte, urgence, existant et besoin."
+          }
+        ]
+      },
+      {
+        "page_id": "mentions-legales",
+        "title": "Mentions légales",
+        "file": "mentions-legales.html",
+        "priority": 7,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Mentions légales",
+            "title": "Mentions légales",
+            "lead": "Une approche B2B concrète pour mentions légales, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      },
+      {
+        "page_id": "confidentialite",
+        "title": "Confidentialité",
+        "file": "confidentialite.html",
+        "priority": 8,
+        "sections": [
+          {
+            "kind": "hero",
+            "eyebrow": "Confidentialité",
+            "title": "Confidentialité",
+            "lead": "Une approche B2B concrète pour confidentialité, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+          },
+          {
+            "kind": "bento",
+            "title": "Points de contrôle",
+            "cards": [
+              [
+                "Terrain",
+                "Observer les installations et usages réels."
+              ],
+              [
+                "Risques",
+                "Identifier les fragilités prioritaires."
+              ],
+              [
+                "Action",
+                "Mettre en œuvre des corrections lisibles et documentées."
+              ]
+            ]
+          },
+          {
+            "kind": "story",
+            "title": "Une réponse orientée dirigeant",
+            "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+          }
+        ]
+      }
+    ],
+    "created_at": "2026-05-30T19:38:21.342Z"
+  },
+  "ux_contract": {
+    "schema_version": "id2app-v5.2-ux-contract-1.0",
+    "navigation": {
+      "items": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    "patterns": {
+      "hero": "asymmetric_authority",
+      "cards": "technical_bento",
+      "section_alternance": true,
+      "scoped_rendering": false
+    },
+    "interaction": {
+      "sticky_header": true,
+      "reveal_effects": true,
+      "form_feedback": true
+    },
+    "created_at": "2026-05-30T19:38:21.349Z"
+  },
+  "seo_accessibility": {
+    "schema_version": "id2app-v5.2-seo-accessibility-1.0",
+    "pages": [
+      {
+        "file": "index.html",
+        "title": "Accueil — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une présence terrain pour vérifier ce qui ne se voit pas toujours à distance : accès, réseau, WiFi, sauvegardes, dépendances et continuité.",
+        "h1": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+        "canonical": "https://www.infoserve2a.pro/"
+      },
+      {
+        "file": "cyber.html",
+        "title": "Cyber — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour cyber, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Cyber",
+        "canonical": "https://www.infoserve2a.pro/cyber.html"
+      },
+      {
+        "file": "reseau.html",
+        "title": "Réseau — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour réseau, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Réseau",
+        "canonical": "https://www.infoserve2a.pro/reseau.html"
+      },
+      {
+        "file": "secteurs-sensibles.html",
+        "title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour secteurs sensibles, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Secteurs sensibles",
+        "canonical": "https://www.infoserve2a.pro/secteurs-sensibles.html"
+      },
+      {
+        "file": "methode.html",
+        "title": "Méthode — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour méthode, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Méthode",
+        "canonical": "https://www.infoserve2a.pro/methode.html"
+      },
+      {
+        "file": "a-propos.html",
+        "title": "À propos — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour à propos, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "À propos",
+        "canonical": "https://www.infoserve2a.pro/a-propos.html"
+      },
+      {
+        "file": "contact.html",
+        "title": "Contact — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une demande bien qualifiée permet de répondre avec précision.",
+        "h1": "Décrivez votre situation cyber ou réseau.",
+        "canonical": "https://www.infoserve2a.pro/contact.html"
+      },
+      {
+        "file": "mentions-legales.html",
+        "title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour mentions légales, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Mentions légales",
+        "canonical": "https://www.infoserve2a.pro/mentions-legales.html"
+      },
+      {
+        "file": "confidentialite.html",
+        "title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une approche B2B concrète pour confidentialité, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+        "h1": "Confidentialité",
+        "canonical": "https://www.infoserve2a.pro/confidentialite.html"
+      }
+    ],
+    "accessibility": {
+      "skip_link": true,
+      "semantic_landmarks": true,
+      "form_labels": true,
+      "focus_visible": true,
+      "alt_images": true
+    },
+    "created_at": "2026-05-30T19:38:21.356Z"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.2-design-media-1.0",
+    "family": "commercial_b2b",
+    "template_profile": "industrial_b2b_premium",
+    "palette": {
+      "bg": "#071126",
+      "surface": "#101a33",
+      "ink": "#ffffff",
+      "muted": "#b7bcc6",
+      "accent": "#00e5ff",
+      "accent2": "#40e0d0"
+    },
+    "typography": {
+      "heading": "Sora, Inter, system-ui, sans-serif",
+      "body": "Inter, system-ui, sans-serif",
+      "scale": "executive_precision"
+    },
+    "layout": {
+      "hero": "asymmetric_authority",
+      "cards": "technical_bento",
+      "section_alternance": true
+    },
+    "media_strategy": {
+      "logo_usage": "header_and_signal_panel",
+      "image_style": "technical_schematic"
+    },
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png",
+      "hero_logo_path": "assets/architecture-premium.png"
+    },
+    "asset_manifest": {
+      "source_urls": {
+        "logo_or_charte": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/logo.png",
+        "architecture_premium": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+        "charte_reference": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+        "blueprint_pdf": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf"
+      },
+      "source_files": []
+    },
+    "created_at": "2026-05-30T19:38:21.364Z"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "priority": 0,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "INFOSERV2A Cyber & Réseau · Sud Corse",
+          "title": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+          "lead": "Une présence terrain pour vérifier ce qui ne se voit pas toujours à distance : accès, réseau, WiFi, sauvegardes, dépendances et continuité."
+        },
+        {
+          "kind": "bento",
+          "title": "Deux pôles critiques",
+          "cards": [
+            [
+              "Cyber terrain",
+              "Audit local, exposition, durcissement, restitution dirigeant."
+            ],
+            [
+              "Réseaux critiques",
+              "WiFi professionnel, Starlink, sites isolés, documentation."
+            ],
+            [
+              "Méthode claire",
+              "Observation, cartographie, priorités, plan d’action."
+            ]
+          ]
+        },
+        {
+          "kind": "process",
+          "title": "Une démarche vérifiable",
+          "steps": [
+            "Comprendre le contexte réel",
+            "Cartographier les dépendances",
+            "Qualifier les risques",
+            "Prioriser les actions",
+            "Suivre localement"
+          ]
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/index.html",
+      "seo_title": "Accueil — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une présence terrain pour vérifier ce qui ne se voit pas toujours à distance : accès, réseau, WiFi, sauvegardes, dépendances et continuité.",
+      "canonical": "https://www.infoserve2a.pro/"
+    },
+    {
+      "page_id": "cyber",
+      "title": "Cyber",
+      "file": "cyber.html",
+      "priority": 1,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cyber",
+          "title": "Cyber",
+          "lead": "Une approche B2B concrète pour cyber, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/cyber.html",
+      "seo_title": "Cyber — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour cyber, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/cyber.html"
+    },
+    {
+      "page_id": "reseau",
+      "title": "Réseau",
+      "file": "reseau.html",
+      "priority": 2,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Réseau",
+          "title": "Réseau",
+          "lead": "Une approche B2B concrète pour réseau, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/reseau.html",
+      "seo_title": "Réseau — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour réseau, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/reseau.html"
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles",
+      "file": "secteurs-sensibles.html",
+      "priority": 3,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Secteurs sensibles",
+          "title": "Secteurs sensibles",
+          "lead": "Une approche B2B concrète pour secteurs sensibles, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/secteurs-sensibles.html",
+      "seo_title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour secteurs sensibles, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/secteurs-sensibles.html"
+    },
+    {
+      "page_id": "methode",
+      "title": "Méthode",
+      "file": "methode.html",
+      "priority": 4,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Méthode",
+          "title": "Méthode",
+          "lead": "Une approche B2B concrète pour méthode, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/methode.html",
+      "seo_title": "Méthode — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour méthode, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/methode.html"
+    },
+    {
+      "page_id": "a-propos",
+      "title": "À propos",
+      "file": "a-propos.html",
+      "priority": 5,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "À propos",
+          "title": "À propos",
+          "lead": "Une approche B2B concrète pour à propos, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/a-propos.html",
+      "seo_title": "À propos — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour à propos, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/a-propos.html"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "priority": 6,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Contact qualifié",
+          "title": "Décrivez votre situation cyber ou réseau.",
+          "lead": "Une demande bien qualifiée permet de répondre avec précision."
+        },
+        {
+          "kind": "form",
+          "title": "Demande professionnelle",
+          "lead": "Entreprise, secteur, contexte, urgence, existant et besoin."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/contact.html",
+      "seo_title": "Contact — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une demande bien qualifiée permet de répondre avec précision.",
+      "canonical": "https://www.infoserve2a.pro/contact.html"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "priority": 7,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Mentions légales",
+          "title": "Mentions légales",
+          "lead": "Une approche B2B concrète pour mentions légales, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/mentions-legales.html",
+      "seo_title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour mentions légales, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/mentions-legales.html"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "priority": 8,
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Confidentialité",
+          "title": "Confidentialité",
+          "lead": "Une approche B2B concrète pour confidentialité, adaptée aux entreprises dépendantes de leur infrastructure numérique."
+        },
+        {
+          "kind": "bento",
+          "title": "Points de contrôle",
+          "cards": [
+            [
+              "Terrain",
+              "Observer les installations et usages réels."
+            ],
+            [
+              "Risques",
+              "Identifier les fragilités prioritaires."
+            ],
+            [
+              "Action",
+              "Mettre en œuvre des corrections lisibles et documentées."
+            ]
+          ]
+        },
+        {
+          "kind": "story",
+          "title": "Une réponse orientée dirigeant",
+          "lead": "Le résultat doit être compréhensible, priorisé et exploitable."
+        }
+      ],
+      "file_path": "infoserv2a-cyber-reseau-v5-2-docs/confidentialite.html",
+      "seo_title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Une approche B2B concrète pour confidentialité, adaptée aux entreprises dépendantes de leur infrastructure numérique.",
+      "canonical": "https://www.infoserve2a.pro/confidentialite.html"
+    }
+  ],
+  "target_files": [
+    "infoserv2a-cyber-reseau-v5-2-docs/index.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/cyber.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/reseau.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/secteurs-sensibles.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/methode.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/a-propos.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/contact.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/mentions-legales.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/confidentialite.html",
+    "infoserv2a-cyber-reseau-v5-2-docs/styles.css",
+    "infoserv2a-cyber-reseau-v5-2-docs/script.js",
+    "infoserv2a-cyber-reseau-v5-2-docs/robots.txt",
+    "infoserv2a-cyber-reseau-v5-2-docs/sitemap.xml",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/app-spec.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/patch-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/diff-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/freeze-report.json",
+    "infoserv2a-cyber-reseau-v5-2-docs/.id2app/final-report.json"
+  ],
+  "patch_scope_resolved": {
+    "schema_version": "id2app-v5.2-patch-scope-1.0",
+    "mode": "compile_new_project",
+    "affected_files": [
+      "infoserv2a-cyber-reseau-v5-2-docs/index.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/cyber.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/reseau.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/secteurs-sensibles.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/methode.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/a-propos.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/contact.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/mentions-legales.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/confidentialite.html",
+      "infoserv2a-cyber-reseau-v5-2-docs/styles.css",
+      "infoserv2a-cyber-reseau-v5-2-docs/script.js",
+      "infoserv2a-cyber-reseau-v5-2-docs/robots.txt",
+      "infoserv2a-cyber-reseau-v5-2-docs/sitemap.xml",
+      "infoserv2a-cyber-reseau-v5-2-docs/.id2app/app-spec.json",
+      "infoserv2a-cyber-reseau-v5-2-docs/.id2app/patch-report.json",
+      "infoserv2a-cyber-reseau-v5-2-docs/.id2app/diff-report.json",
+      "infoserv2a-cyber-reseau-v5-2-docs/.id2app/freeze-report.json",
+      "infoserv2a-cyber-reseau-v5-2-docs/.id2app/final-report.json"
+    ],
+    "preserved_files": [],
+    "affected_count": 18,
+    "preserved_count": 0,
+    "reasons": [
+      "compile_new_project renders all target_files"
+    ],
+    "preserve_existing_pages": true,
+    "preserve_existing_assets": true,
+    "created_at": "2026-05-30T19:38:21.325Z"
+  },
+  "existing_site_state_summary": {
+    "loaded_count": 0,
+    "source": "none"
+  },
+  "created_at": "2026-05-30T19:38:21.372Z"
+}
