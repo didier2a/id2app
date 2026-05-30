@@ -1,0 +1,13 @@
+{
+  "schema_version": "id2app-v5-brand-contract-1.0",
+  "project_key": "infoserv2a-cyber-reseau-v5-docs",
+  "brand": {
+    "name": "INFOSERV2A Cyber & Réseau",
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+    "tone": "premium B2B cyber local, sobre, expert, rassurant, orienté dirigeant",
+    "visual_style": "cyber sobre premium, bleu nuit, anthracite, cyan électrique, turquoise, gris argent"
+  },
+  "positioning": "Spécialiste B2B de cybersécurité locale, audit terrain, contrôle des risques, surveillance, réseaux critiques, WiFi professionnel, Starlink et liaisons difficiles pour les entreprises du Sud Corse.",
+  "forbidden_public_terms": [],
+  "created_at": "2026-05-30T10:03:21.524Z"
+}
