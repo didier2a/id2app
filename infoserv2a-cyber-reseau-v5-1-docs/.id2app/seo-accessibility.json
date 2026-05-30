@@ -1,0 +1,96 @@
+{
+  "schema_version": "id2app-v5.1-seo-accessibility-1.0",
+  "html_lang": "fr",
+  "pages": [
+    {
+      "file": "index.html",
+      "page_id": "index",
+      "title": "Accueil — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Votre informatique peut être gérée à distance. Votre sécurité doit aussi être vérifiée sur site.",
+      "h1": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse.",
+      "canonical": "https://www.infoserve2a.pro/",
+      "lang": "fr"
+    },
+    {
+      "file": "cyber.html",
+      "page_id": "cyber",
+      "title": "Cyber — INFOSERV2A Cyber & Réseau",
+      "meta_description": "La cybersécurité exige une lecture terrain : postes, accès, sauvegardes, WiFi, prestataires et dépendances critiques.",
+      "h1": "Vérifier concrètement ce qui expose votre entreprise.",
+      "canonical": "https://www.infoserve2a.pro/cyber.html",
+      "lang": "fr"
+    },
+    {
+      "file": "reseau.html",
+      "page_id": "reseau",
+      "title": "Réseau — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Hôtels, campings, villas, cabinets et sites isolés dépendent de réseaux stables.",
+      "h1": "Fiabiliser les réseaux qui portent votre activité.",
+      "canonical": "https://www.infoserve2a.pro/reseau.html",
+      "lang": "fr"
+    },
+    {
+      "file": "secteurs-sensibles.html",
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Des structures où réseau, accès et sécurité ont un impact direct sur l’exploitation et l’image.",
+      "h1": "Des environnements où l’interruption coûte immédiatement.",
+      "canonical": "https://www.infoserve2a.pro/secteurs-sensibles.html",
+      "lang": "fr"
+    },
+    {
+      "file": "methode.html",
+      "page_id": "methode",
+      "title": "Méthode — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Observation locale, cartographie, qualification des risques et plan d’action.",
+      "h1": "Une démarche claire : terrain, priorités, action.",
+      "canonical": "https://www.infoserve2a.pro/methode.html",
+      "lang": "fr"
+    },
+    {
+      "file": "a-propos.html",
+      "page_id": "a-propos",
+      "title": "À propos — INFOSERV2A Cyber & Réseau",
+      "meta_description": "INFOSERV2A rend visibles les angles morts entre administration distante et réalité terrain.",
+      "h1": "Un acteur local pour les réseaux et la sécurité des entreprises du Sud Corse.",
+      "canonical": "https://www.infoserve2a.pro/a-propos.html",
+      "lang": "fr"
+    },
+    {
+      "file": "contact.html",
+      "page_id": "contact",
+      "title": "Contact — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Qualifiez votre demande : audit cyber, vérification réseau, WiFi professionnel, Starlink ou besoin critique.",
+      "h1": "Décrivez votre situation réseau ou cyber.",
+      "canonical": "https://www.infoserve2a.pro/contact.html",
+      "lang": "fr"
+    },
+    {
+      "file": "mentions-legales.html",
+      "page_id": "mentions-legales",
+      "title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Informations légales relatives au site.",
+      "h1": "Mentions légales",
+      "canonical": "https://www.infoserve2a.pro/mentions-legales.html",
+      "lang": "fr"
+    },
+    {
+      "file": "confidentialite.html",
+      "page_id": "confidentialite",
+      "title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+      "meta_description": "Les données transmises servent uniquement à analyser et traiter les demandes professionnelles.",
+      "h1": "Politique de confidentialité",
+      "canonical": "https://www.infoserve2a.pro/confidentialite.html",
+      "lang": "fr"
+    }
+  ],
+  "accessibility": {
+    "skip_link": true,
+    "semantic_landmarks": true,
+    "alt_policy": "decorative images empty alt, informative images explicit alt",
+    "form_labels": true
+  },
+  "sitemap": true,
+  "robots": true,
+  "created_at": "2026-05-30T14:23:59.325Z"
+}
