@@ -1,0 +1,56 @@
+{
+  "schema_version": "id2app-v5.1-brand-contract-1.0",
+  "project_key": "gem-casa-di-l-isula-v5-1-docs",
+  "brand": {
+    "tone": "humain, chaleureux, associatif, inclusif",
+    "tagline": "Un lieu d'accueil, de lien et d'entraide à Porto-Vecchio",
+    "visual_style": "associatif premium, méditerranéen, doux",
+    "name": "GEM Casa di l'Isula"
+  },
+  "design_media": {
+    "schema_version": "id2app-v5.1-design-media-1.0",
+    "family": "association",
+    "palette": {
+      "background": "#fff8ed",
+      "paper": "#fffdf8",
+      "ink": "#2b2520",
+      "muted": "#6d6258",
+      "accent": "#df6b57",
+      "warm": "#f28c28",
+      "green": "#5f8f73",
+      "blue": "#4f86a8"
+    },
+    "visual_style": "associatif premium, méditerranéen, doux",
+    "logo_policy": {
+      "use_image_logo": true,
+      "header_logo_path": "assets/logo.png",
+      "hero_visual_path": "assets/charte-print.png",
+      "alt": "GEM Casa di l'Isula"
+    },
+    "layout": {
+      "max_width": "1160px",
+      "card_radius": "26px",
+      "hero_style": "warm editorial"
+    },
+    "asset_manifest": {
+      "schema_version": "id2app-v5.1-asset-manifest-1.0",
+      "assets": [
+        {
+          "role": "logo",
+          "path": "gem-casa-di-l-isula-v5-1-docs/assets/logo.png",
+          "public_path": "assets/logo.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/logo.png"
+        },
+        {
+          "role": "visual_reference",
+          "path": "gem-casa-di-l-isula-v5-1-docs/assets/charte-print.png",
+          "public_path": "assets/charte-print.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/gem-casa-di-l-isula-v5-docs/assets/charte-print.png"
+        }
+      ],
+      "created_at": "2026-05-30T14:46:23.184Z"
+    },
+    "created_at": "2026-05-30T14:46:23.184Z"
+  },
+  "created_at": "2026-05-30T14:46:23.197Z"
+}
