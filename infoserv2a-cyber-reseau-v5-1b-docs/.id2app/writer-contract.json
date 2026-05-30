@@ -1,0 +1,442 @@
+{
+  "schema_version": "id2app-v5.1b-writer-contract-1.0",
+  "family": "commercial_b2b",
+  "brand_name": "INFOSERV2A Cyber & Réseau",
+  "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+  "tone": "premium B2B cyber local, sobre, expert, rassurant",
+  "content_depth": "verbose",
+  "brief": "Créer un site premium B2B pour INFOSERV2A Cyber & Réseau à partir des sources déjà publiées dans GitHub.\nLe site doit être dense, premium, sombre, sobre, cyber local, orienté dirigeant, avec une forte impression de confiance, de maîtrise terrain, de méthode et de clarté opérationnelle.",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "hero": {
+        "eyebrow": "INFOSERV2A · Sud Corse",
+        "title": "Sécuriser le terrain numérique avant qu’il ne fragilise l’activité.",
+        "lead": "Pour les dirigeants, hôtels, campings, cabinets, commerces et sites isolés, INFOSERV2A vérifie localement les risques cyber, les dépendances réseau et les points critiques invisibles à distance.",
+        "body": "Le site présente une approche premium, sobre et concrète : moins de promesses abstraites, plus de vérification terrain, de documentation et de décisions utiles.",
+        "actions": {
+          "primary": {
+            "label": "Demander un audit cyber",
+            "href": "contact.html"
+          },
+          "secondary": {
+            "label": "Faire vérifier mon réseau",
+            "href": "reseau.html"
+          }
+        },
+        "media_role": "architecture_premium"
+      },
+      "sections": [
+        {
+          "kind": "editorial_split",
+          "title": "La sécurité ne se résume pas à une console distante",
+          "lead": "Une entreprise peut être administrée à distance tout en conservant des angles morts sur site.",
+          "paragraphs": [
+            "Routeurs, WiFi, accès invités, sauvegardes, mots de passe, prestataires, caméras, terminaux de paiement et liaisons Internet composent un système réel. C’est ce système qu’il faut observer, documenter et prioriser.",
+            "INFOSERV2A intervient avec une lecture dirigeant : comprendre ce qui peut interrompre l’activité, exposer les données ou empêcher une reprise rapide."
+          ]
+        },
+        {
+          "kind": "bento_cards",
+          "title": "Deux pôles pour réduire les angles morts",
+          "lead": "Cyber terrain et réseaux critiques sont traités ensemble, car ils se renforcent ou se fragilisent mutuellement.",
+          "cards": [
+            {
+              "title": "Cyber terrain",
+              "body": "Audit local des usages, accès, sauvegardes, comptes sensibles, postes exposés et dépendances réelles.",
+              "meta": "Contrôle"
+            },
+            {
+              "title": "Réseaux critiques",
+              "body": "WiFi professionnel, Starlink, liaisons difficiles, segmentation, documentation et continuité d’activité.",
+              "meta": "Infrastructure"
+            },
+            {
+              "title": "Secteurs sensibles",
+              "body": "Hôtellerie, camping, médical, juridique, immobilier, commerce, sites isolés et villas haut de gamme.",
+              "meta": "Priorités"
+            }
+          ]
+        },
+        {
+          "kind": "process_steps",
+          "title": "Une méthode lisible par le dirigeant",
+          "lead": "Chaque intervention doit produire une compréhension claire, des priorités et une trace utile.",
+          "steps": [
+            {
+              "title": "Observer",
+              "body": "Relever les équipements, dépendances, accès, usages et contraintes opérationnelles."
+            },
+            {
+              "title": "Qualifier",
+              "body": "Classer les fragilités selon impact métier, probabilité et urgence."
+            },
+            {
+              "title": "Décider",
+              "body": "Restituer un plan d’action court, hiérarchisé et applicable."
+            },
+            {
+              "title": "Suivre",
+              "body": "Documenter les corrections et maintenir une vision claire du réseau."
+            }
+          ]
+        },
+        {
+          "kind": "media_feature",
+          "title": "Une présence web alignée sur le positionnement premium",
+          "lead": "La charte visuelle doit exprimer expertise, sobriété et maîtrise sans esthétique anxiogène.",
+          "image_role": "architecture_premium",
+          "paragraphs": [
+            "Le design privilégie le bleu nuit, les contrastes maîtrisés, les cartes claires, les preuves terrain et les appels à l’action sobres."
+          ]
+        },
+        {
+          "kind": "cta_band",
+          "title": "Faire vérifier une situation concrète",
+          "lead": "Un échange permet de qualifier le niveau d’urgence, le périmètre et les documents utiles avant intervention.",
+          "cta": {
+            "primary": {
+              "label": "Demander un audit cyber",
+              "href": "contact.html"
+            },
+            "secondary": {
+              "label": "Faire vérifier mon réseau",
+              "href": "reseau.html"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "cyber",
+      "title": "Cyber",
+      "file": "cyber.html",
+      "hero": {
+        "eyebrow": "Audit cyber local",
+        "title": "Identifier les risques qui existent vraiment sur le terrain.",
+        "lead": "INFOSERV2A vérifie les usages, les accès, les sauvegardes, les comptes sensibles et les dépendances qui peuvent exposer une entreprise.",
+        "actions": {
+          "primary": {
+            "label": "Demander un audit cyber",
+            "href": "contact.html"
+          },
+          "secondary": {
+            "label": "Voir la méthode",
+            "href": "methode.html"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "bento_cards",
+          "title": "Points de contrôle prioritaires",
+          "lead": "L’audit ne cherche pas à tout compliquer : il rend visibles les zones de fragilité.",
+          "cards": [
+            {
+              "title": "Accès distants",
+              "body": "MFA, comptes partagés, accès prestataires, mots de passe et droits inutiles.",
+              "meta": ""
+            },
+            {
+              "title": "Sauvegardes",
+              "body": "Existence, séparation, restauration, fréquence et dépendance à un seul support.",
+              "meta": ""
+            },
+            {
+              "title": "Postes et usages",
+              "body": "Mises à jour, antivirus, pratiques, données sensibles, exposition quotidienne.",
+              "meta": ""
+            }
+          ]
+        },
+        {
+          "kind": "editorial_split",
+          "title": "Un rapport compréhensible",
+          "lead": "La restitution doit être utile au dirigeant, pas seulement à un technicien.",
+          "paragraphs": [
+            "Chaque risque est expliqué avec son impact possible sur l’activité : interruption, perte de données, indisponibilité, atteinte à l’image ou difficulté de reprise.",
+            "Les priorités sont hiérarchisées pour agir vite sans disperser les moyens."
+          ]
+        },
+        {
+          "kind": "cta_band",
+          "title": "Obtenir une première qualification",
+          "lead": "Décrivez votre contexte et vos dépendances principales.",
+          "cta": {
+            "primary": {
+              "label": "Demander une vérification",
+              "href": "contact.html"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "reseau",
+      "title": "Réseau",
+      "file": "reseau.html",
+      "hero": {
+        "eyebrow": "Réseaux critiques",
+        "title": "Fiabiliser le réseau qui porte votre activité.",
+        "lead": "WiFi professionnel, Starlink, liaisons difficiles, zones isolées et équipements sensibles demandent une architecture claire et documentée.",
+        "actions": {
+          "primary": {
+            "label": "Faire vérifier mon réseau",
+            "href": "contact.html"
+          },
+          "secondary": {
+            "label": "Secteurs concernés",
+            "href": "secteurs-sensibles.html"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "bento_cards",
+          "title": "Réseau professionnel, pas bricolage",
+          "lead": "Un réseau fiable se conçoit comme une infrastructure métier.",
+          "cards": [
+            {
+              "title": "WiFi professionnel",
+              "body": "Couverture, stabilité, séparation invités/interne, expérience utilisateur et supervision.",
+              "meta": ""
+            },
+            {
+              "title": "Starlink & liaisons",
+              "body": "Intégration propre, secours, bascule, contraintes terrain et documentation.",
+              "meta": ""
+            },
+            {
+              "title": "Cartographie",
+              "body": "Plan réseau, accès, équipements, dépendances et points de reprise en cas d’incident.",
+              "meta": ""
+            }
+          ]
+        },
+        {
+          "kind": "process_steps",
+          "title": "Fiabilisation progressive",
+          "lead": "On commence par comprendre avant de modifier.",
+          "steps": [
+            {
+              "title": "Cartographier",
+              "body": "Identifier équipements, flux, accès et zones faibles."
+            },
+            {
+              "title": "Stabiliser",
+              "body": "Corriger les points qui provoquent coupures, lenteurs ou instabilité."
+            },
+            {
+              "title": "Documenter",
+              "body": "Créer une vision claire pour maintenir et dépanner plus vite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "title": "Secteurs sensibles",
+      "file": "secteurs-sensibles.html",
+      "hero": {
+        "eyebrow": "Secteurs sensibles",
+        "title": "Des environnements où une coupure devient un problème métier.",
+        "lead": "Certaines structures ne peuvent pas se permettre un réseau flou, une sécurité approximative ou une reprise improvisée.",
+        "actions": {
+          "primary": {
+            "label": "Parler de mon secteur",
+            "href": "contact.html"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "bento_cards",
+          "title": "Priorités par contexte",
+          "lead": "Chaque secteur possède ses dépendances propres.",
+          "cards": [
+            {
+              "title": "Hôtels & campings",
+              "body": "WiFi client, réservation, paiement, vidéosurveillance, back-office et saisonnalité.",
+              "meta": ""
+            },
+            {
+              "title": "Villas & résidences",
+              "body": "Domotique, invités, réseaux discrets, multi-équipements et disponibilité attendue.",
+              "meta": ""
+            },
+            {
+              "title": "Médical / juridique",
+              "body": "Confidentialité, documents, disponibilité des outils et rigueur des accès.",
+              "meta": ""
+            },
+            {
+              "title": "Immobilier & commerce",
+              "body": "Outils cloud, paiement, communication, accès partagés et activité quotidienne.",
+              "meta": ""
+            },
+            {
+              "title": "Sites isolés",
+              "body": "Liaisons difficiles, secours, alimentation, environnement et intervention locale.",
+              "meta": ""
+            },
+            {
+              "title": "TPE / PME",
+              "body": "Priorités réalistes, budget maîtrisé, décisions concrètes et documentation utile.",
+              "meta": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "methode",
+      "title": "Méthode",
+      "file": "methode.html",
+      "hero": {
+        "eyebrow": "Méthode",
+        "title": "Une démarche courte, concrète, documentée.",
+        "lead": "L’objectif est de transformer une situation floue en priorités lisibles et en actions réalistes.",
+        "actions": {
+          "primary": {
+            "label": "Demander la méthode adaptée",
+            "href": "contact.html"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "process_steps",
+          "title": "Déroulé type",
+          "lead": "Chaque étape produit une information exploitable.",
+          "steps": [
+            {
+              "title": "Cadrage",
+              "body": "Contexte, activité, contraintes, prestataires, urgences et périmètre."
+            },
+            {
+              "title": "Observation terrain",
+              "body": "Réseau, accès, équipements, usages, sauvegardes et points critiques."
+            },
+            {
+              "title": "Rapport dirigeant",
+              "body": "Synthèse claire, risques, priorités et recommandations."
+            },
+            {
+              "title": "Plan d’action",
+              "body": "Corrections rapides, améliorations structurantes et suivi possible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "a-propos",
+      "title": "À propos",
+      "file": "a-propos.html",
+      "hero": {
+        "eyebrow": "À propos",
+        "title": "Une expertise locale pour des infrastructures réelles.",
+        "lead": "INFOSERV2A se positionne sur la jonction entre sécurité, réseau et terrain, avec une approche utile aux dirigeants du Sud Corse.",
+        "actions": {
+          "primary": {
+            "label": "Contacter INFOSERV2A",
+            "href": "contact.html"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "editorial_split",
+          "title": "Pourquoi le local compte",
+          "lead": "Les outils distants sont nécessaires, mais ils ne remplacent pas la vérification du réel.",
+          "paragraphs": [
+            "Sur un site isolé, dans un hôtel, une villa ou un commerce, la sécurité dépend autant des équipements installés, des accès physiques, du WiFi, des usages et de la documentation que des logiciels.",
+            "Cette approche relie expertise technique et compréhension métier."
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "hero": {
+        "eyebrow": "Contact qualifié",
+        "title": "Décrivez votre besoin cyber ou réseau.",
+        "lead": "Le formulaire permet de comprendre rapidement le contexte, l’urgence et le périmètre.",
+        "actions": {
+          "primary": {
+            "label": "Envoyer ma demande",
+            "href": "#formulaire"
+          }
+        }
+      },
+      "sections": [
+        {
+          "kind": "contact_form",
+          "title": "Demande qualifiée",
+          "lead": "Quelques informations suffisent pour orienter la réponse.",
+          "form": {
+            "id": "formulaire",
+            "fields": [
+              "Nom et prénom",
+              "Entreprise",
+              "Fonction",
+              "Téléphone",
+              "Email",
+              "Secteur d’activité",
+              "Type de demande",
+              "Message"
+            ],
+            "submit": "Envoyer ma demande qualifiée"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "hero": {
+        "eyebrow": "Cadre légal",
+        "title": "Mentions légales",
+        "lead": "Informations relatives au site INFOSERV2A Cyber & Réseau."
+      },
+      "sections": [
+        {
+          "kind": "legal",
+          "title": "Éditeur et responsabilité",
+          "lead": "Les informations publiées sont indicatives et ne constituent pas une garantie absolue de sécurité, de conformité ou de disponibilité.",
+          "paragraphs": [
+            "Éditeur : INFOSERV2A Cyber & Réseau — Sud Corse.",
+            "La sécurité dépend du contexte, des usages, des moyens et de la mise en œuvre effective des recommandations."
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "hero": {
+        "eyebrow": "Confidentialité",
+        "title": "Politique de confidentialité",
+        "lead": "Les informations transmises servent uniquement à répondre aux demandes professionnelles."
+      },
+      "sections": [
+        {
+          "kind": "legal",
+          "title": "Données et finalité",
+          "lead": "Nom, coordonnées, entreprise, fonction et message peuvent être collectés pour qualifier la demande.",
+          "paragraphs": [
+            "Les données ne sont pas destinées à être revendues. Elles servent à la prise de contact et au traitement de la demande."
+          ]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-05-30T18:39:47.090Z"
+}
