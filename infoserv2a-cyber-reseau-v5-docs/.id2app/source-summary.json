@@ -1,12 +1,52 @@
 {
   "schema_version": "id2app-v5-source-summary-1.0",
   "project_key": "infoserv2a-cyber-reseau-v5-docs",
-  "project_name": "INFOSERV2A Cyber & Réseau",
-  "document_ingestion_mode": "source_urls",
-  "normalizer_mode": "source_urls_to_contract",
-  "source_documents": {},
-  "source_urls": {},
-  "source_files": [],
-  "note": "Sources are staged in GitHub and referenced by raw URLs. No base64 payload is transported through Core V5.",
-  "created_at": "2026-05-30T10:03:21.524Z"
+  "source_documents": {
+    "charte_reference": "infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+    "architecture_visual": "infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+    "blueprint_pdf": "infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+    "logo_or_charte": "infoserv2a-cyber-reseau-v5-docs/assets/logo.png"
+  },
+  "source_urls": {
+    "charte_reference": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+    "architecture_premium": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+    "blueprint_pdf": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+    "logo_or_charte": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/logo.png"
+  },
+  "source_files": [
+    {
+      "target_name": ".id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf",
+      "role": "blueprint_pdf",
+      "already_staged": true,
+      "mime_type": "application/pdf",
+      "github_path": "infoserv2a-cyber-reseau-v5-docs/.id2app/source/INFOSERV2A_Premium_B2B_Blueprint.pdf"
+    },
+    {
+      "target_name": "assets/logo.png",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/logo.png",
+      "role": "logo_or_charte",
+      "already_staged": true,
+      "mime_type": "image/png",
+      "github_path": "infoserv2a-cyber-reseau-v5-docs/assets/logo.png"
+    },
+    {
+      "target_name": "assets/architecture-premium.png",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png",
+      "role": "architecture_premium",
+      "already_staged": true,
+      "mime_type": "image/png",
+      "github_path": "infoserv2a-cyber-reseau-v5-docs/assets/architecture-premium.png"
+    },
+    {
+      "target_name": "assets/charte-infoserv2a.png",
+      "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png",
+      "role": "charte_reference",
+      "already_staged": true,
+      "mime_type": "image/png",
+      "github_path": "infoserv2a-cyber-reseau-v5-docs/assets/charte-infoserv2a.png"
+    }
+  ],
+  "note": "Sources staged in GitHub and referenced by raw URLs. No base64 payload through Core V5.",
+  "created_at": "2026-05-30T10:27:44.528Z"
 }
