@@ -1,128 +1,51 @@
 {
   "schema_version": "id2app-v5.2-diff-report-1.0",
-  "mode": "harmonize_existing_project",
-  "changed_count": 15,
+  "mode": "patch_existing_project",
+  "changed_count": 4,
   "unchanged_count": 2,
   "files": [
     {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/index.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 7408,
-      "new_size": 3175
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/cyber.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 5324,
-      "new_size": 2683
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/reseau.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 5074,
-      "new_size": 2688
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/secteurs-sensibles.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 4958,
-      "new_size": 2748
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/methode.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 4251,
-      "new_size": 2693
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/a-propos.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 4129,
-      "new_size": 2698
-    },
-    {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/contact.html",
       "existed": true,
-      "changed": true,
-      "old_size": 4808,
+      "changed": false,
+      "old_size": 2346,
       "new_size": 2318
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/mentions-legales.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 3837,
-      "new_size": 2738
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/confidentialite.html",
-      "existed": true,
-      "changed": true,
-      "old_size": 3815,
-      "new_size": 2733
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/styles.css",
-      "existed": true,
-      "changed": true,
-      "old_size": 8214,
-      "new_size": 4141
     },
     {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/script.js",
       "existed": true,
-      "changed": true,
-      "old_size": 1048,
+      "changed": false,
+      "old_size": 262,
       "new_size": 259
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/robots.txt",
-      "existed": true,
-      "changed": false,
-      "old_size": 72,
-      "new_size": 72
-    },
-    {
-      "path": "infoserv2a-cyber-reseau-v5-1b-docs/sitemap.xml",
-      "existed": true,
-      "changed": false,
-      "old_size": 708,
-      "new_size": 708
     },
     {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/app-spec.json",
       "existed": true,
       "changed": true,
-      "old_size": 75962,
-      "new_size": 33779
+      "old_size": 34261,
+      "new_size": 33654
     },
     {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/patch-report.json",
-      "existed": false,
+      "existed": true,
       "changed": true,
-      "old_size": 0,
-      "new_size": 1506
+      "old_size": 1510,
+      "new_size": 1456
     },
     {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/freeze-report.json",
       "existed": true,
       "changed": true,
-      "old_size": 457,
-      "new_size": 227
+      "old_size": 438,
+      "new_size": 223
     },
     {
       "path": "infoserv2a-cyber-reseau-v5-1b-docs/.id2app/final-report.json",
       "existed": true,
       "changed": true,
-      "old_size": 255,
-      "new_size": 241
+      "old_size": 241,
+      "new_size": 236
     }
   ],
-  "created_at": "2026-05-30T19:43:44.036Z"
+  "created_at": "2026-05-30T19:48:41.084Z"
 }
