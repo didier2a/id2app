@@ -1,0 +1,13 @@
+{
+  "schema_version": "id2app-v6-quality-report-1.0",
+  "status": "passed",
+  "files_count": 13,
+  "no_legacy_output": true,
+  "checked_terms": [
+    "Cette section présente",
+    "template_",
+    "REPLACE_",
+    "PortoFlow"
+  ],
+  "created_at": "2026-05-31T17:55:30.880Z"
+}
