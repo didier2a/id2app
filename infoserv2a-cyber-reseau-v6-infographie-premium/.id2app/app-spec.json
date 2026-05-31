@@ -1,0 +1,1035 @@
+{
+  "schema_version": "id2app-v6-premium-app-spec-1.0",
+  "family": "commercial_b2b",
+  "brand": {
+    "no_generated_logo": true,
+    "tagline": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+    "visual_style": "bleu nuit, anthracite, cyan électrique, turquoise, gris argent, cyber sobre, interface chic ultra-tech",
+    "territory": "Porto-Vecchio, Corse-du-Sud, Sud Corse",
+    "use_only_provided_logo": true,
+    "official_identity_source": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/assets/logo-charte/charte-graphique-infoserv2a.png",
+    "name": "INFOSERV2A Cyber & Réseau",
+    "no_legacy_logo": true,
+    "tone": "premium B2B, cyber local, sobre, expert, rassurant, technique mais lisible, orienté dirigeant"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "file": "index.html",
+      "title": "Accueil",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Une expertise terrain pour sécuriser ce qui fait tenir votre activité.",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "methode.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "cyber",
+      "file": "cyber.html",
+      "title": "Cyber",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Cyber",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "reseau",
+      "file": "reseau.html",
+      "title": "Réseau",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Réseau",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "audit-cyber-local",
+      "file": "audit-cyber-local.html",
+      "title": "Audit cyber local",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Audit cyber local",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "surveillance-cyber-locale",
+      "file": "surveillance-cyber-locale.html",
+      "title": "Surveillance cyber locale",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Surveillance cyber locale",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "wifi-starlink-reseaux-critiques",
+      "file": "wifi-starlink-reseaux-critiques.html",
+      "title": "WiFi, Starlink et réseaux critiques",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "WiFi, Starlink et réseaux critiques",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "secteurs-sensibles",
+      "file": "secteurs-sensibles.html",
+      "title": "Secteurs sensibles",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Secteurs sensibles",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "methode",
+      "file": "methode.html",
+      "title": "Méthode",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "Méthode",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "a-propos",
+      "file": "a-propos.html",
+      "title": "À propos",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Cybersécurité locale et réseaux critiques pour les entreprises du Sud Corse",
+          "title": "À propos",
+          "lead": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques concrets.",
+          "paragraphs": [
+            "Cette page parle à dirigeants, équipes, sites sensibles, entreprises locales. Elle privilégie des mots simples, des situations réelles et une progression lisible.",
+            "L’objectif est de observer, qualifier, prioriser, documenter, sécuriser, sans posture artificielle ni promesse excessive."
+          ],
+          "ctas": [
+            {
+              "label": "Demander un échange",
+              "href": "contact.html"
+            },
+            {
+              "label": "Comprendre la méthode",
+              "href": "contact.html"
+            }
+          ]
+        },
+        {
+          "kind": "bento",
+          "title": "Ce que l’on clarifie concrètement",
+          "lead": "Le contenu s’appuie sur audit terrain, réseau professionnel, continuité, rapport dirigeant et plan d’action.",
+          "cards": [
+            {
+              "title": "Contexte",
+              "body": "Comprendre l’environnement, les contraintes et les dépendances."
+            },
+            {
+              "title": "Priorités",
+              "body": "Distinguer ce qui est critique de ce qui peut attendre."
+            },
+            {
+              "title": "Action",
+              "body": "Transformer les constats en décisions et en corrections."
+            }
+          ]
+        },
+        {
+          "kind": "editorial",
+          "title": "Une méthode lisible pour décider",
+          "lead": "La qualité d’une intervention dépend de la clarté du diagnostic, de la lisibilité des risques et de la capacité à produire un plan d’action utile."
+        },
+        {
+          "kind": "process",
+          "title": "Le fil d’intervention",
+          "steps": [
+            "Qualification du contexte.",
+            "Observation terrain et collecte des informations.",
+            "Priorisation des risques et dépendances.",
+            "Plan d’action documenté et suivi."
+          ]
+        },
+        {
+          "kind": "cta",
+          "title": "Passer du constat à l’action",
+          "lead": "Un échange permet de qualifier le besoin avant de décider d’un audit, d’une vérification ou d’un accompagnement.",
+          "ctas": [
+            {
+              "label": "Contacter INFOSERV2A",
+              "href": "contact.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "contact",
+      "file": "contact.html",
+      "title": "Contact",
+      "sections": [
+        {
+          "kind": "hero",
+          "eyebrow": "Contact",
+          "title": "Entrer en relation avec INFOSERV2A Cyber & Réseau",
+          "lead": "Une demande utile commence par quelques éléments concrets. Le formulaire aide à comprendre le contexte, l’urgence, les attentes et la meilleure manière de répondre."
+        },
+        {
+          "kind": "form",
+          "title": "Formulaire de contact",
+          "lead": "Les informations transmises servent uniquement à préparer une réponse claire et adaptée.",
+          "form": {
+            "fields": [
+              "Nom",
+              "Entreprise",
+              "Fonction",
+              "Email",
+              "Téléphone",
+              "Secteur",
+              "Type de demande",
+              "Message"
+            ],
+            "submit": "Envoyer la demande"
+          }
+        },
+        {
+          "kind": "editorial",
+          "title": "Ce qui se passe ensuite",
+          "lead": "Un premier échange permet de qualifier le besoin, vérifier le contexte et proposer une suite réaliste."
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "file": "mentions-legales.html",
+      "title": "Mentions légales",
+      "sections": [
+        {
+          "kind": "legal",
+          "title": "Mentions légales",
+          "lead": "Informations relatives à INFOSERV2A Cyber & Réseau.",
+          "paragraphs": [
+            "Cette page rassemble les informations nécessaires dans un format clair, sobre et accessible."
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "file": "confidentialite.html",
+      "title": "Confidentialité",
+      "sections": [
+        {
+          "kind": "legal",
+          "title": "Confidentialité",
+          "lead": "Informations relatives à INFOSERV2A Cyber & Réseau.",
+          "paragraphs": [
+            "Cette page rassemble les informations nécessaires dans un format clair, sobre et accessible."
+          ]
+        }
+      ]
+    }
+  ],
+  "ux": {
+    "schema_version": "id2app-v6-ux-1.0",
+    "family": "commercial_b2b",
+    "navigation": {
+      "items": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Cyber",
+          "href": "cyber.html",
+          "page_id": "cyber"
+        },
+        {
+          "label": "Réseau",
+          "href": "reseau.html",
+          "page_id": "reseau"
+        },
+        {
+          "label": "Audit cyber local",
+          "href": "audit-cyber-local.html",
+          "page_id": "audit-cyber-local"
+        },
+        {
+          "label": "Surveillance cyber locale",
+          "href": "surveillance-cyber-locale.html",
+          "page_id": "surveillance-cyber-locale"
+        },
+        {
+          "label": "WiFi, Starlink et réseaux critiques",
+          "href": "wifi-starlink-reseaux-critiques.html",
+          "page_id": "wifi-starlink-reseaux-critiques"
+        },
+        {
+          "label": "Secteurs sensibles",
+          "href": "secteurs-sensibles.html",
+          "page_id": "secteurs-sensibles"
+        },
+        {
+          "label": "Méthode",
+          "href": "methode.html",
+          "page_id": "methode"
+        },
+        {
+          "label": "À propos",
+          "href": "a-propos.html",
+          "page_id": "a-propos"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        }
+      ]
+    },
+    "pattern": {
+      "hero": "authority_split",
+      "cards": "proof_bento",
+      "rhythm": "problem_method_proof",
+      "cta": "qualified"
+    },
+    "footer_policy": "regenerate_clean",
+    "preserve_existing": false,
+    "created_at": "2026-05-31T19:35:14.364Z"
+  },
+  "seo": {
+    "schema_version": "id2app-v6-seo-1.0",
+    "pages": [
+      {
+        "file": "index.html",
+        "title": "Accueil — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Une expertise terrain pour sécuriser ce qui fait tenir votre activité.",
+        "headings": [
+          "Une expertise terrain pour sécuriser ce qui fait tenir votre activité.",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": [
+          "À qui s’adresse ce site ?",
+          "Comment prendre contact ?"
+        ]
+      },
+      {
+        "file": "cyber.html",
+        "title": "Cyber — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Cyber",
+        "headings": [
+          "Cyber",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "reseau.html",
+        "title": "Réseau — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Réseau",
+        "headings": [
+          "Réseau",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "audit-cyber-local.html",
+        "title": "Audit cyber local — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Audit cyber local",
+        "headings": [
+          "Audit cyber local",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "surveillance-cyber-locale.html",
+        "title": "Surveillance cyber locale — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Surveillance cyber locale",
+        "headings": [
+          "Surveillance cyber locale",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "wifi-starlink-reseaux-critiques.html",
+        "title": "WiFi, Starlink et réseaux critiques — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "WiFi, Starlink et réseaux critiques",
+        "headings": [
+          "WiFi, Starlink et réseaux critiques",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "secteurs-sensibles.html",
+        "title": "Secteurs sensibles — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Secteurs sensibles",
+        "headings": [
+          "Secteurs sensibles",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "methode.html",
+        "title": "Méthode — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "Méthode",
+        "headings": [
+          "Méthode",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "a-propos.html",
+        "title": "À propos — INFOSERV2A Cyber & Réseau",
+        "meta_description": "INFOSERV2A Cyber & Réseau accompagne les organisations qui veulent comprendre leurs dépendances numériques, fiabiliser leur réseau et agir sur les risques ",
+        "h1": "À propos",
+        "headings": [
+          "À propos",
+          "Ce que l’on clarifie concrètement",
+          "Une méthode lisible pour décider",
+          "Le fil d’intervention",
+          "Passer du constat à l’action"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "contact.html",
+        "title": "Contact — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Une demande utile commence par quelques éléments concrets. Le formulaire aide à comprendre le contexte, l’urgence, les attentes et la meilleure manière de ",
+        "h1": "Entrer en relation avec INFOSERV2A Cyber & Réseau",
+        "headings": [
+          "Entrer en relation avec INFOSERV2A Cyber & Réseau",
+          "Formulaire de contact",
+          "Ce qui se passe ensuite"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "mentions-legales.html",
+        "title": "Mentions légales — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Informations relatives à INFOSERV2A Cyber & Réseau.",
+        "h1": "Mentions légales",
+        "headings": [
+          "Mentions légales"
+        ],
+        "faq_suggestions": []
+      },
+      {
+        "file": "confidentialite.html",
+        "title": "Confidentialité — INFOSERV2A Cyber & Réseau",
+        "meta_description": "Informations relatives à INFOSERV2A Cyber & Réseau.",
+        "h1": "Confidentialité",
+        "headings": [
+          "Confidentialité"
+        ],
+        "faq_suggestions": []
+      }
+    ],
+    "accessibility": {
+      "skip_link": true,
+      "semantic_landmarks": true,
+      "alt_required": true,
+      "form_labels": true,
+      "contrast_policy": "AA"
+    },
+    "internal_links": {
+      "navigation": true,
+      "footer": true,
+      "contextual_cta": true
+    },
+    "created_at": "2026-05-31T19:35:14.523Z"
+  },
+  "design": {
+    "schema_version": "id2app-v6-design-1.0",
+    "family": "commercial_b2b",
+    "palette": {
+      "bg": "#07101f",
+      "surface": "#101a2f",
+      "ink": "#ffffff",
+      "muted": "#aeb8c8",
+      "accent": "#00e5ff",
+      "accent2": "#40e0d0",
+      "soft": "#0d1930"
+    },
+    "typography": {
+      "heading": "Sora, Inter, system-ui, sans-serif",
+      "body": "Inter, system-ui, sans-serif"
+    },
+    "media_plan": {
+      "logo": "header_and_footer",
+      "hero": "decorative_panel",
+      "background": "family_gradient"
+    },
+    "asset_manifest": {
+      "source_urls": {
+        "premium_web_architecture_infographic": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/assets/source/architecture-presence-web-premium.png",
+        "specification_markdown": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/.id2app/source/spec_v6_infoserv2a_ultra_detaillee_infographies.md",
+        "official_logo_and_graphic_charter": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/assets/logo-charte/charte-graphique-infoserv2a.png"
+      },
+      "source_files": [
+        {
+          "target_name": ".id2app/source/spec_v6_infoserv2a_ultra_detaillee_infographies.md",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/.id2app/source/spec_v6_infoserv2a_ultra_detaillee_infographies.md",
+          "role": "specification_markdown",
+          "already_staged": true,
+          "mime_type": "text/markdown",
+          "github_path": "infoserv2a-cyber-reseau-v6-infographie-premium/.id2app/source/spec_v6_infoserv2a_ultra_detaillee_infographies.md"
+        },
+        {
+          "target_name": "assets/source/architecture-presence-web-premium.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/assets/source/architecture-presence-web-premium.png",
+          "role": "premium_web_architecture_infographic",
+          "already_staged": true,
+          "mime_type": "image/png",
+          "github_path": "infoserv2a-cyber-reseau-v6-infographie-premium/assets/source/architecture-presence-web-premium.png"
+        },
+        {
+          "target_name": "assets/logo-charte/charte-graphique-infoserv2a.png",
+          "raw_url": "https://raw.githubusercontent.com/didier2a/id2app/main/infoserv2a-cyber-reseau-v6-infographie-premium/assets/logo-charte/charte-graphique-infoserv2a.png",
+          "role": "official_logo_and_graphic_charter",
+          "already_staged": true,
+          "mime_type": "image/png",
+          "github_path": "infoserv2a-cyber-reseau-v6-infographie-premium/assets/logo-charte/charte-graphique-infoserv2a.png"
+        }
+      ]
+    },
+    "created_at": "2026-05-31T19:35:14.677Z"
+  },
+  "mode": "compile_new_project",
+  "created_at": "2026-05-31T19:35:14.705Z"
+}
