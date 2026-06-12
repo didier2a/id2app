@@ -1,0 +1,11 @@
+{
+  "schema_version": "4.4",
+  "report_type": "clean_factory_template_report",
+  "version": "4.4.7.6F",
+  "project_id": "id2app-v59-test-association-files",
+  "site_folder": "id2app-v59-test-association-files",
+  "generated_at": "2026-06-12T15:41:08.023Z",
+  "clean_room": true,
+  "forbidden_terms_guard": "enabled",
+  "namespace": "id2"
+}
