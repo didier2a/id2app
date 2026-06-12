@@ -20,26 +20,27 @@
   "final_report_path": "id2app-v59-test-association-files/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 5,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 20,
-  "progress_sequence": 5,
+  "updated_count": 2,
+  "percent": 40,
+  "progress_sequence": 6,
   "monotonic_guard": true,
-  "current_file": "id2app-v59-test-association-files/styles.css",
+  "current_file": "id2app-v59-test-association-files/script.js",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v59-test-association-files/styles.css",
+  "last_successful_file": "id2app-v59-test-association-files/script.js",
   "last_failed_file": null,
-  "last_commit_sha": "8d5861331217bb94ca5dccff4d631c1d7d754df5",
-  "last_file_sha": "59bb09b89e90bc224f9f7e606f925772160d66c2",
+  "last_commit_sha": "27e73c05840916dff6dfac47db67d1cf50af8377",
+  "last_file_sha": "ca5c0c1ff459f0fb321f49e473dcd61eadfdf7c6",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "id2app-v59-test-association-files/styles.css"
+    "id2app-v59-test-association-files/styles.css",
+    "id2app-v59-test-association-files/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-association-files/styles.css",
       "commit_url": "https://github.com/didier2a/id2app/commit/8d5861331217bb94ca5dccff4d631c1d7d754df5",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v59-test-association-files/script.js",
+      "action": "create",
+      "file_sha": "ca5c0c1ff459f0fb321f49e473dcd61eadfdf7c6",
+      "commit_sha": "27e73c05840916dff6dfac47db67d1cf50af8377",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-association-files/script.js",
+      "commit_url": "https://github.com/didier2a/id2app/commit/27e73c05840916dff6dfac47db67d1cf50af8377",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-12T15:40:37.784Z",
+  "updated_at": "2026-06-12T15:40:52.035Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
