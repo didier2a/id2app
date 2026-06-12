@@ -20,22 +20,22 @@
   "final_report_path": "id2app-v59-test-fullsite/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 11,
-  "completed_count": 8,
+  "completed_count": 9,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 8,
-  "percent": 73,
-  "progress_sequence": 12,
+  "updated_count": 9,
+  "percent": 82,
+  "progress_sequence": 13,
   "monotonic_guard": true,
-  "current_file": "id2app-v59-test-fullsite/.id2app/content-inventory.json",
+  "current_file": "id2app-v59-test-fullsite/.id2app/route-map.json",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v59-test-fullsite/.id2app/content-inventory.json",
+  "last_successful_file": "id2app-v59-test-fullsite/.id2app/route-map.json",
   "last_failed_file": null,
-  "last_commit_sha": "9fe63fa4c9816c426fb6bf5c90b727e8fe8a37c7",
-  "last_file_sha": "773107f7639d28439f7df5345b822847308c1ebf",
+  "last_commit_sha": "a5409fc5a72f9311d31b8aa1cf89b631ddbac7d6",
+  "last_file_sha": "a3f779b1f7e9db59b7858d80746ecd0f39591121",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -46,7 +46,8 @@
     "id2app-v59-test-fullsite/.id2app/app-spec.json",
     "id2app-v59-test-fullsite/.id2app/build-plan.json",
     "id2app-v59-test-fullsite/.id2app/quality-contract.json",
-    "id2app-v59-test-fullsite/.id2app/content-inventory.json"
+    "id2app-v59-test-fullsite/.id2app/content-inventory.json",
+    "id2app-v59-test-fullsite/.id2app/route-map.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -121,10 +122,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-fullsite/.id2app/content-inventory.json",
       "commit_url": "https://github.com/didier2a/id2app/commit/9fe63fa4c9816c426fb6bf5c90b727e8fe8a37c7",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v59-test-fullsite/.id2app/route-map.json",
+      "action": "create",
+      "file_sha": "a3f779b1f7e9db59b7858d80746ecd0f39591121",
+      "commit_sha": "a5409fc5a72f9311d31b8aa1cf89b631ddbac7d6",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-fullsite/.id2app/route-map.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a5409fc5a72f9311d31b8aa1cf89b631ddbac7d6",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-12T16:11:10.368Z",
+  "updated_at": "2026-06-12T16:11:25.617Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
