@@ -20,28 +20,29 @@
   "final_report_path": "id2app-v59-test-fullsite-html-3/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 11,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 27,
-  "progress_sequence": 7,
+  "updated_count": 4,
+  "percent": 36,
+  "progress_sequence": 8,
   "monotonic_guard": true,
-  "current_file": "id2app-v59-test-fullsite-html-3/robots.txt",
+  "current_file": "id2app-v59-test-fullsite-html-3/sitemap.xml",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v59-test-fullsite-html-3/robots.txt",
+  "last_successful_file": "id2app-v59-test-fullsite-html-3/sitemap.xml",
   "last_failed_file": null,
-  "last_commit_sha": "3c38519753a338968f9f77009c8e0d4446cb92b5",
+  "last_commit_sha": "e95fb9a33abe2bffd052df29d277cdcac4e5dd97",
   "last_file_sha": "72267cf6cfd0d33cdf411be1851f61db79a4ce1f",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "id2app-v59-test-fullsite-html-3/styles.css",
     "id2app-v59-test-fullsite-html-3/script.js",
-    "id2app-v59-test-fullsite-html-3/robots.txt"
+    "id2app-v59-test-fullsite-html-3/robots.txt",
+    "id2app-v59-test-fullsite-html-3/sitemap.xml"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-fullsite-html-3/robots.txt",
       "commit_url": "https://github.com/didier2a/id2app/commit/3c38519753a338968f9f77009c8e0d4446cb92b5",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v59-test-fullsite-html-3/sitemap.xml",
+      "action": "create",
+      "file_sha": "72267cf6cfd0d33cdf411be1851f61db79a4ce1f",
+      "commit_sha": "e95fb9a33abe2bffd052df29d277cdcac4e5dd97",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v59-test-fullsite-html-3/sitemap.xml",
+      "commit_url": "https://github.com/didier2a/id2app/commit/e95fb9a33abe2bffd052df29d277cdcac4e5dd97",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T07:28:04.351Z",
+  "updated_at": "2026-06-13T07:28:17.668Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
