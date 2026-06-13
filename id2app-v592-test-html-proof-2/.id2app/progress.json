@@ -1,7 +1,7 @@
 {
-  "status": "running",
+  "status": "running_with_failures",
   "schema_version": "5.9-clean",
-  "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
+  "orchestrator_version": "4.4.7.5-publisher-memory-safe-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
   "run_id": "v59-generalist-association-20260613-110822",
   "project_id": "id2app-v592-test-html-proof-2",
@@ -18,83 +18,74 @@
   "checkpoint_path": "id2app-v592-test-html-proof-2/.id2app/checkpoint.json",
   "progress_path": "id2app-v592-test-html-proof-2/.id2app/progress.json",
   "final_report_path": "id2app-v592-test-html-proof-2/.id2app/final-report.json",
-  "current_phase": "publishing_files_distributed",
+  "current_phase": "publishing_files",
   "expected_count": 17,
-  "completed_count": 5,
-  "failed_count": 0,
+  "completed_count": 0,
+  "failed_count": 1,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
-  "created_count": 1,
-  "updated_count": 5,
-  "percent": 29,
-  "progress_sequence": 14,
+  "created_count": 0,
+  "updated_count": 0,
+  "percent": 6,
+  "progress_sequence": 1,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-2/contact.html",
-  "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-2/contact.html",
-  "last_failed_file": null,
-  "last_commit_sha": "dcbddd4fcef7d353b7eb404f6f6040a5ea70ce20",
-  "last_file_sha": "45e585119b41c20e831284315ae3917b7ace4d9f",
+  "monotonic_regression_prevented": false,
+  "current_file": "id2app-v592-test-html-proof-2/mentions-legales.html",
+  "current_file_status": "failed",
+  "last_successful_file": null,
+  "last_failed_file": "id2app-v592-test-html-proof-2/mentions-legales.html",
+  "last_commit_sha": null,
+  "last_file_sha": null,
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
-  "completed_files": [
-    "id2app-v592-test-html-proof-2/index.html",
-    "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
-    "id2app-v592-test-html-proof-2/activites.html",
-    "id2app-v592-test-html-proof-2/nous-soutenir.html",
-    "id2app-v592-test-html-proof-2/contact.html"
-  ],
-  "failed_files": [],
-  "updated_files": [
+  "completed_files": [],
+  "failed_files": [
     {
-      "file_path": "id2app-v592-test-html-proof-2/index.html",
+      "file_path": "id2app-v592-test-html-proof-2/mentions-legales.html",
       "action": "create",
-      "file_sha": "6b10a1ad4b8596b3bed7ba1f31f63095e323a787",
-      "commit_sha": "0abbda66c068d0c443083942d6eb5667982d805b",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/index.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/0abbda66c068d0c443083942d6eb5667982d805b",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
-      "action": "create",
-      "file_sha": "e012c772f608635ed49e86beeaf7e9403841ea88",
-      "commit_sha": "02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/qui-sommes-nous.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-2/activites.html",
-      "action": "create",
-      "file_sha": "8a4b3fc8922e80a78aaec1cbafabf1bfe1864ac1",
-      "commit_sha": "b13e06a996fa40c84b5e3d5a6c286eba53ee5a7e",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/activites.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/b13e06a996fa40c84b5e3d5a6c286eba53ee5a7e",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-2/nous-soutenir.html",
-      "action": "create",
-      "file_sha": "c0535d722155f9c0a8f24a96bf5c2d5e3052222c",
-      "commit_sha": "dfcaf2d31a0bcccb7020cc38c8b59ecd063152b6",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/nous-soutenir.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/dfcaf2d31a0bcccb7020cc38c8b59ecd063152b6",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-2/contact.html",
-      "action": "create",
-      "file_sha": "45e585119b41c20e831284315ae3917b7ace4d9f",
-      "commit_sha": "dcbddd4fcef7d353b7eb404f6f6040a5ea70ce20",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/contact.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/dcbddd4fcef7d353b7eb404f6f6040a5ea70ce20",
-      "validation_status": "passed"
+      "reason": "parse_failed",
+      "parse_warnings": [
+        "api_error:401 - \"{\\\"type\\\":\\\"error\\\",\\\"error\\\":{\\\"type\\\":\\\"authentication_error\\\",\\\"message\\\":\\\"x-api-key header is required\\\"},\\\"request_id\\\":\\\"req_011Cc113eUmLxS4SAydBvMSa\\\"}\""
+      ],
+      "validation_errors": [
+        "content_too_short",
+        "doctype_missing",
+        "html_shell_missing",
+        "head_missing",
+        "body_missing",
+        "single_main_required",
+        "header_missing",
+        "footer_missing",
+        "hero_missing",
+        "stylesheet_link_missing"
+      ],
+      "validation_warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "validation",
+        "root_cause": "La page manque de la section 'hero' requise par le template. De plus, des contenus placeholder sont présents dans les sections 'Informations à compléter' et 'Contact', empêchant la publication. Le lien vers la page de contact n'est pas actif.",
+        "repair_strategy": "Ajouter la section 'hero' manquante. Remplacer les contenus placeholder des sections 'Informations à compléter' et 'Contact' par des informations réelles et pertinentes. Assurer que le texte 'page contact du site' dans la section 'Contact' est un lien hypertexte actif vers la page de contact.",
+        "constraints": [
+          "Respecter la specification V5.9 Clean",
+          "Respecter la navigation déclarée",
+          "Respecter la politique no-invention"
+        ],
+        "must_not_change": [
+          "La structure générale du header et du footer",
+          "La navigation existante",
+          "La structure des sections légales (id2-legal)"
+        ],
+        "recommended_prompt_addendum": "Ajoute la section 'hero' manquante. Remplace le contenu placeholder dans la section 'Informations à compléter' par des mentions légales complètes et réelles pour Maison Locale Solidaire. Remplace le contenu placeholder dans la section 'Contact' par des informations de contact réelles et assure-toi que le texte 'page contact du site' est un lien hypertexte actif vers la page 'contact.html'."
+      },
+      "anthropic_stop_reason": null,
+      "anthropic_usage": {},
+      "at": "2026-06-13T09:12:39.718Z"
     }
   ],
+  "updated_files": [],
   "warnings": [],
-  "updated_at": "2026-06-13T09:12:11.379Z",
-  "next_poll_seconds": 15,
-  "publisher_runtime": "v4.4.7.5"
+  "updated_at": "2026-06-13T09:12:39.761Z",
+  "next_poll_seconds": 15
 }
