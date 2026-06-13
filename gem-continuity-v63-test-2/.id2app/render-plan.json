@@ -1,0 +1,335 @@
+{
+  "schema_version": "id2app-v6-3-render-plan-1.0",
+  "status": "planned",
+  "render_profile": "clean_room_generalist",
+  "site_folder": "gem-continuity-v63-test-2",
+  "files": [
+    {
+      "path": "gem-continuity-v63-test-2/index.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/qui-sommes-nous.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/activites.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/nous-soutenir.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/contact.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/mentions-legales.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/confidentialite.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/styles.css",
+      "type": "css",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/script.js",
+      "type": "javascript",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/robots.txt",
+      "type": "text",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/sitemap.xml",
+      "type": "xml",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/README.md",
+      "type": "markdown",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/input-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/source-evidence.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/brand-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/route-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/content-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/writer-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/ux-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/seo-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/design-media-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/render-plan.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/publish-manifest.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/validation-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/progress.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/checkpoint.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/final-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": "index"
+    },
+    {
+      "label": "Qui sommes-nous ?",
+      "href": "qui-sommes-nous.html",
+      "page_id": "qui-sommes-nous"
+    },
+    {
+      "label": "Nos activités",
+      "href": "activites.html",
+      "page_id": "activites"
+    },
+    {
+      "label": "Nous soutenir",
+      "href": "nous-soutenir.html",
+      "page_id": "nous-soutenir"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "page_id": "contact"
+    },
+    {
+      "label": "Mentions légales",
+      "href": "mentions-legales.html",
+      "page_id": "mentions-legales"
+    },
+    {
+      "label": "Confidentialité",
+      "href": "confidentialite.html",
+      "page_id": "confidentialite"
+    }
+  ],
+  "brand": {
+    "name": "GEM Casa di l'Isula",
+    "tagline": "",
+    "palette": [
+      {
+        "name": "Bleu profond",
+        "hex": "#0B3A5E",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "Bleu clair",
+        "hex": "#3FA9D6",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "Jaune soleil",
+        "hex": "#F6B64A",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "Vert doux",
+        "hex": "#76B943",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "Blanc chaud",
+        "hex": "#FAF7F0",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "Terracotta",
+        "hex": "#C9774A",
+        "source": "blueprint_recommended_palette"
+      },
+      {
+        "name": "color_0",
+        "hex": "#FFFEFC",
+        "source": "blueprint_extracted_color"
+      },
+      {
+        "name": "color_1",
+        "hex": "#2A7C6F",
+        "source": "blueprint_extracted_color"
+      },
+      {
+        "name": "color_12",
+        "hex": "#CADED9",
+        "source": "blueprint_extracted_color"
+      },
+      {
+        "name": "color_13",
+        "hex": "#95BDB6",
+        "source": "blueprint_extracted_color"
+      },
+      {
+        "name": "color_14",
+        "hex": "#2B4B42",
+        "source": "blueprint_extracted_color"
+      },
+      {
+        "name": "color_16",
+        "hex": "#A9E2D9",
+        "source": "blueprint_extracted_color"
+      }
+    ],
+    "fonts": [
+      "[object Object]",
+      "system-ui"
+    ],
+    "logo": {
+      "local_path": "C:\\Users\\didie\\OneDrive\\Images\\SITE GEM 2025\\GEM 2026\\logo_circulaire_casa_gem.png",
+      "policy": "use_provided_logo_top_left_header"
+    },
+    "visual_style": "clean generalist accessible layout",
+    "tone": "clear, human, useful"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html"
+    },
+    {
+      "page_id": "activites",
+      "title": "Nos activités",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://www.legem-portovecchio.org/activites.html"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html"
+    }
+  ],
+  "created_at": "2026-06-13T20:04:08.088Z"
+}
