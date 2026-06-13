@@ -20,22 +20,22 @@
   "final_report_path": "id2app-v591-test-html-proof/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 11,
-  "completed_count": 5,
+  "completed_count": 6,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 5,
-  "percent": 45,
-  "progress_sequence": 9,
+  "updated_count": 6,
+  "percent": 55,
+  "progress_sequence": 10,
   "monotonic_guard": true,
-  "current_file": "id2app-v591-test-html-proof/.id2app/app-spec.json",
+  "current_file": "id2app-v591-test-html-proof/.id2app/build-plan.json",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v591-test-html-proof/.id2app/app-spec.json",
+  "last_successful_file": "id2app-v591-test-html-proof/.id2app/build-plan.json",
   "last_failed_file": null,
-  "last_commit_sha": "4d52827bc77f6eaa26551acfcc9f40ef412320c5",
-  "last_file_sha": "2b22448a006e32080f45b45c6566f7d85b11afac",
+  "last_commit_sha": "30e8db31361f7d2e48e8a8bdcfd580d1d8b3ad97",
+  "last_file_sha": "038a0c2acfd1e2282bdecbabae1b80285738933e",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -43,7 +43,8 @@
     "id2app-v591-test-html-proof/script.js",
     "id2app-v591-test-html-proof/robots.txt",
     "id2app-v591-test-html-proof/sitemap.xml",
-    "id2app-v591-test-html-proof/.id2app/app-spec.json"
+    "id2app-v591-test-html-proof/.id2app/app-spec.json",
+    "id2app-v591-test-html-proof/.id2app/build-plan.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -91,10 +92,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v591-test-html-proof/.id2app/app-spec.json",
       "commit_url": "https://github.com/didier2a/id2app/commit/4d52827bc77f6eaa26551acfcc9f40ef412320c5",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v591-test-html-proof/.id2app/build-plan.json",
+      "action": "create",
+      "file_sha": "038a0c2acfd1e2282bdecbabae1b80285738933e",
+      "commit_sha": "30e8db31361f7d2e48e8a8bdcfd580d1d8b3ad97",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v591-test-html-proof/.id2app/build-plan.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/30e8db31361f7d2e48e8a8bdcfd580d1d8b3ad97",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T08:06:47.408Z",
+  "updated_at": "2026-06-13T08:06:59.718Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
