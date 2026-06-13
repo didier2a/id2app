@@ -1,0 +1,359 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "4.4.7.6F-clean-project-factory",
+  "generation_mode": "compile_new_project",
+  "project": {
+    "language": "fr",
+    "site_kind": "association",
+    "audience": "Adherents, familles, partenaires, benevoles et institutions locales.",
+    "id": "id2app-v592-test-html-proof",
+    "type": "website",
+    "name": "Maison Locale Solidaire",
+    "objective": "Créer un site associatif clair, chaleureux, accessible, avec presentation, activites, soutien et contact.",
+    "tone": "professionnel, clair, sobre",
+    "sector": "",
+    "subsector": "",
+    "business_model": "",
+    "tagline": ""
+  },
+  "repository": {
+    "checkpoint_path": "id2app-v592-test-html-proof/.id2app/checkpoint.json",
+    "final_report_path": "id2app-v592-test-html-proof/.id2app/final-report.json",
+    "branch": "main",
+    "progress_path": "id2app-v592-test-html-proof/.id2app/progress.json",
+    "owner": "didier2a",
+    "name": "id2app",
+    "site_folder": "id2app-v592-test-html-proof",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "pages": [],
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "items": [],
+    "primary": []
+  },
+  "design_contract": {
+    "lock_navigation": true,
+    "visual_style": null,
+    "lock_footer": true,
+    "lock_header": true,
+    "source": "auto",
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "colors": {},
+    "visual_language": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "forbidden_components": [],
+    "layout_quality_rules": {},
+    "brand_kit": {
+      "brand_name": "Maison Locale Solidaire",
+      "tagline": "Créer un site associatif clair, chaleureux, accessible, avec presentation, activites, soutien et contact.",
+      "tone": "professionnel, clair, sobre",
+      "visual_style": "[object Object]",
+      "logo_policy": {
+        "use_text_logo": true,
+        "generate_inline_svg_mark": true,
+        "no_external_logo": true,
+        "no_previous_project_logo": true
+      }
+    },
+    "clean_room": {
+      "enabled": true,
+      "no_historical_fallbacks": true,
+      "forbidden_terms": [
+        "PortoFlow",
+        "portoflow",
+        "ID2App Project",
+        "ID2App V4.4.6",
+        "assistant territorial",
+        "Assistant territorial",
+        "Économie locale",
+        "Dashboard",
+        "Ingénierie IA",
+        "Production",
+        "stationnement",
+        "plages",
+        "parkings",
+        "copilote territorial"
+      ]
+    },
+    "namespace": "id2"
+  },
+  "class_contract": {
+    "version": "4.4.7.6F",
+    "namespace": "id2",
+    "mode": "clean_project_factory_renderer",
+    "groups": {
+      "shell": [
+        "id2-page",
+        "id2-container",
+        "id2-main"
+      ],
+      "brand": [
+        "id2-brand",
+        "id2-brand__mark",
+        "id2-brand__symbol",
+        "id2-brand__wordmark",
+        "id2-brand__tagline"
+      ],
+      "header": [
+        "id2-header",
+        "id2-header__inner",
+        "id2-nav",
+        "id2-nav__link",
+        "id2-nav__link--active",
+        "id2-header__cta",
+        "id2-nav-toggle",
+        "id2-nav-toggle__bar",
+        "id2-mobile-open"
+      ],
+      "buttons": [
+        "id2-btn",
+        "id2-btn--primary",
+        "id2-btn--secondary",
+        "id2-btn--ghost"
+      ],
+      "hero": [
+        "id2-section",
+        "id2-section--hero",
+        "id2-section--alt",
+        "id2-section--dark",
+        "id2-section--compact",
+        "id2-hero",
+        "id2-hero__grid",
+        "id2-hero__content",
+        "id2-hero__title",
+        "id2-hero__lead",
+        "id2-hero__actions",
+        "id2-hero__visual"
+      ],
+      "editorial": [
+        "id2-eyebrow",
+        "id2-section__heading",
+        "id2-section__title",
+        "id2-section__lead",
+        "id2-tag-row",
+        "id2-tag",
+        "id2-list",
+        "id2-list__item"
+      ],
+      "cards": [
+        "id2-feature-grid",
+        "id2-feature-card",
+        "id2-card-grid",
+        "id2-card",
+        "id2-card--accent",
+        "id2-card__index",
+        "id2-card__title",
+        "id2-card__text",
+        "id2-bento-grid",
+        "id2-bento-card",
+        "id2-bento-card--wide",
+        "id2-content-rail",
+        "id2-rail-items",
+        "id2-rail-item",
+        "id2-panel",
+        "id2-panel__content",
+        "id2-panel__visual"
+      ],
+      "metrics": [
+        "id2-metrics-panel",
+        "id2-metrics-grid",
+        "id2-metric-card",
+        "id2-metric__value",
+        "id2-metric__label"
+      ],
+      "cta": [
+        "id2-cta-band",
+        "id2-cta-band__content",
+        "id2-cta-band__actions"
+      ],
+      "footer": [
+        "id2-footer",
+        "id2-footer__grid",
+        "id2-footer__brand",
+        "id2-footer__col",
+        "id2-footer__bottom"
+      ],
+      "legal": [
+        "id2-legal",
+        "id2-legal__section"
+      ]
+    },
+    "required_classes": [
+      "id2-page",
+      "id2-container",
+      "id2-main",
+      "id2-brand",
+      "id2-brand__mark",
+      "id2-brand__symbol",
+      "id2-brand__wordmark",
+      "id2-brand__tagline",
+      "id2-header",
+      "id2-header__inner",
+      "id2-nav",
+      "id2-nav__link",
+      "id2-nav__link--active",
+      "id2-header__cta",
+      "id2-nav-toggle",
+      "id2-nav-toggle__bar",
+      "id2-mobile-open",
+      "id2-btn",
+      "id2-btn--primary",
+      "id2-btn--secondary",
+      "id2-btn--ghost",
+      "id2-section",
+      "id2-section--hero",
+      "id2-section--alt",
+      "id2-section--dark",
+      "id2-section--compact",
+      "id2-hero",
+      "id2-hero__grid",
+      "id2-hero__content",
+      "id2-hero__title",
+      "id2-hero__lead",
+      "id2-hero__actions",
+      "id2-hero__visual",
+      "id2-eyebrow",
+      "id2-section__heading",
+      "id2-section__title",
+      "id2-section__lead",
+      "id2-tag-row",
+      "id2-tag",
+      "id2-list",
+      "id2-list__item",
+      "id2-feature-grid",
+      "id2-feature-card",
+      "id2-card-grid",
+      "id2-card",
+      "id2-card--accent",
+      "id2-card__index",
+      "id2-card__title",
+      "id2-card__text",
+      "id2-bento-grid",
+      "id2-bento-card",
+      "id2-bento-card--wide",
+      "id2-content-rail",
+      "id2-rail-items",
+      "id2-rail-item",
+      "id2-panel",
+      "id2-panel__content",
+      "id2-panel__visual",
+      "id2-metrics-panel",
+      "id2-metrics-grid",
+      "id2-metric-card",
+      "id2-metric__value",
+      "id2-metric__label",
+      "id2-cta-band",
+      "id2-cta-band__content",
+      "id2-cta-band__actions",
+      "id2-footer",
+      "id2-footer__grid",
+      "id2-footer__brand",
+      "id2-footer__col",
+      "id2-footer__bottom",
+      "id2-legal",
+      "id2-legal__section"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-id2-nav-toggle",
+      "data-id2-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_historical_fallbacks": true,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.7.6F",
+    "namespace": "id2",
+    "brand_name": "Maison Locale Solidaire",
+    "tagline": "Créer un site associatif clair, chaleureux, accessible, avec presentation, activites, soutien et contact.",
+    "logo": {
+      "type": "inline_svg_generated_project_mark",
+      "concept": "clean professional signal mark",
+      "policy": {
+        "no_previous_project_logo": true,
+        "no_external_logo": true,
+        "use_text_logo": true,
+        "generate_inline_svg_mark": true
+      }
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [],
+      "cta": {
+        "label": "Demander un diagnostic",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-id2-nav-toggle",
+        "panel_hook": "data-id2-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "92px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "id2-btn--primary",
+      "id2-btn--secondary",
+      "id2-btn--ghost"
+    ],
+    "clean_room": {
+      "enabled": true,
+      "no_historical_fallbacks": true,
+      "forbidden_terms": [
+        "PortoFlow",
+        "portoflow",
+        "ID2App Project",
+        "ID2App V4.4.6",
+        "assistant territorial",
+        "Assistant territorial",
+        "Économie locale",
+        "Dashboard",
+        "Ingénierie IA",
+        "Production",
+        "stationnement",
+        "plages",
+        "parkings",
+        "copilote territorial"
+      ]
+    }
+  },
+  "image_registry": {},
+  "site_architecture": {
+    "primary_navigation": [],
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "writer_mode": "per_file_pruned_context"
+}
