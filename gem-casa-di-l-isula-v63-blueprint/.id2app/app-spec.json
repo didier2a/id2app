@@ -1,0 +1,1438 @@
+{
+  "schema_version": "4.4",
+  "app_spec_version": "4.4.7.6F-clean-project-factory",
+  "generation_mode": "compile_new_project",
+  "project": {
+    "language": "fr",
+    "site_kind": "association",
+    "audience": "adhérents, familles, partenaires, bénévoles, institutions locales",
+    "id": "gem-casa-di-l-isula-v63-blueprint",
+    "tagline": "",
+    "type": "website",
+    "name": "GEM Casa di l'Isula",
+    "objective": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel.",
+    "sector": "",
+    "subsector": "",
+    "tone": "professionnel, clair, sobre",
+    "business_model": ""
+  },
+  "repository": {
+    "site_folder": "gem-casa-di-l-isula-v63-blueprint",
+    "name": "id2app",
+    "owner": "didier2a",
+    "branch": "main",
+    "checkpoint_path": "gem-casa-di-l-isula-v63-blueprint/.id2app/checkpoint.json",
+    "github_api_base_url": "https://api.github.com",
+    "progress_path": "gem-casa-di-l-isula-v63-blueprint/.id2app/progress.json",
+    "final_report_path": "gem-casa-di-l-isula-v63-blueprint/.id2app/final-report.json"
+  },
+  "pages": [
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/index.html",
+      "title": "Accueil",
+      "component_order": [
+        "hero",
+        "proof_bar",
+        "feature_grid",
+        "bento_grid",
+        "metrics_panel",
+        "cta_band"
+      ],
+      "page_id": "index",
+      "blueprint_contract": {
+        "page_id": "index",
+        "title": "Accueil",
+        "intent": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact",
+        "required_sections": [
+          "hero",
+          "mission",
+          "activites_resume",
+          "contact_cta"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Accueil",
+          "subtitle": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact",
+      "editorial_angle": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact",
+      "template_id": "template_home_contractual",
+      "objective": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact",
+      "required": true,
+      "description": "ouvrir la maison, présenter la mission, faire comprendre l'accueil et orienter vers contact",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html",
+      "title": "Qui sommes-nous ?",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "qui-sommes-nous",
+      "blueprint_contract": {
+        "page_id": "qui-sommes-nous",
+        "title": "Qui sommes-nous ?",
+        "intent": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide",
+        "required_sections": [
+          "hero",
+          "cadre_gem",
+          "valeurs",
+          "fonctionnement"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Qui sommes-nous ?",
+          "subtitle": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide",
+      "editorial_angle": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide",
+      "template_id": "template_content_contractual",
+      "objective": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide",
+      "required": true,
+      "description": "présenter le cadre GEM, l'histoire, la gouvernance et l'esprit d'entraide",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/activites.html",
+      "title": "Nos activités",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "activites",
+      "blueprint_contract": {
+        "page_id": "activites",
+        "title": "Nos activités",
+        "intent": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien",
+        "required_sections": [
+          "hero",
+          "ateliers",
+          "rythme",
+          "participation"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Nos activités",
+          "subtitle": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien",
+      "editorial_angle": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien",
+      "template_id": "template_content_contractual",
+      "objective": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien",
+      "required": true,
+      "description": "présenter les activités sans surpromettre : créer, cuisiner, marcher, partager, reconstruire du lien",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/nous-soutenir.html",
+      "title": "Nous soutenir",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "nous-soutenir",
+      "blueprint_contract": {
+        "page_id": "nous-soutenir",
+        "title": "Nous soutenir",
+        "intent": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources",
+        "required_sections": [
+          "hero",
+          "formes_soutien",
+          "conditions",
+          "contact_cta"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Nous soutenir",
+          "subtitle": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources",
+      "editorial_angle": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources",
+      "template_id": "template_content_contractual",
+      "objective": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources",
+      "required": true,
+      "description": "présenter dons, mécénat, partenariats et bénévolat si confirmés par sources",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/contact.html",
+      "title": "Contact",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "contact",
+      "blueprint_contract": {
+        "page_id": "contact",
+        "title": "Contact",
+        "intent": "donner les moyens de contact confirmés et un formulaire simple avec consentement",
+        "required_sections": [
+          "hero",
+          "contact_details",
+          "formulaire",
+          "accessibilite"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Contact",
+          "subtitle": "donner les moyens de contact confirmés et un formulaire simple avec consentement"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "donner les moyens de contact confirmés et un formulaire simple avec consentement"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "donner les moyens de contact confirmés et un formulaire simple avec consentement",
+      "editorial_angle": "donner les moyens de contact confirmés et un formulaire simple avec consentement",
+      "template_id": "template_contact_contractual",
+      "objective": "donner les moyens de contact confirmés et un formulaire simple avec consentement",
+      "required": true,
+      "description": "donner les moyens de contact confirmés et un formulaire simple avec consentement",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/mentions-legales.html",
+      "title": "Mentions légales",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "mentions-legales",
+      "blueprint_contract": {
+        "page_id": "mentions-legales",
+        "title": "Mentions légales",
+        "intent": "publier les champs légaux confirmés ou placeholders explicites",
+        "required_sections": [
+          "legal_placeholder"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Mentions légales",
+          "subtitle": "publier les champs légaux confirmés ou placeholders explicites"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "publier les champs légaux confirmés ou placeholders explicites"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "publier les champs légaux confirmés ou placeholders explicites",
+      "editorial_angle": "publier les champs légaux confirmés ou placeholders explicites",
+      "template_id": "template_legal_contractual",
+      "objective": "publier les champs légaux confirmés ou placeholders explicites",
+      "required": true,
+      "description": "publier les champs légaux confirmés ou placeholders explicites",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/confidentialite.html",
+      "title": "Confidentialité",
+      "component_order": [
+        "hero",
+        "feature_grid",
+        "content_rail",
+        "faq",
+        "cta_band"
+      ],
+      "page_id": "confidentialite",
+      "blueprint_contract": {
+        "page_id": "confidentialite",
+        "title": "Confidentialité",
+        "intent": "décrire uniquement les traitements réellement actifs",
+        "required_sections": [
+          "privacy_placeholder"
+        ]
+      },
+      "word_target": 650,
+      "slots": {
+        "hero": {
+          "eyebrow": "GEM Casa di l'Isula",
+          "title": "Confidentialité",
+          "subtitle": "décrire uniquement les traitements réellement actifs"
+        },
+        "editorial_intro": {
+          "title": "Une lecture stratégique",
+          "paragraphs": [
+            "décrire uniquement les traitements réellement actifs"
+          ]
+        },
+        "cta_band": {}
+      },
+      "writer_brief": "décrire uniquement les traitements réellement actifs",
+      "editorial_angle": "décrire uniquement les traitements réellement actifs",
+      "template_id": "template_legal_contractual",
+      "objective": "décrire uniquement les traitements réellement actifs",
+      "required": true,
+      "description": "décrire uniquement les traitements réellement actifs",
+      "editorial_word_target": 650,
+      "writer_agent_enriched": true,
+      "creative_workflow_enriched": true
+    }
+  ],
+  "navigation_contract": {
+    "rules": {
+      "same_header_on_all_pages": true,
+      "same_footer_on_all_pages": true,
+      "active_page_class_required": true,
+      "no_dead_links": true,
+      "cta_must_be_contextual": true,
+      "buttons_required": true,
+      "html_css_js_class_contract": true
+    },
+    "items": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Qui sommes-nous ?",
+        "href": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous"
+      },
+      {
+        "label": "Nos activités",
+        "href": "activites.html",
+        "page_id": "activites"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "nous-soutenir.html",
+        "page_id": "nous-soutenir"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      },
+      {
+        "label": "Mentions légales",
+        "href": "mentions-legales.html",
+        "page_id": "mentions-legales"
+      },
+      {
+        "label": "Confidentialité",
+        "href": "confidentialite.html",
+        "page_id": "confidentialite"
+      }
+    ],
+    "primary": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Qui sommes-nous ?",
+        "href": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous"
+      },
+      {
+        "label": "Nos activités",
+        "href": "activites.html",
+        "page_id": "activites"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "nous-soutenir.html",
+        "page_id": "nous-soutenir"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      },
+      {
+        "label": "Mentions légales",
+        "href": "mentions-legales.html",
+        "page_id": "mentions-legales"
+      },
+      {
+        "label": "Confidentialité",
+        "href": "confidentialite.html",
+        "page_id": "confidentialite"
+      }
+    ]
+  },
+  "design_contract": {
+    "no_invention": true,
+    "palette": "Bleu profond #0B3A5E, Bleu clair #3FA9D6, Jaune soleil #F6B64A, Vert doux #76B943, Blanc chaud #FAF7F0, Terracotta #C9774A",
+    "render_profile": "v6_3_contractual_generalist",
+    "tone": "Chaleureux, humain, clair, jamais administratif lourd.",
+    "blueprint_visual_identity": {
+      "design_profile": "association_mediterranean_warm",
+      "mood": [
+        "méditerranéen",
+        "humain",
+        "chaleureux",
+        "institutionnel",
+        "lumineux",
+        "accessible",
+        "respirant"
+      ],
+      "logo": {
+        "policy": "use_provided_logo_top_left_header",
+        "local_path": "C:\\Users\\didie\\OneDrive\\Images\\SITE GEM 2025\\GEM 2026\\logo_circulaire_casa_gem.png",
+        "fallback": "text_identity_only_if_logo_missing"
+      },
+      "extracted_colors": [
+        {
+          "token": "color_0",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_1",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_10",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_11",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_12",
+          "rgb": "202,222,217",
+          "hex": "#CADED9"
+        },
+        {
+          "token": "color_13",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_14",
+          "rgb": "43,75,66",
+          "hex": "#2B4B42"
+        },
+        {
+          "token": "color_15",
+          "rgb": "43,75,66",
+          "hex": "#2B4B42"
+        },
+        {
+          "token": "color_16",
+          "rgb": "169,226,217",
+          "hex": "#A9E2D9"
+        },
+        {
+          "token": "color_17",
+          "rgb": "84,197,179",
+          "hex": "#54C5B3"
+        },
+        {
+          "token": "color_18",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_19",
+          "rgb": "28,83,74",
+          "hex": "#1C534A"
+        },
+        {
+          "token": "color_2",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_20",
+          "rgb": "14,41,37",
+          "hex": "#0E2925"
+        },
+        {
+          "token": "color_21",
+          "rgb": "205,240,234",
+          "hex": "#CDF0EA"
+        },
+        {
+          "token": "color_22",
+          "rgb": "156,224,214",
+          "hex": "#9CE0D6"
+        },
+        {
+          "token": "color_23",
+          "rgb": "106,209,193",
+          "hex": "#6AD1C1"
+        },
+        {
+          "token": "color_24",
+          "rgb": "59,191,170",
+          "hex": "#3BBFAA"
+        },
+        {
+          "token": "color_25",
+          "rgb": "57,108,100",
+          "hex": "#396C64"
+        },
+        {
+          "token": "color_26",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_27",
+          "rgb": "255,253,248",
+          "hex": "#FFFDF8"
+        },
+        {
+          "token": "color_28",
+          "rgb": "255,217,122",
+          "hex": "#FFD97A"
+        },
+        {
+          "token": "color_29",
+          "rgb": "252,180,0",
+          "hex": "#FCB400"
+        },
+        {
+          "token": "color_3",
+          "rgb": "44,141,126",
+          "hex": "#2C8D7E"
+        },
+        {
+          "token": "color_30",
+          "rgb": "126,90,0",
+          "hex": "#7E5A00"
+        },
+        {
+          "token": "color_31",
+          "rgb": "246,253,251",
+          "hex": "#F6FDFB"
+        },
+        {
+          "token": "color_32",
+          "rgb": "238,250,247",
+          "hex": "#EEFAF7"
+        },
+        {
+          "token": "color_33",
+          "rgb": "144,222,203",
+          "hex": "#90DECB"
+        },
+        {
+          "token": "color_34",
+          "rgb": "55,189,155",
+          "hex": "#37BD9B"
+        },
+        {
+          "token": "color_35",
+          "rgb": "28,94,78",
+          "hex": "#1C5E4E"
+        },
+        {
+          "token": "color_36",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_37",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_38",
+          "rgb": "202,222,217",
+          "hex": "#CADED9"
+        },
+        {
+          "token": "color_39",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_4",
+          "rgb": "255,253,248",
+          "hex": "#FFFDF8"
+        },
+        {
+          "token": "color_40",
+          "rgb": "95,157,146",
+          "hex": "#5F9D92"
+        },
+        {
+          "token": "color_41",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_42",
+          "rgb": "57,108,100",
+          "hex": "#396C64"
+        },
+        {
+          "token": "color_43",
+          "rgb": "97,51,17",
+          "hex": "#613311"
+        },
+        {
+          "token": "color_44",
+          "rgb": "43,75,66",
+          "hex": "#2B4B42"
+        },
+        {
+          "token": "color_45",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_46",
+          "rgb": "43,75,66",
+          "hex": "#2B4B42"
+        },
+        {
+          "token": "color_47",
+          "rgb": "95,157,146",
+          "hex": "#5F9D92"
+        },
+        {
+          "token": "color_48",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_49",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_5",
+          "rgb": "238,250,247",
+          "hex": "#EEFAF7"
+        },
+        {
+          "token": "color_50",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_51",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_52",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_53",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_54",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_55",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_56",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_57",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_58",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_59",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_6",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_60",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_61",
+          "rgb": "42,124,111",
+          "hex": "#2A7C6F"
+        },
+        {
+          "token": "color_62",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_63",
+          "rgb": "255,254,252",
+          "hex": "#FFFEFC"
+        },
+        {
+          "token": "color_64",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_65",
+          "rgb": "149,189,182",
+          "hex": "#95BDB6"
+        },
+        {
+          "token": "color_7",
+          "rgb": "189,233,226",
+          "hex": "#BDE9E2"
+        },
+        {
+          "token": "color_8",
+          "rgb": "125,211,198",
+          "hex": "#7DD3C6"
+        },
+        {
+          "token": "color_9",
+          "rgb": "64,188,168",
+          "hex": "#40BCA8"
+        }
+      ],
+      "dominant_hex_colors": [
+        {
+          "hex": "#116DFF",
+          "count": 6
+        },
+        {
+          "hex": "#FFFEFC",
+          "count": 6
+        },
+        {
+          "hex": "#2F54DD",
+          "count": 5
+        },
+        {
+          "hex": "#2A7C6F",
+          "count": 3
+        },
+        {
+          "hex": "#FFFFFF",
+          "count": 3
+        },
+        {
+          "hex": "#1A73E8",
+          "count": 2
+        },
+        {
+          "hex": "#4272DB",
+          "count": 2
+        },
+        {
+          "hex": "#2B4B42",
+          "count": 1
+        },
+        {
+          "hex": "#3899EC",
+          "count": 1
+        },
+        {
+          "hex": "#4D6001",
+          "count": 1
+        },
+        {
+          "hex": "#7FCCF7",
+          "count": 1
+        },
+        {
+          "hex": "#93C3FF",
+          "count": 1
+        },
+        {
+          "hex": "#97B49D",
+          "count": 1
+        },
+        {
+          "hex": "#C9C6FF",
+          "count": 1
+        },
+        {
+          "hex": "#FAAA63",
+          "count": 1
+        }
+      ],
+      "extracted_fonts": [
+        {
+          "token": "font_0",
+          "value": "normal normal normal 20px/1.41em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_1",
+          "value": "normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif"
+        },
+        {
+          "token": "font_10",
+          "value": "normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif"
+        },
+        {
+          "token": "font_2",
+          "value": "normal normal normal 30px/1.38em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_3",
+          "value": "normal normal normal 40px/normal wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_4",
+          "value": "normal normal normal 50px/1.25em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_5",
+          "value": "normal normal normal 60px/1.34em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_6",
+          "value": "normal normal normal 80px/1.35em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano"
+        },
+        {
+          "token": "font_7",
+          "value": "normal normal normal 22px/1.67em barlow-medium,barlow,sans-serif"
+        },
+        {
+          "token": "font_8",
+          "value": "normal normal normal 20px/1.75em barlow-medium,barlow,sans-serif"
+        },
+        {
+          "token": "font_9",
+          "value": "normal normal normal 18px/1.88em barlow-medium,barlow,sans-serif"
+        }
+      ],
+      "extracted_font_families": [
+        {
+          "value": "Roboto,Arial,sans-serif",
+          "count": 8
+        },
+        {
+          "value": "&quot",
+          "count": 6
+        },
+        {
+          "value": "\"barlow-medium\"",
+          "count": 4
+        },
+        {
+          "value": "\"barlow\"",
+          "count": 4
+        },
+        {
+          "value": "\"avenir-lt-w01_35-light1475496\"",
+          "count": 2
+        },
+        {
+          "value": "inherit",
+          "count": 2
+        },
+        {
+          "value": "wf_9ce5f5055531459b836d55f6a",
+          "count": 2
+        },
+        {
+          "value": "Arial,Helvetica,sans-serif",
+          "count": 1
+        },
+        {
+          "value": "avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif class=wixui-rich-text__text>Merci pour votre envoi !</span></span></p></div><div class=\"comp-m8n5bcif1 mu5PoX\" id=comp-m8n5bcif1 aria-disabled=false><button aria-disabled=false aria-label=Envoyer data-testid=buttonElement class=\"twJknM wixui-button ZhVEJq\" data-dashlane-label=true data-dashlane-rid=fe25bd7483d58b4a data-dashlane-classification=action><span class=\"OR4Nv8 wixui-button__label\">Envoyer</span></button></div></div></div></form></div></div></div><div id=comp-m8n5bchm class=\"comp-m8n5bchm wixui-vector-image\"><div data-testid=svgRoot-comp-m8n5bchm class=\"iL7Pq5 gx51wo\"><svg preserveAspectRatio=\"xMidYMid meet\" data-bbox=\"42 39.499 116 121\" viewBox=\"42 39.499 116 121\" height=200 width=200 xmlns=http://www.w3.org/2000/svg data-type=color role=presentation aria-hidden=true aria-label><defs><style>#comp-m8n5bchm svg [data-color=\"1\"]",
+          "count": 1
+        },
+        {
+          "value": "barlow-medium,barlow,sans-serif class=wixui-rich-text__text><span style=letter-spacing:normal class=wixui-rich-text__text><span class=\"color_37 wixui-rich-text__text\"><span style=font-style:normal class=wixui-rich-text__text><a data-auto-recognition=true href=mailto:gempv@laposte.net class=wixui-rich-text__text>gempv@laposte.net</a></span></span></span></span></span></p></div><div id=comp-m8n5bchs class=\"jko4jB comp-m8n5bchs\"><div data-mesh-id=comp-m8n5bchsinlineContent data-testid=inline-content><div data-mesh-id=comp-m8n5bchsinlineContent-gridContainer data-testid=mesh-container-content><form id=comp-m8n5bchu1 class=\"AYCJGp comp-m8n5bchu1 wixui-form\" data-dashlane-rid=367cc55f5eb427df data-dashlane-classification=contact><div data-mesh-id=comp-m8n5bchu1inlineContent data-testid=inline-content><div data-mesh-id=comp-m8n5bchu1inlineContent-gridContainer data-testid=mesh-container-content><div id=comp-m8n5bchy2 class=\"Q1MQrw comp-m8n5bchy2 wixui-text-input pZqgsf\"><label for=input_comp-m8n5bchy2 class=\"QyrExM wixui-text-input__label\">Prénom</label><div class=nuFEsg><input name=prénom id=input_comp-m8n5bchy2 class=\"nbaJII has-custom-focus wixui-text-input__input\" type=text placeholder aria-invalid=false maxlength=100 autocomplete=off aria-required=false value data-dashlane-rid=c9ecd1078d5f92b4 data-dashlane-classification=name,first data-kwimpalastatus=alive data-kwimpalaid=1781251509316-3><span id=1781251509316-3 data-dashlanecreated=true style=\"color-scheme:initial",
+          "count": 1
+        },
+        {
+          "value": "Helvetica,Arial,sans-serif",
+          "count": 1
+        },
+        {
+          "value": "Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif",
+          "count": 1
+        }
+      ],
+      "recommended_palette": [
+        {
+          "name": "Bleu profond",
+          "hex": "#0B3A5E",
+          "usage": "titres, navigation, footer, boutons institutionnels"
+        },
+        {
+          "name": "Bleu clair",
+          "hex": "#3FA9D6",
+          "usage": "liens, détails, accents doux"
+        },
+        {
+          "name": "Jaune soleil",
+          "hex": "#F6B64A",
+          "usage": "accent chaleureux, pictogrammes, petites surfaces"
+        },
+        {
+          "name": "Vert doux",
+          "hex": "#76B943",
+          "usage": "nature, entraide, pastilles, iconographie"
+        },
+        {
+          "name": "Blanc chaud",
+          "hex": "#FAF7F0",
+          "usage": "fond principal, cartes, respirations"
+        },
+        {
+          "name": "Terracotta",
+          "hex": "#C9774A",
+          "usage": "accent émotionnel, appel au soutien"
+        }
+      ],
+      "typography_contract": {
+        "heading_preferred": "Playfair Display ou serif éditoriale proche si disponible",
+        "body_preferred": "Nunito Sans ou sans-serif lisible proche si disponible",
+        "tone": "doux, lisible, narratif, jamais administratif lourd"
+      },
+      "forbidden_visuals": [
+        "cyber",
+        "néon",
+        "dark tech",
+        "hacker",
+        "réseau critique",
+        "Starlink",
+        "INFOSERV2A",
+        "PortoFlow"
+      ]
+    },
+    "logo_policy": "use_provided_logo_or_text_identity",
+    "visual_style": "méditerranéen, humain, chaleureux, institutionnel, lumineux, accessible, respirant",
+    "source": "auto",
+    "lock_header": true,
+    "lock_footer": true,
+    "lock_navigation": true,
+    "lock_typography": true,
+    "lock_css_tokens": true,
+    "lock_component_classes": true,
+    "colors": {},
+    "visual_language": {},
+    "allowed_classes": [],
+    "forbidden_classes": [],
+    "forbidden_components": [],
+    "layout_quality_rules": {},
+    "brand_kit": {
+      "brand_name": "GEM Casa di l'Isula",
+      "tagline": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel.",
+      "tone": "professionnel, clair, sobre",
+      "visual_style": "[object Object]",
+      "logo_policy": {
+        "use_text_logo": true,
+        "generate_inline_svg_mark": true,
+        "no_external_logo": true,
+        "no_previous_project_logo": true
+      }
+    },
+    "clean_room": {
+      "enabled": true,
+      "no_historical_fallbacks": true,
+      "forbidden_terms": [
+        "PortoFlow",
+        "portoflow",
+        "ID2App Project",
+        "ID2App V4.4.6",
+        "assistant territorial",
+        "Assistant territorial",
+        "Économie locale",
+        "Dashboard",
+        "Ingénierie IA",
+        "Production",
+        "stationnement",
+        "plages",
+        "parkings",
+        "copilote territorial"
+      ]
+    },
+    "namespace": "id2"
+  },
+  "class_contract": {
+    "version": "4.4.7.6F",
+    "namespace": "id2",
+    "mode": "clean_project_factory_renderer",
+    "groups": {
+      "shell": [
+        "id2-page",
+        "id2-container",
+        "id2-main"
+      ],
+      "brand": [
+        "id2-brand",
+        "id2-brand__mark",
+        "id2-brand__symbol",
+        "id2-brand__wordmark",
+        "id2-brand__tagline"
+      ],
+      "header": [
+        "id2-header",
+        "id2-header__inner",
+        "id2-nav",
+        "id2-nav__link",
+        "id2-nav__link--active",
+        "id2-header__cta",
+        "id2-nav-toggle",
+        "id2-nav-toggle__bar",
+        "id2-mobile-open"
+      ],
+      "buttons": [
+        "id2-btn",
+        "id2-btn--primary",
+        "id2-btn--secondary",
+        "id2-btn--ghost"
+      ],
+      "hero": [
+        "id2-section",
+        "id2-section--hero",
+        "id2-section--alt",
+        "id2-section--dark",
+        "id2-section--compact",
+        "id2-hero",
+        "id2-hero__grid",
+        "id2-hero__content",
+        "id2-hero__title",
+        "id2-hero__lead",
+        "id2-hero__actions",
+        "id2-hero__visual"
+      ],
+      "editorial": [
+        "id2-eyebrow",
+        "id2-section__heading",
+        "id2-section__title",
+        "id2-section__lead",
+        "id2-tag-row",
+        "id2-tag",
+        "id2-list",
+        "id2-list__item"
+      ],
+      "cards": [
+        "id2-feature-grid",
+        "id2-feature-card",
+        "id2-card-grid",
+        "id2-card",
+        "id2-card--accent",
+        "id2-card__index",
+        "id2-card__title",
+        "id2-card__text",
+        "id2-bento-grid",
+        "id2-bento-card",
+        "id2-bento-card--wide",
+        "id2-content-rail",
+        "id2-rail-items",
+        "id2-rail-item",
+        "id2-panel",
+        "id2-panel__content",
+        "id2-panel__visual"
+      ],
+      "metrics": [
+        "id2-metrics-panel",
+        "id2-metrics-grid",
+        "id2-metric-card",
+        "id2-metric__value",
+        "id2-metric__label"
+      ],
+      "cta": [
+        "id2-cta-band",
+        "id2-cta-band__content",
+        "id2-cta-band__actions"
+      ],
+      "footer": [
+        "id2-footer",
+        "id2-footer__grid",
+        "id2-footer__brand",
+        "id2-footer__col",
+        "id2-footer__bottom"
+      ],
+      "legal": [
+        "id2-legal",
+        "id2-legal__section"
+      ]
+    },
+    "required_classes": [
+      "id2-page",
+      "id2-container",
+      "id2-main",
+      "id2-brand",
+      "id2-brand__mark",
+      "id2-brand__symbol",
+      "id2-brand__wordmark",
+      "id2-brand__tagline",
+      "id2-header",
+      "id2-header__inner",
+      "id2-nav",
+      "id2-nav__link",
+      "id2-nav__link--active",
+      "id2-header__cta",
+      "id2-nav-toggle",
+      "id2-nav-toggle__bar",
+      "id2-mobile-open",
+      "id2-btn",
+      "id2-btn--primary",
+      "id2-btn--secondary",
+      "id2-btn--ghost",
+      "id2-section",
+      "id2-section--hero",
+      "id2-section--alt",
+      "id2-section--dark",
+      "id2-section--compact",
+      "id2-hero",
+      "id2-hero__grid",
+      "id2-hero__content",
+      "id2-hero__title",
+      "id2-hero__lead",
+      "id2-hero__actions",
+      "id2-hero__visual",
+      "id2-eyebrow",
+      "id2-section__heading",
+      "id2-section__title",
+      "id2-section__lead",
+      "id2-tag-row",
+      "id2-tag",
+      "id2-list",
+      "id2-list__item",
+      "id2-feature-grid",
+      "id2-feature-card",
+      "id2-card-grid",
+      "id2-card",
+      "id2-card--accent",
+      "id2-card__index",
+      "id2-card__title",
+      "id2-card__text",
+      "id2-bento-grid",
+      "id2-bento-card",
+      "id2-bento-card--wide",
+      "id2-content-rail",
+      "id2-rail-items",
+      "id2-rail-item",
+      "id2-panel",
+      "id2-panel__content",
+      "id2-panel__visual",
+      "id2-metrics-panel",
+      "id2-metrics-grid",
+      "id2-metric-card",
+      "id2-metric__value",
+      "id2-metric__label",
+      "id2-cta-band",
+      "id2-cta-band__content",
+      "id2-cta-band__actions",
+      "id2-footer",
+      "id2-footer__grid",
+      "id2-footer__brand",
+      "id2-footer__col",
+      "id2-footer__bottom",
+      "id2-legal",
+      "id2-legal__section"
+    ],
+    "optional_classes": [],
+    "data_hooks": [
+      "data-id2-nav-toggle",
+      "data-id2-nav-panel",
+      "data-current-year"
+    ],
+    "rules": {
+      "html_classes_must_be_declared": true,
+      "css_must_define_required_classes": true,
+      "js_hooks_must_exist_in_html": true,
+      "no_historical_fallbacks": true,
+      "shell_locked": true
+    }
+  },
+  "premium_shell_contract": {
+    "version": "4.4.7.6F",
+    "namespace": "id2",
+    "brand_name": "GEM Casa di l'Isula",
+    "tagline": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel.",
+    "logo": {
+      "type": "inline_svg_generated_project_mark",
+      "concept": "clean professional signal mark",
+      "policy": {
+        "no_previous_project_logo": true,
+        "no_external_logo": true,
+        "use_text_logo": true,
+        "generate_inline_svg_mark": true
+      }
+    },
+    "header": {
+      "layout": "logo_left_nav_center_cta_right",
+      "nav": [
+        {
+          "label": "Accueil",
+          "href": "index.html",
+          "page_id": "index"
+        },
+        {
+          "label": "Qui sommes-nous ?",
+          "href": "qui-sommes-nous.html",
+          "page_id": "qui-sommes-nous"
+        },
+        {
+          "label": "Nos activités",
+          "href": "activites.html",
+          "page_id": "activites"
+        },
+        {
+          "label": "Nous soutenir",
+          "href": "nous-soutenir.html",
+          "page_id": "nous-soutenir"
+        },
+        {
+          "label": "Contact",
+          "href": "contact.html",
+          "page_id": "contact"
+        },
+        {
+          "label": "Mentions légales",
+          "href": "mentions-legales.html",
+          "page_id": "mentions-legales"
+        },
+        {
+          "label": "Confidentialité",
+          "href": "confidentialite.html",
+          "page_id": "confidentialite"
+        }
+      ],
+      "cta": {
+        "label": "Demander un diagnostic",
+        "href": "contact.html"
+      },
+      "mobile": {
+        "enabled": true,
+        "toggle_hook": "data-id2-nav-toggle",
+        "panel_hook": "data-id2-nav-panel"
+      }
+    },
+    "footer": {
+      "columns": [
+        {
+          "title": "Navigation",
+          "links": [
+            {
+              "label": "Accueil",
+              "href": "index.html",
+              "page_id": "index"
+            },
+            {
+              "label": "Qui sommes-nous ?",
+              "href": "qui-sommes-nous.html",
+              "page_id": "qui-sommes-nous"
+            },
+            {
+              "label": "Nos activités",
+              "href": "activites.html",
+              "page_id": "activites"
+            }
+          ]
+        },
+        {
+          "title": "Services",
+          "links": [
+            {
+              "label": "Nous soutenir",
+              "href": "nous-soutenir.html",
+              "page_id": "nous-soutenir"
+            },
+            {
+              "label": "Contact",
+              "href": "contact.html",
+              "page_id": "contact"
+            },
+            {
+              "label": "Mentions légales",
+              "href": "mentions-legales.html",
+              "page_id": "mentions-legales"
+            }
+          ]
+        },
+        {
+          "title": "Informations",
+          "links": [
+            {
+              "label": "Confidentialité",
+              "href": "confidentialite.html",
+              "page_id": "confidentialite"
+            }
+          ]
+        }
+      ],
+      "year_hook": "data-current-year"
+    },
+    "spacing": {
+      "section_desktop": "92px",
+      "section_mobile": "56px",
+      "card_gap": "24px"
+    },
+    "buttons": [
+      "id2-btn--primary",
+      "id2-btn--secondary",
+      "id2-btn--ghost"
+    ],
+    "clean_room": {
+      "enabled": true,
+      "no_historical_fallbacks": true,
+      "forbidden_terms": [
+        "PortoFlow",
+        "portoflow",
+        "ID2App Project",
+        "ID2App V4.4.6",
+        "assistant territorial",
+        "Assistant territorial",
+        "Économie locale",
+        "Dashboard",
+        "Ingénierie IA",
+        "Production",
+        "stationnement",
+        "plages",
+        "parkings",
+        "copilote territorial"
+      ]
+    }
+  },
+  "image_registry": {},
+  "site_architecture": {
+    "primary_navigation": [
+      {
+        "label": "Accueil",
+        "href": "index.html",
+        "page_id": "index"
+      },
+      {
+        "label": "Qui sommes-nous ?",
+        "href": "qui-sommes-nous.html",
+        "page_id": "qui-sommes-nous"
+      },
+      {
+        "label": "Nos activités",
+        "href": "activites.html",
+        "page_id": "activites"
+      },
+      {
+        "label": "Nous soutenir",
+        "href": "nous-soutenir.html",
+        "page_id": "nous-soutenir"
+      },
+      {
+        "label": "Contact",
+        "href": "contact.html",
+        "page_id": "contact"
+      },
+      {
+        "label": "Mentions légales",
+        "href": "mentions-legales.html",
+        "page_id": "mentions-legales"
+      },
+      {
+        "label": "Confidentialité",
+        "href": "confidentialite.html",
+        "page_id": "confidentialite"
+      }
+    ],
+    "navigation_contract": {
+      "rules": {
+        "same_header_on_all_pages": true,
+        "same_footer_on_all_pages": true,
+        "active_page_class_required": true,
+        "no_dead_links": true,
+        "cta_must_be_contextual": true
+      }
+    }
+  },
+  "writer_mode": "per_file_pruned_context"
+}
