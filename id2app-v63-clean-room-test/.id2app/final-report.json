@@ -1,14 +1,300 @@
 {
-  "schema_version": "id2app-v6-3-final-report-1.0",
-  "status": "ready_to_publish",
+  "schema_version": "id2app-v6-3-clean-room-final-response-1.0",
+  "status": "completed",
   "run_id": "v63-clean-room-association-20260613-213320",
-  "validation": {
-    "schema_version": "id2app-v6-3-validation-report-1.0",
-    "status": "passed",
-    "errors": [],
-    "warnings": [],
-    "checked_files": 25,
-    "created_at": "2026-06-13T19:34:45.310Z"
+  "project_id": "id2app-v63-clean-room-test",
+  "project_name": "Maison Locale Solidaire",
+  "repo": "didier2a/id2app",
+  "branch": "main",
+  "site_folder": "id2app-v63-clean-room-test",
+  "webhook_path": "id2app-v6-3-clean-room-core",
+  "expected_count": 27,
+  "rendered_count": 27,
+  "validation_status": "passed",
+  "publisher_status": "published",
+  "readback_missing_count": 0,
+  "readback": [
+    {
+      "path": "id2app-v63-clean-room-test/index.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "daa21253379165a0b49556223062549d7c4f8f1f",
+      "size": 3196
+    },
+    {
+      "path": "id2app-v63-clean-room-test/qui-sommes-nous.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "7b7fe6cf1edc507c65db26d9b98ae0596004ae1c",
+      "size": 3248
+    },
+    {
+      "path": "id2app-v63-clean-room-test/activites.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "e70b3cea6109808b5d71e73ed70d01246ac6e2bc",
+      "size": 3218
+    },
+    {
+      "path": "id2app-v63-clean-room-test/nous-soutenir.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d232595b6d4229b64959541af5a1c3527e5c1d81",
+      "size": 3238
+    },
+    {
+      "path": "id2app-v63-clean-room-test/contact.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "a45fa390ed18f43cd7eb9e26cd3d930679d22389",
+      "size": 3208
+    },
+    {
+      "path": "id2app-v63-clean-room-test/mentions-legales.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "70c62a0af8872d2505f4892b75c0f23aa7580a90",
+      "size": 3253
+    },
+    {
+      "path": "id2app-v63-clean-room-test/confidentialite.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "001c0af62fb201ea242559b9cb9e6eae7e47efad",
+      "size": 3248
+    },
+    {
+      "path": "id2app-v63-clean-room-test/styles.css",
+      "status": "found",
+      "http_status": 200,
+      "sha": "34a4a7f8e7c84742c317ef5ecc989f60d2008376",
+      "size": 2681
+    },
+    {
+      "path": "id2app-v63-clean-room-test/script.js",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d9dce99d80e220e562a5f3398803e9c9b96d9e02",
+      "size": 269
+    },
+    {
+      "path": "id2app-v63-clean-room-test/robots.txt",
+      "status": "found",
+      "http_status": 200,
+      "sha": "ef6befd1552fc5ae66eb4e3451758061f2f3e1de",
+      "size": 91
+    },
+    {
+      "path": "id2app-v63-clean-room-test/sitemap.xml",
+      "status": "found",
+      "http_status": 200,
+      "sha": "0e0545b435fa80da16699d0c92188534ccd3ce1d",
+      "size": 719
+    },
+    {
+      "path": "id2app-v63-clean-room-test/README.md",
+      "status": "found",
+      "http_status": 200,
+      "sha": "135d310de6b9d616a928eeba0980dcd82cf3e072",
+      "size": 86
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/input-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "eb785307c6c05504d0a9c4d8f35b2a85e9f080d4",
+      "size": 986
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/source-evidence.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "585027b5a0e69a986295d40d7e145807794b6740",
+      "size": 2504
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/brand-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "75330350f8630ee5950a4e5e67f8e216ae38ced7",
+      "size": 655
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/route-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "f9b165dd1b042659a47981afd8f87b798f88d53a",
+      "size": 2104
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/content-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "33a0960ba877900b31d72e7e9958b6051db6e54a",
+      "size": 11026
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/writer-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "90074e363fd7dfe1c4706b756de4b5d5b1d1c541",
+      "size": 3787
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/ux-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "dc687c7bc5cda66886ce04d4a347f026be2efecb",
+      "size": 7490
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/seo-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "304a6b0713e972e55995dfad8139f28c901b9480",
+      "size": 4988
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/design-media-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "0c1a1968637d8c8544ce48b0fcc13700df86b0d6",
+      "size": 780
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/render-plan.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "f719433c66f7fa74175ead5d78f3927ca374dda4",
+      "size": 7790
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/publish-manifest.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "82612a2cc8885b0fbb8e07886ce6c9b981d336d5",
+      "size": 4582
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/validation-report.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "7ee7ee700f6275d7740231f592ab00b3d45e4e40",
+      "size": 182
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/progress.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "521e7dcf7b54db53821d2915ca2609496cf57c07",
+      "size": 152
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/checkpoint.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "28e073a396d4ded721b20919c1e2225c77e2ed65",
+      "size": 1472
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/final-report.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d984b68f571791ce902fc8af2f0be65c02e6c009",
+      "size": 402
+    }
+  ],
+  "reports": {
+    "progress": "id2app-v63-clean-room-test/.id2app/progress.json",
+    "final_report": "id2app-v63-clean-room-test/.id2app/final-report.json",
+    "publish_manifest": "id2app-v63-clean-room-test/.id2app/publish-manifest.json",
+    "validation_report": "id2app-v63-clean-room-test/.id2app/validation-report.json"
   },
-  "created_at": "2026-06-13T19:34:45.310Z"
+  "provider_status": {
+    "writer": "fallback",
+    "ux": "passed",
+    "seo": "passed",
+    "design_media": "passed"
+  },
+  "logs": [
+    {
+      "phase": "webhook",
+      "status": "accepted",
+      "at": "2026-06-13T19:33:21.913Z"
+    },
+    {
+      "phase": "preflight",
+      "status": "passed",
+      "at": "2026-06-13T19:33:24.206Z"
+    },
+    {
+      "phase": "intake_router",
+      "status": "passed",
+      "at": "2026-06-13T19:33:24.215Z"
+    },
+    {
+      "phase": "evidence_builder",
+      "status": "passed",
+      "facts": 1,
+      "at": "2026-06-13T19:33:24.225Z"
+    },
+    {
+      "phase": "contract_builder",
+      "status": "passed",
+      "files": 27,
+      "at": "2026-06-13T19:33:24.233Z"
+    },
+    {
+      "phase": "writer_workflow",
+      "status": "fallback",
+      "at": "2026-06-13T19:34:11.934Z"
+    },
+    {
+      "phase": "ux_workflow",
+      "status": "passed",
+      "at": "2026-06-13T19:34:33.041Z"
+    },
+    {
+      "phase": "seo_workflow",
+      "status": "passed",
+      "at": "2026-06-13T19:34:42.441Z"
+    },
+    {
+      "phase": "design_media_workflow",
+      "status": "passed",
+      "at": "2026-06-13T19:34:45.244Z"
+    },
+    {
+      "phase": "merge_contracts",
+      "status": "passed",
+      "rejected": 0,
+      "at": "2026-06-13T19:34:45.253Z"
+    },
+    {
+      "phase": "core_arbiter",
+      "status": "accepted",
+      "files": 27,
+      "at": "2026-06-13T19:34:45.264Z"
+    },
+    {
+      "phase": "renderer",
+      "status": "passed",
+      "files": 25,
+      "at": "2026-06-13T19:34:45.286Z"
+    },
+    {
+      "phase": "validator",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "at": "2026-06-13T19:34:45.310Z"
+    },
+    {
+      "phase": "publisher",
+      "status": "published",
+      "files": 27,
+      "at": "2026-06-13T19:35:09.992Z"
+    }
+  ],
+  "created_at": "2026-06-13T19:35:16.259Z"
 }
