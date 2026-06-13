@@ -1,7 +1,7 @@
 {
   "status": "running_with_failures",
   "schema_version": "5.9-clean",
-  "orchestrator_version": "4.4.7.5-publisher-memory-safe-runtime",
+  "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
   "run_id": "v59-generalist-association-20260613-110822",
   "project_id": "id2app-v592-test-html-proof-2",
@@ -18,28 +18,29 @@
   "checkpoint_path": "id2app-v592-test-html-proof-2/.id2app/checkpoint.json",
   "progress_path": "id2app-v592-test-html-proof-2/.id2app/progress.json",
   "final_report_path": "id2app-v592-test-html-proof-2/.id2app/final-report.json",
-  "current_phase": "publishing_files",
+  "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 0,
+  "completed_count": 1,
   "failed_count": 1,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
-  "created_count": 0,
-  "updated_count": 0,
-  "percent": 6,
-  "progress_sequence": 1,
+  "created_count": 1,
+  "updated_count": 1,
+  "percent": 12,
+  "progress_sequence": 2,
   "monotonic_guard": true,
-  "monotonic_regression_prevented": false,
-  "current_file": "id2app-v592-test-html-proof-2/mentions-legales.html",
-  "current_file_status": "failed",
-  "last_successful_file": null,
+  "current_file": "id2app-v592-test-html-proof-2/styles.css",
+  "current_file_status": "success",
+  "last_successful_file": "id2app-v592-test-html-proof-2/styles.css",
   "last_failed_file": "id2app-v592-test-html-proof-2/mentions-legales.html",
-  "last_commit_sha": null,
-  "last_file_sha": null,
+  "last_commit_sha": "acac98118a806e0a061f44d182063855b40e2314",
+  "last_file_sha": "59bb09b89e90bc224f9f7e606f925772160d66c2",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
-  "completed_files": [],
+  "completed_files": [
+    "id2app-v592-test-html-proof-2/styles.css"
+  ],
   "failed_files": [
     {
       "file_path": "id2app-v592-test-html-proof-2/mentions-legales.html",
@@ -84,8 +85,19 @@
       "at": "2026-06-13T09:12:39.718Z"
     }
   ],
-  "updated_files": [],
+  "updated_files": [
+    {
+      "file_path": "id2app-v592-test-html-proof-2/styles.css",
+      "action": "create",
+      "file_sha": "59bb09b89e90bc224f9f7e606f925772160d66c2",
+      "commit_sha": "acac98118a806e0a061f44d182063855b40e2314",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/styles.css",
+      "commit_url": "https://github.com/didier2a/id2app/commit/acac98118a806e0a061f44d182063855b40e2314",
+      "validation_status": "passed"
+    }
+  ],
   "warnings": [],
-  "updated_at": "2026-06-13T09:12:39.761Z",
-  "next_poll_seconds": 15
+  "updated_at": "2026-06-13T09:12:57.417Z",
+  "next_poll_seconds": 15,
+  "publisher_runtime": "v4.4.7.5"
 }
