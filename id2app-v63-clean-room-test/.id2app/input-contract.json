@@ -1,0 +1,35 @@
+{
+  "schema_version": "id2app-v6-3-input-contract-1.0",
+  "project": {
+    "id": "id2app-v63-clean-room-test",
+    "name": "Maison Locale Solidaire",
+    "type": "website",
+    "language": "fr",
+    "site_kind": "association",
+    "audience": [],
+    "objective": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact.",
+    "tagline": ""
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "id2app-v63-clean-room-test",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "site": {
+    "base_url": "https://example.com/id2app-v63-clean-room-test",
+    "reference_url": ""
+  },
+  "options": {
+    "evidence_policy": "no_invention",
+    "render_profile": "clean_room_generalist",
+    "dry_run": false,
+    "preflight_enabled": true,
+    "block_on_preflight": true,
+    "github_publish": true,
+    "strict_validation": true,
+    "save_id2app_artifacts": true,
+    "max_pages": 12
+  }
+}
