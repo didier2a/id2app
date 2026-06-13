@@ -1,0 +1,196 @@
+{
+  "schema_version": "id2app-v6-3-seo-contract-1.0",
+  "project": {
+    "id": "gem-reference-continuity-v63-test",
+    "name": "GEM Casa di l'Isula",
+    "type": "website",
+    "language": "fr",
+    "site_kind": "association",
+    "audience": [],
+    "objective": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel.",
+    "tagline": ""
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/",
+      "required": true,
+      "seo": {
+        "meta_title": "Accueil - GEM Casa di l'Isula",
+        "meta_description": "Bienvenue sur le site officiel de GEM Casa di l'Isula, une association chaleureuse et humaine à Portovecchio.",
+        "keywords": [
+          "GEM Casa di l'Isula",
+          "association Portovecchio",
+          "accueil GEM",
+          "association chaleureuse"
+        ],
+        "h1": "Bienvenue à GEM Casa di l'Isula",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/",
+          "logo": "https://www.legem-portovecchio.org/images/logo.png",
+          "sameAs": []
+        }
+      }
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Qui sommes-nous ? - GEM Casa di l'Isula",
+        "meta_description": "Découvrez l'identité, la mission et les valeurs de GEM Casa di l'Isula, une association humaine et institutionnelle.",
+        "keywords": [
+          "GEM Casa di l'Isula",
+          "association identité",
+          "mission GEM",
+          "valeurs association"
+        ],
+        "h1": "Qui sommes-nous ?",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Qui sommes-nous ? - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/qui-sommes-nous.html"
+        }
+      }
+    },
+    {
+      "page_id": "activites",
+      "title": "Nos activités",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://www.legem-portovecchio.org/activites.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Nos activités - GEM Casa di l'Isula",
+        "meta_description": "Explorez les activités proposées par GEM Casa di l'Isula, une association engagée et chaleureuse.",
+        "keywords": [
+          "activités GEM",
+          "association GEM Casa di l'Isula",
+          "activités associatives",
+          "engagement GEM"
+        ],
+        "h1": "Nos activités",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Nos activités - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/activites.html"
+        }
+      }
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Nous soutenir - GEM Casa di l'Isula",
+        "meta_description": "Soutenez GEM Casa di l'Isula et participez à la vie associative en contribuant à nos projets humains et institutionnels.",
+        "keywords": [
+          "soutenir GEM",
+          "don association",
+          "participation GEM Casa di l'Isula",
+          "aide association"
+        ],
+        "h1": "Nous soutenir",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "SupportAction",
+          "name": "Nous soutenir - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/nous-soutenir.html"
+        }
+      }
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Contact - GEM Casa di l'Isula",
+        "meta_description": "Contactez GEM Casa di l'Isula pour toute demande d'information ou pour rejoindre notre association chaleureuse.",
+        "keywords": [
+          "contact GEM",
+          "association GEM Casa di l'Isula",
+          "informations association",
+          "contact association"
+        ],
+        "h1": "Contactez-nous",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/contact.html"
+        }
+      }
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Mentions légales - GEM Casa di l'Isula",
+        "meta_description": "Consultez les mentions légales du site officiel de GEM Casa di l'Isula, association à Portovecchio.",
+        "keywords": [
+          "mentions légales GEM",
+          "informations légales association",
+          "GEM Casa di l'Isula légales"
+        ],
+        "h1": "Mentions légales",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Mentions légales - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/mentions-legales.html"
+        }
+      }
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html",
+      "required": true,
+      "seo": {
+        "meta_title": "Confidentialité - GEM Casa di l'Isula",
+        "meta_description": "Découvrez notre politique de confidentialité et la gestion des données personnelles sur le site GEM Casa di l'Isula.",
+        "keywords": [
+          "confidentialité GEM",
+          "politique de confidentialité",
+          "données personnelles GEM Casa di l'Isula"
+        ],
+        "h1": "Politique de confidentialité",
+        "structured_data": {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Confidentialité - GEM Casa di l'Isula",
+          "url": "https://www.legem-portovecchio.org/confidentialite.html"
+        }
+      }
+    }
+  ],
+  "facts": [
+    "Créer une reconstruction premium fidèle au site GEM Casa di l'Isula, en conservant l'identité visuelle, la chaleur associative, les couleurs, les polices, les images extraites et la structure de continuité, sans reprendre les contaminations détectées."
+  ],
+  "status": "passed",
+  "provider": "openai",
+  "created_at": "2026-06-13T20:04:02.833Z"
+}
