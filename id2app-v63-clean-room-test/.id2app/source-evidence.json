@@ -1,0 +1,101 @@
+{
+  "schema_version": "id2app-v6-3-source-evidence-1.0",
+  "status": "passed",
+  "evidence_policy": "no_invention",
+  "facts": [
+    "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+  ],
+  "colors": [
+    {
+      "name": "deep",
+      "hex": "#123A5A",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "light",
+      "hex": "#FAF7F0",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "accent",
+      "hex": "#D9824B",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "soft",
+      "hex": "#76A96D",
+      "source": "clean_room_default"
+    }
+  ],
+  "fonts": [
+    "system-ui"
+  ],
+  "logo": {
+    "local_path": "",
+    "policy": "text_identity"
+  },
+  "media": {
+    "assets_path": "",
+    "extracted_assets_dir": "",
+    "priority_images": []
+  },
+  "routes": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "file": "activites.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "file": "mentions-legales.html",
+      "source": "site_kind_default"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "file": "confidentialite.html",
+      "source": "site_kind_default"
+    }
+  ],
+  "allowed_terms_text": "maison locale solidaire\ncréer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact.\ncréer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact.\ncréer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact.\n{}",
+  "forbidden_terms": [
+    "ID2APP",
+    "ID2App",
+    "n8n",
+    "workflow",
+    "payload",
+    "runner",
+    "publisher",
+    "template_",
+    "writer_brief",
+    "REPLACE_"
+  ],
+  "missing_fields_policy": "placeholder_or_warning_never_invent",
+  "created_at": "2026-06-13T19:33:24.225Z"
+}
