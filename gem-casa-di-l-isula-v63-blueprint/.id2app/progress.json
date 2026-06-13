@@ -20,22 +20,22 @@
   "final_report_path": "gem-casa-di-l-isula-v63-blueprint/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 11,
+  "completed_count": 12,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 11,
-  "percent": 48,
-  "progress_sequence": 21,
+  "updated_count": 12,
+  "percent": 52,
+  "progress_sequence": 22,
   "monotonic_guard": true,
-  "current_file": "gem-casa-di-l-isula-v63-blueprint/sitemap.xml",
+  "current_file": "gem-casa-di-l-isula-v63-blueprint/README.md",
   "current_file_status": "success",
-  "last_successful_file": "gem-casa-di-l-isula-v63-blueprint/sitemap.xml",
+  "last_successful_file": "gem-casa-di-l-isula-v63-blueprint/README.md",
   "last_failed_file": null,
-  "last_commit_sha": "c6a51653de44081ba778a1996ba055826642e237",
-  "last_file_sha": "d3756421b8dd190a42e5cb2db2c0047a61282029",
+  "last_commit_sha": "127c030f68ac9fae50fd6d4f0e83f8ee9e9f64b6",
+  "last_file_sha": "e1b9e62d5cc060ea54682aae02f31efbec0f49cd",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -49,7 +49,8 @@
     "gem-casa-di-l-isula-v63-blueprint/styles.css",
     "gem-casa-di-l-isula-v63-blueprint/script.js",
     "gem-casa-di-l-isula-v63-blueprint/robots.txt",
-    "gem-casa-di-l-isula-v63-blueprint/sitemap.xml"
+    "gem-casa-di-l-isula-v63-blueprint/sitemap.xml",
+    "gem-casa-di-l-isula-v63-blueprint/README.md"
   ],
   "failed_files": [],
   "updated_files": [
@@ -151,10 +152,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/gem-casa-di-l-isula-v63-blueprint/sitemap.xml",
       "commit_url": "https://github.com/didier2a/id2app/commit/c6a51653de44081ba778a1996ba055826642e237",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/README.md",
+      "action": "create",
+      "file_sha": "e1b9e62d5cc060ea54682aae02f31efbec0f49cd",
+      "commit_sha": "127c030f68ac9fae50fd6d4f0e83f8ee9e9f64b6",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/gem-casa-di-l-isula-v63-blueprint/README.md",
+      "commit_url": "https://github.com/didier2a/id2app/commit/127c030f68ac9fae50fd6d4f0e83f8ee9e9f64b6",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T17:22:17.739Z",
+  "updated_at": "2026-06-13T17:22:36.763Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
