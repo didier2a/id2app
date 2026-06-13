@@ -20,28 +20,29 @@
   "final_report_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 3,
+  "completed_count": 4,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 3,
-  "percent": 18,
-  "progress_sequence": 12,
+  "updated_count": 4,
+  "percent": 24,
+  "progress_sequence": 13,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-anthropic-ok/activites.html",
+  "current_file": "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-anthropic-ok/activites.html",
+  "last_successful_file": "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
   "last_failed_file": null,
-  "last_commit_sha": "d6ba58f8ab4bb1bfa8dd4adbb0e1838c79873d9f",
-  "last_file_sha": "8a4b3fc8922e80a78aaec1cbafabf1bfe1864ac1",
+  "last_commit_sha": "a4493d21c30465d77e21289f28eca5f48090b81f",
+  "last_file_sha": "c0535d722155f9c0a8f24a96bf5c2d5e3052222c",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "id2app-v592-test-html-proof-anthropic-ok/index.html",
     "id2app-v592-test-html-proof-anthropic-ok/qui-sommes-nous.html",
-    "id2app-v592-test-html-proof-anthropic-ok/activites.html"
+    "id2app-v592-test-html-proof-anthropic-ok/activites.html",
+    "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -71,10 +72,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/activites.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/d6ba58f8ab4bb1bfa8dd4adbb0e1838c79873d9f",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
+      "action": "create",
+      "file_sha": "c0535d722155f9c0a8f24a96bf5c2d5e3052222c",
+      "commit_sha": "a4493d21c30465d77e21289f28eca5f48090b81f",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/a4493d21c30465d77e21289f28eca5f48090b81f",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T13:20:00.305Z",
+  "updated_at": "2026-06-13T13:20:16.346Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
