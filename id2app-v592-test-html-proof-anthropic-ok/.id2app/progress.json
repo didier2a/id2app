@@ -20,29 +20,30 @@
   "final_report_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 1,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 4,
-  "percent": 29,
-  "progress_sequence": 5,
+  "updated_count": 5,
+  "percent": 35,
+  "progress_sequence": 6,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-anthropic-ok/sitemap.xml",
+  "current_file": "id2app-v592-test-html-proof-anthropic-ok/.id2app/app-spec.json",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-anthropic-ok/sitemap.xml",
+  "last_successful_file": "id2app-v592-test-html-proof-anthropic-ok/.id2app/app-spec.json",
   "last_failed_file": "id2app-v592-test-html-proof-anthropic-ok/mentions-legales.html",
-  "last_commit_sha": "d9d3f67b430c1090891901f663d7465cea51c9c8",
-  "last_file_sha": "72267cf6cfd0d33cdf411be1851f61db79a4ce1f",
+  "last_commit_sha": "95d43cef3faca7cb872b2ed0d46b42c959e86729",
+  "last_file_sha": "000a2f1b1ff29a700f9620f8d93577f5fe201563",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "id2app-v592-test-html-proof-anthropic-ok/styles.css",
     "id2app-v592-test-html-proof-anthropic-ok/script.js",
     "id2app-v592-test-html-proof-anthropic-ok/robots.txt",
-    "id2app-v592-test-html-proof-anthropic-ok/sitemap.xml"
+    "id2app-v592-test-html-proof-anthropic-ok/sitemap.xml",
+    "id2app-v592-test-html-proof-anthropic-ok/.id2app/app-spec.json"
   ],
   "failed_files": [
     {
@@ -122,10 +123,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/sitemap.xml",
       "commit_url": "https://github.com/didier2a/id2app/commit/d9d3f67b430c1090891901f663d7465cea51c9c8",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/app-spec.json",
+      "action": "create",
+      "file_sha": "000a2f1b1ff29a700f9620f8d93577f5fe201563",
+      "commit_sha": "95d43cef3faca7cb872b2ed0d46b42c959e86729",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/.id2app/app-spec.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/95d43cef3faca7cb872b2ed0d46b42c959e86729",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T13:22:32.282Z",
+  "updated_at": "2026-06-13T13:22:49.420Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
