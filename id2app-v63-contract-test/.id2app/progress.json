@@ -20,29 +20,30 @@
   "final_report_path": "id2app-v63-contract-test/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 4,
+  "completed_count": 5,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 4,
-  "percent": 17,
-  "progress_sequence": 14,
+  "updated_count": 5,
+  "percent": 22,
+  "progress_sequence": 15,
   "monotonic_guard": true,
-  "current_file": "id2app-v63-contract-test/nous-soutenir.html",
+  "current_file": "id2app-v63-contract-test/contact.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v63-contract-test/nous-soutenir.html",
+  "last_successful_file": "id2app-v63-contract-test/contact.html",
   "last_failed_file": null,
-  "last_commit_sha": "a974382b3f1a81df4b0a11f68977b2789ac27226",
-  "last_file_sha": "1ea133a76ba8921d146b82084939fc356f265238",
+  "last_commit_sha": "c0630f14ef685b2947ee624294436286da0fa70e",
+  "last_file_sha": "ec31352d99d5c62d6aed9af0b227690fcccfd186",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "id2app-v63-contract-test/index.html",
     "id2app-v63-contract-test/qui-sommes-nous.html",
     "id2app-v63-contract-test/activites.html",
-    "id2app-v63-contract-test/nous-soutenir.html"
+    "id2app-v63-contract-test/nous-soutenir.html",
+    "id2app-v63-contract-test/contact.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -81,10 +82,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-test/nous-soutenir.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/a974382b3f1a81df4b0a11f68977b2789ac27226",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v63-contract-test/contact.html",
+      "action": "create",
+      "file_sha": "ec31352d99d5c62d6aed9af0b227690fcccfd186",
+      "commit_sha": "c0630f14ef685b2947ee624294436286da0fa70e",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-test/contact.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/c0630f14ef685b2947ee624294436286da0fa70e",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T16:11:24.504Z",
+  "updated_at": "2026-06-13T16:11:40.036Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
