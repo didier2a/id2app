@@ -1,0 +1,170 @@
+{
+  "schema_version": "id2app-v6-3-publish-manifest-1.0",
+  "status": "planned",
+  "expected_count": 27,
+  "files": [
+    {
+      "path": "gem-html-continuity-v63-test/index.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/qui-sommes-nous.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/nos-activites.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/nous-soutenir.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/contact.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/mentions-legales.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/confidentialite.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/styles.css",
+      "type": "css",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/script.js",
+      "type": "javascript",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/robots.txt",
+      "type": "text",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/sitemap.xml",
+      "type": "xml",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/README.md",
+      "type": "markdown",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/input-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/source-evidence.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/brand-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/route-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/content-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/writer-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/ux-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/seo-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/design-media-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/render-plan.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/publish-manifest.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/validation-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/progress.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/checkpoint.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "gem-html-continuity-v63-test/.id2app/final-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    }
+  ],
+  "created_at": "2026-06-13T20:33:03.986Z"
+}
