@@ -1,0 +1,11 @@
+{
+  "schema_version": "id2app-v6-3-template-report-1.0",
+  "report_type": "contractual_core_template_report",
+  "version": "6.3.0-contractual-core",
+  "project_id": "id2app-v63-contract-guardfix",
+  "site_folder": "id2app-v63-contract-guardfix",
+  "generated_at": "2026-06-13T16:29:58.839Z",
+  "clean_room": true,
+  "forbidden_terms_guard": "enabled",
+  "namespace": "id2"
+}
