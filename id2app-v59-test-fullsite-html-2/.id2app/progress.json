@@ -18,8 +18,8 @@
   "checkpoint_path": "id2app-v59-test-fullsite-html-2/.id2app/checkpoint.json",
   "progress_path": "id2app-v59-test-fullsite-html-2/.id2app/progress.json",
   "final_report_path": "id2app-v59-test-fullsite-html-2/.id2app/final-report.json",
-  "current_phase": "app_spec_structure_only",
-  "current_phase_label": "App Spec structure-only : contexte compact avant 07S",
+  "current_phase": "site_architecture",
+  "current_phase_label": "App Spec compacte prête ; architecture de site et navigation",
   "current_file": null,
   "current_file_status": null,
   "expected_count": 9,
@@ -31,7 +31,7 @@
   "created_count": 0,
   "updated_count": 0,
   "percent": 0,
-  "progress_sequence": 1,
+  "progress_sequence": 2,
   "monotonic_guard": true,
   "completed_files": [],
   "failed_files": [],
@@ -39,7 +39,7 @@
   "warnings": [],
   "next_poll_seconds": 15,
   "created_at": "2026-06-13T07:08:13.769Z",
-  "updated_at": "2026-06-13T07:08:25.885Z",
+  "updated_at": "2026-06-13T07:08:27.384Z",
   "phase_telemetry": true,
-  "heartbeat_at": "2026-06-13T07:08:25.885Z"
+  "heartbeat_at": "2026-06-13T07:08:27.384Z"
 }
