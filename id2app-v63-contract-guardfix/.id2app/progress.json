@@ -20,22 +20,22 @@
   "final_report_path": "id2app-v63-contract-guardfix/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 6,
+  "completed_count": 7,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 6,
-  "percent": 26,
-  "progress_sequence": 16,
+  "updated_count": 7,
+  "percent": 30,
+  "progress_sequence": 17,
   "monotonic_guard": true,
-  "current_file": "id2app-v63-contract-guardfix/mentions-legales.html",
+  "current_file": "id2app-v63-contract-guardfix/confidentialite.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v63-contract-guardfix/mentions-legales.html",
+  "last_successful_file": "id2app-v63-contract-guardfix/confidentialite.html",
   "last_failed_file": null,
-  "last_commit_sha": "c7d68db14da16b948f12a825f8fb4129ae83f161",
-  "last_file_sha": "21e6d706155925a4a9db55db3c9ba11149d7afa9",
+  "last_commit_sha": "178ab92f2ddd3a059344ec5cf803b7b10003cf30",
+  "last_file_sha": "e9dcae3375665e21efeaf0702dde3af2dbad28fe",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -44,7 +44,8 @@
     "id2app-v63-contract-guardfix/activites.html",
     "id2app-v63-contract-guardfix/nous-soutenir.html",
     "id2app-v63-contract-guardfix/contact.html",
-    "id2app-v63-contract-guardfix/mentions-legales.html"
+    "id2app-v63-contract-guardfix/mentions-legales.html",
+    "id2app-v63-contract-guardfix/confidentialite.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -101,10 +102,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/mentions-legales.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/c7d68db14da16b948f12a825f8fb4129ae83f161",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v63-contract-guardfix/confidentialite.html",
+      "action": "create",
+      "file_sha": "e9dcae3375665e21efeaf0702dde3af2dbad28fe",
+      "commit_sha": "178ab92f2ddd3a059344ec5cf803b7b10003cf30",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/confidentialite.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/178ab92f2ddd3a059344ec5cf803b7b10003cf30",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T16:25:41.008Z",
+  "updated_at": "2026-06-13T16:25:57.848Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
