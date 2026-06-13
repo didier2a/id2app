@@ -1,6 +1,11 @@
 {
-  "status": "rendered",
+  "schema_version": "id2app-v6-3-clean-room-progress-1.0",
+  "status": "completed",
   "run_id": "v63-clean-room-association-20260613-220245",
   "expected_count": 27,
-  "updated_at": "2026-06-13T20:04:08.117Z"
+  "rendered_count": 27,
+  "validation_status": "passed",
+  "publisher_status": "published",
+  "readback_missing_count": 0,
+  "updated_at": "2026-06-13T20:04:40.196Z"
 }
