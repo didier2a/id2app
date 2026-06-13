@@ -1,0 +1,263 @@
+{
+  "contract": {
+    "project": {
+      "id": "id2app-v63-clean-room-test",
+      "name": "Maison Locale Solidaire",
+      "type": "website",
+      "language": "fr",
+      "site_kind": "association",
+      "objective": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact.",
+      "tagline": ""
+    },
+    "brand": {
+      "name": "Maison Locale Solidaire",
+      "tagline": "",
+      "palette": [
+        {
+          "name": "deep",
+          "hex": "#123A5A"
+        },
+        {
+          "name": "light",
+          "hex": "#FAF7F0"
+        },
+        {
+          "name": "accent",
+          "hex": "#D9824B"
+        },
+        {
+          "name": "soft",
+          "hex": "#76A96D"
+        }
+      ],
+      "fonts": [
+        "system-ui"
+      ],
+      "logo": {
+        "policy": "text_identity",
+        "local_path": ""
+      },
+      "visual_style": "clean generalist accessible layout",
+      "tone": "clear, human, useful"
+    },
+    "pages": [
+      {
+        "id": "index",
+        "title": "Accueil",
+        "file": "index.html",
+        "href": "index.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/",
+        "required": true,
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "content": {
+              "heading": "Bienvenue à Maison Locale Solidaire",
+              "subheading": "Un espace associatif clair et chaleureux",
+              "call_to_action": {
+                "label": "Découvrir nos activités",
+                "href": "activites.html"
+              }
+            }
+          },
+          {
+            "id": "intro",
+            "type": "text",
+            "content": "Maison Locale Solidaire est une association dédiée à la solidarité locale. Découvrez nos activités, comment nous soutenir, et contactez-nous."
+          },
+          {
+            "id": "quick_links",
+            "type": "navigation",
+            "content": [
+              {
+                "label": "Qui sommes-nous",
+                "href": "qui-sommes-nous.html"
+              },
+              {
+                "label": "Activités",
+                "href": "activites.html"
+              },
+              {
+                "label": "Nous soutenir",
+                "href": "nous-soutenir.html"
+              },
+              {
+                "label": "Contact",
+                "href": "contact.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "qui-sommes-nous",
+        "title": "Qui sommes-nous",
+        "file": "qui-sommes-nous.html",
+        "href": "qui-sommes-nous.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/qui-sommes-nous.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "mission",
+            "type": "text",
+            "content": "Présentation de l'association, sa mission, ses valeurs et son histoire."
+          },
+          {
+            "id": "team",
+            "type": "team",
+            "content": "Liste des membres clés et leurs rôles."
+          }
+        ]
+      },
+      {
+        "id": "activites",
+        "title": "Activites",
+        "file": "activites.html",
+        "href": "activites.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/activites.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "activity_list",
+            "type": "list",
+            "content": "Description claire et chaleureuse des activités proposées par l'association."
+          }
+        ]
+      },
+      {
+        "id": "nous-soutenir",
+        "title": "Nous soutenir",
+        "file": "nous-soutenir.html",
+        "href": "nous-soutenir.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/nous-soutenir.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "support_options",
+            "type": "text",
+            "content": "Informations sur les différentes façons de soutenir l'association (dons, bénévolat, partenariats)."
+          },
+          {
+            "id": "call_to_action",
+            "type": "button",
+            "content": {
+              "label": "Faire un don",
+              "href": "contact.html#don"
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "file": "contact.html",
+        "href": "contact.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/contact.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "contact_form",
+            "type": "form",
+            "content": {
+              "fields": [
+                {
+                  "name": "nom",
+                  "type": "text",
+                  "label": "Nom",
+                  "required": true
+                },
+                {
+                  "name": "email",
+                  "type": "email",
+                  "label": "Email",
+                  "required": true
+                },
+                {
+                  "name": "message",
+                  "type": "textarea",
+                  "label": "Message",
+                  "required": true
+                }
+              ],
+              "submit_label": "Envoyer"
+            }
+          },
+          {
+            "id": "contact_info",
+            "type": "text",
+            "content": "Adresse, téléphone et autres moyens de contact."
+          }
+        ]
+      },
+      {
+        "id": "mentions-legales",
+        "title": "Mentions legales",
+        "file": "mentions-legales.html",
+        "href": "mentions-legales.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/mentions-legales.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "legal_text",
+            "type": "text",
+            "content": "Informations légales obligatoires pour le site associatif."
+          }
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "title": "Confidentialite",
+        "file": "confidentialite.html",
+        "href": "confidentialite.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/confidentialite.html",
+        "required": true,
+        "sections": [
+          {
+            "id": "privacy_policy",
+            "type": "text",
+            "content": "Politique de confidentialité conforme aux normes en vigueur."
+          }
+        ]
+      }
+    ],
+    "accessibility": {
+      "compliance": "WCAG 2.1 AA",
+      "features": [
+        "Contraste suffisant des couleurs",
+        "Navigation clavier complète",
+        "Textes alternatifs pour images",
+        "Structure sémantique claire"
+      ]
+    },
+    "deliverables": [
+      "Site web responsive en français",
+      "Code source propre et commenté",
+      "Documentation utilisateur et technique",
+      "Tests d'accessibilité et compatibilité navigateurs"
+    ],
+    "timeline": {
+      "phases": [
+        {
+          "name": "Conception UX/UI",
+          "duration_weeks": 2
+        },
+        {
+          "name": "Développement",
+          "duration_weeks": 4
+        },
+        {
+          "name": "Tests et validation",
+          "duration_weeks": 1
+        },
+        {
+          "name": "Livraison",
+          "duration_weeks": 1
+        }
+      ]
+    }
+  },
+  "status": "passed",
+  "provider": "openai",
+  "created_at": "2026-06-13T19:34:33.041Z"
+}
