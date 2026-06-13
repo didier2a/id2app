@@ -1,0 +1,71 @@
+{
+  "schema_version": "id2app-v6-3-content-inventory-1.0",
+  "status": "planned",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "file_path": "id2app-v63-contract-guardfix/index.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "file_path": "id2app-v63-contract-guardfix/qui-sommes-nous.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "file": "activites.html",
+      "file_path": "id2app-v63-contract-guardfix/activites.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "file_path": "id2app-v63-contract-guardfix/nous-soutenir.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "file_path": "id2app-v63-contract-guardfix/contact.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "file": "mentions-legales.html",
+      "file_path": "id2app-v63-contract-guardfix/mentions-legales.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "file": "confidentialite.html",
+      "file_path": "id2app-v63-contract-guardfix/confidentialite.html",
+      "status": "planned",
+      "source": "app-spec-or-provider-contract",
+      "evidence_status": "controlled_or_to_complete"
+    }
+  ],
+  "no_invention": true,
+  "created_at": "2026-06-13T16:28:35.100Z"
+}
