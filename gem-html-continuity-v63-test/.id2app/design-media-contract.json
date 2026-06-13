@@ -1,0 +1,92 @@
+{
+  "schema_version": "id2app-v6-3-design-media-contract-1.0",
+  "status": "passed",
+  "project_name": "GEM Casa di l'Isula",
+  "palette": [
+    {
+      "name": "color_0",
+      "hex": "#FFFEFC",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_1",
+      "hex": "#2A7C6F",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_12",
+      "hex": "#CADED9",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_13",
+      "hex": "#95BDB6",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_14",
+      "hex": "#2B4B42",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_16",
+      "hex": "#A9E2D9",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_17",
+      "hex": "#54C5B3",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_19",
+      "hex": "#1C534A",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_20",
+      "hex": "#0E2925",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_21",
+      "hex": "#CDF0EA",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_22",
+      "hex": "#9CE0D6",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_23",
+      "hex": "#6AD1C1",
+      "source": "continuity_wix_token"
+    }
+  ],
+  "fonts": [
+    "normal normal normal 20px/1.41em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif",
+    "normal normal normal 30px/1.38em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 40px/normal wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 50px/1.25em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 60px/1.34em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 80px/1.35em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 22px/1.67em barlow-medium,barlow,sans-serif",
+    "normal normal normal 20px/1.75em barlow-medium,barlow,sans-serif",
+    "normal normal normal 18px/1.88em barlow-medium,barlow,sans-serif"
+  ],
+  "logo": {
+    "id": "continuity_image_10",
+    "mime": "image/avif",
+    "extension": "avif",
+    "sha256": "a2b0a2d3f940580be5dd03be441d3f72b20cb3ef8291bf26c4e48f24a91fb89a",
+    "bytes": 56515,
+    "local_path": "C:\\Users\\didie\\OneDrive\\Documents\\V6\\audit_id2app\\blueprints\\gem-html-continuity-v6-3-assets\\continuity-image-10-a2b0a2d3f9.avif",
+    "recommended_role": "content_image_or_logo"
+  },
+  "layout_mood": "clean generalist accessible layout",
+  "image_policy": "Natural, clean, and accessible imagery, avoiding cyber/neon aesthetics.",
+  "provider": "gemini",
+  "created_at": "2026-06-13T20:33:03.766Z"
+}
