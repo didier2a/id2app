@@ -1,0 +1,113 @@
+{
+  "schema_version": "id2app-v6-3-writer-contract-1.0",
+  "status": "fallback",
+  "reason": "anthropic_json_parse_failed",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "lead": "Accueil - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Accueil",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "lead": "Qui sommes-nous ? - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Qui sommes-nous ?",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "activites",
+      "title": "Nos activités",
+      "lead": "Nos activités - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Nos activités",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "lead": "Nous soutenir - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Nous soutenir",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "lead": "Contact - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Contact",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "lead": "Mentions légales - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Mentions légales",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "lead": "Confidentialité - GEM Casa di l'Isula",
+      "sections": [
+        {
+          "title": "Confidentialité",
+          "body": "Créer un site associatif fidèle à l'identité GEM Casa di l'Isula, chaleureux, lisible, humain et institutionnel."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-13T20:03:35.342Z"
+}
