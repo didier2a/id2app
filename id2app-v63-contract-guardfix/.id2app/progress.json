@@ -20,22 +20,22 @@
   "final_report_path": "id2app-v63-contract-guardfix/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 17,
+  "completed_count": 18,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 17,
-  "percent": 74,
-  "progress_sequence": 27,
+  "updated_count": 18,
+  "percent": 78,
+  "progress_sequence": 28,
   "monotonic_guard": true,
-  "current_file": "id2app-v63-contract-guardfix/.id2app/site-map.json",
+  "current_file": "id2app-v63-contract-guardfix/.id2app/content-inventory.json",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v63-contract-guardfix/.id2app/site-map.json",
+  "last_successful_file": "id2app-v63-contract-guardfix/.id2app/content-inventory.json",
   "last_failed_file": null,
-  "last_commit_sha": "cb04d3ac139c0e16ce06d1fe2cff5c9ec7dcf047",
-  "last_file_sha": "85ccb731422e968995013c0059ac5aa2f9c0654e",
+  "last_commit_sha": "51fe51e929ea79690625b2434a7e2d1ccb0d85d8",
+  "last_file_sha": "4597ec99ad2a934caa80138f6e4f24d07b98af58",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -55,7 +55,8 @@
     "id2app-v63-contract-guardfix/.id2app/build-plan.json",
     "id2app-v63-contract-guardfix/.id2app/quality-contract.json",
     "id2app-v63-contract-guardfix/.id2app/route-map.json",
-    "id2app-v63-contract-guardfix/.id2app/site-map.json"
+    "id2app-v63-contract-guardfix/.id2app/site-map.json",
+    "id2app-v63-contract-guardfix/.id2app/content-inventory.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -211,10 +212,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/.id2app/site-map.json",
       "commit_url": "https://github.com/didier2a/id2app/commit/cb04d3ac139c0e16ce06d1fe2cff5c9ec7dcf047",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v63-contract-guardfix/.id2app/content-inventory.json",
+      "action": "create",
+      "file_sha": "4597ec99ad2a934caa80138f6e4f24d07b98af58",
+      "commit_sha": "51fe51e929ea79690625b2434a7e2d1ccb0d85d8",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/.id2app/content-inventory.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/51fe51e929ea79690625b2434a7e2d1ccb0d85d8",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T16:28:35.339Z",
+  "updated_at": "2026-06-13T16:28:50.198Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
