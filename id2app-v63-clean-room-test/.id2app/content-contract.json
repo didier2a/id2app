@@ -1,0 +1,306 @@
+{
+  "schema_version": "id2app-v6-3-content-contract-1.0",
+  "evidence_policy": "no_invention",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "index",
+        "title": "Accueil",
+        "lead": "Accueil - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Accueil",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "index",
+        "title": "Accueil",
+        "file": "index.html",
+        "href": "index.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/",
+        "meta": {
+          "title": "Maison Locale Solidaire - Accueil",
+          "description": "Bienvenue sur le site de Maison Locale Solidaire, une association engagée. Découvrez nos activités, comment nous soutenir et nous contacter.",
+          "keywords": [
+            "association",
+            "Maison Locale Solidaire",
+            "activités associatives",
+            "soutien association",
+            "contact association"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/qui-sommes-nous.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "qui-sommes-nous",
+        "title": "Qui sommes-nous",
+        "lead": "Qui sommes-nous - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Qui sommes-nous",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "qui-sommes-nous",
+        "title": "Qui sommes-nous",
+        "file": "qui-sommes-nous.html",
+        "href": "qui-sommes-nous.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/qui-sommes-nous.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Qui sommes-nous",
+          "description": "Découvrez l'équipe et la mission de Maison Locale Solidaire, une association locale dédiée à la solidarité et au soutien communautaire.",
+          "keywords": [
+            "association",
+            "Maison Locale Solidaire",
+            "équipe association",
+            "mission association",
+            "solidarité locale"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/activites.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "activites",
+        "title": "Activites",
+        "lead": "Activites - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Activites",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "activites",
+        "title": "Activites",
+        "file": "activites.html",
+        "href": "activites.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/activites.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Activités",
+          "description": "Explorez les activités proposées par Maison Locale Solidaire pour soutenir la communauté locale et favoriser la solidarité.",
+          "keywords": [
+            "activités associatives",
+            "Maison Locale Solidaire",
+            "solidarité",
+            "actions communautaires",
+            "événements associatifs"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/nous-soutenir.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "nous-soutenir",
+        "title": "Nous soutenir",
+        "lead": "Nous soutenir - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Nous soutenir",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "nous-soutenir",
+        "title": "Nous soutenir",
+        "file": "nous-soutenir.html",
+        "href": "nous-soutenir.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/nous-soutenir.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Nous soutenir",
+          "description": "Découvrez comment soutenir Maison Locale Solidaire et contribuer à nos actions solidaires au sein de la communauté.",
+          "keywords": [
+            "soutenir association",
+            "don association",
+            "Maison Locale Solidaire",
+            "contribution solidaire",
+            "aide association"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/contact.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "contact",
+        "title": "Contact",
+        "lead": "Contact - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Contact",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "contact",
+        "title": "Contact",
+        "file": "contact.html",
+        "href": "contact.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/contact.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Contact",
+          "description": "Contactez Maison Locale Solidaire pour toute question, information ou pour rejoindre nos actions solidaires.",
+          "keywords": [
+            "contact association",
+            "Maison Locale Solidaire",
+            "informations association",
+            "rejoindre association",
+            "solidarité locale"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/mentions-legales.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "mentions-legales",
+        "title": "Mentions legales",
+        "lead": "Mentions legales - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Mentions legales",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "mentions-legales",
+        "title": "Mentions legales",
+        "file": "mentions-legales.html",
+        "href": "mentions-legales.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/mentions-legales.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Mentions légales",
+          "description": "Mentions légales du site Maison Locale Solidaire, association engagée dans la solidarité locale.",
+          "keywords": [
+            "mentions légales",
+            "Maison Locale Solidaire",
+            "informations légales",
+            "association"
+          ]
+        }
+      },
+      "ux": null
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/confidentialite.html",
+      "source": "site_kind_default",
+      "required": true,
+      "writer": {
+        "page_id": "confidentialite",
+        "title": "Confidentialite",
+        "lead": "Confidentialite - Maison Locale Solidaire",
+        "sections": [
+          {
+            "title": "Confidentialite",
+            "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+          },
+          {
+            "title": "Informations utiles",
+            "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+          }
+        ]
+      },
+      "seo": {
+        "page_id": "confidentialite",
+        "title": "Confidentialite",
+        "file": "confidentialite.html",
+        "href": "confidentialite.html",
+        "canonical": "https://example.com/id2app-v63-clean-room-test/confidentialite.html",
+        "meta": {
+          "title": "Maison Locale Solidaire - Confidentialité",
+          "description": "Politique de confidentialité de Maison Locale Solidaire, association respectueuse de vos données personnelles.",
+          "keywords": [
+            "confidentialité",
+            "protection des données",
+            "Maison Locale Solidaire",
+            "association",
+            "données personnelles"
+          ]
+        }
+      },
+      "ux": null
+    }
+  ]
+}
