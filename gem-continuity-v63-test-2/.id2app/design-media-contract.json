@@ -1,0 +1,75 @@
+{
+  "schema_version": "id2app-v6-3-design-media-contract-1.0",
+  "status": "passed",
+  "palette": [
+    {
+      "name": "Bleu profond",
+      "hex": "#0B3A5E",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Bleu clair",
+      "hex": "#3FA9D6",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Jaune soleil",
+      "hex": "#F6B64A",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Vert doux",
+      "hex": "#76B943",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Blanc chaud",
+      "hex": "#FAF7F0",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Terracotta",
+      "hex": "#C9774A",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "color_0",
+      "hex": "#FFFEFC",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_1",
+      "hex": "#2A7C6F",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_12",
+      "hex": "#CADED9",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_13",
+      "hex": "#95BDB6",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_14",
+      "hex": "#2B4B42",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_16",
+      "hex": "#A9E2D9",
+      "source": "blueprint_extracted_color"
+    }
+  ],
+  "fonts": [
+    "[object Object]",
+    "system-ui"
+  ],
+  "logo": {},
+  "layout_mood": "clean generalist accessible layout",
+  "image_policy": "No cyber or neon imagery.",
+  "provider": "gemini",
+  "created_at": "2026-06-13T20:04:08.051Z"
+}
