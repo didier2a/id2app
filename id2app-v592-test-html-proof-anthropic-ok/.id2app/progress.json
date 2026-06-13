@@ -1,7 +1,7 @@
 {
-  "status": "running",
+  "status": "running_with_failures",
   "schema_version": "5.9-clean",
-  "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
+  "orchestrator_version": "4.4.7.5-publisher-memory-safe-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
   "run_id": "v59-generalist-association-20260613-151633",
   "project_id": "id2app-v592-test-html-proof-anthropic-ok",
@@ -18,83 +18,72 @@
   "checkpoint_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/checkpoint.json",
   "progress_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/progress.json",
   "final_report_path": "id2app-v592-test-html-proof-anthropic-ok/.id2app/final-report.json",
-  "current_phase": "publishing_files_distributed",
+  "current_phase": "publishing_files",
   "expected_count": 17,
-  "completed_count": 5,
-  "failed_count": 0,
+  "completed_count": 0,
+  "failed_count": 1,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
-  "created_count": 1,
-  "updated_count": 5,
-  "percent": 29,
-  "progress_sequence": 14,
+  "created_count": 0,
+  "updated_count": 0,
+  "percent": 6,
+  "progress_sequence": 1,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-anthropic-ok/contact.html",
-  "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-anthropic-ok/contact.html",
-  "last_failed_file": null,
-  "last_commit_sha": "4371f0dea87ac0422d45a62de18934a58866b27e",
-  "last_file_sha": "45e585119b41c20e831284315ae3917b7ace4d9f",
+  "monotonic_regression_prevented": false,
+  "current_file": "id2app-v592-test-html-proof-anthropic-ok/mentions-legales.html",
+  "current_file_status": "failed",
+  "last_successful_file": null,
+  "last_failed_file": "id2app-v592-test-html-proof-anthropic-ok/mentions-legales.html",
+  "last_commit_sha": null,
+  "last_file_sha": null,
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
-  "completed_files": [
-    "id2app-v592-test-html-proof-anthropic-ok/index.html",
-    "id2app-v592-test-html-proof-anthropic-ok/qui-sommes-nous.html",
-    "id2app-v592-test-html-proof-anthropic-ok/activites.html",
-    "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
-    "id2app-v592-test-html-proof-anthropic-ok/contact.html"
-  ],
-  "failed_files": [],
-  "updated_files": [
+  "completed_files": [],
+  "failed_files": [
     {
-      "file_path": "id2app-v592-test-html-proof-anthropic-ok/index.html",
-      "action": "create",
-      "file_sha": "6b10a1ad4b8596b3bed7ba1f31f63095e323a787",
-      "commit_sha": "879b12c753409ffbbdaa7373e5ee4a5228f5cf77",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/index.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/879b12c753409ffbbdaa7373e5ee4a5228f5cf77",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-anthropic-ok/qui-sommes-nous.html",
-      "action": "create",
-      "file_sha": "e012c772f608635ed49e86beeaf7e9403841ea88",
-      "commit_sha": "c81f039e497a828677a22d76f6f95f97f46b7017",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/qui-sommes-nous.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/c81f039e497a828677a22d76f6f95f97f46b7017",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-anthropic-ok/activites.html",
-      "action": "create",
-      "file_sha": "8a4b3fc8922e80a78aaec1cbafabf1bfe1864ac1",
-      "commit_sha": "d6ba58f8ab4bb1bfa8dd4adbb0e1838c79873d9f",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/activites.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/d6ba58f8ab4bb1bfa8dd4adbb0e1838c79873d9f",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
-      "action": "create",
-      "file_sha": "c0535d722155f9c0a8f24a96bf5c2d5e3052222c",
-      "commit_sha": "a4493d21c30465d77e21289f28eca5f48090b81f",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/nous-soutenir.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/a4493d21c30465d77e21289f28eca5f48090b81f",
-      "validation_status": "passed"
-    },
-    {
-      "file_path": "id2app-v592-test-html-proof-anthropic-ok/contact.html",
-      "action": "create",
-      "file_sha": "45e585119b41c20e831284315ae3917b7ace4d9f",
-      "commit_sha": "4371f0dea87ac0422d45a62de18934a58866b27e",
-      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-anthropic-ok/contact.html",
-      "commit_url": "https://github.com/didier2a/id2app/commit/4371f0dea87ac0422d45a62de18934a58866b27e",
-      "validation_status": "passed"
+      "file_path": "id2app-v592-test-html-proof-anthropic-ok/mentions-legales.html",
+      "action": "repair",
+      "reason": "validation_failed",
+      "parse_warnings": [],
+      "validation_errors": [
+        "too_many_consecutive_paragraphs"
+      ],
+      "validation_warnings": [],
+      "gemini_execution_job_audit": null,
+      "gemini_repair_diagnosis": {
+        "repair_required": true,
+        "failure_type": "validation",
+        "root_cause": "The HTML file is missing the required 'hero' component, which is a blocking issue for ID2App V4.4 compliance.",
+        "repair_strategy": "Add a hero section (e.g., <section class=\"id2-hero\">) to the page, typically placed directly after the header and before the main content sections.",
+        "constraints": [
+          "Ensure the hero component adheres to the ID2App V4.4 specification.",
+          "The existing legal content must remain within its dedicated <section class=\"id2-legal\">."
+        ],
+        "must_not_change": [
+          "The existing header and footer structure.",
+          "The content and structure of the legal sections."
+        ],
+        "recommended_prompt_addendum": "Ajoute une section 'hero' conforme à la spécification ID2App V4.4, en la plaçant après l'en-tête et avant les sections de contenu existantes. Le contenu de la section 'mentions légales' doit rester inchangé."
+      },
+      "anthropic_stop_reason": "end_turn",
+      "anthropic_usage": {
+        "input_tokens": 7414,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 3047,
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "at": "2026-06-13T13:21:32.598Z"
     }
   ],
+  "updated_files": [],
   "warnings": [],
-  "updated_at": "2026-06-13T13:20:39.303Z",
-  "next_poll_seconds": 15,
-  "publisher_runtime": "v4.4.7.5"
+  "updated_at": "2026-06-13T13:21:32.662Z",
+  "next_poll_seconds": 15
 }
