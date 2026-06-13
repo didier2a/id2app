@@ -1,0 +1,68 @@
+{
+  "schema_version": "id2app-v6-3-route-contract-1.0",
+  "routes": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "nos-activites",
+      "title": "Nos activités",
+      "file": "nos-activites.html",
+      "href": "nos-activites.html",
+      "canonical": "https://www.legem-portovecchio.org/nos-activites.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html",
+      "source": "continuity_target_declared",
+      "required": true
+    }
+  ]
+}
