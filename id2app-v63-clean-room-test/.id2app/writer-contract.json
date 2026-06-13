@@ -1,0 +1,113 @@
+{
+  "schema_version": "id2app-v6-3-writer-contract-1.0",
+  "status": "fallback",
+  "reason": "anthropic_json_parse_failed",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "lead": "Accueil - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Accueil",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "lead": "Qui sommes-nous - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Qui sommes-nous",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "lead": "Activites - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Activites",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "lead": "Nous soutenir - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Nous soutenir",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "lead": "Contact - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Contact",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "lead": "Mentions legales - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Mentions legales",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "lead": "Confidentialite - Maison Locale Solidaire",
+      "sections": [
+        {
+          "title": "Confidentialite",
+          "body": "Créer un site associatif clair, chaleureux, avec accueil, activités, soutien et contact."
+        },
+        {
+          "title": "Informations utiles",
+          "body": "Les informations absentes restent volontairement a completer afin de respecter la politique no-invention."
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-06-13T19:34:11.934Z"
+}
