@@ -1,5 +1,5 @@
 {
-  "status": "running",
+  "status": "completed",
   "schema_version": "6.3-contractual-core",
   "orchestrator_version": "4.4.7.5-fire-and-forget-publisher-runtime",
   "compiler": "contract_first_premium_renderer_v4_4_7_5_fire_and_forget_publisher",
@@ -20,22 +20,22 @@
   "final_report_path": "id2app-v63-contract-guardfix/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 22,
+  "completed_count": 23,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 22,
-  "percent": 96,
-  "progress_sequence": 32,
+  "updated_count": 23,
+  "percent": 100,
+  "progress_sequence": 33,
   "monotonic_guard": true,
-  "current_file": "id2app-v63-contract-guardfix/.id2app/final-validation-report.json",
+  "current_file": "id2app-v63-contract-guardfix/.id2app/template-report.json",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v63-contract-guardfix/.id2app/final-validation-report.json",
+  "last_successful_file": "id2app-v63-contract-guardfix/.id2app/template-report.json",
   "last_failed_file": null,
-  "last_commit_sha": "f2887c8b6b17fb8bf1fba6b999edcc5cb506da1a",
-  "last_file_sha": "7301c06fc77ba87ddfed693a388ad112d58545ef",
+  "last_commit_sha": "f225923ab763192d96fd168cceb0f688b97fddcd",
+  "last_file_sha": "3ce8725622eca966cfe4e6bff1dab79d2c6c6c28",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
@@ -60,7 +60,8 @@
     "id2app-v63-contract-guardfix/.id2app/source-evidence.json",
     "id2app-v63-contract-guardfix/.id2app/legal-completeness-report.json",
     "id2app-v63-contract-guardfix/.id2app/publish-manifest.json",
-    "id2app-v63-contract-guardfix/.id2app/final-validation-report.json"
+    "id2app-v63-contract-guardfix/.id2app/final-validation-report.json",
+    "id2app-v63-contract-guardfix/.id2app/template-report.json"
   ],
   "failed_files": [],
   "updated_files": [
@@ -261,10 +262,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/.id2app/final-validation-report.json",
       "commit_url": "https://github.com/didier2a/id2app/commit/f2887c8b6b17fb8bf1fba6b999edcc5cb506da1a",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v63-contract-guardfix/.id2app/template-report.json",
+      "action": "create",
+      "file_sha": "3ce8725622eca966cfe4e6bff1dab79d2c6c6c28",
+      "commit_sha": "f225923ab763192d96fd168cceb0f688b97fddcd",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/.id2app/template-report.json",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f225923ab763192d96fd168cceb0f688b97fddcd",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T16:29:59.470Z",
+  "updated_at": "2026-06-13T16:30:14.495Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
