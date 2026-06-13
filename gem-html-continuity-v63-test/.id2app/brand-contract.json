@@ -1,0 +1,84 @@
+{
+  "name": "GEM Casa di l'Isula",
+  "tagline": "",
+  "palette": [
+    {
+      "name": "color_0",
+      "hex": "#FFFEFC",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_1",
+      "hex": "#2A7C6F",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_12",
+      "hex": "#CADED9",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_13",
+      "hex": "#95BDB6",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_14",
+      "hex": "#2B4B42",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_16",
+      "hex": "#A9E2D9",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_17",
+      "hex": "#54C5B3",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_19",
+      "hex": "#1C534A",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_20",
+      "hex": "#0E2925",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_21",
+      "hex": "#CDF0EA",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_22",
+      "hex": "#9CE0D6",
+      "source": "continuity_wix_token"
+    },
+    {
+      "name": "color_23",
+      "hex": "#6AD1C1",
+      "source": "continuity_wix_token"
+    }
+  ],
+  "fonts": [
+    "normal normal normal 20px/1.41em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif",
+    "normal normal normal 30px/1.38em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 40px/normal wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 50px/1.25em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 60px/1.34em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 80px/1.35em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+    "normal normal normal 22px/1.67em barlow-medium,barlow,sans-serif",
+    "normal normal normal 20px/1.75em barlow-medium,barlow,sans-serif",
+    "normal normal normal 18px/1.88em barlow-medium,barlow,sans-serif"
+  ],
+  "logo": {
+    "local_path": "C:\\Users\\didie\\OneDrive\\Images\\SITE GEM 2025\\GEM 2026\\logo_circulaire_casa_gem.png",
+    "policy": "si fourni, placer le logo en haut à gauche; sinon sélectionner l'actif extrait le plus probable seulement si le blueprint l'identifie"
+  },
+  "visual_style": "clean generalist accessible layout",
+  "tone": "clear, human, useful"
+}
