@@ -20,26 +20,27 @@
   "final_report_path": "id2app-v591-test-html-proof/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 11,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 9,
-  "progress_sequence": 5,
+  "updated_count": 2,
+  "percent": 18,
+  "progress_sequence": 6,
   "monotonic_guard": true,
-  "current_file": "id2app-v591-test-html-proof/styles.css",
+  "current_file": "id2app-v591-test-html-proof/script.js",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v591-test-html-proof/styles.css",
+  "last_successful_file": "id2app-v591-test-html-proof/script.js",
   "last_failed_file": null,
-  "last_commit_sha": "73d7905d00bf6f1e46759b440721b611396a18ae",
-  "last_file_sha": "59bb09b89e90bc224f9f7e606f925772160d66c2",
+  "last_commit_sha": "d11f7008c0f8d37ede56550be54e6e8432589f5a",
+  "last_file_sha": "ca5c0c1ff459f0fb321f49e473dcd61eadfdf7c6",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "id2app-v591-test-html-proof/styles.css"
+    "id2app-v591-test-html-proof/styles.css",
+    "id2app-v591-test-html-proof/script.js"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v591-test-html-proof/styles.css",
       "commit_url": "https://github.com/didier2a/id2app/commit/73d7905d00bf6f1e46759b440721b611396a18ae",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v591-test-html-proof/script.js",
+      "action": "create",
+      "file_sha": "ca5c0c1ff459f0fb321f49e473dcd61eadfdf7c6",
+      "commit_sha": "d11f7008c0f8d37ede56550be54e6e8432589f5a",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v591-test-html-proof/script.js",
+      "commit_url": "https://github.com/didier2a/id2app/commit/d11f7008c0f8d37ede56550be54e6e8432589f5a",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T08:05:51.313Z",
+  "updated_at": "2026-06-13T08:06:00.684Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
