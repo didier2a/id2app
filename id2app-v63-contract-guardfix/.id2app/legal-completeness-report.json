@@ -1,0 +1,18 @@
+{
+  "schema_version": "id2app-v6-3-legal-completeness-report-1.0",
+  "status": "passed_with_placeholders",
+  "mode": "no_invention",
+  "missing_fields": [
+    "legal_owner",
+    "publisher",
+    "hosting_provider",
+    "official_address",
+    "privacy_details"
+  ],
+  "public_pages": [
+    "mentions-legales.html",
+    "confidentialite.html"
+  ],
+  "action": "complete_before_production",
+  "created_at": "2026-06-13T16:29:08.181Z"
+}
