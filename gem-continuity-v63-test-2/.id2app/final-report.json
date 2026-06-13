@@ -1,14 +1,300 @@
 {
-  "schema_version": "id2app-v6-3-final-report-1.0",
-  "status": "ready_to_publish",
+  "schema_version": "id2app-v6-3-clean-room-final-response-1.0",
+  "status": "completed",
   "run_id": "v63-clean-room-association-20260613-220245",
-  "validation": {
-    "schema_version": "id2app-v6-3-validation-report-1.0",
-    "status": "passed",
-    "errors": [],
-    "warnings": [],
-    "checked_files": 25,
-    "created_at": "2026-06-13T20:04:08.154Z"
+  "project_id": "gem-reference-continuity-v63-test",
+  "project_name": "GEM Casa di l'Isula",
+  "repo": "didier2a/id2app",
+  "branch": "main",
+  "site_folder": "gem-continuity-v63-test-2",
+  "webhook_path": "id2app-v6-3-clean-room-core",
+  "expected_count": 27,
+  "rendered_count": 27,
+  "validation_status": "passed",
+  "publisher_status": "published",
+  "readback_missing_count": 0,
+  "readback": [
+    {
+      "path": "gem-continuity-v63-test-2/index.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "664bad57820d7ec7687225fcfae7fa7e0349aa75",
+      "size": 3338
+    },
+    {
+      "path": "gem-continuity-v63-test-2/qui-sommes-nous.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "3402c50e5fae578ad1c243f7357e248ac0e53bea",
+      "size": 3395
+    },
+    {
+      "path": "gem-continuity-v63-test-2/activites.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "1d34c4d7739ff8eedb8161a4352fdcaa4d0b7239",
+      "size": 3380
+    },
+    {
+      "path": "gem-continuity-v63-test-2/nous-soutenir.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "b8c23abcecc11680f4fef146e427f8f932508d38",
+      "size": 3380
+    },
+    {
+      "path": "gem-continuity-v63-test-2/contact.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "a1c688c7875fb612e07f30cc4b85220d547f30f1",
+      "size": 3350
+    },
+    {
+      "path": "gem-continuity-v63-test-2/mentions-legales.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "c67b1b202daf12dfddac7e29d39cb755985b5728",
+      "size": 3399
+    },
+    {
+      "path": "gem-continuity-v63-test-2/confidentialite.html",
+      "status": "found",
+      "http_status": 200,
+      "sha": "ac9d2cdfb160f3c8ecf18c64f0938763399e7d97",
+      "size": 3394
+    },
+    {
+      "path": "gem-continuity-v63-test-2/styles.css",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d9943d28fe8c9d6bc25d9f426e059f9ebc6bba88",
+      "size": 2681
+    },
+    {
+      "path": "gem-continuity-v63-test-2/script.js",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d9dce99d80e220e562a5f3398803e9c9b96d9e02",
+      "size": 269
+    },
+    {
+      "path": "gem-continuity-v63-test-2/robots.txt",
+      "status": "found",
+      "http_status": 200,
+      "sha": "885b2b7408d93ac2cf1e8afbe419401386599a83",
+      "size": 79
+    },
+    {
+      "path": "gem-continuity-v63-test-2/sitemap.xml",
+      "status": "found",
+      "http_status": 200,
+      "sha": "1b11febc5c0544d57a4864b8d8c3ad369683cc38",
+      "size": 635
+    },
+    {
+      "path": "gem-continuity-v63-test-2/README.md",
+      "status": "found",
+      "http_status": 200,
+      "sha": "08f629e375b45441bbf87aab35d2b480a1281caf",
+      "size": 82
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/input-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d584cb1f0b6bbc84582dc0db3a475d14653434b6",
+      "size": 1037
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/source-evidence.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "d25a143a8adfbfadfaebced718b2e304cb6c362e",
+      "size": 43288
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/brand-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "df95ab97578a7366f9df1c04f80b2cce4ef736f4",
+      "size": 1718
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/route-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "0440035ed03c6401397b973eb187b0425b1e2185",
+      "size": 2074
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/content-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "f69ac05d81ef0b1b53e63e29a729974032bbc8d0",
+      "size": 13198
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/writer-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "fd9363cbc438a415ed202d01f1b495c100789b27",
+      "size": 3968
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/ux-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "b0c4e6ed1112b5efd863aca9ed4064f248b0b623",
+      "size": 5462
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/seo-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "a62498cda209180af6207cda73dd5f3fd845605c",
+      "size": 7295
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/design-media-contract.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "4b8877a4a17587efdc8160e0a2b8f0a6d682a263",
+      "size": 1667
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/render-plan.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "6cc492a42c38c58782e0f156642fdffa148fcfdf",
+      "size": 8841
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/publish-manifest.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "ce57e398b0c7bb24381314a2e30f649971336eb5",
+      "size": 4555
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/validation-report.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "be0852899724e0c76797e90d735eb855949707f9",
+      "size": 182
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/progress.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "e20b2dfbf677d1e24d3f4cf4f3df82daf41e35ee",
+      "size": 152
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/checkpoint.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "7070c73df4edcc60da20ec5a1c34dae04bac6dab",
+      "size": 1448
+    },
+    {
+      "path": "gem-continuity-v63-test-2/.id2app/final-report.json",
+      "status": "found",
+      "http_status": 200,
+      "sha": "1d50d079c99f1256392c924cfa4140f851862522",
+      "size": 402
+    }
+  ],
+  "reports": {
+    "progress": "gem-continuity-v63-test-2/.id2app/progress.json",
+    "final_report": "gem-continuity-v63-test-2/.id2app/final-report.json",
+    "publish_manifest": "gem-continuity-v63-test-2/.id2app/publish-manifest.json",
+    "validation_report": "gem-continuity-v63-test-2/.id2app/validation-report.json"
   },
-  "created_at": "2026-06-13T20:04:08.154Z"
+  "provider_status": {
+    "writer": "fallback",
+    "ux": "passed",
+    "seo": "passed",
+    "design_media": "passed"
+  },
+  "logs": [
+    {
+      "phase": "webhook",
+      "status": "accepted",
+      "at": "2026-06-13T20:02:46.825Z"
+    },
+    {
+      "phase": "preflight",
+      "status": "passed",
+      "at": "2026-06-13T20:02:48.936Z"
+    },
+    {
+      "phase": "intake_router",
+      "status": "passed",
+      "at": "2026-06-13T20:02:48.951Z"
+    },
+    {
+      "phase": "evidence_builder",
+      "status": "passed",
+      "facts": 1,
+      "at": "2026-06-13T20:02:48.967Z"
+    },
+    {
+      "phase": "contract_builder",
+      "status": "passed",
+      "files": 27,
+      "at": "2026-06-13T20:02:48.981Z"
+    },
+    {
+      "phase": "writer_workflow",
+      "status": "fallback",
+      "at": "2026-06-13T20:03:35.342Z"
+    },
+    {
+      "phase": "ux_workflow",
+      "status": "passed",
+      "at": "2026-06-13T20:03:49.931Z"
+    },
+    {
+      "phase": "seo_workflow",
+      "status": "passed",
+      "at": "2026-06-13T20:04:02.833Z"
+    },
+    {
+      "phase": "design_media_workflow",
+      "status": "passed",
+      "at": "2026-06-13T20:04:08.051Z"
+    },
+    {
+      "phase": "merge_contracts",
+      "status": "passed",
+      "rejected": 0,
+      "at": "2026-06-13T20:04:08.070Z"
+    },
+    {
+      "phase": "core_arbiter",
+      "status": "accepted",
+      "files": 27,
+      "at": "2026-06-13T20:04:08.088Z"
+    },
+    {
+      "phase": "renderer",
+      "status": "passed",
+      "files": 25,
+      "at": "2026-06-13T20:04:08.117Z"
+    },
+    {
+      "phase": "validator",
+      "status": "passed",
+      "errors": 0,
+      "warnings": 0,
+      "at": "2026-06-13T20:04:08.154Z"
+    },
+    {
+      "phase": "publisher",
+      "status": "published",
+      "files": 27,
+      "at": "2026-06-13T20:04:34.184Z"
+    }
+  ],
+  "created_at": "2026-06-13T20:04:39.303Z"
 }
