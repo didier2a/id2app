@@ -1,0 +1,35 @@
+{
+  "name": "Maison Locale Solidaire",
+  "tagline": "",
+  "palette": [
+    {
+      "name": "deep",
+      "hex": "#123A5A",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "light",
+      "hex": "#FAF7F0",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "accent",
+      "hex": "#D9824B",
+      "source": "clean_room_default"
+    },
+    {
+      "name": "soft",
+      "hex": "#76A96D",
+      "source": "clean_room_default"
+    }
+  ],
+  "fonts": [
+    "system-ui"
+  ],
+  "logo": {
+    "local_path": "",
+    "policy": "text_identity"
+  },
+  "visual_style": "clean generalist accessible layout",
+  "tone": "clear, human, useful"
+}
