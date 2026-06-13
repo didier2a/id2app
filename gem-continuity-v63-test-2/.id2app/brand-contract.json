@@ -1,0 +1,76 @@
+{
+  "name": "GEM Casa di l'Isula",
+  "tagline": "",
+  "palette": [
+    {
+      "name": "Bleu profond",
+      "hex": "#0B3A5E",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Bleu clair",
+      "hex": "#3FA9D6",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Jaune soleil",
+      "hex": "#F6B64A",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Vert doux",
+      "hex": "#76B943",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Blanc chaud",
+      "hex": "#FAF7F0",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "Terracotta",
+      "hex": "#C9774A",
+      "source": "blueprint_recommended_palette"
+    },
+    {
+      "name": "color_0",
+      "hex": "#FFFEFC",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_1",
+      "hex": "#2A7C6F",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_12",
+      "hex": "#CADED9",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_13",
+      "hex": "#95BDB6",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_14",
+      "hex": "#2B4B42",
+      "source": "blueprint_extracted_color"
+    },
+    {
+      "name": "color_16",
+      "hex": "#A9E2D9",
+      "source": "blueprint_extracted_color"
+    }
+  ],
+  "fonts": [
+    "[object Object]",
+    "system-ui"
+  ],
+  "logo": {
+    "local_path": "C:\\Users\\didie\\OneDrive\\Images\\SITE GEM 2025\\GEM 2026\\logo_circulaire_casa_gem.png",
+    "policy": "use_provided_logo_top_left_header"
+  },
+  "visual_style": "clean generalist accessible layout",
+  "tone": "clear, human, useful"
+}
