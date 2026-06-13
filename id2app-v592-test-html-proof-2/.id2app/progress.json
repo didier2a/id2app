@@ -20,27 +20,28 @@
   "final_report_path": "id2app-v592-test-html-proof-2/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 2,
+  "completed_count": 3,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 2,
-  "percent": 12,
-  "progress_sequence": 11,
+  "updated_count": 3,
+  "percent": 18,
+  "progress_sequence": 12,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
+  "current_file": "id2app-v592-test-html-proof-2/activites.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
+  "last_successful_file": "id2app-v592-test-html-proof-2/activites.html",
   "last_failed_file": null,
-  "last_commit_sha": "02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
-  "last_file_sha": "e012c772f608635ed49e86beeaf7e9403841ea88",
+  "last_commit_sha": "b13e06a996fa40c84b5e3d5a6c286eba53ee5a7e",
+  "last_file_sha": "8a4b3fc8922e80a78aaec1cbafabf1bfe1864ac1",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
     "id2app-v592-test-html-proof-2/index.html",
-    "id2app-v592-test-html-proof-2/qui-sommes-nous.html"
+    "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
+    "id2app-v592-test-html-proof-2/activites.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -61,10 +62,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/qui-sommes-nous.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v592-test-html-proof-2/activites.html",
+      "action": "create",
+      "file_sha": "8a4b3fc8922e80a78aaec1cbafabf1bfe1864ac1",
+      "commit_sha": "b13e06a996fa40c84b5e3d5a6c286eba53ee5a7e",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/activites.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/b13e06a996fa40c84b5e3d5a6c286eba53ee5a7e",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T09:11:19.911Z",
+  "updated_at": "2026-06-13T09:11:36.078Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
