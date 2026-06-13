@@ -1,0 +1,35 @@
+{
+  "schema_version": "id2app-v6-3-input-contract-1.0",
+  "project": {
+    "id": "gem-html-continuity-v63",
+    "name": "GEM Casa di l'Isula",
+    "type": "website",
+    "language": "fr",
+    "site_kind": "association",
+    "audience": [],
+    "objective": "Créer une continuité premium fidèle au HTML de référence, sans invention et sans contamination externe.",
+    "tagline": ""
+  },
+  "repository": {
+    "owner": "didier2a",
+    "name": "id2app",
+    "branch": "main",
+    "site_folder": "gem-html-continuity-v63-test",
+    "github_api_base_url": "https://api.github.com"
+  },
+  "site": {
+    "base_url": "https://www.legem-portovecchio.org",
+    "reference_url": ""
+  },
+  "options": {
+    "evidence_policy": "no_invention",
+    "render_profile": "clean_room_generalist",
+    "dry_run": false,
+    "preflight_enabled": true,
+    "block_on_preflight": true,
+    "github_publish": true,
+    "strict_validation": true,
+    "save_id2app_artifacts": true,
+    "max_pages": 12
+  }
+}
