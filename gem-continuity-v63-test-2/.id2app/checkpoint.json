@@ -1,0 +1,31 @@
+{
+  "status": "rendered",
+  "run_id": "v63-clean-room-association-20260613-220245",
+  "files": [
+    "gem-continuity-v63-test-2/index.html",
+    "gem-continuity-v63-test-2/qui-sommes-nous.html",
+    "gem-continuity-v63-test-2/activites.html",
+    "gem-continuity-v63-test-2/nous-soutenir.html",
+    "gem-continuity-v63-test-2/contact.html",
+    "gem-continuity-v63-test-2/mentions-legales.html",
+    "gem-continuity-v63-test-2/confidentialite.html",
+    "gem-continuity-v63-test-2/styles.css",
+    "gem-continuity-v63-test-2/script.js",
+    "gem-continuity-v63-test-2/robots.txt",
+    "gem-continuity-v63-test-2/sitemap.xml",
+    "gem-continuity-v63-test-2/README.md",
+    "gem-continuity-v63-test-2/.id2app/input-contract.json",
+    "gem-continuity-v63-test-2/.id2app/source-evidence.json",
+    "gem-continuity-v63-test-2/.id2app/brand-contract.json",
+    "gem-continuity-v63-test-2/.id2app/route-contract.json",
+    "gem-continuity-v63-test-2/.id2app/content-contract.json",
+    "gem-continuity-v63-test-2/.id2app/writer-contract.json",
+    "gem-continuity-v63-test-2/.id2app/ux-contract.json",
+    "gem-continuity-v63-test-2/.id2app/seo-contract.json",
+    "gem-continuity-v63-test-2/.id2app/design-media-contract.json",
+    "gem-continuity-v63-test-2/.id2app/render-plan.json",
+    "gem-continuity-v63-test-2/.id2app/publish-manifest.json",
+    "gem-continuity-v63-test-2/.id2app/progress.json"
+  ],
+  "updated_at": "2026-06-13T20:04:08.117Z"
+}
