@@ -1,0 +1,210 @@
+{
+  "schema_version": "id2app-v6-3-ux-contract-1.0",
+  "project": {
+    "id": "gem-html-continuity-v63",
+    "name": "GEM Casa di l'Isula",
+    "type": "website",
+    "language": "fr",
+    "site_kind": "association",
+    "objective": "Créer une continuité premium fidèle au HTML de référence, sans invention et sans contamination externe.",
+    "tagline": ""
+  },
+  "brand": {
+    "name": "GEM Casa di l'Isula",
+    "tagline": "",
+    "palette": [
+      {
+        "name": "color_0",
+        "hex": "#FFFEFC"
+      },
+      {
+        "name": "color_1",
+        "hex": "#2A7C6F"
+      },
+      {
+        "name": "color_12",
+        "hex": "#CADED9"
+      },
+      {
+        "name": "color_13",
+        "hex": "#95BDB6"
+      },
+      {
+        "name": "color_14",
+        "hex": "#2B4B42"
+      },
+      {
+        "name": "color_16",
+        "hex": "#A9E2D9"
+      },
+      {
+        "name": "color_17",
+        "hex": "#54C5B3"
+      },
+      {
+        "name": "color_19",
+        "hex": "#1C534A"
+      },
+      {
+        "name": "color_20",
+        "hex": "#0E2925"
+      },
+      {
+        "name": "color_21",
+        "hex": "#CDF0EA"
+      },
+      {
+        "name": "color_22",
+        "hex": "#9CE0D6"
+      },
+      {
+        "name": "color_23",
+        "hex": "#6AD1C1"
+      }
+    ],
+    "fonts": [
+      "normal normal normal 20px/1.41em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,sans-serif",
+      "normal normal normal 30px/1.38em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 40px/normal wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 50px/1.25em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 60px/1.34em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 80px/1.35em wfont_94294f_9ce5f5055531459b836d55f6a254d3f1,wf_9ce5f5055531459b836d55f6a,orig_oregano",
+      "normal normal normal 22px/1.67em barlow-medium,barlow,sans-serif",
+      "normal normal normal 20px/1.75em barlow-medium,barlow,sans-serif",
+      "normal normal normal 18px/1.88em barlow-medium,barlow,sans-serif"
+    ],
+    "logo": {
+      "local_path": "C:\\Users\\didie\\OneDrive\\Images\\SITE GEM 2025\\GEM 2026\\logo_circulaire_casa_gem.png",
+      "policy": "si fourni, placer le logo en haut à gauche; sinon sélectionner l'actif extrait le plus probable seulement si le blueprint l'identifie"
+    },
+    "visual_style": "clean generalist accessible layout",
+    "tone": "clear, human, useful"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "nos-activites",
+      "title": "Nos activités",
+      "file": "nos-activites.html",
+      "href": "nos-activites.html",
+      "canonical": "https://www.legem-portovecchio.org/nos-activites.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html",
+      "source": "continuity_target_declared",
+      "required": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html",
+      "source": "observed_in_reference",
+      "required": true
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html",
+      "source": "continuity_target_declared",
+      "required": true
+    }
+  ],
+  "facts": [
+    "Créer une continuité premium fidèle au HTML de référence GEM Casa di l'Isula. Priorité absolue aux textes visibles, couleurs, typographies, routes, médias et signaux visuels extraits du blueprint. Ne pas inventer de coordonnées, horaires, partenaires, témoignages ou faits absents. Exclure les contaminations détectées.",
+    "Contact",
+    "Le GEM de Porto-Vecchio, Casa di L'isula",
+    "Les possibilités sont infinies et si notre force vient de notre diversité, alors nous essayerons de la cultiver.",
+    "© 2023 par INFOSERV2A",
+    "🌿 Au fil de nos journées",
+    "🌿 Là où tout commence !",
+    "🏠 Un repère quand tout se disperse",
+    "06 31 75 41 45",
+    "20137 Porto-Vecchio",
+    "500 m ",
+    "À l'abri des solitudes",
+    "À Porto-Vecchio, nous avons choisi de faire de ce lieu une maison ouverte, un repère pour celles et ceux qui, un temps, se sont éloignés du tumulte social. Ici, on se retrouve sans urgence, sans masque, autour d’un café, d’une activité, ou d’un moment suspendu.",
+    "Accueil",
+    "Au GEM Casa di l'isula",
+    "Au GEM, on fait. Mais surtout, on fait ensemble.",
+    "Avenue de Bastia",
+    "Bienvenue",
+    "bottom of page",
+    "Ces activités, simples en apparence, sont des prétextes pour se relier, pour créer des habitudes douces, pour oser sortir de chez soi, pas à pas.",
+    "Cliquez pour basculer entre les unités métriques et impériales",
+    "Conditions d'utilisation",
+    "Contacter",
+    "Cuisiner",
+    "Cuisiner ensemble, c’est bien plus que préparer un repas : c’est partager un moment, apprendre les uns des autres et se réjouir du simple fait d’être ensemble. Éplucher, goûter, servir, rire… Autour de la table, chacun trouve une place.",
+    "Données cartographiques",
+    "Données cartographiques ©2026 Google",
+    "E-mail",
+    "Envoyer",
+    "GEM Porto-Vecchio",
+    "GEM, CASA DI L'ISULA | Groupe d'Entraide Mutuelle | Porto Vecchio, 20137 Porto-Vecchio, France",
+    "gempv@laposte.net",
+    "Ici, chaque geste a sa valeur. Il n’y a pas d’attente de performance, juste l’envie d’être là, un peu plus présent à soi, et un peu plus proche des autres.",
+    "Il faut parfois peu de choses pour que quelque chose recommence. Une porte qu’on pousse. Un regard qui accueille. Une parole échangée, ou simplement un silence partagé.",
+    "Immeuble Saint-Jean",
+    "Itinéraire",
+    "L’atelier peinture est un espace pour s’exprimer autrement, à son rythme. Ici, pas besoin de savoir dessiner : on explore, on tente, on se découvre. Couleurs, formes et gestes deviennent des moyens de se relier à soi et aux autres, sans jugement.",
+    "Le GEM Casa di l’Isula, qui signifie littéralement \"Maison de l'île\" en langue Corse est né de ce besoin fondamental : sortir de l’isolement, doucement, en recréant du lien, par la présence des autres.",
+    "Le lien se tisse sans bruit, mais avec constance. Parce que chaque vie mérite d’être réintégrée au monde, à son propre rythme. Parce qu’aucune solitude ne devrait être une fatalité, le GEM Casa di l’Isula crée et maintient un espace où chacun retrouve peu à peu sa place, son rythme, et le goût réconfortant du collectif.",
+    "Marcher",
+    "Mentions légales",
+    "Merci pour votre envoi !",
+    "Nom de famille",
+    "Passer au contenu principal",
+    "Peindre",
+    "Peindre, cuisiner, marcher, écrire, partager un repas, tailler les plantes du jardin ou simplement discuter autour d’un café…",
+    "Plan",
+    "Plus",
+    "Prénom",
+    "Quartier Poretta"
+  ],
+  "required_schema": {
+    "schema_version": "id2app-v6-3-ux-contract-1.0",
+    "status": "passed",
+    "shell": {},
+    "page_sections": []
+  },
+  "status": "passed",
+  "provider": "openai",
+  "created_at": "2026-06-13T20:32:18.205Z"
+}
