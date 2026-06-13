@@ -1,0 +1,294 @@
+{
+  "schema_version": "id2app-v6-3-render-plan-1.0",
+  "status": "planned",
+  "render_profile": "clean_room_generalist",
+  "site_folder": "id2app-v63-clean-room-test",
+  "files": [
+    {
+      "path": "id2app-v63-clean-room-test/index.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/qui-sommes-nous.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/activites.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/nous-soutenir.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/contact.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/mentions-legales.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/confidentialite.html",
+      "type": "html",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/styles.css",
+      "type": "css",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/script.js",
+      "type": "javascript",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/robots.txt",
+      "type": "text",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/sitemap.xml",
+      "type": "xml",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/README.md",
+      "type": "markdown",
+      "required": true,
+      "source": "public_site_file"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/input-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/source-evidence.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/brand-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/route-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/content-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/writer-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/ux-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/seo-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/design-media-contract.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/render-plan.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/publish-manifest.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/validation-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/progress.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/checkpoint.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    },
+    {
+      "path": "id2app-v63-clean-room-test/.id2app/final-report.json",
+      "type": "json",
+      "required": true,
+      "source": "core_contract_artifact"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "index.html",
+      "page_id": "index"
+    },
+    {
+      "label": "Qui sommes-nous",
+      "href": "qui-sommes-nous.html",
+      "page_id": "qui-sommes-nous"
+    },
+    {
+      "label": "Activites",
+      "href": "activites.html",
+      "page_id": "activites"
+    },
+    {
+      "label": "Nous soutenir",
+      "href": "nous-soutenir.html",
+      "page_id": "nous-soutenir"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html",
+      "page_id": "contact"
+    },
+    {
+      "label": "Mentions legales",
+      "href": "mentions-legales.html",
+      "page_id": "mentions-legales"
+    },
+    {
+      "label": "Confidentialite",
+      "href": "confidentialite.html",
+      "page_id": "confidentialite"
+    }
+  ],
+  "brand": {
+    "name": "Maison Locale Solidaire",
+    "tagline": "",
+    "palette": [
+      {
+        "name": "deep",
+        "hex": "#123A5A",
+        "source": "clean_room_default"
+      },
+      {
+        "name": "light",
+        "hex": "#FAF7F0",
+        "source": "clean_room_default"
+      },
+      {
+        "name": "accent",
+        "hex": "#D9824B",
+        "source": "clean_room_default"
+      },
+      {
+        "name": "soft",
+        "hex": "#76A96D",
+        "source": "clean_room_default"
+      }
+    ],
+    "fonts": [
+      "system-ui"
+    ],
+    "logo": {
+      "local_path": "",
+      "policy": "text_identity"
+    },
+    "visual_style": "clean generalist accessible layout",
+    "tone": "clear, human, useful"
+  },
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/"
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/qui-sommes-nous.html"
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/activites.html"
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/nous-soutenir.html"
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/contact.html"
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/mentions-legales.html"
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/confidentialite.html"
+    }
+  ],
+  "created_at": "2026-06-13T19:34:45.264Z"
+}
