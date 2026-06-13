@@ -1,0 +1,68 @@
+{
+  "schema_version": "id2app-v6-3-route-contract-1.0",
+  "routes": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/qui-sommes-nous.html",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "activites",
+      "title": "Activites",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/activites.html",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/nous-soutenir.html",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/contact.html",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions legales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/mentions-legales.html",
+      "source": "site_kind_default",
+      "required": true
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialite",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://example.com/id2app-v63-clean-room-test/confidentialite.html",
+      "source": "site_kind_default",
+      "required": true
+    }
+  ]
+}
