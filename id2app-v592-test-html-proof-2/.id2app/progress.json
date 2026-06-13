@@ -20,26 +20,27 @@
   "final_report_path": "id2app-v592-test-html-proof-2/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 17,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 6,
-  "progress_sequence": 10,
+  "updated_count": 2,
+  "percent": 12,
+  "progress_sequence": 11,
   "monotonic_guard": true,
-  "current_file": "id2app-v592-test-html-proof-2/index.html",
+  "current_file": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v592-test-html-proof-2/index.html",
+  "last_successful_file": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
   "last_failed_file": null,
-  "last_commit_sha": "0abbda66c068d0c443083942d6eb5667982d805b",
-  "last_file_sha": "6b10a1ad4b8596b3bed7ba1f31f63095e323a787",
+  "last_commit_sha": "02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
+  "last_file_sha": "e012c772f608635ed49e86beeaf7e9403841ea88",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "id2app-v592-test-html-proof-2/index.html"
+    "id2app-v592-test-html-proof-2/index.html",
+    "id2app-v592-test-html-proof-2/qui-sommes-nous.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/0abbda66c068d0c443083942d6eb5667982d805b",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v592-test-html-proof-2/qui-sommes-nous.html",
+      "action": "create",
+      "file_sha": "e012c772f608635ed49e86beeaf7e9403841ea88",
+      "commit_sha": "02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v592-test-html-proof-2/qui-sommes-nous.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/02cf7c0833d00edf28c5d1f7ddb217d359511e6d",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T09:11:05.259Z",
+  "updated_at": "2026-06-13T09:11:19.911Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
