@@ -20,26 +20,27 @@
   "final_report_path": "gem-casa-di-l-isula-v63-blueprint/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 4,
-  "progress_sequence": 11,
+  "updated_count": 2,
+  "percent": 9,
+  "progress_sequence": 12,
   "monotonic_guard": true,
-  "current_file": "gem-casa-di-l-isula-v63-blueprint/index.html",
+  "current_file": "gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html",
   "current_file_status": "success",
-  "last_successful_file": "gem-casa-di-l-isula-v63-blueprint/index.html",
+  "last_successful_file": "gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html",
   "last_failed_file": null,
-  "last_commit_sha": "fdb83f1a5c1ec9954de6bda67ed51f796c5da89e",
-  "last_file_sha": "8a2a28db4e82d413b5f5e8657aadf5f2248d6fed",
+  "last_commit_sha": "f89f86fa303e828d9727434b3c9198cee44cc81c",
+  "last_file_sha": "91dbeaf01e54d7327a2b98ef36362ade661158da",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "gem-casa-di-l-isula-v63-blueprint/index.html"
+    "gem-casa-di-l-isula-v63-blueprint/index.html",
+    "gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/gem-casa-di-l-isula-v63-blueprint/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/fdb83f1a5c1ec9954de6bda67ed51f796c5da89e",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html",
+      "action": "create",
+      "file_sha": "91dbeaf01e54d7327a2b98ef36362ade661158da",
+      "commit_sha": "f89f86fa303e828d9727434b3c9198cee44cc81c",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/gem-casa-di-l-isula-v63-blueprint/qui-sommes-nous.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/f89f86fa303e828d9727434b3c9198cee44cc81c",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T17:20:03.019Z",
+  "updated_at": "2026-06-13T17:20:15.144Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
