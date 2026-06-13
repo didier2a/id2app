@@ -20,26 +20,27 @@
   "final_report_path": "id2app-v63-contract-guardfix/.id2app/final-report.json",
   "current_phase": "publishing_files_distributed",
   "expected_count": 23,
-  "completed_count": 1,
+  "completed_count": 2,
   "failed_count": 0,
   "skipped_count": 0,
   "protected_count": 0,
   "repaired_count": 0,
   "created_count": 1,
-  "updated_count": 1,
-  "percent": 4,
-  "progress_sequence": 11,
+  "updated_count": 2,
+  "percent": 9,
+  "progress_sequence": 12,
   "monotonic_guard": true,
-  "current_file": "id2app-v63-contract-guardfix/index.html",
+  "current_file": "id2app-v63-contract-guardfix/qui-sommes-nous.html",
   "current_file_status": "success",
-  "last_successful_file": "id2app-v63-contract-guardfix/index.html",
+  "last_successful_file": "id2app-v63-contract-guardfix/qui-sommes-nous.html",
   "last_failed_file": null,
-  "last_commit_sha": "de1a5eda04b2407b0b142689dad8b78db27c08a6",
-  "last_file_sha": "01e011ada34392536aafd03a8fa472359e17d33b",
+  "last_commit_sha": "9fcc5578b9855c822a0097f9959fbe4ce177841f",
+  "last_file_sha": "6f82882add96e88239e844da8d6e27365c5a8552",
   "github_metadata_missing_count": 0,
   "github_metadata_missing_files": [],
   "completed_files": [
-    "id2app-v63-contract-guardfix/index.html"
+    "id2app-v63-contract-guardfix/index.html",
+    "id2app-v63-contract-guardfix/qui-sommes-nous.html"
   ],
   "failed_files": [],
   "updated_files": [
@@ -51,10 +52,19 @@
       "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/index.html",
       "commit_url": "https://github.com/didier2a/id2app/commit/de1a5eda04b2407b0b142689dad8b78db27c08a6",
       "validation_status": "passed"
+    },
+    {
+      "file_path": "id2app-v63-contract-guardfix/qui-sommes-nous.html",
+      "action": "create",
+      "file_sha": "6f82882add96e88239e844da8d6e27365c5a8552",
+      "commit_sha": "9fcc5578b9855c822a0097f9959fbe4ce177841f",
+      "file_url": "https://github.com/didier2a/id2app/blob/main/id2app-v63-contract-guardfix/qui-sommes-nous.html",
+      "commit_url": "https://github.com/didier2a/id2app/commit/9fcc5578b9855c822a0097f9959fbe4ce177841f",
+      "validation_status": "passed"
     }
   ],
   "warnings": [],
-  "updated_at": "2026-06-13T16:24:16.703Z",
+  "updated_at": "2026-06-13T16:24:39.051Z",
   "next_poll_seconds": 15,
   "publisher_runtime": "v4.4.7.5"
 }
