@@ -1,0 +1,239 @@
+{
+  "schema_version": "id2app-v6-3-seo-contract-1.0",
+  "project_id": "gem-html-continuity-v63",
+  "project_name": "GEM Casa di l'Isula",
+  "language": "fr",
+  "site_kind": "association",
+  "objective": "Créer une continuité premium fidèle au HTML de référence, sans invention et sans contamination externe.",
+  "pages": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/",
+      "required": true,
+      "meta": {
+        "description": "Le GEM Casa di l’Isula à Porto-Vecchio est une maison ouverte pour sortir de l’isolement, recréer du lien social et partager des moments ensemble sans urgence ni masque.",
+        "keywords": [
+          "GEM Casa di l'Isula",
+          "Porto-Vecchio",
+          "association",
+          "solidarité",
+          "isolement",
+          "lien social",
+          "activités collectives"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Bienvenue",
+          "Au GEM Casa di l'isula",
+          "Au GEM, on fait. Mais surtout, on fait ensemble."
+        ],
+        "texts": [
+          "À Porto-Vecchio, nous avons choisi de faire de ce lieu une maison ouverte, un repère pour celles et ceux qui, un temps, se sont éloignés du tumulte social.",
+          "Ici, on se retrouve sans urgence, sans masque, autour d’un café, d’une activité, ou d’un moment suspendu.",
+          "Il faut parfois peu de choses pour que quelque chose recommence. Une porte qu’on pousse. Un regard qui accueille. Une parole échangée, ou simplement un silence partagé."
+        ]
+      }
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html",
+      "required": true,
+      "meta": {
+        "description": "Le GEM Casa di l’Isula, signifiant \"Maison de l'île\" en corse, est un groupe d'entraide mutuelle à Porto-Vecchio dédié à recréer du lien social et sortir de l’isolement.",
+        "keywords": [
+          "GEM Casa di l'Isula",
+          "groupe d'entraide mutuelle",
+          "Porto-Vecchio",
+          "solidarité",
+          "isolement",
+          "lien social"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Le GEM de Porto-Vecchio, Casa di L'isula",
+          "Le GEM Casa di l’Isula, qui signifie littéralement \"Maison de l'île\" en langue Corse"
+        ],
+        "texts": [
+          "Le GEM Casa di l’Isula est né de ce besoin fondamental : sortir de l’isolement, doucement, en recréant du lien, par la présence des autres.",
+          "Le lien se tisse sans bruit, mais avec constance. Parce que chaque vie mérite d’être réintégrée au monde, à son propre rythme.",
+          "Parce qu’aucune solitude ne devrait être une fatalité, le GEM Casa di l’Isula crée et maintient un espace où chacun retrouve peu à peu sa place, son rythme, et le goût réconfortant du collectif."
+        ]
+      }
+    },
+    {
+      "page_id": "nos-activites",
+      "title": "Nos activités",
+      "file": "nos-activites.html",
+      "href": "nos-activites.html",
+      "canonical": "https://www.legem-portovecchio.org/nos-activites.html",
+      "required": true,
+      "meta": {
+        "description": "Découvrez les activités du GEM Casa di l’Isula : cuisiner ensemble, peindre, marcher, écrire, partager un repas, tailler les plantes du jardin ou discuter autour d’un café.",
+        "keywords": [
+          "activités GEM",
+          "cuisiner ensemble",
+          "atelier peinture",
+          "marche douce",
+          "partage",
+          "solidarité"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Cuisiner",
+          "Peindre",
+          "Marcher",
+          "Un aperçu de ce que nous faisons ensemble"
+        ],
+        "texts": [
+          "Cuisiner ensemble, c’est bien plus que préparer un repas : c’est partager un moment, apprendre les uns des autres et se réjouir du simple fait d’être ensemble.",
+          "L’atelier peinture est un espace pour s’exprimer autrement, à son rythme. Ici, pas besoin de savoir dessiner : on explore, on tente, on se découvre.",
+          "Une marche douce, un pas après l’autre. On sort prendre l’air, voir le ciel, se reconnecter au dehors.",
+          "Ces activités, simples en apparence, sont des prétextes pour se relier, pour créer des habitudes douces, pour oser sortir de chez soi, pas à pas."
+        ]
+      }
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html",
+      "required": true,
+      "meta": {
+        "description": "Soutenez le GEM Casa di l’Isula, un lieu d’entraide et de lien social à Porto-Vecchio, pour aider à maintenir et développer ses activités et son accueil.",
+        "keywords": [
+          "soutenir GEM",
+          "entraide",
+          "solidarité",
+          "Porto-Vecchio",
+          "association"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Nous soutenir"
+        ],
+        "texts": [
+          "Votre soutien permet de maintenir un espace où chacun retrouve sa place et le goût du collectif.",
+          "Contribuez à faire vivre le GEM Casa di l’Isula et ses activités."
+        ]
+      }
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html",
+      "required": true,
+      "meta": {
+        "description": "Contactez le GEM Casa di l’Isula à Porto-Vecchio par téléphone ou email pour toute demande d’information ou pour rejoindre le groupe.",
+        "keywords": [
+          "contact GEM",
+          "GEM Casa di l'Isula",
+          "Porto-Vecchio",
+          "email",
+          "téléphone"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Contact",
+          "Contacter"
+        ],
+        "texts": [
+          "GEM, CASA DI L'ISULA | Groupe d'Entraide Mutuelle | Porto Vecchio, 20137 Porto-Vecchio, France",
+          "Téléphone : 06 31 75 41 45",
+          "Email : gempv@laposte.net"
+        ]
+      }
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html",
+      "required": true,
+      "meta": {
+        "description": "Mentions légales du site GEM Casa di l’Isula, association à Porto-Vecchio.",
+        "keywords": [
+          "mentions légales",
+          "GEM Casa di l'Isula",
+          "association",
+          "Porto-Vecchio"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Mentions légales"
+        ],
+        "texts": [
+          "© 2023 par INFOSERV2A"
+        ]
+      }
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html",
+      "required": true,
+      "meta": {
+        "description": "Politique de confidentialité du GEM Casa di l’Isula, association à Porto-Vecchio.",
+        "keywords": [
+          "confidentialité",
+          "données personnelles",
+          "GEM Casa di l'Isula",
+          "Porto-Vecchio"
+        ]
+      },
+      "content_signals": {
+        "headings": [
+          "Confidentialité"
+        ],
+        "texts": []
+      }
+    }
+  ],
+  "global_signals": {
+    "organization": {
+      "name": "GEM Casa di l'Isula",
+      "address": "Avenue de Bastia, 20137 Porto-Vecchio, France",
+      "phone": "06 31 75 41 45",
+      "email": "gempv@laposte.net",
+      "description": "Le GEM Casa di l’Isula est un groupe d’entraide mutuelle à Porto-Vecchio dédié à recréer du lien social et sortir de l’isolement.",
+      "copyright": "© 2023 par INFOSERV2A"
+    },
+    "visual_identity": {
+      "colors": "Fidèle aux couleurs observées dans le blueprint HTML de référence",
+      "typography": "Respect des typographies du blueprint sans invention",
+      "media": "Utilisation exclusive des médias extraits du blueprint, sans contamination externe"
+    },
+    "seo_constraints": {
+      "no_invention": true,
+      "no_external_contamination": true,
+      "priority": [
+        "textes visibles",
+        "couleurs",
+        "typographies",
+        "routes",
+        "médias",
+        "signaux visuels"
+      ]
+    }
+  },
+  "status": "passed",
+  "provider": "openai",
+  "created_at": "2026-06-13T20:32:37.220Z"
+}
