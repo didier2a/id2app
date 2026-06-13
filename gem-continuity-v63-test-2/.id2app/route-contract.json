@@ -1,0 +1,68 @@
+{
+  "schema_version": "id2app-v6-3-route-contract-1.0",
+  "routes": [
+    {
+      "page_id": "index",
+      "title": "Accueil",
+      "file": "index.html",
+      "href": "index.html",
+      "canonical": "https://www.legem-portovecchio.org/",
+      "source": "reference_site_observed_or_required",
+      "required": true
+    },
+    {
+      "page_id": "qui-sommes-nous",
+      "title": "Qui sommes-nous ?",
+      "file": "qui-sommes-nous.html",
+      "href": "qui-sommes-nous.html",
+      "canonical": "https://www.legem-portovecchio.org/qui-sommes-nous.html",
+      "source": "gem_blueprint_required",
+      "required": true
+    },
+    {
+      "page_id": "activites",
+      "title": "Nos activités",
+      "file": "activites.html",
+      "href": "activites.html",
+      "canonical": "https://www.legem-portovecchio.org/activites.html",
+      "source": "gem_blueprint_required",
+      "required": true
+    },
+    {
+      "page_id": "nous-soutenir",
+      "title": "Nous soutenir",
+      "file": "nous-soutenir.html",
+      "href": "nous-soutenir.html",
+      "canonical": "https://www.legem-portovecchio.org/nous-soutenir.html",
+      "source": "gem_blueprint_required",
+      "required": true
+    },
+    {
+      "page_id": "contact",
+      "title": "Contact",
+      "file": "contact.html",
+      "href": "contact.html",
+      "canonical": "https://www.legem-portovecchio.org/contact.html",
+      "source": "reference_site_observed_or_required",
+      "required": true
+    },
+    {
+      "page_id": "mentions-legales",
+      "title": "Mentions légales",
+      "file": "mentions-legales.html",
+      "href": "mentions-legales.html",
+      "canonical": "https://www.legem-portovecchio.org/mentions-legales.html",
+      "source": "legal_required",
+      "required": true
+    },
+    {
+      "page_id": "confidentialite",
+      "title": "Confidentialité",
+      "file": "confidentialite.html",
+      "href": "confidentialite.html",
+      "canonical": "https://www.legem-portovecchio.org/confidentialite.html",
+      "source": "legal_required",
+      "required": true
+    }
+  ]
+}
