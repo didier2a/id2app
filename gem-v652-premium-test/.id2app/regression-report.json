@@ -1,0 +1,15 @@
+{
+  "schema_version": "id2app-v6-5-2-regression-report-1.0",
+  "status": "passed",
+  "errors": [],
+  "warnings": [
+    "missing_description:gem-v652-premium-test/index.html"
+  ],
+  "modified_files": [
+    "gem-v652-premium-test/index.html",
+    "gem-v652-premium-test/styles.css"
+  ],
+  "accepted_patches": 2,
+  "rejected_patches": 2,
+  "created_at": "2026-06-14T07:37:04.738Z"
+}
