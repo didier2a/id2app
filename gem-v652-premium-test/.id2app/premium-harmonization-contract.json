@@ -1,0 +1,57 @@
+{
+  "schema_version": "id2app-v6-5-2-premium-harmonization-contract-1.0",
+  "status": "passed",
+  "mode": "harmonize_without_overwrite",
+  "premium_level": "premium continuity, patch-only, no full rewrite",
+  "source_priority": [
+    "site_snapshot",
+    "reference_blueprint",
+    "user_spec"
+  ],
+  "harmonizers": {
+    "writer": {
+      "provider": "anthropic",
+      "output": "writer_patch_plan",
+      "role": "copy depth, clarity, tone, no invention"
+    },
+    "ux": {
+      "provider": "openai",
+      "output": "ux_patch_plan",
+      "role": "navigation, hierarchy, section ergonomics"
+    },
+    "design": {
+      "provider": "gemini",
+      "output": "design_patch_plan",
+      "role": "visual continuity, palette, typography, rhythm"
+    },
+    "seo_a11y": {
+      "provider": "openai",
+      "output": "seo_a11y_patch_plan",
+      "role": "metadata, semantic structure, accessibility"
+    }
+  },
+  "visual_reference_summary": {
+    "colors": {},
+    "typography": {},
+    "style": "institutionnel chaleureux, blanc chaud, bleu profond, jaune soleil, vert doux, arrondis généreux, aucune ambiance cyber"
+  },
+  "content_reference_summary": {
+    "visible_texts": [],
+    "headings": [],
+    "navigation_labels": [],
+    "hrefs": []
+  },
+  "media_reference_summary": {
+    "extracted_assets_dir": "",
+    "image_count": 0,
+    "media_refs": []
+  },
+  "hard_rules": [
+    "no complete rewrite",
+    "no unproven facts",
+    "no public internal tooling terms",
+    "patches must target specific files and sections",
+    "locked surfaces cannot be overwritten"
+  ],
+  "created_at": "2026-06-14T07:36:34.136Z"
+}
