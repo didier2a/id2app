@@ -1,0 +1,30 @@
+{
+  "schema_version": "id2app-v6-5-2-site-snapshot-1.0",
+  "status": "passed",
+  "files": [
+    {
+      "path": "gem-v652-premium-test/index.html",
+      "bytes": 560,
+      "checksum": "42dd014f",
+      "public": true,
+      "source": "v65_initial_minimal"
+    },
+    {
+      "path": "gem-v652-premium-test/styles.css",
+      "bytes": 163,
+      "checksum": "37a4f4e4",
+      "public": true,
+      "source": "v65_initial_minimal"
+    },
+    {
+      "path": "gem-v652-premium-test/script.js",
+      "bytes": 51,
+      "checksum": "008b171f",
+      "public": true,
+      "source": "v65_initial_minimal"
+    }
+  ],
+  "public_file_count": 3,
+  "private_file_count": 0,
+  "created_at": "2026-06-14T07:36:34.130Z"
+}
