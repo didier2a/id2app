@@ -1,0 +1,4 @@
+body{font-family:system-ui,sans-serif;margin:0;line-height:1.6;color:#17212b;background:#faf7f0}header,main,footer{padding:24px max(18px,calc((100vw - 1120px)/2))}
+/* premium-harmonization-patch:design-premium-css:start */
+:root{--v652-premium-shadow:0 18px 50px rgba(18,58,90,.12)}.v652-premium-section{margin:32px auto;padding:28px;border-radius:18px;background:#fff;box-shadow:var(--v652-premium-shadow)}
+/* premium-harmonization-patch:design-premium-css:end */
