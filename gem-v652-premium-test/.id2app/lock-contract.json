@@ -1,0 +1,24 @@
+{
+  "schema_version": "id2app-v6-5-2-lock-contract-1.0",
+  "status": "passed",
+  "overwrite_policy": "patch_only_never_global_replace",
+  "locked_files": [],
+  "locked_patterns": [
+    ".id2app/",
+    "mentions-legales",
+    "confidentialite",
+    "privacy",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "locked_surfaces": [
+    "logo",
+    "confirmed_contact_details",
+    "legal_pages",
+    "validated_routes"
+  ],
+  "allow_new_sections": true,
+  "allow_head_seo_patch": true,
+  "allow_css_append": true,
+  "created_at": "2026-06-14T07:36:34.136Z"
+}
