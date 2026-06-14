@@ -1,0 +1,92 @@
+{
+  "schema_version": "id2app-v6-5-2-merged-patch-plan-1.0",
+  "status": "passed",
+  "patch_count": 4,
+  "patches": [
+    {
+      "harmonizer": "writer",
+      "operation": "add",
+      "target_file": "gem-v652-premium-test/index.html",
+      "target_section": "premium-copy-note",
+      "risk": "low",
+      "reason": "Ajouter une section de clarification sans ecraser le contenu existant.",
+      "source_refs": [
+        "project.objective"
+      ],
+      "proposed_change": {
+        "heading": "Une presence plus claire",
+        "body": "Harmoniser le site GEM en version premium fidèle, chaleureuse, associative et méditerranéenne, sans écraser la structure existante."
+      },
+      "source_plan": "id2app-v6-5-2-writer-patch-plan-1.0",
+      "source_index": 0
+    },
+    {
+      "harmonizer": "design",
+      "operation": "improve",
+      "target_file": "gem-v652-premium-test/styles.css",
+      "target_section": "premium-css",
+      "risk": "low",
+      "reason": "Ajouter une couche visuelle premium additive sans supprimer le CSS existant.",
+      "source_refs": [
+        "premium_contract"
+      ],
+      "proposed_change": {
+        "css": ":root{--v652-premium-shadow:0 18px 50px rgba(18,58,90,.12)}.v652-premium-section{margin:32px auto;padding:28px;border-radius:18px;background:#fff;box-shadow:var(--v652-premium-shadow)}"
+      },
+      "source_plan": "id2app-v6-5-2-design-patch-plan-1.0",
+      "source_index": 0
+    },
+    {
+      "file": "gem-v652-premium-test/index.html",
+      "operations": [
+        {
+          "op": "insert",
+          "target": "head",
+          "position": "end",
+          "content": "<title>GEM Casa di l'Isula - Association Méditerranéenne Chaleureuse</title>\n<meta name=\"description\" content=\"Découvrez GEM Casa di l'Isula, une association méditerranéenne chaleureuse et fidèle, engagée pour la communauté locale à Portovecchio.\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"canonical\" href=\"https://www.legem-portovecchio.org/\">"
+        },
+        {
+          "op": "update",
+          "target": "html",
+          "attributes": {
+            "lang": "fr"
+          }
+        },
+        {
+          "op": "insert",
+          "target": "body",
+          "position": "afterbegin",
+          "content": "<a href=\"#maincontent\" class=\"skip-link\" style=\"position:absolute;top:-40px;left:0;background:#003366;color:#fff;padding:8px;z-index:100;\">Aller au contenu principal</a>"
+        },
+        {
+          "op": "update",
+          "target": "body > main",
+          "attributes": {
+            "id": "maincontent",
+            "tabindex": "-1"
+          }
+        }
+      ],
+      "source_plan": "id2app-v6-5-2-seo-a11y-patch-plan-1.0",
+      "source_index": 0
+    },
+    {
+      "file": "gem-v652-premium-test/styles.css",
+      "operations": [
+        {
+          "op": "append",
+          "content": "/* Style pour le lien de saut au contenu principal */\n.skip-link:focus {\n  position: static;\n  top: 0;\n  left: 0;\n  background-color: #003366;\n  color: #fff;\n  padding: 8px 16px;\n  font-weight: bold;\n  border-radius: 8px;\n  z-index: 1000;\n  text-decoration: none;\n}\n"
+        }
+      ],
+      "source_plan": "id2app-v6-5-2-seo-a11y-patch-plan-1.0",
+      "source_index": 1
+    }
+  ],
+  "harmonizer_statuses": {
+    "writer": "fallback",
+    "ux": "fallback",
+    "design": "fallback",
+    "seo_a11y": "passed"
+  },
+  "created_at": "2026-06-14T07:37:04.704Z"
+}
